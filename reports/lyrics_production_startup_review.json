@@ -1,0 +1,317 @@
+{
+  "reviewer": "Codex B",
+  "scope": "First 20 automatic production acceptances in deterministic song-ID order; inspected source identity, metadata/duration evidence, word counts, warnings, and opening/ending excerpts. No audio verification or full independent transcription. No lyrics reproduced here.",
+  "findings": [
+    "No obvious wrong artist/song, cover substitution, or materially malformed excerpt found.",
+    "Selected records can have compilation/bootleg album labels and inconsistent durations; these do not establish exact charted recordings.",
+    "Version warnings can concern rejected alternative candidates rather than the selected source.",
+    "Repetition abbreviations and spoken/parenthetical material remain flagged; completeness beyond the inspected excerpts is not independently verified."
+  ],
+  "cases": [
+    {
+      "song_id": "song_00023becf27979c6e70d380bc148018400c17a1bf3f7116d5911e491ab488bcd",
+      "title": "Look At My Life",
+      "artist": "Gracie Abrams",
+      "first_chart_date": "2026-07-11",
+      "lrclib_id": 36284504,
+      "lyrics_sha256": "a2348918a6faae40afc4bb3095016a046f5a8cd324aa2759e6a24b302d86d82d",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup",
+        "minor_transcription_variation"
+      ]
+    },
+    {
+      "song_id": "song_000392e3f07878b5fe6f8f1a49d71e3e8c76d13e92933572580208c7bf16c94c",
+      "title": "Love Is A Hurtin' Thing",
+      "artist": "Lou Rawls",
+      "first_chart_date": "1966-09-10",
+      "lrclib_id": 21126258,
+      "lyrics_sha256": "4b95a38624d436a37e2dfcf397323e406b0865eb1be605eb2c5d342a3579daba",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_000cebe49afedb86c65bdcc5dc3b808ce622ee132e5e4f8350e4f42389d78172",
+      "title": "Rope",
+      "artist": "Foo Fighters",
+      "first_chart_date": "2011-03-19",
+      "lrclib_id": 18682194,
+      "lyrics_sha256": "87d14de39065b4738935613a2d3a23a30694817dbfba71a727ad7d4a66deabcc",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_0018e7d5381e23588eb47affa351e2e5c55eab7ec37505a3a9c7414b0cd99d09",
+      "title": "Heaven On The 7th Floor",
+      "artist": "Paul Nicholas",
+      "first_chart_date": "1977-08-20",
+      "lrclib_id": 1688757,
+      "lyrics_sha256": "e890d497ef7d8b228eb6ab57ee8b05de0c9ac0ddcfdac21d361f128835d5c7d8",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_001bca1a926c3e33aa4b60e9173625d84b32e330f474fced8f6e7e286d0c4b98",
+      "title": "Bokete",
+      "artist": "Bad Bunny",
+      "first_chart_date": "2025-01-18",
+      "lrclib_id": 19093005,
+      "lyrics_sha256": "eaa7a8948fcd70dd63fd431df744713e8305e2a61f50aaa71be430e4a0e24050",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [
+        "explicit"
+      ],
+      "text_warnings": [
+        "formatting_cleanup",
+        "minor_transcription_variation"
+      ]
+    },
+    {
+      "song_id": "song_001bf31a75df04fe7285cec1b9eac1f101313d1cf98904265f9a99c02726ad3f",
+      "title": "Chain Gang",
+      "artist": "Sam Cooke",
+      "first_chart_date": "1960-08-15",
+      "lrclib_id": 34380887,
+      "lyrics_sha256": "8079eaf4b9962ddce22c3a07c8ff1447bd033a3fcb0c7fe75a42dfa3ef714574",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [
+        "live"
+      ],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_001ce1a76de52a2095002d2150096c9e15ec83602643f0f5e14cea38533a3fba",
+      "title": "When I Die",
+      "artist": "Motherlode",
+      "first_chart_date": "1969-08-09",
+      "lrclib_id": 1564739,
+      "lyrics_sha256": "3b75616bb2cf5a3eeab06367d09031b4a0029bac4fb03a69e1e3455311d06a41",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_001fba80e9d7a15d959acfb8e108916fa70c54602a9f6e32dbee512756e6d0f2",
+      "title": "Lost Boy",
+      "artist": "Ruth B",
+      "first_chart_date": "2016-03-12",
+      "lrclib_id": 18348957,
+      "lyrics_sha256": "20c32793dff0cee405215416f166b13c2e2674ab537bd66ab750e82f1c8d3a22",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_0021757f94dfd20b15db60fad01a3c2cb48aed569f4cf1a0e5179d22002b2fa4",
+      "title": "143",
+      "artist": "Bobby Brackins Featuring Ray J",
+      "first_chart_date": "2010-07-03",
+      "lrclib_id": 18818459,
+      "lyrics_sha256": "b0e0eaa6deb21809f5626920fe894f276c4c5af533864b19c5cd4fe163d5741a",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_002b1c2bdbaffdd8154b5dfa5959e592a7363ac7b7ad368384faa4af808ef4d9",
+      "title": "You Got The Love",
+      "artist": "Rufus Featuring Chaka Khan",
+      "first_chart_date": "1974-10-12",
+      "lrclib_id": 6973864,
+      "lyrics_sha256": "06ff7d0d27c3c4f6f9dfe22db2003c7f71e01ef1e3e80422617f15bbeefe2ace",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_002cebf313bfd5ccfd563b8ec75fc04cee875e3417d9f4c8bca42ea377016acf",
+      "title": "Let's Stay Together",
+      "artist": "Al Green",
+      "first_chart_date": "1971-12-04",
+      "lrclib_id": 36976576,
+      "lyrics_sha256": "6a06a283c25191eb4ddcdceb046d226199527c761a2c8729169be84749dc9b73",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_002d57755f7c6525f0841704881ed6d9af6437e716a4ce2a591d2459e45a42ea",
+      "title": "I'm Telling You Now",
+      "artist": "Freddie And The Dreamers",
+      "first_chart_date": "1965-03-13",
+      "lrclib_id": 18874164,
+      "lyrics_sha256": "5dab4b221de2869d72ba2bbcec1726dfdf42420b40bd1ca76605a62f1d3d4bea",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_002eabb8dec8ee23519e041692437c157c115f7759c1f98167cd95a9dae0f5ff",
+      "title": "I Won't Last A Day Without You/Let Me Be The One",
+      "artist": "Al Wilson",
+      "first_chart_date": "1975-01-11",
+      "lrclib_id": 10452469,
+      "lyrics_sha256": "54c83add31c4938a9f56f1d15e314a2ce2fcbeb3ae5596b72effef4856f0aa08",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_00336dc77743934bf2a17c8b8b7f3c8183d0493c9b8ddce74dacddd32e1164de",
+      "title": "No, No, No",
+      "artist": "The Chanters",
+      "first_chart_date": "1961-06-19",
+      "lrclib_id": 2256524,
+      "lyrics_sha256": "0e222e162f65b551f0e9d57f49880c8e81de716b31274fbb1876bf440c2c88dc",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_0035c0e76f375ec1124ec947241c07d473e5be7545131a2ed009adcd760005fa",
+      "title": "So Fresh, So Clean",
+      "artist": "OutKast",
+      "first_chart_date": "2001-03-03",
+      "lrclib_id": 34406994,
+      "lyrics_sha256": "aa17737fd87a33325ff6231c12b487210992caf5b687734b41724b283c15dee4",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [
+        "remix"
+      ],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_00374e09ea043cd412ca41f4b17c84bd80ea73d90ea95d319e711b489f52d8f6",
+      "title": "Love Lockdown",
+      "artist": "Kanye West",
+      "first_chart_date": "2008-10-04",
+      "lrclib_id": 33429681,
+      "lyrics_sha256": "e71f68a4b3615f556dcf380894f6e63c790da8cd266a675468d2b01797ef588c",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [
+        "live"
+      ],
+      "text_warnings": [
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_0042dcefa9c0f027264730048806f2f053ea56c34916f405d1c3aae74d29aff4",
+      "title": "If I Could Turn Back Time",
+      "artist": "Cher",
+      "first_chart_date": "1989-07-08",
+      "lrclib_id": 37026904,
+      "lyrics_sha256": "33f4397c4b64b534ccf9c67ac3f2e6ca9ec9c307ac784dfb8baac7654f9d1761",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_004985472bb286f6e26039e8a24ec41b62d4a8936668c3602472346eee5d9d2a",
+      "title": "Partyman",
+      "artist": "Prince",
+      "first_chart_date": "1989-08-26",
+      "lrclib_id": 18451880,
+      "lyrics_sha256": "f0d05a84dfdda0789acc65e7ec067d21be8504a419895ff2721f370cbc627225",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [
+        "live"
+      ],
+      "text_warnings": [
+        "annotation_or_repetition_uncertainty",
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_004cbd867b43d002c0c93c652aede477b836b4bbfbde6b6717e1cddba1cd5adf",
+      "title": "Sexy, Sexy, Sexy",
+      "artist": "James Brown",
+      "first_chart_date": "1973-08-18",
+      "lrclib_id": 1858449,
+      "lyrics_sha256": "a4d9aeb852de25acef769a0378d660d7f85976fa4436223c6eb2973ba2c0db8e",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "formatting_cleanup"
+      ]
+    },
+    {
+      "song_id": "song_0050c15e624a07ea000c6b1518b73e789e8035aebe6e7cd91cb9fa28c47f360a",
+      "title": "Lido Shuffle",
+      "artist": "Boz Scaggs",
+      "first_chart_date": "1977-03-12",
+      "lrclib_id": 34425806,
+      "lyrics_sha256": "5f814840c25e7788234e3f57b41215330ebc52ee07695435f4588015406c94de",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "version_warnings": [],
+      "text_warnings": [
+        "formatting_cleanup"
+      ]
+    }
+  ]
+}

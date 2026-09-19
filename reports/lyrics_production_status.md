@@ -1,16 +1,16 @@
 # LRCLIB full-population acquisition
 
-Generated 2026-09-19T23:14:37.267968+00:00. Population: **25,363**. Attempted: **200**. Candidate found: **195**.
+Generated 2026-09-19T23:18:23.268337+00:00. Population: **25,363**. Attempted: **343**. Candidate found: **334**.
 
-Usable: **171** (0 automatic, 171 approved pilot). Canonical local files: **171**.
+Usable: **277** (106 automatic, 171 approved pilot). Canonical local files: **277**.
 
 | Disposition | Assets |
 |---|---:|
-| accepted | 171 |
-| quarantined | 5 |
-| wrong_identity | 15 |
+| accepted | 277 |
+| quarantined | 33 |
+| wrong_identity | 20 |
 | bad_missing_text | 4 |
-| not_found | 5 |
+| not_found | 9 |
 | error | 0 |
 
 ## Coverage
@@ -19,83 +19,83 @@ Population coverage includes unattempted songs in the denominator. Attempted cov
 
 | Period | Population | Attempted | Usable | Population coverage | Attempted coverage |
 |---|---:|---:|---:|---:|---:|
-| 1958–1969 | 5863 | 29 | 22 | 0.38% | 75.86% |
-| 1970s | 4364 | 29 | 20 | 0.46% | 68.97% |
-| 1980s | 3786 | 29 | 24 | 0.63% | 82.76% |
-| 1990s | 3053 | 29 | 28 | 0.92% | 96.55% |
-| 2000s | 2911 | 28 | 23 | 0.79% | 82.14% |
-| 2010–2019 | 2997 | 28 | 28 | 0.93% | 100.0% |
-| 2015–2019 | 1553 | 8 | 8 | 0.52% | 100.0% |
-| 2020–2026 | 2389 | 28 | 26 | 1.09% | 92.86% |
-| 1958 | 263 | 3 | 2 | 0.76% | 66.67% |
-| 1959 | 448 | 2 | 1 | 0.22% | 50.0% |
-| 1960 | 456 | 4 | 3 | 0.66% | 75.0% |
-| 1961 | 513 | 4 | 3 | 0.58% | 75.0% |
+| 1958–1969 | 5863 | 63 | 47 | 0.8% | 74.6% |
+| 1970s | 4364 | 62 | 44 | 1.01% | 70.97% |
+| 1980s | 3786 | 53 | 38 | 1.0% | 71.7% |
+| 1990s | 3053 | 39 | 35 | 1.15% | 89.74% |
+| 2000s | 2911 | 44 | 37 | 1.27% | 84.09% |
+| 2010–2019 | 2997 | 46 | 45 | 1.5% | 97.83% |
+| 2015–2019 | 1553 | 17 | 17 | 1.09% | 100.0% |
+| 2020–2026 | 2389 | 36 | 31 | 1.3% | 86.11% |
+| 1958 | 263 | 5 | 3 | 1.14% | 60.0% |
+| 1959 | 448 | 4 | 1 | 0.22% | 25.0% |
+| 1960 | 456 | 9 | 8 | 1.75% | 88.89% |
+| 1961 | 513 | 9 | 5 | 0.97% | 55.56% |
 | 1962 | 480 | 1 | 1 | 0.21% | 100.0% |
-| 1963 | 502 | 1 | 0 | 0.0% | 0.0% |
-| 1964 | 534 | 3 | 3 | 0.56% | 100.0% |
-| 1965 | 543 | 3 | 2 | 0.37% | 66.67% |
-| 1966 | 560 | 2 | 1 | 0.18% | 50.0% |
-| 1967 | 544 | 2 | 2 | 0.37% | 100.0% |
-| 1968 | 519 | 1 | 1 | 0.19% | 100.0% |
-| 1969 | 501 | 3 | 3 | 0.6% | 100.0% |
-| 1970 | 476 | 3 | 1 | 0.21% | 33.33% |
-| 1971 | 477 | 2 | 2 | 0.42% | 100.0% |
-| 1972 | 465 | 5 | 3 | 0.65% | 60.0% |
-| 1973 | 422 | 1 | 1 | 0.24% | 100.0% |
-| 1974 | 418 | 2 | 2 | 0.48% | 100.0% |
-| 1975 | 443 | 3 | 2 | 0.45% | 66.67% |
-| 1976 | 425 | 4 | 2 | 0.47% | 50.0% |
-| 1977 | 397 | 3 | 3 | 0.76% | 100.0% |
-| 1978 | 401 | 3 | 3 | 0.75% | 100.0% |
-| 1979 | 440 | 3 | 1 | 0.23% | 33.33% |
-| 1980 | 408 | 4 | 3 | 0.74% | 75.0% |
-| 1981 | 379 | 5 | 4 | 1.06% | 80.0% |
-| 1982 | 408 | 4 | 3 | 0.74% | 75.0% |
-| 1983 | 404 | 5 | 3 | 0.74% | 60.0% |
+| 1963 | 502 | 3 | 2 | 0.4% | 66.67% |
+| 1964 | 534 | 4 | 4 | 0.75% | 100.0% |
+| 1965 | 543 | 9 | 7 | 1.29% | 77.78% |
+| 1966 | 560 | 5 | 4 | 0.71% | 80.0% |
+| 1967 | 544 | 4 | 4 | 0.74% | 100.0% |
+| 1968 | 519 | 2 | 2 | 0.39% | 100.0% |
+| 1969 | 501 | 8 | 6 | 1.2% | 75.0% |
+| 1970 | 476 | 6 | 2 | 0.42% | 33.33% |
+| 1971 | 477 | 4 | 3 | 0.63% | 75.0% |
+| 1972 | 465 | 8 | 6 | 1.29% | 75.0% |
+| 1973 | 422 | 3 | 2 | 0.47% | 66.67% |
+| 1974 | 418 | 4 | 4 | 0.96% | 100.0% |
+| 1975 | 443 | 11 | 7 | 1.58% | 63.64% |
+| 1976 | 425 | 10 | 7 | 1.65% | 70.0% |
+| 1977 | 397 | 7 | 7 | 1.76% | 100.0% |
+| 1978 | 401 | 5 | 4 | 1.0% | 80.0% |
+| 1979 | 440 | 4 | 2 | 0.45% | 50.0% |
+| 1980 | 408 | 9 | 6 | 1.47% | 66.67% |
+| 1981 | 379 | 8 | 5 | 1.32% | 62.5% |
+| 1982 | 408 | 8 | 5 | 1.23% | 62.5% |
+| 1983 | 404 | 7 | 5 | 1.24% | 71.43% |
 | 1984 | 399 | 3 | 3 | 0.75% | 100.0% |
 | 1985 | 371 | 1 | 1 | 0.27% | 100.0% |
-| 1986 | 364 | 3 | 3 | 0.82% | 100.0% |
-| 1987 | 357 | 2 | 2 | 0.56% | 100.0% |
-| 1988 | 343 | 1 | 1 | 0.29% | 100.0% |
-| 1989 | 353 | 1 | 1 | 0.28% | 100.0% |
+| 1986 | 364 | 7 | 6 | 1.65% | 85.71% |
+| 1987 | 357 | 3 | 2 | 0.56% | 66.67% |
+| 1988 | 343 | 3 | 2 | 0.58% | 66.67% |
+| 1989 | 353 | 4 | 3 | 0.85% | 75.0% |
 | 1990 | 349 | 7 | 7 | 2.01% | 100.0% |
-| 1991 | 348 | 3 | 3 | 0.86% | 100.0% |
-| 1992 | 311 | 2 | 2 | 0.64% | 100.0% |
+| 1991 | 348 | 4 | 3 | 0.86% | 75.0% |
+| 1992 | 311 | 3 | 3 | 0.96% | 100.0% |
 | 1993 | 292 | 1 | 1 | 0.34% | 100.0% |
-| 1994 | 296 | 2 | 2 | 0.68% | 100.0% |
-| 1995 | 290 | 3 | 3 | 1.03% | 100.0% |
-| 1996 | 273 | 4 | 3 | 1.1% | 75.0% |
-| 1997 | 286 | 1 | 1 | 0.35% | 100.0% |
-| 1998 | 322 | 4 | 4 | 1.24% | 100.0% |
+| 1994 | 296 | 4 | 3 | 1.01% | 75.0% |
+| 1995 | 290 | 4 | 4 | 1.38% | 100.0% |
+| 1996 | 273 | 6 | 5 | 1.83% | 83.33% |
+| 1997 | 286 | 3 | 2 | 0.7% | 66.67% |
+| 1998 | 322 | 5 | 5 | 1.55% | 100.0% |
 | 1999 | 286 | 2 | 2 | 0.7% | 100.0% |
-| 2000 | 287 | 3 | 2 | 0.7% | 66.67% |
-| 2001 | 267 | 4 | 4 | 1.5% | 100.0% |
-| 2002 | 280 | 2 | 2 | 0.71% | 100.0% |
+| 2000 | 287 | 5 | 4 | 1.39% | 80.0% |
+| 2001 | 267 | 6 | 5 | 1.87% | 83.33% |
+| 2002 | 280 | 3 | 3 | 1.07% | 100.0% |
 | 2003 | 279 | 4 | 4 | 1.43% | 100.0% |
 | 2004 | 281 | 3 | 1 | 0.36% | 33.33% |
-| 2005 | 295 | 2 | 1 | 0.34% | 50.0% |
-| 2006 | 292 | 3 | 3 | 1.03% | 100.0% |
-| 2007 | 288 | 2 | 1 | 0.35% | 50.0% |
-| 2008 | 319 | 3 | 3 | 0.94% | 100.0% |
-| 2009 | 323 | 2 | 2 | 0.62% | 100.0% |
-| 2010 | 321 | 5 | 5 | 1.56% | 100.0% |
-| 2011 | 319 | 4 | 4 | 1.25% | 100.0% |
-| 2012 | 255 | 4 | 4 | 1.57% | 100.0% |
-| 2013 | 270 | 6 | 6 | 2.22% | 100.0% |
+| 2005 | 295 | 4 | 3 | 1.02% | 75.0% |
+| 2006 | 292 | 5 | 5 | 1.71% | 100.0% |
+| 2007 | 288 | 4 | 2 | 0.69% | 50.0% |
+| 2008 | 319 | 5 | 5 | 1.57% | 100.0% |
+| 2009 | 323 | 5 | 5 | 1.55% | 100.0% |
+| 2010 | 321 | 7 | 7 | 2.18% | 100.0% |
+| 2011 | 319 | 7 | 7 | 2.19% | 100.0% |
+| 2012 | 255 | 6 | 5 | 1.96% | 83.33% |
+| 2013 | 270 | 8 | 8 | 2.96% | 100.0% |
 | 2014 | 279 | 1 | 1 | 0.36% | 100.0% |
-| 2015 | 272 | 1 | 1 | 0.37% | 100.0% |
-| 2016 | 298 | 1 | 1 | 0.34% | 100.0% |
-| 2017 | 295 | 1 | 1 | 0.34% | 100.0% |
-| 2018 | 371 | 4 | 4 | 1.08% | 100.0% |
+| 2015 | 272 | 3 | 3 | 1.1% | 100.0% |
+| 2016 | 298 | 4 | 4 | 1.34% | 100.0% |
+| 2017 | 295 | 3 | 3 | 1.02% | 100.0% |
+| 2018 | 371 | 6 | 6 | 1.62% | 100.0% |
 | 2019 | 317 | 1 | 1 | 0.32% | 100.0% |
 | 2020 | 360 | 2 | 1 | 0.28% | 50.0% |
-| 2021 | 348 | 6 | 6 | 1.72% | 100.0% |
+| 2021 | 348 | 7 | 6 | 1.72% | 85.71% |
 | 2022 | 367 | 4 | 4 | 1.09% | 100.0% |
-| 2023 | 362 | 7 | 7 | 1.93% | 100.0% |
-| 2024 | 378 | 4 | 4 | 1.06% | 100.0% |
-| 2025 | 317 | 3 | 3 | 0.95% | 100.0% |
-| 2026 | 257 | 2 | 1 | 0.39% | 50.0% |
+| 2023 | 362 | 8 | 7 | 1.93% | 87.5% |
+| 2024 | 378 | 6 | 5 | 1.32% | 83.33% |
+| 2025 | 317 | 4 | 4 | 1.26% | 100.0% |
+| 2026 | 257 | 5 | 4 | 1.56% | 80.0% |
 
 ## Quality
 
@@ -105,25 +105,27 @@ Warning counts below are accepted assets carrying each warning, including altern
 
 | Accepted version warning | Assets |
 |---|---:|
-| acoustic | 7 |
+| acoustic | 9 |
 | censorship_or_version_variation | 4 |
-| clean | 3 |
-| explicit | 4 |
-| karaoke | 1 |
-| live | 19 |
-| remix | 5 |
+| clean | 5 |
+| explicit | 6 |
+| karaoke | 2 |
+| live | 39 |
+| medley | 1 |
+| remix | 6 |
 | version_explicit | 1 |
 | version_label_present_in_candidates | 24 |
 
 | Accepted text warning | Assets |
 |---|---:|
-| annotation_or_repetition_uncertainty | 58 |
+| annotation_or_repetition_uncertainty | 124 |
+| censorship_markers | 1 |
 | censorship_or_version_variation | 4 |
 | contradictory_clean_dirty_metadata | 1 |
 | escaped_artist_separators | 1 |
-| formatting_cleanup | 109 |
+| formatting_cleanup | 213 |
 | localized_encoding_noise_retained | 1 |
-| minor_transcription_variation | 1 |
+| minor_transcription_variation | 8 |
 | multiple_transcriptions | 46 |
 | repetition_or_backing_vocal_uncertainty | 5 |
 | source_duration_anomaly | 1 |
@@ -137,8 +139,12 @@ Warning counts below are accepted assets carrying each warning, including altern
 | Billboard identity explicitly offers alternative performers; cache contains materially different Bow Wow and R. Kelly versions. No unambiguous asset-level text selection. | 1 |
 | Carry forward reviewed empty search | 5 |
 | Correct title/artist records consistently mark instrumental and provide no lyrics; retain identity success separately from missing text. | 3 |
+| Identity established; text or version requires review | 2 |
 | Lead performer/title agree, but Raelets credit is not substantiated by cached metadata. Backing responses alone do not identify the singers. | 1 |
 | Lead performer/title agree, but cached metadata does not establish the Jordanaires credit; retain the plausible Elvis text without approving the full mapping. | 1 |
+| Materially different plausible lyric texts | 20 |
+| No LRCLIB candidates | 4 |
+| No full compatible title and artist credit | 11 |
 | Ramsey Lewis/title agree but Earth, Wind & Fire participation is absent from cached credit evidence. | 1 |
 | Some records name 50 Cent, none establish the full Game credit; texts vary substantially in length and guest participation remains unresolved. | 1 |
 
@@ -157,3 +163,4 @@ Warning counts below are accepted assets carrying each warning, including altern
 | Started | Finished | State | New attempts | HTTP requests |
 |---|---|---|---:|---:|
 | 2026-09-19T23:14:36.068017+00:00 | 2026-09-19T23:14:36.892156+00:00 | interrupted | 0 | 0 |
+| 2026-09-19T23:15:05.674137+00:00 |  | running | 143 | 165 |

@@ -118,3 +118,9 @@ migration after metadata writing has stopped.
 The [status report](../reports/lyrics_production_status.md) contains all requested
 periods and individual years. During a running acquisition, distinguish usable
 coverage of attempted assets from usable coverage of the whole population.
+The [startup review](../reports/lyrics_production_startup_review.json) records a
+checksum-bound spot check of the first 20 automatic acceptances. It does not
+replace automatic rules or require every future asset to be manually reviewed.
+Run the exhaustive canonical-file validator when the worker is idle; while it is
+writing, a file can briefly precede its manifest commit. Progress reports are
+readable during the run, and the worker validates the corpus when it exits.
