@@ -68,3 +68,48 @@ or clean/explicit variants are interchangeable. Existing review flags remain.
 Reruns skip completed successful/ambiguous/not-found decisions; `--retry-errors`
 only adds failed decisions to the pending queue. They never edit Billboard identity,
 monthly selection, or lyrics. All generated data remains ignored in Git.
+
+## Independent full-population run
+
+The continuation session started the existing script without song/time limits as
+an independent process. It resumes pending study assets and retains the existing
+three-consecutive-errors stop safeguard. It does not retry ambiguous/not-found
+assets or relax the matcher. Current launch details/PID are saved locally in
+`data/cache/musicbrainz_production/background-process.json`; progress is appended
+to `data/cache/musicbrainz_production/production-background.log`.
+
+Check the process and log before starting another worker:
+
+```bash
+pgrep -fl production_metadata.py
+tail -n 5 data/cache/musicbrainz_production/production-background.log
+```
+
+If no worker is running, start/resume from the repository root:
+
+```bash
+mkdir -p data/cache/musicbrainz_production
+nohup python3 -u src/production_metadata.py \
+  >> data/cache/musicbrainz_production/production-background.log 2>&1 < /dev/null &
+metadata_pid=$!
+# macOS: prevent idle sleep while this process runs.
+/usr/bin/caffeinate -i -w "$metadata_pid" >/dev/null 2>&1 < /dev/null &
+```
+
+The current session used Python's `start_new_session=True` with detached standard
+streams for the equivalent independent launch; its process was verified reparented
+to PID 1 and making progress. No service or new pipeline architecture was added.
+The sleep guard does not protect against shutdown, forced sleep, or network loss.
+To stop safely, verify the PID belongs to this command, then send `kill -INT PID`.
+After a stop or completion, inspect the last `Run finished:` log entry, validate,
+and regenerate the report:
+
+```bash
+python3 src/research.py validate
+python3 src/research_report.py
+```
+
+The database is the live progress record; committed reports are dated snapshots.
+Logs, process state, caches, and generated databases remain ignored. Automatic
+restart loops are intentionally absent: repeated provider errors should be
+inspected before explicitly resuming. Use `--retry-errors` only for failed requests.

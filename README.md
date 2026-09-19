@@ -26,7 +26,7 @@ Current status:
 - Weekly/monthly populations: [local build and report](docs/analysis_populations.md) complete
 - Unified research database: [build and schema](docs/research_database.md)
 - Metadata/genre enrichment: [production progress and resume commands](reports/research_dataset_status.md); earlier pilots preserved
-- Lyrics: [source access unresolved](reports/lyrics_source_assessment.md); 200-song pilot list prepared, retrieval not started
+- Lyrics: [source access unresolved](reports/lyrics_permissions_followup.md); 200-song pilot list prepared, retrieval not started
 - Classification: not started
 - Final analysis: not started
 
