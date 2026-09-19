@@ -48,7 +48,10 @@ schemas, tests, reports, and these instructions are the reproducible deliverable
 Lyrics paths and source rights must be established before any acquisition; a
 populated empty manifest is not evidence that lyrics have been attempted.
 
-Current lyrics acquisition is blocked by the [source-access assessment](../reports/lyrics_source_assessment.md).
+The earlier [source-access assessment](../reports/lyrics_source_assessment.md)
+records the pre-pilot decision. The user subsequently authorized a local-only
+LRCLIB technical pilot of exactly the existing 200 assets; full acquisition is
+not authorized by that pilot instruction.
 `python3 src/lyrics_plan.py` prepares the deterministic 200-song pilot from the
 actual monthly population and records `blocked_source_access` for unattempted
 manifest rows. This command has no HTTP implementation. It preserves an existing
@@ -60,3 +63,50 @@ and recent-period coverage. The report distinguishes pending metadata, attempted
 API failures, and unattempted lyrics blocked on access. It never treats an access
 block as a failed identity lookup. [Production metadata instructions](production_metadata.md)
 explain cache/resume behavior and runtime limits.
+
+## Lyrics pilot sidecar
+
+The [pilot results](../reports/lyrics_pilot_results.md) are authoritative for
+lyrics until import. Acquisition writes only `data/processed/lyrics.db`, with
+frozen pilot identities/available metadata in `settings` and incremental results
+in `results`. Canonical successes are `data/lyrics/<song_id>.txt`; HTTP responses,
+attempt logs, and rejected texts stay under ignored `data/cache/lrclib/`.
+The structured results preserve original Billboard identity, candidate evidence,
+source identifiers, retrieval timestamps, selected album/duration, file hashes,
+and review decisions. `review_history` preserves pre-review results.
+
+```bash
+python3 src/lyrics_lrclib.py run       # resume only the frozen 200; skips persisted results
+python3 src/lyrics_lrclib.py validate
+python3 src/lyrics_lrclib.py summary
+python3 src/lyrics_pilot_report.py     # apply checksum-bound reviews and regenerate report
+```
+
+These commands never start the 25,363-asset workload. Error responses remain
+cached; a normal resume does not retry terminal errors. A nonblocking file lock
+prevents concurrent lyrics writers. Text comparison preserves word order and
+repetition, ignores case/accents/punctuation, and treats conflicting normalized
+texts as ambiguous. Artist comparison requires the complete credit; it does not
+infer missing guests. Album and duration metadata support selection only when
+available. Candidate truncation is recorded, so agreement covers returned
+candidates, not an exhaustive catalogue search.
+
+The unified `lyrics_manifest` intentionally remains at its pre-pilot state while
+Codex A writes metadata. Consequently `research_report.py` does not include the
+sidecar's coverage, and unified canonical-file validation will report these
+sidecar-owned files as unmanifested. Use the sidecar validator until import;
+do not rebuild the unified database to address that discrepancy.
+
+After the metadata writer has stopped, the deterministic import command is:
+
+```bash
+python3 src/lyrics_lrclib.py import --metadata-stopped
+python3 src/research.py validate
+```
+
+Import was **not run** during the pilot. It validates text checksums and exact
+pilot identities, refuses conflicting successful files, and updates only lyrics
+manifest rows in one transaction. A busy SQLite writer causes immediate failure;
+no waiting write transaction is imposed on metadata acquisition. It preserves
+the sidecar and its history. The `--metadata-stopped` flag is an operator assertion,
+not an automatic process-control action.
