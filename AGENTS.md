@@ -9,12 +9,15 @@ from 1958 to approximately 2019/2020 and subsequent coverage through 2026. The e
 breakpoint, sampling/weighting choices, classifier, and statistical methods remain
 undecided. Chart dates are not song release dates.
 
-Phase 1 is complete. The current authorized scope is Phase 2A: a metadata-enrichment
-feasibility experiment on about 200 reproducibly sampled identities. Keep its cache,
-candidate matches, and results separate from the canonical Phase 1 database, which
+Phase 1 is complete. Phase 2A was accepted and committed. The current authorized
+scope is local analysis-population construction: preserve all weekly observations
+and derive monthly Top-100 baskets using summed `101 - rank` points. No external
+requests or enrichment are authorized. Preserve Phase 2A, Phase 2A-R, and Phase 2B
+results. Keep derived population tables and exports
+separate from the canonical Phase 1 database, which
 must be opened read-only. Do not enrich the whole dataset, retrieve lyrics, implement
 classifiers, finalize a genre taxonomy, or run statistical analysis. Do not invent
-genre, metadata, or measurements. Show the Phase 2A results and obtain the user's
+genre, metadata, or measurements. Show the population results and obtain the user's
 approval before committing or pushing this work.
 
 ## Source and data model
@@ -32,7 +35,7 @@ approval before committing or pushing this work.
   by different artists is a different asset. External recording links are evidence
   for that asset, not permission to redefine or merge its Phase 1 identity.
 - Prefer precision over recall in enrichment. Preserve all returned raw genres/tags
-  with their entity level (recording, release group, artist); artist tags are not
+  with their entity level (recording, work, single, release group, artist); artist tags are not
   automatically song genres. Dates may support matching but are not chart dates.
 - Preserve Billboard title and artist strings exactly. Artist credits may include
   collaborations; a distinct credit is not necessarily a distinct person or act.
