@@ -9,9 +9,13 @@ from 1958 to approximately 2019/2020 and subsequent coverage through 2026. The e
 breakpoint, sampling/weighting choices, classifier, and statistical methods remain
 undecided. Chart dates are not song release dates.
 
-The current scope is Phase 1: a clean, auditable data foundation. Do not implement
-lyrics acquisition, classifiers, external API enrichment, or statistical analysis
-without explicit authorization. Do not invent genre, metadata, or measurements.
+Phase 1 is complete. The current authorized scope is Phase 2A: a metadata-enrichment
+feasibility experiment on about 200 reproducibly sampled identities. Keep its cache,
+candidate matches, and results separate from the canonical Phase 1 database, which
+must be opened read-only. Do not enrich the whole dataset, retrieve lyrics, implement
+classifiers, finalize a genre taxonomy, or run statistical analysis. Do not invent
+genre, metadata, or measurements. Show the Phase 2A results and obtain the user's
+approval before committing or pushing this work.
 
 ## Source and data model
 
@@ -24,6 +28,12 @@ without explicit authorization. Do not invent genre, metadata, or measurements.
   CSVs are reproducible exports, not separately maintained datasets.
 - `songs` holds one row per **exact original title + artist credit**. Song-level
   metadata belongs separately from the time-varying `chart_observations` table.
+- The research asset is this Billboard title/artist pair; the same title performed
+  by different artists is a different asset. External recording links are evidence
+  for that asset, not permission to redefine or merge its Phase 1 identity.
+- Prefer precision over recall in enrichment. Preserve all returned raw genres/tags
+  with their entity level (recording, release group, artist); artist tags are not
+  automatically song genres. Dates may support matching but are not chart dates.
 - Preserve Billboard title and artist strings exactly. Artist credits may include
   collaborations; a distinct credit is not necessarily a distinct person or act.
 - IDs must be deterministic from the exact identity, independent of input order.

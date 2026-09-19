@@ -37,6 +37,8 @@ local_config.*
 # Rebuildable Phase 1 artifacts; keep the concise Markdown report in Git.
 /data/processed/
 /reports/phase1_data_quality.json
+/data/cache/
+/data/experiments/
 *.db-journal
 *.db-wal
 *.db-shm

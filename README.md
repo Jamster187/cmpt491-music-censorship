@@ -23,7 +23,7 @@ project is still in progress, and we do not have results yet.
 Current status:
 
 - Billboard dataset processing: complete
-- Metadata/genre enrichment: next
+- Metadata/genre enrichment: [200-song pilot complete](reports/phase2a_metadata_feasibility.md), approach under review
 - Lyrics/classification: not started
 - Final analysis: not started
 
