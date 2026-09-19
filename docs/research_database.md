@@ -66,8 +66,9 @@ explain cache/resume behavior and runtime limits.
 
 ## Lyrics pilot sidecar
 
-The [pilot results](../reports/lyrics_pilot_results.md) are authoritative for
-lyrics until import. Acquisition writes only `data/processed/lyrics.db`, with
+The [original pilot results](../reports/lyrics_pilot_results.md) describe the first
+review. [LRCLIB-R](#offline-lrclib-r-review) provides the revised coverage separately.
+Acquisition writes only `data/processed/lyrics.db`, with
 frozen pilot identities/available metadata in `settings` and incremental results
 in `results`. Canonical successes are `data/lyrics/<song_id>.txt`; HTTP responses,
 attempt logs, and rejected texts stay under ignored `data/cache/lrclib/`.
@@ -110,3 +111,33 @@ manifest rows in one transaction. A busy SQLite writer causes immediate failure;
 no waiting write transaction is imposed on metadata acquisition. It preserves
 the sidecar and its history. The `--metadata-stopped` flag is an operator assertion,
 not an automatic process-control action.
+
+## Offline LRCLIB-R review
+
+[Phase LRCLIB-R](../reports/lyrics_lrclib_r_results.md) separates identity confidence
+from text quality for all 83 originally ambiguous assets. The 112 original usable
+files and five not-found cases are carried forward unchanged. It uses no network
+requests and does not alter either acquisition database or canonical lyrics files.
+
+```bash
+python3 src/lyrics_lrclib_r.py build
+```
+
+The versioned [review ledger](../reports/lyrics_lrclib_r_review.json) is the explicit
+case-by-case crosswalk, bound to exact cached candidate hashes. Build checks every
+case, regenerates the aggregate report and case CSV, and prepares 59 recoverable
+texts under ignored `data/cache/lrclib-r/texts/`. The combined 171-asset corpus
+manifest is `data/processed/lyrics_lrclib_r.json`; its `corpus` array references
+both the original 112 files and the 59 reviewed files with exact hashes.
+
+The manifest retains independent identity/text grades, source retrievals,
+alternative candidate diagnostics, warnings, and reversible cleaning provenance.
+Minor transcription or repetition differences do not imply a wrong identity.
+Explicit version/censorship uncertainty remains visible even when text is usable.
+No missing words, repetitions, or censored content are reconstructed.
+
+The original `lyrics_lrclib.py import` command imports only the original pilot
+sidecar, not the revised LRCLIB-R manifest. No Phase LRCLIB-R import or full-scale
+matcher is implemented by this focused review. The reviewed crosswalk is not an
+automatic acceptance rule for unseen songs. Earlier reports remain historical
+records rather than being rewritten to erase the initial conservative result.

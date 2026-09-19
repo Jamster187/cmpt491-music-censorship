@@ -1,0 +1,1315 @@
+{
+  "version": "lrclib-r-v1",
+  "reviews": [
+    {
+      "song_id": "song_08e530bffccdae459ff09e420708f12dcbfe198b2a1080258f765fecb237209e",
+      "billboard_title": "Big Blue Note",
+      "billboard_artist": "Toby Keith",
+      "candidate_id": 1844330,
+      "candidate_sha256": "849792bc17fe06470de623bce61826a5280c9a7a1aaef6e241f56ab59414d884",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Full narrative and structure agree; dialect, word boundaries and short phrase variants remain flagged.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_0fab449799f46c37ab84647fdbb925d8b0bf851a02bdf89db8651d0b6570c0f9",
+      "billboard_title": "Knife Talk",
+      "billboard_artist": "Drake Featuring 21 Savage & Project Pat",
+      "candidate_id": 965305,
+      "candidate_sha256": "8323a2917b926cb56664171c5ef2362f188c17e4382d91ae2a028ec18084681c",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "version_label_present_in_candidates",
+        "censorship_or_version_variation",
+        "escaped_artist_separators"
+      ],
+      "reason": "Complete artist credit is present using escaped null separators. Existing unmasked text aligns with the masked version and shares album/duration. Select it without uncensoring; preserve transcription and censorship warnings.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_1301d2c25f18a41f9dc4037999667dcc1fb6e0729092c2c87b9e0e836b3c1a1a",
+      "billboard_title": "One Step At A Time",
+      "billboard_artist": "Maxine Brown",
+      "candidate_id": 33391809,
+      "candidate_sha256": "37fa72394055bfec556cb914592101e87172f2a1306793d7ec3e802d59c7d48f",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_good",
+      "outcome": "wrong_identity",
+      "warnings": [],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_16744295f86383010f579bda563d7bb8d4b4dcef148426d9790cc472ec6d58ef",
+      "billboard_title": "If I Only Could",
+      "billboard_artist": "The Rowans",
+      "candidate_id": 2520077,
+      "candidate_sha256": "b8073df5ef38662a9a4a0089a490d34e3d6b36736adc6118f3724d22f071089e",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_good",
+      "outcome": "wrong_identity",
+      "warnings": [],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_18bcc5d2858f87db3d5a1f819e210e2500110f392a3e2b3a000605013ec20f72",
+      "billboard_title": "Gangstas",
+      "billboard_artist": "Pop Smoke",
+      "candidate_id": 25410104,
+      "candidate_sha256": "14dbfa504998d5fe6a5c3c3528c737906ae4cf0a9fbcd4734ee09113f41a41ba",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "version_label_present_in_candidates",
+        "censorship_or_version_variation",
+        "contradictory_clean_dirty_metadata"
+      ],
+      "reason": "Same artist and base title with explicit Dirty version suffix; existing substantially unmasked text agrees with core verses of masked candidates. Title and album clean/dirty labels contradict each other; retain warning and do not claim the charted radio version.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_26912991c4f7a66f29c4b3f1b72f5621be6abc945a1a10370498383d74e3ec60",
+      "billboard_title": "Say A'",
+      "billboard_artist": "A Boogie Wit da Hoodie",
+      "candidate_id": 176965,
+      "candidate_sha256": "81347f61111ae1fd3cc11a41d8816897724ff7710ae55b73051b1a2596e7503e",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Substantive verses agree, including unmasked content; contractions, number spelling and ad-libs differ.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_274e336d94b84a777682f759b80d464f299823e3307dca2b94aa4f12d2cbeaa7",
+      "billboard_title": "When You're Mad",
+      "billboard_artist": "Ne-Yo",
+      "candidate_id": 33433452,
+      "candidate_sha256": "4f68e1f91ca47654ddf766e733ecccc3f9657496ded202d1aac4085165530b0f",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "censorship_or_version_variation"
+      ],
+      "reason": "A localized parenthetical alternative does not remove the substantive lyrics. Preserve mixed-version wording and do not automatically uncensor or delete either alternative.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_2e49760b20ceda10ee2e0d142f2b5e954ef7344bdc7b95d7b595b372d03098eb",
+      "billboard_title": "The Deeper The Love",
+      "billboard_artist": "Whitesnake",
+      "candidate_id": 18405661,
+      "candidate_sha256": "96268721dec9e8c6be5e5ab19015fbcdbf6a7bd5cc43cdbc1002ddef58855c49",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Studio-album/remaster entry preferred to a live-labelled alternate; substantive lyric sequence agrees.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_2ed53c67ce66f5371c151199018a1d5c8ff414215993a8d6ddd553906a8cec7e",
+      "billboard_title": "Take Care",
+      "billboard_artist": "Rod Wave",
+      "candidate_id": 34363762,
+      "candidate_sha256": "493016bda46406ebd723d212cfbab526ceb4b95d3cd587a1d89039283aeca754",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_missing",
+      "outcome": "wrong_identity",
+      "warnings": [],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_3198dafc7e0281d3c9ea50fcd1fe571866ef05aa8048cdc41d88c4d9631e9a01",
+      "billboard_title": "X",
+      "billboard_artist": "Jonas Brothers Featuring Karol G",
+      "candidate_id": 4091841,
+      "candidate_sha256": "5361092cc8ef9f0332a1e11c4cbb2c635dd4c183733f4e02eb0a61db5b2b36ca",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_good",
+      "outcome": "wrong_identity",
+      "warnings": [
+        "version_label_present_in_candidates"
+      ],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_341cb28a6ab09001d49777b54e8731098ce839936771c0ec02e8e94e4e968107",
+      "billboard_title": "I'm A Flirt",
+      "billboard_artist": "R. Kelly Or Bow Wow (Featuring T.I. & T-Pain)",
+      "candidate_id": 3736196,
+      "candidate_sha256": "598457a1236231f2dbc661d33adce10740ce08ea21f0489ee8499a8c6c1bba9f",
+      "identity_confidence": "identity_ambiguous",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "identity_ambiguous",
+      "warnings": [
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Billboard identity explicitly offers alternative performers; cache contains materially different Bow Wow and R. Kelly versions. No unambiguous asset-level text selection.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_3972d9f912a9d4ac06d1f8730798459754507eda9d09bfedf546fc15b3667f15",
+      "billboard_title": "When I Grow Too Old To Dream",
+      "billboard_artist": "Ed Townsend",
+      "candidate_id": 18548210,
+      "candidate_sha256": "b19a2b1c759ba646ad70393f7c450dafe281d435575ef35c759b4340b6930a5e",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_good",
+      "outcome": "wrong_identity",
+      "warnings": [],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_3a4515be007339de722f0d7970beade124515f201ef9cb003e073dde93032c32",
+      "billboard_title": "Flooded The Face",
+      "billboard_artist": "Lil Uzi Vert",
+      "candidate_id": 9234958,
+      "candidate_sha256": "89dea87bec18585c8bd331f97fcc1e1a1505a29763305fac27afe12db3b6d998",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "censorship_or_version_variation"
+      ],
+      "reason": "Full unmasked text with duration support; reject the spam candidate and masked alternate. Preserve source version differences and minor transcription uncertainty.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_3fca2bbd0e810e6df6f6091a56c9b00785fa13ab6bad213655791018a5d698c0",
+      "billboard_title": "Wreckage",
+      "billboard_artist": "Nate Smith",
+      "candidate_id": 970558,
+      "candidate_sha256": "472e1bee667fec2bc47fd6219f1bb8bff1e384a7514a9d8d3faedb4412fb1f5a",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Studio album preferred; acoustic-labelled alternate differs by one interjection and does not invalidate the studio text.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_4195a0fafa2a3493431f9b85bf72524d0a808a7813d989924016ef7b1cac277b",
+      "billboard_title": "You Look Like I Need A Drink",
+      "billboard_artist": "Justin Moore",
+      "candidate_id": 12919,
+      "candidate_sha256": "753bacf5ecd8dde3d74786d9321ab48ef56302cdb85f41e44650da0deba5a8d7",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Studio-album text with same duration; small phrase and vocalization differences, no substantial loss.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_4396d766183dc70988461417a65cd6d20f3541094380ad1eb4fe01fc7190c6e2",
+      "billboard_title": "I Will Remember You",
+      "billboard_artist": "Amy Grant",
+      "candidate_id": 1104013,
+      "candidate_sha256": "cc618063bcdf420b18e598d1e63d5ff157c4deffab2fedfbe0707412b12b52ea",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Same album and performer; variants differ by a repeated line and spelling.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_448ff89aa8bba475de4f3070a54f649096dd2f6d289234208f3c317eaeb68711",
+      "billboard_title": "African Waltz",
+      "billboard_artist": "Cannonball Adderley Orchestra",
+      "candidate_id": 1640532,
+      "candidate_sha256": "6cf0cd0696e1c5f3a030b7490e26563794e3b562f4c17ac3652060d45f64c4a3",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_bad",
+      "outcome": "wrong_identity",
+      "warnings": [],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset. Selected candidate also carries text about a different titled song.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_4c96473f1a63f509785606cd479a27c4dbc4f9ab4a3042e4a1a70afb685fe05e",
+      "billboard_title": "You Raise Me Up",
+      "billboard_artist": "Josh Groban",
+      "candidate_id": 18359173,
+      "candidate_sha256": "4654645eeea0507854dea7cbd87c3b9df6e1fbcab8dce086d1cc78750fd93bc3",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Select existing text retaining repeated chorus fragments; alternate abbreviates backing-vocal fragments.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_519b240b455be64da13e6a06614e81c3d1bd12ceaed24180c073d07c10417059",
+      "billboard_title": "Need Your Loving Tonight",
+      "billboard_artist": "Queen",
+      "candidate_id": 33614452,
+      "candidate_sha256": "6d710716ba815369bd827053d223c021edf208c2e3331b16b33f4a218e637d29",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Original-album context and same duration; variants differ by a short phrase, not song identity.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_526742d65f2140d181b076bfc466efd4fe4fa979991d21f5a528c2d4020483ff",
+      "billboard_title": "In My Life",
+      "billboard_artist": "Juvenile Featuring Mannie Fresh",
+      "candidate_id": 36986270,
+      "candidate_sha256": "2bbd8ae4d05ea0dfc8dc117ad61a2cabc07e6914a675f3fcf105eb91acad7efa",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_good",
+      "outcome": "wrong_identity",
+      "warnings": [],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_5aa56fb803f5549454b9da7e4d11b0d75aba85b3728b5c6f2070c623995b7b1f",
+      "billboard_title": "Clean (Taylor's Version)",
+      "billboard_artist": "Taylor Swift",
+      "candidate_id": 4030563,
+      "candidate_sha256": "be8ed6571f86be96c3e895730c93210761e5de67921721687bca4f8b41ee2599",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Exact re-recording title and 271-second metadata support. Variants mainly differ in backing vocalizations; select text without Cyrillic lookalikes. Clean is the song title, not a censorship label.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_5bd250a6dfb4bffd1febde2adbfeaa11b9c8ff88409749607e15731a4730ffe1",
+      "billboard_title": "Red Hot",
+      "billboard_artist": "Herb Alpert",
+      "candidate_id": 33545410,
+      "candidate_sha256": "cc5b93f0edc01f5493527c27368ce1775043fb61fcf5e2f152d03af184152582",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_good",
+      "outcome": "wrong_identity",
+      "warnings": [
+        "version_label_present_in_candidates"
+      ],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_67f806630c66ef02ffd6d60242a5eff8a1ddb62e14a6259cd0acec349f1c4420",
+      "billboard_title": "In My Room",
+      "billboard_artist": "Julia Wolf",
+      "candidate_id": 18921298,
+      "candidate_sha256": "4769817ae9386d4ecfef96b944cecf8ad87e3d289da416a3473e24ffd915299f",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Studio-associated entry preferred to acoustic alternate. Two short grammatical differences do not imply different substantive lyrics.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_6bb14184c41cb9b83881802bf091c508126e91869dd08efa6dfd2bd7bd073b4d",
+      "billboard_title": "Boyz Don't Cry",
+      "billboard_artist": "Rod Wave",
+      "candidate_id": 3811275,
+      "candidate_sha256": "9a90bb396a8ff94f1dc325ad6010917b2e648b07f0cc8bd6a0443c83d9bdfb09",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Album and near-matching duration support identity; choose text without embedded Cyrillic lookalikes. Explicit-labelled alternate is retained as version evidence.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_6c8c4ef5c7313e1a7002f6ef957143fce93e43a58b39df36f059b8658b5d2254",
+      "billboard_title": "Shannon",
+      "billboard_artist": "Henry Gross",
+      "candidate_id": 17990525,
+      "candidate_sha256": "9a6ced36c943ca0e63641a767161eada57e19e002fd817597b0f32981afcfd05",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Same song structure; limited word and spelling differences. Retain transcription uncertainty rather than forcing identical text.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_733e4b6f3321d3f1f4506afc9ec8b748aa2f3f9a3a0759a41152cfdf8ed4aa37",
+      "billboard_title": "The Life Of A Showgirl",
+      "billboard_artist": "Taylor Swift Featuring Sabrina Carpenter",
+      "candidate_id": 24710492,
+      "candidate_sha256": "b8af62c16f9a4ef7dbe5894a5cd7ab4643138125a769150099b389dc27bbad37",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Full featured credit and same duration; choose existing text without Cyrillic lookalikes. Preserve the spoken outro; it is not stripped as metadata.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_75ba670a1f05a7df65285f30002021fa61165bc38583e9d54c0a15f3fce07d8f",
+      "billboard_title": "Keep It Tight",
+      "billboard_artist": "Single Bullet Theory",
+      "candidate_id": 9326705,
+      "candidate_sha256": "6a56ed63680f33404f2592102e73df0d44936d6a71a3098c049bc8b8a18c63a0",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_good",
+      "outcome": "wrong_identity",
+      "warnings": [
+        "version_label_present_in_candidates"
+      ],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_7c4f4c50d7777c82c189cd953b6dd6c26d71c78a42f957e31a7920721b630743",
+      "billboard_title": "Where Are U Now",
+      "billboard_artist": "Skrillex & Diplo With Justin Bieber",
+      "candidate_id": 3667559,
+      "candidate_sha256": "773de8393b8ee17ee73ac027c12dd628a1e3c6027029db75b05e73e85233490f",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates",
+        "repetition_or_backing_vocal_uncertainty"
+      ],
+      "reason": "Same song and full credit. Chopped vocal syllables and repetitions differ; these are not evidence of profanity censorship.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_7d9c13d4f5ba89a7d0a578bbc7bcedc25921c86c86c13f3c42145f23250c4620",
+      "billboard_title": "My True Story",
+      "billboard_artist": "The Jive Five With Joe Rene And Orchestra",
+      "candidate_id": 33793763,
+      "candidate_sha256": "184fdfcee2d75462be623a7c4c5c006f94c6cead2876ae67d76226b65296f245",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [],
+      "reason": "Complete Jive Five and Joe Rene/Orchestra credit is present with slash/ampersand formatting and omitted initial article. Text agrees with other Jive Five records.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_7f6e853a233ec09c2aff52371fc9d208aff913584aae431760808f70377e33d0",
+      "billboard_title": "Little Good-Byes",
+      "billboard_artist": "SHeDAISY",
+      "candidate_id": 1105091,
+      "candidate_sha256": "d9ddedbed57685496ca47a26f94099608a4f4fc7ece7e222eccb9f3c266cf39d",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Same verses; contraction, spelling and ad-lib variation. Original album context retained.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_7f9af958c36d36cdeffcbff6363abd06a58638a9209f20eb3fc7dd16db0bd24d",
+      "billboard_title": "Theme From Magnum P.i.",
+      "billboard_artist": "Mike Post",
+      "candidate_id": 14119422,
+      "candidate_sha256": "069fe92379f5adf5ec49d8e05f795da61845c57f4f34250173a8401f45fb609f",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_missing",
+      "outcome": "missing_text",
+      "warnings": [],
+      "reason": "Correct title/artist records consistently mark instrumental and provide no lyrics; retain identity success separately from missing text.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_80635b25fda6dffda25be708545b04d6d561bbeef5e4fe6132aec116b23614bd",
+      "billboard_title": "Popcorn",
+      "billboard_artist": "Hot Butter",
+      "candidate_id": 34475104,
+      "candidate_sha256": "9701eec32e368d73825ef2f3624e7027224b703f2b3f596498787de87acde94d",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_missing",
+      "outcome": "missing_text",
+      "warnings": [],
+      "reason": "Correct title/artist records consistently mark instrumental and provide no lyrics; retain identity success separately from missing text.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_8120e71930798044a923d46b38051a7abebc3ea5ccfb03136af64de19c257602",
+      "billboard_title": "Let's Get It Up",
+      "billboard_artist": "AC/DC",
+      "candidate_id": 18142881,
+      "candidate_sha256": "263bc91f20aa16956efd275508861700e472ecbb2b6aaf3ffc1ebd0324b68df6",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Same substantive lyric sequence; alternative has spelling errors and live-album context. No automatic live-record substitution.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_86d033ae46a9c9191f1d3536dd1bcce0198eb029169721450d57d5e920f3bb47",
+      "billboard_title": "Time",
+      "billboard_artist": "Hootie & The Blowfish",
+      "candidate_id": 19646002,
+      "candidate_sha256": "b82f2f9199102c3941c9342dfa0e3fdfc25e4c0f86d6888696ab18c721c0c4d9",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Same substantive verses; contractions and small repeated-word differences are minor noise.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_8b3d2a83cce4e9fdd1cd28e6e40c91d451c056ff95d3e3a3343518dd8cbd0a79",
+      "billboard_title": "Who's Johnny (\"Short Circuit\" Theme)",
+      "billboard_artist": "El DeBarge",
+      "candidate_id": 7357443,
+      "candidate_sha256": "439d41723cf1e3558119d7ce21256074ba8273150c7875c74453ee544d13a797",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Only contraction, vocalization and word-boundary differences; identical title, artist and duration.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_8dc62605a85ffa1d9fae315f731f798276f0a954dbc255fe6d9750cd6a1be645",
+      "billboard_title": "Our Lips Are Sealed",
+      "billboard_artist": "Go-Go's",
+      "candidate_id": 18446959,
+      "candidate_sha256": "ada19357469c91653eada3b027c36255155dfc5cdca04429b8a486730069cb89",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "repetition_or_backing_vocal_uncertainty"
+      ],
+      "reason": "Unique verses and bridge are present; the ellipsis abbreviates a final reprise. Minor repetition uncertainty, not loss of the main substantive content.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_90563df1949ca1abc5bbb8a2d94ea3588b5cbdf22f1fd503bf9022754df6f3fc",
+      "billboard_title": "All About My Girl",
+      "billboard_artist": "Jimmy McGriff",
+      "candidate_id": 4680973,
+      "candidate_sha256": "a45a5e89ddf4392b45c78e9dc3b29d88c2dd1bb9c2930fad3beb3b39f888405e",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_missing",
+      "outcome": "missing_text",
+      "warnings": [],
+      "reason": "Correct title/artist records consistently mark instrumental and provide no lyrics; retain identity success separately from missing text.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_9236011f681000748404155e675fd22684d11d700d20e44f3b232c2c5e0ac92d",
+      "billboard_title": "MJB Da MVP",
+      "billboard_artist": "Mary J. Blige Featuring The Game & 50 Cent",
+      "candidate_id": 34902212,
+      "candidate_sha256": "a4728174323a90629a32b8b9c96ed4a6903abfd6b33fbf6417b44b139bc8f0c7",
+      "identity_confidence": "identity_ambiguous",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "identity_ambiguous",
+      "warnings": [],
+      "reason": "Some records name 50 Cent, none establish the full Game credit; texts vary substantially in length and guest participation remains unresolved.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_93a879908132f659283549dd5d71958dc008d9a4669acc394eb19915fe2a5b89",
+      "billboard_title": "Come Over",
+      "billboard_artist": "Kenny Chesney",
+      "candidate_id": 1738253,
+      "candidate_sha256": "6f209d429c7f04b5544a4c29724e3f8e6598d632ae322bd2d72b2be02e5cf9ba",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Same complete substantive verses; repeated backing phrases and ending vocalizations differ.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_96a824795fbd3e6d71280446ab40c66fbaa36b8591aeb420d87d913eb9083daa",
+      "billboard_title": "Spin That Wheel",
+      "billboard_artist": "Hi Tek 3 Featuring Ya Kid K",
+      "candidate_id": 3174139,
+      "candidate_sha256": "70ca5f1e9051abc3301c0bbf947035c67443cfbbd12485cbc9f81bf35eba947f",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [],
+      "reason": "Source credit explicitly names Ya Kid K but abbreviates Hi Tek 3; other Hi Tek 3 records share substantive text and the lyrics identify Ya Kid K. Explicit reviewed crosswalk only.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_987ddcc85a12cc5e3a35dc90033183e3c366ca6bb9b4406de44f6e0fbfbabed1",
+      "billboard_title": "Midnight Train To Georgia",
+      "billboard_artist": "Gladys Knight And The Pips",
+      "candidate_id": 17831867,
+      "candidate_sha256": "59530f81da656bf68fc23828079593aaa9d80de15e8475e824ea3a9f0fa4034d",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "repetition_or_backing_vocal_uncertainty"
+      ],
+      "reason": "Core verses and narrative agree; differences concentrate in backing-vocal dialogue, transcription and repeated ending. Retain repetition uncertainty.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_98db8d85b7446d09ab303887e18e395278ac921185c2766c172d5236b843aabb",
+      "billboard_title": "Gato de Noche",
+      "billboard_artist": "Nengo Flow & Bad Bunny",
+      "candidate_id": 5684907,
+      "candidate_sha256": "0050298ca6583a79895f4ef78b640baafff18202cb91f27534cfdd8b64a56809",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Full artist credit including accent variation; Spanish contractions, spelling and ad-libs vary while substantive sections agree. Preserve transcription uncertainty.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_9a679d8c1bd551daece187a4fa21420b52a9f9279e34406e57142dac00281c5d",
+      "billboard_title": "Steady Mobbin'",
+      "billboard_artist": "Young Money Featuring Gucci Mane",
+      "candidate_id": 35084721,
+      "candidate_sha256": "1b85546ab5c49d02788d84299c36066deaadb08673e54e49a825fc0034460901",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "source_duration_anomaly"
+      ],
+      "reason": "The 310-second record has the full group/guest credit plus Lil Wayne, matches available duration/album evidence, and its text is identical to the 165-second full-credit record. Select the existing duration-supported text; no canonical recording requirement.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_9bc40a56b63b6b61c7cb831bc7e154ce190d3185150348f318a280cfd30bf99b",
+      "billboard_title": "Out Of Mind Out Of Sight",
+      "billboard_artist": "Models",
+      "candidate_id": 1728520,
+      "candidate_sha256": "71f7e9d7517942467a9fd3713a0987cfb0ce2bdd0d0a0b50b9a28032613e011c",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Matching song, album and duration; limited transcription/ad-lib differences with intact core sections.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_9c593bfef628c5ef2a1604ebb9296d227a8e7d4816e4b9791eb23586b1111c37",
+      "billboard_title": "Sitting Home",
+      "billboard_artist": "Total",
+      "candidate_id": 1858723,
+      "candidate_sha256": "bb9c2d7d3689f4db7c663bd5beb20040c8f364a5d0efd51a2e5df9cd5cd00ccd",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Same verses with differing ad-libs/refrain repetition. Explicit album label is a warning, not an automatic text rejection.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_9deb80b4c8f23fdff3e526f3ddb663fb61b505a09e80105ef266c92a9f1798ba",
+      "billboard_title": "Still",
+      "billboard_artist": "John Schneider",
+      "candidate_id": 18904205,
+      "candidate_sha256": "87980b2f4c6c1be57c715cf97bd4377fcf51002a0f39482f96fc3b05cdebc89f",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_good",
+      "outcome": "wrong_identity",
+      "warnings": [],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_a1e7483c257a87c69a31d2a09f8c27241822f2d22a709db78e6c65fc25bcd397",
+      "billboard_title": "Theme From Mission: Impossible (From \"Mission: Impossible\")",
+      "billboard_artist": "Adam Clayton & Larry Mullen",
+      "candidate_id": 11621880,
+      "candidate_sha256": "4c3763cd1dc0fb0ca34f9b1cc784b3012a42354f943d8e3333453d4d785a0ef4",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_missing",
+      "outcome": "wrong_identity",
+      "warnings": [],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_ab62e36d4d04cc57df1cb4086822cb2997359958c35c41e32892cf5d81ea2370",
+      "billboard_title": "Sweet Thing",
+      "billboard_artist": "Mick Jagger",
+      "candidate_id": 17380847,
+      "candidate_sha256": "61c3db5292ccd7e9a4fc9310eacb4e6a78e367f516f87f2bb7ac455cde6ea9f5",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Complete source text retains the repeated ending omitted in another transcription.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_ab80535807e6d70626bb315b6acbdf10a776c4a86f6c1f75237835be20f43f36",
+      "billboard_title": "This",
+      "billboard_artist": "Darius Rucker",
+      "candidate_id": 1485285,
+      "candidate_sha256": "e7abd5f970f21517f8566646c0ea2cc1e4f4c625124754aeaba85ec6b1ce91ad",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Same complete narrative; minor contraction and short-word differences.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_af260cef2d3a9827d77b29eaa6bd08bf97ad4a271b17308136c8cea24830c0e6",
+      "billboard_title": "Peter Piper",
+      "billboard_artist": "Frank Mills",
+      "candidate_id": 18599355,
+      "candidate_sha256": "014a6a68d9c69596838f5c38cc3ba54a521217abea2028983bd4cf2b11a9e5a4",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_good",
+      "outcome": "wrong_identity",
+      "warnings": [],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_af4803fb43d5ab5674ef905018bc9bfaf1793ee6090da8d4378f2ad04c57c0d9",
+      "billboard_title": "Spin Bout U",
+      "billboard_artist": "Drake & 21 Savage",
+      "candidate_id": 1148831,
+      "candidate_sha256": "9e713eafbd04dd95d56c95db257582ebea3aee435fb556dc76c9815bcbc46852",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Full credit and album agree; few short transcription differences, no masking or omitted verse.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_b0e65be90edc7a0628b8174a5bfaaf38152c787a8cdbf0d6ff8e564b34ae1a8b",
+      "billboard_title": "Agora Hills",
+      "billboard_artist": "Doja Cat",
+      "candidate_id": 23573766,
+      "candidate_sha256": "2470ed88d9780f4211238fe8a26a084c9858275c7637e5f5869dc34d0992cba5",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Full substantive sections agree; shorter/longer duration entries share the song with minor transcription/ad-lib differences. Duration metadata is not a prerequisite.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_b1a09409b8c1de23d7df8dc080706b8d6f14b2d1b0bb37eb018f13747abf854b",
+      "billboard_title": "Chickens",
+      "billboard_artist": "Future Featuring EST Gee",
+      "candidate_id": 2158838,
+      "candidate_sha256": "0dc17f0da9d20a526bf650df9d59e69597d3d85492eac4bf8aa4d3d64f38472c",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Full featured credit and album agree; differences are ad-lib ordering, contractions and number spelling.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_b3deff4c1169e6b5049ef1f4df762177cb9b9ff32729ceebb65560860d24027b",
+      "billboard_title": "A Natural Man",
+      "billboard_artist": "Lou Rawls",
+      "candidate_id": 1342365,
+      "candidate_sha256": "d68f5a5038856ef0dbc8f5d3f484a1ab336137b5bc6fb69e56af8297b1372f45",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Minor wording and repeated-ending differences; same title, performer and duration.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_b4d338dbaef426dd18dd03767458b25827f57682f9d9b2150a869d67d0bcc52c",
+      "billboard_title": "Do It Again (Put Ya Hands Up)",
+      "billboard_artist": "Jay-Z Featuring Beanie Sigel & Amil",
+      "candidate_id": 535714,
+      "candidate_sha256": "f3b329795fdb4df4e7384f4f610d33fec27fe7881a6a2f6674c0151768e9560f",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Full featured credit, album and 279-second duration support the match. Variants share substantive lyrics with short ad-lib/name-transcription differences.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_bcbfa07af3567b1136f85e44ae137f9c02b4207a2dcf54e3d66eda712a4ca330",
+      "billboard_title": "Use Your Heart",
+      "billboard_artist": "SWV",
+      "candidate_id": 778008,
+      "candidate_sha256": "fe8aa53c59cd956924b1216566331ac10df617be8ffc6301ecffa646e1b7dc57",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Select existing longer transcription; shorter-duration alternate omits a refrain repetition, not a different verse.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_bf8b4aa80c5566c98719d110170f393ae236606c2611d2b21b45f5cd31b00f74",
+      "billboard_title": "Family Man",
+      "billboard_artist": "Daryl Hall John Oates",
+      "candidate_id": 33893555,
+      "candidate_sha256": "9486fedfe660e98007ae8b70b1d87b4599ffae424f7014a3b6405e93f8deffaa",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [],
+      "reason": "All original artist-name tokens appear in order; source inserts the missing collaboration separator. No person or act is removed.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_c0a1bd03042d76857f5dba1a28043352cd648c745a86f5243c3aeed4255a4b9c",
+      "billboard_title": "I Chose To Sing The Blues",
+      "billboard_artist": "Ray Charles & The Raelets",
+      "candidate_id": 1598870,
+      "candidate_sha256": "97e69491f6f6a6427a9a6439d5a32632f4915f432ca8ca63bc375fde0e60eb06",
+      "identity_confidence": "identity_ambiguous",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "identity_ambiguous",
+      "warnings": [],
+      "reason": "Lead performer/title agree, but Raelets credit is not substantiated by cached metadata. Backing responses alone do not identify the singers.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_c0dea8cfb6162ceeb77aaf197f7f4db2b922431d7d30dd766b7f26160f68beed",
+      "billboard_title": "Killin' Time",
+      "billboard_artist": "Fred Knoblock & Susan Anton",
+      "candidate_id": 17670457,
+      "candidate_sha256": "c65debf4f4c4848ddc903cf74c0e39d0168641bc3f052afd2d937142da8d1915",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_good",
+      "outcome": "wrong_identity",
+      "warnings": [
+        "version_label_present_in_candidates"
+      ],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_c41214401d95ebe1f0bcbcea358374682b98362dcbbc7e07eb46c8100439c632",
+      "billboard_title": "Fame And Fortune",
+      "billboard_artist": "Elvis Presley With The Jordanaires",
+      "candidate_id": 33458398,
+      "candidate_sha256": "1084ae9bac11e0b29b62143c43a81164e0b8fe517e1e405c7028d91f04a3ca57",
+      "identity_confidence": "identity_ambiguous",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "identity_ambiguous",
+      "warnings": [],
+      "reason": "Lead performer/title agree, but cached metadata does not establish the Jordanaires credit; retain the plausible Elvis text without approving the full mapping.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_cbcf7e8b4aaed8323a4996949e27029a5d7a242d19c978707ed3078252f13550",
+      "billboard_title": "Like A Child",
+      "billboard_artist": "Noel",
+      "candidate_id": 16818639,
+      "candidate_sha256": "4646387506e9da7c472b63d3abc28aa95d00f15d3853ed7c8832642da3477579",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "repetition_or_backing_vocal_uncertainty"
+      ],
+      "reason": "Select an existing expanded text with both verses and refrain repetitions; do not synthesize repeats from the abbreviated alternate.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_cbec98894dd92a075f7cd9b3c2691a64e310640c67b8cf506fc0083e700df9f1",
+      "billboard_title": "Clara Bow",
+      "billboard_artist": "Taylor Swift",
+      "candidate_id": 8799461,
+      "candidate_sha256": "e77692e0df9a33eb5652bd6fd3c1841f7b3a1361982f12268e5b5619bfb90905",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Same album and 217-second duration; choose the more coherent existing transcription rather than its malformed short-phrase alternate. Preserve transcription uncertainty.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_cc2084136dab17d71f2d4674b14521be6233fc1b3e40c3bcd7c580d2af549d67",
+      "billboard_title": "Whatever You Want",
+      "billboard_artist": "Tony Toni Tone",
+      "candidate_id": 9495633,
+      "candidate_sha256": "11a19f1f07c1d21c0875cc9799e9fa70b7d316a8b936c5b24f08008161b3e436",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "repetition_or_backing_vocal_uncertainty"
+      ],
+      "reason": "Select existing full refrain text rather than an alternate using refrain multipliers. Tail repetition uncertainty is retained.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_cca8a466e0bd8d84b8dfcf6170154c13a09416cde91553f0c1c6768e816304d4",
+      "billboard_title": "Wonderland",
+      "billboard_artist": "Commodores",
+      "candidate_id": 18784406,
+      "candidate_sha256": "cee40a8544f53a8023e739ad2b77c199c11708d801811725d149f49c7d4efcd6",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_bad",
+      "outcome": "bad_text",
+      "warnings": [],
+      "reason": "All matching cached texts stop after 49 words with a continuation fragment; substantial truncation.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_ce228c19b5a43872f5bb27a302ebf318ba8f5d76d69d49c09dc1f700e6f90ae5",
+      "billboard_title": "Blue Magic",
+      "billboard_artist": "JAY-Z",
+      "candidate_id": 532533,
+      "candidate_sha256": "5a0832a3a681c6dd79e63c14de9d6031c43aec6feaf01eaf49b2a6721b265682",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Select existing full text including spoken material; competing text omits the spoken ending and has additional transcription errors.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_cf4a089cb726156335a0a1938059240ebbb2d245a3e568d0748469a79b8f616c",
+      "billboard_title": "It Matters To Me",
+      "billboard_artist": "Faith Hill",
+      "candidate_id": 7343,
+      "candidate_sha256": "b1745221c843b43d13756334033500e70335b769b0d3cd6a5960e6116f085b39",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Same substantive verses; outro vocalizations differ. Album identity agrees.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_cf589cc822c3fa12959e51d28f2594840790c6927a32be3959e491d563abe8d5",
+      "billboard_title": "Kyrie",
+      "billboard_artist": "Mr. Mister",
+      "candidate_id": 34465103,
+      "candidate_sha256": "2574a6e8e18fcfda2735ea252fa4f781035d9ece8f29571bdcc7c34dce9e0952",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Variants differ in repeated vocalizations and outro repetitions; substantive verses agree.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_d4839d51fc713ec141422031d39fa6de9cfeb271fe83b63737157dbd5737f8ad",
+      "billboard_title": "Contagious",
+      "billboard_artist": "The Isley Brothers Featuring Ronald Isley",
+      "candidate_id": 17844277,
+      "candidate_sha256": "9450d01b116d3d08d01ade087b252df8e26713b7f0d24581fe944b2366248d96",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [],
+      "reason": "Complete original credit is present; extra AKA Mr. Biggs is attached to Ronald Isley, not an additional performer. Preserve spoken introduction.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_d6a6043c059f6b94979fe8cb49837cce93d4ec4ab70f2f54775b465bac5be946",
+      "billboard_title": "If It Wasn't For Bad Luck",
+      "billboard_artist": "Ray Charles & Jimmy Lewis",
+      "candidate_id": 9361470,
+      "candidate_sha256": "294cc3a12cd6f703e934e64118add1f71a1b24024f46226843de942aba133905",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [],
+      "reason": "Source reverses Ray Charles name order and omits the duet partner in metadata, but alternate cached text explicitly labels Jimmy Lewis and the shared dialogue names both. Select the header-free existing text.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_e04801e65ad0087b20af8e6dfbab974d99b2e91c101830036419dcfb4914452b",
+      "billboard_title": "Say You'll Be Mine",
+      "billboard_artist": "Christopher Cross",
+      "candidate_id": 5084871,
+      "candidate_sha256": "39608a15db91a96afd0281742bc43410277a839d9a31580932b4d7405f9dc629",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Select the complete verse/refrain transcription; competing text abbreviates/reorders repeated material.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_e0cd54245d8abe6abb3c259188a376da1f4840bf88066ca34f5ed0f60e4507e6",
+      "billboard_title": "1+1",
+      "billboard_artist": "Beyonce",
+      "candidate_id": 763843,
+      "candidate_sha256": "cc1744da4c98883e4e3a08d22c8263438e75abd3126d212f26ded161d532bc03",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Same album, performer and substantive text; contractions and vocalizations differ.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_e738f2731d9d2524e169e35984da22ff6e5158b7c3e912833b6bb7860b08610e",
+      "billboard_title": "Give Me All Your Luvin'",
+      "billboard_artist": "Madonna Featuring Nicki Minaj & M.I.A.",
+      "candidate_id": 33407283,
+      "candidate_sha256": "818b5552b2bae1dd99602b081a721fc7bc94c319bbde472570b4075b4f2bd123",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Full featured credit and album support selected text; competing remix-labelled transcription contains more spelling and annotation noise. Preserve version warning.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_ec1c2d3fd4c06c0fea1c3a1d740406646a373d75bee44b11bf307aaa335ccd8d",
+      "billboard_title": "Love At 1st Sight",
+      "billboard_artist": "Mary J. Blige Featuring Method Man",
+      "candidate_id": 17650933,
+      "candidate_sha256": "d1434027462d03011f438f00d7a875f06d8191e56487e1d4f4aa669125750b6c",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [],
+      "reason": "Featured Method Man credit is moved into the track title. Retain both names in the explicit mapping; do not drop the guest.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_eee6105b0b625d5179a11641329c29787c6845bf57f4d6fe25f3f62c462e232f",
+      "billboard_title": "Hot Dawgit",
+      "billboard_artist": "Ramsey Lewis And Earth, Wind & Fire",
+      "candidate_id": 25311874,
+      "candidate_sha256": "9a64ff088eb1f1c961e3c706c1cdd7c771a420770ce12a1a4c227e151389fa9c",
+      "identity_confidence": "identity_ambiguous",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "identity_ambiguous",
+      "warnings": [],
+      "reason": "Ramsey Lewis/title agree but Earth, Wind & Fire participation is absent from cached credit evidence.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_f1028b14cfd168ca06a7442ba35dbe2a9c2a9474ace78cf9d42b41fa013eef71",
+      "billboard_title": "The Trouble With Girls",
+      "billboard_artist": "Scotty McCreery",
+      "candidate_id": 8314235,
+      "candidate_sha256": "d56c2a25daae0d1afa1f55936bf7fd662d71455496fbe9721730e9adad570e6b",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Same substantive lyrics; expanded contractions and short function-word differences.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_f1b1b9c3d6bcd8afaa65798c935ab2df3a72ec5dab43f56a1ce321a7c4f7c2ad",
+      "billboard_title": "Take That",
+      "billboard_artist": "Torrey Carter Featuring Missy \"Misdemeanor\" Elliott",
+      "candidate_id": 17425515,
+      "candidate_sha256": "bc82132bb54a7556c5e566a9470dd591140ffdafcfdf981c0a51483b9f9e116d",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_good",
+      "outcome": "wrong_identity",
+      "warnings": [
+        "version_label_present_in_candidates"
+      ],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_f555fed17ea6a9414e9708b13f2f75287727b663a3de1a07561cb1bf05fc657e",
+      "billboard_title": "An American Trilogy",
+      "billboard_artist": "Mickey Newbury",
+      "candidate_id": 10320212,
+      "candidate_sha256": "ea1e45cf0d539420864686df1db421da80ecdeb71c59c9a9e280905514db46dd",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "version_label_present_in_candidates"
+      ],
+      "reason": "All three medley sections are present. Remove only the explicit title/artist/writer header; no lyric reconstruction.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_f9a9a6eaa2ffaa9fad9a111035049c3cfa552a71480a0ff0e358cc40cd4ee3f6",
+      "billboard_title": "Gone Till November",
+      "billboard_artist": "Wyclef Jean",
+      "candidate_id": 33504604,
+      "candidate_sha256": "6a0cfd0d9be0e57f6571a9698a1d77bf72cacba9de1223a6732231176e0bc2fc",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "localized_encoding_noise_retained"
+      ],
+      "reason": "One localized encoding defect in 548 words is minor noise; leave it unchanged rather than guess a repair.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_faa0e48f9b6e0a4a092f2ce055e9c5d96d70c0abe941a888a98bd2ebfb4ad1f3",
+      "billboard_title": "Sunflower (Spider-Man: Into The Spider-Verse)",
+      "billboard_artist": "Post Malone & Swae Lee",
+      "candidate_id": 34477745,
+      "candidate_sha256": "8f88bc2d207d2b1197f26c6d9784245f4f76bc542131b771555e08ab4adb64eb",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Same complete lyric text apart from vocalization spelling and a short pronoun difference.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_fb705084f1853c9fb6af93a149345854b667c7469517de51e46fe47a2eaa92ca",
+      "billboard_title": "Radio Romance",
+      "billboard_artist": "Tiffany",
+      "candidate_id": 176700,
+      "candidate_sha256": "347fdba2c7c82f5afaa02f57e5ed44379b906f0aa42104a4c4a1a8c203775648",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Same verses and artist; differences are primarily vocalizations and outro ordering.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_fbadc227141affcd5207688f1b8ca6a7aa747c9b19bedfbbd890da7608a7ee6d",
+      "billboard_title": "Settle For A Slowdown",
+      "billboard_artist": "Dierks Bentley",
+      "candidate_id": 9914,
+      "candidate_sha256": "d5f310806c3df3e9d93d36a625c5ec635446d74e0642b05609a80dbdd751072b",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_good",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions",
+        "version_label_present_in_candidates"
+      ],
+      "reason": "Same verses, album and duration; contractions and word boundaries account for differences.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_fe7b34a8a29216fc665ad74de49eec5cf1f55f340ce91ba390f4258243d50d7c",
+      "billboard_title": "Beat This Summer",
+      "billboard_artist": "Brad Paisley",
+      "candidate_id": 3506922,
+      "candidate_sha256": "ace38a93ded01058b59bf80c25ee2dbd2f811f9a550eec70d492e679452ace3f",
+      "identity_confidence": "identity_high_confidence",
+      "text_quality": "text_usable_with_minor_noise",
+      "outcome": "recoverable",
+      "warnings": [
+        "multiple_transcriptions"
+      ],
+      "reason": "Album-associated complete text selected; competing text contains spelling/short-word differences. No rewriting.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    },
+    {
+      "song_id": "song_fea09f4fea98fd5355d4c82d9c64e8aecaa8f08979fb415ac4a3d57eed765b38",
+      "billboard_title": "New York",
+      "billboard_artist": "Ja Rule Featuring Fat Joe & Jadakiss",
+      "candidate_id": 9002484,
+      "candidate_sha256": "39f658f89f2a7a7b561dee2190de7edc92e6a512cd79923e963a039a51103205",
+      "identity_confidence": "identity_wrong",
+      "text_quality": "text_good",
+      "outcome": "wrong_identity",
+      "warnings": [],
+      "reason": "All cached candidate credits refer to other performers or other titles; none supports the Billboard asset. Text quality describes the inspected available record, not its suitability for this asset.",
+      "reviewer": "Codex B",
+      "review_scope": "Cached candidate metadata and text excerpts; full token comparisons computed and differences inspected, with targeted text checks; no audio or network verification"
+    }
+  ]
+}
