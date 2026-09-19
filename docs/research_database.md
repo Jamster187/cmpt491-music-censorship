@@ -1,5 +1,12 @@
 # Unified research database
 
+The reviewed LRCLIB pilot is now approved for full-population acquisition. See
+[production lyrics instructions](lyrics_production.md) and the
+[current sidecar status](../reports/lyrics_production_status.md). Production adds
+`production_*` tables to `data/processed/lyrics.db` and never writes `research.db`.
+The pilot-only commands and authorization statements below document earlier
+stages; use the production validator/resume commands for the expanded corpus.
+
 Build or validate locally:
 
 ```bash

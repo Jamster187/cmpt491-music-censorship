@@ -152,8 +152,9 @@ def snapshot():
 
 
 class Client:
-    def __init__(self, root=ROOT):
+    def __init__(self, root=ROOT, user_agent=USER_AGENT):
         self.root=root; self.cache=root/'data/cache/lrclib'; self.requests=0
+        self.user_agent=user_agent
         self.cache.mkdir(parents=True,exist_ok=True)
         self.clock=self.cache/'cooldown.json'
 
@@ -169,7 +170,7 @@ class Client:
             while time.time()<until: time.sleep(min(1,until-time.time()))
             start=time.time(); code=None
             try:
-                req=urllib.request.Request(url,headers={'User-Agent':USER_AGENT,'Accept':'application/json'})
+                req=urllib.request.Request(url,headers={'User-Agent':self.user_agent,'Accept':'application/json'})
                 self.requests+=1
                 with urllib.request.urlopen(req,timeout=30) as response:
                     code=response.status; body=response.read().decode('utf-8'); headers=dict(response.headers)
@@ -178,14 +179,17 @@ class Client:
             except (urllib.error.URLError,TimeoutError,OSError) as ex:
                 body=json.dumps({'error':type(ex).__name__,'message':str(ex)});headers={}
             retry=0.5
-            if code==429:
-                raw=headers.get('Retry-After',headers.get('retry-after','60'))
+            raw=headers.get('Retry-After',headers.get('retry-after'))
+            if code==429 or raw is not None:
+                raw=raw or '60'
                 try: retry=max(0.5,float(raw))
-                except ValueError: retry=max(0.5,parsedate_to_datetime(raw).timestamp()-time.time())
+                except ValueError:
+                    try: retry=max(0.5,parsedate_to_datetime(raw).timestamp()-time.time())
+                    except (ValueError,TypeError,OverflowError): retry=60
             elif code is None or code>=500: retry=2**(attempt+1)
             save_json(self.clock,{'until':time.time()+retry})
             record={'url':url,'status':code,'body':body,'sha256':digest(body.encode()),'retrieved_at':stamp(),
-                    'seconds':time.time()-start,'user_agent':USER_AGENT,'retry_after':headers.get('Retry-After')}
+                    'seconds':time.time()-start,'user_agent':self.user_agent,'retry_after':raw}
             # Preserve every attempt without putting raw lyrics into tracked locations.
             save_json(self.cache/(path.stem+'-attempt-'+str(time.time_ns())+'.json'),record)
             if code==200 or (code is not None and code<500 and code!=429): break

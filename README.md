@@ -26,7 +26,7 @@ Current status:
 - Weekly/monthly populations: [local build and report](docs/analysis_populations.md) complete
 - Unified research database: [build and schema](docs/research_database.md)
 - Metadata/genre enrichment: [production progress and resume commands](reports/research_dataset_status.md); earlier pilots preserved
-- Lyrics: [offline LRCLIB-R review completed](reports/lyrics_lrclib_r_results.md); revised usable coverage 171/200, full acquisition stopped; [storage/reproduction instructions](docs/research_database.md#offline-lrclib-r-review)
+- Lyrics: reviewed pilot approved (171/200 usable); [production matcher safety check](reports/lyrics_production_pilot.md), [full acquisition status](reports/lyrics_production_status.md), and [storage/resume instructions](docs/lyrics_production.md)
 - Classification: not started
 - Final analysis: not started
 
