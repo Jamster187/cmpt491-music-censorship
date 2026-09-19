@@ -36,6 +36,20 @@ def collect(conn):
     for row in conn.execute('SELECT evidence_json FROM metadata_matches'):
         flags.update(json.loads(row[0]).get('review_flags') or [])
     summary['metadata_review_flags']=dict(flags)
+    summary['metadata_field_coverage']={}
+    fields=[('recording','id'),('artist','id'),('release-group','id'),
+            ('recording','tags'),('recording','genres'),('recording','length'),('recording','isrcs'),
+            ('release','date'),('release','title'),('release-group','genres'),('artist','genres')]
+    for scope,field in fields:
+        sql="""SELECT count(DISTINCT l.song_id) FROM song_external_links l
+          JOIN external_entities e USING(provider,entity_type,entity_id)
+          JOIN metadata_matches m USING(song_id)
+          WHERE m.match_status='high_confidence' AND e.entity_type=? AND EXISTS
+          (SELECT 1 FROM json_each(e.metadata_json) v WHERE
+           CASE json_type(v.value,?) WHEN 'array' THEN json_array_length(json_extract(v.value,?))>0
+           WHEN 'text' THEN length(json_extract(v.value,?))>0
+           WHEN 'integer' THEN json_extract(v.value,?)>0 ELSE 0 END)"""
+        summary['metadata_field_coverage'][scope+'.'+field]=conn.execute(sql,(scope,*(['$.'+field]*4))).fetchone()[0]
     summary['lyrics_pilot_attempted']=conn.execute("SELECT count(*) FROM lyrics_pilot p JOIN lyrics_manifest l USING(song_id) WHERE l.lyrics_status NOT IN ('not_attempted','blocked_source_access')").fetchone()[0]
     summary['source_selected']=None
     summary['lyrics_stage']='blocked_source_access'
@@ -62,7 +76,14 @@ def render(s):
         lines.append(f"| {p['period']} | {p['population']:,} | {p['metadata_attempted']} | {q.get('high_confidence',0)} | {q.get('ambiguous',0)} | {q.get('not_found',0)} | {q.get('error',0)} | {p['metadata_high_confidence_percent_of_population']}% |")
     lines+=['','Reasons: `'+json.dumps(s['metadata_reasons'],sort_keys=True)+'`.',
             'Review flags: `'+json.dumps(s['metadata_review_flags'],sort_keys=True)+'`.','',
+            'Returned metadata among accepted assets (presence, not validation of one canonical value):','',
+            '| Entity and field | Assets | Percent of accepted |','|---|---:|---:|']
+    for field,count in sorted(s['metadata_field_coverage'].items()):
+        denominator=m.get('high_confidence',0)
+        lines.append(f"| {field} | {count:,} | {100*count/denominator if denominator else 0:.2f}% |")
+    lines+=['',
             'All returned raw tag/genre values remain scoped to recordings, release groups, or artists. Missing new detailed genre lookups are unmeasured. Multiple recordings and conflicting dates/durations are retained; the database does not select a canonical recording or assign artist genres to songs. No final genre taxonomy is constructed.','',
+            'Matching limitations remain visible in the decision files: missing candidates, incompatible full artist credits, conflicting artist identities, unsupported versions, and inadequate temporal anchors can leave an asset unresolved. Accepted later/undated manifestations inherit asset support from a compatible dated candidate; their own dates and durations should not be treated as the original release. Raw tags can include non-genre labels, and their presence is not a validated genre assignment. Production decisions have not received exhaustive manual review.','',
             '## Lyrics','',
             '**Source: none selected; acquisition blocked on verified source access/reuse permission.** See the [source assessment](lyrics_source_assessment.md) for evidence and provider limitations.',
             f"Pilot: **{c['lyrics_pilot']} study-member identities prepared, {s['lyrics_pilot_attempted']} attempted**. Full acquisition did not proceed. Total attempted: **{s['lyrics_attempted']}**; successful: **{l.get('success',0)}**; ambiguous: **{l.get('ambiguous',0)}**; not found: **{l.get('not_found',0)}**; errors: **{l.get('error',0)}**. Overall acquired coverage: **{s['lyrics_success_percent_of_population']}%**.",
@@ -86,7 +107,7 @@ def render(s):
             'python3 src/research.py validate','python3 src/research_report.py',
             'python3 -m unittest discover -s tests -v','```','',
             'Lyrics remaining: all 25,363 study identities. First obtain documented source access/storage/reuse terms, then implement and validate that provider client. `python3 src/lyrics_plan.py` only reproduces the frozen pilot; it does not retrieve lyrics or bypass this gate. No acquisition command is presented as working without a selected authorized provider.','',
-            'The lyrics directory and all caches are Git-ignored; no lyrics are tracked. Code and non-lyrical reports are checkpointed. No classifier, rawness scores, genre collapse, or COVID analysis was started.','']
+            'The lyrics directory and all caches are Git-ignored; no lyrics are tracked. Code and non-lyrical reports are checkpointed. No classifier, rawness scores, genre collapse, or COVID analysis was started. See the [session validation record](research_validation.md) for restart checks and measured runtime.','']
     return '\n'.join(lines)
 
 

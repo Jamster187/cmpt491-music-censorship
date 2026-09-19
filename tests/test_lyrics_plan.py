@@ -10,7 +10,7 @@ from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 from lyrics_plan import select,prepare
 from research import SCHEMA,validate_lyrics_files
-from research_report import group_summary
+from research_report import group_summary,collect
 
 
 def population():
@@ -78,6 +78,25 @@ class LyricsPlanningTests(unittest.TestCase):
         self.assertEqual(summary['lyrics_attempted'],0)
         self.assertEqual(summary['metadata_attempted'],0)
         self.assertNotIn('not_found',summary['lyrics'])
+
+    def test_partial_coverage_denominators_are_distinct(self):
+        rows=[{'metadata_status':status,'lyrics_status':'blocked_source_access'} for status in ('high_confidence','ambiguous',None)]
+        s=group_summary(rows)
+        self.assertEqual(s['metadata_high_confidence_percent_of_population'],33.33)
+        self.assertEqual(s['metadata_high_confidence_percent_of_attempted'],50.0)
+        self.assertEqual(s['lyrics_attempted'],0)
+
+    def test_report_field_coverage_keeps_artist_genres_separate(self):
+        sid=population()[0]['song_id']
+        self.conn.execute('INSERT INTO metadata_matches VALUES (?,?,?,?,?,?,?,?,?)',
+                          (sid,'MusicBrainz','high_confidence','fixture','fixture','fixture.json','fixture','2026-09-19','{}'))
+        self.conn.execute('INSERT INTO external_entities VALUES (?,?,?,?,?)',
+                          ('MusicBrainz','artist','a','[{"genres":[{"name":"genre fixture"}]}]','[]'))
+        self.conn.execute('INSERT INTO song_external_links VALUES (?,?,?,?,?)',(sid,'MusicBrainz','artist','a','credited_artist'))
+        s=collect(self.conn)
+        self.assertEqual(s['metadata_field_coverage']['artist.genres'],1)
+        self.assertEqual(s['metadata_field_coverage']['recording.genres'],0)
+        self.assertEqual(sum(p['population'] for p in s['by_period']),len(population()))
 
 
 if __name__=='__main__':
