@@ -27,8 +27,10 @@ their caches. Do not implement classifiers, genre taxonomy, or statistical analy
   reported upstream source, not as proof of independent verification.
 - `data/raw/` is immutable source data. Never edit, overwrite, repair, or delete its
   contents. Diagnose source anomalies in reports and preserve the original values.
-- SQLite at `data/processed/music.db` is the canonical working representation.
-  CSVs are reproducible exports, not separately maintained datasets.
+- SQLite at `data/processed/music.db` is the immutable Phase 1 chart foundation.
+  `data/processed/research.db` is the unified working research database. CSVs are
+  reproducible exports, not separately maintained datasets. Rebuilding the research
+  database must never discard acquisition progress; validate existing builds.
 - `songs` holds one row per **exact original title + artist credit**. Song-level
   metadata belongs separately from the time-varying `chart_observations` table.
 - The research asset is this Billboard title/artist pair; the same title performed

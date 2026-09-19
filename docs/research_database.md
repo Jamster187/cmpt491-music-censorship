@@ -47,3 +47,16 @@ The database, provider responses, and lyrics are ignored in Git. Source code,
 schemas, tests, reports, and these instructions are the reproducible deliverables.
 Lyrics paths and source rights must be established before any acquisition; a
 populated empty manifest is not evidence that lyrics have been attempted.
+
+Current lyrics acquisition is blocked by the [source-access assessment](../reports/lyrics_source_assessment.md).
+`python3 src/lyrics_plan.py` prepares the deterministic 200-song pilot from the
+actual monthly population and records `blocked_source_access` for unattempted
+manifest rows. This command has no HTTP implementation. It preserves an existing
+pilot and any successful canonical file/manifest entry. The pilot covers all 69
+first-chart years with quotas 29/29/29/29/28/28/28 across historical periods.
+
+Use `python3 src/research_report.py` for overall, historical-period, individual-year,
+and recent-period coverage. The report distinguishes pending metadata, attempted
+API failures, and unattempted lyrics blocked on access. It never treats an access
+block as a failed identity lookup. [Production metadata instructions](production_metadata.md)
+explain cache/resume behavior and runtime limits.

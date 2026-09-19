@@ -89,6 +89,23 @@ def input_hashes():
     return {str(p.relative_to(ROOT)):sha(p) for p in INPUTS}
 
 
+def validate_lyrics_files(conn,root=ROOT):
+    expected=set()
+    for sid,status,path,checksum in conn.execute("SELECT song_id,lyrics_status,lyrics_path,lyrics_sha256 FROM lyrics_manifest"):
+        if status!='success':
+            if path is not None or checksum is not None:
+                raise ValueError('Unsuccessful lyrics row has a canonical file pointer: '+sid)
+            continue
+        expected_path=root/'data/lyrics'/(sid+'.txt')
+        if path!=str(expected_path.relative_to(root)) or expected_path.is_symlink() or not expected_path.is_file() or sha(expected_path)!=checksum:
+            raise ValueError('Lyrics manifest/file integrity failed: '+sid)
+        expected.add(expected_path)
+    actual=set((root/'data/lyrics').rglob('*.txt')) if (root/'data/lyrics').exists() else set()
+    if actual!=expected:
+        raise ValueError('Unmanifested lyrics files or unexpected layout')
+    return len(expected)
+
+
 def validate(conn, check_files=True):
     attach_sources(conn)
     try:
@@ -116,10 +133,7 @@ def validate(conn, check_files=True):
         if conn.execute("SELECT count(*) FROM (SELECT month FROM monthly_top100 GROUP BY month HAVING count(*)!=100 OR min(monthly_rank)!=1 OR max(monthly_rank)!=100)").fetchone()[0]:
             raise ValueError("Monthly basket integrity failed")
         if check_files:
-            for sid,status,path,checksum in conn.execute("SELECT song_id,lyrics_status,lyrics_path,lyrics_sha256 FROM lyrics_manifest WHERE lyrics_status='success'"):
-                expected_path = ROOT / "data/lyrics" / (sid+".txt")
-                if path != str(expected_path.relative_to(ROOT)) or not expected_path.is_file() or sha(expected_path)!=checksum:
-                    raise ValueError("Lyrics manifest/file integrity failed: "+sid)
+            validate_lyrics_files(conn)
             for path,checksum in conn.execute("SELECT result_path,result_sha256 FROM metadata_matches"):
                 target = (ROOT / path).resolve()
                 if ROOT / "data/processed" not in target.parents or not target.is_file() or sha(target)!=checksum:

@@ -23,10 +23,11 @@ project is still in progress, and we do not have results yet.
 Current status:
 
 - Billboard dataset processing: complete
-- Weekly/monthly populations: [local build and report](docs/analysis_populations.md) complete; under review
+- Weekly/monthly populations: [local build and report](docs/analysis_populations.md) complete
 - Unified research database: [build and schema](docs/research_database.md)
-- Metadata/genre enrichment: [MusicBrainz](reports/phase2a_metadata_feasibility.md), [Wikidata](reports/phase2b_metadata_feasibility.md), and [asset-level matching](experiments/phase2ar/README.md) pilots complete; approach under review
-- Lyrics/classification: not started
+- Metadata/genre enrichment: [production progress and resume commands](reports/research_dataset_status.md); earlier pilots preserved
+- Lyrics: [source access unresolved](reports/lyrics_source_assessment.md); 200-song pilot list prepared, retrieval not started
+- Classification: not started
 - Final analysis: not started
 
 The Billboard data comes from
