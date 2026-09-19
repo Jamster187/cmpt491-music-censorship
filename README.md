@@ -24,6 +24,7 @@ Current status:
 
 - Billboard dataset processing: complete
 - Weekly/monthly populations: [local build and report](docs/analysis_populations.md) complete; under review
+- Unified research database: [build and schema](docs/research_database.md)
 - Metadata/genre enrichment: [MusicBrainz](reports/phase2a_metadata_feasibility.md), [Wikidata](reports/phase2b_metadata_feasibility.md), and [asset-level matching](experiments/phase2ar/README.md) pilots complete; approach under review
 - Lyrics/classification: not started
 - Final analysis: not started

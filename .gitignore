@@ -38,6 +38,7 @@ local_config.*
 /data/processed/
 /reports/phase1_data_quality.json
 /data/cache/
+/data/lyrics/
 /data/experiments/
 *.db-journal
 *.db-wal

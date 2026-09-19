@@ -9,16 +9,16 @@ from 1958 to approximately 2019/2020 and subsequent coverage through 2026. The e
 breakpoint, sampling/weighting choices, classifier, and statistical methods remain
 undecided. Chart dates are not song release dates.
 
-Phase 1 is complete. Phase 2A was accepted and committed. The current authorized
-scope is local analysis-population construction: preserve all weekly observations
-and derive monthly Top-100 baskets using summed `101 - rank` points. No external
-requests or enrichment are authorized. Preserve Phase 2A, Phase 2A-R, and Phase 2B
-results. Keep derived population tables and exports
-separate from the canonical Phase 1 database, which
-must be opened read-only. Do not enrich the whole dataset, retrieve lyrics, implement
-classifiers, finalize a genre taxonomy, or run statistical analysis. Do not invent
-genre, metadata, or measurements. Show the population results and obtain the user's
-approval before committing or pushing this work.
+Phase 1, the monthly population, and Phase 2A-R are approved. Current authorized
+work is a unified research database, MusicBrainz asset-level enrichment of the
+25,363 monthly-population identities, and lyrics-source research. Lyrics retrieval
+requires a source permitting the automated acquisition and storage; bulk retrieval
+also requires a successful, reviewed deterministic pilot from the actual study
+population. Stop the lyrics stage if suitable permissions/access cannot be established.
+Preserve earlier experiments and open Phase 1 inputs read-only. Never download
+lyrics into tracked paths; verify ignore rules first. Checkpoint and push tested,
+validated engineering milestones to main. Never commit credentials, lyrics, or
+their caches. Do not implement classifiers, genre taxonomy, or statistical analysis.
 
 ## Source and data model
 
