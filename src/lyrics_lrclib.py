@@ -167,7 +167,10 @@ class Client:
             return record
         for attempt in range(3):
             until=json.loads(self.clock.read_text())['until'] if self.clock.exists() else 0
-            while time.time()<until: time.sleep(min(1,until-time.time()))
+            while True:
+                remaining=until-time.time()
+                if remaining<=0: break
+                time.sleep(min(1,remaining))
             start=time.time(); code=None
             try:
                 req=urllib.request.Request(url,headers={'User-Agent':self.user_agent,'Accept':'application/json'})

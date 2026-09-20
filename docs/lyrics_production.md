@@ -124,3 +124,38 @@ replace automatic rules or require every future asset to be manually reviewed.
 Run the exhaustive canonical-file validator when the worker is idle; while it is
 writing, a file can briefly precede its manifest commit. Progress reports are
 readable during the run, and the worker validates the corpus when it exits.
+
+## Audited wait-race fix and explicit continuation
+
+The 2026-09-20 failure read the wall clock twice around the cooldown deadline,
+allowing a negative sleep interval. The corrected loop computes the remaining
+interval once, exits when it is nonpositive, and otherwise sleeps at most one
+second. Persisted Retry-After deadlines, request delays, retries, candidate
+selection, acceptance and cleaning are unchanged.
+
+For the specifically audited implementation, the offline transition is:
+
+```bash
+python3 src/lyrics_production.py gate
+python3 -m unittest discover -s tests -v
+python3 src/lyrics_resume.py
+python3 src/lyrics_production.py run
+```
+
+`lyrics_resume.py` requires the known original bundle hash, unchanged matcher and
+cleaner hashes, identical cached pilot decisions, and validated existing files.
+It holds the lyrics lock, backs up the sidecar under ignored `data/processed/backups/`,
+and records one transactional `production_version_transitions` entry. Original
+settings (including the original gate and bundle hash) and all result payloads
+remain unchanged. `production_result_implementations` binds each pre-resume result
+to its original bundle and exact payload hash. `current_pipeline_sha256` permits
+only the explicitly recorded new implementation; future unrecognized code changes
+still fail. New results carry their bundle hash and run ID directly. Matcher
+version remains `lrclib-production-v1`.
+
+A normal continuation skips every persisted disposition, including quarantined,
+wrong-identity, missing-text, not-found, and error outcomes. The authorized finish
+uses no `--retry-errors` and performs no manual rescues. The frozen population and
+metadata snapshot are retained. `lyrics_resume.verify_preserved` checks all old
+payload hashes after completion. Original lyric files and cached evidence have a
+separate ignored pre-resume checksum manifest for preservation verification.

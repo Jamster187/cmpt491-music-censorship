@@ -117,7 +117,7 @@ def snapshot(root=ROOT):
 
 
 def initialize(c,root=ROOT):
-    setting=c.execute("SELECT value FROM production_settings WHERE key='pipeline_sha256'").fetchone()
+    setting=c.execute("SELECT value FROM production_settings WHERE key IN ('current_pipeline_sha256','pipeline_sha256') ORDER BY key LIMIT 1").fetchone()
     if setting:
         if setting[0]!=fingerprint():raise ValueError('Production code changed; explicit version migration required')
         if c.execute('SELECT count(*) FROM production_assets').fetchone()[0]!=POPULATION:raise ValueError('Incomplete population snapshot')
@@ -236,7 +236,9 @@ def run(max_assets=None,retry_errors=False,root=ROOT):
                 old=json.loads(old[0])
                 if not (retry_errors and old['status']=='error'):continue
                 retry_error_cache(old,root)
-            result,text=acquire(s,client);persist(c,result,text,root);processed+=1
+            result,text=acquire(s,client)
+            result.update(pipeline_sha256=fingerprint(),run_id=run_id)
+            persist(c,result,text,root);processed+=1
             with c:c.execute('UPDATE production_runs SET requests=?,processed=? WHERE run_id=?',(client.requests,processed,run_id))
             print(json.dumps({'time':stamp(),'song_id':s['song_id'],'status':result['status'],'processed_this_run':processed,'requests_this_run':client.requests}),flush=True)
         else:state='completed'
