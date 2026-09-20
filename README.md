@@ -11,8 +11,9 @@ currently contains **355,487 chart observations** representing **32,723 unique
 song/artist pairs**. A chart observation is one song's appearance on a weekly
 chart, so a song can appear many times in the data.
 
-MusicBrainz metadata enrichment has completed its first pass, and lyrics acquisition
-has saved a partial corpus. Once acquisition and data-quality decisions are settled,
+MusicBrainz metadata enrichment and the first lyrics acquisition pass are complete.
+All 25,363 study assets have a lyrics disposition; 19,372 have usable local text.
+Once the remaining data-quality decisions are settled,
 we plan to run lyrics through a classifier to produce quantitative measurements
 of song content for comparison across songs and years.
 
@@ -22,13 +23,13 @@ project is still in progress, and we do not have results yet.
 
 Current status:
 
-- Post-run audit: [actual coverage and integrity](reports/post_run_audit.md), [failure diagnosis and resume decision](docs/post_run_audit.md). MusicBrainz first pass complete; LRCLIB stopped early with intact saved progress. Neither worker was restarted.
+- Lyrics completion: [final coverage and integrity](reports/lyrics_completion_audit.md), [fix, provenance and validation record](docs/lyrics_completion.md). The remaining 3,717 assets were dispositioned and the unified lyrics manifest synchronized. The [earlier post-run audit](reports/post_run_audit.md) remains a historical checkpoint.
 
 - Billboard dataset processing: complete
 - Weekly/monthly populations: [local build and report](docs/analysis_populations.md) complete
 - Unified research database: [build and schema](docs/research_database.md)
 - Metadata enrichment: first pass complete; [actual coverage](reports/post_run_audit.md). Raw provider tags remain separate from any future genre taxonomy; earlier pilots preserved.
-- Lyrics: production stopped early; see the post-run audit above. Reviewed pilot approved (171/200 usable); [production matcher safety check](reports/lyrics_production_pilot.md), [full acquisition status](reports/lyrics_production_status.md), and [storage/resume instructions](docs/lyrics_production.md)
+- Lyrics: first acquisition pass complete, 19,372/25,363 usable (76.38%). Reviewed pilot retained (171/200 usable); [production matcher safety check](reports/lyrics_production_pilot.md), [full acquisition status](reports/lyrics_production_status.md), and [storage/resume instructions](docs/lyrics_production.md)
 - Classification: not started
 - Final analysis: not started
 

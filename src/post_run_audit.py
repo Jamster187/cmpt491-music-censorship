@@ -121,7 +121,7 @@ def main(output="reports/post_run_audit.md", decisions="../docs/post_run_audit.m
         return [label,n,a,ok,n-a,pct(ok,n),pct(ok,a)]
     table(lines,['Period','Target','Attempted','Usable','Unprocessed','Usable/target','Usable/attempted'],[coverage(lo,hi,label) for lo,hi,label in PERIODS])
     table(lines,['Year','Target','Attempted','Usable','Unprocessed','Usable/target','Usable/attempted'],[coverage(y,y,y) for y in range(1958,2027)])
-    lines += ['', '## Descriptive missingness', '', 'Current usable/target includes the unfinished acquisition queue. Usable/attempted isolates observed selection losses; neither proves representativeness. No COVID test or content scoring is performed. Rank cutoffs below are descriptive bins only.']
+    lines += ['', '## Descriptive missingness', '', ('Every study asset now has a disposition, so target and attempted coverage denominators coincide. Coverage does not prove representativeness.' if counts['unprocessed']==0 else 'Current usable/target includes the unfinished acquisition queue. Usable/attempted isolates observed selection losses; neither proves representativeness.')+' No COVID test or content scoring is performed. Rank cutoffs below are descriptive bins only.']
     table(lines,['Outcome','Assets','Mean weekly peak rank','Mean weekly rows','Mean total weekly points','Mean selected months','Median selected months'],
           [[label,len(g),*[round(statistics.mean(r[k] for r in g),2) for k in ('rank','weeks','points','months')],statistics.median(r['months'] for r in g)]
            for label in ('accepted','attempted unsuccessful','unprocessed')
