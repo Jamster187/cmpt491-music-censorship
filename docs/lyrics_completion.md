@@ -55,6 +55,7 @@ python3 src/lyrics_import.py
 python3 src/research.py validate
 python3 src/lyrics_production.py validate
 python3 src/phase1.py validate
+python3 src/lyrics_completion_check.py --manifest-synchronized
 python3 -m unittest discover -s tests -v
 python3 src/research_report.py
 python3 src/post_run_audit.py --output reports/lyrics_completion_audit.md --decisions ../docs/lyrics_completion.md
@@ -68,7 +69,7 @@ replace a conflicting success. Unknown schemas, incomplete populations or identi
 drift fail explicitly. No lyric text or cache body is copied into the database.
 The complete sidecar remains the detailed evidence store.
 
-The initial consolidation test suite passes 152 tests, including exact status
+The initial consolidation and completion-check suite passes 155 tests, including exact status
 retention, file reconciliation, identity checks, rollback, no text copying, and
 idempotence. Final execution results and corpus coverage will be recorded after
 acquisition completes; this section does not claim that import has already run.
