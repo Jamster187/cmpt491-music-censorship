@@ -55,7 +55,8 @@ CREATE TABLE song_external_links (
 CREATE TABLE lyrics_manifest (
  song_id TEXT PRIMARY KEY REFERENCES study_population(song_id),
  lyrics_status TEXT NOT NULL DEFAULT 'not_attempted' CHECK(lyrics_status IN
- ('not_attempted','blocked_source_access','success','ambiguous','not_found','error','instrumental')),
+ ('not_attempted','blocked_source_access','success','ambiguous','not_found','error','instrumental',
+  'quarantined','wrong_identity','bad_missing_text')),
  lyrics_source TEXT, source_identifier TEXT, match_status TEXT NOT NULL DEFAULT 'not_attempted',
  matched_title TEXT, matched_artist TEXT, lyrics_path TEXT UNIQUE, lyrics_sha256 TEXT,
  retrieved_at TEXT, failure_reason TEXT, provenance_json TEXT NOT NULL DEFAULT '{}',
@@ -107,6 +108,9 @@ def validate_lyrics_files(conn,root=ROOT):
 
 
 def validate(conn, check_files=True):
+    version = conn.execute("SELECT value FROM build_metadata WHERE key='schema_version'").fetchone()
+    if version is None or version[0] not in ('1', '2'):
+        raise ValueError("Unsupported research schema version")
     attach_sources(conn)
     try:
         expected = json.loads(conn.execute("SELECT value FROM build_metadata WHERE key='input_sha256'").fetchone()[0])
@@ -168,7 +172,7 @@ def build(path=DATABASE):
             conn.execute("INSERT INTO monthly_top100 SELECT * FROM populations.monthly_top100")
             conn.execute("INSERT INTO study_population SELECT song_id,min(month),max(month),count(*) FROM monthly_top100 GROUP BY song_id")
             conn.execute("INSERT INTO lyrics_manifest(song_id) SELECT song_id FROM study_population")
-            conn.executemany("INSERT INTO build_metadata VALUES (?,?)",[("schema_version","1"),("input_sha256",json.dumps(before,sort_keys=True)),("code_sha256",sha(__file__))])
+            conn.executemany("INSERT INTO build_metadata VALUES (?,?)",[("schema_version","2"),("input_sha256",json.dumps(before,sort_keys=True)),("code_sha256",sha(__file__))])
             conn.commit()
             conn.execute("DETACH DATABASE phase1")
             conn.execute("DETACH DATABASE populations")

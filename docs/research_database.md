@@ -148,3 +148,37 @@ sidecar, not the revised LRCLIB-R manifest. No Phase LRCLIB-R import or full-sca
 matcher is implemented by this focused review. The reviewed crosswalk is not an
 automatic acceptance rule for unseen songs. Earlier reports remain historical
 records rather than being rewritten to erase the initial conservative result.
+
+## Production lyrics consolidation (schema 2)
+
+After all study assets have a production disposition and both writers are idle:
+
+```bash
+python3 src/lyrics_import.py
+python3 src/research.py validate
+python3 src/lyrics_production.py validate
+python3 src/research_report.py
+```
+
+This production-aware command supersedes the historical pilot-only import above.
+It requires the complete, exact frozen study population, validates canonical files
+and preserved pre-resume decisions, and holds the lyrics and MusicBrainz client
+locks. It uses a temporary SQLite copy, validates before publishing, checks that the
+original database has not changed, and retains an ignored checksum-bound backup.
+An unchanged re-import performs no publication or timestamp update.
+
+Schema 2 extends only the allowed manifest disposition names: production
+`accepted` maps to existing `success`; `quarantined`, `wrong_identity`,
+`bad_missing_text`, `not_found`, and `error` remain distinct. Legacy status names
+remain supported. No chart, identity, metadata or pilot table is rebuilt.
+`build_metadata` records the schema transition and deterministic source-result
+set hash, importer hash and import timestamp.
+
+The manifest stores provider ID, selected title/artist, local canonical path/hash,
+retrieval time, failure reason and a small provenance allowlist. Provenance includes
+the exact production disposition, matching and text grades, implementation bundle
+hash, sidecar payload hash, run ID when available, review-ledger hash, and cache
+URL/hash/time references. Raw lyric text, cache bodies and candidate texts are
+excluded. The sidecar preserves the full decision evidence and original history.
+The ordinary `research.py validate` checks canonical files after synchronization;
+`lyrics_import.py` additionally reconciles every manifest field with the sidecar.

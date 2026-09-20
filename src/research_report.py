@@ -51,8 +51,8 @@ def collect(conn):
            WHEN 'integer' THEN json_extract(v.value,?)>0 ELSE 0 END)"""
         summary['metadata_field_coverage'][scope+'.'+field]=conn.execute(sql,(scope,*(['$.'+field]*4))).fetchone()[0]
     summary['lyrics_pilot_attempted']=conn.execute("SELECT count(*) FROM lyrics_pilot p JOIN lyrics_manifest l USING(song_id) WHERE l.lyrics_status NOT IN ('not_attempted','blocked_source_access')").fetchone()[0]
-    summary['source_selected']=None
-    summary['lyrics_stage']='blocked_source_access'
+    summary['source_selected']=[r[0] for r in conn.execute('SELECT DISTINCT lyrics_source FROM lyrics_manifest WHERE lyrics_source IS NOT NULL ORDER BY lyrics_source')]
+    summary['lyrics_stage']='dispositioned' if summary['lyrics_attempted']==summary['population'] else 'partial_or_unattempted'
     summary['runs']=[dict(zip(('run_id','provider','started_at','finished_at','status','parameters','summary'),r)) for r in conn.execute('SELECT * FROM acquisition_runs ORDER BY started_at,run_id')]
     for run in summary['runs']:
         run['parameters']=json.loads(run['parameters']);run['summary']=json.loads(run['summary'])
@@ -67,7 +67,7 @@ def render(s):
       'The canonical Phase 1 database and raw JSON are unchanged. All weekly and monthly rows were reconciled field-for-field. Study membership does not depend on metadata/lyrics availability. See [schema and build instructions](../docs/research_database.md).','',
       '## Metadata','',
       f"Attempted: **{s['metadata_attempted']:,}**. High confidence: **{m.get('high_confidence',0):,}**; ambiguous: **{m.get('ambiguous',0):,}**; not found: **{m.get('not_found',0):,}**; errors: **{m.get('error',0):,}**; pending: **{m.get('pending',0):,}**.",
-      f"Accepted coverage is **{s['metadata_high_confidence_percent_of_population']}% of the study population**, or **{s['metadata_high_confidence_percent_of_attempted']}% of attempted assets**. These are different denominators; the partial run is not a full-population match-rate estimate.",
+      f"Accepted coverage is **{s['metadata_high_confidence_percent_of_population']}% of the study population**, or **{s['metadata_high_confidence_percent_of_attempted']}% of attempted assets**. Attempted and population denominators coincide only when every study asset has a disposition.",
       'The approved Phase 2A-R matcher is unchanged. The initial cache import reproduced all 160 pilot assets that belong to the study population: 137 accepted, 12 ambiguous, 11 not found, zero new requests. Other pilot songs were not imported. Live acquisition uses bounded original search queries; extra detailed lookups and difficult-tail rescue are deferred.','',
       '| First-chart period | Population | Attempted | Accepted | Ambiguous | Not found | Error | Accepted / population |',
       '|---|---:|---:|---:|---:|---:|---:|---:|']
@@ -85,9 +85,9 @@ def render(s):
             'All returned raw tag/genre values remain scoped to recordings, release groups, or artists. Missing new detailed genre lookups are unmeasured. Multiple recordings and conflicting dates/durations are retained; the database does not select a canonical recording or assign artist genres to songs. No final genre taxonomy is constructed.','',
             'Matching limitations remain visible in the decision files: missing candidates, incompatible full artist credits, conflicting artist identities, unsupported versions, and inadequate temporal anchors can leave an asset unresolved. Accepted later/undated manifestations inherit asset support from a compatible dated candidate; their own dates and durations should not be treated as the original release. Raw tags can include non-genre labels, and their presence is not a validated genre assignment. Production decisions have not received exhaustive manual review.','',
             '## Lyrics','',
-            '**Source: none selected; acquisition blocked on verified source access/reuse permission.** See the [source assessment](lyrics_source_assessment.md) for evidence and provider limitations.',
-            f"Pilot: **{c['lyrics_pilot']} study-member identities prepared, {s['lyrics_pilot_attempted']} attempted**. Full acquisition did not proceed. Total attempted: **{s['lyrics_attempted']}**; successful: **{l.get('success',0)}**; ambiguous: **{l.get('ambiguous',0)}**; not found: **{l.get('not_found',0)}**; errors: **{l.get('error',0)}**. Overall acquired coverage: **{s['lyrics_success_percent_of_population']}%**.",
-            f"All {l.get('blocked_source_access',0):,} blocked manifest rows represent unattempted access, not provider misses or API errors. No lyrics text or lyrics-containing API response was downloaded into the project.",'',
+            f"Manifest sources: **{', '.join(s['source_selected']) or 'none recorded'}**. Status: **{s['lyrics_stage']}**. Production details and local storage are described in [lyrics instructions](../docs/lyrics_production.md).",
+            f"Pilot: **{c['lyrics_pilot']} study-member identities, {s['lyrics_pilot_attempted']} attempted**. Total attempted: **{s['lyrics_attempted']}**; successful: **{l.get('success',0)}**. Overall acquired coverage: **{s['lyrics_success_percent_of_population']}%**.",
+            'Manifest dispositions: `'+json.dumps(l,sort_keys=True)+'`. Unattempted/blocked rows are not provider misses; wrong identity, bad/missing text, quarantine and API errors remain distinct. Only successful paths supply the corpus. No lyric text is copied into this report.','',
             '| First-chart period | Population | Lyrics attempted | Retrieved | Acquired coverage |',
             '|---|---:|---:|---:|---:|']
     for p in s['by_period']:
@@ -100,14 +100,12 @@ def render(s):
             '|---|---:|---:|---:|---:|---:|---:|']
     for p in s['by_year']:
         lines.append(f"| {p['year']} | {p['population']} | {p['metadata_attempted']} | {p['metadata'].get('high_confidence',0)} | {p['lyrics_attempted']} | {p['lyrics'].get('success',0)} | {p['lyrics_success_percent_of_population']}% |")
-    lines+=['','## Resume and remaining work','',
-            f"Metadata still pending: **{m.get('pending',0):,} assets**; errors eligible for explicit retry: **{m.get('error',0)}**. At 1.1 seconds per uncached request, the pending set has a lower bound of {m.get('pending',0)*1.1/3600:.2f} hours for one search each. Actual runtime is longer because of latency, fallbacks, and retries. The bounded run avoids blocking the source-access decision on a potentially multi-day metadata pass.",
-            '```bash','python3 src/production_metadata.py --max-seconds 28800',
-            'python3 src/production_metadata.py --retry-errors --max-seconds 3600',
-            'python3 src/research.py validate','python3 src/research_report.py',
+    lines+=['','## Remaining work','',
+            f"Metadata pending: **{m.get('pending',0):,}**; recorded errors: **{m.get('error',0)}**. Metadata is optional enrichment, not a classifier prerequisite.",
+            f"Lyrics without a disposition in this manifest: **{s['population']-s['lyrics_attempted']:,}**. Do not restart a complete pass merely to improve acceptance. Unresolved outcomes remain explicit; no manual rescue or classifier is run by these commands.",
+            '```bash','python3 src/research.py validate','python3 src/lyrics_production.py validate',
             'python3 -m unittest discover -s tests -v','```','',
-            'Lyrics remaining: all 25,363 study identities. First obtain documented source access/storage/reuse terms, then implement and validate that provider client. `python3 src/lyrics_plan.py` only reproduces the frozen pilot; it does not retrieve lyrics or bypass this gate. No acquisition command is presented as working without a selected authorized provider.','',
-            'The lyrics directory and all caches are Git-ignored; no lyrics are tracked. Code and non-lyrical reports are checkpointed. No classifier, rawness scores, genre collapse, or COVID analysis was started. See the [session validation record](research_validation.md) for restart checks and measured runtime.','']
+            'Lyrics, caches and generated databases remain local and Git-ignored. See [completion record](../docs/lyrics_completion.md) for acquisition, synchronization, validation and remaining limitations.','']
     return '\n'.join(lines)
 
 
