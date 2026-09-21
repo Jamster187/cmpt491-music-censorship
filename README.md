@@ -1,42 +1,60 @@
 # CMPT 491 - Popular Music Content Analysis
 
-We are investigating how the content of mainstream popular music has changed over time, particularly whether the post-COVID period represents an unusual change relative to the historical trajectory.
+For our CMPT 491 project, we want to see how the content of popular music has changed over time. We are especially interested in whether music changed unusually after COVID compared to the trends that already existed before it.
 
-## Data
+## Dataset
 
-We started with a complete weekly Billboard Hot 100 archive covering 1958–2026: **3,555 weekly charts, 355,487 song-week observations, and 32,723 unique Billboard title + artist identities**. Our supplied snapshot runs from August 4, 1958 to September 19, 2026.
+We started with the weekly Billboard Hot 100 from 1958–2026:
 
-The source is [mhollingshead/billboard-hot-100](https://github.com/mhollingshead/billboard-hot-100).
+- 3,555 weekly charts
+- 355,487 chart entries
+- 32,723 unique song + artist combinations
 
-## Study population
+Source: https://github.com/mhollingshead/billboard-hot-100
 
-We constructed monthly Top-100 baskets from the weekly charts, giving us **818 monthly periods, 81,800 song-month observations, and 25,363 unique songs**. Here, a song means an exact Billboard title and artist credit.
+We used the weekly charts to create a list of the **100 most popular songs for each month**. This gives us:
 
-These songs account for approximately **95.3%** of the original weekly observations. The original weekly data remains preserved, so eventual analysis can use either weekly or monthly resolution.
+- 818 months
+- 81,800 song/month observations
+- 25,363 unique songs
 
-## Enrichment and lyrics
+We kept the weekly data too, so we can eventually look at changes either week-by-week or month-by-month.
 
-MusicBrainz enrichment attempted all 25,363 study songs, producing **20,450 high-confidence matches (80.63%)**, with approximately 90% matching coverage in modern periods. Available information includes release dates, durations, album/release information, and external identifiers. Metadata is supplementary; it is not a requirement for content classification.
+## Extra data
 
-Lyrics acquisition is complete for this phase: all **25,363** songs were attempted, and **19,372** have confidently matched, usable lyrics. Coverage is **76.38% overall**, **82.81% for 2015–2019**, and **79.99% for 2020–2026**, grouping songs by their first Billboard appearance. Acquisition is now frozen, including unresolved cases.
+The original Billboard dataset did not have many columns, so we added more information using MusicBrainz. This includes things like:
 
-Lyrics are copyrighted research inputs and are **not distributed in this repository**. They remain local, linked through `song_id`.
+- Release date
+- Song duration
+- Album/release information
 
-## Download the dataset
+We were able to confidently match 20,450 of our 25,363 songs.
 
-Download [songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv) and [monthly_top100.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/monthly_top100.csv). The [dataset guide](data/public/README.md) explains their columns, joins, provenance, and rebuild commands. These tables contain no lyric text or classifier scores.
+We also collected usable lyrics for **19,372 songs**. The lyrics are stored locally and are not included on GitHub because they are copyrighted.
 
-## Next step and research idea
+## Download
 
-We are investigating existing classifiers before deciding whether to build our own. The next phase is evaluating a classifier that converts lyrical content into continuous numerical measurements, such as explicitness or content severity.
+- [songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv)
+- [monthly_top100.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/monthly_top100.csv)
+- [Dataset guide](data/public/README.md)
 
-We intend to establish the historical trajectory and rate of change from 1958 through the pre-COVID period, then test whether the post-COVID period shows an unusual change in level and/or trajectory. The classifier and longitudinal analysis have not started.
+`songs.csv` contains our song information and `monthly_top100.csv` contains the monthly Top 100 rankings. They can be joined using `song_id`.
 
-## Current status
+## What's next?
 
-- [x] Billboard data foundation — complete
-- [x] Monthly study population — complete
-- [x] Metadata enrichment — complete
-- [x] Lyrics corpus — complete
-- [ ] Content classifier — next
-- [ ] Longitudinal/post-COVID analysis — not started
+Our next step is to run the lyrics through a classifier that gives each song numerical scores for its content.
+
+We can then track these scores from 1958–2026 and ask:
+
+- Has popular music been getting harder or softer over time?
+- How quickly does music normally change?
+- Did something unusual happen to that trend around or after COVID?
+
+## Status
+
+- [x] Billboard data
+- [x] Monthly Top 100
+- [x] Extra song information
+- [x] Lyrics
+- [ ] Classify song content
+- [ ] Analyze changes over time
