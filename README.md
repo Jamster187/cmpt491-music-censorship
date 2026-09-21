@@ -30,7 +30,7 @@ The original Billboard dataset did not have many columns, so we added more infor
 
 We were able to confidently match 20,450 of our 25,363 songs.
 
-We also collected usable lyrics for **19,372 songs**. The lyrics are stored locally and are not included on GitHub because they are copyrighted.
+We also collected usable lyrics for **19,372 songs**.
 
 ## Download
 
