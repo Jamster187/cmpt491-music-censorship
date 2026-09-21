@@ -1,0 +1,554 @@
+{
+  "selection": "All 41 non-null pilot primary labels, plus 19 explicitly named boundary/missing-evidence challenge cases; selected for error discovery, not accuracy estimation.",
+  "counts": {
+    "plausible": 37,
+    "questionable": 16,
+    "unassessed": 3,
+    "clearly_wrong": 4
+  },
+  "summary": "Reviewed 60 cases: all 41 non-null primary labels plus 19 boundary cases. Judgments: {'plausible': 37, 'questionable': 16, 'unassessed': 3, 'clearly_wrong': 4}. Three clearly misleading primary assignments were found (Murder On My Mind, Hooked On You, Essence); Redbone also has a clearly misleading candidate set despite abstention. These are qualitative findings, not an estimated error rate. Single-vote tags can produce false confidence, while noisy minor tags can block sensible primaries. Recording IDs and performer credits were checked for the most conspicuous failures; this is a genre-evidence problem, not evidence that the existing lyric matches should be changed.",
+  "suitability": "Supporting evidence is common for Pop (143 pilot songs), Rock (95), R&B / Soul (72), Hip-Hop / Rap (50) and Country (30), so these look plausible for broad pooled comparisons after evidence quality is fixed. The current primary rule is too sparse: only three Rock and four R&B primaries, and no Alternative, Metal, Folk, Reggae, Gospel, K-Pop or Afrobeats primaries. These zeros describe this method and sample, not absence of those genres. Latin, Metal, Reggae, Gospel and Jazz/Blues need special coverage checks. K-Pop and Afrobeats are likely concentrated in recent periods and will not support a continuous 1958–2026 series; earlier empty periods would be expected, but exact population/window counts have not been assigned. Folk/Alternative/Rock and Gospel/R&B overlap can make primary-only series selectively exclude crossovers.",
+  "recommendation": "**B — METHOD NEEDS ONE SPECIFIC IMPROVEMENT: a validated song-level evidence-strength gate.** Replace “one recognized positive tag = confident” and the indiscriminate union of all positive tags with a bounded corroboration/dominance pilot. Preserve per-recording vote support, distinguish isolated one-vote tags from strongly supported direct evidence, and corroborate single-vote or conflicting cases with a song-specific reference (prefer existing accepted Wikidata song items or targeted MusicBrainz detail lookups). Do not count duplicated editions or synonymous labels as independent votes; genuine genre crossovers must still abstain. Select and freeze candidate support rules before replaying this same pilot, then check primary precision and period-specific availability on independently reviewed cases. No threshold is approved here, and artist-only fallback must remain explicitly provisional. The existing cache-only rule is NOT READY for production. Broad source coverage is useful, but it cannot by itself establish primary-genre reliability.",
+  "cases": [
+    {
+      "song_id": "song_3bdcd0c52b13009a6dc8b41cff8ae72333763ec0677acbdc762853aba365b808",
+      "identity": "The Christmas Song (Merry Christmas To You) — Nat King Cole",
+      "period": "1958–1969",
+      "result": "Jazz / Blues",
+      "judgment": "plausible",
+      "reason": "Jazz/swing tags fit this performance; traditional Pop also remains a reasonable interpretation.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_5a5cd16abaf07246bb5337c8d24388917029f3347ac3b755d00e4df427018642",
+      "identity": "Unwind — Ray Stevens",
+      "period": "1958–1969",
+      "result": "Other",
+      "judgment": "questionable",
+      "reason": "A lone comedy tag creates Other. Ray Stevens also made serious recordings; no song-specific independent corroboration was established.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_8c13d8e4ead4fff60549ddec575dad40428747a694cb844f51a73e2e59e443e1",
+      "identity": "Respect — Aretha Franklin",
+      "period": "1958–1969",
+      "result": "ambiguous",
+      "judgment": "questionable",
+      "reason": "Abstention is safe, but soul has nine votes while ambient/gospel/jazz/rock have one. Presence-only union lets weak tags swamp strong soul evidence.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_93453d409a96d8f78369eb43dc255b21d443e13e1174b122423df51224dffc7f",
+      "identity": "Bumble Boogie — B. Bumble & The Stingers",
+      "period": "1958–1969",
+      "result": "Pop",
+      "judgment": "questionable",
+      "reason": "Pop is broad enough to be possible but the single pop tag loses the instrumental boogie/rock boundary.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_ad441ca7d322688fff5b1fcb0977b786e5d613405e7dd3e05f181c5f4a2ebe6c",
+      "identity": "I Fall To Pieces — Patsy Cline",
+      "period": "1958–1969",
+      "result": "Country",
+      "judgment": "plausible",
+      "reason": "Country, Nashville sound and traditional-country evidence agree; appropriate broad primary.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_c2323b9e47eab153d711d44265202472690a9f40cf73dd661a760a411a7d6881",
+      "identity": "Lullaby Of The Leaves — The Ventures",
+      "period": "1958–1969",
+      "result": "Rock",
+      "judgment": "plausible",
+      "reason": "Surf-rock and rock-and-roll recording evidence agree; the performance matters more than the older composition.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_f9ddcd2f7850ac896c1cdb787d553b63fe78a5f64c8ff1f0fb8e2e7cf7641e9c",
+      "identity": "3rd Man Theme — Herb Alpert & The Tijuana Brass",
+      "period": "1958–1969",
+      "result": "Jazz / Blues",
+      "judgment": "questionable",
+      "reason": "Jazz is possible for this brass instrumental but one jazz tag is weak evidence against easy-listening/pop alternatives.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_1f3dbe6945ae1849e0479aa13b2ac79769d21af4419b277f92c42de038a0a958",
+      "identity": "Jolene — Dolly Parton",
+      "period": "1970s",
+      "result": "ambiguous",
+      "judgment": "questionable",
+      "reason": "Country has eight votes and bluegrass/country-pop four; single reggae, punk and big-beat tags inflate the candidate set on the same Dolly recording.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_639236f08751918a54e00145b6568f9160f21fa48d26f56900bbb63f0929d0ed",
+      "identity": "Money — Gladys Knight And The Pips",
+      "period": "1970s",
+      "result": "R&B / Soul",
+      "judgment": "plausible",
+      "reason": "Soul and R&B recording tags support the broad primary.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_742fc69cd022eaa7d7848ef7d0f19c376f6066375afb8ab3c555783ca991326c",
+      "identity": "Can't Stop Dancin' — Captain & Tennille",
+      "period": "1970s",
+      "result": "Pop",
+      "judgment": "plausible",
+      "reason": "Pop/adult-contemporary evidence supports a broad Pop primary; dance elements need not imply house/EDM.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_7af106e9903c0d3166b0e4713f04b5f19e9fd66ab7805f1e45bfa0eb60c7eb4c",
+      "identity": "Some Guys Have All The Luck — The Persuaders",
+      "period": "1970s",
+      "result": "R&B / Soul",
+      "judgment": "plausible",
+      "reason": "Soul fits the Persuaders performance; do not transfer genre from later cover versions.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_b7ae45ffd7fb35b6bd81abbfb4fc36b04071dbe8847757321e5c8dc779360e24",
+      "identity": "I Feel Love — Donna Summer",
+      "period": "1970s",
+      "result": "ambiguous",
+      "judgment": "questionable",
+      "reason": "Strong disco support is diluted by isolated blues/classic-rock tags; Electronic/Pop overlap remains reasonable.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_e7f27262ace9ab2f5c1d356b0e7420d2629f77521e23fb9d227c23b87bbd4a4e",
+      "identity": "Paranoid — Black Sabbath",
+      "period": "1970s",
+      "result": "insufficient_evidence",
+      "judgment": "unassessed",
+      "reason": "No accepted mapped song evidence in this inventory; missingness must not be treated as absence of Metal in the population.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_03b04ccc08b0db06679c78f70460db22fefb0af4972aba29275de1a156677aa9",
+      "identity": "Conga — Miami Sound Machine",
+      "period": "1980s",
+      "result": "ambiguous",
+      "judgment": "plausible",
+      "reason": "Latin/salsa, Pop and Dance support a real crossover; no arbitrary priority is warranted.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_7f17c5f47f796d23f576dedac48e1949b4283368dfb3759ef2cafe4d9afc101e",
+      "identity": "Fast Car — Tracy Chapman",
+      "period": "1980s",
+      "result": "ambiguous",
+      "judgment": "plausible",
+      "reason": "Folk, folk-rock, rock and alternative evidence genuinely overlap; no single compulsory category is defensible from tags alone.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_b1a2b84699a4afb78d78ad97d5f9ff3ce547156effb3af5995b3438999fa9aec",
+      "identity": "Purple Rain — Prince And The Revolution",
+      "period": "1980s",
+      "result": "R&B / Soul",
+      "judgment": "questionable",
+      "reason": "Only a one-vote funk tag survives. An exclusive R&B primary underrepresents this rock/soul ballad.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_ee1678844cd446d8ee33db39a10f052436354f702cdd852b88af825a1dec085a",
+      "identity": "Love Theme From St. Elmo's Fire (Instrumental) — David Foster",
+      "period": "1980s",
+      "result": "Pop",
+      "judgment": "plausible",
+      "reason": "Broad instrumental Pop is plausible; soundtrack is correctly not treated as a genre.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_ee6a32fdd246fd6dbe420ffe3162da5ce55b3f69b0d05dcb4576ea8de71ccf40",
+      "identity": "I'm Goin' Down — Bruce Springsteen",
+      "period": "1980s",
+      "result": "Rock",
+      "judgment": "plausible",
+      "reason": "Direct rock evidence is consistent with the performance; artist rock context is supplementary.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_f62b2b6113fad8aa92dfa0b6ad2a8b8f581c0ee3fd8c4781be8a3af5247212dd",
+      "identity": "Red Red Wine — UB40",
+      "period": "1980s",
+      "result": "ambiguous",
+      "judgment": "questionable",
+      "reason": "Reggae has nine votes and reggae-pop four; generic pop/rock tags create avoidable overbreadth while reggae/pop crossover is real.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_ff30746ebc21ca46bb47e0b7741190ab7516d361cbc9bb685bf80c40a546a54c",
+      "identity": "Walk This Way — Run-D.M.C.",
+      "period": "1980s",
+      "result": "ambiguous",
+      "judgment": "plausible",
+      "reason": "Direct rap and rock support reflect the documented Run-D.M.C./Aerosmith crossover; keep both. [Review reference](https://rockhall.com/inductees/run-dmc/).",
+      "independent_reference": "https://rockhall.com/inductees/run-dmc/"
+    },
+    {
+      "song_id": "song_13f6c0b8f42df13364864c81688d35202a4a1dabf70eedb6fb308a7a8b02d74e",
+      "identity": "Hooked On You — Silk",
+      "period": "1990s",
+      "result": "Pop",
+      "judgment": "clearly_wrong",
+      "reason": "Pop alone is misleading for this R&B performance; one pop tag overrides absence of better song evidence. Independent catalogue/chart references identify R&B. [Review reference](https://www.officialcharts.com/songs/silk-hooked-on-you/).",
+      "independent_reference": "https://www.officialcharts.com/songs/silk-hooked-on-you/"
+    },
+    {
+      "song_id": "song_2f6252b57051cdd28b2f54077bf6049aaafa0c5b82d349ada1bf3e33ee54bb1d",
+      "identity": "Doo Wop (That Thing) — Lauryn Hill",
+      "period": "1990s",
+      "result": "ambiguous",
+      "judgment": "plausible",
+      "reason": "R&B/Soul and Hip-Hop/Rap are both directly well supported; preserving genuine ambiguity is appropriate.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_6ced5df219ba8cbfffcba6e5048f27739b34e9043e510ef3094bfc2d0c6b16ab",
+      "identity": "I'll Never Let You Go — Steelheart",
+      "period": "1990s",
+      "result": "Rock",
+      "judgment": "plausible",
+      "reason": "Rock is a defensible broad label; a Metal secondary label would require explicit supporting song evidence.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_d8524775ea0b49eec78378d984ac3dc3b1cbfbf577b70169d7684611d3903930",
+      "identity": "Waterfalls — TLC",
+      "period": "1990s",
+      "result": "ambiguous",
+      "judgment": "questionable",
+      "reason": "Pop/R&B/rap overlap is plausible; an isolated indie-rock tag broadens ambiguity without persuasive support.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_e506edbf17e595ab52a5a5acc0b8d3527c4a8778f7e879e5ff54b36efdec384a",
+      "identity": "On A Sunday Afternoon — Lighter Shade Of Brown",
+      "period": "1990s",
+      "result": "Hip-Hop / Rap",
+      "judgment": "plausible",
+      "reason": "Hip-hop/rap tags agree for this performance.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_f413bb2f755c0d08ca66cbd330d8d0aad2f4b54c4786ea8a890fbabdd4ead78d",
+      "identity": "Smells Like Teen Spirit — Nirvana",
+      "period": "1990s",
+      "result": "ambiguous",
+      "judgment": "questionable",
+      "reason": "Grunge has 24 votes and alternative rock six; a one-vote pop tag prevents primary assignment. Generic-parent reduction alone does not solve weak-tag contamination. [Review reference](https://rockhall.com/inductees/nirvana/?field_induction_category=All).",
+      "independent_reference": "https://rockhall.com/inductees/nirvana/?field_induction_category=All"
+    },
+    {
+      "song_id": "song_147f2ebab60fe0f737afbb819c5a0fd7439c3c4c99a14e59b7b12083bcd987c8",
+      "identity": "Hot & Wet — 112 Featuring Ludacris",
+      "period": "2000s",
+      "result": "R&B / Soul",
+      "judgment": "plausible",
+      "reason": "R&B primary is plausible despite the rap collaborator; not every collaborator must determine the primary.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_5378bc839a3cfbf63f7006b65ec2bac2489545a8bef46b0e14d26a847fef9b11",
+      "identity": "We Thuggin' — Fat Joe Featuring R. Kelly",
+      "period": "2000s",
+      "result": "Hip-Hop / Rap",
+      "judgment": "plausible",
+      "reason": "Hip-hop recording tags support the rap primary; R&B collaboration does not automatically change it.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_63a8142a4d44bdc9567486fe79a2217646c9c984464703f50584b33c9af4b2ee",
+      "identity": "What's Your Fantasy — Ludacris Featuring Shawnna",
+      "period": "2000s",
+      "result": "Hip-Hop / Rap",
+      "judgment": "plausible",
+      "reason": "Southern hip-hop/rap evidence is consistent.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_71147487997243ed502c93376408a146dc10fbc064a7e95f9917a826dd29a95c",
+      "identity": "I Can Only Imagine — MercyMe",
+      "period": "2000s",
+      "result": "ambiguous",
+      "judgment": "questionable",
+      "reason": "Christian/Pop/Rock overlap is plausible, but the isolated christian-rap tag adds Hip-Hop without convincing support.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_943dd3a9ff7589bea515bb45f8529f89af88cb170214a4e9993f79361287aeb5",
+      "identity": "Why Don't We Just Dance — Josh Turner",
+      "period": "2000s",
+      "result": "Country",
+      "judgment": "plausible",
+      "reason": "Country tags fit; the word dance in the title correctly does not create an Electronic label.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_a641c3af2dfc107e7dc72b0ecf027e41b6fd4935571cb19f81e547926e6689ae",
+      "identity": "Looking For You — Kirk Franklin",
+      "period": "2000s",
+      "result": "ambiguous",
+      "judgment": "plausible",
+      "reason": "Gospel and R&B reflect overlapping religious and stylistic categories; ambiguity is sensible.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_c321c0f3f24d05bfcabf9ad27b021dacc0059a54dff16da3289392415ce09a0a",
+      "identity": "Been There — Clint Black With Steve Wariner",
+      "period": "2000s",
+      "result": "Country",
+      "judgment": "plausible",
+      "reason": "Direct country tags agree; artist context supports but does not substitute for song evidence.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_d24f6fd8895421cd9acf561e8f8930a76b1cf98a7c08be860ff51ab33f11f6a2",
+      "identity": "Don't Know Why — Norah Jones",
+      "period": "2000s",
+      "result": "ambiguous",
+      "judgment": "plausible",
+      "reason": "Jazz and Pop overlap is credible. Genre-specific award context also demonstrates why one exclusive label is not ground truth. [Review reference](https://www.grammy.com/artists/norah-jones/13227/).",
+      "independent_reference": "https://www.grammy.com/artists/norah-jones/13227/"
+    },
+    {
+      "song_id": "song_281bf843e63cfc26de275096d493c66105a4aa81844dc618ba901b09393cbe8f",
+      "identity": "Redbone — Childish Gambino",
+      "period": "2010–2019",
+      "result": "ambiguous",
+      "judgment": "clearly_wrong",
+      "reason": "The retained candidate set is rap/house and omits R&B/Soul. The song won Traditional R&B Performance; correct external identity does not guarantee correct tags. [Review reference](https://www.grammy.com/awards/categories/best-traditional-rb-performance/2018/).",
+      "independent_reference": "https://www.grammy.com/awards/categories/best-traditional-rb-performance/2018/"
+    },
+    {
+      "song_id": "song_35edd26ad9553a5289526ef08f23c589a04df3bd4b2f092ac01ec46d576f7def",
+      "identity": "Hangover — PSY Featuring Snoop Dogg",
+      "period": "2010–2019",
+      "result": "Electronic / Dance",
+      "judgment": "questionable",
+      "reason": "Electro/house tags alone omit a substantial rap/K-pop crossover; single primary is not well established.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_423a4820d33cc9da1e6bf4d9f5b53fc63f55b5dd9d6e0f632d2a12a400ee19ca",
+      "identity": "Die A Happy Man — Thomas Rhett",
+      "period": "2010–2019",
+      "result": "Country",
+      "judgment": "plausible",
+      "reason": "Contemporary-country and country tags agree.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_45c7222e2fbc0c27b8900bb121db2776b20d40638a2c09cf10eb0591ea2b333a",
+      "identity": "La Bicicleta — Carlos Vives & Shakira",
+      "period": "2010–2019",
+      "result": "Pop",
+      "judgment": "questionable",
+      "reason": "Pop is a possible broad description but one generic tag loses the Latin crossover. Do not infer Latin solely from language. [Review reference](https://www.sonymusic.es/eventos/carlos-vives-y-shakira-estrenan-el-video-oficial-de-la-bicicleta/).",
+      "independent_reference": "https://www.sonymusic.es/eventos/carlos-vives-y-shakira-estrenan-el-video-oficial-de-la-bicicleta/"
+    },
+    {
+      "song_id": "song_4eae3f5dee0b723259008e29b320e0f0ff6062138a7f10018b9bbc1ccfa4df2b",
+      "identity": "Put You In A Song — Keith Urban",
+      "period": "2010–2019",
+      "result": "Country",
+      "judgment": "plausible",
+      "reason": "Country is plausible; direct tag support is nevertheless only one vote.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_6595ebab0344ee24bb1690547db9e2e8e237034e13bebca379677511ee60217f",
+      "identity": "Drink A Beer — Luke Bryan",
+      "period": "2010–2019",
+      "result": "Country",
+      "judgment": "plausible",
+      "reason": "Country evidence has stronger support and agrees across synonymous labels.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_69823ed1beab1c15adab303458294de6aa805b844e4d9bc1cb759b53d8e1d0b8",
+      "identity": "Murder On My Mind — YNW Melly",
+      "period": "2010–2019",
+      "result": "Pop",
+      "judgment": "clearly_wrong",
+      "reason": "A single pop tag produces a misleading primary for this rap song. Song-level catalogue genre is Hip-Hop/Rap. [Review reference](https://www.shazam.com/en-us/song/1419601421/murder-on-my-mind).",
+      "independent_reference": "https://www.shazam.com/en-us/song/1419601421/murder-on-my-mind"
+    },
+    {
+      "song_id": "song_8dcf9229ba601d5dfc631d938739f35b4c55d54f42babf5a5e9219d96a98bb2a",
+      "identity": "I Like It — Cardi B, Bad Bunny & J Balvin",
+      "period": "2010–2019",
+      "result": "Hip-Hop / Rap",
+      "judgment": "plausible",
+      "reason": "Hip-Hop / Rap is defensible as primary, but Latin evidence exists only at artist level here and must not disappear from supporting context.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_a27c2bb0abe81ac1630dccbf655e722f0266e40065d8d04084cad9a5a186249a",
+      "identity": "No Problem — Chance The Rapper Featuring Lil Wayne & 2 Chainz",
+      "period": "2010–2019",
+      "result": "Hip-Hop / Rap",
+      "judgment": "plausible",
+      "reason": "Direct hip-hop evidence fits the collaboration.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_b932fc43127c8cc5cf67c26ca4a128ed158ce8142010a3293540b1e6efda9729",
+      "identity": "Spoil My Night — Post Malone Featuring Swae Lee",
+      "period": "2010–2019",
+      "result": "Hip-Hop / Rap",
+      "judgment": "plausible",
+      "reason": "Rap primary is plausible for this melodic crossover; evidence is thin.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_bc1676afe5cb4a4d64dbc784d23053c57d5bdcda1265d545574404fea263f627",
+      "identity": "One Dance — Drake Featuring WizKid & Kyla",
+      "period": "2010–2019",
+      "result": "ambiguous",
+      "judgment": "plausible",
+      "reason": "Dancehall, R&B and Afrobeats support genuine fusion; do not force collaborator style into a unique genre.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_db7d862b0ddc918e090d876541a63028f5d45b90416f6075469c14b13793bc0a",
+      "identity": "The Boys of Fall — Kenny Chesney",
+      "period": "2010–2019",
+      "result": "Country",
+      "judgment": "plausible",
+      "reason": "Modern/contemporary country and country tags agree.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_e4d2a835b54f92d8f7e1ce6ccec9bfad08ca4df59dc052fc94a65e5461e099a3",
+      "identity": "She's Got A Way With Words — Blake Shelton",
+      "period": "2010–2019",
+      "result": "Country",
+      "judgment": "plausible",
+      "reason": "Country recording evidence is consistent.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_ecb2eaba04133bd3bf991f0546cd24c82bf76d8c0477040fa17420eab4f91396",
+      "identity": "Here With Me — Marshmello Featuring CHVRCHES",
+      "period": "2010–2019",
+      "result": "Pop",
+      "judgment": "plausible",
+      "reason": "Pop is defensible under the frozen dance-pop/electropop mapping; Electronic overlap remains a taxonomy boundary.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_ee609cb946e2acfbea67800c78b1fd34dc779ede1eeebbfcef2121cc2fcc452b",
+      "identity": "Karate Chop (Remix) — Future Featuring Lil Wayne",
+      "period": "2010–2019",
+      "result": "Hip-Hop / Rap",
+      "judgment": "plausible",
+      "reason": "Rap recording evidence fits this explicitly credited remix; no genre transfer from a differently credited version.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_06018125bb187ee03e5005d52d433305c7ca3abbd08c919f84355f8c4a8e5eb4",
+      "identity": "Iloveitiloveitiloveit — Bella Kay",
+      "period": "2020–2026",
+      "result": "Pop",
+      "judgment": "unassessed",
+      "reason": "One pop tag and no independently inspected song-level genre reference; not counted as verified correct.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_09acaf36a0701d6da9fd5c343232f2bea10749bd7f69bad7257803ffc4c91d90",
+      "identity": "Eyes Are Closed — Morgan Wallen",
+      "period": "2020–2026",
+      "result": "Country",
+      "judgment": "unassessed",
+      "reason": "Country song tag plus artist context, but this recent recording was not independently verified; no correctness claim.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_0df51cb7ce0b42b34fada05559e56daea8ca38c0aa2e2c5889881d1c1887f1d4",
+      "identity": "Bang! — AJR",
+      "period": "2020–2026",
+      "result": "Electronic / Dance",
+      "judgment": "questionable",
+      "reason": "One electronic tag is not enough to distinguish electronic production from a primary Electronic / Dance style.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_13eb0e9ddf7ddd4df000e37b6f413d19952cf52f83bbce21caab7ad163ac6341",
+      "identity": "Calm Down — Rema & Selena Gomez",
+      "period": "2020–2026",
+      "result": "Pop",
+      "judgment": "questionable",
+      "reason": "A pop tag survives while african is rightly not auto-mapped. The method misses the Afrobeats crossover, rather than demonstrating pure Pop.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_2582bf1b159682a63c32b25e9c45a1908036654ff50eae584eeffe3d2c7603ea",
+      "identity": "Good 4 U — Olivia Rodrigo",
+      "period": "2020–2026",
+      "result": "ambiguous",
+      "judgment": "plausible",
+      "reason": "Pop/Rock/Alternative overlap is reasonable; indiscriminate priority would hide the crossover.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_2f6e3e6b8104a54fd692e7b4ef922b58471ea5a0b754739f1a4bea2e60912bf8",
+      "identity": "Moscow Mule — Bad Bunny",
+      "period": "2020–2026",
+      "result": "Latin",
+      "judgment": "plausible",
+      "reason": "Direct reggaeton evidence supports Latin; no nationality inference is needed.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_5e0db40b686cb1b722ccbd809d6664d820387165eaf111c8dda102bc602ee066",
+      "identity": "'Til You Can't — Cody Johnson",
+      "period": "2020–2026",
+      "result": "Country",
+      "judgment": "plausible",
+      "reason": "Country is plausible, but a one-vote tag is weaker than the operational confidence name implies.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_9adb3d1a0131719ef13c364403cf53a1962d992abdcd05c29cd951e04ab8cc07",
+      "identity": "Water — Tyla",
+      "period": "2020–2026",
+      "result": "ambiguous",
+      "judgment": "questionable",
+      "reason": "Pop/R&B is plausible but missing amapiano/African-pop evidence hides the key global crossover. Independent source describes that fusion. [Review reference](https://www.grammy.com/news/tyla-winner-best-african-music-performance-water-2024-grammys-meaning/).",
+      "independent_reference": "https://www.grammy.com/news/tyla-winner-best-african-music-performance-water-2024-grammys-meaning/"
+    },
+    {
+      "song_id": "song_b028c48b9eef5844f1d9ddf61cbe61a1c74e0e8ded5d1ac5b0ca70f5f39c6ed2",
+      "identity": "After A Few — Travis Denning",
+      "period": "2020–2026",
+      "result": "Country",
+      "judgment": "plausible",
+      "reason": "Country is plausible; one direct vote is not independent validation.",
+      "independent_reference": null
+    },
+    {
+      "song_id": "song_d32a84dacb8bbd6d91a6514decc9b51d7661efe788b020e5bd9ad749cc5ba8db",
+      "identity": "Essence — Wizkid Featuring Justin Bieber & Tems",
+      "period": "2020–2026",
+      "result": "Electronic / Dance",
+      "judgment": "clearly_wrong",
+      "reason": "One house tag yields Electronic / Dance; cached singular afrobeat is unmapped. This is a misleading primary for the Wizkid/Tems/Bieber Afrobeats/R&B crossover. [Review reference](https://time.com/6125601/best-songs-2021/).",
+      "independent_reference": "https://time.com/6125601/best-songs-2021/"
+    },
+    {
+      "song_id": "song_d7e9573c1e70adad7ade1b701ddfa86aaeb97415f9841e0d3d90c6dca6ac3cca",
+      "identity": "Dynamite — BTS",
+      "period": "2020–2026",
+      "result": "ambiguous",
+      "judgment": "plausible",
+      "reason": "Pop and K-Pop ambiguity is appropriate; the artist label calls the song disco pop. K-Pop is not mutually exclusive with Pop. [Review reference](https://ibighit.com/legacy/bts/dynamite-en.html).",
+      "independent_reference": "https://ibighit.com/legacy/bts/dynamite-en.html"
+    }
+  ]
+}

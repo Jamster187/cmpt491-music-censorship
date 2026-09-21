@@ -1,0 +1,277 @@
+{
+  "by_sample_role": {
+    "challenge": {
+      "ambiguous": 39,
+      "confident_primary": 8,
+      "insufficient_evidence": 16
+    },
+    "stratified_hash": {
+      "Other": 1,
+      "ambiguous": 111,
+      "confident_primary": 32,
+      "context_only": 3,
+      "insufficient_evidence": 90
+    }
+  },
+  "categories": {
+    "Afrobeats / African Pop": {
+      "any_evidence": 2,
+      "pilot_primary_monthly_rows": 0,
+      "primary": 0,
+      "primary_periods": {}
+    },
+    "Alternative / Indie": {
+      "any_evidence": 24,
+      "pilot_primary_monthly_rows": 0,
+      "primary": 0,
+      "primary_periods": {}
+    },
+    "Country": {
+      "any_evidence": 30,
+      "pilot_primary_monthly_rows": 53,
+      "primary": 11,
+      "primary_periods": {
+        "1958–1969": 1,
+        "2000s": 2,
+        "2010–2019": 5,
+        "2020–2026": 3
+      }
+    },
+    "Electronic / Dance": {
+      "any_evidence": 61,
+      "pilot_primary_monthly_rows": 16,
+      "primary": 3,
+      "primary_periods": {
+        "2010–2019": 1,
+        "2020–2026": 2
+      }
+    },
+    "Folk / Singer-Songwriter": {
+      "any_evidence": 14,
+      "pilot_primary_monthly_rows": 0,
+      "primary": 0,
+      "primary_periods": {}
+    },
+    "Gospel / Christian": {
+      "any_evidence": 6,
+      "pilot_primary_monthly_rows": 0,
+      "primary": 0,
+      "primary_periods": {}
+    },
+    "Hip-Hop / Rap": {
+      "any_evidence": 50,
+      "pilot_primary_monthly_rows": 37,
+      "primary": 7,
+      "primary_periods": {
+        "1990s": 1,
+        "2000s": 2,
+        "2010–2019": 4
+      }
+    },
+    "Jazz / Blues": {
+      "any_evidence": 21,
+      "pilot_primary_monthly_rows": 8,
+      "primary": 2,
+      "primary_periods": {
+        "1958–1969": 2
+      }
+    },
+    "K-Pop": {
+      "any_evidence": 1,
+      "pilot_primary_monthly_rows": 0,
+      "primary": 0,
+      "primary_periods": {}
+    },
+    "Latin": {
+      "any_evidence": 9,
+      "pilot_primary_monthly_rows": 5,
+      "primary": 1,
+      "primary_periods": {
+        "2020–2026": 1
+      }
+    },
+    "Metal": {
+      "any_evidence": 7,
+      "pilot_primary_monthly_rows": 0,
+      "primary": 0,
+      "primary_periods": {}
+    },
+    "Other": {
+      "any_evidence": 3,
+      "pilot_primary_monthly_rows": 2,
+      "primary": 1,
+      "primary_periods": {
+        "1958–1969": 1
+      }
+    },
+    "Pop": {
+      "any_evidence": 143,
+      "pilot_primary_monthly_rows": 43,
+      "primary": 9,
+      "primary_periods": {
+        "1958–1969": 1,
+        "1970s": 1,
+        "1980s": 1,
+        "1990s": 1,
+        "2010–2019": 3,
+        "2020–2026": 2
+      }
+    },
+    "R&B / Soul": {
+      "any_evidence": 72,
+      "pilot_primary_monthly_rows": 10,
+      "primary": 4,
+      "primary_periods": {
+        "1970s": 2,
+        "1980s": 1,
+        "2000s": 1
+      }
+    },
+    "Reggae / Dancehall": {
+      "any_evidence": 8,
+      "pilot_primary_monthly_rows": 0,
+      "primary": 0,
+      "primary_periods": {}
+    },
+    "Rock": {
+      "any_evidence": 95,
+      "pilot_primary_monthly_rows": 10,
+      "primary": 3,
+      "primary_periods": {
+        "1958–1969": 1,
+        "1980s": 1,
+        "1990s": 1
+      }
+    }
+  },
+  "direct_mapped_evidence": 18093,
+  "dispositions": {
+    "Other": 1,
+    "ambiguous": 150,
+    "confident_primary": 40,
+    "context_only": 3,
+    "insufficient_evidence": 106
+  },
+  "estimated_primary_coverage_pct": {
+    "1958–1969": 15.93,
+    "1970s": 15.47,
+    "1980s": 8.28,
+    "1990s": 17.65,
+    "2000s": 11.63,
+    "2010–2019": 39.21,
+    "2020–2026": 14.04
+  },
+  "evidence_input_manifest_sha256": "db5cbe068eb244fee3ae5255d54efc10e704ea5d5c9e86767c7422b8a3636ff1",
+  "input_sha256": {
+    "data/experiments/genre_pilot/inventory.json": "4d7c73681bfb1d7b7f37dcbd7c7aa3fd6ed29ace721be7efd297339341579bab",
+    "docs/genre/taxonomy_mapping.json": "dfbcd655f478cd0a15f121dbf09add65c2caed2978fa5823f2261f730a8e3a49",
+    "reports/genre/sample.csv": "2bb77681fc1d0d6521edcec7ca8f6b6dd721e0c9fcd7ee6b4f65621d30836cb0",
+    "src/genre_evidence.py": "c63f3b889647588449d66c29d5ff4dfc70f692a6d4f1c37f1391097d34d4f7f4",
+    "src/genre_pilot.py": "a19d32e90f24d90a889dc07acdac4f8eb3d7dbf5d59d86c5d83f91dc8519330c",
+    "src/genre_rules.py": "c358498827400139be13e409edd939c284757b75c95cf8c6c15779bc1dd99411",
+    "src/genre_sample.py": "ca20ca05aa07b2d55d22785d10b49b1007def441c5a8bb02f4f81c619f79e845"
+  },
+  "mapped_by_source": {
+    "MusicBrainz/artist": 618,
+    "MusicBrainz/recording": 18081,
+    "MusicBrainz/release": 134,
+    "MusicBrainz/release-group": 69,
+    "Wikidata/album": 13,
+    "Wikidata/artist": 3652,
+    "Wikidata/song_item": 75
+  },
+  "mapped_evidence": 18759,
+  "output_sha256": "39231eff367754410498586ee225bcb190e8345ea904bd09fc940e7f81d1fd84",
+  "periods": {
+    "1958–1969": {
+      "direct_mapped_evidence": 3898,
+      "mapped_evidence": 3935,
+      "pilot": 43,
+      "pilot_dispositions": {
+        "Other": 1,
+        "ambiguous": 19,
+        "confident_primary": 5,
+        "insufficient_evidence": 18
+      },
+      "population": 6808,
+      "raw_evidence": 4063
+    },
+    "1970s": {
+      "direct_mapped_evidence": 3368,
+      "mapped_evidence": 3402,
+      "pilot": 43,
+      "pilot_dispositions": {
+        "ambiguous": 25,
+        "confident_primary": 3,
+        "insufficient_evidence": 15
+      },
+      "population": 5008,
+      "raw_evidence": 3446
+    },
+    "1980s": {
+      "direct_mapped_evidence": 2838,
+      "mapped_evidence": 2882,
+      "pilot": 43,
+      "pilot_dispositions": {
+        "ambiguous": 23,
+        "confident_primary": 3,
+        "insufficient_evidence": 17
+      },
+      "population": 4000,
+      "raw_evidence": 2908
+    },
+    "1990s": {
+      "direct_mapped_evidence": 2201,
+      "mapped_evidence": 2232,
+      "pilot": 43,
+      "pilot_dispositions": {
+        "ambiguous": 22,
+        "confident_primary": 3,
+        "insufficient_evidence": 18
+      },
+      "population": 3329,
+      "raw_evidence": 2272
+    },
+    "2000s": {
+      "direct_mapped_evidence": 2425,
+      "mapped_evidence": 2484,
+      "pilot": 43,
+      "pilot_dispositions": {
+        "ambiguous": 27,
+        "confident_primary": 5,
+        "context_only": 1,
+        "insufficient_evidence": 10
+      },
+      "population": 3065,
+      "raw_evidence": 2525
+    },
+    "2010–2019": {
+      "direct_mapped_evidence": 2246,
+      "mapped_evidence": 2395,
+      "pilot": 43,
+      "pilot_dispositions": {
+        "ambiguous": 19,
+        "confident_primary": 13,
+        "insufficient_evidence": 11
+      },
+      "population": 3168,
+      "raw_evidence": 2466
+    },
+    "2020–2026": {
+      "direct_mapped_evidence": 1117,
+      "mapped_evidence": 1429,
+      "pilot": 42,
+      "pilot_dispositions": {
+        "ambiguous": 15,
+        "confident_primary": 8,
+        "context_only": 2,
+        "insufficient_evidence": 17
+      },
+      "population": 2663,
+      "raw_evidence": 1721
+    }
+  },
+  "pilot": 300,
+  "population": 28041,
+  "raw_positive_evidence": 19401
+}

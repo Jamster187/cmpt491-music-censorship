@@ -1,0 +1,1113 @@
+{
+  "version": "genre-pilot-v1",
+  "taxonomy": [
+    "Pop",
+    "Rock",
+    "Hip-Hop / Rap",
+    "R&B / Soul",
+    "Country",
+    "Latin",
+    "Electronic / Dance",
+    "Alternative / Indie",
+    "Metal",
+    "Folk / Singer-Songwriter",
+    "Jazz / Blues",
+    "Reggae / Dancehall",
+    "Gospel / Christian",
+    "K-Pop",
+    "Afrobeats / African Pop",
+    "Other"
+  ],
+  "aliases": {
+    "acid house": [
+      "Electronic / Dance"
+    ],
+    "acoustic folk": [
+      "Folk / Singer-Songwriter"
+    ],
+    "adult contemporary": [
+      "Pop"
+    ],
+    "african pop": [
+      "Afrobeats / African Pop"
+    ],
+    "afro fusion": [
+      "Afrobeats / African Pop"
+    ],
+    "afro swing": [
+      "Afrobeats / African Pop"
+    ],
+    "afro-fusion": [
+      "Afrobeats / African Pop"
+    ],
+    "afro-pop": [
+      "Afrobeats / African Pop"
+    ],
+    "afrobeats": [
+      "Afrobeats / African Pop"
+    ],
+    "afropop": [
+      "Afrobeats / African Pop"
+    ],
+    "afroswing": [
+      "Afrobeats / African Pop"
+    ],
+    "album rock": [
+      "Rock"
+    ],
+    "alternative": [
+      "Alternative / Indie"
+    ],
+    "alternative hip hop": [
+      "Hip-Hop / Rap"
+    ],
+    "alternative metal": [
+      "Metal"
+    ],
+    "alternative pop/rock": [
+      "Alternative / Indie"
+    ],
+    "alternative r & b": [
+      "R&B / Soul"
+    ],
+    "alternative r&b": [
+      "R&B / Soul"
+    ],
+    "alternative rap": [
+      "Hip-Hop / Rap"
+    ],
+    "alternative rock": [
+      "Alternative / Indie"
+    ],
+    "alternative/indie rock": [
+      "Alternative / Indie"
+    ],
+    "alté": [
+      "Afrobeats / African Pop"
+    ],
+    "am pop": [
+      "Pop"
+    ],
+    "amapiano": [
+      "Electronic / Dance",
+      "Afrobeats / African Pop"
+    ],
+    "ambient": [
+      "Electronic / Dance"
+    ],
+    "ambient music": [
+      "Electronic / Dance"
+    ],
+    "american folk": [
+      "Folk / Singer-Songwriter"
+    ],
+    "americana": [
+      "Country"
+    ],
+    "aor": [
+      "Rock"
+    ],
+    "arena rock": [
+      "Rock"
+    ],
+    "art pop": [
+      "Pop"
+    ],
+    "art pop music": [
+      "Pop"
+    ],
+    "azonto": [
+      "Afrobeats / African Pop"
+    ],
+    "bachata": [
+      "Latin"
+    ],
+    "bachata music": [
+      "Latin"
+    ],
+    "bakersfield sound": [
+      "Country"
+    ],
+    "banda": [
+      "Latin"
+    ],
+    "baroque pop": [
+      "Pop"
+    ],
+    "bebop": [
+      "Jazz / Blues"
+    ],
+    "big band": [
+      "Jazz / Blues"
+    ],
+    "big beat": [
+      "Electronic / Dance"
+    ],
+    "black metal": [
+      "Metal"
+    ],
+    "bluegrass": [
+      "Country"
+    ],
+    "blues": [
+      "Jazz / Blues"
+    ],
+    "blues music": [
+      "Jazz / Blues"
+    ],
+    "blues rock": [
+      "Rock"
+    ],
+    "boom bap": [
+      "Hip-Hop / Rap"
+    ],
+    "bossa nova": [
+      "Latin",
+      "Jazz / Blues"
+    ],
+    "breakbeat": [
+      "Electronic / Dance"
+    ],
+    "brill building pop": [
+      "Pop"
+    ],
+    "british folk": [
+      "Folk / Singer-Songwriter"
+    ],
+    "british invasion": [
+      "Rock"
+    ],
+    "britpop": [
+      "Alternative / Indie"
+    ],
+    "bro-country": [
+      "Country"
+    ],
+    "bubblegum pop": [
+      "Pop"
+    ],
+    "ccm": [
+      "Gospel / Christian"
+    ],
+    "chamber pop": [
+      "Pop"
+    ],
+    "chicago blues": [
+      "Jazz / Blues"
+    ],
+    "children's music": [
+      "Other"
+    ],
+    "christian": [
+      "Gospel / Christian"
+    ],
+    "christian hip hop": [
+      "Gospel / Christian",
+      "Hip-Hop / Rap"
+    ],
+    "christian music": [
+      "Gospel / Christian"
+    ],
+    "christian pop": [
+      "Gospel / Christian"
+    ],
+    "christian rap": [
+      "Gospel / Christian",
+      "Hip-Hop / Rap"
+    ],
+    "christian rock": [
+      "Gospel / Christian",
+      "Rock"
+    ],
+    "classic country": [
+      "Country"
+    ],
+    "classic rock": [
+      "Rock"
+    ],
+    "classic soul": [
+      "R&B / Soul"
+    ],
+    "classical": [
+      "Other"
+    ],
+    "classical music": [
+      "Other"
+    ],
+    "cloud rap": [
+      "Hip-Hop / Rap"
+    ],
+    "college rock": [
+      "Alternative / Indie"
+    ],
+    "comedy": [
+      "Other"
+    ],
+    "comedy music": [
+      "Other"
+    ],
+    "conscious hip hop": [
+      "Hip-Hop / Rap"
+    ],
+    "contemporary christian": [
+      "Gospel / Christian"
+    ],
+    "contemporary christian music": [
+      "Gospel / Christian"
+    ],
+    "contemporary country": [
+      "Country"
+    ],
+    "contemporary folk": [
+      "Folk / Singer-Songwriter"
+    ],
+    "contemporary gospel": [
+      "Gospel / Christian"
+    ],
+    "contemporary jazz": [
+      "Jazz / Blues"
+    ],
+    "contemporary pop/rock": [
+      "Pop",
+      "Rock"
+    ],
+    "contemporary r & b": [
+      "R&B / Soul"
+    ],
+    "contemporary r&b": [
+      "R&B / Soul"
+    ],
+    "corrido": [
+      "Latin"
+    ],
+    "corridos tumbados": [
+      "Latin"
+    ],
+    "country": [
+      "Country"
+    ],
+    "country blues": [
+      "Jazz / Blues"
+    ],
+    "country gospel": [
+      "Country",
+      "Gospel / Christian"
+    ],
+    "country music": [
+      "Country"
+    ],
+    "country pop": [
+      "Country",
+      "Pop"
+    ],
+    "country rock": [
+      "Country",
+      "Rock"
+    ],
+    "country-pop": [
+      "Country",
+      "Pop"
+    ],
+    "country-rock": [
+      "Country",
+      "Rock"
+    ],
+    "crunk": [
+      "Hip-Hop / Rap"
+    ],
+    "cumbia": [
+      "Latin"
+    ],
+    "dance": [
+      "Electronic / Dance"
+    ],
+    "dance music": [
+      "Electronic / Dance"
+    ],
+    "dance pop": [
+      "Pop"
+    ],
+    "dance-pop": [
+      "Pop"
+    ],
+    "dancehall": [
+      "Reggae / Dancehall"
+    ],
+    "dancehall pop": [
+      "Reggae / Dancehall",
+      "Pop"
+    ],
+    "death metal": [
+      "Metal"
+    ],
+    "deep house": [
+      "Electronic / Dance"
+    ],
+    "delta blues": [
+      "Jazz / Blues"
+    ],
+    "disco": [
+      "Electronic / Dance"
+    ],
+    "dixieland": [
+      "Jazz / Blues"
+    ],
+    "doo wop": [
+      "R&B / Soul"
+    ],
+    "doo-wop": [
+      "R&B / Soul"
+    ],
+    "doom metal": [
+      "Metal"
+    ],
+    "downtempo": [
+      "Electronic / Dance"
+    ],
+    "dream pop": [
+      "Alternative / Indie"
+    ],
+    "drill": [
+      "Hip-Hop / Rap"
+    ],
+    "drum & bass": [
+      "Electronic / Dance"
+    ],
+    "drum and bass": [
+      "Electronic / Dance"
+    ],
+    "dub": [
+      "Reggae / Dancehall"
+    ],
+    "dubstep": [
+      "Electronic / Dance"
+    ],
+    "early pop": [
+      "Pop"
+    ],
+    "early pop/rock": [
+      "Pop",
+      "Rock"
+    ],
+    "east coast hip hop": [
+      "Hip-Hop / Rap"
+    ],
+    "edm": [
+      "Electronic / Dance"
+    ],
+    "electric blues": [
+      "Jazz / Blues"
+    ],
+    "electro": [
+      "Electronic / Dance"
+    ],
+    "electro house": [
+      "Electronic / Dance"
+    ],
+    "electro-pop": [
+      "Pop"
+    ],
+    "electronic": [
+      "Electronic / Dance"
+    ],
+    "electronic dance music": [
+      "Electronic / Dance"
+    ],
+    "electronic music": [
+      "Electronic / Dance"
+    ],
+    "electropop": [
+      "Pop"
+    ],
+    "emo": [
+      "Alternative / Indie"
+    ],
+    "euro dance": [
+      "Electronic / Dance"
+    ],
+    "euro disco": [
+      "Electronic / Dance"
+    ],
+    "eurodance": [
+      "Electronic / Dance"
+    ],
+    "eurodisco": [
+      "Electronic / Dance"
+    ],
+    "europop": [
+      "Pop"
+    ],
+    "folk": [
+      "Folk / Singer-Songwriter"
+    ],
+    "folk music": [
+      "Folk / Singer-Songwriter"
+    ],
+    "folk pop": [
+      "Folk / Singer-Songwriter",
+      "Pop"
+    ],
+    "folk revival": [
+      "Folk / Singer-Songwriter"
+    ],
+    "folk rock": [
+      "Folk / Singer-Songwriter",
+      "Rock"
+    ],
+    "folk-pop": [
+      "Folk / Singer-Songwriter",
+      "Pop"
+    ],
+    "folk-rock": [
+      "Folk / Singer-Songwriter",
+      "Rock"
+    ],
+    "funk": [
+      "R&B / Soul"
+    ],
+    "funk music": [
+      "R&B / Soul"
+    ],
+    "funk rock": [
+      "R&B / Soul",
+      "Rock"
+    ],
+    "future bass": [
+      "Electronic / Dance"
+    ],
+    "future house": [
+      "Electronic / Dance"
+    ],
+    "g-funk": [
+      "Hip-Hop / Rap"
+    ],
+    "gangsta rap": [
+      "Hip-Hop / Rap"
+    ],
+    "garage house": [
+      "Electronic / Dance"
+    ],
+    "garage rock": [
+      "Rock"
+    ],
+    "glam metal": [
+      "Metal"
+    ],
+    "glam rock": [
+      "Rock"
+    ],
+    "gospel": [
+      "Gospel / Christian"
+    ],
+    "gospel music": [
+      "Gospel / Christian"
+    ],
+    "gothic metal": [
+      "Metal"
+    ],
+    "gothic rock": [
+      "Alternative / Indie"
+    ],
+    "grime": [
+      "Hip-Hop / Rap"
+    ],
+    "grunge": [
+      "Alternative / Indie"
+    ],
+    "hair metal": [
+      "Metal"
+    ],
+    "hard rock": [
+      "Rock"
+    ],
+    "hardcore hip hop": [
+      "Hip-Hop / Rap"
+    ],
+    "heartland rock": [
+      "Rock"
+    ],
+    "heavy metal": [
+      "Metal"
+    ],
+    "heavy metal music": [
+      "Metal"
+    ],
+    "hip hop": [
+      "Hip-Hop / Rap"
+    ],
+    "hip hop music": [
+      "Hip-Hop / Rap"
+    ],
+    "hip hop rap": [
+      "Hip-Hop / Rap"
+    ],
+    "hip-hop": [
+      "Hip-Hop / Rap"
+    ],
+    "honky tonk": [
+      "Country"
+    ],
+    "honky-tonk": [
+      "Country"
+    ],
+    "house": [
+      "Electronic / Dance"
+    ],
+    "house music": [
+      "Electronic / Dance"
+    ],
+    "indie": [
+      "Alternative / Indie"
+    ],
+    "indie folk": [
+      "Alternative / Indie"
+    ],
+    "indie pop": [
+      "Alternative / Indie"
+    ],
+    "indie pop rock": [
+      "Alternative / Indie"
+    ],
+    "indie rock": [
+      "Alternative / Indie"
+    ],
+    "industrial metal": [
+      "Metal"
+    ],
+    "italo disco": [
+      "Electronic / Dance"
+    ],
+    "j-pop": [
+      "Pop"
+    ],
+    "japanese pop": [
+      "Pop"
+    ],
+    "jazz": [
+      "Jazz / Blues"
+    ],
+    "jazz funk": [
+      "Jazz / Blues"
+    ],
+    "jazz fusion": [
+      "Jazz / Blues"
+    ],
+    "jazz music": [
+      "Jazz / Blues"
+    ],
+    "jazz rap": [
+      "Jazz / Blues",
+      "Hip-Hop / Rap"
+    ],
+    "jazz-funk": [
+      "Jazz / Blues"
+    ],
+    "jump blues": [
+      "Jazz / Blues"
+    ],
+    "k-pop": [
+      "K-Pop"
+    ],
+    "korean pop": [
+      "K-Pop"
+    ],
+    "korean pop music": [
+      "K-Pop"
+    ],
+    "kpop": [
+      "K-Pop"
+    ],
+    "latin": [
+      "Latin"
+    ],
+    "latin hip hop": [
+      "Latin"
+    ],
+    "latin music": [
+      "Latin"
+    ],
+    "latin pop": [
+      "Latin"
+    ],
+    "latin rap": [
+      "Latin"
+    ],
+    "latin rock": [
+      "Latin"
+    ],
+    "latin trap": [
+      "Latin"
+    ],
+    "lo-fi indie": [
+      "Alternative / Indie"
+    ],
+    "lovers rock": [
+      "Reggae / Dancehall"
+    ],
+    "march": [
+      "Other"
+    ],
+    "march music": [
+      "Other"
+    ],
+    "mariachi": [
+      "Latin"
+    ],
+    "math rock": [
+      "Alternative / Indie"
+    ],
+    "merengue": [
+      "Latin"
+    ],
+    "metal": [
+      "Metal"
+    ],
+    "metalcore": [
+      "Metal"
+    ],
+    "modern country": [
+      "Country"
+    ],
+    "motown": [
+      "R&B / Soul"
+    ],
+    "musical theater": [
+      "Other"
+    ],
+    "musical theatre": [
+      "Other"
+    ],
+    "nashville sound": [
+      "Country"
+    ],
+    "neo soul": [
+      "R&B / Soul"
+    ],
+    "neo-soul": [
+      "R&B / Soul"
+    ],
+    "neo-traditional country": [
+      "Country"
+    ],
+    "new age": [
+      "Other"
+    ],
+    "new jack swing": [
+      "R&B / Soul"
+    ],
+    "new wave": [
+      "Rock"
+    ],
+    "new wave music": [
+      "Rock"
+    ],
+    "new-age": [
+      "Other"
+    ],
+    "noise rock": [
+      "Alternative / Indie"
+    ],
+    "norteno": [
+      "Latin"
+    ],
+    "norteño": [
+      "Latin"
+    ],
+    "northern soul": [
+      "R&B / Soul"
+    ],
+    "nu metal": [
+      "Metal"
+    ],
+    "old school soul": [
+      "R&B / Soul"
+    ],
+    "opera": [
+      "Other"
+    ],
+    "operetta": [
+      "Other"
+    ],
+    "outlaw country": [
+      "Country"
+    ],
+    "philadelphia soul": [
+      "R&B / Soul"
+    ],
+    "philly soul": [
+      "R&B / Soul"
+    ],
+    "piano blues": [
+      "Jazz / Blues"
+    ],
+    "polka": [
+      "Other"
+    ],
+    "polka music": [
+      "Other"
+    ],
+    "pop": [
+      "Pop"
+    ],
+    "pop music": [
+      "Pop"
+    ],
+    "pop rap": [
+      "Pop",
+      "Hip-Hop / Rap"
+    ],
+    "pop rock": [
+      "Pop",
+      "Rock"
+    ],
+    "pop soul": [
+      "Pop",
+      "R&B / Soul"
+    ],
+    "pop-rap": [
+      "Pop",
+      "Hip-Hop / Rap"
+    ],
+    "pop-soul": [
+      "Pop",
+      "R&B / Soul"
+    ],
+    "pop/rock": [
+      "Pop",
+      "Rock"
+    ],
+    "post-disco": [
+      "Electronic / Dance"
+    ],
+    "post-grunge": [
+      "Alternative / Indie"
+    ],
+    "post-metal": [
+      "Metal"
+    ],
+    "post-punk": [
+      "Alternative / Indie"
+    ],
+    "power metal": [
+      "Metal"
+    ],
+    "power pop": [
+      "Pop"
+    ],
+    "praise & worship": [
+      "Gospel / Christian"
+    ],
+    "praise and worship": [
+      "Gospel / Christian"
+    ],
+    "progressive country": [
+      "Country"
+    ],
+    "progressive house": [
+      "Electronic / Dance"
+    ],
+    "progressive metal": [
+      "Metal"
+    ],
+    "progressive rock": [
+      "Rock"
+    ],
+    "psychedelic rock": [
+      "Rock"
+    ],
+    "pub rock": [
+      "Rock"
+    ],
+    "punk": [
+      "Rock"
+    ],
+    "punk rock": [
+      "Rock"
+    ],
+    "quiet storm": [
+      "R&B / Soul"
+    ],
+    "r b": [
+      "R&B / Soul"
+    ],
+    "r&b": [
+      "R&B / Soul"
+    ],
+    "ragga": [
+      "Reggae / Dancehall"
+    ],
+    "rap": [
+      "Hip-Hop / Rap"
+    ],
+    "rap metal": [
+      "Hip-Hop / Rap",
+      "Metal"
+    ],
+    "rap rock": [
+      "Hip-Hop / Rap",
+      "Rock"
+    ],
+    "reggae": [
+      "Reggae / Dancehall"
+    ],
+    "reggae fusion": [
+      "Reggae / Dancehall"
+    ],
+    "reggae music": [
+      "Reggae / Dancehall"
+    ],
+    "reggae pop": [
+      "Reggae / Dancehall"
+    ],
+    "reggae-pop": [
+      "Reggae / Dancehall"
+    ],
+    "reggaeton": [
+      "Latin"
+    ],
+    "reggaetón": [
+      "Latin"
+    ],
+    "regional mexican": [
+      "Latin"
+    ],
+    "rhythm & blues": [
+      "R&B / Soul"
+    ],
+    "rhythm and blues": [
+      "R&B / Soul"
+    ],
+    "rock": [
+      "Rock"
+    ],
+    "rock & roll": [
+      "Rock"
+    ],
+    "rock and roll": [
+      "Rock"
+    ],
+    "rock music": [
+      "Rock"
+    ],
+    "rock roll": [
+      "Rock"
+    ],
+    "rock/pop": [
+      "Pop",
+      "Rock"
+    ],
+    "rockabilly": [
+      "Rock"
+    ],
+    "rocksteady": [
+      "Reggae / Dancehall"
+    ],
+    "roots reggae": [
+      "Reggae / Dancehall"
+    ],
+    "roots rock": [
+      "Rock"
+    ],
+    "salsa": [
+      "Latin"
+    ],
+    "salsa music": [
+      "Latin"
+    ],
+    "samba": [
+      "Latin"
+    ],
+    "sertanejo": [
+      "Latin"
+    ],
+    "shoegaze": [
+      "Alternative / Indie"
+    ],
+    "singer songwriter": [
+      "Folk / Singer-Songwriter"
+    ],
+    "singer-songwriter": [
+      "Folk / Singer-Songwriter"
+    ],
+    "singer/songwriter": [
+      "Folk / Singer-Songwriter"
+    ],
+    "ska": [
+      "Reggae / Dancehall"
+    ],
+    "smooth jazz": [
+      "Jazz / Blues"
+    ],
+    "smooth soul": [
+      "R&B / Soul"
+    ],
+    "soft rock": [
+      "Rock"
+    ],
+    "sophisti-pop": [
+      "Pop"
+    ],
+    "soul": [
+      "R&B / Soul"
+    ],
+    "soul jazz": [
+      "Jazz / Blues"
+    ],
+    "soul music": [
+      "R&B / Soul"
+    ],
+    "southern gospel": [
+      "Gospel / Christian"
+    ],
+    "southern hip hop": [
+      "Hip-Hop / Rap"
+    ],
+    "southern rap": [
+      "Hip-Hop / Rap"
+    ],
+    "southern rock": [
+      "Rock"
+    ],
+    "southern soul": [
+      "R&B / Soul"
+    ],
+    "speed metal": [
+      "Metal"
+    ],
+    "spoken word": [
+      "Other"
+    ],
+    "spoken-word": [
+      "Other"
+    ],
+    "sunshine pop": [
+      "Pop"
+    ],
+    "surf music": [
+      "Rock"
+    ],
+    "surf rock": [
+      "Rock"
+    ],
+    "swing": [
+      "Jazz / Blues"
+    ],
+    "swing music": [
+      "Jazz / Blues"
+    ],
+    "symphonic metal": [
+      "Metal"
+    ],
+    "synth pop": [
+      "Pop"
+    ],
+    "synth-pop": [
+      "Pop"
+    ],
+    "synthpop": [
+      "Pop"
+    ],
+    "techno": [
+      "Electronic / Dance"
+    ],
+    "techno music": [
+      "Electronic / Dance"
+    ],
+    "teen pop": [
+      "Pop"
+    ],
+    "tejano": [
+      "Latin"
+    ],
+    "thrash metal": [
+      "Metal"
+    ],
+    "traditional country": [
+      "Country"
+    ],
+    "traditional folk": [
+      "Folk / Singer-Songwriter"
+    ],
+    "traditional jazz": [
+      "Jazz / Blues"
+    ],
+    "traditional pop": [
+      "Pop"
+    ],
+    "traditional pop music": [
+      "Pop"
+    ],
+    "trance": [
+      "Electronic / Dance"
+    ],
+    "trance music": [
+      "Electronic / Dance"
+    ],
+    "trap": [
+      "Hip-Hop / Rap"
+    ],
+    "trap music": [
+      "Hip-Hop / Rap"
+    ],
+    "trip hop": [
+      "Electronic / Dance"
+    ],
+    "tropical": [
+      "Latin"
+    ],
+    "tropical house": [
+      "Electronic / Dance"
+    ],
+    "uk drill": [
+      "Hip-Hop / Rap"
+    ],
+    "uk garage": [
+      "Electronic / Dance"
+    ],
+    "urban contemporary gospel": [
+      "Gospel / Christian"
+    ],
+    "urban soul": [
+      "R&B / Soul"
+    ],
+    "urbano latino": [
+      "Latin"
+    ],
+    "vocal jazz": [
+      "Jazz / Blues"
+    ],
+    "west coast hip hop": [
+      "Hip-Hop / Rap"
+    ],
+    "western swing": [
+      "Country"
+    ],
+    "worship": [
+      "Gospel / Christian"
+    ],
+    "country rap": [
+      "Hip-Hop / Rap",
+      "Country"
+    ],
+    "country trap": [
+      "Hip-Hop / Rap",
+      "Country"
+    ]
+  },
+  "ignored_examples": [
+    "ballad",
+    "vocal",
+    "oldies",
+    "party",
+    "happy",
+    "soundtrack",
+    "instrumental",
+    "urban",
+    "club",
+    "top 40",
+    "world",
+    "world music",
+    "255",
+    "billboard hot 100"
+  ]
+}

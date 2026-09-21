@@ -39,11 +39,11 @@ Songs with usable lyrics are processed by four models:
 - **GoEmotions:** emotion measurements.
 - **Cardiff sentiment:** positive, neutral and negative sentiment.
 
-Together they produce 42 numerical content features. These are model-derived scores, not ground truth. Metadata, lyrics and classifier catch-up for the 3,654 newly introduced songs is still running; final coverage is not yet available.
+Together they produce 42 numerical content features. These are model-derived scores, not ground truth. Metadata, lyrics and classifier catch-up for the month-end population is complete. Usable lyrics and classifier data are available for 20,981 songs; two lack LyricLens results.
 
 ## Genre
 
-Genre is the next core dataset addition. We plan to assign songs to a broad, fixed genre taxonomy so we can compare content trends between genres over time.
+Genre is the next core dataset addition. We are testing a fixed 16-category taxonomy on 300 songs before assigning genres across the population. See the [genre pilot method and rebuild instructions](docs/genre/method.md).
 
 ## Download
 
@@ -51,7 +51,7 @@ The current [master_dataset.csv](https://raw.githubusercontent.com/Jamster187/cm
 
 [songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv) and [monthly_top100.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/monthly_top100.csv) are also available separately from that release.
 
-A new month-end version will replace it after acquisition/classifier catch-up and genre work are completed.
+A new month-end version will replace it after genre work is completed.
 
 ## Research direction
 
@@ -61,7 +61,7 @@ Once the dataset is finished, we want to track content scores over time, compare
 
 - [x] Billboard data foundation
 - [x] Weekly/monthly end-of-period methodology
-- [ ] Month-end population metadata/lyrics/classifier catch-up — running
-- [ ] Genre classification — next
+- [x] Month-end population metadata/lyrics/classifier catch-up
+- [ ] Genre classification — pilot under evaluation
 - [ ] Final master dataset
 - [ ] Historical/post-COVID analysis
