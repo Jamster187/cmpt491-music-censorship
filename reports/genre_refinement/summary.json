@@ -1,0 +1,264 @@
+{
+  "ambiguity_flags": {
+    "artist_context_adds_other_categories": 14,
+    "compatible_tags_within_category": 127,
+    "competing_strong_categories": 28,
+    "electronic_crossover": 58,
+    "isolated_low_support_category": 124,
+    "latin_crossover": 6,
+    "multiple_strong_candidates": 47,
+    "pop_with_specific_genre": 129,
+    "rap_soul": 22,
+    "rock_alternative": 18,
+    "rock_metal": 6
+  },
+  "ambiguity_primary_reasons": {
+    "cross_genre_strong_evidence": 47,
+    "weak_or_conflicting_evidence": 103
+  },
+  "categories": {
+    "Afrobeats / African Pop": {
+      "primary": 0,
+      "strong_support": 0
+    },
+    "Alternative / Indie": {
+      "primary": 1,
+      "strong_support": 8
+    },
+    "Country": {
+      "primary": 9,
+      "strong_support": 9
+    },
+    "Electronic / Dance": {
+      "primary": 4,
+      "strong_support": 12
+    },
+    "Folk / Singer-Songwriter": {
+      "primary": 0,
+      "strong_support": 3
+    },
+    "Gospel / Christian": {
+      "primary": 2,
+      "strong_support": 2
+    },
+    "Hip-Hop / Rap": {
+      "primary": 6,
+      "strong_support": 11
+    },
+    "Jazz / Blues": {
+      "primary": 2,
+      "strong_support": 4
+    },
+    "K-Pop": {
+      "primary": 0,
+      "strong_support": 0
+    },
+    "Latin": {
+      "primary": 0,
+      "strong_support": 2
+    },
+    "Metal": {
+      "primary": 0,
+      "strong_support": 4
+    },
+    "Other": {
+      "primary": 0,
+      "strong_support": 0
+    },
+    "Pop": {
+      "primary": 28,
+      "strong_support": 65
+    },
+    "R&B / Soul": {
+      "primary": 17,
+      "strong_support": 31
+    },
+    "Reggae / Dancehall": {
+      "primary": 1,
+      "strong_support": 3
+    },
+    "Rock": {
+      "primary": 20,
+      "strong_support": 41
+    }
+  },
+  "counts": {
+    "ambiguous": 28,
+    "insufficient": 182,
+    "primary": 90
+  },
+  "estimates": {
+    "expected_population_counts": {
+      "Other": 0,
+      "ambiguous": 1897,
+      "insufficient": 17818,
+      "primary": 8326
+    },
+    "expected_population_pct": {
+      "Other": 0.0,
+      "ambiguous": 6.76,
+      "insufficient": 63.54,
+      "primary": 29.69
+    },
+    "method": "N/n rank-credit-period design weights; challenge cases weight 1; calibrate mapped/nonmapped evidence separately in each period to the exact v1 evidence census. Approximate availability, not accuracy.",
+    "periods": {
+      "1958–1969": {
+        "expected_pct": {
+          "Other": 0.0,
+          "ambiguous": 0.42,
+          "insufficient": 70.98,
+          "primary": 28.6
+        },
+        "mapped_evidence": 3935,
+        "pilot_counts": {
+          "ambiguous": 1,
+          "insufficient": 27,
+          "primary": 15
+        },
+        "population": 6808
+      },
+      "1970s": {
+        "expected_pct": {
+          "Other": 0.0,
+          "ambiguous": 7.26,
+          "insufficient": 47.79,
+          "primary": 44.95
+        },
+        "mapped_evidence": 3402,
+        "pilot_counts": {
+          "ambiguous": 2,
+          "insufficient": 19,
+          "primary": 22
+        },
+        "population": 5008
+      },
+      "1980s": {
+        "expected_pct": {
+          "Other": 0.0,
+          "ambiguous": 9.38,
+          "insufficient": 60.14,
+          "primary": 30.48
+        },
+        "mapped_evidence": 2882,
+        "pilot_counts": {
+          "ambiguous": 9,
+          "insufficient": 25,
+          "primary": 9
+        },
+        "population": 4000
+      },
+      "1990s": {
+        "expected_pct": {
+          "Other": 0.0,
+          "ambiguous": 8.5,
+          "insufficient": 73.17,
+          "primary": 18.32
+        },
+        "mapped_evidence": 2232,
+        "pilot_counts": {
+          "ambiguous": 3,
+          "insufficient": 27,
+          "primary": 13
+        },
+        "population": 3329
+      },
+      "2000s": {
+        "expected_pct": {
+          "Other": 0.0,
+          "ambiguous": 20.59,
+          "insufficient": 49.22,
+          "primary": 30.18
+        },
+        "mapped_evidence": 2484,
+        "pilot_counts": {
+          "ambiguous": 7,
+          "insufficient": 22,
+          "primary": 14
+        },
+        "population": 3065
+      },
+      "2010–2019": {
+        "expected_pct": {
+          "Other": 0.0,
+          "ambiguous": 6.79,
+          "insufficient": 52.19,
+          "primary": 41.02
+        },
+        "mapped_evidence": 2395,
+        "pilot_counts": {
+          "ambiguous": 6,
+          "insufficient": 23,
+          "primary": 14
+        },
+        "population": 3168
+      },
+      "2020–2026": {
+        "expected_pct": {
+          "Other": 0.0,
+          "ambiguous": 0.0,
+          "insufficient": 97.21,
+          "primary": 2.79
+        },
+        "mapped_evidence": 1429,
+        "pilot_counts": {
+          "insufficient": 39,
+          "primary": 3
+        },
+        "population": 2663
+      }
+    }
+  },
+  "hashes": {
+    "data/experiments/genre_pilot/pilot_evidence.json": "ff0ebcb41882d956c29b6ae72b470f50932cc74b63c844f27b211c8db1bcd193",
+    "docs/genre/refinement_rules.json": "df976985d6d08eef249f8169da02f2b328ca3e936b66ccf25b9bc253e9fd9310",
+    "docs/genre/taxonomy_mapping.json": "dfbcd655f478cd0a15f121dbf09add65c2caed2978fa5823f2261f730a8e3a49",
+    "reports/genre/pilot.csv": "39231eff367754410498586ee225bcb190e8345ea904bd09fc940e7f81d1fd84",
+    "reports/genre/sample.csv": "2bb77681fc1d0d6521edcec7ca8f6b6dd721e0c9fcd7ee6b4f65621d30836cb0",
+    "src/genre_refined_rules.py": "8d36211c40425e28b62b4baedbdd382e42380d3f734c003633c101ff67eeeb64",
+    "src/genre_refinement.py": "5a3c0f438efd6c1d395af0d390f4804aa7a699d5f375f7c94c3d2c52e45263ea"
+  },
+  "sample": 300,
+  "transitions": [
+    {
+      "count": 1,
+      "new": "insufficient",
+      "old": "Other"
+    },
+    {
+      "count": 28,
+      "new": "ambiguous",
+      "old": "ambiguous"
+    },
+    {
+      "count": 42,
+      "new": "insufficient",
+      "old": "ambiguous"
+    },
+    {
+      "count": 80,
+      "new": "primary",
+      "old": "ambiguous"
+    },
+    {
+      "count": 30,
+      "new": "insufficient",
+      "old": "confident_primary"
+    },
+    {
+      "count": 10,
+      "new": "primary",
+      "old": "confident_primary"
+    },
+    {
+      "count": 3,
+      "new": "insufficient",
+      "old": "context_only"
+    },
+    {
+      "count": 106,
+      "new": "insufficient",
+      "old": "insufficient_evidence"
+    }
+  ],
+  "version": "genre-refinement-v2-pilot"
+}

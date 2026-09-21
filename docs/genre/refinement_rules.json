@@ -1,0 +1,20 @@
+{
+  "version": "genre-refinement-v2-pilot",
+  "strong_max_votes": 3,
+  "compatible_tag_count": 2,
+  "compatible_tag_min_votes": 2,
+  "direct_provider_agreement": 2,
+  "dominance_ratio": 2,
+  "generic_pop": [
+    "pop",
+    "pop music",
+    "am pop"
+  ],
+  "generic_rock": [
+    "rock",
+    "rock music"
+  ],
+  "note": "Pilot thresholds frozen before replay; support counts are not probabilities. No primary from artist or unverified release context.",
+  "broad_compatible_tag_count": 3,
+  "broad_compatible_min_max_votes": 2
+}
