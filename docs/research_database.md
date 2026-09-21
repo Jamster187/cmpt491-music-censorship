@@ -1,11 +1,19 @@
 # Unified research database
 
-The reviewed LRCLIB pilot is now approved for full-population acquisition. See
-[production lyrics instructions](lyrics_production.md) and the
-[current sidecar status](../reports/lyrics_production_status.md). Production adds
-`production_*` tables to `data/processed/lyrics.db` and never writes `research.db`.
-The pilot-only commands and authorization statements below document earlier
-stages; use the production validator/resume commands for the expanded corpus.
+Acquisition is frozen as of September 20, 2026. All 25,363 study assets have
+metadata and lyrics dispositions: 20,450 high-confidence MusicBrainz matches and
+19,372 usable lyrics. The unified lyrics manifest is synchronized. No classifier
+has been implemented. Earlier acquisition instructions and reports below remain
+as a record of the work; they are not instructions to restart acquisition.
+
+The public release contains [song and monthly CSVs](../data/public/README.md),
+generated with `python3 src/public_dataset.py build` from this retained local
+database. `python3 src/public_dataset.py validate` verifies the frozen export,
+including deterministic serialization. It exports only allowlisted factual
+summaries and status fields, never lyrics, local paths, or raw provider evidence.
+The private enriched database is not distributed; downloading the public CSVs
+does not require rebuilding it. The public release documents why no additional
+weekly CSV is published and how to regenerate weekly data locally.
 
 Build or validate locally:
 

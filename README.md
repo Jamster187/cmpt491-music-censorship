@@ -1,39 +1,42 @@
-# CMPT 491: Popular Music Over Time
+# CMPT 491 — Popular Music Content Analysis
 
-This is a CMPT 491 Data Mining project looking at how the content of popular music
-has changed over time. We are particularly interested in whether the trajectory
-changed significantly in the post-COVID period, compared with the changes seen
-over previous decades.
+We are investigating how the content of mainstream popular music has changed over time, particularly whether the post-COVID period represents an unusual change relative to the historical trajectory. This is a CMPT 491 university research project.
 
-We are using weekly Billboard Hot 100 charts from 1958–2026 to identify popular
-songs and establish a long-term historical baseline. The processed dataset
-currently contains **355,487 chart observations** representing **32,723 unique
-song/artist pairs**. A chart observation is one song's appearance on a weekly
-chart, so a song can appear many times in the data.
+## Data
 
-MusicBrainz metadata enrichment and the first lyrics acquisition pass are complete.
-All 25,363 study assets have a lyrics disposition; 19,372 have usable local text.
-Once the remaining data-quality decisions are settled,
-we plan to run lyrics through a classifier to produce quantitative measurements
-of song content for comparison across songs and years.
+We started with a complete weekly Billboard Hot 100 archive covering 1958–2026: **3,555 weekly charts, 355,487 song-week observations, and 32,723 unique Billboard title + artist identities**. Our supplied snapshot runs from August 4, 1958 to September 19, 2026; 2026 is therefore a partial year.
 
-The final analysis will compare historical trends and rates of change with the
-post-COVID period to see whether there is evidence of an unusual change. The
-project is still in progress, and we do not have results yet.
+The reported upstream source is [mhollingshead/billboard-hot-100](https://github.com/mhollingshead/billboard-hot-100).
 
-Current status:
+## Study population
 
-- Lyrics exclusion audit: [diagnostic findings and recovery scenarios](reports/lyrics_exclusion_audit.md), [scope and validation](docs/lyrics_exclusion_audit.md). Corpus unchanged; a separately validated second pass is recommended before freezing it.
+We constructed monthly Top-100 baskets from the weekly charts, giving us **818 monthly periods, 81,800 song-month observations, and 25,363 unique songs**. Here, a song means an exact Billboard title and artist credit, rather than a merged recording identity.
 
-- Lyrics completion: [final coverage and integrity](reports/lyrics_completion_audit.md), [fix, provenance and validation record](docs/lyrics_completion.md). The remaining 3,717 assets were dispositioned and the unified lyrics manifest synchronized. The [earlier post-run audit](reports/post_run_audit.md) remains a historical checkpoint.
+These songs account for approximately **95.3%** of the original weekly observations. The original weekly data remains preserved, so eventual analysis can use either weekly or monthly resolution.
 
-- Billboard dataset processing: complete
-- Weekly/monthly populations: [local build and report](docs/analysis_populations.md) complete
-- Unified research database: [build and schema](docs/research_database.md)
-- Metadata enrichment: first pass complete; [actual coverage](reports/post_run_audit.md). Raw provider tags remain separate from any future genre taxonomy; earlier pilots preserved.
-- Lyrics: first acquisition pass complete, 19,372/25,363 usable (76.38%). Reviewed pilot retained (171/200 usable); [production matcher safety check](reports/lyrics_production_pilot.md), [full acquisition status](reports/lyrics_production_status.md), and [storage/resume instructions](docs/lyrics_production.md)
-- Classification: not started
-- Final analysis: not started
+## Enrichment and lyrics
 
-The Billboard data comes from
-[mhollingshead/billboard-hot-100](https://github.com/mhollingshead/billboard-hot-100).
+MusicBrainz enrichment attempted all 25,363 study songs, producing **20,450 high-confidence matches (80.63%)**, with approximately 90% matching coverage in modern periods. Available information includes release dates, durations, album/release information, and external identifiers. Metadata is supplementary; it is not a requirement for content classification.
+
+Lyrics acquisition is complete for this phase: all **25,363** songs were attempted, and **19,372** have confidently matched, usable lyrics. Coverage is **76.38% overall**, **82.81% for 2015–2019**, and **79.99% for 2020–2026**, grouping songs by their first Billboard appearance. Acquisition is now frozen, including unresolved cases.
+
+Lyrics are copyrighted research inputs and are **not distributed in this repository**. They remain local, linked through `song_id`.
+
+## Download the dataset
+
+Download [songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv) and [monthly_top100.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/monthly_top100.csv). The [dataset guide](data/public/README.md) explains their columns, joins, provenance, and rebuild commands. These tables contain no lyric text or classifier scores.
+
+## Next step and research idea
+
+We are investigating existing classifiers before deciding whether to build our own. The next phase is evaluating a classifier that converts lyrical content into continuous numerical measurements, such as explicitness or content severity.
+
+We intend to establish the historical trajectory and rate of change from 1958 through the pre-COVID period, then test whether the post-COVID period shows an unusual change in level and/or trajectory. The classifier and longitudinal analysis have not started.
+
+## Current status
+
+- [x] Billboard data foundation — complete
+- [x] Monthly study population — complete
+- [x] Metadata enrichment — complete
+- [x] Lyrics corpus — complete
+- [ ] Content classifier — next
+- [ ] Longitudinal/post-COVID analysis — not started

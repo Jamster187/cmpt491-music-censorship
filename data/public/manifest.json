@@ -1,0 +1,59 @@
+{
+  "billboard_snapshot_sha256": "e1ac3678d7618d07537001447574869bb2350bc6522b9cd24c4588ad19237462",
+  "exporter_sha256": "7ecd951d505bd360ad841f529b0f0bc55398f18959c5fe30abcc0191492a111d",
+  "files": {
+    "monthly_top100.csv": {
+      "bytes": 8003603,
+      "columns": [
+        "month",
+        "monthly_rank",
+        "song_id",
+        "monthly_points",
+        "weeks_present",
+        "best_weekly_rank",
+        "average_weekly_rank",
+        "weekly_observations"
+      ],
+      "rows": 81800,
+      "sha256": "fb93fb92e9f2d886f59c8be9a6408e6503e0d8a399112ae7fea98f4f5c6b9a15"
+    },
+    "songs.csv": {
+      "bytes": 5831629,
+      "columns": [
+        "song_id",
+        "title",
+        "artist",
+        "first_chart_date",
+        "last_chart_date",
+        "best_chart_rank",
+        "weekly_observation_count",
+        "chart_weeks",
+        "total_chart_points",
+        "first_selected_month",
+        "last_selected_month",
+        "months_selected",
+        "musicbrainz_match_status",
+        "mb_recording_count",
+        "mb_release_count",
+        "mb_earliest_release_date",
+        "mb_release_date_precision",
+        "mb_release_title",
+        "mb_duration_median_seconds",
+        "mb_duration_min_seconds",
+        "mb_duration_max_seconds",
+        "mb_distinct_duration_count",
+        "lyrics_status",
+        "lyrics_available"
+      ],
+      "rows": 25363,
+      "sha256": "f798bc2b184fae80b127a2af3285f2d7715fdc4ecd46338cebe46a44e5f0c9b8"
+    }
+  },
+  "monthly_baskets": 818,
+  "research_database_sha256": "d31bf1343c17a9716e81d8f9c0d7a8980504a5f57db8d13af32139bdb013d40d",
+  "research_schema_version": 2,
+  "source_commit": "unknown; supplied snapshot",
+  "source_repository": "https://github.com/mhollingshead/billboard-hot-100",
+  "version": "acquisition-freeze-v1",
+  "weekly_csv_published": false
+}
