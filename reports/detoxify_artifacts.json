@@ -1,0 +1,97 @@
+{
+  "checkpoint_bytes": 498707273,
+  "checkpoint_config": {
+    "accumulate_grad_batches": 3,
+    "arch": {
+      "args": {
+        "model_name": "RobertaForSequenceClassification",
+        "model_type": "roberta-base",
+        "num_classes": 16,
+        "tokenizer_name": "RobertaTokenizer"
+      },
+      "type": "ROBERTA"
+    },
+    "batch_size": 10,
+    "dataset": {
+      "args": {
+        "classes": [
+          "toxicity",
+          "severe_toxicity",
+          "obscene",
+          "identity_attack",
+          "insult",
+          "threat",
+          "sexual_explicit"
+        ],
+        "create_val_set": false,
+        "identity_classes": [
+          "male",
+          "female",
+          "homosexual_gay_or_lesbian",
+          "christian",
+          "jewish",
+          "muslim",
+          "black",
+          "white",
+          "psychiatric_or_mental_illness"
+        ],
+        "loss_weight": 0.75,
+        "test_csv_file": "jigsaw_data/jigsaw-unintended-bias-in-toxicity-classification/test_public_expanded.csv",
+        "train_csv_file": [
+          "jigsaw_data/jigsaw-unintended-bias-in-toxicity-classification/train.csv",
+          "jigsaw_data/jigsaw-toxic-comment-classification-challenge/train.csv"
+        ],
+        "val_fraction": null
+      },
+      "type": "JigsawDataBias"
+    },
+    "device": "0",
+    "loss_weight": 0.75,
+    "n_gpu": 1,
+    "name": "Jigsaw_RoBERTa_combined",
+    "num_main_classes": 7,
+    "optimizer": {
+      "args": {
+        "amsgrad": true,
+        "lr": 3e-05,
+        "weight_decay": 3e-06
+      },
+      "type": "Adam"
+    }
+  },
+  "checkpoint_sha256": "c7548aa09468726af4cfdd0959912467784de4a076786913ada9f0f21b68f60d",
+  "checkpoint_url": "https://github.com/unitaryai/detoxify/releases/download/v0.3-alpha/toxic_debiased-c7548aa0.ckpt",
+  "detoxify_commit": "d5376446b6accee5dd2d346f2d3050f9d8a69af1",
+  "source": {
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "59f6f0d6559c4c1414bc5f39f23a6b638a7d3e467bb030f86dabcaac549a94e9",
+    "configs/Multilingual_toxic_comment_classification_XLMR.json": "e288a08b3302545bc52fecdfddd4bf5dd5b2a220ce8789bb72720cd538b0b580",
+    "configs/Multilingual_toxic_comment_classification_XLMR_stage2.json": "4818782388e1a443b298ed78e35eb310fe951cd9e622c33db345966f3935c069",
+    "configs/Toxic_comment_classification_ALBERT.json": "549d96da649c5a47d4706a49bfe4aaa4fd351d1bfccee5b5960806537acf4ad2",
+    "configs/Toxic_comment_classification_BERT.json": "0d16a906a2f587a00a1df60f2e700410f3d97572120e5720f16d46e09f3d8843",
+    "configs/Toxic_comment_classification_ModernBERT.json": "3f1b2a174b5bb2a70577728f38b02d58ecf6a3e015748ec691ecbdf8a0be4349",
+    "configs/Unintended_bias_toxic_comment_classification_Albert.json": "0d3e1595de0ce18936137c1ee2de4bf082553b5ea6d0e899a23f62f337776819",
+    "configs/Unintended_bias_toxic_comment_classification_RoBERTa.json": "ab4312174ac1315e3090710a7e8707ce595371df20e3275fb8a6d386592b77c6",
+    "configs/Unintended_bias_toxic_comment_classification_RoBERTa_combined.json": "a511f82256fe19f3ef6d10374fe89cb5d953f18d1269786608fbee20a69fce1f",
+    "detoxify/__init__.py": "dbc31e27e0e1216bae4d9e9769fcc9dbb2a881763f8c6c124bc397ef163ce5c1",
+    "detoxify/detoxify.py": "134566269ec2bb619384dc184d9bfcb40b43f84a8cfa8d75cbf82f67ed25d298",
+    "model_eval/compute_bias_metric.py": "2d3993abf03446112cce3502381b8a68da536509e7dadd2a62b330afcda08949",
+    "model_eval/compute_language_breakdown.py": "d6659638de78a454910449590618a26c98ad11a51f1bdd6b8ae24ac73beaba27",
+    "model_eval/evaluate.py": "8b0c864158a3f69f7fe55f9e01950ab0fbd5255051ed387a5eab31214ba04c38",
+    "model_eval/utils.py": "ba77363827ffccefdad19564305c3f69b2d7d7cca5781c66c272ab8be279639f",
+    "preprocessing_utils.py": "0ff42d91ef36c30162c73d10f50de3e6f110e5cdf0c64609bd055926dcc342d4",
+    "pyproject.toml": "d36101c31ed0e79c5f5c08a11049613de158b07b3440459e4ced935e694d8bdf",
+    "revision.txt": "ad9a8c0ce16106d590f699051b01234d4d6647899ea2c45f87f6c8e9d78652f2",
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/data_loaders.py": "1d82c7c77f2ced0c147dbba6841e6fe64bc32317b79da90a3f8dc276f55cb1af",
+    "src/utils.py": "c9182b2b98c38a362d31fdfbf4cee1d075e7d35f952c62be09438d35eae54bf9"
+  },
+  "tokenizer": {
+    "config.json": "ef0185e2aae6e06c5f105a285006952c340e20c7dbf43c86ec82601b13fc45e9",
+    "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "tokenizer_config.json": "994f46754c5bf4014f1aa92d34b1374319c3a6b3f702105cd5b742beaecd18ce",
+    "vocab.json": "9e7f63c2d15d666b52e21d250d2e513b87c9b713cfa6987a82ed89e5e6e50655"
+  },
+  "tokenizer_repository": "FacebookAI/roberta-base",
+  "tokenizer_revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b"
+}

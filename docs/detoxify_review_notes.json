@@ -1,0 +1,355 @@
+{
+  "method": "Assistant qualitative inspection, unblinded to model scores, using 26 retained prior full-text reviews and 24 targeted context/lexical inspections. Judgments concern the named focus, not all labels or a human accuracy estimate. No lyric excerpts are stored. Eight fixed-song sensitivity probes supplement interpretation. Plausible means compatible with inspected evidence; questionable includes construct ambiguity, truncation or insufficient evidence; clearly_wrong marks an obvious mismatch for the named intended lyrical-content construct.",
+  "annotations": {
+    "song_0aed0baea9ae5d346cf2c42de2f92d7bd81418aa8269b3f685d489fdbf4cc08d": {
+      "lyriclens_judgment": "clearly_wrong",
+      "detoxify_judgment": "plausible",
+      "review_focus": "sexual content",
+      "note": "Ordinary affectionate imagery was overcalled as sexual by LyricLens; Detoxify stays low.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_4eedaac548f0db66c979575510092e16f414750629bddb6217182d6a43faa1ca": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "sexual content",
+      "note": "Romantic framing and the inspected context do not establish explicit sexual material; low Detoxify is consistent with its narrower label.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_109e58fdb577eb713ec9844630010a1ea9f502a212041ef4edd19d8d91f292d2": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "sexual content",
+      "note": "Kissing and romantic invitation support suggestiveness, but LyricLens near-one is not evidence of explicit severity. Detoxify is lower.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_21c7c8f7417b94a8c111b2a1c7570396b0e49f3c9f7cbbdd593d6d1c03d738d9": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "low-content agreement",
+      "note": "Affectionate material; both models stay low in the overlapping categories.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_23d90431f2ad7d4f8d31fc70fb9bc9aad106a4f8849752e76e878e6e017eb477": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "violence and language",
+      "note": "Negated killing and a religious reference inflated LyricLens violence/language. Low Detoxify threat fits the peace-oriented context; mention is not endorsement.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_2a783aa21125846631c321e170948f1689071a051714cf6e57c7cfb4ba6c8b89": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "questionable",
+      "review_focus": "sexual content and language",
+      "note": "Sexual invitation supports LyricLens sexual presence, but not its language score. Detoxify sexual_explicit is very low despite the sexual theme; narrower explicitness could explain part of this.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_5f0eaf882be171e9e96fec731f59733be3990d8ac7eaf8a258c5eb15da894eb3": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "violence",
+      "note": "Figurative hurt and emotional support explain the LyricLens violence concern; low Detoxify threat is appropriate.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_68dc4986474def8d475f2c997d665706774730408ee1330071322a31354abc97": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "sexual content",
+      "note": "The inspected relationship context and lack of direct sexual cues in the lexical audit do not justify interpreting near-one LyricLens as explicit severity. Low Detoxify is plausible; targeted review only.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_9277254377f0ed6ea2c94d6f5d17ee81782d30bd4f80f6185a6d4d87c99850f7": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "low-content agreement",
+      "note": "Heartbreak framing with low scores in both models; inspected context supports the low-content interpretation.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_a0d2022d699c35704ab0f0e43a6856fcd3fa30930d806529eb228106de34770e": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "low-content agreement",
+      "note": "Comfort and acceptance; no obvious conflict with low scores.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_bfce50e15f1789f7ca376150665063761fdbef5af253e2d162514a8ae0316025": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "low-content agreement",
+      "note": "Supportive content; both models stay low.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_cd492e6096df3dd73a9047f8aef5c25a526b7b1384aaafac4f4c0ce7c690f5d1": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "sexual content and language",
+      "note": "Courtship and dancing were overinterpreted by LyricLens; Detoxify low explicitness is more plausible for the retained text.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_f41a534741f51cde1d600b6ee480a6cec27c432d48b34b9d946bd8331f5d2a74": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "low-content agreement",
+      "note": "Wonder and aspiration; low scores are plausible.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_f90b9bd84fe6f81a6e4f326cb0b6f4451a734bc2b6c6aad81544fd16972b8863": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "low-content agreement",
+      "note": "The inspected romantic reassurance context is consistent with low scores.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_05be1f29e67911d8e269dbbba495ee25b92120a0aba32db094923f7adf2183b7": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "low-content agreement",
+      "note": "Reflective identity language is not identity attack; both models remain low.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_0ae5f6cefc72dd648e4af242ede9fc3a429075b6a2fa40106e6966410ea88dc5": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "questionable",
+      "review_focus": "sexual content and substance",
+      "note": "LyricLens recognizes sexual suggestiveness but saturates substance on a brief wine reference. Detoxify sexual_explicit is low for the sexual theme, although it targets a narrower construct.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_1412311414a73f8a8432337045a7f785b4dab467abd618d008b2ae0948df2b24": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "low-content agreement",
+      "note": "Inspected reflective imagery supports low content/toxicity scores.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_8c9359eb2bcab6780ed3a7cdca143da09375324d2952065a07d7adb88bf11161": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "clearly_wrong",
+      "review_focus": "toxicity and insult",
+      "note": "Address to the narrator's own heart is not interpersonal abuse. Detoxify toxicity .916 and insult .867 are clear construct errors for lyrical harmfulness; LyricLens stays low.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_b10199f4fcf60c75729c81ed97259c8e6aa9673cdcb93acdc6f4171e7cf8d945": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "low-content agreement",
+      "note": "Affirming imagery; both low. Period reflects first chart appearance, not the recording release date.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_ce55a9b58d73f0eaccd32f2d0b15687e9ff76c2ac47b5977a2c0507e07f966cc": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "violence versus insult",
+      "note": "Repeated accusation supports Detoxify insult, not equivalent physical violence. LyricLens violence near-one is not supported by the inspected context; toxicity still cannot be read as severity.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_e162690ceb18a23db578427f419ce7ba989a0b27499e2b403a37fe3ad800b82c": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "low-content agreement",
+      "note": "Jealousy and relationship language can be negative without explicit content; low overlapping scores are plausible.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_e850a0ebd5865cbcde0d7358f03fb5b1793e1d046b07f23d6f6f42c012be6355": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "clearly_wrong",
+      "review_focus": "violence and threat",
+      "note": "Prior read-through identified figurative heartbreak. Detoxify threat .553 is an inappropriate literal-threat reading; LyricLens violence .382 is also questionable.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_179feb8a79929d69156bfaf7c8ed48a7d01d17db6762f40e1d540507cc4f76e6": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "questionable",
+      "review_focus": "language, sexual content and toxicity",
+      "note": "Both detect profanity. LyricLens additionally detects explicit sexual and substance references. Detoxify toxicity/identity_attack may mix slang and in-group address with hostility; sexual_explicit is much lower than LyricLens.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_9a299229172ef4247b522973a28a572e71a62970370c1d7d60113d13f53c10fe": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "violence versus threat",
+      "note": "Specific weapons and antiwar narrative support LyricLens violence presence. Detoxify low threat is consistent with a different target; it would miss violent content if used as a substitute.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_a9824e4acd085fbd53e561a95b0a44b852833928c774ab7affba998ddfec95a6": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "language and sexual content",
+      "note": "Direct sexual/profane language is detected by both. High Detoxify toxicity does not establish interpersonal abuse or a severity scale.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_be18506dff183b6a8ee7e34e0063fde1d8f047a431bce1ad15210cd247070d71": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "questionable",
+      "review_focus": "sexual content, obscene and insult",
+      "note": "Derisive relationship evaluation supports some insult. LyricLens near-one sexual content and Detoxify moderate obscene/sexual_explicit may overread colloquial rejection; retained text is not strongly profane in the audit.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_ddd4c1911d61ba872c932e1ebf7bab492d51ca29e94feea236ab5efa08127983": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "sexual content",
+      "note": "Physical attraction is present, but near-one LyricLens overstates what can be inferred about explicitness. Detoxify low sexual_explicit fits the narrower label.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_e12f73c01a9b74f42d83be6090427aacf2b73668f80c0ff93c72f9ce5a7a0f79": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "low-content agreement",
+      "note": "Loss and farewell; both models stay low.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_fcee43b920ec51e027d82e5ebc7bf690e03815c44a91d5aaaa74f62fb232fd79": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "questionable",
+      "review_focus": "language and sexual content",
+      "note": "Spanish infidelity/innuendo and a long repeated lyric make an English-model comparison unreliable. Neither low output establishes absence.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_16908002829a856192b2e3b24d6c58c39106117ffcc515d050022040305006b9": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "questionable",
+      "review_focus": "violence and language",
+      "note": "Inspected harm wording is figurative; retained text has no strong-profanity hits in the lexical audit. LyricLens violence near-one is suspect. Detoxify sees only a prefix, so low scores cannot certify the whole song.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_30ef708150de2342873ae91612db8d453d9c140ebfc4c161dee823d8c97e9a0c": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "sexual content and threat",
+      "note": "Touch and emotional dependence are not necessarily explicit sex or literal threat; low overlapping scores are plausible.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_61a93b5d45b99392acf44f79106a72ee8e87dee118e990895eafdece3a01ebe9": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "violence and language",
+      "note": "Defiant rhetoric is not equivalent violence; Detoxify remains low while LyricLens gives intermediate violence/language.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_84fb3306a13f9324e94484bea63edeaa1e6248de1587badbb758a41c3fef27e6": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "questionable",
+      "review_focus": "language, sexual content and truncation",
+      "note": "Full-text prior review supports profanity, sex and substance. Detoxify sees only the prefix: obscene rises from .275 to .800 on the tail. The original output misses later material.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_aa13e5b19bab07dc2e5fc83d007dd90e21decb27057023685ff0ca1d8ba13b42": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "questionable",
+      "review_focus": "sexual content, violence and text quality",
+      "note": "Prior review flagged clean-looking/noisy transcription. LyricLens high scores across all categories are unsupported as severity; Detoxify low sexual_explicit also misses the sexual theme. Source/version uncertainty affects both.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_e8f0cbf6b127bb0d2d327524f99a3faffc1aa86c24cd4d6f2f351910f8dba31c": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "questionable",
+      "review_focus": "language and negation",
+      "note": "Resilience and negated hostile actions can trigger toxicity. No strong-profanity hits in the audit; moderate language/obscene scores need caution. Tail and unique-line probes fall substantially.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_f4185aea5cd17f1abea03ccb1fa6b853bc8cc48352e792e4aa84bd5673669c5e": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "questionable",
+      "review_focus": "sexual content and obscene",
+      "note": "Inspected wording negates hurting someone; ambiguity/innuendo may be sexual, but moderate Detoxify obscene without strong-profanity hits and high LyricLens sexuality are not established explicit severity.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_11fde80db739a6f64d0a9d9b691cf7b6526c1ba2e830f676d5e4a336c17c9df8": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "clearly_wrong",
+      "review_focus": "sexual content and threat",
+      "note": "Country courtship is not a literal threat. Detoxify threat .381/toxicity .694 is a clear mismatch for harmful content. LyricLens near-one sexuality also overstates the suggestiveness as severity.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_214d22efee01afd6925d10528d80a2c2f994a8fd4a37f100a0179fea51af725e": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "violence and threat",
+      "note": "Emotional hurt in romantic context; neither model makes a strong violence/threat claim.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_5194b6c0df56b87df950120af2c8399eb039c29f29878b87ff284b768eb9ab5a": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "questionable",
+      "review_focus": "language, identity attack and threat",
+      "note": "Dense profanity and antagonism support both language outputs. Detoxify identity_attack may conflate repeated slurs/in-group address with targeted hate; low threat should not replace a violence measure.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_69823ed1beab1c15adab303458294de6aa805b844e4d9bc1cb759b53d8e1d0b8": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "questionable",
+      "review_focus": "violence versus threat",
+      "note": "Explicit homicidal storytelling supports LyricLens violence. Detoxify threat .022 (tail .043) is not a useful violence proxy, even though it detects obscenity. Narrative is not necessarily a directed comment threat.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_8e7a07712e424d6dc71b31f594afafc6604cf5d4f09fcf81c91908a2c45b979d": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "language and sexual content",
+      "note": "Both detect explicit sexual/profane material. Detoxify sexual_explicit .552 differs from LyricLens near-one; neither number establishes severity.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_a7464a3d004fed14e1824802fca94ffd5af3ac71e2e2e34435fccd0ff534a2ed": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "low-content agreement",
+      "note": "Positive content; both are low in overlapping categories.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_dcd6fc07dd41fb2112e83cc37ad3cb0288359e4b90661faeb2891c6a2a7f5e89": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "language and sexual content",
+      "note": "Direct profanity and sexual references support both category responses. Detoxify has no substance-use score.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_57b6fb5de42d0b76a982ad6d6b780aa368d65adfecd872c1522c7c3660a04cb4": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "language",
+      "note": "The lexical audit finds mild language but no strong profanity. LyricLens language .997 should not be interpreted as extreme severity; Detoxify low obscene is more plausible for strong obscenity.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_97dde8742e0cc2461773a6d71873bf7831160cc7b3b82fcb096f1022b4c12759": {
+      "lyriclens_judgment": "plausible",
+      "detoxify_judgment": "plausible",
+      "review_focus": "language and sexual content",
+      "note": "Both detect explicit sexual/profane material. Very high toxicity remains a comment-trained response, not validated harm severity.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_a2a8832b12a9464aa23538c26dd64ffc912252f6a19c73d3b5c0ec754be945a7": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "sexual content",
+      "note": "Inspected intimacy/kissing supports romance, not a near-certain explicitness interpretation. Detoxify low sexual_explicit is plausible, but input is truncated.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_cba5c90b4d96ba8398dbcda9b64df8f65f27556d422548e4fd0f85d665ffee84": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "questionable",
+      "review_focus": "violence, language and clean version",
+      "note": "The retained text has no strong-profanity hits despite the title; opening harm wording is metaphorical. Near-one LyricLens violence is suspect, while low Detoxify reflects the retained clean-looking text, not necessarily other versions.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_d92c9c969ef6faa0d0b2115b652c61268381ee491bc4f03c32990feb5a3c9e45": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "language and violence",
+      "note": "Both detect profanity. LyricLens violence near-one needs contextual review; the targeted scan does not establish literal harm. Detoxify low threat is not a contradiction to profane/bragging content.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    },
+    "song_f1d664029f6e73d8332f2a5ef74f4733ea56bbd946340d01b4c5169b617c7d8f": {
+      "lyriclens_judgment": "clearly_wrong",
+      "detoxify_judgment": "clearly_wrong",
+      "review_focus": "Spanish sexual/profane content",
+      "note": "Prior Spanish-text review found direct sexual/profane material. Both English pipelines miss substantial content; Detoxify obscene .005/sexual_explicit .001 cannot establish absence.",
+      "evidence_scope": "prior full-lyric read-through notes plus current scores/context diagnostics"
+    },
+    "song_fcece81d4ce48c45670077783d519702d20ce3c27d5489f2eeba0f033d95faaa": {
+      "lyriclens_judgment": "questionable",
+      "detoxify_judgment": "plausible",
+      "review_focus": "substance and figurative harm",
+      "note": "Wine and repeated emotional-hurt language are present. LyricLens substance near-one indicates possible presence, not severity; low Detoxify threat is consistent with figurative harm.",
+      "evidence_scope": "targeted lyric context and full-text lexical audit; provisional, not exhaustive semantic annotation"
+    }
+  }
+}

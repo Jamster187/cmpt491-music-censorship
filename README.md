@@ -40,7 +40,7 @@ If you just want to use the dataset, download [master_dataset.csv](https://raw.g
 
 ## What's next?
 
-Our next step is to run the lyrics through a classifier that gives each song numerical scores for its content.
+We are evaluating existing classifiers before choosing our song-content measurements. Our [LyricLens pilot](reports/lyriclens_evaluation.md) and [Detoxify comparison](reports/detoxify_evaluation.md) use the same 200 songs; neither model has been run on the full corpus.
 
 We can then track these scores from 1958–2026 and ask:
 

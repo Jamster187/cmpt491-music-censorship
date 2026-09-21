@@ -1,0 +1,23 @@
+{
+  "device": "cpu",
+  "dtype": "float32",
+  "failed": 0,
+  "inference_seconds": 20.920440493384376,
+  "load_seconds": 2.0969514579046518,
+  "lyriclens_predictions_sha256": "abef9ffbdf61f3fbe2767c2b1cb067be903657f008c927d53d3a1f5bab9d6f28",
+  "machine": "arm64",
+  "parameters": 124657936,
+  "peak_rss_bytes": 1421328384,
+  "predictions_sha256": "b816109090f769290be5fa96b624a8fb4743388249e016b421045fc7742c9048",
+  "projected_19372_hours": 0.5628760739414475,
+  "python": "3.11.8",
+  "raw_sha256": "aa11d72e71dd458b50cae56923dc47855e6804f30602eceeb1a9597000ad779d",
+  "sample_sha256": "47103f916c19dbe89e9d8541ee56c101158a1a24ec120c2123b529087e962f03",
+  "seconds_per_song": 0.10460220246692188,
+  "successful": 200,
+  "threads": 4,
+  "torch": "2.7.1",
+  "transformers": "4.51.3",
+  "version": "detoxify-pilot-v1",
+  "wrapper_sha256": "0af0a1a8b017ee69c09411169596b5190347b6d59e6ae7d0e5c4078cad2e3a0c"
+}
