@@ -1,0 +1,154 @@
+{
+  "configuration": {
+    "dependencies": {
+      "nltk": "3.8.1",
+      "numpy": "1.24.3",
+      "pandas": "2.1.0",
+      "safetensors": "0.5.3",
+      "sentencepiece": "0.2.0",
+      "torch": "2.7.1",
+      "transformers": "4.51.3"
+    },
+    "files": {
+      "data/experiments/lyriclens/source/app.py": "8ac1c1a9a2b4574666b874a991aba91fe054233015ccb8f26c4698a1a3c2351b",
+      "docs/classifier_production_schema.json": "e9d1dd41ff5406d6238619cf25a43ac01f679479d223084b0dc6cc15cb1c12aa",
+      "src/classifier_panel_core.py": "d39e549f96d1fddb8f44a389798173e2ce3371cbd4a20b0ebe8e766a5a629830",
+      "src/classifier_production.py": "e9d0ee78ee91f5ae2fdefaad57706eba0a896100b21a0bd8932df822a2454443",
+      "src/classifier_production_engine.py": "e289330af45ccd691a1784b3177f633bb6e7b9a9ce652d91350d0388aeaa5818",
+      "src/classifier_production_store.py": "672fea40d496d48e2ad09683f92f20eec2d4a896b42f7bb029ff7ac88e32d0a4",
+      "src/lyriclens_diagnostics.py": "8d9bd8a9316ad53656acc0ec1f76fbd706d63118d73bdbb9816f42d4ab239d2d",
+      "src/lyriclens_evaluation.py": "e9ee34d840797d6ebef34e9780d034b8d6fc1c026347e05f3999566ea695fe0b"
+    },
+    "machine": "arm64",
+    "nltk": {
+      "corpora/omw-1.4.zip": "3b941e664852f3297b6040236626065796a2aaf7d7f9eec8779a3beaa1096c2d",
+      "corpora/stopwords.zip": "48c0e52d8b52546e827f53761fb30300c0ab94f70660d28bd65ba0a86270946b",
+      "corpora/wordnet.zip": "cbda5ea6eef7f36a97a43d4a75f85e07fccbb4f23657d27b4ccbc93e2646ab59",
+      "taggers/averaged_perceptron_tagger.zip": "e1f13cf2532daadfd6f3bc481a49859f0b8ea6432ccdcd83e6a49a5f19008de9",
+      "tokenizers/punkt.zip": "51c3078994aeaf650bfc8e028be4fb42b4a0d177d41c012b6a983979653660ec"
+    },
+    "python": "3.11.8",
+    "sample_sha256": "47103f916c19dbe89e9d8541ee56c101158a1a24ec120c2123b529087e962f03",
+    "scope": "pilot",
+    "version": "four-model-production-v1"
+  },
+  "exact_fresh_replay": true,
+  "files": {
+    "correlations.csv": {
+      "bytes": 1767,
+      "sha256": "872f7871df0792568e5c40aefb5706bcc566dd959cd477d72559c188569685bc"
+    },
+    "distributions.csv": {
+      "bytes": 9188,
+      "sha256": "4a5b4d8c2aa2e2b4de548e819c6208bf0710f46ff96b2be17f94bdf3457a88f2"
+    },
+    "performance.csv": {
+      "bytes": 657,
+      "sha256": "96d7bfb731dd6811b4e2f4e4d0880fc44ad0f657a21907ee690c18f3d536dfe6"
+    },
+    "pilot_chunks.jsonl": {
+      "bytes": 1329830,
+      "sha256": "b5a04d0c506b3de9ab900a44c958b23baaf215011c0b5244c9f35473a928dfe2"
+    },
+    "pilot_song_results.csv": {
+      "bytes": 359968,
+      "sha256": "68560d9fe3ffb5c278d3827cd0d86872aa4e7371b27fef88a1cb994c1073cac4"
+    },
+    "prefix_comparison.csv": {
+      "bytes": 2387,
+      "sha256": "4f241ef751ad689c3aa1337ac3d75841ff876c9bf7e567e16eb346575e5aa4dd"
+    }
+  },
+  "noop_resume": {
+    "all_persisted_tables_unchanged": true,
+    "elapsed_seconds": 3.547608207911253,
+    "new_executions": 0,
+    "new_jobs": 0,
+    "status": "passed",
+    "table_digests": {
+      "chunk_predictions": "fd0ae7b70f6cf8e55d53c811eb7a6a3965dd392dcd9a364f10674c95b98739a5",
+      "executions": "a8f1d04f39cd0236273f9cb279965eb7418600bfbf0b88f767d74d11b073018d",
+      "jobs": "c52c797e3ca7bf846da5ad30c0da61dcd004902399bfc21e81af22915ac44618",
+      "run_config": "9d5409bf71317736db6c45512193470ea436388118539b0e0b1246df7d2e51cc",
+      "song_results": "114b4e173dc2d3d3077b1b5e16da8b897289578b44bb10d696cb8733ddd8bc6c",
+      "targets": "e9746999f2aa018c8d452c8e3890316c31a4d29feca00dc9005ccb719ef8061a"
+    }
+  },
+  "performance": {
+    "estimated_full_chunks_jsonl_bytes": 128807334,
+    "estimated_full_database_bytes": 244390953,
+    "estimated_full_hours": 5.646342285557861,
+    "estimated_full_song_csv_bytes": 34866500,
+    "peak_worker_rss_bytes": 1570717696,
+    "pilot_chunks_jsonl_bytes": 1329830,
+    "pilot_database_bytes": 2523136,
+    "pilot_song_csv_bytes": 359968,
+    "total_seconds": 223.58887062384747
+  },
+  "prior_whole_song_max_logit_difference": 0,
+  "raw_chunk_count": 1043,
+  "real_interrupt_resume": {
+    "all_preserved_exactly": true,
+    "completed_jobs_preserved": 513,
+    "persisted_chunks_preserved": 646,
+    "pre_resume_statuses": [
+      {
+        "model": "cardiff",
+        "songs": 200,
+        "status": "pending"
+      },
+      {
+        "model": "detoxify",
+        "songs": 200,
+        "status": "success"
+      },
+      {
+        "model": "goemotions",
+        "songs": 86,
+        "status": "pending"
+      },
+      {
+        "model": "goemotions",
+        "songs": 1,
+        "status": "running"
+      },
+      {
+        "model": "goemotions",
+        "songs": 113,
+        "status": "success"
+      },
+      {
+        "model": "lyriclens",
+        "songs": 200,
+        "status": "success"
+      }
+    ],
+    "proof_sha256": "8fe64e4ad510aba8800ee0e4692cde6bad498b4de090f6a1b5abf36cca2229b0"
+  },
+  "validation": {
+    "jobs": [
+      {
+        "model": "cardiff",
+        "songs": 200,
+        "status": "success"
+      },
+      {
+        "model": "detoxify",
+        "songs": 200,
+        "status": "success"
+      },
+      {
+        "model": "goemotions",
+        "songs": 200,
+        "status": "success"
+      },
+      {
+        "model": "lyriclens",
+        "songs": 200,
+        "status": "success"
+      }
+    ],
+    "score_columns": 42,
+    "targets": 200
+  }
+}

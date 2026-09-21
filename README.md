@@ -40,7 +40,7 @@ If you just want to use the dataset, download [master_dataset.csv](https://raw.g
 
 ## What's next?
 
-We are evaluating existing classifiers before choosing our song-content measurements. Our [five-model panel pilot](reports/classifier_panel_design.md) compares content, emotion, sentiment and theme judgments on the same 200 songs. The full corpus has not been classified.
+We have prepared a [four-model classifier panel](reports/classifier_production_readiness.md): LyricLens, Detoxify, GoEmotions and Cardiff sentiment. It preserves separate content, emotion and sentiment scores, without combining them into one hardness score. The production runner is tested on the same 200-song sample; the full corpus has not been classified. [Run and resume instructions](docs/classifier_production.md) are available for the next step.
 
 We can then track these scores from 1958–2026 and ask:
 

@@ -2,9 +2,11 @@
 
 Acquisition is frozen as of September 20, 2026. All 25,363 study assets have
 metadata and lyrics dispositions: 20,450 high-confidence MusicBrainz matches and
-19,372 usable lyrics. The unified lyrics manifest is synchronized. No classifier
-has been implemented. Earlier acquisition instructions and reports below remain
-as a record of the work; they are not instructions to restart acquisition.
+19,372 usable lyrics. The unified lyrics manifest is synchronized. A separate
+[four-model classifier runner](classifier_production.md) is prepared and tested on the existing 200-song
+pilot. Full-corpus inference has not started; classifier results are not imported
+into this database or the public master CSV. Earlier acquisition instructions and
+reports below remain as a record of the work; they are not instructions to restart acquisition.
 
 The public release contains [song and monthly CSVs](../data/public/README.md),
 generated with `python3 src/public_dataset.py build` from this retained local
@@ -56,7 +58,8 @@ archive the current database and associated manifests first; the command has no
 destructive rebuild option. Future schema changes should be explicit migrations.
 Every row is reconciled against the source in both directions during validation,
 including derived song history and study membership. All relationships use foreign
-keys. No classifier schema or scoring choices are introduced.
+keys. Classifier schemas and results remain in a separate local artifact; no
+classifier schema is introduced into this research database.
 
 The database, provider responses, and lyrics are ignored in Git. Source code,
 schemas, tests, reports, and these instructions are the reproducible deliverables.
