@@ -1,16 +1,16 @@
-# CMPT 491 — Popular Music Content Analysis
+# CMPT 491 - Popular Music Content Analysis
 
-We are investigating how the content of mainstream popular music has changed over time, particularly whether the post-COVID period represents an unusual change relative to the historical trajectory. This is a CMPT 491 university research project.
+We are investigating how the content of mainstream popular music has changed over time, particularly whether the post-COVID period represents an unusual change relative to the historical trajectory.
 
 ## Data
 
-We started with a complete weekly Billboard Hot 100 archive covering 1958–2026: **3,555 weekly charts, 355,487 song-week observations, and 32,723 unique Billboard title + artist identities**. Our supplied snapshot runs from August 4, 1958 to September 19, 2026; 2026 is therefore a partial year.
+We started with a complete weekly Billboard Hot 100 archive covering 1958–2026: **3,555 weekly charts, 355,487 song-week observations, and 32,723 unique Billboard title + artist identities**. Our supplied snapshot runs from August 4, 1958 to September 19, 2026.
 
-The reported upstream source is [mhollingshead/billboard-hot-100](https://github.com/mhollingshead/billboard-hot-100).
+The source is [mhollingshead/billboard-hot-100](https://github.com/mhollingshead/billboard-hot-100).
 
 ## Study population
 
-We constructed monthly Top-100 baskets from the weekly charts, giving us **818 monthly periods, 81,800 song-month observations, and 25,363 unique songs**. Here, a song means an exact Billboard title and artist credit, rather than a merged recording identity.
+We constructed monthly Top-100 baskets from the weekly charts, giving us **818 monthly periods, 81,800 song-month observations, and 25,363 unique songs**. Here, a song means an exact Billboard title and artist credit.
 
 These songs account for approximately **95.3%** of the original weekly observations. The original weekly data remains preserved, so eventual analysis can use either weekly or monthly resolution.
 
