@@ -1,5 +1,10 @@
 # Month-end acquisition and classifier catch-up
 
+**Completed and audited.** The [final audit](../reports/month_end_catchup_audit.md)
+confirms all 3,654 acquisition dispositions and four successful model results for
+each of the 2,321 new usable lyrics. The commands below document the completed
+run; they are not instructions to restart acquisition or retry exclusions.
+
 The scope is exactly the **3,654 added identities** in the approved month-end
 population: 28,041 songs, 818 snapshots and 81,797 observations. The three charts
 missing rank 100 are accepted source gaps. No source rows are invented.
@@ -110,3 +115,18 @@ rebuild research.db or weaken that historical validator to hide the new sidecar.
 Coverage uses first Billboard appearance. The 2015–2019 subset overlaps the
 2010–2019 group. Coverage is descriptive acquisition reporting, not a historical
 content analysis. Genre assignment and public replacement remain outside scope.
+
+## Reproduce the final audit
+
+The audit only reads the databases and writes non-copyrighted reports. It requires
+idle workers and the complete frozen catch-up scope. Capture a fresh test log,
+then generate the independent census and integrity report:
+
+```bash
+python3 -m unittest discover -s tests -v > data/processed/month_end_catchup/post_run_tests.log 2>&1
+python3 src/month_end_catchup_audit.py
+```
+
+The acquisition, classifier and public-export validation commands above were also
+rerun for the audit. The final public release still awaits separately authorized
+genre work and publication; no current public CSV was changed.

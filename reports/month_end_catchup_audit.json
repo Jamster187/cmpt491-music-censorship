@@ -1,0 +1,269 @@
+{
+  "accepted_model_missingness": [
+    {
+      "error_type": "ValueError",
+      "model": "lyriclens",
+      "reason": "unsupported/empty-after-LyricLens-normalization",
+      "song_id": "song_7311f97408235828fd44656de1020fe967bd948a8d82018a4d25a278dd6a099b"
+    },
+    {
+      "error_type": "ValueError",
+      "model": "lyriclens",
+      "reason": "unsupported/empty-after-LyricLens-normalization",
+      "song_id": "song_e58095b71ca5fc7ddaa226883493f1828f814a39115c21c34373ccdde7c11570"
+    }
+  ],
+  "active_workers": [],
+  "catchup_lyrics": {
+    "accepted": 2321,
+    "bad_missing_text": 18,
+    "error": 44,
+    "not_found": 289,
+    "quarantined": 455,
+    "wrong_identity": 527
+  },
+  "catchup_metadata": {
+    "ambiguous": 655,
+    "high_confidence": 2662,
+    "not_found": 337
+  },
+  "catchup_population": 3654,
+  "chunk_counts": {
+    "cardiff": 3240,
+    "detoxify": 3315,
+    "goemotions": 3315,
+    "lyriclens": 2339
+  },
+  "classifier_executions": [
+    {
+      "elapsed_seconds": 1417.7838217911776,
+      "error_type": null,
+      "failures": 0,
+      "finished_at": "2026-09-21T21:02:20.379238+00:00",
+      "id": 1,
+      "load_seconds": 5.719724124995992,
+      "model": "lyriclens",
+      "new_successes": 2321,
+      "peak_rss_bytes": 1543651328,
+      "started_at": "2026-09-21T20:38:42.586096+00:00",
+      "status": "complete"
+    },
+    {
+      "elapsed_seconds": 321.34648104105145,
+      "error_type": null,
+      "failures": 0,
+      "finished_at": "2026-09-21T21:07:42.353484+00:00",
+      "id": 2,
+      "load_seconds": 3.9692695001140237,
+      "model": "detoxify",
+      "new_successes": 2321,
+      "peak_rss_bytes": 1358381056,
+      "started_at": "2026-09-21T21:02:21.007416+00:00",
+      "status": "complete"
+    },
+    {
+      "elapsed_seconds": 312.3915278331842,
+      "error_type": null,
+      "failures": 0,
+      "finished_at": "2026-09-21T21:12:55.158559+00:00",
+      "id": 3,
+      "load_seconds": 2.2130252909846604,
+      "model": "goemotions",
+      "new_successes": 2321,
+      "peak_rss_bytes": 1079640064,
+      "started_at": "2026-09-21T21:07:42.775486+00:00",
+      "status": "complete"
+    },
+    {
+      "elapsed_seconds": 306.9046042500995,
+      "error_type": null,
+      "failures": 0,
+      "finished_at": "2026-09-21T21:18:02.460633+00:00",
+      "id": 4,
+      "load_seconds": 3.424432208063081,
+      "model": "cardiff",
+      "new_successes": 2321,
+      "peak_rss_bytes": 1000816640,
+      "started_at": "2026-09-21T21:12:55.556964+00:00",
+      "status": "complete"
+    }
+  ],
+  "components": {
+    "classifiers": "COMPLETE",
+    "lyrics": "COMPLETE",
+    "metadata": "COMPLETE"
+  },
+  "database_sha256": {
+    "classifier_results.db": "57110a0559a8aee9a50b02258a0fb7852ae4e8cd532cc6ec236bde4b7d795ade",
+    "lyrics.db": "8f974920905ade807984fb8cf159ae2682e278caab2befe8f50eab6a754ccb8e",
+    "metadata.db": "beee3ba3f701db6ed85de3e306720371d7daa3b0753f31df2f2d5052dc02e809"
+  },
+  "database_sizes": {
+    "classifier_results.db": 29159424,
+    "lyrics.db": 45457408,
+    "metadata.db": 85970944
+  },
+  "final_all_42": 20979,
+  "final_any_classifier": 20981,
+  "final_usable": 20981,
+  "final_usable_percent": 74.82,
+  "frozen_configuration_sha256": "247a6ef4b6d46dd6ad407d400f4914d5c13d41ae1eefa78fab190aa4da1f94ac",
+  "full_lyrics": {
+    "accepted": 20981,
+    "bad_missing_text": 201,
+    "error": 93,
+    "not_found": 1140,
+    "quarantined": 3817,
+    "wrong_identity": 1809
+  },
+  "full_metadata": {
+    "ambiguous": 3963,
+    "error": 1,
+    "high_confidence": 22290,
+    "not_found": 1787
+  },
+  "integrity": {
+    "lyrics": 3654,
+    "metadata": 3654,
+    "new_usable": 2321,
+    "protected_integrity": "PASS"
+  },
+  "lyrics_error_reasons": {
+    "LRCLIB HTTP 503": 44
+  },
+  "lyrics_runs": [
+    {
+      "finished_at": "2026-09-21T18:22:44.533539+00:00",
+      "processed": 10,
+      "requests": 20,
+      "started_at": "2026-09-21T18:22:17.557964+00:00",
+      "state": "interrupted"
+    },
+    {
+      "finished_at": "2026-09-21T20:38:40.886114+00:00",
+      "processed": 3644,
+      "requests": 5711,
+      "started_at": "2026-09-21T18:23:42.590253+00:00",
+      "state": "completed"
+    }
+  ],
+  "metadata_accepted_percent": 79.49,
+  "metadata_runs": [
+    {
+      "finished_at": "2026-09-21T18:21:57.502693+00:00",
+      "started_at": "2026-09-21T18:21:56.897453+00:00",
+      "status": "complete",
+      "summary": "{\"cache_hits\":22,\"processed\":19,\"requests\":0}"
+    },
+    {
+      "finished_at": "2026-09-21T20:15:40.739901+00:00",
+      "started_at": "2026-09-21T18:23:42.532675+00:00",
+      "status": "complete",
+      "summary": "{\"cache_hits\":0,\"processed\":3635,\"requests\":5142}"
+    }
+  ],
+  "months": 818,
+  "new_all_42": 2321,
+  "new_classifier_jobs": {
+    "cardiff": {
+      "success": 2321
+    },
+    "detoxify": {
+      "success": 2321
+    },
+    "goemotions": {
+      "success": 2321
+    },
+    "lyriclens": {
+      "success": 2321
+    }
+  },
+  "new_usable": 2321,
+  "observations": 81797,
+  "period_coverage": [
+    {
+      "all_42": 4634,
+      "all_42_percent": 68.07,
+      "period": "1958–1969",
+      "songs": 6808,
+      "usable": 4635,
+      "usable_percent": 68.08
+    },
+    {
+      "all_42": 3617,
+      "all_42_percent": 72.22,
+      "period": "1970s",
+      "songs": 5008,
+      "usable": 3617,
+      "usable_percent": 72.22
+    },
+    {
+      "all_42": 3166,
+      "all_42_percent": 79.15,
+      "period": "1980s",
+      "songs": 4000,
+      "usable": 3167,
+      "usable_percent": 79.17
+    },
+    {
+      "all_42": 2399,
+      "all_42_percent": 72.06,
+      "period": "1990s",
+      "songs": 3329,
+      "usable": 2399,
+      "usable_percent": 72.06
+    },
+    {
+      "all_42": 2422,
+      "all_42_percent": 79.02,
+      "period": "2000s",
+      "songs": 3065,
+      "usable": 2422,
+      "usable_percent": 79.02
+    },
+    {
+      "all_42": 2595,
+      "all_42_percent": 81.91,
+      "period": "2010–2019",
+      "songs": 3168,
+      "usable": 2595,
+      "usable_percent": 81.91
+    },
+    {
+      "all_42": 1342,
+      "all_42_percent": 81.33,
+      "period": "2015–2019",
+      "songs": 1650,
+      "usable": 1342,
+      "usable_percent": 81.33
+    },
+    {
+      "all_42": 2146,
+      "all_42_percent": 80.59,
+      "period": "2020–2026",
+      "songs": 2663,
+      "usable": 2146,
+      "usable_percent": 80.59
+    }
+  ],
+  "population": 28041,
+  "public_master_sha256": "16f7e70a68c869522ed1c0e6dc26e4f4cd65a86549734eed82f3ee9aaf12f9bd",
+  "report_source_sha256": "8d0bcc2877756337dea4879da6f23cb1b15620a82d91728700cd809948df3384",
+  "retained_out_of_population_lyrics": 712,
+  "source_gaps": {
+    "1976-12-25": [
+      100
+    ],
+    "1977-01-29": [
+      100
+    ],
+    "1977-02-26": [
+      100
+    ]
+  },
+  "status": "COMPLETE",
+  "tests_passed": 251,
+  "total_local_lyric_files": 21693,
+  "unavailable": 7060,
+  "weekly_observations": 355487
+}
