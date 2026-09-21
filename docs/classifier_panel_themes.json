@@ -1,0 +1,94 @@
+{
+  "version": "classifier-panel-themes-v1",
+  "freeze_rule": "Frozen before any new panel predictions or period results. Changes require a new version and a separate experiment, never selection by historical trends.",
+  "hypothesis_template": "This song contains {}.",
+  "multi_label": true,
+  "neutral_handling": "Retain all three NLI logits and three-way softmax; theme confidence is entailment/(entailment+contradiction).",
+  "themes": [
+    {
+      "id": "romance",
+      "label": "romantic love",
+      "rationale": "Affection and romantic relationships, separate from explicit sex."
+    },
+    {
+      "id": "heartbreak",
+      "label": "heartbreak or romantic separation",
+      "rationale": "Relationship loss rather than all sadness."
+    },
+    {
+      "id": "sexual",
+      "label": "sexual content",
+      "rationale": "Broad sexual subject matter; not a claim of explicit severity."
+    },
+    {
+      "id": "violence",
+      "label": "physical violence",
+      "rationale": "Harm or violent actions, including narration rather than only threats."
+    },
+    {
+      "id": "profanity",
+      "label": "profanity or obscene language",
+      "rationale": "Independent thematic comparator to language heads."
+    },
+    {
+      "id": "drugs",
+      "label": "drug use",
+      "rationale": "Non-alcohol substance topic; ambiguity with metaphor remains."
+    },
+    {
+      "id": "alcohol",
+      "label": "alcohol use",
+      "rationale": "Keep drinking distinct from drugs."
+    },
+    {
+      "id": "crime",
+      "label": "crime or illegal activity",
+      "rationale": "May overlap violence; includes nonviolent wrongdoing."
+    },
+    {
+      "id": "wealth",
+      "label": "money or wealth",
+      "rationale": "Material/status themes without a harm assumption."
+    },
+    {
+      "id": "partying",
+      "label": "partying or nightlife",
+      "rationale": "Social celebration is not automatically substance use."
+    },
+    {
+      "id": "family",
+      "label": "family relationships",
+      "rationale": "Kinship and parental themes."
+    },
+    {
+      "id": "friendship",
+      "label": "friendship or companionship",
+      "rationale": "Nonromantic social connection."
+    },
+    {
+      "id": "spirituality",
+      "label": "religion or spirituality",
+      "rationale": "Belief and spiritual themes without value judgment."
+    },
+    {
+      "id": "politics",
+      "label": "politics or social issues",
+      "rationale": "Social commentary, not a political position classifier."
+    },
+    {
+      "id": "distress",
+      "label": "emotional distress or mental health struggles",
+      "rationale": "Descriptive theme; never a diagnosis."
+    },
+    {
+      "id": "empowerment",
+      "label": "empowerment or resilience",
+      "rationale": "Agency, confidence and overcoming hardship."
+    },
+    {
+      "id": "grief",
+      "label": "death or grief",
+      "rationale": "Mortality and loss, not equivalent violence."
+    }
+  ]
+}
