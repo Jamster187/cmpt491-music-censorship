@@ -1,72 +1,67 @@
 # CMPT 491 - Popular Music Content Analysis
 
-For our CMPT 491 project, we want to see how the content of popular music has changed over time. We are especially interested in whether music changed unusually after COVID compared to the trends that already existed before it.
+We are studying how the content of popular music changed from 1958–2026, especially whether trends changed unusually around or after COVID.
 
 ## Dataset
 
-We started with the weekly Billboard Hot 100 from 1958–2026:
+We started with the weekly Billboard Hot 100, covering August 1958 through September 2026:
 
 - 3,555 weekly charts
-- 355,487 chart entries
-- 32,723 unique song + artist combinations
+- 355,487 song-week observations
+- 32,723 unique title + artist combinations
 
-Source: https://github.com/mhollingshead/billboard-hot-100
+Source: [Billboard Hot 100 archive](https://github.com/mhollingshead/billboard-hot-100).
 
-We used the weekly charts to create a list of the **100 most popular songs for each month**. This gives us:
+## Time periods
+
+**Weekly:** each Billboard Hot 100 chart is one weekly snapshot.
+
+**Monthly:** the final available Billboard Hot 100 chart in each calendar month becomes that month's snapshot. Its chart ranks become the monthly ranks.
+
+This lets us switch between weekly and monthly resolution while keeping the same definition of the Top 100. The month-end dataset contains:
 
 - 818 months
-- 81,800 song/month observations
-- 25,363 unique songs
+- 81,797 song-month observations
+- 28,041 unique songs
 
-We kept the weekly data too, so we can eventually look at changes either week-by-week or month-by-month.
-
-**Month-end population approved:** the new definition uses the last available
-weekly chart in each month. Its [candidate comparison](reports/month_end_population_comparison.md)
-contains 28,041 songs and 81,797 observations (three source charts lack rank 100).
-The downloads below still use the previous aggregated-month definition. No public
-files have been replaced. [Catch-up acquisition](docs/month_end_catchup.md) is
-scoped to the 3,654 newly added songs; existing results are preserved.
+Three historical monthly snapshots contain 99 songs because rank 100 is missing from the original source. We preserve those gaps rather than invent records. September 2026 uses the latest available chart, dated September 19.
 
 ## Extra data
 
-The original Billboard dataset did not have many columns, so we added more information using MusicBrainz. This includes things like:
+**MusicBrainz** adds release dates, durations, album/release information and other metadata where we can confidently match a song.
 
-- Release date
-- Song duration
-- Album/release information
+**Lyrics** are collected locally for content analysis. Copyrighted lyrics themselves are not published on GitHub.
 
-We were able to confidently match 20,450 of our 25,363 songs.
+Songs with usable lyrics are processed by four models:
 
-We also collected usable lyrics for **19,372 songs**.
+- **LyricLens:** sexual content, violence, explicit language and substance use.
+- **Detoxify:** toxicity/offensiveness-related measurements.
+- **GoEmotions:** emotion measurements.
+- **Cardiff sentiment:** positive, neutral and negative sentiment.
+
+Together they produce 42 numerical content features. These are model-derived scores, not ground truth. Metadata, lyrics and classifier catch-up for the 3,654 newly introduced songs is still running; final coverage is not yet available.
+
+## Genre
+
+Genre is the next core dataset addition. We plan to assign songs to a broad, fixed genre taxonomy so we can compare content trends between genres over time.
 
 ## Download
 
-If you just want to use the dataset, download [master_dataset.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_dataset.csv). It contains one row per song per month, with the monthly Billboard data, available song metadata and 42 classifier features already joined together.
+The current [master_dataset.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_dataset.csv) is a **previous, temporary release** using the old monthly aggregation definition. It has metadata and classifier features already joined.
 
-[songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv) and [monthly_top100.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/monthly_top100.csv) are also available separately for anyone who prefers the normalized tables. The [dataset guide](data/public/README.md) explains the columns and rebuild commands. Lyrics text is not distributed.
+[songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv) and [monthly_top100.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/monthly_top100.csv) are also available separately from that release.
 
-## Content features
+A new month-end version will replace it after acquisition/classifier catch-up and genre work are completed.
 
-We ran four classifiers on the **19,372 songs with usable lyrics**:
+## Research direction
 
-- **LyricLens:** four lyrical-content dimensions—sexual content, violence, explicit language and substance use.
-- **Detoxify:** seven toxicity/offensiveness-related features.
-- **GoEmotions:** 28 emotion features.
-- **Cardiff:** three sentiment features.
-
-These are 42 **model-derived numerical features**, not ground-truth measurements. Each model processes the whole normalized song in chunks; we retain a token-weighted mean of its chunk scores. We have not combined the models into an overall hardness score.
-
-Two songs lack the four LyricLens values because their text becomes empty under its preprocessing. Their other 38 features are retained. Songs without usable lyrics have blank classifier values. Blank means missing, not zero; no monthly observations were dropped.
-
-## What's next?
-
-The classifier dataset is complete with this documented model-specific missingness. Next, we can plan how to examine the historical trajectory and whether the post-COVID period departs unusually from it. That analysis has not started, and any eventual association would not establish that COVID caused a change.
+Once the dataset is finished, we want to track content scores over time, compare genres and create weekly/monthly moving averages. We will establish pre-COVID historical trends, then examine whether levels or slopes change unusually around or after COVID. This would not establish that COVID caused a change.
 
 ## Status
 
-- [x] Billboard data
-- [x] Monthly Top 100
-- [x] Extra song information
-- [x] Lyrics
-- [x] Classify song content (two documented LyricLens exceptions)
-- [ ] Analyze changes over time
+- [x] Billboard data foundation
+- [x] Weekly/monthly end-of-period methodology
+- [ ] Month-end population metadata/lyrics/classifier catch-up — running
+- [ ] Genre classification — next
+- [ ] Final master dataset
+- [ ] Historical/post-COVID analysis
