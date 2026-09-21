@@ -2,17 +2,19 @@
 
 Acquisition is frozen as of September 20, 2026. All 25,363 study assets have
 metadata and lyrics dispositions: 20,450 high-confidence MusicBrainz matches and
-19,372 usable lyrics. The unified lyrics manifest is synchronized. A separate
-[four-model classifier runner](classifier_production.md) is prepared and tested on the existing 200-song
-pilot. Full-corpus inference has not started; classifier results are not imported
-into this database or the public master CSV. Earlier acquisition instructions and
-reports below remain as a record of the work; they are not instructions to restart acquisition.
+19,372 usable lyrics. The unified lyrics manifest is synchronized. The separate
+[four-model classifier dataset](classifier_production.md) is complete with two
+accepted LyricLens missing-value exceptions. Its 42 features are joined to the
+public master CSV by the exporter, but are not imported into this research database.
+Earlier acquisition instructions and reports below remain as a record of the
+work; they are not instructions to restart acquisition.
 
 The public release contains [song and monthly CSVs](../data/public/README.md),
 generated with `python3 src/public_dataset.py build` from this retained local
 database. `python3 src/public_dataset.py validate` verifies the frozen export,
 including deterministic serialization. It exports only allowlisted factual
-summaries and status fields, never lyrics, local paths, or raw provider evidence.
+summaries, status fields and model-derived features, never lyrics, local paths,
+or raw provider evidence.
 The private enriched database is not distributed; downloading the public CSVs
 does not require rebuilding it. The public release documents why no additional
 weekly CSV is published and how to regenerate weekly data locally.

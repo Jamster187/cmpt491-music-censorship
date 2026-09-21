@@ -1,0 +1,20 @@
+{
+  "version": "accepted-model-missingness-v1",
+  "production_commit": "11ae7816a490e2aafb8ea1e5900e66f04d636ed1",
+  "configuration_sha256": "247a6ef4b6d46dd6ad407d400f4914d5c13d41ae1eefa78fab190aa4da1f94ac",
+  "reason": "unsupported/empty-after-LyricLens-normalization",
+  "exceptions": [
+    {
+      "song_id": "song_7311f97408235828fd44656de1020fe967bd948a8d82018a4d25a278dd6a099b",
+      "model": "lyriclens",
+      "error_type": "ValueError",
+      "reason": "unsupported/empty-after-LyricLens-normalization"
+    },
+    {
+      "song_id": "song_e58095b71ca5fc7ddaa226883493f1828f814a39115c21c34373ccdde7c11570",
+      "model": "lyriclens",
+      "error_type": "ValueError",
+      "reason": "unsupported/empty-after-LyricLens-normalization"
+    }
+  ]
+}

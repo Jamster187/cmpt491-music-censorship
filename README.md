@@ -34,19 +34,26 @@ We also collected usable lyrics for **19,372 songs**.
 
 ## Download
 
-If you just want to use the dataset, download [master_dataset.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_dataset.csv). It contains one row per song per month, with the monthly Billboard data and available song metadata already joined together.
+If you just want to use the dataset, download [master_dataset.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_dataset.csv). It contains one row per song per month, with the monthly Billboard data, available song metadata and 42 classifier features already joined together.
 
-[songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv) and [monthly_top100.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/monthly_top100.csv) are also available separately for anyone who prefers the normalized tables. The [dataset guide](data/public/README.md) explains the columns and rebuild commands. No lyric text or classifier scores are included.
+[songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv) and [monthly_top100.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/monthly_top100.csv) are also available separately for anyone who prefers the normalized tables. The [dataset guide](data/public/README.md) explains the columns and rebuild commands. Lyrics text is not distributed.
+
+## Content features
+
+We ran four classifiers on the **19,372 songs with usable lyrics**:
+
+- **LyricLens:** four lyrical-content dimensions—sexual content, violence, explicit language and substance use.
+- **Detoxify:** seven toxicity/offensiveness-related features.
+- **GoEmotions:** 28 emotion features.
+- **Cardiff:** three sentiment features.
+
+These are 42 **model-derived numerical features**, not ground-truth measurements. Each model processes the whole normalized song in chunks; we retain a token-weighted mean of its chunk scores. We have not combined the models into an overall hardness score.
+
+Two songs lack the four LyricLens values because their text becomes empty under its preprocessing. Their other 38 features are retained. Songs without usable lyrics have blank classifier values. Blank means missing, not zero; no monthly observations were dropped.
 
 ## What's next?
 
-We have prepared a [four-model classifier panel](reports/classifier_production_readiness.md): LyricLens, Detoxify, GoEmotions and Cardiff sentiment. It preserves separate content, emotion and sentiment scores, without combining them into one hardness score. The production runner is tested on the same 200-song sample; the full corpus has not been classified. [Run and resume instructions](docs/classifier_production.md) are available for the next step.
-
-We can then track these scores from 1958–2026 and ask:
-
-- Has popular music been getting harder or softer over time?
-- How quickly does music normally change?
-- Did something unusual happen to that trend around or after COVID?
+The classifier dataset is complete with this documented model-specific missingness. Next, we can plan how to examine the historical trajectory and whether the post-COVID period departs unusually from it. That analysis has not started, and any eventual association would not establish that COVID caused a change.
 
 ## Status
 
@@ -54,5 +61,5 @@ We can then track these scores from 1958–2026 and ask:
 - [x] Monthly Top 100
 - [x] Extra song information
 - [x] Lyrics
-- [ ] Classify song content
+- [x] Classify song content (two documented LyricLens exceptions)
 - [ ] Analyze changes over time

@@ -19,11 +19,12 @@ import statistics
 import tempfile
 
 from billboard import song_id as identity_id
+from public_classifier_features import COLUMNS as CLASSIFIER_COLUMNS, load_features, DATABASE as CLASSIFIER_DATABASE
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT/'data/public'
 DATABASE = ROOT/'data/processed/research.db'
-VERSION = 'acquisition-freeze-v1.1'
+VERSION = 'classifier-features-v2.0'
 SONG_COLUMNS = (
     'song_id','title','artist','first_chart_date','last_chart_date','best_chart_rank',
     'weekly_observation_count','chart_weeks','total_chart_points',
@@ -34,9 +35,9 @@ SONG_COLUMNS = (
     'mb_distinct_duration_count','lyrics_status','lyrics_available')
 MONTHLY_COLUMNS = ('month','monthly_rank','song_id','monthly_points','weeks_present',
                    'best_weekly_rank','average_weekly_rank','weekly_observations')
-# Extend the reviewed song projection/SONG_COLUMNS for future public measurements;
-# the master join inherits them without accessing private database fields.
-MASTER_COLUMNS = MONTHLY_COLUMNS + tuple(c for c in SONG_COLUMNS if c != 'song_id')
+# Keep normalized tables and the original 31-column prefix unchanged.
+BASE_MASTER_COLUMNS = MONTHLY_COLUMNS + tuple(c for c in SONG_COLUMNS if c != 'song_id')
+MASTER_COLUMNS = BASE_MASTER_COLUMNS + CLASSIFIER_COLUMNS
 OUTPUT_NAMES = ('songs.csv','monthly_top100.csv','master_dataset.csv','manifest.json')
 MONTHLY_SQL = 'SELECT '+','.join(MONTHLY_COLUMNS)+' FROM monthly_top100 ORDER BY month,monthly_rank'
 LYRICS_STATUSES = {'success','quarantined','wrong_identity','bad_missing_text','not_found','error'}
@@ -198,7 +199,7 @@ def check_source(c):
     return counts
 
 
-def master_rows(directory):
+def master_rows(directory,classifier_features):
     """Left join the public CSVs, failing if a monthly key has no unique match.
 
     Preserve serialized values (including blanks), monthly order, and repeated
@@ -213,6 +214,11 @@ def master_rows(directory):
             sid=row['song_id']
             if sid in songs:raise ValueError('Duplicate public song_id')
             songs[sid]=row
+    available={sid for sid,row in songs.items() if row['lyrics_available']=='1'}
+    if set(classifier_features)!=available:raise ValueError('Classifier coverage differs from usable public lyrics')
+    for values in classifier_features.values():
+        if len(values)!=len(CLASSIFIER_COLUMNS):raise ValueError('Wrong classifier feature count')
+        if any(v is not None and (type(v) not in (int,float) or not math.isfinite(v) or not 0<=v<=1) for v in values):raise ValueError('Invalid classifier value')
     if set(SONG_COLUMNS)&set(MONTHLY_COLUMNS)!={'song_id'}:
         raise ValueError('Public columns collide outside the join key')
     with (directory/'monthly_top100.csv').open(encoding='utf-8',newline='') as f:
@@ -222,10 +228,10 @@ def master_rows(directory):
             if None in row or None in row.values():raise ValueError('Malformed monthly CSV row')
             song=songs.get(row['song_id'])
             if song is None:raise ValueError('Monthly row has no song match')
-            yield tuple(row[c] for c in MONTHLY_COLUMNS)+tuple(song[c] for c in SONG_COLUMNS if c!='song_id')
+            yield tuple(row[c] for c in MONTHLY_COLUMNS)+tuple(song[c] for c in SONG_COLUMNS if c!='song_id')+classifier_features.get(row['song_id'],(None,)*len(CLASSIFIER_COLUMNS))
 
 
-def generate(c,directory):
+def generate(c,directory,classifier_features):
     rows=song_rows(c);monthly=c.execute(MONTHLY_SQL).fetchall()
     if len(rows)!=c.execute('SELECT count(*) FROM study_population').fetchone()[0]:
         raise ValueError('Missing manifest/metadata relationship')
@@ -233,8 +239,8 @@ def generate(c,directory):
     for name,columns,values in [('songs.csv',SONG_COLUMNS,rows),('monthly_top100.csv',MONTHLY_COLUMNS,monthly)]:
         write_csv(directory/name,columns,values)
         reconcile_csv(directory/name,columns,values)
-    master_count=write_csv(directory/'master_dataset.csv',MASTER_COLUMNS,master_rows(directory))
-    reconcile_csv(directory/'master_dataset.csv',MASTER_COLUMNS,master_rows(directory))
+    master_count=write_csv(directory/'master_dataset.csv',MASTER_COLUMNS,master_rows(directory,classifier_features))
+    reconcile_csv(directory/'master_dataset.csv',MASTER_COLUMNS,master_rows(directory,classifier_features))
     if master_count!=len(monthly):raise ValueError('Master join changed the monthly row count')
     return dict(songs=len(rows),monthly=len(monthly),master=master_count,baskets=baskets)
 
@@ -249,29 +255,33 @@ def build(validate_only=False):
     with closing(sqlite3.connect(DATABASE.resolve().as_uri()+'?mode=ro',uri=True)) as c:
         c.execute('PRAGMA query_only=ON');c.execute('BEGIN')
         check_source(c)
+        features,classifier_provenance=load_features(c)
         # Both independent serializations are compared byte-for-byte before publication.
         with tempfile.TemporaryDirectory(dir=ROOT/'data/processed',prefix='public-export-') as temp:
             stage=Path(temp);one=stage/'one';two=stage/'two';one.mkdir();two.mkdir()
-            counts=generate(c,one)
+            counts=generate(c,one,features)
             if counts!={'songs':25363,'monthly':81800,'master':81800,'baskets':818}:raise ValueError('Public counts differ')
             if c.execute('SELECT min(n),max(n) FROM (SELECT count(*) n FROM monthly_top100 GROUP BY month)').fetchone()!=(100,100):
                 raise ValueError('Expected exactly 100 songs per basket')
-            if generate(c,two)!=counts:raise ValueError('Nondeterministic row counts')
+            if generate(c,two,features)!=counts:raise ValueError('Nondeterministic row counts')
             files={}
             for name,columns,count in [('songs.csv',SONG_COLUMNS,counts['songs']),('monthly_top100.csv',MONTHLY_COLUMNS,counts['monthly']),
                                        ('master_dataset.csv',MASTER_COLUMNS,counts['master'])]:
                 fingerprint=sha(one/name)
                 if fingerprint!=sha(two/name):raise ValueError('Nondeterministic CSV bytes')
                 size=(one/name).stat().st_size
-                if size>=25*1024*1024:raise ValueError('Review distribution method before publishing this file size')
+                # The expanded, full-precision master is explicitly reviewed below GitHub's 100 MiB hard limit.
+                limit=95*1024*1024 if name=='master_dataset.csv' else 25*1024*1024
+                if size>=limit:raise ValueError('Review distribution method before publishing this file size')
                 files[name]=dict(rows=count,bytes=size,sha256=fingerprint,columns=columns)
             inputs=json.loads(c.execute("SELECT value FROM build_metadata WHERE key='input_sha256'").fetchone()[0])
             manifest=dict(version=VERSION,source_repository='https://github.com/mhollingshead/billboard-hot-100',
                           source_commit='unknown; supplied snapshot',billboard_snapshot_sha256=inputs['data/raw/billboard-hot-100.json'],
                           research_database_sha256=before,exporter_sha256=sha(Path(__file__)),research_schema_version=2,
-                          monthly_baskets=818,weekly_csv_published=False,files=files)
+                          monthly_baskets=818,weekly_csv_published=False,classifier=classifier_provenance,files=files)
             (one/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,sort_keys=True,indent=2)+'\n',encoding='utf-8')
             if sha(DATABASE)!=before:raise ValueError('Source database changed during export')
+            if sha(CLASSIFIER_DATABASE)!=classifier_provenance['database_sha256']:raise ValueError('Classifier database changed during export')
             for name in OUTPUT_NAMES:
                 if validate_only:
                     if not (PUBLIC/name).is_file() or sha(PUBLIC/name)!=sha(one/name):raise ValueError('Published export is stale or modified: '+name)

@@ -1,28 +1,31 @@
-# Public research dataset — acquisition freeze v1.1
+# Public research dataset — classifier features v2.0
 
 The acquisition phase is frozen. These UTF-8 CSVs describe the constructed study
 population, including songs without usable lyrics. No lyric text, excerpts,
-provider response caches, private paths, or classifier measurements are included.
-Classifier-derived columns may be added in a later version.
+provider response caches or private paths are included. The master now includes
+42 model-derived numerical features from the completed four-model classifier panel.
 
 ## Downloads and joins
 
 **Start with [master_dataset.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_dataset.csv)**
 if you want one analysis-ready file. Its 81,800 rows each represent one song in
 one monthly Top-100 basket. Monthly data and available song metadata are already
-joined using `song_id`; you do not need to join the tables yourself.
+joined using `song_id`, along with the classifier features; you do not need to
+join the tables yourself.
 
 | File | Data rows | Meaning |
 |---|---:|---|
-| [master_dataset.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_dataset.csv) | 81,800 | Recommended: monthly observations with song metadata already joined |
+| [master_dataset.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_dataset.csv) | 81,800 | Recommended: monthly observations, song metadata and 42 classifier features |
 | [songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv) | 25,363 | One exact Billboard title + artist identity per study song |
 | [monthly_top100.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/monthly_top100.csv) | 81,800 | One song in one monthly Top-100 basket |
 | [manifest.json](manifest.json) | — | Version, byte sizes, SHA-256 checksums, source fingerprints, and column lists |
 
 The separate normalized tables remain unchanged. The master is a LEFT JOIN of
 `monthly_top100.csv` to `songs.csv` on `song_id`, with exactly one song match per
-monthly row. It contains all eight monthly columns followed by the 23 song
-columns other than the shared `song_id`: **31 columns total**, defined below.
+monthly row, followed by a left join to the separate classifier results on the
+same key. It contains all eight monthly columns followed by the 23 song
+columns other than the shared `song_id`, followed by 42 classifier columns:
+**73 columns total**. The original 31 columns retain their values and order.
 Missing metadata stays blank. A song's metadata repeats when it appears in
 multiple months; those are distinct observations and should not be deduplicated.
 Song-history totals describe the whole song, so summing those repeated totals
@@ -99,6 +102,57 @@ Coverage runs August 1958–September 2026; boundary months and 2026 are incompl
 Availability favors higher-charting, longer-lasting songs and simpler artist
 credits; inclusion in the study population does not depend on lyrics success.
 
+## Classifier features and missing values
+
+The panel was run on **19,372 songs with usable lyrics**. These are continuous,
+model-derived numerical features in [0,1], not ground truth or calibrated severity
+measurements. Each song is divided into complete, non-overlapping chunks using
+each model's tokenizer, then summarized with a content-token-weighted mean.
+LyricLens retains its original lossy English preprocessing. All three other
+models retain their frozen preprocessing too. No overall hardness, CSI, MCR or
+consensus score is included.
+
+| Model | Features | What they describe |
+|---|---:|---|
+| LyricLens | 4 (`ll_`) | Sexual content, violence, explicit language and substance use |
+| Detoxify Unbiased | 7 (`detox_`) | Toxicity/offensiveness-related signals learned from online comments |
+| GoEmotions | 28 (`emotion_`) | Emotion signals, including neutral, learned from Reddit comments |
+| Cardiff multilingual sentiment | 3 (`sentiment_`) | Negative, neutral and positive sentiment learned from tweets |
+
+Models trained on comments/tweets may interpret lyrics differently from a human
+reader. Similarly named outputs from different models should not be treated as
+interchangeable. Their numerical values are preserved separately, without
+rounding or cross-model combination. Song-level scores repeat across monthly
+observations; repeated rows are not independent new model judgments.
+
+**Blank CSV cells represent missing/NULL, never zero.** All 42 features are blank
+for the 5,991 songs without usable lyrics (16,625 monthly observations). Classifier
+data is available for 19,372 songs (65,175 observations). Of these, 19,370 songs
+(65,173 observations) have all 42 features. Two songs have the other 38 features
+but four missing LyricLens values:
+
+- “Chinese Checkers” — Booker T. & The MG's
+- “Snap Shot” — Slave
+
+Their accepted reason is `unsupported/empty-after-LyricLens-normalization`.
+Their text becomes empty under LyricLens preprocessing; it was not modified,
+transliterated or replaced, and the unchanged inputs were not retried. This is
+accepted model-specific missingness, not an unfinished acquisition/classification
+phase. Their original database failure evidence is preserved. Stable IDs and
+reasons are in the [accepted-missingness policy](../../docs/classifier_accepted_missingness.json)
+and the manifest. No observations are dropped for missing features.
+
+Exact feature columns, in export order:
+
+- lyriclens: `ll_sexual_content`, `ll_violence`, `ll_explicit_language`, `ll_substance_use`
+- detoxify: `detox_toxicity`, `detox_severe_toxicity`, `detox_obscene`, `detox_threat`, `detox_insult`, `detox_identity_attack`, `detox_sexual_explicit`
+- goemotions: `emotion_admiration`, `emotion_amusement`, `emotion_anger`, `emotion_annoyance`, `emotion_approval`, `emotion_caring`, `emotion_confusion`, `emotion_curiosity`, `emotion_desire`, `emotion_disappointment`, `emotion_disapproval`, `emotion_disgust`, `emotion_embarrassment`, `emotion_excitement`, `emotion_fear`, `emotion_gratitude`, `emotion_grief`, `emotion_joy`, `emotion_love`, `emotion_nervousness`, `emotion_optimism`, `emotion_pride`, `emotion_realization`, `emotion_relief`, `emotion_remorse`, `emotion_sadness`, `emotion_surprise`, `emotion_neutral`
+- cardiff: `sentiment_negative`, `sentiment_neutral`, `sentiment_positive`
+
+The [frozen schema](../../docs/classifier_production_schema.json) records model/checkpoint
+versions and label mapping. The manifest records classifier/configuration hashes
+and the accepted exceptions.
+
 ## Provenance and weekly data
 
 The supplied Billboard snapshot is attributed to
@@ -138,8 +192,9 @@ snapshot would produce a different dataset.
 ## Rebuild and validation
 
 Public downloads work without private databases. Rebuilding this exact enriched
-release requires the retained local `data/processed/research.db`; that database
-and its acquisition evidence are not distributed. A fresh chart-only database
+release requires both retained local databases: `data/processed/research.db` and
+`data/processed/classifier_results.db`. These databases and acquisition evidence
+are not distributed. Rebuilding exports does not rerun inference. A fresh chart-only database
 cannot reproduce the frozen enrichment by itself. No acquisition is restarted.
 
 ```bash
@@ -152,14 +207,19 @@ python3 -m unittest discover -s tests -v
 The exporter opens the database read-only, uses explicit column allowlists,
 checks the frozen counts/dispositions and relational integrity, reconciles CSV
 values to source projections, and compares two independently generated outputs
-before publication. The master is built from those public CSVs and every value
-is reconciled against them; duplicate song keys and missing joins fail validation.
+before publication. The original 31 master columns are built from those public CSVs; the final 42
+are left-joined from validated classifier results by `song_id`. Every value is
+reconciled against its source; duplicate song keys and missing joins fail validation.
 It rejects private path/credential patterns and checks that
-the source database hash is unchanged. The manifest has no runtime timestamp,
-so unchanged inputs and code produce identical bytes. Each CSV is below 25 MiB
-and suitable for direct Git storage; no Git LFS is required.
+both source database hashes are unchanged. The accepted-missingness policy
+allows only the two named LyricLens exceptions; additional failures stop publication. The manifest has no runtime timestamp,
+so unchanged inputs and code produce identical bytes. The full-precision master is larger than the earlier acquisition-only file. Its
+exact size is recorded in the manifest. It is distributed directly through Git
+and the raw download link, below GitHub's 100 MiB per-file limit; GitHub warns
+above 50 MiB. We retain full numerical precision rather than rounding scores to
+reduce size. The exporter caps this reviewed master at 95 MiB and other CSVs at
+25 MiB. No Git LFS or private model/database files are needed for downloads.
+See [GitHub's file-size documentation](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
-For future development, add any reviewed song-level measurements to the explicit
-public song projection and `SONG_COLUMNS` in the exporter. The master then inherits
-those public columns automatically; it never copies arbitrary database fields.
-No classifier columns or scores have been added in this release.
+Future features require an explicit reviewed schema/version change. The exporter
+never copies arbitrary classifier or acquisition fields.

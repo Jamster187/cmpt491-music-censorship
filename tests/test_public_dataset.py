@@ -43,6 +43,13 @@ class PublicDatasetTests(unittest.TestCase):
         self.add_entity('release', 'earlier', [{'date': '1999', 'title': 'Earlier'},
                                               {'date': '1999-02', 'title': 'Other territory'}])
 
+    def generate(self,directory):
+        return public.generate(self.c,directory,self.features)
+
+    @property
+    def features(self):
+        return {self.ids[0]:tuple(.25 for _ in public.CLASSIFIER_COLUMNS)}
+
     def tearDown(self):
         self.c.close()
 
@@ -58,7 +65,7 @@ class PublicDatasetTests(unittest.TestCase):
     def test_projection_excludes_private_evidence_and_preserves_identity(self):
         with tempfile.TemporaryDirectory() as tmp:
             d = Path(tmp)
-            self.assertEqual(public.generate(self.c, d), {'songs': 2, 'monthly': 2, 'master': 2, 'baskets': 1})
+            self.assertEqual(self.generate(d), {'songs': 2, 'monthly': 2, 'master': 2, 'baskets': 1})
             raw = (d/'songs.csv').read_text() + (d/'master_dataset.csv').read_text()
             self.assertNotIn('PRIVATE_TEXT_CANARY', raw)
             self.assertNotIn('/Users/', raw)
@@ -76,7 +83,7 @@ class PublicDatasetTests(unittest.TestCase):
                        (self.ids[0],))
         with tempfile.TemporaryDirectory() as tmp:
             d = Path(tmp)
-            public.generate(self.c, d)
+            self.generate(d)
             def read(name):
                 with (d/name).open(newline='') as f:
                     return list(csv.DictReader(f))
@@ -93,35 +100,48 @@ class PublicDatasetTests(unittest.TestCase):
     def test_master_rejects_duplicate_or_missing_song_match(self):
         with tempfile.TemporaryDirectory() as tmp:
             d = Path(tmp)
-            public.generate(self.c, d)
+            self.generate(d)
             original = (d/'songs.csv').read_text()
             with (d/'songs.csv').open(newline='') as f:
                 rows = list(csv.reader(f))
             public.write_csv(d/'songs.csv', rows[0], rows[1:] + [rows[1]])
             with self.assertRaisesRegex(ValueError, 'Duplicate'):
-                list(public.master_rows(d))
+                list(public.master_rows(d,self.features))
             (d/'songs.csv').write_text(original)
             public.write_csv(d/'songs.csv', rows[0], [])
             with self.assertRaisesRegex(ValueError, 'no song match'):
-                list(public.master_rows(d))
+                list(public.master_rows(d,{}))
 
     def test_master_rejects_unapproved_columns_and_detects_changed_values(self):
         with tempfile.TemporaryDirectory() as tmp:
             d = Path(tmp)
-            public.generate(self.c, d)
+            self.generate(d)
             path = d/'master_dataset.csv'
             with path.open(newline='') as f:
                 rows = list(csv.reader(f))
             rows[1][0] = '1990-01'
             public.write_csv(path, rows[0], rows[1:])
             with self.assertRaises(ValueError):
-                public.reconcile_csv(path, public.MASTER_COLUMNS, public.master_rows(d))
+                public.reconcile_csv(path, public.MASTER_COLUMNS, public.master_rows(d,self.features))
             with (d/'songs.csv').open(newline='') as f:
                 songs = list(csv.reader(f))
             public.write_csv(d/'songs.csv', songs[0]+['private_evidence'],
                              [r+['synthetic'] for r in songs[1:]])
             with self.assertRaisesRegex(ValueError, 'Unexpected song columns'):
-                list(public.master_rows(d))
+                list(public.master_rows(d,self.features))
+
+    def test_classifier_join_preserves_missingness_and_rejects_wrong_population(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            d=Path(tmp);self.generate(d)
+            rows=list(public.master_rows(d,self.features))
+            self.assertEqual(rows[0][-42:],self.features[self.ids[0]])
+            self.assertEqual(rows[1][-42:],(None,)*42)
+            partial={self.ids[0]:(None,)*4+self.features[self.ids[0]][4:]}
+            self.assertEqual(list(public.master_rows(d,partial))[0][-42:],partial[self.ids[0]])
+            for bad in ({},{self.ids[1]:self.features[self.ids[0]]}):
+                with self.assertRaisesRegex(ValueError,'coverage'):list(public.master_rows(d,bad))
+            with self.assertRaisesRegex(ValueError,'feature count'):list(public.master_rows(d,{self.ids[0]:(.5,)}))
+            with self.assertRaisesRegex(ValueError,'Invalid classifier'):list(public.master_rows(d,{self.ids[0]:(float('inf'),)*42}))
 
     def test_release_date_title_and_precision_are_coherent(self):
         values = public.metadata_summaries(self.c)[self.ids[0]]
@@ -141,16 +161,16 @@ class PublicDatasetTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             a, b = Path(tmp)/'a', Path(tmp)/'b'
             a.mkdir(); b.mkdir()
-            public.generate(self.c, a)
+            self.generate(a)
             self.c.execute('PRAGMA reverse_unordered_selects=ON')
-            public.generate(self.c, b)
+            self.generate(b)
             for name in ('songs.csv', 'monthly_top100.csv', 'master_dataset.csv'):
                 self.assertEqual((a/name).read_bytes(), (b/name).read_bytes())
 
     def test_reject_missing_manifest(self):
         self.c.execute('DELETE FROM lyrics_manifest WHERE song_id=?', (self.ids[1],))
         with tempfile.TemporaryDirectory() as tmp, self.assertRaises(ValueError):
-            public.generate(self.c, Path(tmp))
+            self.generate(Path(tmp))
 
     def test_reject_orphan_and_inconsistent_measurement(self):
         rows = public.song_rows(self.c)

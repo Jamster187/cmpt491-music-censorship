@@ -1,6 +1,12 @@
 # Four-model classifier panel
 
-The frozen production panel is **LyricLens, Detoxify Unbiased, GoEmotions and Cardiff sentiment**. BART is excluded. We retain 42 separate numerical features, without CSI, MCR, hardness or consensus. The [200-song readiness report](../reports/classifier_production_readiness.md) records the evidence and benchmark. The full corpus has not been classified by this runner.
+The frozen production panel is **LyricLens, Detoxify Unbiased, GoEmotions and Cardiff sentiment**. BART is excluded. We retain 42 separate numerical features, without CSI, MCR, hardness or consensus. The [200-song readiness report](../reports/classifier_production_readiness.md) records the evidence and benchmark. The full corpus is now classified. The user accepted two deterministic LyricLens
+normalization failures as documented missingness: 19,370 songs have all four
+models and two retain their other three models. See the
+[accepted-missingness policy](classifier_accepted_missingness.json). Do not retry
+these unchanged inputs. The 42 features are published in the master CSV. The
+original failure records remain unchanged; accepted completeness is validated
+by the public exporter rather than rewriting the frozen runner’s strict validator.
 
 ## Outputs
 
@@ -29,9 +35,10 @@ Use the existing isolated `data/experiments/classifier_panel/venv` (Python 3.11.
 
 CPU float32, batch size one, four threads, evaluation mode, fixed seed 491 and deterministic PyTorch algorithms are fixed. Exact reruns are checked on this environment; bitwise equivalence is not promised across different hardware or dependency versions. A run fingerprints its source modules, schema, dependencies, NLTK resources, target lyric hashes and scope. Different configuration must use a separately versioned artifact, not overwrite an existing run.
 
-## Commands
+## Archived inference commands
 
-The following full-scope command is prepared for the next authorized step; **it was not run during this checkpoint**:
+The full-scope invocation below has already completed. These commands document
+the resumable infrastructure; **do not retry the two accepted LyricLens exceptions**:
 
 ```sh
 data/experiments/classifier_panel/venv/bin/python src/classifier_production.py run --scope full
@@ -69,6 +76,9 @@ Full results will be stored at `data/processed/classifier_results.db`. Pilot res
 - `song_results`: one row per `song_id`, 42 nullable scores and processing metadata. Metadata includes classifier version, lyric hash/word count, and each model's status, token/chunk counts, normalization hash, checkpoint revision/hash. Unfinished/failed models have null scores; they are never replaced with zero.
 - `run_config` and `executions`: frozen configuration and measured worker timings/status/memory. SQLite uses WAL, full synchronization and transactions, with process locks against concurrent writers.
 
-`song_results` can later join to `master_dataset.csv` by `song_id`. No inference command modifies that CSV, research.db, Billboard data or lyrics. Incremental inference output stays local; future public export is a separate task. The committed pilot artifacts contain only numerical predictions, hashes and processing metadata.
+`song_results` joins to `master_dataset.csv` by `song_id` through the public exporter. No inference command modifies that CSV, research.db, Billboard data or lyrics.
+The separately authorized public exporter now performs the score join. Incremental
+inference output and processing evidence remain local; only the approved 42
+features are included in the public master. The committed pilot artifacts contain only numerical predictions, hashes and processing metadata.
 
 The completed-run no-op proof records unchanged table digests in the ignored pilot directory. The committed `reports/classifier_production/validation.json` preserves that evidence alongside replay and artifact hashes. When the original local `interrupt_before.json` snapshot is present, report rebuilding also verifies preservation of all jobs and chunks recorded before the deliberate SIGTERM test. Report rebuilding requires the original local pilot databases and this proof; public readers can inspect the committed numerical artifacts without possessing the lyrics or model weights.
