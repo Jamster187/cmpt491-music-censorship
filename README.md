@@ -23,6 +23,8 @@ project is still in progress, and we do not have results yet.
 
 Current status:
 
+- Lyrics exclusion audit: [diagnostic findings and recovery scenarios](reports/lyrics_exclusion_audit.md), [scope and validation](docs/lyrics_exclusion_audit.md). Corpus unchanged; a separately validated second pass is recommended before freezing it.
+
 - Lyrics completion: [final coverage and integrity](reports/lyrics_completion_audit.md), [fix, provenance and validation record](docs/lyrics_completion.md). The remaining 3,717 assets were dispositioned and the unified lyrics manifest synchronized. The [earlier post-run audit](reports/post_run_audit.md) remains a historical checkpoint.
 
 - Billboard dataset processing: complete
