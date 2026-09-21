@@ -1,5 +1,9 @@
 # Weekly and monthly analysis populations
 
+> The aggregated-month definition below describes the retained published release.
+> The new month-end definition is being evaluated separately; see the
+> [candidate workflow](month_end_snapshots.md). No existing population was overwritten.
+
 Build locally with Python 3.9+ and the standard library:
 
 ```bash
