@@ -1,0 +1,64 @@
+{
+  "revision": "71a40996c1021c62d12dc004cbafa3f1c5560162",
+  "source": {
+    "LICENSE": "a928f0078528a23baf1d5d615a82a0e922b4ef692435a02480cb5deda7aaaff2",
+    "requirements.txt": "961c8ea343c547f188f0099f19c2a3011f04dfc2b47448a5a0011c444479e5ea",
+    "README.md": "246540cab6eafcd8b46496815595e88c40518690b4e3700f0583a11cd5d84749",
+    "music_content_rating.py": "fcea301eec300a668be270047f6deee3e8bea44a850fd0938c77943e928f4aeb",
+    "app.py": "8ac1c1a9a2b4574666b874a991aba91fe054233015ccb8f26c4698a1a3c2351b"
+  },
+  "model": {
+    "model.safetensors": "d272696293bc75d5a82cca2e624800456f734f57382cd9472b5974993ef860cc",
+    "tokenizer_config.json": "e3562fde2b8a3139f3649700d8db9c0796eb3ed6a8427390a7eba474218d092f",
+    "special_tokens_map.json": "f23c8e6099631c233c16d9bf8dab198f610826cdd1b358f270f6d55c1863e857",
+    "config.json": "66b8e7b7289e7a9258e46394e311b21385ffdfe2e126e0f701e5d45b9fa341c3",
+    "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "vocab.json": "32b29acf82d3333462eb4b13416760f2aef956052e8fea1749fe5b20f866a4bf",
+    "trainer_state.json": "1bb6e3c82d04f2379483b7c83c85bcb1bfc512bfa8949b944bc747fea8f4c33c"
+  },
+  "nltk": {
+    "tokenizers/punkt.zip": "51c3078994aeaf650bfc8e028be4fb42b4a0d177d41c012b6a983979653660ec",
+    "taggers/averaged_perceptron_tagger.zip": "e1f13cf2532daadfd6f3bc481a49859f0b8ea6432ccdcd83e6a49a5f19008de9",
+    "corpora/omw-1.4.zip": "3b941e664852f3297b6040236626065796a2aaf7d7f9eec8779a3beaa1096c2d",
+    "corpora/wordnet.zip": "cbda5ea6eef7f36a97a43d4a75f85e07fccbb4f23657d27b4ccbc93e2646ab59",
+    "corpora/stopwords.zip": "48c0e52d8b52546e827f53761fb30300c0ab94f70660d28bd65ba0a86270946b"
+  },
+  "drive_folder": "1EQlMFnAieKLeGEQR0ViQdk1Su2P8mjPy",
+  "drive_files": [
+    {
+      "id": "1x_0WtIDg1_0vHdh_SwXnyv3uZXBNZ_2N",
+      "name": "config.json",
+      "bytes": 1090
+    },
+    {
+      "id": "1s9BQqwhz5IGrUI0IqNjZDqZZBHtJPPbC",
+      "name": "merges.txt",
+      "bytes": 456318
+    },
+    {
+      "id": "1v5rn4I-_1oaXV7SOZ6IY8hg_6kbsias6",
+      "name": "model.safetensors",
+      "bytes": 594684336
+    },
+    {
+      "id": "14GS_eP1Vl97eb0lP3-HLz9MlNz3EjFoy",
+      "name": "special_tokens_map.json",
+      "bytes": 958
+    },
+    {
+      "id": "1ucDWBFfrKGBIpZqKzkEgVALq4tbxHUK_",
+      "name": "tokenizer_config.json",
+      "bytes": 1253
+    },
+    {
+      "id": "10RLDtchFVzNTZ4aJqa3bC5jHNKpF0TKg",
+      "name": "trainer_state.json",
+      "bytes": 65297
+    },
+    {
+      "id": "1bqknOWuaYCJAoIwS7KRQfojESwxVdXNr",
+      "name": "vocab.json",
+      "bytes": 999355
+    }
+  ]
+}

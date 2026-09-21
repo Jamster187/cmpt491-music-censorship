@@ -1,0 +1,22 @@
+{
+  "version": "lyriclens-evaluation-v1",
+  "model_commit": "71a40996c1021c62d12dc004cbafa3f1c5560162",
+  "sample_sha256": "47103f916c19dbe89e9d8541ee56c101158a1a24ec120c2123b529087e962f03",
+  "raw_outputs_sha256": "1cdb717916bc793ce82db8d1f58e61b39613a7210bc5c7f9dc81a70b59eccd80",
+  "predictions_sha256": "abef9ffbdf61f3fbe2767c2b1cb067be903657f008c927d53d3a1f5bab9d6f28",
+  "python": "3.11.8",
+  "architecture": "arm64",
+  "torch": "2.7.1",
+  "wrapper_sha256": "e9ee34d840797d6ebef34e9780d034b8d6fc1c026347e05f3999566ea695fe0b",
+  "preprocessing_fallbacks": 0,
+  "cpu_threads": 4,
+  "cuda_available": false,
+  "mps_available": true,
+  "device": "cpu",
+  "dtype": "float32",
+  "model_parameters": 148662532,
+  "load_seconds": 2.247428584145382,
+  "peak_rss_bytes": 1622704128,
+  "inference_seconds": 122.58450282667764,
+  "predictions": 200
+}

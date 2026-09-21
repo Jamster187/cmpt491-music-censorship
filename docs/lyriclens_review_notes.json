@@ -1,0 +1,241 @@
+{
+  "review_method": "Assistant qualitative read-through of all unique nonblank lyric lines; not an independent human-labelled gold standard. No lyric text reproduced.",
+  "scope": "Face validity for the requested content measurement; correct means broadly plausible category presence, not validated continuous severity.",
+  "annotations": {
+    "song_0aed0baea9ae5d346cf2c42de2f92d7bd81418aa8269b3f685d489fdbf4cc08d": {
+      "verdict": "clearly_wrong",
+      "note": "Affection and happiness, without sexual acts or erotic description; sexual probability 0.632 is not face-valid for explicit-content measurement.",
+      "text_quality_note": ""
+    },
+    "song_2a783aa21125846631c321e170948f1689071a051714cf6e57c7cfb4ba6c8b89": {
+      "verdict": "questionable",
+      "note": "Sexual invitation is correctly detected; language probability 0.620 has no clear strong-profanity support in this text.",
+      "text_quality_note": "One unusual threatening phrase may be a transcription issue; not verified against audio."
+    },
+    "song_bfce50e15f1789f7ca376150665063761fdbef5af253e2d162514a8ae0316025": {
+      "verdict": "correct",
+      "note": "Support and friendship; low scores fit the supplied text.",
+      "text_quality_note": ""
+    },
+    "song_21c7c8f7417b94a8c111b2a1c7570396b0e49f3c9f7cbbdd593d6d1c03d738d9": {
+      "verdict": "correct",
+      "note": "Affection with figurative tears; low category scores fit.",
+      "text_quality_note": ""
+    },
+    "song_f41a534741f51cde1d600b6ee480a6cec27c432d48b34b9d946bd8331f5d2a74": {
+      "verdict": "correct",
+      "note": "Dreaming and wonder; low scores fit.",
+      "text_quality_note": ""
+    },
+    "song_cd492e6096df3dd73a9047f8aef5c25a526b7b1384aaafac4f4c0ce7c690f5d1": {
+      "verdict": "questionable",
+      "note": "Playful courtship and dancing; sexual 0.728 and language 0.314 overstate the apparent explicitness. A broad romance label might explain part of this.",
+      "text_quality_note": ""
+    },
+    "song_23d90431f2ad7d4f8d31fc70fb9bc9aad106a4f8849752e76e878e6e017eb477": {
+      "verdict": "questionable",
+      "note": "Negated killing and a literal religious reference support keyword presence, but violence 0.995 and language 0.993 do not establish severe or endorsing content in this peace song.",
+      "text_quality_note": ""
+    },
+    "song_a0d2022d699c35704ab0f0e43a6856fcd3fa30930d806529eb228106de34770e": {
+      "verdict": "correct",
+      "note": "Consolation and spiritual support; low scores fit.",
+      "text_quality_note": ""
+    },
+    "song_5f0eaf882be171e9e96fec731f59733be3990d8ac7eaf8a258c5eb15da894eb3": {
+      "verdict": "questionable",
+      "note": "Figurative emotional hurt and abandonment; violence 0.600 is questionable as a content-severity signal.",
+      "text_quality_note": ""
+    },
+    "song_0ae5f6cefc72dd648e4af242ede9fc3a429075b6a2fa40106e6966410ea88dc5": {
+      "verdict": "correct",
+      "note": "Sexual themes and an alcohol mention are present. Near-one substance probability should not be read as extreme drug severity.",
+      "text_quality_note": ""
+    },
+    "song_b10199f4fcf60c75729c81ed97259c8e6aa9673cdcb93acdc6f4171e7cf8d945": {
+      "verdict": "correct",
+      "note": "Nature, friendship, and children; low scores fit.",
+      "text_quality_note": ""
+    },
+    "song_179feb8a79929d69156bfaf7c8ed48a7d01d17db6762f40e1d540507cc4f76e6": {
+      "verdict": "correct",
+      "note": "Direct sexual, profanity, alcohol, and cannabis content; high scores in those categories fit.",
+      "text_quality_note": ""
+    },
+    "song_a9824e4acd085fbd53e561a95b0a44b852833928c774ab7affba998ddfec95a6": {
+      "verdict": "correct",
+      "note": "Direct sexual language and profanity; strong sexual and language detection fits.",
+      "text_quality_note": ""
+    },
+    "song_aa13e5b19bab07dc2e5fc83d007dd90e21decb27057023685ff0ca1d8ba13b42": {
+      "verdict": "questionable",
+      "note": "Sexual content and alcohol are present; near-one violence and language scores are poorly supported by this particular local text.",
+      "text_quality_note": "Several lines appear garbled and strong profanity is absent; clean/version/transcription uncertainty needs separate review, not a score correction."
+    },
+    "song_84fb3306a13f9324e94484bea63edeaa1e6248de1587badbb758a41c3fef27e6": {
+      "verdict": "correct",
+      "note": "Direct drug use, profanity, and sexual content; corresponding high probabilities fit.",
+      "text_quality_note": ""
+    },
+    "song_69823ed1beab1c15adab303458294de6aa805b844e4d9bc1cb759b53d8e1d0b8": {
+      "verdict": "correct",
+      "note": "Explicit homicide narrative, weapons, drugs, sexual content, and profanity; all four high probabilities fit.",
+      "text_quality_note": ""
+    },
+    "song_8e7a07712e424d6dc71b31f594afafc6604cf5d4f09fcf81c91908a2c45b979d": {
+      "verdict": "correct",
+      "note": "Direct sexual content, gun/shooting references, drugs, and profanity; all four high probabilities fit.",
+      "text_quality_note": ""
+    },
+    "song_dcd6fc07dd41fb2112e83cc37ad3cb0288359e4b90661faeb2891c6a2a7f5e89": {
+      "verdict": "correct",
+      "note": "Sex, profanity, and explicit drug/rehabilitation references; high corresponding scores and low violence fit.",
+      "text_quality_note": ""
+    },
+    "song_a7464a3d004fed14e1824802fca94ffd5af3ac71e2e2e34435fccd0ff534a2ed": {
+      "verdict": "correct",
+      "note": "Celebratory text; low overall scores fit, with only a small language response.",
+      "text_quality_note": ""
+    },
+    "song_97dde8742e0cc2461773a6d71873bf7831160cc7b3b82fcb096f1022b4c12759": {
+      "verdict": "correct",
+      "note": "Graphic sex and profanity, alcohol/cannabis, and violent sexual imagery are present. Whether consensual sexual imagery should count as violence requires a rubric.",
+      "text_quality_note": ""
+    },
+    "song_61a93b5d45b99392acf44f79106a72ee8e87dee118e990895eafdece3a01ebe9": {
+      "verdict": "correct",
+      "note": "Defiance and hardship without explicit sexual or substance content; low sexual score fits.",
+      "text_quality_note": ""
+    },
+    "song_341d5e61c3771b2583160580b52ebf1a8e95798d167c3120383be6d5c367dcd6": {
+      "verdict": "correct",
+      "note": "Relationship jealousy; low scores fit this supplied text rather than an assumed explicit recording version.",
+      "text_quality_note": "Local wording contains no strong profanity; do not infer what an uncensored alternative recording would score."
+    },
+    "song_9a299229172ef4247b522973a28a572e71a62970370c1d7d60113d13f53c10fe": {
+      "verdict": "correct",
+      "note": "Weapons, warfare, and arms trading are explicitly discussed; violence detection fits. The critical stance is not captured by the probability.",
+      "text_quality_note": ""
+    },
+    "song_e860962415e52ac4be856ff3fa67796897ffd7bed74fc6959aa53ced2839c9e0": {
+      "verdict": "correct",
+      "note": "Dancing and aspiration; very low language score fits.",
+      "text_quality_note": ""
+    },
+    "song_3be80d6898e6d7126085bef1a2e577252c3acb8d6fb29059cd60aa374c032093": {
+      "verdict": "questionable",
+      "note": "Profanity and violent battle metaphors are present; substance 0.885 appears to treat praise slang and figurative smoke as literal use.",
+      "text_quality_note": ""
+    },
+    "song_10f21a7ac2fc5e27711d31d4a39dd3e60c793cda1e918d41a79a3b7b83519df3": {
+      "verdict": "questionable",
+      "note": "Dancehall/patois courtship; sexual 0.468 may reflect suggestive dancing, but the score is not a reliable measure of its intensity.",
+      "text_quality_note": "English-only normalization loses some stylistic distinctions; no controlled slang intervention was performed."
+    },
+    "song_f1bddb6c30e8373851eaf182907b098d1766fc67c2fc89c0c55665db81104c46": {
+      "verdict": "correct",
+      "note": "A brief alcohol reference supports substance presence. Substance 0.999 does not imply more severe use than a song about sustained intoxication.",
+      "text_quality_note": ""
+    },
+    "song_6dc4b05872cf526300be88208f4fd48cdc16f207b865ca7c05fd42fcada13675": {
+      "verdict": "correct",
+      "note": "Birthday gift and school themes; all low scores fit.",
+      "text_quality_note": ""
+    },
+    "song_8c9359eb2bcab6780ed3a7cdca143da09375324d2952065a07d7adb88bf11161": {
+      "verdict": "correct",
+      "note": "Cautious romance and heartbreak; all low scores fit.",
+      "text_quality_note": ""
+    },
+    "song_828a2fabc32543ca52c9c7d0e53a3f25f6182b996df6b3fcb860b8c631774b4c": {
+      "verdict": "correct",
+      "note": "Sensual touching and loss of control support sexual-content presence, without strong profanity or drug content.",
+      "text_quality_note": ""
+    },
+    "song_0213bb2ca26a8b0e613f83fdc3a1bf713269c08a2c6cbcb19d0e85cd0bb40e4f": {
+      "verdict": "questionable",
+      "note": "Flirtation, pleasure, and giving oneself are suggestive; sexual 0.993 is plausible as presence but not evidence of extreme explicitness.",
+      "text_quality_note": ""
+    },
+    "song_0952b517e2fef799bf238e7dc58b1371cc57ea3450759f0c13ba18c1ca658fc1": {
+      "verdict": "correct",
+      "note": "Sexual and drug imagery, threats, and profanity are present; all-category detection fits, with figurative and literal content mixed.",
+      "text_quality_note": ""
+    },
+    "song_9072c5ee05fedc84220a23ef4901f2e73eedea66b912cb96f14d1a9a3fbe167a": {
+      "verdict": "clearly_wrong",
+      "note": "Loneliness, appearance, and courtship advice without explicit sexual content; sexual 0.753 is unsupported as explicitness.",
+      "text_quality_note": ""
+    },
+    "song_41cdcd17020b65b4e4437210a8c492aaa7bdc0500b9ef269cc7168648a893175": {
+      "verdict": "clearly_wrong",
+      "note": "Love compared with increasing height/depth; no literal substance use. Substance 0.871 is a clear metaphor-related false positive.",
+      "text_quality_note": ""
+    },
+    "song_e850a0ebd5865cbcde0d7358f03fb5b1793e1d046b07f23d6f6f42c012be6355": {
+      "verdict": "questionable",
+      "note": "Heartbreak and figurative dying; violence 0.382 should not be interpreted as measured violent intensity.",
+      "text_quality_note": ""
+    },
+    "song_59b578620c6f147ffde7e2fc69ee9a4809e9a70977488526ad587f45fee9ae3c": {
+      "verdict": "correct",
+      "note": "Direct bedroom invitation and undressing support high sexual-content probability.",
+      "text_quality_note": ""
+    },
+    "song_2a152a848f4917084d006e080ecbb3c882aeafefc1a851978231c794e8f12e5a": {
+      "verdict": "correct",
+      "note": "Sexual fantasy, touching, and a bed invitation support high sexual-content probability.",
+      "text_quality_note": ""
+    },
+    "song_8b956e0bcda8fd9258e29036463ab076ecd11f90f5146f347d5bb1f339a87454": {
+      "verdict": "correct",
+      "note": "A mild profanity is present, so language presence is plausible. Language 0.997 and the resulting adult rating exaggerate severity.",
+      "text_quality_note": ""
+    },
+    "song_58d6b7d9f8c8feebefe6c1f2e0edad83f12c28ca40a88354a70bf690997c68a2": {
+      "verdict": "questionable",
+      "note": "Sexual domination and physical harm are explicit; language 0.621 lacks clear profanity support.",
+      "text_quality_note": ""
+    },
+    "song_3a96b875068a9d12032c2372e69e8054ed77f3ae4351d6222ca3dbd78800372c": {
+      "verdict": "clearly_wrong",
+      "note": "Romantic longing, touch, and reconciliation without clear erotic acts; sexual 0.984 is unsupported as explicit content.",
+      "text_quality_note": ""
+    },
+    "song_431842b1312020e5d414f0de65e5c9ec072969ac8df182145eb4f25f39e9a5d3": {
+      "verdict": "questionable",
+      "note": "Physical attraction is mentioned but the focus is friendship and commitment. Sexual 0.983 illustrates the presence-versus-severity problem.",
+      "text_quality_note": ""
+    },
+    "song_c4eabeecb02281b19acf05dac0942d25da1b7cae44fc83479a18c5a5594546ab": {
+      "verdict": "questionable",
+      "note": "Kissing and a school-based innuendo support a suggestive reading; sexual 0.991 cannot establish graphic explicitness.",
+      "text_quality_note": ""
+    },
+    "song_f2d23f623a8d6f5bf76ea6360fcde2c59706ecf953032d31f7cc5c3d44aaeb35": {
+      "verdict": "correct",
+      "note": "Sustained sexual innuendo supports sexual-content detection; no claim of graphic intensity is justified by the probability alone.",
+      "text_quality_note": ""
+    },
+    "song_be7eac0fa653c7531ff79984dc290b805f805913ea19ea18c4e8bb0a26a7930b": {
+      "verdict": "correct",
+      "note": "A cigarette is explicitly referenced; substance presence fits. Saturated probability cannot distinguish this from severe drug use.",
+      "text_quality_note": ""
+    },
+    "song_d6fa79aae091c9b9eefa30e3a78f93ecdbbb66c8c1befb282bb7324a03578d7a": {
+      "verdict": "correct",
+      "note": "War, fighting, and death are explicitly discussed; violence presence fits, while its questioning/antiwar stance is not represented.",
+      "text_quality_note": ""
+    },
+    "song_fcee43b920ec51e027d82e5ebc7bf690e03815c44a91d5aaaa74f62fb232fd79": {
+      "verdict": "questionable",
+      "note": "Spanish courtship/sexual innuendo and infidelity are present; sexual 0.315 is uncertain rather than a validated intensity measure.",
+      "text_quality_note": "The supplied text is Spanish and has repeated choruses; token count 1,027 exceeds the app limit by three. Exact title/artist identity alone does not resolve the Spanish-original versus bilingual-remix question."
+    },
+    "song_f1d664029f6e73d8332f2a5ef74f4733ea56bbd946340d01b4c5169b617c7d8f": {
+      "verdict": "clearly_wrong",
+      "note": "Spanish text contains clear sexual and strong-profanity references; sexual 0.277 and language 0.050 are falsely reassuring. Substance 0.866 does capture some drug/alcohol content.",
+      "text_quality_note": "English normalization and an unverified training-language mix limit cross-language validity; no translation or text replacement was made."
+    }
+  }
+}
