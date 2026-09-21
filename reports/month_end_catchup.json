@@ -1,0 +1,111 @@
+{
+  "classifier_all_42": 0,
+  "classifier_jobs": {},
+  "classifier_targets": 15,
+  "final_all_42": 18658,
+  "final_any_classifier": 18660,
+  "final_population": 28041,
+  "final_usable": 18675,
+  "generated_at": "2026-09-21T18:24:17.381147+00:00",
+  "lyrics": {
+    "accepted": 15,
+    "not_found": 3,
+    "quarantined": 2,
+    "wrong_identity": 4
+  },
+  "lyrics_unprocessed": 3630,
+  "lyrics_usable_percent": 0.41,
+  "metadata": {
+    "ambiguous": 4,
+    "high_confidence": 29,
+    "not_found": 3
+  },
+  "metadata_accepted_percent": 0.79,
+  "metadata_unprocessed": 3618,
+  "model_failures": [],
+  "periods": [
+    {
+      "all_42": 4119,
+      "all_42_percent": 60.5,
+      "any_classifier": 4120,
+      "any_classifier_percent": 60.52,
+      "period": "1958–1969",
+      "songs": 6808,
+      "usable": 4127,
+      "usable_percent": 60.62
+    },
+    {
+      "all_42": 3230,
+      "all_42_percent": 64.5,
+      "any_classifier": 3230,
+      "any_classifier_percent": 64.5,
+      "period": "1970s",
+      "songs": 5008,
+      "usable": 3230,
+      "usable_percent": 64.5
+    },
+    {
+      "all_42": 3008,
+      "all_42_percent": 75.2,
+      "any_classifier": 3009,
+      "any_classifier_percent": 75.22,
+      "period": "1980s",
+      "songs": 4000,
+      "usable": 3011,
+      "usable_percent": 75.28
+    },
+    {
+      "all_42": 2209,
+      "all_42_percent": 66.36,
+      "any_classifier": 2209,
+      "any_classifier_percent": 66.36,
+      "period": "1990s",
+      "songs": 3329,
+      "usable": 2209,
+      "usable_percent": 66.36
+    },
+    {
+      "all_42": 2245,
+      "all_42_percent": 73.25,
+      "any_classifier": 2245,
+      "any_classifier_percent": 73.25,
+      "period": "2000s",
+      "songs": 3065,
+      "usable": 2247,
+      "usable_percent": 73.31
+    },
+    {
+      "all_42": 2235,
+      "all_42_percent": 70.55,
+      "any_classifier": 2235,
+      "any_classifier_percent": 70.55,
+      "period": "2010–2019",
+      "songs": 3168,
+      "usable": 2236,
+      "usable_percent": 70.58
+    },
+    {
+      "all_42": 1145,
+      "all_42_percent": 69.39,
+      "any_classifier": 1145,
+      "any_classifier_percent": 69.39,
+      "period": "2015–2019",
+      "songs": 1650,
+      "usable": 1146,
+      "usable_percent": 69.45
+    },
+    {
+      "all_42": 1612,
+      "all_42_percent": 60.53,
+      "any_classifier": 1612,
+      "any_classifier_percent": 60.53,
+      "period": "2020–2026",
+      "songs": 2663,
+      "usable": 1615,
+      "usable_percent": 60.65
+    }
+  ],
+  "population": 3654,
+  "snapshot_observations": 81797,
+  "status": "INCOMPLETE"
+}

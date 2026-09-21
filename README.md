@@ -20,11 +20,12 @@ We used the weekly charts to create a list of the **100 most popular songs for e
 
 We kept the weekly data too, so we can eventually look at changes either week-by-week or month-by-month.
 
-**Population update under review:** the new definition uses the last available
+**Month-end population approved:** the new definition uses the last available
 weekly chart in each month. Its [candidate comparison](reports/month_end_population_comparison.md)
 contains 28,041 songs and 81,797 observations (three source charts lack rank 100).
 The downloads below still use the previous aggregated-month definition. No public
-files have been replaced.
+files have been replaced. [Catch-up acquisition](docs/month_end_catchup.md) is
+scoped to the 3,654 newly added songs; existing results are preserved.
 
 ## Extra data
 
