@@ -23,7 +23,7 @@ from billboard import song_id as identity_id
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT/'data/public'
 DATABASE = ROOT/'data/processed/research.db'
-VERSION = 'acquisition-freeze-v1'
+VERSION = 'acquisition-freeze-v1.1'
 SONG_COLUMNS = (
     'song_id','title','artist','first_chart_date','last_chart_date','best_chart_rank',
     'weekly_observation_count','chart_weeks','total_chart_points',
@@ -34,6 +34,10 @@ SONG_COLUMNS = (
     'mb_distinct_duration_count','lyrics_status','lyrics_available')
 MONTHLY_COLUMNS = ('month','monthly_rank','song_id','monthly_points','weeks_present',
                    'best_weekly_rank','average_weekly_rank','weekly_observations')
+# Extend the reviewed song projection/SONG_COLUMNS for future public measurements;
+# the master join inherits them without accessing private database fields.
+MASTER_COLUMNS = MONTHLY_COLUMNS + tuple(c for c in SONG_COLUMNS if c != 'song_id')
+OUTPUT_NAMES = ('songs.csv','monthly_top100.csv','master_dataset.csv','manifest.json')
 MONTHLY_SQL = 'SELECT '+','.join(MONTHLY_COLUMNS)+' FROM monthly_top100 ORDER BY month,monthly_rank'
 LYRICS_STATUSES = {'success','quarantined','wrong_identity','bad_missing_text','not_found','error'}
 METADATA_STATUSES = {'high_confidence','ambiguous','not_found','error'}
@@ -194,6 +198,33 @@ def check_source(c):
     return counts
 
 
+def master_rows(directory):
+    """Left join the public CSVs, failing if a monthly key has no unique match.
+
+    Preserve serialized values (including blanks), monthly order, and repeated
+    songs across months. Only explicitly approved public columns can propagate.
+    """
+    with (directory/'songs.csv').open(encoding='utf-8',newline='') as f:
+        reader=csv.DictReader(f)
+        if reader.fieldnames!=list(SONG_COLUMNS):raise ValueError('Unexpected song columns')
+        songs={}
+        for row in reader:
+            if None in row or None in row.values():raise ValueError('Malformed song CSV row')
+            sid=row['song_id']
+            if sid in songs:raise ValueError('Duplicate public song_id')
+            songs[sid]=row
+    if set(SONG_COLUMNS)&set(MONTHLY_COLUMNS)!={'song_id'}:
+        raise ValueError('Public columns collide outside the join key')
+    with (directory/'monthly_top100.csv').open(encoding='utf-8',newline='') as f:
+        reader=csv.DictReader(f)
+        if reader.fieldnames!=list(MONTHLY_COLUMNS):raise ValueError('Unexpected monthly columns')
+        for row in reader:
+            if None in row or None in row.values():raise ValueError('Malformed monthly CSV row')
+            song=songs.get(row['song_id'])
+            if song is None:raise ValueError('Monthly row has no song match')
+            yield tuple(row[c] for c in MONTHLY_COLUMNS)+tuple(song[c] for c in SONG_COLUMNS if c!='song_id')
+
+
 def generate(c,directory):
     rows=song_rows(c);monthly=c.execute(MONTHLY_SQL).fetchall()
     if len(rows)!=c.execute('SELECT count(*) FROM study_population').fetchone()[0]:
@@ -202,14 +233,17 @@ def generate(c,directory):
     for name,columns,values in [('songs.csv',SONG_COLUMNS,rows),('monthly_top100.csv',MONTHLY_COLUMNS,monthly)]:
         write_csv(directory/name,columns,values)
         reconcile_csv(directory/name,columns,values)
-    return dict(songs=len(rows),monthly=len(monthly),baskets=baskets)
+    master_count=write_csv(directory/'master_dataset.csv',MASTER_COLUMNS,master_rows(directory))
+    reconcile_csv(directory/'master_dataset.csv',MASTER_COLUMNS,master_rows(directory))
+    if master_count!=len(monthly):raise ValueError('Master join changed the monthly row count')
+    return dict(songs=len(rows),monthly=len(monthly),master=master_count,baskets=baskets)
 
 
 def build(validate_only=False):
     # Output is deliberately fixed. No option can redirect publication into data/raw.
     if PUBLIC.is_symlink():raise ValueError('Public output directory is a symlink')
     PUBLIC.mkdir(parents=True,exist_ok=True)
-    for name in ('songs.csv','monthly_top100.csv','manifest.json'):
+    for name in OUTPUT_NAMES:
         if (PUBLIC/name).is_symlink():raise ValueError('Public output file is a symlink')
     before=sha(DATABASE)
     with closing(sqlite3.connect(DATABASE.resolve().as_uri()+'?mode=ro',uri=True)) as c:
@@ -219,12 +253,13 @@ def build(validate_only=False):
         with tempfile.TemporaryDirectory(dir=ROOT/'data/processed',prefix='public-export-') as temp:
             stage=Path(temp);one=stage/'one';two=stage/'two';one.mkdir();two.mkdir()
             counts=generate(c,one)
-            if counts!={'songs':25363,'monthly':81800,'baskets':818}:raise ValueError('Public counts differ')
+            if counts!={'songs':25363,'monthly':81800,'master':81800,'baskets':818}:raise ValueError('Public counts differ')
             if c.execute('SELECT min(n),max(n) FROM (SELECT count(*) n FROM monthly_top100 GROUP BY month)').fetchone()!=(100,100):
                 raise ValueError('Expected exactly 100 songs per basket')
             if generate(c,two)!=counts:raise ValueError('Nondeterministic row counts')
             files={}
-            for name,columns,count in [('songs.csv',SONG_COLUMNS,counts['songs']),('monthly_top100.csv',MONTHLY_COLUMNS,counts['monthly'])]:
+            for name,columns,count in [('songs.csv',SONG_COLUMNS,counts['songs']),('monthly_top100.csv',MONTHLY_COLUMNS,counts['monthly']),
+                                       ('master_dataset.csv',MASTER_COLUMNS,counts['master'])]:
                 fingerprint=sha(one/name)
                 if fingerprint!=sha(two/name):raise ValueError('Nondeterministic CSV bytes')
                 size=(one/name).stat().st_size
@@ -237,7 +272,7 @@ def build(validate_only=False):
                           monthly_baskets=818,weekly_csv_published=False,files=files)
             (one/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,sort_keys=True,indent=2)+'\n',encoding='utf-8')
             if sha(DATABASE)!=before:raise ValueError('Source database changed during export')
-            for name in ('songs.csv','monthly_top100.csv','manifest.json'):
+            for name in OUTPUT_NAMES:
                 if validate_only:
                     if not (PUBLIC/name).is_file() or sha(PUBLIC/name)!=sha(one/name):raise ValueError('Published export is stale or modified: '+name)
                 else:os.replace(one/name,PUBLIC/name)

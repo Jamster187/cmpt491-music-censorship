@@ -58,8 +58,8 @@ class PublicDatasetTests(unittest.TestCase):
     def test_projection_excludes_private_evidence_and_preserves_identity(self):
         with tempfile.TemporaryDirectory() as tmp:
             d = Path(tmp)
-            self.assertEqual(public.generate(self.c, d), {'songs': 2, 'monthly': 2, 'baskets': 1})
-            raw = (d/'songs.csv').read_text()
+            self.assertEqual(public.generate(self.c, d), {'songs': 2, 'monthly': 2, 'master': 2, 'baskets': 1})
+            raw = (d/'songs.csv').read_text() + (d/'master_dataset.csv').read_text()
             self.assertNotIn('PRIVATE_TEXT_CANARY', raw)
             self.assertNotIn('/Users/', raw)
             self.assertNotIn('canary', raw)
@@ -68,6 +68,60 @@ class PublicDatasetTests(unittest.TestCase):
             for row in rows:
                 self.assertEqual(row['song_id'], public.identity_id(row['title'], row['artist']))
             self.assertEqual({r['lyrics_available'] for r in rows}, {'0', '1'})
+
+    def test_master_preserves_repeated_song_and_all_source_values(self):
+        self.c.execute('INSERT INTO monthly_top100 VALUES (?,?,?,?,?,?,?,?)',
+                       ('2000-02', 1, self.ids[0], 100, 1, 1, 1, 1))
+        self.c.execute("UPDATE study_population SET last_selected_month='2000-02',months_selected=2 WHERE song_id=?",
+                       (self.ids[0],))
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Path(tmp)
+            public.generate(self.c, d)
+            def read(name):
+                with (d/name).open(newline='') as f:
+                    return list(csv.DictReader(f))
+            songs = {r['song_id']: r for r in read('songs.csv')}
+            monthly, master = read('monthly_top100.csv'), read('master_dataset.csv')
+            self.assertEqual(len(master), 3)
+            self.assertEqual(sum(r['song_id'] == self.ids[0] for r in master), 2)
+            for m, joined in zip(monthly, master):
+                self.assertEqual({k: joined[k] for k in m}, m)
+                self.assertEqual({k: joined[k] for k in songs[m['song_id']]}, songs[m['song_id']])
+            self.assertEqual(master[1]['mb_release_title'], '')
+            self.assertEqual(tuple(master[0]), public.MASTER_COLUMNS)
+
+    def test_master_rejects_duplicate_or_missing_song_match(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Path(tmp)
+            public.generate(self.c, d)
+            original = (d/'songs.csv').read_text()
+            with (d/'songs.csv').open(newline='') as f:
+                rows = list(csv.reader(f))
+            public.write_csv(d/'songs.csv', rows[0], rows[1:] + [rows[1]])
+            with self.assertRaisesRegex(ValueError, 'Duplicate'):
+                list(public.master_rows(d))
+            (d/'songs.csv').write_text(original)
+            public.write_csv(d/'songs.csv', rows[0], [])
+            with self.assertRaisesRegex(ValueError, 'no song match'):
+                list(public.master_rows(d))
+
+    def test_master_rejects_unapproved_columns_and_detects_changed_values(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Path(tmp)
+            public.generate(self.c, d)
+            path = d/'master_dataset.csv'
+            with path.open(newline='') as f:
+                rows = list(csv.reader(f))
+            rows[1][0] = '1990-01'
+            public.write_csv(path, rows[0], rows[1:])
+            with self.assertRaises(ValueError):
+                public.reconcile_csv(path, public.MASTER_COLUMNS, public.master_rows(d))
+            with (d/'songs.csv').open(newline='') as f:
+                songs = list(csv.reader(f))
+            public.write_csv(d/'songs.csv', songs[0]+['private_evidence'],
+                             [r+['synthetic'] for r in songs[1:]])
+            with self.assertRaisesRegex(ValueError, 'Unexpected song columns'):
+                list(public.master_rows(d))
 
     def test_release_date_title_and_precision_are_coherent(self):
         values = public.metadata_summaries(self.c)[self.ids[0]]
@@ -90,7 +144,7 @@ class PublicDatasetTests(unittest.TestCase):
             public.generate(self.c, a)
             self.c.execute('PRAGMA reverse_unordered_selects=ON')
             public.generate(self.c, b)
-            for name in ('songs.csv', 'monthly_top100.csv'):
+            for name in ('songs.csv', 'monthly_top100.csv', 'master_dataset.csv'):
                 self.assertEqual((a/name).read_bytes(), (b/name).read_bytes())
 
     def test_reject_missing_manifest(self):

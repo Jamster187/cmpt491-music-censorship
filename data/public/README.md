@@ -1,4 +1,4 @@
-# Public research dataset — acquisition freeze v1
+# Public research dataset — acquisition freeze v1.1
 
 The acquisition phase is frozen. These UTF-8 CSVs describe the constructed study
 population, including songs without usable lyrics. No lyric text, excerpts,
@@ -7,13 +7,28 @@ Classifier-derived columns may be added in a later version.
 
 ## Downloads and joins
 
+**Start with [master_dataset.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_dataset.csv)**
+if you want one analysis-ready file. Its 81,800 rows each represent one song in
+one monthly Top-100 basket. Monthly data and available song metadata are already
+joined using `song_id`; you do not need to join the tables yourself.
+
 | File | Data rows | Meaning |
 |---|---:|---|
+| [master_dataset.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_dataset.csv) | 81,800 | Recommended: monthly observations with song metadata already joined |
 | [songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv) | 25,363 | One exact Billboard title + artist identity per study song |
 | [monthly_top100.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/monthly_top100.csv) | 81,800 | One song in one monthly Top-100 basket |
 | [manifest.json](manifest.json) | — | Version, byte sizes, SHA-256 checksums, source fingerprints, and column lists |
 
-Join the tables on `song_id` (one-to-many). The monthly key is
+The separate normalized tables remain unchanged. The master is a LEFT JOIN of
+`monthly_top100.csv` to `songs.csv` on `song_id`, with exactly one song match per
+monthly row. It contains all eight monthly columns followed by the 23 song
+columns other than the shared `song_id`: **31 columns total**, defined below.
+Missing metadata stays blank. A song's metadata repeats when it appears in
+multiple months; those are distinct observations and should not be deduplicated.
+Song-history totals describe the whole song, so summing those repeated totals
+would count the same song more than once.
+
+If using the separate tables, join them on `song_id` (one-to-many). The monthly key is
 `(month, monthly_rank)`; `(month, song_id)` is also unique. There are 818 baskets
 of 100 songs. Do not flatten monthly and weekly observations together: that
 would multiply observations. CSV row counts exclude headers.
@@ -137,7 +152,14 @@ python3 -m unittest discover -s tests -v
 The exporter opens the database read-only, uses explicit column allowlists,
 checks the frozen counts/dispositions and relational integrity, reconciles CSV
 values to source projections, and compares two independently generated outputs
-before publication. It rejects private path/credential patterns and checks that
+before publication. The master is built from those public CSVs and every value
+is reconciled against them; duplicate song keys and missing joins fail validation.
+It rejects private path/credential patterns and checks that
 the source database hash is unchanged. The manifest has no runtime timestamp,
 so unchanged inputs and code produce identical bytes. Each CSV is below 25 MiB
 and suitable for direct Git storage; no Git LFS is required.
+
+For future development, add any reviewed song-level measurements to the explicit
+public song projection and `SONG_COLUMNS` in the exporter. The master then inherits
+those public columns automatically; it never copies arbitrary database fields.
+No classifier columns or scores have been added in this release.

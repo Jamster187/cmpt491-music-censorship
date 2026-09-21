@@ -1,7 +1,45 @@
 {
   "billboard_snapshot_sha256": "e1ac3678d7618d07537001447574869bb2350bc6522b9cd24c4588ad19237462",
-  "exporter_sha256": "7ecd951d505bd360ad841f529b0f0bc55398f18959c5fe30abcc0191492a111d",
+  "exporter_sha256": "32e2bd8cf024344751d87e3dfafcaf67d365e840367a28a8f6e476d9c472adb4",
   "files": {
+    "master_dataset.csv": {
+      "bytes": 21204879,
+      "columns": [
+        "month",
+        "monthly_rank",
+        "song_id",
+        "monthly_points",
+        "weeks_present",
+        "best_weekly_rank",
+        "average_weekly_rank",
+        "weekly_observations",
+        "title",
+        "artist",
+        "first_chart_date",
+        "last_chart_date",
+        "best_chart_rank",
+        "weekly_observation_count",
+        "chart_weeks",
+        "total_chart_points",
+        "first_selected_month",
+        "last_selected_month",
+        "months_selected",
+        "musicbrainz_match_status",
+        "mb_recording_count",
+        "mb_release_count",
+        "mb_earliest_release_date",
+        "mb_release_date_precision",
+        "mb_release_title",
+        "mb_duration_median_seconds",
+        "mb_duration_min_seconds",
+        "mb_duration_max_seconds",
+        "mb_distinct_duration_count",
+        "lyrics_status",
+        "lyrics_available"
+      ],
+      "rows": 81800,
+      "sha256": "4a18d97d4f117c4f6ce261ad4d035233e5401952b09dcd2e4e377bacf5a0df24"
+    },
     "monthly_top100.csv": {
       "bytes": 8003603,
       "columns": [
@@ -54,6 +92,6 @@
   "research_schema_version": 2,
   "source_commit": "unknown; supplied snapshot",
   "source_repository": "https://github.com/mhollingshead/billboard-hot-100",
-  "version": "acquisition-freeze-v1",
+  "version": "acquisition-freeze-v1.1",
   "weekly_csv_published": false
 }

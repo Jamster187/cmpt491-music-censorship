@@ -34,11 +34,9 @@ We also collected usable lyrics for **19,372 songs**.
 
 ## Download
 
-- [songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv)
-- [monthly_top100.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/monthly_top100.csv)
-- [Dataset guide](data/public/README.md)
+If you just want to use the dataset, download [master_dataset.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_dataset.csv). It contains one row per song per month, with the monthly Billboard data and available song metadata already joined together.
 
-`songs.csv` contains our song information and `monthly_top100.csv` contains the monthly Top 100 rankings. They can be joined using `song_id`.
+[songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv) and [monthly_top100.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/monthly_top100.csv) are also available separately for anyone who prefers the normalized tables. The [dataset guide](data/public/README.md) explains the columns and rebuild commands. No lyric text or classifier scores are included.
 
 ## What's next?
 
