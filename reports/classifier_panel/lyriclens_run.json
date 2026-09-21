@@ -1,0 +1,39 @@
+{
+  "chunks_sha256": "8471e022aedab95dd96b0cec19fd0018a9b2ff9cc2c32e1ecc55c287a1e38ebb",
+  "content_chunks": 202,
+  "failed": 0,
+  "fingerprint": {
+    "artifact_digest": "bb62440635d0fce14b964a1efd90783f42da0619ded17dbed9510b293bcebea6",
+    "batch_size": 1,
+    "content_budget": 1022,
+    "core_sha256": "d39e549f96d1fddb8f44a389798173e2ce3371cbd4a20b0ebe8e766a5a629830",
+    "device": "cpu",
+    "model": "lyriclens",
+    "runner_sha256": "58f6d1a33ca9806f6f2be0f05332d4dd0285f426e741457e44426d55fbcb5a5a",
+    "sample_sha256": "47103f916c19dbe89e9d8541ee56c101158a1a24ec120c2123b529087e962f03",
+    "themes_sha256": "40d10924a9ebf27be2b2f1bf4884aa5004863e758e4d166937dbb8204bc13b8c",
+    "torch": "2.7.1",
+    "transformers": "4.51.3",
+    "version": "classifier-panel-v1"
+  },
+  "gpu_driver_bytes": 0,
+  "inference_seconds": 123.8683473195415,
+  "labels": [
+    "sexual",
+    "violence",
+    "substance",
+    "explicit_language"
+  ],
+  "load_excluded_from_inference": true,
+  "load_seconds": 4.123434375040233,
+  "machine": "arm64",
+  "model_input_pairs": 202,
+  "model_parameters": 148662532,
+  "newly_processed": 200,
+  "peak_rss_bytes": 1545601024,
+  "python": "3.11.8",
+  "seconds_per_song": 0.6193417365977075,
+  "song_sha256": "72d657fe72a8fe07e95dbc643dcb37cabb32b08c975975cc5a40224a5259db05",
+  "status": "complete",
+  "successful": 200
+}

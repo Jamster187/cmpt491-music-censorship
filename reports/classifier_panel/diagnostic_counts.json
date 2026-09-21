@@ -1,0 +1,45 @@
+{
+  "bart_neutral_majority_and_theme_over_half": 1743,
+  "bart_neutral_majority_pairs": 2562,
+  "comparisons": 160,
+  "core_songs": 180,
+  "counts": {
+    "bart": {
+      "chunks": 216,
+      "max_chunks": 2,
+      "max_tokens": 1495,
+      "multichunk": 16,
+      "songs": 200
+    },
+    "detoxify": {
+      "chunks": 281,
+      "max_chunks": 3,
+      "max_tokens": 1495,
+      "multichunk": 65,
+      "songs": 200
+    },
+    "emotion": {
+      "chunks": 281,
+      "max_chunks": 3,
+      "max_tokens": 1495,
+      "multichunk": 65,
+      "songs": 200
+    },
+    "lyriclens": {
+      "chunks": 202,
+      "max_chunks": 2,
+      "max_tokens": 1069,
+      "multichunk": 2,
+      "songs": 200
+    },
+    "sentiment": {
+      "chunks": 279,
+      "max_chunks": 3,
+      "max_tokens": 1518,
+      "multichunk": 64,
+      "songs": 200
+    }
+  },
+  "labels": 59,
+  "sample_songs": 200
+}

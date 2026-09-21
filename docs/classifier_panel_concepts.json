@@ -1,0 +1,90 @@
+{
+  "families": {
+    "emotion": [
+      "emotion.admiration",
+      "emotion.amusement",
+      "emotion.anger",
+      "emotion.annoyance",
+      "emotion.approval",
+      "emotion.caring",
+      "emotion.confusion",
+      "emotion.curiosity",
+      "emotion.desire",
+      "emotion.disappointment",
+      "emotion.disapproval",
+      "emotion.disgust",
+      "emotion.embarrassment",
+      "emotion.excitement",
+      "emotion.fear",
+      "emotion.gratitude",
+      "emotion.grief",
+      "emotion.joy",
+      "emotion.love",
+      "emotion.nervousness",
+      "emotion.optimism",
+      "emotion.pride",
+      "emotion.realization",
+      "emotion.relief",
+      "emotion.remorse",
+      "emotion.sadness",
+      "emotion.surprise",
+      "emotion.neutral"
+    ],
+    "explicit_language": [
+      "lyriclens.explicit_language",
+      "detoxify.obscene",
+      "bart.profanity"
+    ],
+    "hostility_and_negative_affect": [
+      "detoxify.toxicity",
+      "detoxify.severe_toxicity",
+      "detoxify.insult",
+      "detoxify.identity_attack",
+      "emotion.anger",
+      "emotion.disgust",
+      "emotion.annoyance",
+      "emotion.disapproval"
+    ],
+    "sentiment": [
+      "sentiment.negative",
+      "sentiment.neutral",
+      "sentiment.positive"
+    ],
+    "sexual_content": [
+      "lyriclens.sexual",
+      "detoxify.sexual_explicit",
+      "bart.sexual"
+    ],
+    "substance_use": [
+      "lyriclens.substance",
+      "bart.drugs",
+      "bart.alcohol"
+    ],
+    "themes": [
+      "bart.romance",
+      "bart.heartbreak",
+      "bart.sexual",
+      "bart.violence",
+      "bart.profanity",
+      "bart.drugs",
+      "bart.alcohol",
+      "bart.crime",
+      "bart.wealth",
+      "bart.partying",
+      "bart.family",
+      "bart.friendship",
+      "bart.spirituality",
+      "bart.politics",
+      "bart.distress",
+      "bart.empowerment",
+      "bart.grief"
+    ],
+    "violence": [
+      "lyriclens.violence",
+      "detoxify.threat",
+      "bart.violence"
+    ]
+  },
+  "interpretation": "Conceptual grouping only. No equivalence of labels, common units, weights or consensus implied.",
+  "version": "classifier-panel-concepts-v1"
+}

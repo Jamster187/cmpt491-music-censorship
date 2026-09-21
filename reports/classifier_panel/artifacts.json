@@ -1,0 +1,104 @@
+{
+  "bart": {
+    "file_bytes": {
+      "README.md": 3793,
+      "config.json": 1154,
+      "merges.txt": 456318,
+      "model.safetensors": 1629437147,
+      "tokenizer.json": 1355863,
+      "tokenizer_config.json": 26,
+      "vocab.json": 898822
+    },
+    "local_relative_directory": "data/experiments/classifier_panel/bart",
+    "repository": "facebook/bart-large-mnli",
+    "revision": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce",
+    "sha256": {
+      "README.md": "d022b7cb54ca2f65fac41cf6c9601b4491b4ac22a301227288a38beef2a18aeb",
+      "config.json": "a0f9bcb245b680a96ccae0ad8d155f267ec3e3c971ef4a4937e52ea9ba368a86",
+      "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "model.safetensors": "cfbb687dbbd9df99fe865e1860350a22aebac4d26ee4bcb50217f1df606a018e",
+      "tokenizer.json": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+      "tokenizer_config.json": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+      "vocab.json": "06b4d46c8e752d410213d9548eb27a54db70fda0319b6271fb8d59dead5e1cab"
+    },
+    "weight_file": "model.safetensors"
+  },
+  "detoxify": {
+    "local_relative_directory": "data/experiments/detoxify",
+    "provenance_manifest": "reports/detoxify_artifacts.json",
+    "repository": "https://github.com/unitaryai/detoxify",
+    "revision": "d5376446b6accee5dd2d346f2d3050f9d8a69af1",
+    "sha256": {
+      "tokenizer/config.json": "ef0185e2aae6e06c5f105a285006952c340e20c7dbf43c86ec82601b13fc45e9",
+      "tokenizer/merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "tokenizer/tokenizer_config.json": "994f46754c5bf4014f1aa92d34b1374319c3a6b3f702105cd5b742beaecd18ce",
+      "tokenizer/vocab.json": "9e7f63c2d15d666b52e21d250d2e513b87c9b713cfa6987a82ed89e5e6e50655",
+      "toxic_debiased-c7548aa0.ckpt": "c7548aa09468726af4cfdd0959912467784de4a076786913ada9f0f21b68f60d"
+    },
+    "weight_file": "toxic_debiased-c7548aa0.ckpt"
+  },
+  "emotion": {
+    "file_bytes": {
+      "LICENSE": 1064,
+      "README.md": 9565,
+      "config.json": 1924,
+      "merges.txt": 456356,
+      "model.safetensors": 498697004,
+      "special_tokens_map.json": 280,
+      "tokenizer.json": 2108856,
+      "tokenizer_config.json": 380,
+      "vocab.json": 798293
+    },
+    "local_relative_directory": "data/experiments/classifier_panel/emotion",
+    "repository": "SamLowe/roberta-base-go_emotions",
+    "revision": "d75048347613a25d77de8cf6412eaae9fa7b26be",
+    "sha256": {
+      "LICENSE": "b96472c26654c10d3fdbcb1f469d34d5a42085b25d7e414670601306615e71e3",
+      "README.md": "bc576d0d7a4390c61bc700fe127e314485b20205d847a5202dfe8e76bdb3343a",
+      "config.json": "3d4ef8e1465958e169761e2eb09d6e2c8d8806216973691ac40e405c97339d5c",
+      "merges.txt": "fe36cab26d4f4421ed725e10a2e9ddb7f799449c603a96e7f29b5a3c82a95862",
+      "model.safetensors": "84d6d338b4cf63f0ed3c990a0ce748d32d1d2965c072f4645accaa71af3888c0",
+      "special_tokens_map.json": "06e405a36dfe4b9604f484f6a1e619af1a7f7d09e34a8555eb0b77b66318067f",
+      "tokenizer.json": "90e2336a1cdacffe5d4328ab323aa9e5c33889026e4e4881323bebdeeb0e179d",
+      "tokenizer_config.json": "6735f2f38dc5399eb76a2c20dcba3ef27a9b2fbba0d05b6e2966038f28aefcf9",
+      "vocab.json": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e"
+    },
+    "weight_file": "model.safetensors"
+  },
+  "lyriclens": {
+    "local_relative_directory": "data/experiments/lyriclens/model",
+    "provenance_manifest": "reports/lyriclens_artifacts.json",
+    "repository": "https://github.com/su1zihan/LyricLens",
+    "revision": "71a40996c1021c62d12dc004cbafa3f1c5560162",
+    "sha256": {
+      "config.json": "66b8e7b7289e7a9258e46394e311b21385ffdfe2e126e0f701e5d45b9fa341c3",
+      "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "model.safetensors": "d272696293bc75d5a82cca2e624800456f734f57382cd9472b5974993ef860cc",
+      "special_tokens_map.json": "f23c8e6099631c233c16d9bf8dab198f610826cdd1b358f270f6d55c1863e857",
+      "tokenizer_config.json": "e3562fde2b8a3139f3649700d8db9c0796eb3ed6a8427390a7eba474218d092f",
+      "trainer_state.json": "1bb6e3c82d04f2379483b7c83c85bcb1bfc512bfa8949b944bc747fea8f4c33c",
+      "vocab.json": "32b29acf82d3333462eb4b13416760f2aef956052e8fea1749fe5b20f866a4bf"
+    },
+    "weight_file": "model.safetensors"
+  },
+  "sentiment": {
+    "file_bytes": {
+      "README.md": 3290,
+      "config.json": 841,
+      "pytorch_model.bin": 1112271561,
+      "sentencepiece.bpe.model": 5069051,
+      "special_tokens_map.json": 150
+    },
+    "local_relative_directory": "data/experiments/classifier_panel/sentiment",
+    "repository": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+    "revision": "f2f1202b1bdeb07342385c3f807f9c07cd8f5cf8",
+    "sha256": {
+      "README.md": "e68315c0998946dc12ab17e7b54911871e5adf379f3169760961d2f4a75f9f42",
+      "config.json": "daeb7bd985217b249d89aaaa3fd589b3846e003d8d29d75fb78f0bd892609b41",
+      "pytorch_model.bin": "93316a86051c359748c5d5453e7660c69a21a57cfb477892f95f539e3e171196",
+      "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+      "special_tokens_map.json": "7638f5bbbe86ef6d604ef28ad3647dc690d6d117c81c0d63e885416be8da1150"
+    },
+    "weight_file": "pytorch_model.bin"
+  }
+}

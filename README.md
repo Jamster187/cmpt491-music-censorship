@@ -40,7 +40,7 @@ If you just want to use the dataset, download [master_dataset.csv](https://raw.g
 
 ## What's next?
 
-We are evaluating existing classifiers before choosing our song-content measurements. Our [LyricLens pilot](reports/lyriclens_evaluation.md) and [Detoxify comparison](reports/detoxify_evaluation.md) use the same 200 songs; neither model has been run on the full corpus.
+We are evaluating existing classifiers before choosing our song-content measurements. Our [five-model panel pilot](reports/classifier_panel_design.md) compares content, emotion, sentiment and theme judgments on the same 200 songs. The full corpus has not been classified.
 
 We can then track these scores from 1958–2026 and ask:
 

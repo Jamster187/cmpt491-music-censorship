@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "batch_size": 4,
+      "device": "cpu",
+      "gpu_driver_bytes": 0,
+      "input_tokens": 272,
+      "max_absolute_cpu_logit_difference": 0.0,
+      "seconds": [
+        1.131411915877834,
+        1.0427761671599,
+        1.0605375000741333
+      ]
+    },
+    {
+      "batch_size": 4,
+      "device": "mps",
+      "gpu_driver_bytes": 3573186560,
+      "input_tokens": 272,
+      "max_absolute_cpu_logit_difference": 1.074373722076416e-05,
+      "seconds": [
+        2.0199113748967648,
+        0.23984354198910296,
+        0.23881295789033175
+      ]
+    }
+  ],
+  "scope": "First four frozen themes on first frozen sample song, three replays per device; speed selection only.",
+  "song_id": "song_0aed0baea9ae5d346cf2c42de2f92d7bd81418aa8269b3f685d489fdbf4cc08d"
+}
