@@ -73,3 +73,14 @@ aggregate checkpoint report. Once inference is complete, it also creates a local
 160-song review template: two per available genre, 15 per confidence level, five
 per historical period, then hash-fills the union to 160. Selection is deterministic
 and includes rare genres. It never assigns review judgments or changes labels.
+
+### Transport interruption recovery
+
+A 2026-09-22 interruption exposed a CLI event-handling false positive: the exact
+notice `Falling back from WebSockets to HTTPS transport. request timed out` was
+classified as tool use. The runner now permits that transport notice only when
+normal completed-turn and response validation also succeed. Real tool events
+remain rejected. A saved response rejected for the old event error can be
+recovered by `run --retry-errors`, without another inference request; successful
+rows are never overwritten. The original error stays in the attempt audit trail.
+This changes transport handling, not the frozen genre methodology.

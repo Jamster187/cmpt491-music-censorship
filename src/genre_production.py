@@ -183,7 +183,14 @@ def monitor(c):
 def ingest_response(c, batch, folder):
     ids=json.loads(batch['song_ids']);obj=json.loads((folder/'response.json').read_text())
     events=[json.loads(x) for x in (folder/'events.jsonl').read_text().splitlines()]
-    if any(e['item']['type'] not in ('agent_message','reasoning') for e in events if 'item' in e):raise ValueError('Unexpected tool use')
+    for e in events:
+        if 'item' not in e:continue
+        item=e['item']
+        # CLI transport fallback is not a model tool call. Allow only this exact
+        # observed notice; still require a completed turn and valid predictions.
+        transport_notice=(item.get('type')=='error' and item.get('message')==
+                          'Falling back from WebSockets to HTTPS transport. request timed out')
+        if item['type'] not in ('agent_message','reasoning') and not transport_notice:raise ValueError('Unexpected tool use')
     if sum(e['type']=='turn.completed' for e in events)!=1:raise ValueError('No unique completed inference turn')
     # Preserve individually valid rows even if another row fails schema validation.
     rows=obj.get('predictions',[]) if isinstance(obj,dict) else []
@@ -204,7 +211,7 @@ def execute_batch(c,batch):
     prompt=request_text(inputs)
     if digest(prompt.encode())!=batch['request_sha256']:raise ValueError('Frozen request changed')
     # Recover a complete transport response without paying for another inference.
-    previous=c.execute("SELECT * FROM attempts WHERE batch_id=? AND status='running' ORDER BY attempt_id DESC LIMIT 1",(bi,)).fetchone()
+    previous=c.execute("SELECT * FROM attempts WHERE batch_id=? AND (status='running' OR (status='error' AND error='ValueError: Unexpected tool use')) ORDER BY attempt_id DESC LIMIT 1",(bi,)).fetchone()
     if previous:
         folder=LOCAL/previous['folder']
         if (folder/'response.json').exists():

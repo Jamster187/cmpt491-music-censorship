@@ -50,7 +50,7 @@ class ProductionTests(unittest.TestCase):
             c.execute('UPDATE songs SET input_json=?',(json.dumps({'song_id':'a'}),))
             c.execute('CREATE TABLE batches(batch_id,status)')
             c.execute("INSERT INTO batches VALUES (1,'running')")
-            c.execute('CREATE TABLE attempts(attempt_id,batch_id,status,folder,finished_at,usage_json,response_sha256)')
+            c.execute('CREATE TABLE attempts(attempt_id,batch_id,status,folder,finished_at,usage_json,response_sha256,error)')
             c.execute("INSERT INTO attempts(attempt_id,batch_id,status,folder) VALUES (1,1,'running','saved')")
             (folder/'response.json').write_text(json.dumps({'predictions':[self.row()]}))
             (folder/'events.jsonl').write_text(json.dumps({'type':'turn.completed','usage':{'input_tokens':1}}))
@@ -60,6 +60,41 @@ class ProductionTests(unittest.TestCase):
                 run.assert_not_called()
             self.assertEqual(c.execute('SELECT status FROM attempts').fetchone()[0],'recovered')
             self.assertEqual(c.execute('SELECT status FROM batches').fetchone()[0],'completed')
+
+    def test_transport_error_response_recovers_without_inference(self):
+        with tempfile.TemporaryDirectory() as tmp,self.database() as c:
+            folder=Path(tmp)/'saved';folder.mkdir()
+            c.execute('ALTER TABLE songs ADD COLUMN input_json')
+            c.execute('UPDATE songs SET input_json=?',(json.dumps({'song_id':'a'}),))
+            c.execute('CREATE TABLE batches(batch_id,status)')
+            c.execute("INSERT INTO batches VALUES (1,'running')")
+            c.execute('CREATE TABLE attempts(attempt_id,batch_id,status,folder,finished_at,usage_json,response_sha256,error)')
+            c.execute("INSERT INTO attempts(attempt_id,batch_id,status,folder,error) VALUES (1,1,'error','saved','ValueError: Unexpected tool use')")
+            (folder/'response.json').write_text(json.dumps({'predictions':[self.row()]}))
+            (folder/'events.jsonl').write_text(json.dumps({'type':'turn.completed','usage':{'input_tokens':1}}))
+            batch={'batch_id':1,'song_ids':'["a"]','request_sha256':g.digest(g.request_text([{'song_id':'a'}]).encode())}
+            with patch.object(g,'LOCAL',Path(tmp)),patch.object(g.subprocess,'run') as run:
+                g.execute_batch(c,batch)
+                run.assert_not_called()
+            self.assertEqual(c.execute('SELECT status FROM attempts').fetchone()[0],'recovered')
+            self.assertEqual(c.execute('SELECT status FROM batches').fetchone()[0],'completed')
+
+    def test_transport_fallback_notice_is_not_tool_use(self):
+        with tempfile.TemporaryDirectory() as tmp,self.database() as c:
+            folder=Path(tmp)
+            (folder/'response.json').write_text(json.dumps({'predictions':[self.row()]}))
+            notice={'type':'item.completed','item':{'type':'error','message':'Falling back from WebSockets to HTTPS transport. request timed out'}}
+            (folder/'events.jsonl').write_text(json.dumps(notice)+'\n'+json.dumps({'type':'turn.completed','usage':{}}))
+            g.ingest_response(c,{'song_ids':'["a"]'},folder)
+            self.assertEqual(c.execute("SELECT status FROM songs WHERE song_id='a'").fetchone()[0],'completed')
+
+    def test_transport_notice_without_completed_turn_is_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp,self.database() as c:
+            folder=Path(tmp)
+            (folder/'response.json').write_text(json.dumps({'predictions':[self.row()]}))
+            (folder/'events.jsonl').write_text(json.dumps({'type':'item.completed','item':{'type':'error','message':'Falling back from WebSockets to HTTPS transport. request timed out'}}))
+            with self.assertRaisesRegex(ValueError,'completed inference'):g.ingest_response(c,{'song_ids':'["a"]'},folder)
+            self.assertEqual(c.execute("SELECT status FROM songs WHERE song_id='a'").fetchone()[0],'pending')
 
     def test_drift_guards(self):
         balanced=[self.row(genre=g.TAXONOMY[i%16]) for i in range(200)]
