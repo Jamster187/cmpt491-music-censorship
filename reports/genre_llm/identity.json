@@ -1,0 +1,662 @@
+[
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable Motown single by Diana Ross & The Supremes; learned knowledge points to 1960s pop-soul, with the recording style more strongly soul than generic pop.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_30d830a95ffb8c7322352dd1f2121a5deea8394105665f02987fe06fa0a7b146"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable early-1960s hit by The Sensations, generally associated with doo-wop/R&B vocal group style; limited supplied tag evidence keeps confidence moderate.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_445ce019f72fefe5e322a604f3bf07c182e78c35bce0cb59086d3947a50d1916"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "R&B / Soul",
+    "reason": "Peaches & Herb were a soul vocal duo and this 1967 recording is plausibly in their sweet soul/pop-soul lane, though no tags are supplied for the specific recording.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_6ff9b0c852e2518543efdeb12a8d461bb12cb1f08d87f7f3872960d2d742929e"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Mel Carter hit is a traditional pop/easy-listening ballad; learned knowledge supports pop as the broad style rather than soul or rock.",
+    "secondary_genres": [],
+    "song_id": "song_73bb6d17dc79b2d3de5b3da5aa9c9bac42813c975b368517a5f7e28fdd76e1c6"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Other",
+    "reason": "Identifiable orchestral theme recording from the film; its instrumental soundtrack/easy-listening march style sits outside the taxonomy better than pop or jazz.",
+    "secondary_genres": [],
+    "song_id": "song_7e30c1693734863a0fecc8328bf158f36c0fedb96ad6b1a253efba966bc482af"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Aretha Franklin's recording is a clear, identifiable soul landmark; learned musical knowledge strongly supports R&B/Soul as the primary genre.",
+    "secondary_genres": [],
+    "song_id": "song_8c13d8e4ead4fff60549ddec575dad40428747a694cb844f51a73e2e59e443e1"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Country",
+    "reason": "Identifiable Ray Charles recording is a country ballad interpretation with soul-pop crossover appeal; its source and arrangement support Country primary with R&B/Soul secondary.",
+    "secondary_genres": [
+      "R&B / Soul",
+      "Pop"
+    ],
+    "song_id": "song_c621cfa245241f1ede4d5a3c0552e33fcf76bcfd4ccb6daa72e3ad013b3d4fa0"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "R&B / Soul",
+    "reason": "Bobby Day's late-1950s recording is associated with early rock and R&B/doo-wop; without tags, R&B/Soul is a plausible broad fit with rock crossover.",
+    "secondary_genres": [
+      "Rock"
+    ],
+    "song_id": "song_d1144e651a7db9b1bfac074c20e133c378ff0d99c0fb41156bb1677cb1b254a3"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Afrobeats / African Pop",
+    "reason": "Miriam Makeba's song is identifiable as South African/African popular music rather than merely nationality-based, but sparse supplied evidence keeps confidence moderate.",
+    "secondary_genres": [
+      "Folk / Singer-Songwriter"
+    ],
+    "song_id": "song_de9170e8e62446f52437643bfd1b1dd47bc4b8293c7035f8888c5d679cef5cd8"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "R&B / Soul",
+    "reason": "Peaches & Herb's 1967 material is generally sweet soul/pop-soul, and this identifiable duo context supports R&B/Soul despite no specific tag evidence.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_e8c3fc6c6e1f765fc422070358b4fa4e705e746857c034d5ed2a511db646b411"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Jazz / Blues",
+    "reason": "Identifiable Herb Alpert instrumental version of a film theme; learned knowledge points to easy-listening brass with jazz/pop instrumental character, with Latin flavor from the Tijuana Brass style.",
+    "secondary_genres": [
+      "Latin",
+      "Pop"
+    ],
+    "song_id": "song_f9ddcd2f7850ac896c1cdb787d553b63fe78a5f64c8ff1f0fb8e2e7cf7641e9c"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Pop",
+    "reason": "Identifiable disco-era novelty medley act recording of an old standard; the track is best treated as pop/disco rather than the original Tin Pan Alley style.",
+    "secondary_genres": [
+      "Electronic / Dance"
+    ],
+    "song_id": "song_32e956d7ab212c9ce517184027a9a0a8b2814bdb25f7a4247e9ce8d1d8d33ba2"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Latin",
+    "reason": "Identifiable El Chicano instrumental hit; learned knowledge supports Latin rock/jazz fusion, with the Latin groove more central than generic rock.",
+    "secondary_genres": [
+      "Jazz / Blues",
+      "Rock"
+    ],
+    "song_id": "song_66e3a32dd4604c4c4bb2490dafb9a9780fa010bf35d988f55be64637d260d37a"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Rock",
+    "reason": "Identifiable Pablo Cruise late-1970s single; learned knowledge places the band in soft/yacht rock with pop polish, though supplied data has no tags.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_728925dc4a3c8dbfe9f3246dffa5d6a5f5ae65ef8637ee88e521237fad75a8da"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable Persuaders original recording; learned knowledge supports 1970s soul/R&B vocal-group style rather than later pop-rock covers.",
+    "secondary_genres": [],
+    "song_id": "song_7af106e9903c0d3166b0e4713f04b5f19e9fd66ab7805f1e45bfa0eb60c7eb4c"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Pop",
+    "reason": "Identifiable early-1970s Cher single; learned knowledge suggests mainstream adult pop with some singer-songwriter/country-pop shading, but no direct tag evidence was supplied.",
+    "secondary_genres": [],
+    "song_id": "song_8794d1c12e8c77e7ad430a1b484aee515afa3d9ead32874c9ea8b0519ab7ae77"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable Motown collaboration by The Supremes and Four Tops; learned knowledge supports soul/pop vocal-group material, with R&B/Soul as the stronger broad style.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_893cc453fd6abdf92143801f9be8b45c9b946bc24bfba4384a35774137e70121"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Identifiable Doobie Brothers version of a Motown song; learned knowledge points to a rock arrangement with soulful roots preserved as crossover context.",
+    "secondary_genres": [
+      "R&B / Soul"
+    ],
+    "song_id": "song_8c901f5b3e5e4c25f7cf44180cd1bedcb3567ea88b9e7b4153fe86d1ba6fa8c8"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Identifiable Queen recording; learned knowledge supports a rock song with progressive/art-rock and operatic pop elements, but Rock is the clearest broad category.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_93ddae64dcbe4d5878f02e213d7587e345bcf0263c0250738609513e3bb3494a"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable Lou Rawls hit; learned knowledge supports smooth Philly soul/disco-era R&B, with pop crossover but a clearly soul-based recording.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_c89f4d6d464f96d596f24b263cc4b17d6fac7434d27ef5a6b4a726e4f9c3c4c8"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Metal",
+    "reason": "Identifiable Black Sabbath recording is a foundational heavy metal song, with hard rock elements secondary to its metal style.",
+    "secondary_genres": [
+      "Rock"
+    ],
+    "song_id": "song_e7f27262ace9ab2f5c1d356b0e7420d2629f77521e23fb9d227c23b87bbd4a4e"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Folk / Singer-Songwriter",
+    "reason": "Identifiable Bob Dylan original is a sparse singer-songwriter folk-rock ballad; rock crossover is present but the song is driven by Dylan's folk songwriting idiom.",
+    "secondary_genres": [
+      "Rock"
+    ],
+    "song_id": "song_f3fe9aff88df7dafc10a5d25b5f52242c7f040ae407babb74fb853b5b1121ecd"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Rick Astley hit is an 1980s dance-pop/Stock Aitken Waterman production; dance elements support a secondary electronic/dance classification.",
+    "secondary_genres": [
+      "Electronic / Dance"
+    ],
+    "song_id": "song_20f4a16fa209badbffe170632f6cd752c60aedf886ccbce11e7316763497b1f6"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Jennifer Rush and Elton John duet is best known as a dramatic adult-contemporary pop power ballad, with limited evidence for a narrower category.",
+    "secondary_genres": [],
+    "song_id": "song_2a3953597d688379e71b767ebc79b4af84ffca3393c4c171a0ba1d8a07cc6143"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Identifiable Bob Seger recording is a rootsy soft rock/country-rock ballad; country crossover is genuine but Seger's version sits primarily in rock radio style.",
+    "secondary_genres": [
+      "Country"
+    ],
+    "song_id": "song_37a4d0085f53ce98da3e9da4fd8efabcd01ec5858244c84d6a9a6e65d9571e36"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Whitney Houston hit is an upbeat dance-pop recording with strong club-oriented production, while R&B influence comes mainly through Houston's vocal style.",
+    "secondary_genres": [
+      "Electronic / Dance",
+      "R&B / Soul"
+    ],
+    "song_id": "song_6063e3caaf6f18469a7a32f76f64fd10bc58b26e3b16a50159463c8e00ed62dc"
+  },
+  {
+    "confidence": "low",
+    "primary_genre": "Pop",
+    "reason": "The song identity is relatively obscure and no raw tags were supplied; based on the mid-1980s act context it is only tentatively classed as pop.",
+    "secondary_genres": [],
+    "song_id": "song_8d9c40bf4217be87f81553c767a758b3a61eb09dda1b2339858cf9dee29bc0ad"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Debbie Gibson recording is a mainstream teen-pop/adult-contemporary ballad, with no stronger supplied evidence for another broad genre.",
+    "secondary_genres": [],
+    "song_id": "song_a7197574545e330517462fa119faa8564536ede13d65ed7f397ab96866e5d2de"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable Commodores track from their post-funk ballad era is best treated as R&B/soul adult contemporary, though pop crossover is plausible.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_ac8908e6477aa0b8e5a5508c55ed0629bbaaa43222d170a0e5535926bb7822cd"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Marcy Levy and Robin Gibb duet is associated with early-1980s pop soundtrack/adult-contemporary style; evidence is limited beyond known performer and title identity.",
+    "secondary_genres": [],
+    "song_id": "song_bdf18fbf0f81014f6199818f0ebbac82f4fdf58c0b052ae21b76f4c8fcbb9941"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Identifiable Springsteen single; learned knowledge points to mainstream heartland rock, with no supplied tag evidence requiring a different classification.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_c3b9d3c672c8b278cfd7b9a8973ccff8efc354d2c72736f95e335d65197f9958"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable early electro-rap recording; its hip-hop identity is central, with electronic production important enough to preserve as crossover.",
+    "secondary_genres": [
+      "Electronic / Dance"
+    ],
+    "song_id": "song_f3db26fdd2abc5385af52b80b038797c179c169cb90f041d2bca07aad77c9d95"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Electronic / Dance",
+    "reason": "Identifiable late-1980s dance hit; learned knowledge supports house/Eurodance-style club music rather than a vocal pop classification.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_f4457b8e049ddee44b2410adfdbf5bcd669b1c58db55fba1ffb6e7eb0bfa2e42"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable RZA/Wu-Tang affiliated track with rap performers and learned knowledge supporting hip-hop as the recording style.",
+    "secondary_genres": [],
+    "song_id": "song_43c6da451ee7553971a547b68fef28c7820043e1b47620a5f78f5b760662c1cf"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Rock",
+    "reason": "Identifiable Escape Club single; learned knowledge suggests pop-rock/new wave-leaning rock, though the specific song has less distinctive genre evidence here.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_690e2516dfbb7b1f26340aa4b0e4d8595086ef30bde2d82331fbf4800f58682e"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable Puff Daddy track built around rap vocals with a prominent rock sample/collaboration, so hip-hop is primary with rock crossover preserved.",
+    "secondary_genres": [
+      "Rock"
+    ],
+    "song_id": "song_783b8bd993220be24a02237ce806c65a12d5adc2277b255e26859e4fd55f1972"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable Pebbles recording; learned knowledge places her work in contemporary R&B/new jack swing, with Salt-N-Pepa indicating a rap crossover element.",
+    "secondary_genres": [
+      "Hip-Hop / Rap"
+    ],
+    "song_id": "song_82faaa9984c62ff6225122c33c400ae894810d4700e429a91c04717c1bcaae57"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Latin",
+    "reason": "Identifiable Bayside Boys mix of Los Del Rio's dance hit; learned knowledge supports Latin pop/dance style rather than merely Spanish artist identity.",
+    "secondary_genres": [
+      "Pop",
+      "Electronic / Dance"
+    ],
+    "song_id": "song_a403bb707f080ae77ea0941ac06bcedec6714954719a449ae2995739f9c388b6"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Electronic / Dance",
+    "reason": "Identifiable KLF single; learned knowledge supports electronic dance/pop production, while Tammy Wynette's presence adds country flavor but not primary style.",
+    "secondary_genres": [
+      "Pop",
+      "Country"
+    ],
+    "song_id": "song_c807c62be20f0b959818952d6bca0649101814ce7a6e58f263415057c8163c96"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Electronic / Dance",
+    "reason": "Identifiable DNA remix of Suzanne Vega's song; learned knowledge points to an electronic dance remix, with the source's pop/alternative singer-songwriter context secondary.",
+    "secondary_genres": [
+      "Pop",
+      "Alternative / Indie"
+    ],
+    "song_id": "song_d45c5f3cad8f5d95cea2286c6c39c280cedbfea85f4eab9f87fcf3d4b431c1dc"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable Cypress Hill single known as West Coast hip-hop; no supplied tags, but the recording is clearly rap-centered.",
+    "secondary_genres": [],
+    "song_id": "song_d85c143df834e14c54ba7837752803ae6c142f916f0fdb35b89f66766a0986c6"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Me Phi Me's identifiable early-1990s style is alternative rap with folk-inflected elements; without tag evidence, the crossover keeps confidence moderate.",
+    "secondary_genres": [
+      "Alternative / Indie",
+      "Folk / Singer-Songwriter"
+    ],
+    "song_id": "song_d897fe60e5a6b1f1c1db39928c81d2646274458117144d8106de31f753f8aa3f"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable Faith Evans track is contemporary R&B with Puff Daddy hip-hop influence; no tags were supplied, so the rap element is treated as secondary.",
+    "secondary_genres": [
+      "Hip-Hop / Rap"
+    ],
+    "song_id": "song_ef3d7dc92389313e0ef01cd970d9ba25084ed7dd565ec26357543ef422095054"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable LOX single with DMX and Lil' Kim is a rap recording; no supplied tags indicate a competing broad genre.",
+    "secondary_genres": [],
+    "song_id": "song_ef3fca564cdc83550d1ce77318acaea72dbb3b71f40af2977bd04afda03be467"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Jennifer Lopez single is pop with prominent hip-hop/rap features and production; no tags were supplied, but its style is a clear pop-rap crossover.",
+    "secondary_genres": [
+      "Hip-Hop / Rap"
+    ],
+    "song_id": "song_19fb7f40ca7c53a8e83a2254a766349bf3204b9342b4a08f0205263e5f593983"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable Wyclef Jean and Mary J. Blige song blends hip-hop with R&B vocals; no tags were supplied, and the recording is a genuine crossover.",
+    "secondary_genres": [
+      "R&B / Soul"
+    ],
+    "song_id": "song_4f8cd5399d370d66670eef1bbf1e0508ee1f2b42800eca1a801db80659641069"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable Fat Joe single is rap-led with an R&B hook from R. Kelly; no supplied tags suggest another primary style.",
+    "secondary_genres": [
+      "R&B / Soul"
+    ],
+    "song_id": "song_5378bc839a3cfbf63f7006b65ec2bac2489545a8bef46b0e14d26a847fef9b11"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable Kanye West single is a rap track built around a soul/R&B sample and hook; no tags were supplied, but the broad genre is clear.",
+    "secondary_genres": [
+      "R&B / Soul"
+    ],
+    "song_id": "song_6058e3713e40bd8afc987799134073e143420ae73245243934485c0ff41fb0d2"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable Ludacris and Shawnna single is Southern hip-hop/rap; no supplied tags indicate a competing genre.",
+    "secondary_genres": [],
+    "song_id": "song_63a8142a4d44bdc9567486fe79a2217646c9c984464703f50584b33c9af4b2ee"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Gospel / Christian",
+    "reason": "Identifiable Mary Mary song is contemporary gospel with R&B/hip-hop production; the Christian/gospel scene evidence is central, with crossover style secondary.",
+    "secondary_genres": [
+      "R&B / Soul",
+      "Hip-Hop / Rap"
+    ],
+    "song_id": "song_6cda31159f4d6dcdb0c80f2a8d40cfb6ae13ad3a19e5a32e88ce6b47db330dae"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Gospel / Christian",
+    "reason": "Identifiable MercyMe song widely known as a contemporary Christian worship ballad; the artist and song identity strongly support Christian genre classification.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_71147487997243ed502c93376408a146dc10fbc064a7e95f9917a826dd29a95c"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable Monica single from her 2003 R&B catalog; the song is best classified as contemporary R&B with no stronger supplied crossover evidence.",
+    "secondary_genres": [],
+    "song_id": "song_88c7f400820aee145eea762b34117646ce5f51b0b1d4a1b7fc4728dd9c82452f"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Country",
+    "reason": "Identifiable Josh Turner hit with mainstream country style and context; no supplied evidence suggests a stronger non-country classification.",
+    "secondary_genres": [],
+    "song_id": "song_943dd3a9ff7589bea515bb45f8529f89af88cb170214a4e9993f79361287aeb5"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Country",
+    "reason": "Identifiable Neal McCoy country single; the artist and song identity support a mainstream country classification.",
+    "secondary_genres": [],
+    "song_id": "song_9f0205ec029e0b6f593d60d7cf67ec76b7ec4577727891ba8980944096dd0b93"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Brooke Hogan single is primarily mid-2000s pop/R&B with a rap feature; crossover evidence supports R&B and hip-hop as secondary rather than primary.",
+    "secondary_genres": [
+      "R&B / Soul",
+      "Hip-Hop / Rap"
+    ],
+    "song_id": "song_fa039d082737c37a4943e6e42a47f1e042d19155cb2ceb3529b393f70a8ec415"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "K-Pop",
+    "reason": "Identifiable PSY hit is a Korean pop recording with prominent dance-pop/electronic production; K-Pop scene evidence is central, with dance as a secondary style.",
+    "secondary_genres": [
+      "Electronic / Dance",
+      "Pop"
+    ],
+    "song_id": "song_129b7fae7d8441b9a86fc7dd311fc4771fdfba128e62668976c5c3d9f984bf50"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "K-Pop",
+    "reason": "Identifiable PSY single from the K-Pop scene with a prominent rap guest and party-rap/dance elements; crossover makes the broad choice somewhat less singular.",
+    "secondary_genres": [
+      "Hip-Hop / Rap",
+      "Electronic / Dance"
+    ],
+    "song_id": "song_35edd26ad9553a5289526ef08f23c589a04df3bd4b2f092ac01ec46d576f7def"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Shawn Mendes and Camila Cabello duet is a mainstream pop single with Latin-pop flavor, but not enough basis to make Latin the primary genre.",
+    "secondary_genres": [
+      "Latin"
+    ],
+    "song_id": "song_38ad35dbd6683e41f1dc64d45b224b8f232e01c8d1674aa7dfb650bfd6feaaf2"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Alternative / Indie",
+    "reason": "Identifiable Sheppard single is commonly understood as indie pop/pop-rock; Alternative / Indie best captures the style, with pop as a clear crossover.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_3d3cefb9c6aa19ee0152805743b64569a0f4480e16596ecf31e018332bc6aeba"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Taylor Swift single from her pop era with mainstream dance-pop production; the song identity strongly supports Pop as the primary genre.",
+    "secondary_genres": [
+      "Electronic / Dance"
+    ],
+    "song_id": "song_43cbbe25d01436f24fa263dfde7adfd25ac01df38bb9626312dc241b8daa4857"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Electronic / Dance",
+    "reason": "Identifiable 2015 Major Lazer/DJ Snake hit; learned musical knowledge points to dancehall-influenced EDM/pop production, with no raw tags supplied.",
+    "secondary_genres": [
+      "Pop",
+      "Reggae / Dancehall"
+    ],
+    "song_id": "song_4b7c580974959a23da3280d85175cf219b9e7a2fb47a5170194c04b30f5153e8"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Country",
+    "reason": "Identifiable Luke Bryan ballad and country chart-era single; no raw tags were supplied, but the recording is clearly contemporary country.",
+    "secondary_genres": [],
+    "song_id": "song_6595ebab0344ee24bb1690547db9e2e8e237034e13bebca379677511ee60217f"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Electronic / Dance",
+    "reason": "Identifiable Calvin Harris/Ellie Goulding single; learned knowledge supports EDM/dance-pop style, with no raw tags supplied.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_695e422dbade3ba08674fe80528f816e49d4db0c0462ec073a9b0b8608aa9708"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable YNW Melly track; learned musical knowledge indicates melodic trap/rap, and no raw tags were supplied.",
+    "secondary_genres": [],
+    "song_id": "song_69823ed1beab1c15adab303458294de6aa805b844e4d9bc1cb759b53d8e1d0b8"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Country",
+    "reason": "Identifiable Blake Shelton single; learned knowledge and artist recording context support mainstream country, with no raw tags supplied.",
+    "secondary_genres": [],
+    "song_id": "song_e4d2a835b54f92d8f7e1ce6ccec9bfad08ca4df59dc052fc94a65e5461e099a3"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Country",
+    "reason": "Identifiable crossover by Bebe Rexha and Florida Georgia Line; learned knowledge supports country-pop, with country as the clearest recording style and pop as genuine crossover.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_fc245e54afcc2a2725b53d7ab475b9b5009d8df3b072a0879c4cbd0c34bcaa84"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Country",
+    "reason": "Morgan Wallen identity strongly suggests contemporary country, but this specific 2025 song has no supplied tags here, so the assignment relies on limited learned context.",
+    "secondary_genres": [],
+    "song_id": "song_09acaf36a0701d6da9fd5c343232f2bea10749bd7f69bad7257803ffc4c91d90"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Identifiable AJR hit; learned musical knowledge indicates bright alt-pop/electropop rather than rock, with no raw tags supplied.",
+    "secondary_genres": [
+      "Alternative / Indie"
+    ],
+    "song_id": "song_0df51cb7ce0b42b34fada05559e56daea8ca38c0aa2e2c5889881d1c1887f1d4"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Latin",
+    "reason": "Identifiable Bad Bunny track; learned knowledge supports Latin urbano/trap-influenced style, and no raw tags were supplied.",
+    "secondary_genres": [
+      "Hip-Hop / Rap"
+    ],
+    "song_id": "song_43a3c28b92006dfa57ea20e3efce754cbb2fde0e1621444da8eb022d7b067b5b"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable Silk Sonic recording; learned musical knowledge supports retro soul/funk R&B, with no raw tags supplied.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_73f48945a748eba898fdf814f0e9cc5852f53ecbffcecea60a29a2006fd58713"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Afrobeats / African Pop",
+    "reason": "Identifiable Burna Boy single known for Afrobeats/Afropop style; no supplied tags add contrary evidence.",
+    "secondary_genres": [],
+    "song_id": "song_ae6df658640328431990dc870952a8bd79d6952671c30aad8294c7fc91096afb"
+  },
+  {
+    "confidence": "low",
+    "primary_genre": "Other",
+    "reason": "No tag evidence is supplied and this future-dated identity is not reliably identifiable from learned song knowledge, so a defensible genre assignment is too uncertain.",
+    "secondary_genres": [],
+    "song_id": "song_c3d047f8f63b834001f15e6a211ba69af7996df10f0f20284c59a63ffa6e2e76"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Afrobeats / African Pop",
+    "reason": "Identifiable Wizkid recording widely known as Afrobeats/Afropop with prominent smooth R&B influence; no supplied tags conflict.",
+    "secondary_genres": [
+      "R&B / Soul"
+    ],
+    "song_id": "song_d32a84dacb8bbd6d91a6514decc9b51d7661efe788b020e5bd9ad749cc5ba8db"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "K-Pop",
+    "reason": "Identifiable BTS single from the K-pop scene, musically an English-language disco-pop track; no supplied tags conflict.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_d7e9573c1e70adad7ade1b701ddfa86aaeb97415f9841e0d3d90c6dca6ac3cca"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "K-Pop",
+    "reason": "Identifiable BLACKPINK single from the K-pop scene with Selena Gomez, musically bright pop; no supplied tags conflict.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_db04e403f30e54ba8db19acba031571ca1dc8c3259b105812056593f11029127"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Jason Derulo single fits contemporary pop with rhythmic dance/R&B-adjacent production, though no tag evidence is supplied.",
+    "secondary_genres": [],
+    "song_id": "song_dc622e83556500e1683288e4bdb9892c32a49dd9dbb2b8b80f8f8bb9eab21fa4"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable ¥$ recording by Kanye West and Ty Dolla $ign is rooted in hip-hop/rap with melodic R&B vocal elements.",
+    "secondary_genres": [
+      "R&B / Soul"
+    ],
+    "song_id": "song_f31e5ce558c5ca0d470646e9d16a8d49e0310dc9d38a21979003381537bfd3b7"
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "predictions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "type": "string"
+          },
+          "primary_genre": {
+            "enum": [
+              "Pop",
+              "Rock",
+              "Hip-Hop / Rap",
+              "R&B / Soul",
+              "Country",
+              "Latin",
+              "Electronic / Dance",
+              "Alternative / Indie",
+              "Metal",
+              "Folk / Singer-Songwriter",
+              "Jazz / Blues",
+              "Reggae / Dancehall",
+              "Gospel / Christian",
+              "K-Pop",
+              "Afrobeats / African Pop",
+              "Other"
+            ],
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "secondary_genres": {
+            "items": {
+              "enum": [
+                "Pop",
+                "Rock",
+                "Hip-Hop / Rap",
+                "R&B / Soul",
+                "Country",
+                "Latin",
+                "Electronic / Dance",
+                "Alternative / Indie",
+                "Metal",
+                "Folk / Singer-Songwriter",
+                "Jazz / Blues",
+                "Reggae / Dancehall",
+                "Gospel / Christian",
+                "K-Pop",
+                "Afrobeats / African Pop",
+                "Other"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "song_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "song_id",
+          "primary_genre",
+          "secondary_genres",
+          "confidence",
+          "reason"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "predictions"
+  ],
+  "type": "object"
+}

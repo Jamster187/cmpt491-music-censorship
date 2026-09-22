@@ -43,7 +43,7 @@ Together they produce 42 numerical content features. These are model-derived sco
 
 ## Genre
 
-Genre is the next core dataset addition. We are testing a fixed 16-category taxonomy on 300 songs before assigning genres across the population. The [pilot findings](reports/genre_assignment_refinement.md) show that more song-level evidence is needed. See the [refined genre method and rebuild instructions](docs/genre/refinement.md).
+Genre is the next core dataset addition. We are testing a fixed 16-category taxonomy on 300 songs before assigning genres across the population. The tag-only method was incomplete, so we tested an LLM on the same sample. The [LLM pilot report](reports/llm_genre_evaluation.md) documents its results, uncertainty and reproducible inputs. Full genre assignment has not started.
 
 ## Download
 

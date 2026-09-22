@@ -1,0 +1,377 @@
+[
+  {
+    "confidence": "medium",
+    "primary_genre": "Pop",
+    "reason": "Identifiable early-1960s Duprees recording with no supplied tags; their chart style was pop vocal harmony, though this specific entry has sparse evidence.",
+    "secondary_genres": [],
+    "song_id": "song_2a3f18e665154675d0a7dffb315d109304ace7c807661eb1dd640c074127b597"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable Motown-era Supremes single; learned knowledge supports a polished soul/pop recording despite no supplied tag evidence.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_30d830a95ffb8c7322352dd1f2121a5deea8394105665f02987fe06fa0a7b146"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Jazz / Blues",
+    "reason": "Recording tags include jazz and swing alongside holiday labels, and the identifiable Nat King Cole recording is a jazz-influenced traditional pop standard.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_3bdcd0c52b13009a6dc8b41cff8ae72333763ec0677acbdc762853aba365b808"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Recording tags strongly support soul, deep soul, R&B and rhythm and blues, matching the identifiable Aretha Franklin recording.",
+    "secondary_genres": [
+      "Gospel / Christian",
+      "Pop"
+    ],
+    "song_id": "song_8c13d8e4ead4fff60549ddec575dad40428747a694cb844f51a73e2e59e443e1"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Recording tags consistently indicate soul, deep soul and R&B, with blues as related crossover evidence for this identifiable 1960s soul hit.",
+    "secondary_genres": [
+      "Jazz / Blues"
+    ],
+    "song_id": "song_a73f4a1e918dc6431ddb2809e2380a71c7f7e67fc93d2e4a2b9d8ffb22939957"
+  },
+  {
+    "confidence": "low",
+    "primary_genre": "Pop",
+    "reason": "No tags are supplied; learned context suggests Eydie Gorme's early-1960s chart material was traditional vocal pop, but this specific song has limited evidence.",
+    "secondary_genres": [],
+    "song_id": "song_f02e6d705e7faa04e469d80e3875be41a76646cc7117a1e563c8811c46ecdd25"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Osmonds mid-1970s single with no supplied tags; learned knowledge points to mainstream pop with possible soft rock influence.",
+    "secondary_genres": [
+      "Rock"
+    ],
+    "song_id": "song_1edc9ee2c1313527512753fbe3059a0e098868e4936cb446f457243ded08c641"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Country",
+    "reason": "Identifiable Conway Twitty and Loretta Lynn duet; learned knowledge supports classic country style, with no conflicting supplied tags.",
+    "secondary_genres": [],
+    "song_id": "song_5e9d56ea52c8601c01e9cf8d9fd2bd6f0a930bf45253398ac70c44f51b0a151a"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "R&B / Soul",
+    "reason": "Recording tags supply R&B and soul, matching Gladys Knight and the Pips' style; the specific song identity is less distinctive than their major hits.",
+    "secondary_genres": [],
+    "song_id": "song_639236f08751918a54e00145b6568f9160f21fa48d26f56900bbb63f0929d0ed"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "The supplied recording tag is soul, and the identifiable Persuaders recording is a 1970s soul song later covered in other styles.",
+    "secondary_genres": [],
+    "song_id": "song_7af106e9903c0d3166b0e4713f04b5f19e9fd66ab7805f1e45bfa0eb60c7eb4c"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Pop",
+    "reason": "No tags were supplied; the identifiable 1974 Tony Orlando & Dawn single is best understood as mainstream pop with disco/boogie flavor, but evidence is indirect.",
+    "secondary_genres": [
+      "Electronic / Dance"
+    ],
+    "song_id": "song_8e64a9fb74d090f32e2aa44850698d800e0823385a63b40d4adb48a13ff8d0c5"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "R&B / Soul",
+    "reason": "No tags were supplied, but the identifiable Honey Cone recording fits early-1970s soul/funk-R&B more than pop; the basis is learned song knowledge.",
+    "secondary_genres": [],
+    "song_id": "song_c1bf53412ddc0a5da16702466a21569c7045e288695c3e107794e883b0af2fd8"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "No tags were supplied, but this identifiable Cetera and Grant duet is a mainstream adult-contemporary pop ballad rather than Christian genre music.",
+    "secondary_genres": [],
+    "song_id": "song_5e3022dca8b9f3b47a1102c05c4d448538b8b63f261020e4f3e72a7cfecbb310"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Recording tags include pop plus dance/electronic, and the identifiable song is a pop/R&B-dance crossover driven by post-disco production.",
+    "secondary_genres": [
+      "R&B / Soul",
+      "Electronic / Dance"
+    ],
+    "song_id": "song_6f65db831f5b81a145522b7a18009f08d47f4266b495ad005a98f0b26502cbfa"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Recording tags consistently support soft rock, pop rock, country-rock, and rock, making Rock the clearest broad category with country crossover.",
+    "secondary_genres": [
+      "Country",
+      "Pop"
+    ],
+    "song_id": "song_78e9fe25cee951189ac5809e395168efdeb16dbf0562071c61e6f0d4ae5d8791"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Recording tags strongly indicate hard rock, classic rock, and album rock, with some heavy metal support for Van Halen's style.",
+    "secondary_genres": [
+      "Metal"
+    ],
+    "song_id": "song_7bd2bf2045e94364196d1d0692a69c3eca9cdc58cf9e955096695cdebd374316"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Recording tags emphasize pop and dance-pop alongside pop rock and mainstream rock, matching the identifiable song's polished pop-rock style.",
+    "secondary_genres": [
+      "Rock"
+    ],
+    "song_id": "song_9cfb2e5a55abb7300a23b5f494d87dc8e33dfb5738e873c99eb20ced015067d0"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Recording tags heavily support hard rock, arena/classic rock and rock ballad, with metal and hair metal as crossover evidence.",
+    "secondary_genres": [
+      "Metal"
+    ],
+    "song_id": "song_bd6376a34f2de0be504db8d256d94eff21b823a697c698e02dab73d9476f0062"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Recording tags directly include contemporary R&B and rnb/swing; the jazz tag suggests flavor rather than a primary genre.",
+    "secondary_genres": [
+      "Jazz / Blues"
+    ],
+    "song_id": "song_01d1576b821aee8af9b6d59d5e42eb62d44ec49f657c68cc617c350efb6c69c2"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Metal",
+    "reason": "Recording tags include hair metal and power ballad with rock support, fitting the identifiable glam-metal power ballad style.",
+    "secondary_genres": [
+      "Rock"
+    ],
+    "song_id": "song_6ced5df219ba8cbfffcba6e5048f27739b34e9043e510ef3094bfc2d0c6b16ab"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Amy Grant hit with recording tags centered on adult contemporary, pop, pop rock and synth-pop, with CCM/religious tags supporting Christian crossover rather than overriding its pop style.",
+    "secondary_genres": [
+      "Gospel / Christian",
+      "Rock",
+      "Electronic / Dance"
+    ],
+    "song_id": "song_820e02d28e7ec0e0caa43ee9d8b41461b355022c9f39026dafa6a99c4a8b7da9"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Recording evidence strongly supports contemporary R&B, R&B and soul, with only light hip-hop tagging; the identifiable Faith Evans song fits late-1990s R&B.",
+    "secondary_genres": [
+      "Hip-Hop / Rap"
+    ],
+    "song_id": "song_b4ab3d9c2d8c51cee5a488e94ad86865b45b5dbd49c3a188e29ca7871e610312"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Latin",
+    "reason": "Identifiable song and recording tags strongly support latin, latin pop and pop latino, alongside dance-pop/pop evidence that reflects its crossover style.",
+    "secondary_genres": [
+      "Pop",
+      "Electronic / Dance"
+    ],
+    "song_id": "song_b555d7adc406312bc519e83111bf9e3801029c3f84ee56adbb3ffdc03794f183"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Alternative / Indie",
+    "reason": "Identifiable Nirvana recording with very strong grunge and alternative rock tags; rock and punk tags are compatible but the specific style is alternative rock/grunge.",
+    "secondary_genres": [
+      "Rock"
+    ],
+    "song_id": "song_f413bb2f755c0d08ca66cbd330d8d0aad2f4b54c4786ea8a890fbabdd4ead78d"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Jennifer Lopez single with strongest recording support for pop and dance-pop, plus hip-hop/R&B tags matching the rap-featured pop-R&B crossover.",
+    "secondary_genres": [
+      "Hip-Hop / Rap",
+      "R&B / Soul",
+      "Electronic / Dance"
+    ],
+    "song_id": "song_19fb7f40ca7c53a8e83a2254a766349bf3204b9342b4a08f0205263e5f593983"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Natasha Bedingfield song with recording tags led by pop, pop rock and dance-pop/electronic evidence; noisy tags do not displace its mainstream pop basis.",
+    "secondary_genres": [
+      "Rock",
+      "Electronic / Dance"
+    ],
+    "song_id": "song_6ccb3e49d2962a804c8e24914948ebaa0fc67ee45d64197dea1eef5d3ee1dcb9"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Recording tags emphasize pop rock, rock and soft rock with adult contemporary support; the identifiable Don Henley song is best classified as soft/pop rock.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_70900a0ccd6744ecc1717fb703c8e1af72932434bd9a2708ed285ac0437294d8"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Identifiable Evanescence ballad has recording support for alternative rock, piano/acoustic rock and some metal-related tags, but its recording style is primarily rock rather than metal.",
+    "secondary_genres": [
+      "Alternative / Indie",
+      "Metal"
+    ],
+    "song_id": "song_82cc7c9780e3340ad82f5a3622292b290007c3cc0bb566f91df6df8fade52fa1"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "R&B / Soul",
+    "reason": "Sparse recording tags only note R&B and hip hop; the identifiable Monica track is plausibly R&B with hip-hop influence, but support is limited.",
+    "secondary_genres": [
+      "Hip-Hop / Rap"
+    ],
+    "song_id": "song_88c7f400820aee145eea762b34117646ce5f51b0b1d4a1b7fc4728dd9c82452f"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Recording evidence supports contemporary R&B, R&B and soul, with hip-hop/rap tags reflecting Nelly's feature and the song's crossover party style.",
+    "secondary_genres": [
+      "Hip-Hop / Rap"
+    ],
+    "song_id": "song_9bfd0b1339802a6c5c4fe6dc0ee0b93cc3e80ebde69768c0cae5461a88f536aa"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable Childish Gambino song with a funk-soul/R&B style; supplied recording tags include hip hop/rap and house variants, but the song's musical identity is more R&B/soul than rap or dance.",
+    "secondary_genres": [
+      "Hip-Hop / Rap"
+    ],
+    "song_id": "song_281bf843e63cfc26de275096d493c66105a4aa81844dc618ba901b09393cbe8f"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Electronic / Dance",
+    "reason": "Identifiable Major Lazer and DJ Snake hit known for EDM/dancehall-influenced electronic pop production; no tags were supplied, so this relies on learned song knowledge.",
+    "secondary_genres": [
+      "Pop",
+      "Reggae / Dancehall"
+    ],
+    "song_id": "song_4b7c580974959a23da3280d85175cf219b9e7a2fb47a5170194c04b30f5153e8"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Electronic / Dance",
+    "reason": "Recording tags strongly support EDM, electro house, progressive house, dance-pop and electronic styles; the recognizable song is a Calvin Harris dance-pop track.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_695e422dbade3ba08674fe80528f816e49d4db0c0462ec073a9b0b8608aa9708"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Recording tags emphasize pop and adult alternative pop; the identifiable Christina Perri song is a mainstream piano/vocal pop ballad with some alternative-pop coloring.",
+    "secondary_genres": [
+      "Alternative / Indie"
+    ],
+    "song_id": "song_8665a124456b78459e42436a6abf3c1cd6dbf5a06c66ddfbe532cd2370a375f9"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable Bad Meets Evil single centered on rap verses; supplied recording tags heavily include hip hop, rap, hardcore hip hop and pop rap despite many noisy unrelated tags.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_aaa0e4a963fc10aa6f920a0aac49efadb98b0565d37028e63fbe65b523fb1575"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Electronic / Dance",
+    "reason": "Supplied recording tags strongly support dance-pop, EDM, electro house, electronic and house, matching the identifiable Calvin Harris-produced dance-pop track.",
+    "secondary_genres": [
+      "Pop",
+      "R&B / Soul"
+    ],
+    "song_id": "song_b368dcca49e573d3263eff812c0545caeaf18a85810fd9d49bda1b38d429e3c8"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "R&B / Soul",
+    "reason": "Identifiable Tems song known as alternative R&B/neo-soul-leaning Afropop; no tags were supplied, so classification relies on learned musical knowledge.",
+    "secondary_genres": [
+      "Afrobeats / African Pop"
+    ],
+    "song_id": "song_2c30bf5fd805f637201e1f648e5f43997dd57e3aefda5561672d7f909dd6c0d2"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Latin",
+    "reason": "Recording evidence specifically tags reggaeton, and artist tags also support Latin trap/reggaeton; the identifiable Bad Bunny track fits Latin urban/reggaeton.",
+    "secondary_genres": [
+      "Reggae / Dancehall"
+    ],
+    "song_id": "song_2f6e3e6b8104a54fd692e7b4ef922b58471ea5a0b754739f1a4bea2e60912bf8"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Latin",
+    "reason": "Identifiable Bad Bunny song from the Latin trap/reggaeton scene with rap delivery; no tags were supplied, so this relies on learned song knowledge rather than evidence fields.",
+    "secondary_genres": [
+      "Hip-Hop / Rap"
+    ],
+    "song_id": "song_43a3c28b92006dfa57ea20e3efce754cbb2fde0e1621444da8eb022d7b067b5b"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable Travis Scott and Drake track is a rap performance; supplied recording evidence is non-genre, so the choice rests on learned knowledge of the song.",
+    "secondary_genres": [],
+    "song_id": "song_657624a03eec82295dcc4b7e5f65d60e6e3e8327ab5967b934b28371d060205b"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Alternative / Indie",
+    "reason": "Identifiable act is associated with alt-rock/grunge-leaning material, but no supplied tags support this specific recording, so the choice is indirect.",
+    "secondary_genres": [
+      "Rock"
+    ],
+    "song_id": "song_76fa1f23eef57d0fae6fd00ae8b39859ff432bf3cef88c39427b1068d859cd9f"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Supplied recording tags strongly include pop, with compatible pop-soul/R&B and pop-rock evidence matching the identifiable soft pop ballad style.",
+    "secondary_genres": [
+      "R&B / Soul",
+      "Rock"
+    ],
+    "song_id": "song_f5daad636fce6213fbf775c1e0ed2b596ff259fa88b5bea40660fa9ed8dbcaf0"
+  }
+]

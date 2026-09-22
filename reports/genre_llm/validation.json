@@ -1,0 +1,27 @@
+{
+  "exact_prompts_verified": true,
+  "outputs_match_recorded_responses": true,
+  "protected_files_unchanged": 21706,
+  "public_artifact_sha256": {
+    "README.md": "ba52733a97f42a0046de2447ae78c33e9835f3f156298d6b29ab2d2038f39602",
+    "exact_repeat.json": "9d78e41b5a46a7bc36dc1324668aa44698c9b8e0d6173c06d9492ae0cbf39e90",
+    "identity.json": "8ead10da1074a4dde42a1ae741af4c703a3f3f791fd94acf74d18973876a205c",
+    "inputs.json": "7e85b599e4aebd308b27228dfbdb1c4d421f4bb33bc5fa8b7848c5eedbe6fc12",
+    "manifest.json": "20dbf4079feef5ae1d63e991d744902a8f76bc2bdbc6b98e2fad82a8156c70ed",
+    "metadata.json": "05ea50a9062ac709d3cf779408c8c5e824a159d8bcec52525491ffbb1a44cfd9",
+    "repeat.json": "134c1bc8640689d65f30701cfdf0aba6a99a28d368a6f0aa24f34051882b8dd6",
+    "review.csv": "b2de93c6e5a43308e4398034eb39855fecc988c6d8863370490b480269ba7188",
+    "review_template.csv": "ca93566c84dea5933f6a709ae117147847b29ee1483df5c20d51851f06ea2114",
+    "runs.json": "c33e9e08171a7a0286f89d9deb0dd797d1f2f80711dec448dd113de46275d335",
+    "summary.json": "86bc72874f69a116d2fc84243fdbdb8ff4ddb29e08c370ad50df9fdd373a8550"
+  },
+  "rows": {
+    "exact_repeat": 30,
+    "identity": 77,
+    "metadata": 300,
+    "repeat": 42
+  },
+  "sample_unchanged": true,
+  "tests_passed": 296,
+  "tool_calls": 0
+}

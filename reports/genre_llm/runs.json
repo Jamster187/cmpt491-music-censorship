@@ -1,0 +1,1279 @@
+[
+  {
+    "batch": 0,
+    "date": "2026-09-21T23:33:17.626535+00:00",
+    "elapsed_seconds": 21.573902834000002,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "1f013fb81fdace23718db4f017e83fd4b80180b2fb0e587fb8dfa0c3624c30e1",
+    "response_sha256": "3dd6e3310fd18f0ecef8f2dbd89fe88cbacee5e55eba2bd59e3150ef6b43947d",
+    "song_ids": [
+      "song_028b67eff4d0dacafc43578a5cb5f20a3d81d5c10e714d60b22e9c384905e577",
+      "song_060dc11b7add4128787a3e797588e995c8c30d9d761250d7d66dbda9fb2f34fd",
+      "song_16e696fd68d9cd43c6c58ce1e39caf3ce131ea4d63565414650b5823739961a6",
+      "song_24efbab109321c526d44623d85350b55b66695d5c7d7baadbe79d554aba62c02",
+      "song_26dc8b6a55362935b770a92681be528031e1eae60d47b21f5bbe20b9a2398b27",
+      "song_2a3f18e665154675d0a7dffb315d109304ace7c807661eb1dd640c074127b597",
+      "song_2d1c4e54ff3b4fea69b44bc5076c5c2e707dc6f2834e4bef86e57b071425eda2",
+      "song_2ed2aa20387869c523a11fcf2e952b641ae342c440e04c132e5a4ae001586f68",
+      "song_30d830a95ffb8c7322352dd1f2121a5deea8394105665f02987fe06fa0a7b146",
+      "song_3bdcd0c52b13009a6dc8b41cff8ae72333763ec0677acbdc762853aba365b808"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 0,
+      "input_tokens": 12627,
+      "output_tokens": 984,
+      "reasoning_output_tokens": 23
+    }
+  },
+  {
+    "batch": 1,
+    "date": "2026-09-21T23:33:59.076165+00:00",
+    "elapsed_seconds": 21.244282625,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "31d42e0787f7ffcdad4c2629ad73c1f01d15e6dba2d1cb1dce4776ec204a9f77",
+    "response_sha256": "825a2d5114f1bda41cd8ce81c86e5c73812804ee2550efa0dcb6511121d8b40b",
+    "song_ids": [
+      "song_445ce019f72fefe5e322a604f3bf07c182e78c35bce0cb59086d3947a50d1916",
+      "song_4cb54b97100b0ade394443db61aa06f42d537f01c415850565bbfe9703033fa1",
+      "song_50ea809b682afcab684a2f64fcfd5e86c3286489df4267129108b5b8893a4bf8",
+      "song_5a5cd16abaf07246bb5337c8d24388917029f3347ac3b755d00e4df427018642",
+      "song_629b0d4543a0482a9145a0a75efd8b0f3e2bef536b05e6cb73fc5f7bfd4678c7",
+      "song_668e1c837e70335057966ef9022aa46903d6bff58e6d73e7b6f7915fc63068ea",
+      "song_6ff9b0c852e2518543efdeb12a8d461bb12cb1f08d87f7f3872960d2d742929e",
+      "song_73b40b15d3b45f0c98be8d98a129aba8643ee30debd13459cb14af3b50a77fc2",
+      "song_73bb6d17dc79b2d3de5b3da5aa9c9bac42813c975b368517a5f7e28fdd76e1c6",
+      "song_7e30c1693734863a0fecc8328bf158f36c0fedb96ad6b1a253efba966bc482af"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 0,
+      "input_tokens": 11374,
+      "output_tokens": 973,
+      "reasoning_output_tokens": 20
+    }
+  },
+  {
+    "batch": 2,
+    "date": "2026-09-21T23:34:20.323625+00:00",
+    "elapsed_seconds": 21.089898208999998,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "1177f05b3e942404f56fac10a886da7c1036df2700f0f9966d0c7f3a5bb1d1b8",
+    "response_sha256": "55925e684801223e09f97bbb89bd030aaab5da9ac59b60a9c46fbde36ff64485",
+    "song_ids": [
+      "song_8158e07affce61a84c99ebed07534c0f6019552dbe832198ce67ea9249e440a1",
+      "song_8936beed86b606746a65e7de1ea3473e11e31d2fc09384aa661b1ead1ee7a958",
+      "song_8c13d8e4ead4fff60549ddec575dad40428747a694cb844f51a73e2e59e443e1",
+      "song_93453d409a96d8f78369eb43dc255b21d443e13e1174b122423df51224dffc7f",
+      "song_93ffbffb101107a168a13a3e0c8f634e285c79e062bbc219d32c33e03bb8c2e9",
+      "song_940fad53a151dbed140e4f3434e01f801e7bf9f6c2bc8ab11087d241736bfade",
+      "song_9a06fb279bf9a89ed1a79eccc04ee6dd680a707912152979014ba32ccadf8d7c",
+      "song_a73f4a1e918dc6431ddb2809e2380a71c7f7e67fc93d2e4a2b9d8ffb22939957",
+      "song_ad441ca7d322688fff5b1fcb0977b786e5d613405e7dd3e05f181c5f4a2ebe6c",
+      "song_aec5a72fd688d3465643aa325e35349fa4c0a9a062230772a3e5b5fab3bd2dac"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12459,
+      "output_tokens": 934,
+      "reasoning_output_tokens": 15
+    }
+  },
+  {
+    "batch": 3,
+    "date": "2026-09-21T23:34:41.415885+00:00",
+    "elapsed_seconds": 20.702661624999998,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "09e2f4ca99d452d567baf473b8c0e33b260575f1f032daf9a0281604859763b6",
+    "response_sha256": "897dd73ba7277001e0070388397567240a387de8bad1c7aa71674560e4374325",
+    "song_ids": [
+      "song_c175234ba4926133ea1ec08dc7971e3446004ae13bd450e4937342dcfc6bf077",
+      "song_c2323b9e47eab153d711d44265202472690a9f40cf73dd661a760a411a7d6881",
+      "song_c4f95aead5807b52c56cba34e9acfbc88854c733b89694efb33be04f6ad69b22",
+      "song_c621cfa245241f1ede4d5a3c0552e33fcf76bcfd4ccb6daa72e3ad013b3d4fa0",
+      "song_cc5ce6c98fc57312fa8a144e7462d65b9b5ae8ca6cc853bedbe8b519dd873199",
+      "song_d1144e651a7db9b1bfac074c20e133c378ff0d99c0fb41156bb1677cb1b254a3",
+      "song_de9170e8e62446f52437643bfd1b1dd47bc4b8293c7035f8888c5d679cef5cd8",
+      "song_e7596f71fad310e3384ab9a0df8120cb2ce653ad3264358626692a1741761575",
+      "song_e8c3fc6c6e1f765fc422070358b4fa4e705e746857c034d5ed2a511db646b411",
+      "song_f02e6d705e7faa04e469d80e3875be41a76646cc7117a1e563c8811c46ecdd25"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 13300,
+      "output_tokens": 949,
+      "reasoning_output_tokens": 0
+    }
+  },
+  {
+    "batch": 4,
+    "date": "2026-09-21T23:35:02.124190+00:00",
+    "elapsed_seconds": 21.469686667000005,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "fadc7e2ef79a492316cf01f3f5018ae6a185500fe6ade6dff46f7e7b33c11918",
+    "response_sha256": "33742b724bd7fe9d1ecd7f143a872b9afb662e51a9d4ce90aebfbf95b9b7d5b6",
+    "song_ids": [
+      "song_f3127d6f2653bb27e9426e1083bd85ecb0d3b2608413c997eac86dc7d49c2c33",
+      "song_f76892d12f16a2d9727e93081b21c664219f86bdf6a5618dfe5e5430c6304c39",
+      "song_f9ddcd2f7850ac896c1cdb787d553b63fe78a5f64c8ff1f0fb8e2e7cf7641e9c",
+      "song_002cebf313bfd5ccfd563b8ec75fc04cee875e3417d9f4c8bca42ea377016acf",
+      "song_0050e9d05142c2d786c174ac2995d68359d3baf91ecc3e0721b537c1a862f2b5",
+      "song_19040092205d3feb4d178cbe74d18bda4787d5448c09f69153ffea46e08bcf89",
+      "song_1985fbb14162f23d0ec051eb0157e2c55e0c8d76996d843cda4235b8a78e7770",
+      "song_1edc9ee2c1313527512753fbe3059a0e098868e4936cb446f457243ded08c641",
+      "song_1f3dbe6945ae1849e0479aa13b2ac79769d21af4419b277f92c42de038a0a958",
+      "song_24164efd3f2d22778eb4eab6353b9b9ed123b05ad83f45ca5640b7a222cf442c"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 0,
+      "input_tokens": 12600,
+      "output_tokens": 999,
+      "reasoning_output_tokens": 23
+    }
+  },
+  {
+    "batch": 5,
+    "date": "2026-09-21T23:35:23.602158+00:00",
+    "elapsed_seconds": 22.654756458999998,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "4cd3bc64dd7e77c94c7166f48bc71f80b24586c37d813f613240712e61b4b2c2",
+    "response_sha256": "c57e6e0da01297339bb81396811f0df8a9824626316bf809efcbb051695a3adb",
+    "song_ids": [
+      "song_28b4426f51f1f2cc6730922e3c34e8e95143dbe74e1769867c3272ed2c5aa4b0",
+      "song_2bda53214f9966fed82b2cfd364d0f25aea14669dd309b4769d644cf34984590",
+      "song_32e956d7ab212c9ce517184027a9a0a8b2814bdb25f7a4247e9ce8d1d8d33ba2",
+      "song_38d0d5e2405fe078b549574ae439493921f67afb2d9feecd05fb20b169cf6d21",
+      "song_39375ca8645940f567abf4345620082624c58e91c34775b6c23ffb31694a8c68",
+      "song_3d3d6dbe6afb23cfdf8bdb56ae16f1238644091c6091cfea602a92f3ec0a978e",
+      "song_3eb736395cef262f74b3ad8d05022ba5e4433e4f2bec3cf292bbd0b625834420",
+      "song_3f03586f6e4f59f31fb4a4e5f6fb42e49d0ef36328eefef2164e31fd1299a1d0",
+      "song_4e595dae396b8c8d6e617d22ebdf96eefd808ddb3b2d50663c0b96ba1809faae",
+      "song_5ad09d487797f0b25f25cdc057d4daa9cb0603c8b37b8df55625112d6156b849"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 13229,
+      "output_tokens": 1035,
+      "reasoning_output_tokens": 14
+    }
+  },
+  {
+    "batch": 6,
+    "date": "2026-09-21T23:35:46.259893+00:00",
+    "elapsed_seconds": 20.453616957999998,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "2e3e6c81eab6215822c05b52dd0f6a384f7b1866f7f72e31bf21324013b20183",
+    "response_sha256": "4bf2acf113ab00511ef76458739f678578373f9696e77a606e9174880145ed64",
+    "song_ids": [
+      "song_5e9d56ea52c8601c01e9cf8d9fd2bd6f0a930bf45253398ac70c44f51b0a151a",
+      "song_639236f08751918a54e00145b6568f9160f21fa48d26f56900bbb63f0929d0ed",
+      "song_66e3a32dd4604c4c4bb2490dafb9a9780fa010bf35d988f55be64637d260d37a",
+      "song_728925dc4a3c8dbfe9f3246dffa5d6a5f5ae65ef8637ee88e521237fad75a8da",
+      "song_742fc69cd022eaa7d7848ef7d0f19c376f6066375afb8ab3c555783ca991326c",
+      "song_743651acd80309a38ef51ee4e42f7dc5e9cd9a4d8a66440fa563b76e7a855478",
+      "song_7af106e9903c0d3166b0e4713f04b5f19e9fd66ab7805f1e45bfa0eb60c7eb4c",
+      "song_81d3552cdb6177bc79b373e37eb826953871014d6514ac34df9eed6959dbed9a",
+      "song_871c4ad5bdbc31a2492e368ff5235aa8f8aaa094a3dcb8ba0e0ac32ed4b9c53a",
+      "song_87935c998bf527bda3475e97c08a5e1e54c27a6a03654a77753b9efb2817988b"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 11796,
+      "output_tokens": 947,
+      "reasoning_output_tokens": 17
+    }
+  },
+  {
+    "batch": 7,
+    "date": "2026-09-21T23:36:06.715691+00:00",
+    "elapsed_seconds": 21.93706291699999,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "39b682dd8914f7427f84e6421839543d677aecba4b40d2b83b91bdd0ea08dc2d",
+    "response_sha256": "6a86ead321da225851637c2f3bd9d3b37036107893cbb7fbd7deccaf30417c9d",
+    "song_ids": [
+      "song_8794d1c12e8c77e7ad430a1b484aee515afa3d9ead32874c9ea8b0519ab7ae77",
+      "song_893cc453fd6abdf92143801f9be8b45c9b946bc24bfba4384a35774137e70121",
+      "song_8c901f5b3e5e4c25f7cf44180cd1bedcb3567ea88b9e7b4153fe86d1ba6fa8c8",
+      "song_8e64a9fb74d090f32e2aa44850698d800e0823385a63b40d4adb48a13ff8d0c5",
+      "song_93ddae64dcbe4d5878f02e213d7587e345bcf0263c0250738609513e3bb3494a",
+      "song_a5f7a079d33c1b6e63c34280747af10c0afa17dbfd6b401ed36c7d27652ec1e8",
+      "song_b03e2ccfd2ef38b55a5a4b9d561ca174161c714d8d380d32b50b28679ab09813",
+      "song_b366f7e48c0bce91e751ed307cdec86dd404c75ec3c336c3064dde51b903042c",
+      "song_b7ae45ffd7fb35b6bd81abbfb4fc36b04071dbe8847757321e5c8dc779360e24",
+      "song_bd9e139a8715ace2c3f0bb080a166c9b7def749bc9929d3c4573458907671d52"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 11717,
+      "output_tokens": 1019,
+      "reasoning_output_tokens": 28
+    }
+  },
+  {
+    "batch": 8,
+    "date": "2026-09-21T23:54:16.528976+00:00",
+    "elapsed_seconds": 27.512512040999997,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "d67d64012ec9675ee221bf02b2631c55c1b83c78198e6478b2155a2edcf42ea4",
+    "response_sha256": "86fbc20108bfdbf58bc1f94279c16d2438ec51586d23d562d36cd838bb20f827",
+    "song_ids": [
+      "song_c1bf53412ddc0a5da16702466a21569c7045e288695c3e107794e883b0af2fd8",
+      "song_c48672817dba7c8c321a5a3be30d0fe53bc5f6fbda5875ed12525cdde5be524a",
+      "song_c89f4d6d464f96d596f24b263cc4b17d6fac7434d27ef5a6b4a726e4f9c3c4c8",
+      "song_e7f27262ace9ab2f5c1d356b0e7420d2629f77521e23fb9d227c23b87bbd4a4e",
+      "song_e9e0c2c12977b22083aca819cf1caacc2a7478d90d8ead60a6955878b2412e1e",
+      "song_f3fe9aff88df7dafc10a5d25b5f52242c7f040ae407babb74fb853b5b1121ecd",
+      "song_03b04ccc08b0db06679c78f70460db22fefb0af4972aba29275de1a156677aa9",
+      "song_0a4467e4f6348ed58844edeb408b801f03fefaed28f0594d30a62706c6b0fca4",
+      "song_120331d2247754424d30484b3670c2d5c1ce827e7072814177b00993de5c5d32",
+      "song_153f05cd35e4e371133316415b6b1bbb79bcfd955e5d7b608593a786facc9369"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12221,
+      "output_tokens": 1339,
+      "reasoning_output_tokens": 407
+    }
+  },
+  {
+    "batch": 9,
+    "date": "2026-09-21T23:36:49.449381+00:00",
+    "elapsed_seconds": 21.919835167000002,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "b1b050ebea586d98f4cc60a8fab3c0157119538840b7102597017a15f8fc10dd",
+    "response_sha256": "2783292d5252243e5c28dc14da3d00a6d7c28537af2f155af109531aa386e594",
+    "song_ids": [
+      "song_165fbe490650fe68c4c5b6cc66dc9e00a3a97cd521e55eab30cc2792e4517dab",
+      "song_19f3c39248b3474abcce115c119e7a754e3b57ac8247fc1f257780efc7cfaeee",
+      "song_20f4a16fa209badbffe170632f6cd752c60aedf886ccbce11e7316763497b1f6",
+      "song_2a3953597d688379e71b767ebc79b4af84ffca3393c4c171a0ba1d8a07cc6143",
+      "song_37a4d0085f53ce98da3e9da4fd8efabcd01ec5858244c84d6a9a6e65d9571e36",
+      "song_3ca88c9e8b2161349011007ad239679e4bc93295b2b1c8da6349c2b8efee676c",
+      "song_4f8d713df33f9ffb2ce330c77f5a2f8d638cf2d41ee8134741eae02e45953bdf",
+      "song_586d59235d4970579635ebee081355a688402152fb5cbfd7a987ce1e2e28258a",
+      "song_5e3022dca8b9f3b47a1102c05c4d448538b8b63f261020e4f3e72a7cfecbb310",
+      "song_6063e3caaf6f18469a7a32f76f64fd10bc58b26e3b16a50159463c8e00ed62dc"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 11846,
+      "output_tokens": 1009,
+      "reasoning_output_tokens": 18
+    }
+  },
+  {
+    "batch": 10,
+    "date": "2026-09-21T23:37:11.372842+00:00",
+    "elapsed_seconds": 20.84959279199998,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "7e6949805daf6b77c1b4c96d2c42f9cc8c6164df9d4f2c3e7f42ddb17f58e2f3",
+    "response_sha256": "fe939bdd871d16e28880e65e1b203f657ad583d5a72b16483cea8fb28ddaff46",
+    "song_ids": [
+      "song_614445775beb4153392bf025b5213dffa774d1c6fc3a0b1b3c87fa4a631e514a",
+      "song_63e9f093b529ca7dc0ea22959a6c2ea68205186ed2e11a507c43fd4b6f41f7cd",
+      "song_6f65db831f5b81a145522b7a18009f08d47f4266b495ad005a98f0b26502cbfa",
+      "song_78e9fe25cee951189ac5809e395168efdeb16dbf0562071c61e6f0d4ae5d8791",
+      "song_7bd2bf2045e94364196d1d0692a69c3eca9cdc58cf9e955096695cdebd374316",
+      "song_7f17c5f47f796d23f576dedac48e1949b4283368dfb3759ef2cafe4d9afc101e",
+      "song_810c38a4b30b36f71e05fbc824357d44ff5bc37f2c79e40b8977a0a4cde55c20",
+      "song_8d9c40bf4217be87f81553c767a758b3a61eb09dda1b2339858cf9dee29bc0ad",
+      "song_9b69efe97ee2317d76c9725dc34d48ada43766dde1cb10deb8f2413a8514a068",
+      "song_9cfb2e5a55abb7300a23b5f494d87dc8e33dfb5738e873c99eb20ced015067d0"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 14268,
+      "output_tokens": 939,
+      "reasoning_output_tokens": 0
+    }
+  },
+  {
+    "batch": 11,
+    "date": "2026-09-21T23:37:32.227601+00:00",
+    "elapsed_seconds": 21.374231417000004,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "123cbe0a4ecb378238bf247fd42fb8db39c9f6d775f924c54fa211005cfed30b",
+    "response_sha256": "b644a19a68f5fadff9e89b4e6974cbca6bde7a72fa2ce5d5612403b32b3d26f3",
+    "song_ids": [
+      "song_a7197574545e330517462fa119faa8564536ede13d65ed7f397ab96866e5d2de",
+      "song_a8d19c6ba8d03d6bd5a7cfbbbf8373d646dfebc1629945f27b3917bd23eb43f6",
+      "song_ac8908e6477aa0b8e5a5508c55ed0629bbaaa43222d170a0e5535926bb7822cd",
+      "song_aed3cae87df0625e29fd58208c183305885d84e5e71cd92b39364e282e2b3782",
+      "song_b1a2b84699a4afb78d78ad97d5f9ff3ce547156effb3af5995b3438999fa9aec",
+      "song_bd6376a34f2de0be504db8d256d94eff21b823a697c698e02dab73d9476f0062",
+      "song_bdf18fbf0f81014f6199818f0ebbac82f4fdf58c0b052ae21b76f4c8fcbb9941",
+      "song_c3b9d3c672c8b278cfd7b9a8973ccff8efc354d2c72736f95e335d65197f9958",
+      "song_c452b31e68a5b645ad09c01d1a4adbe44dc571dc59ce6882cda4b32d123eec9e",
+      "song_ca5653382dd8bee6ec3db82c8efee3510f144fb261c6604f6cc2c0f205e7f2e5"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12060,
+      "output_tokens": 964,
+      "reasoning_output_tokens": 21
+    }
+  },
+  {
+    "batch": 12,
+    "date": "2026-09-21T23:37:53.605663+00:00",
+    "elapsed_seconds": 20.82531262500001,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "e3fe645d8a24720b5ec4470767d449e8d4a543a6fae71d13d37d588ff45fda1d",
+    "response_sha256": "d2748bda0dc8f008f318824540ce245af3e200d6af02bb6614edca5f1113d981",
+    "song_ids": [
+      "song_e1f45929c6345392f6adc7541dfe0a4103e1ac70493fc9ab99b480bc0c9a8fd3",
+      "song_e50ee12a240787ede44134bbc71c2d8a6ef767e0dd987e290fadd6f90723878c",
+      "song_eae2b284073d876fe50a3dc3452c44d09dd57c12fa59acdd7632ca003a06fd9b",
+      "song_ee1678844cd446d8ee33db39a10f052436354f702cdd852b88af825a1dec085a",
+      "song_ee6a32fdd246fd6dbe420ffe3162da5ce55b3f69b0d05dcb4576ea8de71ccf40",
+      "song_f3db26fdd2abc5385af52b80b038797c179c169cb90f041d2bca07aad77c9d95",
+      "song_f4457b8e049ddee44b2410adfdbf5bcd669b1c58db55fba1ffb6e7eb0bfa2e42",
+      "song_f62b2b6113fad8aa92dfa0b6ad2a8b8f581c0ee3fd8c4781be8a3af5247212dd",
+      "song_ff30746ebc21ca46bb47e0b7741190ab7516d361cbc9bb685bf80c40a546a54c",
+      "song_010219005840e515a4d29ef366c9bcc5ff5bee45800ac4851d62f9e5db33a858"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12271,
+      "output_tokens": 949,
+      "reasoning_output_tokens": 0
+    }
+  },
+  {
+    "batch": 13,
+    "date": "2026-09-21T23:54:44.048016+00:00",
+    "elapsed_seconds": 21.528470209,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "767ce27f09aa06e61dc9c7246c31c37320fe0cbbc97f374c5a67ea3a40f38501",
+    "response_sha256": "0fff050d7bf1fe0f92cbc09d66a738facf5b43f08e5d3353bcb533cf6bd56e32",
+    "song_ids": [
+      "song_01d1576b821aee8af9b6d59d5e42eb62d44ec49f657c68cc617c350efb6c69c2",
+      "song_08b87535dd3b55e36563107d8211062820fdd415087a3c8493353dc370c8e6b2",
+      "song_09720b8afffd38569a6352df46e232b20a2ac3eb262649dcd3deb14a06fef4b0",
+      "song_13f6c0b8f42df13364864c81688d35202a4a1dabf70eedb6fb308a7a8b02d74e",
+      "song_1b3408cd497916f305e28c41b26d1e11905fc68c4c6ed33baaa0f983422255f5",
+      "song_24dea62e0187d5b278c331e5364cd84b31d5a77ab4bb535d81d25e28418a093d",
+      "song_2f6252b57051cdd28b2f54077bf6049aaafa0c5b82d349ada1bf3e33ee54bb1d",
+      "song_3d40f536d7d35c218d6face06c7881543f51229c0fb851a19ea5a49f735a2d16",
+      "song_43c6da451ee7553971a547b68fef28c7820043e1b47620a5f78f5b760662c1cf",
+      "song_4d32d23bf210bc326fd1b066e81e92ec7ad781de818e6b171a2fe6bce4f9e575"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 11644,
+      "output_tokens": 1013,
+      "reasoning_output_tokens": 15
+    }
+  },
+  {
+    "batch": 14,
+    "date": "2026-09-21T23:55:05.577983+00:00",
+    "elapsed_seconds": 21.392167417000003,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "8c4182fec54bda822e7cbc34b5a68b5f2bd6ea593e97d4c94154c8d310800e30",
+    "response_sha256": "c47684384d2a32c0e48b48c112f97d2745877597bc0645512ada7cb1d495c5d5",
+    "song_ids": [
+      "song_4fd05adf56d51028eca2cbeb10ffe3cce990a211ea3c910f5154f714010dfb43",
+      "song_584ba5cd5d954800dfd2f01f7db26ce7a454ac897414aa927cc4cb826b41ed24",
+      "song_65d961f1cc030daf42f3cc1a7c4d3ea9f9df66fb6d1fbf8655c5f1f2eaa7603f",
+      "song_690e2516dfbb7b1f26340aa4b0e4d8595086ef30bde2d82331fbf4800f58682e",
+      "song_6ced5df219ba8cbfffcba6e5048f27739b34e9043e510ef3094bfc2d0c6b16ab",
+      "song_783b8bd993220be24a02237ce806c65a12d5adc2277b255e26859e4fd55f1972",
+      "song_7a44272f46696cf7fb99421c7335835b29f3be76ab51a123ff37068e2e4a857e",
+      "song_7dc20f2cde37cb12efb75fa3a33102407518fc142fbf893702d91f2191ba4bb3",
+      "song_820e02d28e7ec0e0caa43ee9d8b41461b355022c9f39026dafa6a99c4a8b7da9",
+      "song_82faaa9984c62ff6225122c33c400ae894810d4700e429a91c04717c1bcaae57"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12490,
+      "output_tokens": 997,
+      "reasoning_output_tokens": 20
+    }
+  },
+  {
+    "batch": 15,
+    "date": "2026-09-21T23:55:26.974187+00:00",
+    "elapsed_seconds": 20.00444183399999,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "674a86d75751c6e03ffae4ed97ac48800f6adc37db00c978d33cd80e60da20fb",
+    "response_sha256": "ead21a41415428304a74f4fc789e291f6e502ea6c3338c060d32c888da21b6d9",
+    "song_ids": [
+      "song_8f9c42fa0fb9eae564b26fef777c87ab3944aa03dd31104a58f7b59bdb9d7ff6",
+      "song_9098afe533dcec6919497494819f209e4ccfb913c9c2351d0240842d36789dcd",
+      "song_91ef67810b7430e676a76181c1387b307d43104aa0f008f988dc486443d9cd91",
+      "song_9d842cdc104a5dd044703af98874fc46df717e13ecc4ace038882875f6caede0",
+      "song_a403bb707f080ae77ea0941ac06bcedec6714954719a449ae2995739f9c388b6",
+      "song_b032726402e91c6b476ad4d565f451e16627c4a231d7c50f9804ff6b5616589b",
+      "song_b38b11172a916cc06707f86633944054b2dcf911f1858a7316f5c8f82b69f4ed",
+      "song_b4ab3d9c2d8c51cee5a488e94ad86865b45b5dbd49c3a188e29ca7871e610312",
+      "song_b555d7adc406312bc519e83111bf9e3801029c3f84ee56adbb3ffdc03794f183",
+      "song_c807c62be20f0b959818952d6bca0649101814ce7a6e58f263415057c8163c96"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12530,
+      "output_tokens": 920,
+      "reasoning_output_tokens": 17
+    }
+  },
+  {
+    "batch": 16,
+    "date": "2026-09-21T23:55:46.982208+00:00",
+    "elapsed_seconds": 20.937009958999994,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "5939eb3f0543c35b5ae60533233d9ed5337ef6bc5e058b8239ddeab2b538c3f7",
+    "response_sha256": "c34764d855fb97a6b387d0d57e03e6b91ec90dc1f42ca0c33e5e6ac2e2b200ea",
+    "song_ids": [
+      "song_ca72dbfc21278bbdfb80577a03437fbe493000ccb0fde0a8f7f7f22e163e8c37",
+      "song_d45c5f3cad8f5d95cea2286c6c39c280cedbfea85f4eab9f87fcf3d4b431c1dc",
+      "song_d8524775ea0b49eec78378d984ac3dc3b1cbfbf577b70169d7684611d3903930",
+      "song_d85c143df834e14c54ba7837752803ae6c142f916f0fdb35b89f66766a0986c6",
+      "song_d897fe60e5a6b1f1c1db39928c81d2646274458117144d8106de31f753f8aa3f",
+      "song_db6cb0c18cbe8cc635e66c9b72c54190675e442058e6295d3b0646d144eafefe",
+      "song_e506edbf17e595ab52a5a5acc0b8d3527c4a8778f7e879e5ff54b36efdec384a",
+      "song_e78e5ad3ad7e6e8bda5765acc3346ce6877d8172c7de221d8c5249b3f6f250bb",
+      "song_ec692fd3bdaf97fc34ade9f8b4b5c0e65077c08c9a4bf0a215d5fea204a3c217",
+      "song_ef3d7dc92389313e0ef01cd970d9ba25084ed7dd565ec26357543ef422095054"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 13295,
+      "output_tokens": 975,
+      "reasoning_output_tokens": 0
+    }
+  },
+  {
+    "batch": 17,
+    "date": "2026-09-21T23:56:07.924568+00:00",
+    "elapsed_seconds": 21.646929625000013,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "1a633b13a865d6d7f8320a8baf3dff9ce18c0acbc1d5800094ef460308312535",
+    "response_sha256": "8937539f65a73261388dfe69e1c4852b5128101bc31c2488f699b149b548543a",
+    "song_ids": [
+      "song_ef3fca564cdc83550d1ce77318acaea72dbb3b71f40af2977bd04afda03be467",
+      "song_f413bb2f755c0d08ca66cbd330d8d0aad2f4b54c4786ea8a890fbabdd4ead78d",
+      "song_04804816c9145c2fc431928b1be17072cff6e54ba8ebb244f2979004992b8cc7",
+      "song_05a86ff01ac556415d3cb8874722e76415ecbc09cc09fd0b3c5b8cbf8c621e63",
+      "song_099b78c1dfaccc337d5e00aec464e33a74ed7276ddb7ebca69a957e32e274369",
+      "song_147f2ebab60fe0f737afbb819c5a0fd7439c3c4c99a14e59b7b12083bcd987c8",
+      "song_19fb7f40ca7c53a8e83a2254a766349bf3204b9342b4a08f0205263e5f593983",
+      "song_1f6349d2aae418419d9d25e0bcd3c679692b5c2dc283d7956d6bc5b1705d3ca7",
+      "song_20dfd0d3a5e54b15c418cecbd4aae7696a5619acac71dee819de7f311d3d664f",
+      "song_3244facf0d34b16819c9be47f9b47c8eb84422b958e51e082bdd7b3b95cd475e"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 14022,
+      "output_tokens": 1002,
+      "reasoning_output_tokens": 26
+    }
+  },
+  {
+    "batch": 18,
+    "date": "2026-09-21T23:56:29.575081+00:00",
+    "elapsed_seconds": 23.225243207999995,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "7dd4f92c8742410c7fc9db206eebea76e5fc913b7c2be574ecd522a18f4aa0a9",
+    "response_sha256": "1635d928f138e12331b1af238ecf9621e37528e7a29996bd10ba1f26c6bbdba9",
+    "song_ids": [
+      "song_412700eff79f4bce53d2a754cd55ff435a6ec5a367d17142e1249cdf114adc71",
+      "song_4d2af74993fa18cf7cd81fd1e65cc180f6489407030a1569670f9c1c27579169",
+      "song_4f8cd5399d370d66670eef1bbf1e0508ee1f2b42800eca1a801db80659641069",
+      "song_5378bc839a3cfbf63f7006b65ec2bac2489545a8bef46b0e14d26a847fef9b11",
+      "song_54a2930e5daaa0fb35da0d3ae5e8b42ed9245a03d1e8e69231196fa54113ff4c",
+      "song_5aca356d8030a06af559386fa2f10a593d3d0bcf3b14327a50db02d67cfca9a5",
+      "song_6058e3713e40bd8afc987799134073e143420ae73245243934485c0ff41fb0d2",
+      "song_63a8142a4d44bdc9567486fe79a2217646c9c984464703f50584b33c9af4b2ee",
+      "song_6ccb3e49d2962a804c8e24914948ebaa0fc67ee45d64197dea1eef5d3ee1dcb9",
+      "song_6cda31159f4d6dcdb0c80f2a8d40cfb6ae13ad3a19e5a32e88ce6b47db330dae"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12869,
+      "output_tokens": 1004,
+      "reasoning_output_tokens": 12
+    }
+  },
+  {
+    "batch": 19,
+    "date": "2026-09-21T23:40:23.638722+00:00",
+    "elapsed_seconds": 22.237837000000013,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "d013fce1e619e163445d35f44c990db2a6b35d0d742c34ef15d1a61c36d685cf",
+    "response_sha256": "5419f29ea89692b70cfa8fcfb96028e3b60d8b0df4867a69e18204fea81829c0",
+    "song_ids": [
+      "song_6e5d8029c506f51ce90b3a6a2999e7adb3b0e6d11a748d072eabea5e30402392",
+      "song_70067d6ae676d55c40d2bd2dc565bb20081346cbf38b23c05fca7adf356973b2",
+      "song_70900a0ccd6744ecc1717fb703c8e1af72932434bd9a2708ed285ac0437294d8",
+      "song_71147487997243ed502c93376408a146dc10fbc064a7e95f9917a826dd29a95c",
+      "song_748ee64ed38c571875c5e888fb6e179c03b9b35d2efb0b5002cfdd4d7c07df09",
+      "song_74d66195fec3569a1e3d88dc420206fb1c36bac811ae60670a697f87b3b6440e",
+      "song_7628d7c89369b86236d0a545d69be37dddd4c1188b65d11a1a55ea4ff0619538",
+      "song_7777912a427e8889d0ef0b067fdacad66d788f81927b6d247a8c360162c112d5",
+      "song_7c3e690b3fc996c3e871ff482c1a84a41d7474ece4fb6467f3f2e039caeb94a8",
+      "song_82cc7c9780e3340ad82f5a3622292b290007c3cc0bb566f91df6df8fade52fa1"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 13617,
+      "output_tokens": 1043,
+      "reasoning_output_tokens": 29
+    }
+  },
+  {
+    "batch": 20,
+    "date": "2026-09-21T23:40:45.880235+00:00",
+    "elapsed_seconds": 21.069163875000015,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "962a4bfff4eb312371440c7e1e1a4876f556d1ecf94ac0a8eb929236789fd6f3",
+    "response_sha256": "e98b43ff379793ad557d5b96bd2e0edd85584217b40649fd5b4f1c0ef37967ed",
+    "song_ids": [
+      "song_88c7f400820aee145eea762b34117646ce5f51b0b1d4a1b7fc4728dd9c82452f",
+      "song_943dd3a9ff7589bea515bb45f8529f89af88cb170214a4e9993f79361287aeb5",
+      "song_996fc13ebba5211b1521445586be9c9219d0d460f6506b42000925cfd3f62d29",
+      "song_9bfd0b1339802a6c5c4fe6dc0ee0b93cc3e80ebde69768c0cae5461a88f536aa",
+      "song_9f0205ec029e0b6f593d60d7cf67ec76b7ec4577727891ba8980944096dd0b93",
+      "song_a641c3af2dfc107e7dc72b0ecf027e41b6fd4935571cb19f81e547926e6689ae",
+      "song_b5c97790cfca7b2981b12db34b34b063292c45fa5361f991bd0b6216bc470be5",
+      "song_bc41da1b6229b858203ef404e08488f0a04c820ce21841a7cc3b1474d3b14bc0",
+      "song_c321c0f3f24d05bfcabf9ad27b021dacc0059a54dff16da3289392415ce09a0a",
+      "song_d24f6fd8895421cd9acf561e8f8930a76b1cf98a7c08be860ff51ab33f11f6a2"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12152,
+      "output_tokens": 966,
+      "reasoning_output_tokens": 16
+    }
+  },
+  {
+    "batch": 21,
+    "date": "2026-09-21T23:41:06.952680+00:00",
+    "elapsed_seconds": 22.325802667000005,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "238a1f4647d7ebafe272636aabd78f4336746d519c956b8ca2b419b2b4912fd5",
+    "response_sha256": "3a32b900f337a5dd4baa2f54308b7cfce20a968b40de6dbf67e828273f332d2a",
+    "song_ids": [
+      "song_d4e4a0acacdcfc34a43edd550ec19e062400394273001c5955a96c90b2295553",
+      "song_daabc3fcc80e89d1e71b47d97bb6b8d2999cdff7cc3bf60b12cf8062c9d77f88",
+      "song_e39b7c853dbe1a93b5faa80a89367a61970c43c36de051fc9e3ee961ca5ccc39",
+      "song_ee57e8521ab2ef3de7bbb1d8f9a3791d217caa268013af957bacc28fbfc084a8",
+      "song_fa039d082737c37a4943e6e42a47f1e042d19155cb2ceb3529b393f70a8ec415",
+      "song_129b7fae7d8441b9a86fc7dd311fc4771fdfba128e62668976c5c3d9f984bf50",
+      "song_1536f56260fa47cc50543a8b42effe5f14f56b430b7680f4ca015d96bb96abf4",
+      "song_20d194e9002a0698e50739753a0161e3b89d4e5f803d13768fefb9fafef15d86",
+      "song_281bf843e63cfc26de275096d493c66105a4aa81844dc618ba901b09393cbe8f",
+      "song_3189c8cc897e59c9677a0d9ffeab56b397eace0c2786b0e6fdd7e5e5e2168863"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12563,
+      "output_tokens": 1015,
+      "reasoning_output_tokens": 14
+    }
+  },
+  {
+    "batch": 22,
+    "date": "2026-09-21T23:56:52.808996+00:00",
+    "elapsed_seconds": 20.024527458999984,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "c040b517ed49573abbbed83d21f09d17a28264bed1db66a5826c5c8f15b56cbd",
+    "response_sha256": "d9eb657605bd5a2ee9234d8b5e72968ba85a8bd1d582b995a4fcfa0a93600292",
+    "song_ids": [
+      "song_318e21fe01aacfa42c555181378f929557a647f117d365385416e82be36f0e83",
+      "song_35edd26ad9553a5289526ef08f23c589a04df3bd4b2f092ac01ec46d576f7def",
+      "song_38ad35dbd6683e41f1dc64d45b224b8f232e01c8d1674aa7dfb650bfd6feaaf2",
+      "song_3accd4916e404b4e6be8c5fc473b0d4a1990e0d906455bf2b4cbdaf56b8c673a",
+      "song_3d3cefb9c6aa19ee0152805743b64569a0f4480e16596ecf31e018332bc6aeba",
+      "song_40d619f96504faf89aa2f8f5c8bf78a6e6edc07db041ec3bedf1b2d50ca4e8c9",
+      "song_423a4820d33cc9da1e6bf4d9f5b53fc63f55b5dd9d6e0f632d2a12a400ee19ca",
+      "song_43cbbe25d01436f24fa263dfde7adfd25ac01df38bb9626312dc241b8daa4857",
+      "song_44683eee837441e8cd22fc679ce347dff944f316f116b720b5e90a5580462716",
+      "song_45c7222e2fbc0c27b8900bb121db2776b20d40638a2c09cf10eb0591ea2b333a"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12320,
+      "output_tokens": 921,
+      "reasoning_output_tokens": 0
+    }
+  },
+  {
+    "batch": 23,
+    "date": "2026-09-21T23:41:50.642920+00:00",
+    "elapsed_seconds": 28.493316666999988,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "ad6aac1820124f70165e434c4ff6ee5210bf1a01d67215ca7e02d1830bf0168d",
+    "response_sha256": "5f406e07510fcccee087d1d660c6fb57705403c06b84fb6e679c3266253e6e39",
+    "song_ids": [
+      "song_45daab3f8a874dbbadc9a76ad99d877bec99477a47bb9de6e7611a99761856e6",
+      "song_4b7c580974959a23da3280d85175cf219b9e7a2fb47a5170194c04b30f5153e8",
+      "song_4eae3f5dee0b723259008e29b320e0f0ff6062138a7f10018b9bbc1ccfa4df2b",
+      "song_54fa1a7fe242cd86c6694031c7b71d8124f3dde1b2517e4e3792498a2d2709a9",
+      "song_6595ebab0344ee24bb1690547db9e2e8e237034e13bebca379677511ee60217f",
+      "song_695e422dbade3ba08674fe80528f816e49d4db0c0462ec073a9b0b8608aa9708",
+      "song_69823ed1beab1c15adab303458294de6aa805b844e4d9bc1cb759b53d8e1d0b8",
+      "song_8665a124456b78459e42436a6abf3c1cd6dbf5a06c66ddfbe532cd2370a375f9",
+      "song_8dcf9229ba601d5dfc631d938739f35b4c55d54f42babf5a5e9219d96a98bb2a",
+      "song_8f07b312859728d4bf2609cb106629aed8c5e362ff51c10ba7e2fd42c64ab2db"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12784,
+      "output_tokens": 1371,
+      "reasoning_output_tokens": 442
+    }
+  },
+  {
+    "batch": 24,
+    "date": "2026-09-21T23:42:19.139376+00:00",
+    "elapsed_seconds": 21.218397083000013,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "76104c29443ac56b3345b77cd1f8746ed7655f50ff5ca17b0656a8f5b2155cc3",
+    "response_sha256": "95efb07f703d8846cb0249c6b08fd01fd90d8c088e7d96f7d257ee32a2cd5039",
+    "song_ids": [
+      "song_924796ac685f2d06b74e6f58caa5d6bb561d9f0444e2180dcd461857eebb3ab6",
+      "song_99235bf561176147ff67d9801a605c6ab67ff1a07d0ddeba8f6c1ac275c70651",
+      "song_a27c2bb0abe81ac1630dccbf655e722f0266e40065d8d04084cad9a5a186249a",
+      "song_a46ccdc0a74a08b1c2085817b9f803de01ba0c8b8ffdd24d1085ebe681e3bf43",
+      "song_aaa0e4a963fc10aa6f920a0aac49efadb98b0565d37028e63fbe65b523fb1575",
+      "song_b368dcca49e573d3263eff812c0545caeaf18a85810fd9d49bda1b38d429e3c8",
+      "song_b932fc43127c8cc5cf67c26ca4a128ed158ce8142010a3293540b1e6efda9729",
+      "song_bc1676afe5cb4a4d64dbc784d23053c57d5bdcda1265d545574404fea263f627",
+      "song_bd72ce8520bb43c6df197891b00a37881358525b47037917365633e5d1ac18a0",
+      "song_bded4c90718f9ec35824c0d6db43e68e1886357579a53851ed80f4c4df644c4f"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 13809,
+      "output_tokens": 1005,
+      "reasoning_output_tokens": 32
+    }
+  },
+  {
+    "batch": 25,
+    "date": "2026-09-21T23:57:12.840770+00:00",
+    "elapsed_seconds": 20.125136541000018,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "728d045f2342866f642847cf6d4e79208b9d53c569ee410cc066d1c4c28ee9bd",
+    "response_sha256": "dd07444aa742f14ca1b473caebffc35ec7bf3fe884a78a57878321b354aa9111",
+    "song_ids": [
+      "song_c73630cbce298becd39125cf280c97d9985578261653d069ff5431a5a999de43",
+      "song_db7d862b0ddc918e090d876541a63028f5d45b90416f6075469c14b13793bc0a",
+      "song_dce16762d9c1c93a56f2d8610ed06810e5b7d751cf1c094513b3d40a8756af0e",
+      "song_e4d2a835b54f92d8f7e1ce6ccec9bfad08ca4df59dc052fc94a65e5461e099a3",
+      "song_ecb2eaba04133bd3bf991f0546cd24c82bf76d8c0477040fa17420eab4f91396",
+      "song_ee609cb946e2acfbea67800c78b1fd34dc779ede1eeebbfcef2121cc2fcc452b",
+      "song_faa0e48f9b6e0a4a092f2ce055e9c5d96d70c0abe941a888a98bd2ebfb4ad1f3",
+      "song_fc245e54afcc2a2725b53d7ab475b9b5009d8df3b072a0879c4cbd0c34bcaa84",
+      "song_06018125bb187ee03e5005d52d433305c7ca3abbd08c919f84355f8c4a8e5eb4",
+      "song_09acaf36a0701d6da9fd5c343232f2bea10749bd7f69bad7257803ffc4c91d90"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 11454,
+      "output_tokens": 912,
+      "reasoning_output_tokens": 13
+    }
+  },
+  {
+    "batch": 26,
+    "date": "2026-09-21T23:57:32.972366+00:00",
+    "elapsed_seconds": 22.126258124999993,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "791b75b4e46e3706ac966c757485694cb97457de6238155e57527eafc5ccd360",
+    "response_sha256": "327b431ba2e2887dc31ad92f5982aeb69d1cd045f5d18ef6d0c6a07f5f1130ef",
+    "song_ids": [
+      "song_0df51cb7ce0b42b34fada05559e56daea8ca38c0aa2e2c5889881d1c1887f1d4",
+      "song_13eb0e9ddf7ddd4df000e37b6f413d19952cf52f83bbce21caab7ad163ac6341",
+      "song_16ea26d0109d1cb3a4f394549948be0c8c9f840e8428c98663b71fbcdb1f6bc4",
+      "song_2582bf1b159682a63c32b25e9c45a1908036654ff50eae584eeffe3d2c7603ea",
+      "song_29f66b67b267b23979aee55f752c6a4cf5079b6f2a0a44701cc34b619a2a7142",
+      "song_2c30bf5fd805f637201e1f648e5f43997dd57e3aefda5561672d7f909dd6c0d2",
+      "song_2d92f4a760127b281b02f5cbb0e9b9e47eaaf826135df7b2bc9484db5687d9f8",
+      "song_2f6e3e6b8104a54fd692e7b4ef922b58471ea5a0b754739f1a4bea2e60912bf8",
+      "song_37f9525d177a36c4812035064592b279f2fc32067fbfd71f404598be3ba7dcce",
+      "song_3b83775d647bb24e046c9df8fa3b36dbf1fdd7ad69a9982951a207ec4aaf441f"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12061,
+      "output_tokens": 1005,
+      "reasoning_output_tokens": 14
+    }
+  },
+  {
+    "batch": 27,
+    "date": "2026-09-21T23:57:55.103123+00:00",
+    "elapsed_seconds": 20.53044299999999,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "cb73dcb80b3408302344ed008f889698b15942d073b630359d81d257dbc330b8",
+    "response_sha256": "5a5362caf57ae7f6fd6530ff494f899d0f3641515bb332db44aac9beeb1db73e",
+    "song_ids": [
+      "song_43a3c28b92006dfa57ea20e3efce754cbb2fde0e1621444da8eb022d7b067b5b",
+      "song_4f66619c4083f7c16d5ab1d1161ab6c4eff18bec71458f607e82b7fd839cdc29",
+      "song_5e0db40b686cb1b722ccbd809d6664d820387165eaf111c8dda102bc602ee066",
+      "song_657624a03eec82295dcc4b7e5f65d60e6e3e8327ab5967b934b28371d060205b",
+      "song_733e4b6f3321d3f1f4506afc9ec8b748aa2f3f9a3a0759a41152cfdf8ed4aa37",
+      "song_73f48945a748eba898fdf814f0e9cc5852f53ecbffcecea60a29a2006fd58713",
+      "song_76fa1f23eef57d0fae6fd00ae8b39859ff432bf3cef88c39427b1068d859cd9f",
+      "song_87601c4495e29dd78c08f886e87be68703081cf94601eb92946cddd4af0e3c8f",
+      "song_8cabf73aee51cdc04b1de61678cdf92a72f5c75171f8e9f4047833f5ffa10e72",
+      "song_9adb3d1a0131719ef13c364403cf53a1962d992abdcd05c29cd951e04ab8cc07"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 10920,
+      "output_tokens": 947,
+      "reasoning_output_tokens": 0
+    }
+  },
+  {
+    "batch": 28,
+    "date": "2026-09-21T23:58:15.638163+00:00",
+    "elapsed_seconds": 29.15051112499998,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "9b0f657e45bcb7cf5c797e9083744eb107cc61638b726f27c1f3fab22b3484bf",
+    "response_sha256": "3ba2ea50ca29a1de28fbffaa6d2846f2ea0e3129bf3ad5cdd2ecbd1efd6dfb0f",
+    "song_ids": [
+      "song_a85c2b7319a6d1100694b5a1c6871fbf8ae7dd4db41701fed7defc5d5cbc8468",
+      "song_ae6df658640328431990dc870952a8bd79d6952671c30aad8294c7fc91096afb",
+      "song_b028c48b9eef5844f1d9ddf61cbe61a1c74e0e8ded5d1ac5b0ca70f5f39c6ed2",
+      "song_b17ed17841395852c51ebd8c46533bbc42b9790bd96e8a2bc4d32a61e93f64ec",
+      "song_beb686e166af1e1d4043dd7b3528ba4c99a18700c6f3a7242dfd42d5a495c72a",
+      "song_c3a98a95fd7b160dac6930b5e68f1923ca9e546da3eb9d48441d487d3f55c3d7",
+      "song_c3d047f8f63b834001f15e6a211ba69af7996df10f0f20284c59a63ffa6e2e76",
+      "song_c6420d8ecfca0032a3387c63df5134ba2146ac048ea0ffb0aad4bd0d8db6e075",
+      "song_c947bdc9902c04e11bb64dfc1b9f93d7f7347acabb9a6cbcdf46493ad034c547",
+      "song_d303660918f1645504b17b34c66f09df19f460405ea8a3c978b6a86333c90053"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 10770,
+      "output_tokens": 1396,
+      "reasoning_output_tokens": 516
+    }
+  },
+  {
+    "batch": 29,
+    "date": "2026-09-21T23:58:44.792555+00:00",
+    "elapsed_seconds": 21.328895499999987,
+    "mode": "metadata",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "32d6a23081fc9c3265fc167c17137773099a7a94df4eea5c7562a7d162842d80",
+    "response_sha256": "e34fddecfc337ea8d97321c724a5a0899c15d6b4b4d7b32aef28bd7eb3b70eaa",
+    "song_ids": [
+      "song_d32a84dacb8bbd6d91a6514decc9b51d7661efe788b020e5bd9ad749cc5ba8db",
+      "song_d7e9573c1e70adad7ade1b701ddfa86aaeb97415f9841e0d3d90c6dca6ac3cca",
+      "song_db04e403f30e54ba8db19acba031571ca1dc8c3259b105812056593f11029127",
+      "song_dc622e83556500e1683288e4bdb9892c32a49dd9dbb2b8b80f8f8bb9eab21fa4",
+      "song_f31e5ce558c5ca0d470646e9d16a8d49e0310dc9d38a21979003381537bfd3b7",
+      "song_f4570518167097d33c481ab1639d78f88e65f00f4fe8a0125aa94d97782c2125",
+      "song_f5daad636fce6213fbf775c1e0ed2b596ff259fa88b5bea40660fa9ed8dbcaf0",
+      "song_f71a8469af565fdf41a9efaa9f233185285419106daa5b17f9db0ca2c64a4bad",
+      "song_f8dd6e390379dbb863c52c009616abec33c43d33e57fad3a074059031a4d9c40",
+      "song_fbf16c03b4d57fbe0378cb557e9a22424e34468f09a1119ba332fb3e9d7b1836"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 11862,
+      "output_tokens": 1007,
+      "reasoning_output_tokens": 21
+    }
+  },
+  {
+    "batch": 0,
+    "date": "2026-09-21T23:34:00.246914+00:00",
+    "elapsed_seconds": 21.106592084,
+    "mode": "identity",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "9f70f2ab2ef57e87d057b4e6e6528c3f4d2592d6af57e03cf23c1eda554a3a58",
+    "response_sha256": "e0ab0c3ead63bd833b9ecf596c8dd8e50303aa0f8b848fe8944f9472a3636ef9",
+    "song_ids": [
+      "song_30d830a95ffb8c7322352dd1f2121a5deea8394105665f02987fe06fa0a7b146",
+      "song_445ce019f72fefe5e322a604f3bf07c182e78c35bce0cb59086d3947a50d1916",
+      "song_6ff9b0c852e2518543efdeb12a8d461bb12cb1f08d87f7f3872960d2d742929e",
+      "song_73bb6d17dc79b2d3de5b3da5aa9c9bac42813c975b368517a5f7e28fdd76e1c6",
+      "song_7e30c1693734863a0fecc8328bf158f36c0fedb96ad6b1a253efba966bc482af",
+      "song_8c13d8e4ead4fff60549ddec575dad40428747a694cb844f51a73e2e59e443e1",
+      "song_c621cfa245241f1ede4d5a3c0552e33fcf76bcfd4ccb6daa72e3ad013b3d4fa0",
+      "song_d1144e651a7db9b1bfac074c20e133c378ff0d99c0fb41156bb1677cb1b254a3",
+      "song_de9170e8e62446f52437643bfd1b1dd47bc4b8293c7035f8888c5d679cef5cd8",
+      "song_e8c3fc6c6e1f765fc422070358b4fa4e705e746857c034d5ed2a511db646b411"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 0,
+      "input_tokens": 10234,
+      "output_tokens": 990,
+      "reasoning_output_tokens": 0
+    }
+  },
+  {
+    "batch": 1,
+    "date": "2026-09-21T23:34:21.356717+00:00",
+    "elapsed_seconds": 21.455950708,
+    "mode": "identity",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "eb0f22d866517fdb0dfa5731d55a389bae88bfe9bce5a37a6737c7ffffe5877d",
+    "response_sha256": "0492b439baccefceb91b7c29d204ffc83ce3e9ef7caeb46e79fe7352eb8438dc",
+    "song_ids": [
+      "song_f9ddcd2f7850ac896c1cdb787d553b63fe78a5f64c8ff1f0fb8e2e7cf7641e9c",
+      "song_32e956d7ab212c9ce517184027a9a0a8b2814bdb25f7a4247e9ce8d1d8d33ba2",
+      "song_66e3a32dd4604c4c4bb2490dafb9a9780fa010bf35d988f55be64637d260d37a",
+      "song_728925dc4a3c8dbfe9f3246dffa5d6a5f5ae65ef8637ee88e521237fad75a8da",
+      "song_7af106e9903c0d3166b0e4713f04b5f19e9fd66ab7805f1e45bfa0eb60c7eb4c",
+      "song_8794d1c12e8c77e7ad430a1b484aee515afa3d9ead32874c9ea8b0519ab7ae77",
+      "song_893cc453fd6abdf92143801f9be8b45c9b946bc24bfba4384a35774137e70121",
+      "song_8c901f5b3e5e4c25f7cf44180cd1bedcb3567ea88b9e7b4153fe86d1ba6fa8c8",
+      "song_93ddae64dcbe4d5878f02e213d7587e345bcf0263c0250738609513e3bb3494a",
+      "song_c89f4d6d464f96d596f24b263cc4b17d6fac7434d27ef5a6b4a726e4f9c3c4c8"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 10282,
+      "output_tokens": 1016,
+      "reasoning_output_tokens": 26
+    }
+  },
+  {
+    "batch": 2,
+    "date": "2026-09-21T23:34:42.815494+00:00",
+    "elapsed_seconds": 20.502019249999996,
+    "mode": "identity",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "d9d612dc2984a22b032386972afcb5a7e8a16703dbbe5154a0fdf9ff585d603f",
+    "response_sha256": "1299624031e8ac8b93e7da6192a08b5e1a83349e197b04a9c3f4834ae46f7853",
+    "song_ids": [
+      "song_e7f27262ace9ab2f5c1d356b0e7420d2629f77521e23fb9d227c23b87bbd4a4e",
+      "song_f3fe9aff88df7dafc10a5d25b5f52242c7f040ae407babb74fb853b5b1121ecd",
+      "song_20f4a16fa209badbffe170632f6cd752c60aedf886ccbce11e7316763497b1f6",
+      "song_2a3953597d688379e71b767ebc79b4af84ffca3393c4c171a0ba1d8a07cc6143",
+      "song_37a4d0085f53ce98da3e9da4fd8efabcd01ec5858244c84d6a9a6e65d9571e36",
+      "song_6063e3caaf6f18469a7a32f76f64fd10bc58b26e3b16a50159463c8e00ed62dc",
+      "song_8d9c40bf4217be87f81553c767a758b3a61eb09dda1b2339858cf9dee29bc0ad",
+      "song_a7197574545e330517462fa119faa8564536ede13d65ed7f397ab96866e5d2de",
+      "song_ac8908e6477aa0b8e5a5508c55ed0629bbaaa43222d170a0e5535926bb7822cd",
+      "song_bdf18fbf0f81014f6199818f0ebbac82f4fdf58c0b052ae21b76f4c8fcbb9941"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 10247,
+      "output_tokens": 948,
+      "reasoning_output_tokens": 0
+    }
+  },
+  {
+    "batch": 3,
+    "date": "2026-09-21T23:35:03.320894+00:00",
+    "elapsed_seconds": 20.604839542,
+    "mode": "identity",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "1f60f648dfecf2f7680a800b5fc9e0e1b88211e184c9248f1c74c388984354b9",
+    "response_sha256": "64696438b618b2f1fb433cb0aa4fe4ac6dfe4ab03c6c73b6657b7dbbd39a2e94",
+    "song_ids": [
+      "song_c3b9d3c672c8b278cfd7b9a8973ccff8efc354d2c72736f95e335d65197f9958",
+      "song_f3db26fdd2abc5385af52b80b038797c179c169cb90f041d2bca07aad77c9d95",
+      "song_f4457b8e049ddee44b2410adfdbf5bcd669b1c58db55fba1ffb6e7eb0bfa2e42",
+      "song_43c6da451ee7553971a547b68fef28c7820043e1b47620a5f78f5b760662c1cf",
+      "song_690e2516dfbb7b1f26340aa4b0e4d8595086ef30bde2d82331fbf4800f58682e",
+      "song_783b8bd993220be24a02237ce806c65a12d5adc2277b255e26859e4fd55f1972",
+      "song_82faaa9984c62ff6225122c33c400ae894810d4700e429a91c04717c1bcaae57",
+      "song_a403bb707f080ae77ea0941ac06bcedec6714954719a449ae2995739f9c388b6",
+      "song_c807c62be20f0b959818952d6bca0649101814ce7a6e58f263415057c8163c96",
+      "song_d45c5f3cad8f5d95cea2286c6c39c280cedbfea85f4eab9f87fcf3d4b431c1dc"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 10263,
+      "output_tokens": 959,
+      "reasoning_output_tokens": 20
+    }
+  },
+  {
+    "batch": 4,
+    "date": "2026-09-21T23:35:23.928565+00:00",
+    "elapsed_seconds": 21.052111542000006,
+    "mode": "identity",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "c112f182d40803ec5726d78bfd0f6ad32b784145566781fde91394425344dede",
+    "response_sha256": "3048287d6cad55cb29bf992a498edb0fc16b977eb4036897a48f7cb798d0339f",
+    "song_ids": [
+      "song_d85c143df834e14c54ba7837752803ae6c142f916f0fdb35b89f66766a0986c6",
+      "song_d897fe60e5a6b1f1c1db39928c81d2646274458117144d8106de31f753f8aa3f",
+      "song_ef3d7dc92389313e0ef01cd970d9ba25084ed7dd565ec26357543ef422095054",
+      "song_ef3fca564cdc83550d1ce77318acaea72dbb3b71f40af2977bd04afda03be467",
+      "song_19fb7f40ca7c53a8e83a2254a766349bf3204b9342b4a08f0205263e5f593983",
+      "song_4f8cd5399d370d66670eef1bbf1e0508ee1f2b42800eca1a801db80659641069",
+      "song_5378bc839a3cfbf63f7006b65ec2bac2489545a8bef46b0e14d26a847fef9b11",
+      "song_6058e3713e40bd8afc987799134073e143420ae73245243934485c0ff41fb0d2",
+      "song_63a8142a4d44bdc9567486fe79a2217646c9c984464703f50584b33c9af4b2ee",
+      "song_6cda31159f4d6dcdb0c80f2a8d40cfb6ae13ad3a19e5a32e88ce6b47db330dae"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 0,
+      "input_tokens": 10248,
+      "output_tokens": 983,
+      "reasoning_output_tokens": 16
+    }
+  },
+  {
+    "batch": 5,
+    "date": "2026-09-21T23:35:44.983507+00:00",
+    "elapsed_seconds": 21.042409625000005,
+    "mode": "identity",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "6555e1d63a77e07c130d5013a52d7679e1b27210b197c540a49d93d0dcbb3dac",
+    "response_sha256": "6e5d6f877b87bdc723f9ce3a9691c54e52ef3c744e6de5180f1e903e689e59ab",
+    "song_ids": [
+      "song_71147487997243ed502c93376408a146dc10fbc064a7e95f9917a826dd29a95c",
+      "song_88c7f400820aee145eea762b34117646ce5f51b0b1d4a1b7fc4728dd9c82452f",
+      "song_943dd3a9ff7589bea515bb45f8529f89af88cb170214a4e9993f79361287aeb5",
+      "song_9f0205ec029e0b6f593d60d7cf67ec76b7ec4577727891ba8980944096dd0b93",
+      "song_fa039d082737c37a4943e6e42a47f1e042d19155cb2ceb3529b393f70a8ec415",
+      "song_129b7fae7d8441b9a86fc7dd311fc4771fdfba128e62668976c5c3d9f984bf50",
+      "song_35edd26ad9553a5289526ef08f23c589a04df3bd4b2f092ac01ec46d576f7def",
+      "song_38ad35dbd6683e41f1dc64d45b224b8f232e01c8d1674aa7dfb650bfd6feaaf2",
+      "song_3d3cefb9c6aa19ee0152805743b64569a0f4480e16596ecf31e018332bc6aeba",
+      "song_43cbbe25d01436f24fa263dfde7adfd25ac01df38bb9626312dc241b8daa4857"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 10218,
+      "output_tokens": 955,
+      "reasoning_output_tokens": 20
+    }
+  },
+  {
+    "batch": 6,
+    "date": "2026-09-21T23:36:06.029066+00:00",
+    "elapsed_seconds": 20.172595709000007,
+    "mode": "identity",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "7036fb8a55aae490e17cf9554a38e4b2f4206bdb39156b55219daa04c886471d",
+    "response_sha256": "f4f50274f320d17b4c179e62c25cd1acef0d418a5286f9c93321b90b302f4959",
+    "song_ids": [
+      "song_4b7c580974959a23da3280d85175cf219b9e7a2fb47a5170194c04b30f5153e8",
+      "song_6595ebab0344ee24bb1690547db9e2e8e237034e13bebca379677511ee60217f",
+      "song_695e422dbade3ba08674fe80528f816e49d4db0c0462ec073a9b0b8608aa9708",
+      "song_69823ed1beab1c15adab303458294de6aa805b844e4d9bc1cb759b53d8e1d0b8",
+      "song_e4d2a835b54f92d8f7e1ce6ccec9bfad08ca4df59dc052fc94a65e5461e099a3",
+      "song_fc245e54afcc2a2725b53d7ab475b9b5009d8df3b072a0879c4cbd0c34bcaa84",
+      "song_09acaf36a0701d6da9fd5c343232f2bea10749bd7f69bad7257803ffc4c91d90",
+      "song_0df51cb7ce0b42b34fada05559e56daea8ca38c0aa2e2c5889881d1c1887f1d4",
+      "song_43a3c28b92006dfa57ea20e3efce754cbb2fde0e1621444da8eb022d7b067b5b",
+      "song_73f48945a748eba898fdf814f0e9cc5852f53ecbffcecea60a29a2006fd58713"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 10235,
+      "output_tokens": 930,
+      "reasoning_output_tokens": 11
+    }
+  },
+  {
+    "batch": 7,
+    "date": "2026-09-21T23:36:26.205006+00:00",
+    "elapsed_seconds": 24.778531500000014,
+    "mode": "identity",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "b7ed395056c51b3ed7a040a1020e02c6b02a1fc4ba5a359addd3cb54fa37ad9c",
+    "response_sha256": "0a966bc1adb91a998e21c07899cd2283cec7668811d597eec89f449e76723532",
+    "song_ids": [
+      "song_ae6df658640328431990dc870952a8bd79d6952671c30aad8294c7fc91096afb",
+      "song_c3d047f8f63b834001f15e6a211ba69af7996df10f0f20284c59a63ffa6e2e76",
+      "song_d32a84dacb8bbd6d91a6514decc9b51d7661efe788b020e5bd9ad749cc5ba8db",
+      "song_d7e9573c1e70adad7ade1b701ddfa86aaeb97415f9841e0d3d90c6dca6ac3cca",
+      "song_db04e403f30e54ba8db19acba031571ca1dc8c3259b105812056593f11029127",
+      "song_dc622e83556500e1683288e4bdb9892c32a49dd9dbb2b8b80f8f8bb9eab21fa4",
+      "song_f31e5ce558c5ca0d470646e9d16a8d49e0310dc9d38a21979003381537bfd3b7"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 10001,
+      "output_tokens": 1158,
+      "reasoning_output_tokens": 513
+    }
+  },
+  {
+    "batch": 0,
+    "date": "2026-09-21T23:34:01.413624+00:00",
+    "elapsed_seconds": 20.906330834,
+    "mode": "repeat",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "84b081d2fcb8ad5d963e2ca486bc7e23d47322720e10d49a50998d04c4e93c70",
+    "response_sha256": "65ea30f1d66a1d7c4596e1ff7ecbce38e32301061ec1bbd5049782458f8b4315",
+    "song_ids": [
+      "song_2a3f18e665154675d0a7dffb315d109304ace7c807661eb1dd640c074127b597",
+      "song_30d830a95ffb8c7322352dd1f2121a5deea8394105665f02987fe06fa0a7b146",
+      "song_3bdcd0c52b13009a6dc8b41cff8ae72333763ec0677acbdc762853aba365b808",
+      "song_8c13d8e4ead4fff60549ddec575dad40428747a694cb844f51a73e2e59e443e1",
+      "song_a73f4a1e918dc6431ddb2809e2380a71c7f7e67fc93d2e4a2b9d8ffb22939957",
+      "song_f02e6d705e7faa04e469d80e3875be41a76646cc7117a1e563c8811c46ecdd25",
+      "song_1edc9ee2c1313527512753fbe3059a0e098868e4936cb446f457243ded08c641",
+      "song_5e9d56ea52c8601c01e9cf8d9fd2bd6f0a930bf45253398ac70c44f51b0a151a",
+      "song_639236f08751918a54e00145b6568f9160f21fa48d26f56900bbb63f0929d0ed",
+      "song_7af106e9903c0d3166b0e4713f04b5f19e9fd66ab7805f1e45bfa0eb60c7eb4c"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 11430,
+      "output_tokens": 946,
+      "reasoning_output_tokens": 20
+    }
+  },
+  {
+    "batch": 1,
+    "date": "2026-09-21T23:34:22.323923+00:00",
+    "elapsed_seconds": 20.881323124999998,
+    "mode": "repeat",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "096144e770e613e4761c2e68f81be0faf1a9cfc631f5291bc3befe3609a2b18d",
+    "response_sha256": "a46b9291289265f72de9327f8fdd0b28cf72dee8fd77ee7661fabb9aa8ad78bb",
+    "song_ids": [
+      "song_8e64a9fb74d090f32e2aa44850698d800e0823385a63b40d4adb48a13ff8d0c5",
+      "song_c1bf53412ddc0a5da16702466a21569c7045e288695c3e107794e883b0af2fd8",
+      "song_5e3022dca8b9f3b47a1102c05c4d448538b8b63f261020e4f3e72a7cfecbb310",
+      "song_6f65db831f5b81a145522b7a18009f08d47f4266b495ad005a98f0b26502cbfa",
+      "song_78e9fe25cee951189ac5809e395168efdeb16dbf0562071c61e6f0d4ae5d8791",
+      "song_7bd2bf2045e94364196d1d0692a69c3eca9cdc58cf9e955096695cdebd374316",
+      "song_9cfb2e5a55abb7300a23b5f494d87dc8e33dfb5738e873c99eb20ced015067d0",
+      "song_bd6376a34f2de0be504db8d256d94eff21b823a697c698e02dab73d9476f0062",
+      "song_01d1576b821aee8af9b6d59d5e42eb62d44ec49f657c68cc617c350efb6c69c2",
+      "song_6ced5df219ba8cbfffcba6e5048f27739b34e9043e510ef3094bfc2d0c6b16ab"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 0,
+      "input_tokens": 12420,
+      "output_tokens": 951,
+      "reasoning_output_tokens": 24
+    }
+  },
+  {
+    "batch": 2,
+    "date": "2026-09-21T23:54:17.655792+00:00",
+    "elapsed_seconds": 22.301974708000003,
+    "mode": "repeat",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "b49cdeaa078799c655be1ba338d56370d09911a37c64a028848e791275dae2a3",
+    "response_sha256": "12668266bde7eb4705ec6c52138e90d0b4c880bc3c1e4cc16d621538a7172f44",
+    "song_ids": [
+      "song_820e02d28e7ec0e0caa43ee9d8b41461b355022c9f39026dafa6a99c4a8b7da9",
+      "song_b4ab3d9c2d8c51cee5a488e94ad86865b45b5dbd49c3a188e29ca7871e610312",
+      "song_b555d7adc406312bc519e83111bf9e3801029c3f84ee56adbb3ffdc03794f183",
+      "song_f413bb2f755c0d08ca66cbd330d8d0aad2f4b54c4786ea8a890fbabdd4ead78d",
+      "song_19fb7f40ca7c53a8e83a2254a766349bf3204b9342b4a08f0205263e5f593983",
+      "song_6ccb3e49d2962a804c8e24914948ebaa0fc67ee45d64197dea1eef5d3ee1dcb9",
+      "song_70900a0ccd6744ecc1717fb703c8e1af72932434bd9a2708ed285ac0437294d8",
+      "song_82cc7c9780e3340ad82f5a3622292b290007c3cc0bb566f91df6df8fade52fa1",
+      "song_88c7f400820aee145eea762b34117646ce5f51b0b1d4a1b7fc4728dd9c82452f",
+      "song_9bfd0b1339802a6c5c4fe6dc0ee0b93cc3e80ebde69768c0cae5461a88f536aa"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 14422,
+      "output_tokens": 1027,
+      "reasoning_output_tokens": 13
+    }
+  },
+  {
+    "batch": 3,
+    "date": "2026-09-21T23:35:04.534095+00:00",
+    "elapsed_seconds": 22.627189874999992,
+    "mode": "repeat",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "52dcd217093c65f4b37eed28ba77952a5f64d916f63c3d559e0b9d8ba6aadcd9",
+    "response_sha256": "a07f5796d22064e12aee4f68f4ea6a0bdb28fd7cdc1488c71d56e2a1a58b30ba",
+    "song_ids": [
+      "song_281bf843e63cfc26de275096d493c66105a4aa81844dc618ba901b09393cbe8f",
+      "song_4b7c580974959a23da3280d85175cf219b9e7a2fb47a5170194c04b30f5153e8",
+      "song_695e422dbade3ba08674fe80528f816e49d4db0c0462ec073a9b0b8608aa9708",
+      "song_8665a124456b78459e42436a6abf3c1cd6dbf5a06c66ddfbe532cd2370a375f9",
+      "song_aaa0e4a963fc10aa6f920a0aac49efadb98b0565d37028e63fbe65b523fb1575",
+      "song_b368dcca49e573d3263eff812c0545caeaf18a85810fd9d49bda1b38d429e3c8",
+      "song_2c30bf5fd805f637201e1f648e5f43997dd57e3aefda5561672d7f909dd6c0d2",
+      "song_2f6e3e6b8104a54fd692e7b4ef922b58471ea5a0b754739f1a4bea2e60912bf8",
+      "song_43a3c28b92006dfa57ea20e3efce754cbb2fde0e1621444da8eb022d7b067b5b",
+      "song_657624a03eec82295dcc4b7e5f65d60e6e3e8327ab5967b934b28371d060205b"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 13076,
+      "output_tokens": 1038,
+      "reasoning_output_tokens": 28
+    }
+  },
+  {
+    "batch": 4,
+    "date": "2026-09-21T23:54:39.963769+00:00",
+    "elapsed_seconds": 10.993940459000001,
+    "mode": "repeat",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "13b46c4a4733b00275aef2a25bd9ebacc006a43e86291f60a52fb74109c73deb",
+    "response_sha256": "78195087e2c3680b671a1202dc129fe12f5fb68e8819055b0a56c28c78c61909",
+    "song_ids": [
+      "song_76fa1f23eef57d0fae6fd00ae8b39859ff432bf3cef88c39427b1068d859cd9f",
+      "song_f5daad636fce6213fbf775c1e0ed2b596ff259fa88b5bea40660fa9ed8dbcaf0"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 10312,
+      "output_tokens": 406,
+      "reasoning_output_tokens": 203
+    }
+  },
+  {
+    "batch": 0,
+    "date": "2026-09-21T23:36:25.182080+00:00",
+    "elapsed_seconds": 21.554055125,
+    "mode": "exact_repeat",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "1f013fb81fdace23718db4f017e83fd4b80180b2fb0e587fb8dfa0c3624c30e1",
+    "response_sha256": "ef12bbc74c9abdbd10fa042d6a881ecd23b6a1d46e9d4dece08fd9ed023fba8e",
+    "song_ids": [
+      "song_028b67eff4d0dacafc43578a5cb5f20a3d81d5c10e714d60b22e9c384905e577",
+      "song_060dc11b7add4128787a3e797588e995c8c30d9d761250d7d66dbda9fb2f34fd",
+      "song_16e696fd68d9cd43c6c58ce1e39caf3ce131ea4d63565414650b5823739961a6",
+      "song_24efbab109321c526d44623d85350b55b66695d5c7d7baadbe79d554aba62c02",
+      "song_26dc8b6a55362935b770a92681be528031e1eae60d47b21f5bbe20b9a2398b27",
+      "song_2a3f18e665154675d0a7dffb315d109304ace7c807661eb1dd640c074127b597",
+      "song_2d1c4e54ff3b4fea69b44bc5076c5c2e707dc6f2834e4bef86e57b071425eda2",
+      "song_2ed2aa20387869c523a11fcf2e952b641ae342c440e04c132e5a4ae001586f68",
+      "song_30d830a95ffb8c7322352dd1f2121a5deea8394105665f02987fe06fa0a7b146",
+      "song_3bdcd0c52b13009a6dc8b41cff8ae72333763ec0677acbdc762853aba365b808"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12631,
+      "output_tokens": 991,
+      "reasoning_output_tokens": 14
+    }
+  },
+  {
+    "batch": 1,
+    "date": "2026-09-21T23:36:46.738443+00:00",
+    "elapsed_seconds": 20.505737958999998,
+    "mode": "exact_repeat",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "e3fe645d8a24720b5ec4470767d449e8d4a543a6fae71d13d37d588ff45fda1d",
+    "response_sha256": "f744e4aa1f2ae1133e8133931778ca7b90289ed3b90976c7af749ce9b55745ea",
+    "song_ids": [
+      "song_e1f45929c6345392f6adc7541dfe0a4103e1ac70493fc9ab99b480bc0c9a8fd3",
+      "song_e50ee12a240787ede44134bbc71c2d8a6ef767e0dd987e290fadd6f90723878c",
+      "song_eae2b284073d876fe50a3dc3452c44d09dd57c12fa59acdd7632ca003a06fd9b",
+      "song_ee1678844cd446d8ee33db39a10f052436354f702cdd852b88af825a1dec085a",
+      "song_ee6a32fdd246fd6dbe420ffe3162da5ce55b3f69b0d05dcb4576ea8de71ccf40",
+      "song_f3db26fdd2abc5385af52b80b038797c179c169cb90f041d2bca07aad77c9d95",
+      "song_f4457b8e049ddee44b2410adfdbf5bcd669b1c58db55fba1ffb6e7eb0bfa2e42",
+      "song_f62b2b6113fad8aa92dfa0b6ad2a8b8f581c0ee3fd8c4781be8a3af5247212dd",
+      "song_ff30746ebc21ca46bb47e0b7741190ab7516d361cbc9bb685bf80c40a546a54c",
+      "song_010219005840e515a4d29ef366c9bcc5ff5bee45800ac4851d62f9e5db33a858"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 12273,
+      "output_tokens": 958,
+      "reasoning_output_tokens": 20
+    }
+  },
+  {
+    "batch": 2,
+    "date": "2026-09-21T23:54:18.827618+00:00",
+    "elapsed_seconds": 19.646923125,
+    "mode": "exact_repeat",
+    "model_requested": "gpt-5.5",
+    "prompt_sha256": "728d045f2342866f642847cf6d4e79208b9d53c569ee410cc066d1c4c28ee9bd",
+    "response_sha256": "8c6bee396f310cee00a9f14879838fe3d77e701292ab5681aa40d1f9796f6b38",
+    "song_ids": [
+      "song_c73630cbce298becd39125cf280c97d9985578261653d069ff5431a5a999de43",
+      "song_db7d862b0ddc918e090d876541a63028f5d45b90416f6075469c14b13793bc0a",
+      "song_dce16762d9c1c93a56f2d8610ed06810e5b7d751cf1c094513b3d40a8756af0e",
+      "song_e4d2a835b54f92d8f7e1ce6ccec9bfad08ca4df59dc052fc94a65e5461e099a3",
+      "song_ecb2eaba04133bd3bf991f0546cd24c82bf76d8c0477040fa17420eab4f91396",
+      "song_ee609cb946e2acfbea67800c78b1fd34dc779ede1eeebbfcef2121cc2fcc452b",
+      "song_faa0e48f9b6e0a4a092f2ce055e9c5d96d70c0abe941a888a98bd2ebfb4ad1f3",
+      "song_fc245e54afcc2a2725b53d7ab475b9b5009d8df3b072a0879c4cbd0c34bcaa84",
+      "song_06018125bb187ee03e5005d52d433305c7ca3abbd08c919f84355f8c4a8e5eb4",
+      "song_09acaf36a0701d6da9fd5c343232f2bea10749bd7f69bad7257803ffc4c91d90"
+    ],
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 6656,
+      "input_tokens": 11456,
+      "output_tokens": 910,
+      "reasoning_output_tokens": 17
+    }
+  }
+]

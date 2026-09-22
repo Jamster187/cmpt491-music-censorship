@@ -1,0 +1,215 @@
+{
+  "assigned": 300,
+  "confidence": {
+    "high": 217,
+    "low": 18,
+    "medium": 65
+  },
+  "exact_repeat_agree": 30,
+  "exact_repeat_n": 30,
+  "genres": {
+    "Afrobeats / African Pop": 4,
+    "Alternative / Indie": 10,
+    "Country": 25,
+    "Electronic / Dance": 15,
+    "Folk / Singer-Songwriter": 5,
+    "Gospel / Christian": 4,
+    "Hip-Hop / Rap": 42,
+    "Jazz / Blues": 7,
+    "K-Pop": 3,
+    "Latin": 8,
+    "Metal": 2,
+    "Other": 7,
+    "Pop": 72,
+    "R&B / Soul": 52,
+    "Reggae / Dancehall": 2,
+    "Rock": 42
+  },
+  "identity_agree": 69,
+  "identity_by_evidence": {
+    "no_tags": {
+      "agree": 32,
+      "n": 36
+    },
+    "tags": {
+      "agree": 37,
+      "n": 41
+    }
+  },
+  "identity_n": 77,
+  "performance": {
+    "elapsed_wall_seconds": 1548.494915,
+    "exact_repeat": {
+      "seconds": 61.706716209,
+      "songs": 30,
+      "tokens": {
+        "cached_input_tokens": 19968,
+        "input_tokens": 36360,
+        "output_tokens": 2859,
+        "reasoning_output_tokens": 51
+      }
+    },
+    "full_api_observed_cache_usd_upper": 189.30535182,
+    "full_api_uncached_usd_upper": 264.8949147,
+    "full_serial_hours": 17.161401064526697,
+    "identity": {
+      "seconds": 170.71504996000002,
+      "songs": 77,
+      "tokens": {
+        "cached_input_tokens": 39936,
+        "input_tokens": 81728,
+        "output_tokens": 7939,
+        "reasoning_output_tokens": 606
+      }
+    },
+    "metadata": {
+      "seconds": 660.97190363,
+      "songs": 300,
+      "tokens": {
+        "cached_input_tokens": 179712,
+        "input_tokens": 372930,
+        "output_tokens": 30539,
+        "reasoning_output_tokens": 1773
+      }
+    },
+    "prediction_bytes_per_song": 373.6433333333333,
+    "repeat": {
+      "seconds": 97.710759001,
+      "songs": 42,
+      "tokens": {
+        "cached_input_tokens": 26624,
+        "input_tokens": 61660,
+        "output_tokens": 4368,
+        "reasoning_output_tokens": 288
+      }
+    },
+    "superseded_requests": {
+      "batches": 16,
+      "seconds": 327.4722498759999
+    }
+  },
+  "periods": {
+    "1958–1969": {
+      "confidence": {
+        "high": 26,
+        "low": 6,
+        "medium": 11
+      },
+      "n": 43
+    },
+    "1970s": {
+      "confidence": {
+        "high": 32,
+        "low": 4,
+        "medium": 7
+      },
+      "n": 43
+    },
+    "1980s": {
+      "confidence": {
+        "high": 30,
+        "low": 3,
+        "medium": 10
+      },
+      "n": 43
+    },
+    "1990s": {
+      "confidence": {
+        "high": 32,
+        "medium": 11
+      },
+      "n": 43
+    },
+    "2000s": {
+      "confidence": {
+        "high": 35,
+        "medium": 8
+      },
+      "n": 43
+    },
+    "2010–2019": {
+      "confidence": {
+        "high": 35,
+        "medium": 8
+      },
+      "n": 43
+    },
+    "2020–2026": {
+      "confidence": {
+        "high": 27,
+        "low": 5,
+        "medium": 10
+      },
+      "n": 42
+    }
+  },
+  "repeat_agree": 41,
+  "repeat_n": 42,
+  "review": {
+    "by_confidence": {
+      "high": {
+        "plausible": 98,
+        "questionable": 2
+      },
+      "low": {
+        "clearly wrong": 2,
+        "questionable": 16
+      },
+      "medium": {
+        "clearly wrong": 1,
+        "plausible": 19,
+        "questionable": 5
+      }
+    },
+    "by_period": {
+      "1958–1969": {
+        "plausible": 17,
+        "questionable": 6
+      },
+      "1970s": {
+        "clearly wrong": 1,
+        "plausible": 16,
+        "questionable": 4
+      },
+      "1980s": {
+        "clearly wrong": 2,
+        "plausible": 17,
+        "questionable": 2
+      },
+      "1990s": {
+        "plausible": 19
+      },
+      "2000s": {
+        "plausible": 16,
+        "questionable": 2
+      },
+      "2010–2019": {
+        "plausible": 17,
+        "questionable": 2
+      },
+      "2020–2026": {
+        "plausible": 15,
+        "questionable": 7
+      }
+    },
+    "counts": {
+      "clearly wrong": 3,
+      "plausible": 117,
+      "questionable": 23
+    },
+    "identity_counts": {
+      "plausible": 71,
+      "questionable": 6
+    },
+    "n": 143,
+    "paired_metadata_counts": {
+      "clearly wrong": 2,
+      "plausible": 68,
+      "questionable": 7
+    }
+  },
+  "strong_primary_agree": 83,
+  "strong_primary_n": 90,
+  "strong_set_agree": 114,
+  "strong_set_n": 118
+}

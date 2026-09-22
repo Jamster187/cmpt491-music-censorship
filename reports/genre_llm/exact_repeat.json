@@ -1,0 +1,259 @@
+[
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Recording tags strongly point to pop and pop-rock/folk-rock; the identifiable Mama Cass single is best treated as late-1960s pop with rock crossover.",
+    "secondary_genres": [
+      "Rock",
+      "Folk / Singer-Songwriter"
+    ],
+    "song_id": "song_028b67eff4d0dacafc43578a5cb5f20a3d81d5c10e714d60b22e9c384905e577"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Rock",
+    "reason": "No tags are supplied, but the identifiable 1969 Paul Revere & The Raiders track is known as a garage/pop-rock single, making Rock the clearest broad fit.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_060dc11b7add4128787a3e797588e995c8c30d9d761250d7d66dbda9fb2f34fd"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Recording tags support pop/contemporary pop, with some jazz evidence; the identifiable Ed Ames hit is an adult-pop vocal ballad rather than primarily jazz.",
+    "secondary_genres": [
+      "Jazz / Blues"
+    ],
+    "song_id": "song_16e696fd68d9cd43c6c58ce1e39caf3ce131ea4d63565414650b5823739961a6"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Folk / Singer-Songwriter",
+    "reason": "Recording tags heavily support folk and folk rock, with pop and rock crossover; the identifiable Simon & Garfunkel song fits folk-rock/singer-songwriter style.",
+    "secondary_genres": [
+      "Rock",
+      "Pop"
+    ],
+    "song_id": "song_24efbab109321c526d44623d85350b55b66695d5c7d7baadbe79d554aba62c02"
+  },
+  {
+    "confidence": "low",
+    "primary_genre": "Pop",
+    "reason": "No tags are supplied; the identifiable late-1950s novelty/teen-pop record suggests Pop, but the evidence is sparse and style certainty is limited.",
+    "secondary_genres": [],
+    "song_id": "song_26dc8b6a55362935b770a92681be528031e1eae60d47b21f5bbe20b9a2398b27"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Pop",
+    "reason": "No tags are supplied, but the identifiable Duprees recording is in the early-1960s vocal-group pop tradition; classification relies on learned song knowledge.",
+    "secondary_genres": [
+      "R&B / Soul"
+    ],
+    "song_id": "song_2a3f18e665154675d0a7dffb315d109304ace7c807661eb1dd640c074127b597"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Recording tags include strong pop plus rock-and-roll, country, blues, and blue-eyed soul evidence; this identifiable Elvis ballad is primarily pop with crossover roots.",
+    "secondary_genres": [
+      "Rock",
+      "Country",
+      "R&B / Soul"
+    ],
+    "song_id": "song_2d1c4e54ff3b4fea69b44bc5076c5c2e707dc6f2834e4bef86e57b071425eda2"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Recording tags emphasize psychedelic rock, rock, and classic rock, with pop-rock crossover; the identifiable Beatles track is primarily psychedelic rock.",
+    "secondary_genres": [
+      "Pop",
+      "Alternative / Indie"
+    ],
+    "song_id": "song_2ed2aa20387869c523a11fcf2e952b641ae342c440e04c132e5a4ae001586f68"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "R&B / Soul",
+    "reason": "No tags are supplied, but the identifiable Diana Ross & The Supremes single is Motown soul-pop; R&B/Soul is the stronger musical scene fit with pop crossover.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_30d830a95ffb8c7322352dd1f2121a5deea8394105665f02987fe06fa0a7b146"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Jazz / Blues",
+    "reason": "Recording tags mostly describe holiday context but also include jazz and swing; the identifiable Nat King Cole recording is a jazz-influenced traditional pop vocal standard.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_3bdcd0c52b13009a6dc8b41cff8ae72333763ec0677acbdc762853aba365b808"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Pop",
+    "reason": "Identifiable 1989 Linda Ronstadt/Aaron Neville duet, known as an adult contemporary pop ballad; no raw tags were supplied, so this relies on song knowledge.",
+    "secondary_genres": [
+      "R&B / Soul"
+    ],
+    "song_id": "song_e1f45929c6345392f6adc7541dfe0a4103e1ac70493fc9ab99b480bc0c9a8fd3"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Identifiable John Mellencamp mid-1980s track, known as heartland rock; no raw tags were supplied, so the choice relies on song knowledge.",
+    "secondary_genres": [],
+    "song_id": "song_e50ee12a240787ede44134bbc71c2d8a6ef767e0dd987e290fadd6f90723878c"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Recording tags strongly support rock, hard rock, arena rock and pop rock; glam/hair metal tags are present but the broad song identity is best captured as Rock.",
+    "secondary_genres": [
+      "Metal",
+      "Pop"
+    ],
+    "song_id": "song_eae2b284073d876fe50a3dc3452c44d09dd57c12fa59acdd7632ca003a06fd9b"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Pop",
+    "reason": "Recording tags supply pop and soundtrack, and the identifiable instrumental is a pop/adult-contemporary soundtrack theme; instrumental scoring aspect adds some classification looseness.",
+    "secondary_genres": [],
+    "song_id": "song_ee1678844cd446d8ee33db39a10f052436354f702cdd852b88af825a1dec085a"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Rock",
+    "reason": "Recording and artist evidence both indicate rock, matching the identifiable Bruce Springsteen song's heartland rock style.",
+    "secondary_genres": [],
+    "song_id": "song_ee6a32fdd246fd6dbe420ffe3162da5ce55b3f69b0d05dcb4576ea8de71ccf40"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Identifiable Afrika Bambaataa track is foundational electro hip-hop; no raw tags were supplied, so this relies on song knowledge.",
+    "secondary_genres": [
+      "Electronic / Dance"
+    ],
+    "song_id": "song_f3db26fdd2abc5385af52b80b038797c179c169cb90f041d2bca07aad77c9d95"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Electronic / Dance",
+    "reason": "Identifiable Technotronic hit is known as a late-1980s house/Eurodance dance track; no raw tags were supplied, so this relies on song knowledge.",
+    "secondary_genres": [
+      "Hip-Hop / Rap"
+    ],
+    "song_id": "song_f4457b8e049ddee44b2410adfdbf5bcd669b1c58db55fba1ffb6e7eb0bfa2e42"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Reggae / Dancehall",
+    "reason": "Recording tags strongly support reggae, dub, ska and reggae-pop, matching the identifiable UB40 version's pop-reggae style.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_f62b2b6113fad8aa92dfa0b6ad2a8b8f581c0ee3fd8c4781be8a3af5247212dd"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Recording tags strongly support hip hop/rap alongside rock, matching the identifiable Run-D.M.C. rap-rock crossover version.",
+    "secondary_genres": [
+      "Rock"
+    ],
+    "song_id": "song_ff30746ebc21ca46bb47e0b7741190ab7516d361cbc9bb685bf80c40a546a54c"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Electronic / Dance",
+    "reason": "Identifiable 1990s Ruffneck/Yavahn single is associated with house/club dance; no raw tags were supplied, so this relies on song knowledge.",
+    "secondary_genres": [],
+    "song_id": "song_010219005840e515a4d29ef366c9bcc5ff5bee45800ac4851d62f9e5db33a858"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Pop",
+    "reason": "Identifiable Iyaz single with no supplied tags; learned context points to a pop/R&B-leaning radio track, but evidence here is indirect.",
+    "secondary_genres": [
+      "R&B / Soul"
+    ],
+    "song_id": "song_c73630cbce298becd39125cf280c97d9985578261653d069ff5431a5a999de43"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Country",
+    "reason": "Recording tags consistently supply country, contemporary country, and modern country, matching the identifiable Kenny Chesney song style.",
+    "secondary_genres": [],
+    "song_id": "song_db7d862b0ddc918e090d876541a63028f5d45b90416f6075469c14b13793bc0a"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "The recording is identifiable as Flo Rida's rap-pop hit, and supplied tags include hip house/electronica, supporting a dance crossover.",
+    "secondary_genres": [
+      "Electronic / Dance",
+      "Pop"
+    ],
+    "song_id": "song_dce16762d9c1c93a56f2d8610ed06810e5b7d751cf1c094513b3d40a8756af0e"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Country",
+    "reason": "Recording-level country tag directly supports the identifiable Blake Shelton country single.",
+    "secondary_genres": [],
+    "song_id": "song_e4d2a835b54f92d8f7e1ce6ccec9bfad08ca4df59dc052fc94a65e5461e099a3"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Electronic / Dance",
+    "reason": "Recording tags include dance-pop, electropop, synth-pop, and pop; Marshmello's identifiable production makes electronic/dance the strongest broad fit.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_ecb2eaba04133bd3bf991f0546cd24c82bf76d8c0477040fa17420eab4f91396"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Recording tags include hip hop and gangsta rap, with artist tags adding trap and southern hip hop support for this identifiable remix.",
+    "secondary_genres": [],
+    "song_id": "song_ee609cb946e2acfbea67800c78b1fd34dc779ede1eeebbfcef2121cc2fcc452b"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Hip-Hop / Rap",
+    "reason": "Recording tags supply hip hop and melodic rap alongside pop, matching the identifiable melodic rap-pop crossover song.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_faa0e48f9b6e0a4a092f2ce055e9c5d96d70c0abe941a888a98bd2ebfb4ad1f3"
+  },
+  {
+    "confidence": "high",
+    "primary_genre": "Country",
+    "reason": "No tags are supplied, but the identifiable Bebe Rexha and Florida Georgia Line recording is a country-pop crossover with country as a defining style element.",
+    "secondary_genres": [
+      "Pop"
+    ],
+    "song_id": "song_fc245e54afcc2a2725b53d7ab475b9b5009d8df3b072a0879c4cbd0c34bcaa84"
+  },
+  {
+    "confidence": "low",
+    "primary_genre": "Pop",
+    "reason": "Recording-level evidence includes only a generic pop tag plus non-genre/noisy tags, and the song identity is not well established from learned context.",
+    "secondary_genres": [],
+    "song_id": "song_06018125bb187ee03e5005d52d433305c7ca3abbd08c919f84355f8c4a8e5eb4"
+  },
+  {
+    "confidence": "medium",
+    "primary_genre": "Country",
+    "reason": "Recording tags supply country and artist context supports country/country pop, but the specific 2025 song identity is less certain.",
+    "secondary_genres": [],
+    "song_id": "song_09acaf36a0701d6da9fd5c343232f2bea10749bd7f69bad7257803ffc4c91d90"
+  }
+]
