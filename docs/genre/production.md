@@ -67,3 +67,9 @@ publication, rerun the protected-file validator and full tests, then perform a
 bounded deterministic review spanning confidence levels, genres and periods.
 Do not manually overwrite labels during review. Confidence is qualitative;
 secondary genres are provisional. No public master rebuild is part of this run.
+
+The read-only `python3 src/genre_production_audit.py` command regenerates the
+aggregate checkpoint report. Once inference is complete, it also creates a local
+160-song review template: two per available genre, 15 per confidence level, five
+per historical period, then hash-fills the union to 160. Selection is deterministic
+and includes rare genres. It never assigns review judgments or changes labels.
