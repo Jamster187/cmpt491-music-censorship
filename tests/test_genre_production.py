@@ -15,8 +15,9 @@ class ProductionTests(unittest.TestCase):
 
     def database(self):
         c=sqlite3.connect(':memory:');c.row_factory=sqlite3.Row
-        c.execute('CREATE TABLE songs(song_id PRIMARY KEY,status,primary_genre,secondary_genres,confidence,reason,model,prompt_version,source,error,completed_at)')
+        c.execute('CREATE TABLE songs(song_id PRIMARY KEY,status,primary_genre,secondary_genres,confidence,reason,model,prompt_version,source,error,completed_at,batch_id)')
         c.executemany("INSERT INTO songs(song_id,status) VALUES (?,'pending')",[('a',),('b',)])
+        c.execute('UPDATE songs SET batch_id=1')
         return c
 
     def test_completed_rows_are_immutable(self):
@@ -48,13 +49,16 @@ class ProductionTests(unittest.TestCase):
             folder=Path(tmp)/'saved';folder.mkdir()
             c.execute('ALTER TABLE songs ADD COLUMN input_json')
             c.execute('UPDATE songs SET input_json=?',(json.dumps({'song_id':'a'}),))
-            c.execute('CREATE TABLE batches(batch_id,status)')
-            c.execute("INSERT INTO batches VALUES (1,'running')")
+            c.execute('CREATE TABLE batches(batch_id,status,song_ids,request_sha256)')
+            c.execute("INSERT INTO batches(batch_id,status,song_ids) VALUES (1,'running','[\"a\"]')")
+            c.execute("UPDATE songs SET batch_id=2 WHERE song_id='b'")
             c.execute('CREATE TABLE attempts(attempt_id,batch_id,status,folder,finished_at,usage_json,response_sha256,error)')
             c.execute("INSERT INTO attempts(attempt_id,batch_id,status,folder) VALUES (1,1,'running','saved')")
             (folder/'response.json').write_text(json.dumps({'predictions':[self.row()]}))
             (folder/'events.jsonl').write_text(json.dumps({'type':'turn.completed','usage':{'input_tokens':1}}))
             batch={'batch_id':1,'song_ids':'["a"]','request_sha256':g.digest(g.request_text([{'song_id':'a'}]).encode())}
+            (folder/'request.txt').write_text(g.request_text([{'song_id':'a'}]))
+            c.execute('UPDATE batches SET request_sha256=?',(batch['request_sha256'],))
             with patch.object(g,'LOCAL',Path(tmp)),patch.object(g.subprocess,'run') as run:
                 g.execute_batch(c,batch)
                 run.assert_not_called()
@@ -66,13 +70,16 @@ class ProductionTests(unittest.TestCase):
             folder=Path(tmp)/'saved';folder.mkdir()
             c.execute('ALTER TABLE songs ADD COLUMN input_json')
             c.execute('UPDATE songs SET input_json=?',(json.dumps({'song_id':'a'}),))
-            c.execute('CREATE TABLE batches(batch_id,status)')
-            c.execute("INSERT INTO batches VALUES (1,'running')")
+            c.execute('CREATE TABLE batches(batch_id,status,song_ids,request_sha256)')
+            c.execute("INSERT INTO batches(batch_id,status,song_ids) VALUES (1,'running','[\"a\"]')")
+            c.execute("UPDATE songs SET batch_id=2 WHERE song_id='b'")
             c.execute('CREATE TABLE attempts(attempt_id,batch_id,status,folder,finished_at,usage_json,response_sha256,error)')
             c.execute("INSERT INTO attempts(attempt_id,batch_id,status,folder,error) VALUES (1,1,'error','saved','ValueError: Unexpected tool use')")
             (folder/'response.json').write_text(json.dumps({'predictions':[self.row()]}))
             (folder/'events.jsonl').write_text(json.dumps({'type':'turn.completed','usage':{'input_tokens':1}}))
             batch={'batch_id':1,'song_ids':'["a"]','request_sha256':g.digest(g.request_text([{'song_id':'a'}]).encode())}
+            (folder/'request.txt').write_text(g.request_text([{'song_id':'a'}]))
+            c.execute('UPDATE batches SET request_sha256=?',(batch['request_sha256'],))
             with patch.object(g,'LOCAL',Path(tmp)),patch.object(g.subprocess,'run') as run:
                 g.execute_batch(c,batch)
                 run.assert_not_called()

@@ -42,13 +42,14 @@ Exact inputs, request hashes, immutable successful labels, failures and attempts
 are retained. Private request/response logs and progress/completion JSON are in
 `data/experiments/genre_production/`. Completed batches are skipped; a complete
 saved response from an interrupted attempt is recovered without inference.
-An unfinished batch retains its original ten-song context when retried; any
-previously completed rows remain unchanged. Only one worker can hold the lock.
+Malformed responses are retried only for unresolved songs; previously completed
+rows remain unchanged. Each subset request retains its exact input list, hash and
+runner/model configuration in a private manifest. Only one worker holds the lock.
 
 After stopping a worker, confirm its Codex child has also exited before resuming.
 Inspect errors before using `python3 src/genre_production.py run --retry-errors`.
-This retries failed batches with identical requests and preserves their successful
-rows. It does not bypass a quality stop. Do not introduce a separately billed API
+This retries unresolved songs from failed batches with unchanged individual inputs
+and preserves successful rows. It does not bypass a quality stop. Do not introduce a separately billed API
 fallback to resolve access limits.
 
 ## Monitoring and completion
@@ -57,9 +58,14 @@ After each batch, persist counts by genre, confidence and historical period.
 Recent windows of 200 new results stop production if one genre reaches 80%, Other
 reaches 50%, low confidence reaches 60%, or a confidence share changes by 40
 percentage points versus the preceding 200. These are coarse operational alarms,
-not evidence that smaller changes are necessarily errors. Any malformed response,
-taxonomy violation, unexpected tool call or transport failure also stops the run.
-Individually valid rows survive another row's schema failure.
+not evidence that smaller changes are necessarily errors. Malformed/schema-invalid responses receive bounded retries. Two failures for an
+exact unresolved subset trigger single-song fallback, also limited to two failures
+per song. Retry budgets persist across interruptions. Exhausted songs retain errors
+while other batches continue; they are never assigned guessed labels. Ten malformed
+responses among the last 20 requests stop the run as a possible systemic problem.
+Unexpected tool calls or transport failures still stop for inspection. Individually
+valid rows with exact unique requested IDs survive another row's schema failure;
+duplicate or foreign IDs are never repaired, mapped by position or accepted.
 
 Inference completion requires all 28,041 rows to pass the frozen output validator.
 A completion marker explicitly leaves qualitative review pending. Before dataset

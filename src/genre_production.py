@@ -173,6 +173,9 @@ def stats(c):
 def monitor(c):
     recent=[dict(r) for r in c.execute("SELECT primary_genre,confidence FROM songs WHERE source='production' AND status='completed' ORDER BY completed_at DESC,song_id LIMIT 400")]
     why=drift(recent[:200],recent[200:])
+    attempts=c.execute('SELECT error FROM attempts ORDER BY attempt_id DESC LIMIT 20').fetchall()
+    if len(attempts)==20 and sum(bool(a[0] and a[0].startswith('MalformedResponse:')) for a in attempts)>=10:
+        why=why or 'Malformed responses in at least 10 of the last 20 requests'
     s=stats(c)
     c.execute('INSERT INTO checkpoints(created_at,summary_json,stop_reason) VALUES (?,?,?)',(now(),canonical(s),why));c.commit()
     dump(LOCAL/'progress.json',s)
@@ -180,8 +183,32 @@ def monitor(c):
     return s
 
 
+class MalformedResponse(ValueError):
+    """Retryable structured-output failure; never permits guessed identity."""
+
+
+def finish_batch(c, bi):
+    remaining=c.execute("SELECT 1 FROM songs WHERE batch_id=? AND status!='completed' LIMIT 1",(bi,)).fetchone()
+    c.execute('UPDATE batches SET status=? WHERE batch_id=?',('pending' if remaining else 'completed',bi))
+
+
+def request_manifest(batch):
+    return {'song_ids':json.loads(batch['song_ids']),'request_sha256':batch['request_sha256'],
+            'model':MODEL,'config':CONFIG,'prompt_version':PILOT_COMMIT,'runner_sha256':sha(Path(__file__))}
+
+
+def saved_request(c, attempt):
+    path=LOCAL/attempt['folder']/'request_manifest.json'
+    if path.exists():return json.loads(path.read_text())
+    # Before subset retries, every request used the complete original batch.
+    batch=c.execute('SELECT * FROM batches WHERE batch_id=?',(attempt['batch_id'],)).fetchone()
+    return request_manifest(batch)
+
+
 def ingest_response(c, batch, folder):
-    ids=json.loads(batch['song_ids']);obj=json.loads((folder/'response.json').read_text())
+    ids=json.loads(batch['song_ids'])
+    try:obj=json.loads((folder/'response.json').read_text())
+    except json.JSONDecodeError as exc:raise MalformedResponse('Invalid response JSON') from exc
     events=[json.loads(x) for x in (folder/'events.jsonl').read_text().splitlines()]
     for e in events:
         if 'item' not in e:continue
@@ -192,16 +219,20 @@ def ingest_response(c, batch, folder):
                           'Falling back from WebSockets to HTTPS transport. request timed out')
         if item['type'] not in ('agent_message','reasoning') and not transport_notice:raise ValueError('Unexpected tool use')
     if sum(e['type']=='turn.completed' for e in events)!=1:raise ValueError('No unique completed inference turn')
-    # Preserve individually valid rows even if another row fails schema validation.
-    rows=obj.get('predictions',[]) if isinstance(obj,dict) else []
-    seen=Counter(r.get('song_id') for r in rows if isinstance(r,dict))
+    # Only individually schema-valid, exact, unique requested IDs can persist.
+    # A foreign/missing/mangled ID is never repaired or assigned by row position.
+    if not isinstance(obj,dict) or set(obj)!={'predictions'} or not isinstance(obj['predictions'],list):
+        raise MalformedResponse('Invalid predictions envelope')
+    rows=obj['predictions']
+    seen=Counter(r.get('song_id') for r in rows if isinstance(r,dict) and isinstance(r.get('song_id'),str))
     for r in rows:
-        if not isinstance(r,dict) or r.get('song_id') not in ids or seen[r.get('song_id')]!=1:continue
+        if not isinstance(r,dict) or not isinstance(r.get('song_id'),str) or r['song_id'] not in ids or seen[r['song_id']]!=1:continue
         try:check_predictions({'predictions':[r]},[r['song_id']])
         except (ValueError,TypeError,KeyError):continue
         persist(c,r,'production',now())
     c.commit()
-    check_predictions(obj,ids)
+    try:check_predictions(obj,ids)
+    except (ValueError,TypeError,KeyError) as exc:raise MalformedResponse(str(exc)) from exc
     return next(e.get('usage',{}) for e in events if e['type']=='turn.completed')
 
 
@@ -216,9 +247,15 @@ def execute_batch(c,batch):
         folder=LOCAL/previous['folder']
         if (folder/'response.json').exists():
             try:
-                usage=ingest_response(c,batch,folder)
+                manifest=saved_request(c,previous)
+                if digest((folder/'request.txt').read_bytes())!=manifest['request_sha256']:raise ValueError('Saved request changed')
+                recovery={'batch_id':bi,'song_ids':canonical(manifest['song_ids']),'request_sha256':manifest['request_sha256']}
+                usage=ingest_response(c,recovery,folder)
                 c.execute("UPDATE attempts SET status='recovered',finished_at=?,usage_json=?,response_sha256=? WHERE attempt_id=?",(now(),canonical(usage),sha(folder/'response.json'),previous['attempt_id']))
-                c.execute("UPDATE batches SET status='completed' WHERE batch_id=?",(bi,));c.commit();return
+                finish_batch(c,bi);c.commit();return
+            except MalformedResponse as exc:
+                c.execute("UPDATE attempts SET status='error',finished_at=?,error=? WHERE attempt_id=?",(now(),'MalformedResponse: '+str(exc),previous['attempt_id']));c.commit()
+                raise
             except (ValueError,KeyError,TypeError,OSError) as exc:
                 raise RuntimeError('Interrupted response failed validation; inspect before retrying') from exc
         c.execute("UPDATE attempts SET status='interrupted',finished_at=? WHERE attempt_id=?",(now(),previous['attempt_id']));c.commit()
@@ -226,8 +263,9 @@ def execute_batch(c,batch):
     rel=f'requests/{bi:05d}/{aid:06d}';folder=LOCAL/rel;folder.mkdir(parents=True,exist_ok=True)
     c.execute('UPDATE attempts SET folder=? WHERE attempt_id=?',(rel,aid))
     c.execute("UPDATE batches SET status='running' WHERE batch_id=?",(bi,))
-    c.execute("UPDATE songs SET status='running' WHERE batch_id=? AND status!='completed'",(bi,));c.commit()
+    c.executemany("UPDATE songs SET status='running' WHERE song_id=? AND status!='completed'",[(sid,) for sid in ids]);c.commit()
     (folder/'request.txt').write_text(prompt)
+    dump(folder/'request_manifest.json',request_manifest(batch))
     start=time.monotonic()
     try:
         with tempfile.TemporaryDirectory(prefix='genre-production-') as isolated:
@@ -240,14 +278,58 @@ def execute_batch(c,batch):
         if result.returncode:raise RuntimeError('Transport/runtime failure; inspect private logs; no API fallback')
         usage=ingest_response(c,batch,folder)
         c.execute("UPDATE attempts SET status='completed',finished_at=?,seconds=?,usage_json=?,response_sha256=? WHERE attempt_id=?",(now(),time.monotonic()-start,canonical(usage),sha(folder/'response.json'),aid))
-        c.execute("UPDATE batches SET status='completed' WHERE batch_id=?",(bi,));c.commit()
+        finish_batch(c,bi);c.commit()
     except Exception as exc:
         message=type(exc).__name__+': '+str(exc)
         c.execute("UPDATE attempts SET status='error',finished_at=?,seconds=?,error=? WHERE attempt_id=?",(now(),time.monotonic()-start,message,aid))
         c.execute("UPDATE batches SET status='error' WHERE batch_id=?",(bi,))
-        c.execute("UPDATE songs SET status='error',error=? WHERE batch_id=? AND status!='completed'",(message,bi));c.commit()
+        c.executemany("UPDATE songs SET status='error',error=? WHERE song_id=? AND status!='completed'",[(message,sid) for sid in ids]);c.commit()
         monitor(c)
+        if isinstance(exc,MalformedResponse):raise
         raise RuntimeError('STOP: failed batch '+str(bi)+'; successful song rows preserved; inspect before retry') from exc
+
+
+def unresolved(c, ids):
+    return [sid for sid in ids if c.execute('SELECT status FROM songs WHERE song_id=?',(sid,)).fetchone()[0]!='completed']
+
+
+def malformed_attempts(c, bi, ids):
+    count=0
+    for a in c.execute("SELECT * FROM attempts WHERE batch_id=? AND status='error' ORDER BY attempt_id",(bi,)):
+        if a['error'] and (a['error'].startswith('MalformedResponse:') or a['error']=='ValueError: Missing, duplicate or foreign song_id'):
+            if saved_request(c,a)['song_ids']==ids:count+=1
+    return count
+
+
+def subset_request(c, bi, ids):
+    rows=[json.loads(c.execute('SELECT input_json FROM songs WHERE song_id=?',(sid,)).fetchone()[0]) for sid in ids]
+    return {'batch_id':bi,'song_ids':canonical(ids),'request_sha256':digest(request_text(rows).encode())}
+
+
+def execute_resilient_batch(c, batch):
+    """At most two failures per exact subset, then two per unresolved singleton.
+
+    Budgets come from persisted attempts, so interruptions cannot reset them.
+    Successful rows are removed from every subsequent request.
+    """
+    bi=batch['batch_id'];original=json.loads(batch['song_ids'])
+    # Verify original immutable batch even when retrying only a subset.
+    if subset_request(c,bi,original)['request_sha256']!=batch['request_sha256']:raise ValueError('Original request changed')
+    remaining=unresolved(c,original)
+    while remaining and malformed_attempts(c,bi,remaining)<2:
+        try:execute_batch(c,subset_request(c,bi,remaining))
+        except MalformedResponse:pass
+        remaining=unresolved(c,original)
+    for sid in remaining:
+        while unresolved(c,[sid]) and malformed_attempts(c,bi,[sid])<2:
+            try:execute_batch(c,subset_request(c,bi,[sid]))
+            except MalformedResponse:pass
+    remaining=unresolved(c,original)
+    if remaining:
+        c.executemany("UPDATE songs SET status='error',error='Malformed response retry budget exhausted; no label inferred' WHERE song_id=? AND status!='completed'",[(sid,) for sid in remaining])
+        c.execute("UPDATE batches SET status='error' WHERE batch_id=?",(bi,))
+    else:finish_batch(c,bi)
+    c.commit()
 
 
 def run(retry_errors=False,limit=None):
@@ -267,7 +349,7 @@ def run(retry_errors=False,limit=None):
             batches=c.execute("SELECT * FROM batches WHERE status IN ('pending','running') ORDER BY batch_id").fetchall()
             for i,b in enumerate(batches):
                 if limit is not None and i>=limit:break
-                execute_batch(c,b)
+                execute_resilient_batch(c,b)
                 s=monitor(c)
                 print(now(),'batch',b['batch_id'],'completed',s['status_counts'].get('completed',0),flush=True)
             s=monitor(c)
