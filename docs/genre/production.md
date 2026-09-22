@@ -63,7 +63,7 @@ exact unresolved subset trigger single-song fallback, also limited to two failur
 per song. Retry budgets persist across interruptions. Exhausted songs retain errors
 while other batches continue; they are never assigned guessed labels. Ten malformed
 responses among the last 20 requests stop the run as a possible systemic problem.
-Unexpected tool calls or transport failures still stop for inspection. Individually
+Unexpected tool calls or unrecognized transport failures still stop for inspection. Individually
 valid rows with exact unique requested IDs survive another row's schema failure;
 duplicate or foreign IDs are never repaired, mapped by position or accepted.
 
@@ -90,3 +90,12 @@ remain rejected. A saved response rejected for the old event error can be
 recovered by `run --retry-errors`, without another inference request; successful
 rows are never overwritten. The original error stays in the attempt audit trail.
 This changes transport handling, not the frozen genre methodology.
+
+Batch 1591 stopped on a model-capacity rejection with no response or completed
+turn. Exact `Selected model is at capacity. Please try a different model.` failures
+now receive bounded retries on the same model: at most three capacity failures per
+exact requested subset, with 30- and 60-second backoffs. Attempts and retry budgets
+persist across restarts. Only unresolved IDs are requested. This narrow exception
+requires no saved response and no tool or other unexpected events; unknown runtime,
+quota and authentication errors still stop for inspection. Capacity exhaustion also
+stops for inspection, without falling back to another model or billing path.

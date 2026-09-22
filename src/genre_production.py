@@ -187,6 +187,21 @@ class MalformedResponse(ValueError):
     """Retryable structured-output failure; never permits guessed identity."""
 
 
+class TransientTransportError(RuntimeError):
+    """Observed model-capacity rejection; retry without changing inference."""
+
+
+def capacity_failure(folder):
+    # Fail closed on unknown runtime, access, quota, or mixed failures.
+    events=[json.loads(line) for line in (folder/'events.jsonl').read_text().splitlines()]
+    message='Selected model is at capacity. Please try a different model.'
+    failures=[e for e in events if e.get('type')=='turn.failed']
+    return (not (folder/'response.json').exists() and len(failures)==1
+            and failures[0].get('error',{}).get('message')==message
+            and all(e.get('type') in ('thread.started','turn.started','turn.failed')
+                    or (e.get('type')=='error' and e.get('message')==message) for e in events))
+
+
 def finish_batch(c, bi):
     remaining=c.execute("SELECT 1 FROM songs WHERE batch_id=? AND status!='completed' LIMIT 1",(bi,)).fetchone()
     c.execute('UPDATE batches SET status=? WHERE batch_id=?',('pending' if remaining else 'completed',bi))
@@ -275,7 +290,9 @@ def execute_batch(c,batch):
             cmd+=['-']
             with (folder/'events.jsonl').open('w') as out,(folder/'stderr.log').open('w') as err:
                 result=subprocess.run(cmd,input=prompt,text=True,stdout=out,stderr=err,timeout=600)
-        if result.returncode:raise RuntimeError('Transport/runtime failure; inspect private logs; no API fallback')
+        if result.returncode:
+            if capacity_failure(folder):raise TransientTransportError('Selected model is at capacity')
+            raise RuntimeError('Transport/runtime failure; inspect private logs; no API fallback')
         usage=ingest_response(c,batch,folder)
         c.execute("UPDATE attempts SET status='completed',finished_at=?,seconds=?,usage_json=?,response_sha256=? WHERE attempt_id=?",(now(),time.monotonic()-start,canonical(usage),sha(folder/'response.json'),aid))
         finish_batch(c,bi);c.commit()
@@ -285,7 +302,7 @@ def execute_batch(c,batch):
         c.execute("UPDATE batches SET status='error' WHERE batch_id=?",(bi,))
         c.executemany("UPDATE songs SET status='error',error=? WHERE song_id=? AND status!='completed'",[(message,sid) for sid in ids]);c.commit()
         monitor(c)
-        if isinstance(exc,MalformedResponse):raise
+        if isinstance(exc,(MalformedResponse,TransientTransportError)):raise
         raise RuntimeError('STOP: failed batch '+str(bi)+'; successful song rows preserved; inspect before retry') from exc
 
 
@@ -306,6 +323,25 @@ def subset_request(c, bi, ids):
     return {'batch_id':bi,'song_ids':canonical(ids),'request_sha256':digest(request_text(rows).encode())}
 
 
+def execute_transport_retry(c, batch):
+    """Three capacity failures per exact subset, persisted across restarts."""
+    ids=json.loads(batch['song_ids'])
+    while True:
+        failures=sum(saved_request(c,a)['song_ids']==ids for a in c.execute(
+            "SELECT * FROM attempts WHERE batch_id=? AND status='error' AND error LIKE 'TransientTransportError:%'",
+            (batch['batch_id'],)))
+        if failures>=3:
+            raise RuntimeError('STOP: model capacity retry budget exhausted; inspect before retry; no API fallback')
+        if failures:
+            delay=30*2**(failures-1)
+            print(now(),'batch',batch['batch_id'],'capacity retry after',delay,'seconds',flush=True)
+            time.sleep(delay)
+        try:
+            return execute_batch(c,batch)
+        except TransientTransportError:
+            pass
+
+
 def execute_resilient_batch(c, batch):
     """At most two failures per exact subset, then two per unresolved singleton.
 
@@ -317,12 +353,12 @@ def execute_resilient_batch(c, batch):
     if subset_request(c,bi,original)['request_sha256']!=batch['request_sha256']:raise ValueError('Original request changed')
     remaining=unresolved(c,original)
     while remaining and malformed_attempts(c,bi,remaining)<2:
-        try:execute_batch(c,subset_request(c,bi,remaining))
+        try:execute_transport_retry(c,subset_request(c,bi,remaining))
         except MalformedResponse:pass
         remaining=unresolved(c,original)
     for sid in remaining:
         while unresolved(c,[sid]) and malformed_attempts(c,bi,[sid])<2:
-            try:execute_batch(c,subset_request(c,bi,[sid]))
+            try:execute_transport_retry(c,subset_request(c,bi,[sid]))
             except MalformedResponse:pass
     remaining=unresolved(c,original)
     if remaining:

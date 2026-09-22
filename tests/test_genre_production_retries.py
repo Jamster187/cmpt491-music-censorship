@@ -29,6 +29,10 @@ class RetryTests(unittest.TestCase):
     def transport(self,cmd,**kwargs):
         prompt=kwargs['input'];payload=json.loads(prompt[len((g.DOC/'prompt.txt').read_text()):]);self.calls.append([r['song_id'] for r in payload])
         response=self.responses.pop(0)
+        if isinstance(response,str):
+            kwargs['stdout'].write(json.dumps({'type':'error','message':response})+'\n'+json.dumps({'type':'turn.failed','error':{'message':response}})+'\n')
+            kwargs['stdout'].flush()
+            return type('Result',(),{'returncode':1})()
         Path(cmd[cmd.index('-o')+1]).write_text(json.dumps(response))
         kwargs['stdout'].write(json.dumps({'type':'turn.completed','usage':{}})+'\n');kwargs['stdout'].flush()
         return type('Result',(),{'returncode':0})()
@@ -85,3 +89,42 @@ class RetryTests(unittest.TestCase):
         self.run_batch()
         self.assertEqual(self.calls,[['a','b'],['a']])
         self.assertEqual(self.c.execute("SELECT primary_genre FROM songs WHERE song_id='a'").fetchone()[0],'Rock')
+
+    def test_capacity_retry_preserves_completed_and_resume_skips(self):
+        g.persist(self.c,self.row('a'),'production','original')
+        before=tuple(self.c.execute("SELECT * FROM songs WHERE song_id='a'").fetchone())
+        self.responses=['Selected model is at capacity. Please try a different model.',{'predictions':[self.row('b')]}]
+        with patch.object(g.time,'sleep') as sleep:
+            self.run_batch()
+            sleep.assert_called_once_with(30)
+        self.assertEqual(self.calls,[['b'],['b']])
+        self.assertEqual(before,tuple(self.c.execute("SELECT * FROM songs WHERE song_id='a'").fetchone()))
+        self.run_batch()
+        self.assertEqual(len(self.calls),2)
+
+    def test_repeated_capacity_failure_has_persisted_bound(self):
+        self.responses=['Selected model is at capacity. Please try a different model.']*3
+        with patch.object(g.time,'sleep') as sleep:
+            with self.assertRaisesRegex(RuntimeError,'capacity retry budget exhausted'):self.run_batch()
+            self.assertEqual([x.args[0] for x in sleep.call_args_list],[30,60])
+        self.assertEqual(len(self.calls),3)
+        with self.assertRaisesRegex(RuntimeError,'capacity retry budget exhausted'):self.run_batch()
+        self.assertEqual(len(self.calls),3)
+        self.assertEqual(dict(self.c.execute('SELECT song_id,status FROM songs')),{'a':'error','b':'error'})
+
+    def test_unknown_runtime_failure_is_not_retried(self):
+        self.responses=['Authentication failed']
+        with patch.object(g.time,'sleep') as sleep:
+            with self.assertRaisesRegex(RuntimeError,'STOP: failed batch'):self.run_batch()
+            sleep.assert_not_called()
+        self.assertEqual(len(self.calls),1)
+
+    def test_capacity_with_response_or_tool_event_fails_closed(self):
+        message='Selected model is at capacity. Please try a different model.'
+        failed=json.dumps({'type':'turn.failed','error':{'message':message}})
+        (self.local/'events.jsonl').write_text(failed)
+        (self.local/'response.json').write_text('{}')
+        self.assertFalse(g.capacity_failure(self.local))
+        (self.local/'response.json').unlink()
+        (self.local/'events.jsonl').write_text(failed+'\n'+json.dumps({'type':'item.completed','item':{'type':'command_execution'}}))
+        self.assertFalse(g.capacity_failure(self.local))
