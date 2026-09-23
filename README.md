@@ -44,7 +44,7 @@ These are model-derived features, not ground truth. We preserve individual outpu
 
 ## Genre classifier
 
-Genre is separate from lyrical-content classification. Metadata-only assignment had weak coverage, so we validated an LLM approach. **Production genre classification is running.**
+Genre is separate from lyrical-content classification. Metadata-only assignment had weak coverage, so we validated an LLM approach. **Production genre classification and its final audit are complete: 28,041 / 28,041 songs.**
 
 GPT-5.5 with medium reasoning uses a frozen structured prompt containing title, artist, first-chart-date context and available genre/tag evidence—not lyrical-content scores. Chart dates are not release dates.
 
@@ -55,6 +55,8 @@ Pop; Rock; Hip-Hop / Rap; R&B / Soul; Country; Latin; Electronic / Dance; Altern
 We also preserve secondary genres and high/medium/low model confidence. These classifications are model-derived, not objective ground truth.
 
 The [300-song pilot](reports/llm_genre_evaluation.md) assigned every song: 217 high, 65 medium and 18 low confidence. Agreement with strong existing genre evidence was 92.2%. Qualitative review found 117 plausible, 23 questionable and 3 clearly wrong assignments among 143 reviewed cases; this is not a formal accuracy estimate.
+
+The [final genre audit](reports/genre_final_audit.md) records 18,621 high, 7,538 medium and 1,882 low-confidence assignments, with no unresolved errors. Its deterministic 160-song assistant review found 129 plausible, 29 questionable and 2 clearly wrong primary labels. Labels remain unchanged; this diagnostic review is not an accuracy estimate. Final master datasets are still pending.
 
 ## Downloads and next steps
 
@@ -71,6 +73,6 @@ Once frozen, we plan to plot measurements, create moving averages, compare genre
 - [x] MusicBrainz metadata
 - [x] Lyrics acquisition
 - [x] Four-model lyrical classifier panel
-- [ ] Genre classification — running
+- [x] Genre classification — complete and audited
 - [ ] Final weekly/monthly master datasets
 - [ ] Historical/genre/post-COVID analysis

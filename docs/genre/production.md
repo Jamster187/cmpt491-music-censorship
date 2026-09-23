@@ -99,3 +99,9 @@ persist across restarts. Only unresolved IDs are requested. This narrow exceptio
 requires no saved response and no tool or other unexpected events; unknown runtime,
 quota and authentication errors still stop for inspection. Capacity exhaustion also
 stops for inspection, without falling back to another model or billing path.
+
+## Final audit
+
+Production completed all 28,041 identities. See the [final audit](../../reports/genre_final_audit.md) and its [160 authored review judgments](../../reports/genre_final_audit/review.csv). The original completion marker remains untouched and records that qualitative review was pending at inference completion; the separate final audit records its later completion.
+
+Regenerate the final audit with `python3 src/genre_final_audit.py` after running the full tests into `data/experiments/genre_production/final_tests.log`. The audit reconciles exact response provenance, the frozen configuration, all protected file hashes and the deterministic review membership. It never changes production predictions or builds public datasets.
