@@ -246,6 +246,9 @@ def generate(c,directory,classifier_features):
 
 
 def build(validate_only=False):
+    current = PUBLIC / 'manifest.json'
+    if current.exists() and json.loads(current.read_text()).get('version') == 'final-snapshots-v3.0':
+        raise ValueError('Final snapshot release is current; use src/final_dataset.py build/validate. The old aggregate-month exporter must not replace it.')
     # Output is deliberately fixed. No option can redirect publication into data/raw.
     if PUBLIC.is_symlink():raise ValueError('Public output directory is a symlink')
     PUBLIC.mkdir(parents=True,exist_ok=True)

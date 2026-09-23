@@ -45,3 +45,6 @@ local_config.*
 *.db-shm
 .phase1-*/
 *.tmp
+
+# Full weekly CSV is distributed as a lossless XZ file below GitHub's blob limit.
+/data/public/master_weekly.csv

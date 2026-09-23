@@ -56,13 +56,13 @@ We also preserve secondary genres and high/medium/low model confidence. These cl
 
 The [300-song pilot](reports/llm_genre_evaluation.md) assigned every song: 217 high, 65 medium and 18 low confidence. Agreement with strong existing genre evidence was 92.2%. Qualitative review found 117 plausible, 23 questionable and 3 clearly wrong assignments among 143 reviewed cases; this is not a formal accuracy estimate.
 
-The [final genre audit](reports/genre_final_audit.md) records 18,621 high, 7,538 medium and 1,882 low-confidence assignments, with no unresolved errors. Its deterministic 160-song assistant review found 129 plausible, 29 questionable and 2 clearly wrong primary labels. Labels remain unchanged; this diagnostic review is not an accuracy estimate. Final master datasets are still pending.
+The [final genre audit](reports/genre_final_audit.md) records 18,621 high, 7,538 medium and 1,882 low-confidence assignments, with no unresolved errors. Its deterministic 160-song assistant review found 129 plausible, 29 questionable and 2 clearly wrong primary labels. Labels remain unchanged; this diagnostic review is not an accuracy estimate. Final weekly and monthly master datasets are published below.
 
 ## Downloads and next steps
 
-The published [master_dataset.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_dataset.csv) is an **earlier, temporary release using the old monthly aggregation**. Separate [songs.csv](data/public/songs.csv) and [monthly_top100.csv](data/public/monthly_top100.csv) belong to that release too.
+The final downloads are [master_monthly.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_monthly.csv), [master_weekly.csv.xz](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_weekly.csv.xz) and [songs.csv](data/public/songs.csv). See the [public dataset guide](data/public/README.md) for schemas, missingness, coverage and weekly decompression. The older `master_dataset.csv` and `monthly_top100.csv` remain explicitly legacy aggregate-month files.
 
-After genre inference and validation, we plan to publish `master_weekly.csv` and `master_monthly.csv`. Both will include Billboard information, MusicBrainz metadata, primary genre, genre confidence and 42 lyrical-content features. Only time resolution differs: every weekly chart versus each month's final chart.
+Both final master tables include Billboard information, MusicBrainz metadata, genre and 42 lyrical-content features. Weekly retains every source observation, with `in_final_study_population` identifying the 28,041-song enriched universe; monthly selects each month's final available chart.
 
 Once frozen, we plan to plot measurements, create moving averages, compare genres, examine feature relationships, establish pre-COVID trends and test unusual changes in levels or slopes around/post COVID.
 
@@ -74,5 +74,5 @@ Once frozen, we plan to plot measurements, create moving averages, compare genre
 - [x] Lyrics acquisition
 - [x] Four-model lyrical classifier panel
 - [x] Genre classification — complete and audited
-- [ ] Final weekly/monthly master datasets
+- [x] Final weekly/monthly master datasets
 - [ ] Historical/genre/post-COVID analysis
