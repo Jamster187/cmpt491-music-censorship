@@ -1,78 +1,131 @@
 # CMPT 491 - Popular Music Content Analysis
 
-We are studying popular music from 1958–2026: tracking lyrical content, comparing genres, and eventually testing unusual changes around/post COVID against historical trends. This would not establish causation.
+This CMPT 491 Data Mining project studies changes in mainstream popular music from 1958–2026: lyrical characteristics, genre differences, historical rates of change, and unusual changes in levels or slopes around/post COVID. Differences would not establish that COVID caused them.
 
-## Billboard data and time resolution
+**Dataset construction is complete. Our next phase is exploratory data analysis; historical/COVID analysis has not started.**
 
-Our [Billboard Hot 100 source](https://github.com/mhollingshead/billboard-hot-100) contains:
+## Billboard foundation
 
-- 3,555 weekly charts
-- 355,487 chart observations
-- 32,723 unique title + artist combinations
+We started with the [weekly Billboard Hot 100 archive](https://github.com/mhollingshead/billboard-hot-100), covering August 1958 through September 2026:
 
-**Weekly:** each chart is one snapshot. **Monthly:** we use the final available weekly chart in each calendar month. Both views use the same definition of popularity; monthly simply samples less frequently.
+- **3,555** weekly charts
+- **355,487** song-week observations
+- **32,723** unique title + artist combinations
 
-The final month-end population contains **28,041 songs, 818 snapshots and 81,797 song-month observations**. Three historical snapshots contain 99 songs because rank 100 is absent upstream. We preserve those gaps.
+Each exact Billboard title + artist combination defines a `song_id`.
+
+## Weekly and monthly snapshots
+
+**Weekly:** each Billboard Hot 100 chart is one snapshot.
+
+**Monthly:** the final available Billboard chart in each calendar month is the monthly snapshot.
+
+Both use the same definition of popularity. Monthly samples the weekly series less frequently and keeps the selected chart’s ranks.
+
+The final monthly study population contains **818 snapshots, 81,797 song-month observations and 28,041 unique songs**. Three historical snapshots contain 99 rather than 100 songs because rank 100 is absent from the source. We preserve those gaps rather than invent records. Chart dates are not release dates.
 
 ## Metadata and lyrics
 
-MusicBrainz adds release dates, durations and album/release information, with **22,290 / 28,041** high-confidence matches.
+Billboard had relatively few variables, so we enriched the 28,041 study songs.
 
-We have confidently matched, usable lyrics for **20,981 / 28,041 songs**: **74.82%** overall, **81.33%** for 2015–2019 and **80.59%** for 2020–2026. Copyrighted lyrics remain local and are not distributed on GitHub.
+### MusicBrainz
 
-## Four lyrical-content classifiers
+MusicBrainz adds release dates, durations and album/release information: **22,290 / 28,041 high-confidence matches**.
 
-Every song with usable lyrics is processed by four pretrained models, producing **42 numerical features**. Two songs lack LyricLens outputs because its preprocessing leaves their text empty; their other model results are preserved.
+### Lyrics
+
+We collected usable lyrics locally for **20,981 / 28,041 songs**:
+
+- **74.82%** overall coverage
+- **81.33%** for 2015–2019
+- **80.59%** for 2020–2026
+
+These period groups use first Billboard appearance, not release dates. Lyrics are copyrighted research inputs and are **not distributed through GitHub**.
+
+## Four content classifiers
+
+Songs with usable lyrics were processed through four pretrained models, producing **42 numerical content features**. Long lyrics are processed in chunks so the complete lyric is represented.
 
 ### LyricLens
 
-Designed specifically for music lyrics, LyricLens supplies four scores: sexual content, violence, explicit language and substance use.
+Designed specifically for song lyrics. We retain four measurements: sexual content, violence, explicit language and substance use.
 
 ### Detoxify Unbiased
 
-This toxicity/offensive-language model supplies seven scores: toxicity, severe toxicity, obscene language, threat, insult, identity attack and sexual explicitness. It was trained on online comments rather than lyrics, so that domain mismatch matters.
+Provides seven measurements: toxicity, severe toxicity, obscene language, threat, insult, identity attack and sexual explicitness. It was trained on online comments rather than lyrics, so these are model-derived features, not objective ground truth.
 
 ### GoEmotions
 
-The GoEmotions-based RoBERTa model supplies 28 emotion-related scores, including anger, fear, joy, love, sadness, disgust, excitement, optimism, grief and surprise.
+Provides 28 emotion measurements, including anger, fear, joy, love, sadness, disgust, excitement and optimism.
 
 ### Cardiff multilingual sentiment
 
-CardiffNLP supplies negative, neutral and positive sentiment scores. Its multilingual support is useful because not every Billboard song is English.
+Provides negative, neutral and positive sentiment. Its multilingual design is useful because Billboard songs are not exclusively English.
 
-These are model-derived features, not ground truth. We preserve individual outputs rather than combining them into an arbitrary “hardness” score. This lets us examine changes and relationships between measurements. Long lyrics are processed in chunks so the complete lyric is represented, not just its beginning.
+We preserve all 42 features without an arbitrary “hardness” score, so analysis can examine which characteristics change and move together.
 
-## Genre classifier
+**20,979 songs have all 42 features.** Two songs lack only the four LyricLens outputs; their other 38 features remain populated. Songs without usable lyrics have missing classifier values, not zeros.
 
-Genre is separate from lyrical-content classification. Metadata-only assignment had weak coverage, so we validated an LLM approach. **Production genre classification and its final audit are complete: 28,041 / 28,041 songs.**
+## Genre
 
-GPT-5.5 with medium reasoning uses a frozen structured prompt containing title, artist, first-chart-date context and available genre/tag evidence—not lyrical-content scores. Chart dates are not release dates.
+Genre assignment is complete: **28,041 / 28,041 study songs** have a model-derived primary genre.
 
-Each song receives one primary genre from this fixed taxonomy:
+GPT-5.5 with medium reasoning uses a frozen structured prompt containing title, artist, first-chart-date context and available genre/tag evidence.
+
+The fixed taxonomy is:
 
 Pop; Rock; Hip-Hop / Rap; R&B / Soul; Country; Latin; Electronic / Dance; Alternative / Indie; Metal; Folk / Singer-Songwriter; Jazz / Blues; Reggae / Dancehall; Gospel / Christian; K-Pop; Afrobeats / African Pop; Other.
 
-We also preserve secondary genres and high/medium/low model confidence. These classifications are model-derived, not objective ground truth.
+Confidence: **18,621 high, 7,538 medium and 1,882 low**. These model-derived classifications are not objective ground truth.
 
-The [300-song pilot](reports/llm_genre_evaluation.md) assigned every song: 217 high, 65 medium and 18 low confidence. Agreement with strong existing genre evidence was 92.2%. Qualitative review found 117 plausible, 23 questionable and 3 clearly wrong assignments among 143 reviewed cases; this is not a formal accuracy estimate.
+## Download the data
 
-The [final genre audit](reports/genre_final_audit.md) records 18,621 high, 7,538 medium and 1,882 low-confidence assignments, with no unresolved errors. Its deterministic 160-song assistant review found 129 plausible, 29 questionable and 2 clearly wrong primary labels. Labels remain unchanged; this diagnostic review is not an accuracy estimate. Final weekly and monthly master datasets are published below.
+**Start with `master_monthly.csv`.** Use the weekly file for higher-frequency analysis.
 
-## Downloads and next steps
+| Direct download | Rows | Columns | Contents |
+|---|---:|---:|---|
+| [master_monthly.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_monthly.csv) | 81,797 | 78 | One row per song in each month-end snapshot; recommended starting point |
+| [songs.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/songs.csv) | 28,041 | 70 | One row per study song, with metadata, genre and classifier features |
+| [master_weekly.csv.xz](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_weekly.csv.xz) | 355,487 | 77 | One row per weekly chart observation |
 
-The final downloads are [master_monthly.csv](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_monthly.csv), [master_weekly.csv.xz](https://raw.githubusercontent.com/Jamster187/cmpt491-music-censorship/main/data/public/master_weekly.csv.xz) and [songs.csv](data/public/songs.csv). See the [public dataset guide](data/public/README.md) for schemas, missingness, coverage and weekly decompression. The older `master_dataset.csv` and `monthly_top100.csv` remain explicitly legacy aggregate-month files.
+The weekly download is losslessly compressed: about **15 MB**, expanding to a roughly **350 MB CSV**. Both master tables use the same song-level columns. Weekly includes identities outside the enriched study population; `in_final_study_population` identifies which rows belong to it. Outside-population enrichment is blank.
 
-Both final master tables include Billboard information, MusicBrainz metadata, genre and 42 lyrical-content features. Weekly retains every source observation, with `in_final_study_population` identifying the 28,041-song enriched universe; monthly selects each month's final available chart.
+See [full column documentation and decompression instructions](data/public/README.md).
 
-Once frozen, we plan to plot measurements, create moving averages, compare genres, examine feature relationships, establish pre-COVID trends and test unusual changes in levels or slopes around/post COVID.
+## Final dataset SITREP
 
-## Status
+**Dataset construction is complete.** “Complete” means the planned work finished, not that every song has available metadata or lyrics.
 
-- [x] Billboard data
-- [x] Weekly/monthly end-of-period methodology
-- [x] MusicBrainz metadata
-- [x] Lyrics acquisition
-- [x] Four-model lyrical classifier panel
-- [x] Genre classification — complete and audited
-- [x] Final weekly/monthly master datasets
-- [ ] Historical/genre/post-COVID analysis
+| Component | Status |
+|---|---|
+| Billboard weekly data | Complete |
+| Weekly/monthly snapshot methodology | Complete |
+| MusicBrainz enrichment | Complete |
+| Lyrics acquisition | Complete |
+| 42 lyrical-content features | Complete |
+| Genre classification | Complete |
+| Weekly master dataset | Complete |
+| Monthly master dataset | Complete |
+| Historical / genre analysis | Next |
+| COVID slope/level analysis | Not started |
+
+## Roadmap — where we are now
+
+```text
+Billboard → Weekly/monthly snapshots → Metadata + lyrics
+    → 42 classifier features → Genre → Final master datasets
+    ↓
+WE ARE HERE: ready for exploratory data analysis
+    ↓
+Moving averages / genre comparisons
+    ↓
+Historical trend modelling
+    ↓
+Pre-COVID vs post-COVID level/slope comparison
+```
+
+Next we will visualize the 42 features through time, create weekly/monthly moving averages, compare genre-specific trajectories, and examine relationships and correlations between classifier outputs. We will establish historical baselines before testing whether post-COVID levels or slopes differ unusually from earlier trends. There are no analysis results yet.
+
+## Methodological caution
+
+Content measurements and genres are model-derived, not ground truth. Lyrics coverage is incomplete, and missing lyrics are not perfectly random. Analysis must account for these limitations when comparing periods, genres and rates of change.
