@@ -153,7 +153,7 @@ See [complete schema, provenance and decompression documentation](data/public/RE
 | Genre classification | Complete |
 | Weekly master dataset | Complete |
 | Monthly master dataset | Complete |
-| Historical / genre analysis | Next |
+| Milestone 2 descriptive / genre analysis | Complete; see reports/milestone2 |
 | COVID slope/level analysis | Not started |
 
 ## Roadmap — where we are now
@@ -162,7 +162,7 @@ See [complete schema, provenance and decompression documentation](data/public/RE
 Billboard → Weekly/monthly snapshots → Metadata + lyrics
     → 42 classifier features → Genre → Final master datasets
     ↓
-WE ARE HERE: ready for exploratory data analysis
+WE ARE HERE: Milestone 2 descriptives complete
     ↓
 Moving averages / genre comparisons
     ↓
@@ -171,8 +171,63 @@ Historical trend modelling
 Pre-COVID vs post-COVID level/slope comparison
 ```
 
-Next we will visualize the 42 features through time, create weekly/monthly moving averages, compare genre-specific trajectories, and examine relationships and correlations between classifier outputs. We will establish historical baselines before testing whether post-COVID levels or slopes differ unusually from earlier trends. There are no analysis results yet.
+Milestone 2 monthly descriptive outputs now cover distributions, summary measures, genre comparisons, correlations, missingness and annual summaries. Formal historical modelling and COVID hypothesis analysis have not started and are outside this descriptive task.
 
 ## Methodological caution
 
 Content measurements and genres are model-derived, not ground truth. Lyrics coverage is incomplete, and missing lyrics are not perfectly random. Analysis must account for these limitations when comparing periods, genres and rates of change.
+
+## Milestone 2 reproducible descriptive analysis
+
+With the existing dependencies in `requirements.txt` installed, run from the repository:
+
+```bash
+python3 src/descriptive_analysis.py
+python3 -m unittest discover -s tests -v
+```
+
+The analysis reads only `data/public/master_monthly.csv` and validates its 81,797
+rows, 78 columns, 818 chart months, 28,041 identities, 16 genres, required measurements
+and rank/score ranges. It never opens private databases or lyrics. Outputs are built
+in a temporary directory and published only after successful generation and a source
+SHA-256 check. Individual output files are replaced atomically. The manifest records
+input/code hashes, runtime versions and artifact hashes; reruns in the same runtime
+produce identical artifacts. Weekly analysis is not implemented here.
+
+See the generated [factual cheat sheet](reports/milestone2/descriptive_findings.md)
+for values, limitations, milestone mapping and eight suggested figures. The output
+folder contains 12 CSV tables and 27 PNG figures:
+
+- `summary_statistics.csv`: all 52 prioritized numerical measurements, observation weighted.
+- `song_level_summary_statistics.csv`: 48 stable numerical fields, each unique song once.
+- `categorical_summary.csv`: category counts and percentages for both weightings, including missing categories.
+- `genre_summary.csv` and `artist_summary.csv`: descending song-month counts and distinct-song counts; the bottom of the genre table gives rare genres. Artists are exact Billboard credits, including collaborations, not resolved people/acts.
+- `genre_statistics.csv` and `song_level_genre_statistics.csv`: all 16 genres, available Ns and small-group flags. Fewer than 30 total or feature-available unique songs is a descriptive caution flag, not an inferential cutoff. No taxonomy is changed.
+- `pearson_correlations.csv` and `spearman_correlations.csv`: long-form unordered numerical pairs, weighting and pairwise N. Both observation and song versions are included.
+- `missingness.csv`: blank-cell missingness for every source column. `availability_by_group.csv` separately describes lyrics, all-score and per-score availability and duration coverage by decade, genre and rank band, with observation and distinct-song denominators. Songs can belong to multiple decades or rank bands.
+- `yearly_summary.csv`: nine scores, annual means/medians and available Ns under observation and song-within-year weighting; partial years are flagged.
+- `figures/`: 12 representative histograms, a score boxplot panel, four genre boxplots, a selected correlation heatmap, six relationship hexbins, a missingness plot and two annual panels.
+
+Blank cells are missing; zeros remain measurements. Means and quantiles omit missing
+values. Quartiles use linear interpolation; standard deviations and variances use
+`ddof=1` (sample formulas; undefined for fewer than two values). Potential outliers
+are strictly outside Q1 − 1.5 IQR and Q3 + 1.5 IQR, remain in every calculation, and
+are counted as a percentage of non-missing values. These flags do not imply bad data.
+
+Observation weighting describes chart exposure across song-month rows; song weighting
+describes the unique song population. Before deduplication, all non-chart fields must
+be invariant within each song_id, including missingness. Time-varying ranks are excluded
+from song summaries/correlations rather than selecting an arbitrary month. Genre
+comparison figures count each song once. Annual song weighting counts a song once
+within each calendar year, so songs may still recur across years. Group means use
+available scores, with no imputation or removal of outliers.
+
+Correlations use pairwise complete values with at least three paired observations;
+Spearman ranks ties by average rank within the paired subset. Constant variables
+produce undefined/blank coefficients. These are descriptive associations: repeated
+observations are not independent songs, and no p-values, confidence intervals or
+hypothesis tests are produced. The selected heatmap uses observation weights;
+relationship figures use song weights except when monthly rank is involved. Rank 1
+is best and 100 worst; the rank axis is inverted in relationship plots. No derived
+popularity field is added to the dataset. Annual summaries are chart-calendar
+summaries, not release-year cohorts or COVID comparisons.

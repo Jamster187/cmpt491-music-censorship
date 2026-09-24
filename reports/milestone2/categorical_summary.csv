@@ -1,0 +1,63 @@
+variable,category,weighting,count,denominator,percentage
+primary_genre,Afrobeats / African Pop,observation,52,81797,0.06357201364
+primary_genre,Alternative / Indie,observation,2841,81797,3.473232515
+primary_genre,Country,observation,9884,81797,12.08357275
+primary_genre,Electronic / Dance,observation,3341,81797,4.084501877
+primary_genre,Folk / Singer-Songwriter,observation,1203,81797,1.470714085
+primary_genre,Gospel / Christian,observation,180,81797,0.2200569703
+primary_genre,Hip-Hop / Rap,observation,10195,81797,12.46378229
+primary_genre,Jazz / Blues,observation,1415,81797,1.729892294
+primary_genre,K-Pop,observation,124,81797,0.1515948018
+primary_genre,Latin,observation,1108,81797,1.354572906
+primary_genre,Metal,observation,454,81797,0.5550325807
+primary_genre,Other,observation,865,81797,1.057495996
+primary_genre,Pop,observation,19519,81797,23.86273335
+primary_genre,R&B / Soul,observation,16480,81797,20.14743817
+primary_genre,Reggae / Dancehall,observation,505,81797,0.6173820556
+primary_genre,Rock,observation,13631,81797,16.66442535
+genre_confidence,high,observation,62145,81797,75.974669
+genre_confidence,low,observation,3210,81797,3.924349304
+genre_confidence,medium,observation,16442,81797,20.1009817
+lyrics_available,0,observation,17371,81797,21.23672017
+lyrics_available,1,observation,64426,81797,78.76327983
+lyrics_status,bad_missing_text,observation,553,81797,0.6760639143
+lyrics_status,error,observation,177,81797,0.2163893541
+lyrics_status,not_found,observation,2347,81797,2.869298385
+lyrics_status,quarantined,observation,11119,81797,13.59340807
+lyrics_status,success,observation,64426,81797,78.76327983
+lyrics_status,wrong_identity,observation,3175,81797,3.881560448
+musicbrainz_match_status,ambiguous,observation,9852,81797,12.04445151
+musicbrainz_match_status,error,observation,1,81797,0.001222538724
+musicbrainz_match_status,high_confidence,observation,67510,81797,82.53358925
+musicbrainz_match_status,not_found,observation,4434,81797,5.420736702
+primary_genre,Afrobeats / African Pop,song,13,28041,0.04636068614
+primary_genre,Alternative / Indie,song,762,28041,2.717449449
+primary_genre,Country,song,3032,28041,10.81273849
+primary_genre,Electronic / Dance,song,963,28041,3.434256981
+primary_genre,Folk / Singer-Songwriter,song,477,28041,1.701080561
+primary_genre,Gospel / Christian,song,64,28041,0.2282372241
+primary_genre,Hip-Hop / Rap,song,3401,28041,12.12866874
+primary_genre,Jazz / Blues,song,698,28041,2.489212225
+primary_genre,K-Pop,song,51,28041,0.1818765379
+primary_genre,Latin,song,381,28041,1.358724725
+primary_genre,Metal,song,144,28041,0.5135337541
+primary_genre,Other,song,456,28041,1.626190221
+primary_genre,Pop,song,6492,28041,23.15181342
+primary_genre,R&B / Soul,song,5935,28041,21.16543633
+primary_genre,Reggae / Dancehall,song,144,28041,0.5135337541
+primary_genre,Rock,song,5028,28041,17.93088692
+genre_confidence,high,song,18621,28041,66.40633358
+genre_confidence,low,song,1882,28041,6.71160087
+genre_confidence,medium,song,7538,28041,26.88206555
+lyrics_available,0,song,7060,28041,25.17741878
+lyrics_available,1,song,20981,28041,74.82258122
+lyrics_status,bad_missing_text,song,201,28041,0.7168075318
+lyrics_status,error,song,93,28041,0.3316572162
+lyrics_status,not_found,song,1140,28041,4.065475554
+lyrics_status,quarantined,song,3817,28041,13.61221069
+lyrics_status,success,song,20981,28041,74.82258122
+lyrics_status,wrong_identity,song,1809,28041,6.451267786
+musicbrainz_match_status,ambiguous,song,3963,28041,14.13287686
+musicbrainz_match_status,error,song,1,28041,0.003566206626
+musicbrainz_match_status,high_confidence,song,22290,28041,79.49074569
+musicbrainz_match_status,not_found,song,1787,28041,6.372811241
