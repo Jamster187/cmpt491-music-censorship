@@ -109,3 +109,52 @@ These ten figures cover content, contrasting score families, coverage-qualified 
 - 34,356 overall rows and 549,696 genre rows; 420 figures. All 42 separate dimensions and 16 genres are retained.
 - data/trajectory_summary.csv contains first/latest/minimum/maximum values, dates and window counts for all series. data/rank_weighting_sensitivity.csv summarizes matched rolling values. data/figure_inventory.csv identifies all charts.
 - This is descriptive exploration. No composite hardness/softness score, significance test, causal conclusion or COVID breakpoint model was created.
+<!-- BEGIN GENERATED ALL-GENRES OVERLAYS -->
+
+## All-genres overlays (additional figures)
+
+Rebuild only these overlays with `python3 src/moving_average_all_genres.py`. The original tables, calculations and 420 figures remain unchanged.
+
+- Added 84 single-panel, 5100 × 2550 pixel PNGs (300 dpi): all qualifying genres and a cleaner major-coverage version for each of 42 scores. No raw monthly series or rank sensitivity is added to these overlays.
+- Major coverage means **at least 120 valid rolling endpoints per classifier**, about ten years of endpoints, not necessarily consecutive. This is only a figure-selection rule; monthly N ≥5 and 12 consecutive qualifying months are unchanged.
+- Every non-missing exported rolling value is plotted in the all-genres version, including Latin’s four endpoints. Full calendar arrays retain missing periods; markers make isolated endpoints visible. Eight genres have any endpoints, while five pass the major-coverage threshold for each classifier.
+- Genre colors and line styles are fixed across all images; the mapping and plotted counts are in figures/all_genres/manifest.json. Legends list plotted genres and their endpoint counts. Genres with no endpoints remain in the original coverage table.
+- Every chart uses a 0–1 y-axis for comparison. Low-amplitude emotion series may look nearly flat; cross-model scales do not imply equivalent substantive effects.
+
+### Inspection of the requested dimensions
+
+For a like-for-like descriptive comparison, the table uses the first and last dates where all five coverage-qualified genres have valid values. Sparse later coverage prevents a full five-genre comparison near 2020 or at the dataset endpoint. A change in endpoint spread alone does not establish sustained convergence.
+
+| Classifier | Common dates | First → last five-genre spread | Highest / lowest at last common date |
+|---|---|---:|---|
+| ll_sexual_content | 2001-02 → 2009-08 | 0.6720 → 0.5074 | Hip-Hop / Rap (0.8235) / Rock (0.3161) |
+| ll_violence | 2001-02 → 2009-08 | 0.5282 → 0.2454 | Hip-Hop / Rap (0.4056) / R&B / Soul (0.1602) |
+| ll_explicit_language | 2001-02 → 2009-08 | 0.8975 → 0.6202 | Hip-Hop / Rap (0.9081) / Country (0.2879) |
+| ll_substance_use | 2001-02 → 2009-08 | 0.6860 → 0.4468 | Hip-Hop / Rap (0.6152) / Pop (0.1684) |
+| detox_toxicity | 2001-02 → 2009-08 | 0.6361 → 0.3447 | Hip-Hop / Rap (0.4250) / Country (0.0803) |
+| sentiment_positive | 2001-02 → 2009-08 | 0.0461 → 0.0421 | R&B / Soul (0.3031) / Rock (0.2609) |
+| sentiment_negative | 2001-02 → 2009-08 | 0.0422 → 0.0551 | Rock (0.3137) / R&B / Soul (0.2586) |
+| emotion_joy | 2001-02 → 2009-08 | 0.0438 → 0.0385 | Country (0.0523) / Rock (0.0138) |
+| emotion_love | 2001-02 → 2009-08 | 0.1923 → 0.1000 | R&B / Soul (0.1903) / Rock (0.0903) |
+| emotion_anger | 2001-02 → 2009-08 | 0.0523 → 0.0277 | Pop (0.0379) / Country (0.0102) |
+| emotion_sadness | 2001-02 → 2009-08 | 0.0831 → 0.0715 | Rock (0.1054) / Hip-Hop / Rap (0.0339) |
+
+- LyricLens explicit language, violence, sexual content and substance use show clear genre separation where coverage overlaps. Their five-genre endpoint spreads narrow across the common interval, while substantial differences remain. The overlays show non-monotonic paths and coverage gaps, so this is not a claim of uniform long-run convergence.
+- Hip-Hop/Rap remains visually separated on explicit language and toxicity across much of its eligible history. Country approaches Hip-Hop/Rap in several later substance-use windows, while Pop remains lower; these local approaches are not uniform convergence.
+- Sentiment curves occupy a tighter band on the shared 0–1 axes. Across the common comparison dates, the positive-sentiment spread narrows slightly (0.0461 to 0.0421), while negative sentiment widens (0.0422 to 0.0551). Cross-model scale differences are not equivalent substantive effects.
+- Love shows a narrower five-genre spread at the later common endpoint (0.1923 to 0.1000), with several trajectories drawing closer during parts of that interval. Hip-Hop/Rap generally occupies the lower portion of the love and sadness overlays during eligible periods. Joy stays close to zero on this scale; later Hip-Hop/Rap anger separates upward from Pop and Country. Near-zero values and short runs are not evidence of no change.
+- Alternative/Indie and Electronic/Dance add shorter historical trajectories beyond the five major-coverage genres. Latin has only four qualifying endpoints and should be treated as a brief observed segment, not a full trajectory. No curves are drawn for the eight genres with no eligible windows.
+
+### Recommended all-genres figures (9)
+
+- [ll_explicit_language](figures/all_genres/ll_explicit_language.png) · [cleaner coverage version](figures/all_genres/ll_explicit_language_major_coverage.png)
+- [ll_violence](figures/all_genres/ll_violence.png) · [cleaner coverage version](figures/all_genres/ll_violence_major_coverage.png)
+- [ll_sexual_content](figures/all_genres/ll_sexual_content.png) · [cleaner coverage version](figures/all_genres/ll_sexual_content_major_coverage.png)
+- [ll_substance_use](figures/all_genres/ll_substance_use.png) · [cleaner coverage version](figures/all_genres/ll_substance_use_major_coverage.png)
+- [detox_toxicity](figures/all_genres/detox_toxicity.png) · [cleaner coverage version](figures/all_genres/detox_toxicity_major_coverage.png)
+- [sentiment_positive](figures/all_genres/sentiment_positive.png) · [cleaner coverage version](figures/all_genres/sentiment_positive_major_coverage.png)
+- [sentiment_negative](figures/all_genres/sentiment_negative.png) · [cleaner coverage version](figures/all_genres/sentiment_negative_major_coverage.png)
+- [emotion_love](figures/all_genres/emotion_love.png) · [cleaner coverage version](figures/all_genres/emotion_love_major_coverage.png)
+- [emotion_sadness](figures/all_genres/emotion_sadness.png) · [cleaner coverage version](figures/all_genres/emotion_sadness_major_coverage.png)
+
+These choices span content, toxicity, sentiment and contrasting emotions with overlapping genre coverage; they are not selected solely for dramatic extrema. Inspect joy and anger too, but their smaller absolute levels are less visible on the fixed scale. No significance tests or causal interpretation are supplied.

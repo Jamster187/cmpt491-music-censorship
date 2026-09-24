@@ -313,3 +313,36 @@ and replaced individually only after a complete successful build. Rebuilding in 
 same runtime is deterministic. Tests include hand-calculated rolling windows,
 missing-period recovery, weighting, deduplication, sparse genres and the actual
 818-month population. No private data or model inference is used.
+
+## All-genres moving-average overlays
+
+To add or rebuild only the all-genres comparisons from existing exports:
+
+```bash
+python3 src/moving_average_all_genres.py
+```
+
+This separate renderer reads the frozen `monthly_classifier_by_genre.csv.xz` and
+coverage table. It does not recompute aggregation or rolling means and does not
+modify the original tables, pipeline, public dataset or 420 figures. It adds
+**84 figures** under `reports/moving_averages/figures/all_genres/`: `<classifier>.png`
+and `<classifier>_major_coverage.png` for each of 42 dimensions. Images are single
+panels, 5100 × 2550 pixels at 300 dpi, with fixed 0–1 axes, consistent genre colors
+and line styles, endpoint-count legends and the neutral 2020 reference.
+
+All-genres charts include every non-missing rolling endpoint, even an isolated
+point. The cleaner version requires **≥120 valid endpoints per genre/classifier**
+(about ten years, not necessarily consecutive). This selects five genres from
+coverage alone; eight have any eligible values. Neither choice changes the existing
+≥5 scored songs/month and 12-consecutive-month rules. Missing calendar entries stay
+NaN in the plotted arrays, so lines cannot bridge invalid periods.
+
+The renderer appends a generated section to
+[moving_average_findings.md](reports/moving_averages/moving_average_findings.md),
+including inspection of eleven requested dimensions and a nine-figure shortlist.
+It verifies the original report prefix against the original manifest and preserves
+it byte-for-byte. The original manifest continues to describe the original outputs
+and report prefix; `figures/all_genres/manifest.json` records the extended report
+hash, new figure hashes, fixed genre styles and plotted counts. A full base rebuild
+recreates the original report; run this overlay command afterward to restore the
+appendix. Both commands are deterministic in the recorded runtime.
