@@ -2,7 +2,7 @@
 
 This task audits existing LRCLIB exclusions only. It does not approve new mappings,
 change acquisition/matching/cleaning code, modify accepted lyrics, or run a
-classifier. Read the [generated report](../reports/lyrics_exclusion_audit.md),
+classifier. Read the [generated report](../archive/intermediate_reports/lyrics_exclusion_audit.md),
 [local per-asset categories](../data/processed/lyrics_exclusion_categories.csv), and
 [review ledger](../reports/lyrics_exclusion_review.json).
 

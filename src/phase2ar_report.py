@@ -102,7 +102,7 @@ def report(rows, provenance, root, out):
     write_json(out / "summary.json", summary)
     write_json(out / "review_sample.json", review)
     report_lines = ["# Phase 2A-R: offline MusicBrainz asset matching", "",
-        "Generated from the frozen Phase 2A cache. No new requests, manual promotions, or changes to the canonical database or previous experiments.", "",
+        "Generated from the frozen Phase 2A cache. No new requests, manual promotions, or changes to the canonical database or previous archive/experiments.", "",
         f"The same {len(rows)} assets yield **{len(accepted)}/{len(rows)} high-confidence links ({summary['high_confidence_percent']:.1f}%)**, compared with Phase 2A's 45/200 (22.5%).",
         f"Newly accepted: {len(new)}; still ambiguous: {summary['status_counts'].get('ambiguous', 0)}; no cached candidates: {summary['status_counts'].get('not_found', 0)}. Previously accepted but now excluded: {len(old_ids - ids)}. Unresolved input/API errors: 0; network requests: 0.",
         "No cached candidates means the original bounded searches returned nothing; it does not establish absence from MusicBrainz.", "",
@@ -132,7 +132,7 @@ def report(rows, provenance, root, out):
         "Do not scale yet. Independently review the new links, resolve flagged chronology/version cases, then test bounded detailed MusicBrainz lookups for the recovered assets and compare raw genre coverage at explicit semantic levels. Keep recordings/editions unresolved for identity enrichment; choose a defensible version policy before lyrics or version-sensitive measurements.", "",
         "## Reproduction and limits", "", "Run `python3 src/phase2ar.py` and `python3 -m unittest discover -s tests -v` from the repository root. Full commands and cache prerequisites are in the experiment instructions. The ignored summary stores input, cache, and code fingerprints. Outputs contain no run timestamp, so the frozen-input replay is byte deterministic.",
         "This deliberately balanced 200-asset stress sample is not a population estimate. Search limits and Phase 2A query design still constrain recall. Genre lookups are acceptance-biased; aggregating editions can mix durations, dates, clean/explicit variants, and compilation context. Precise numerical gains do not establish zero false positives.", ""]
-    (root / "reports/phase2ar_metadata_feasibility.md").write_text("\n".join(report_lines), encoding="utf-8")
+    (root / "archive/intermediate_reports/phase2ar_metadata_feasibility.md").write_text("\n".join(report_lines), encoding="utf-8")
     lines = ["# Phase 2A-R newly accepted asset review", "", f"All {len(review)} newly accepted assets, ordered by SHA-256 of `phase2ar-review-v1` plus song_id. No cherry-picking or manual promotions. Full raw variants, all IDs, and cache provenance are in `data/experiments/phase2ar/results/<song_id>.json`.", ""]
     for i, r in enumerate(review, 1):
         song = r["song"]
@@ -153,5 +153,5 @@ def report(rows, provenance, root, out):
         if len(release_examples) > 6:
             lines.append(f"- {len(release_examples)-6} further returned release variants retained in the result JSON.")
         lines += [""]
-    (root / "reports/phase2ar_review.md").write_text("\n".join(lines), encoding="utf-8")
+    (root / "archive/intermediate_reports/phase2ar_review.md").write_text("\n".join(lines), encoding="utf-8")
     return summary

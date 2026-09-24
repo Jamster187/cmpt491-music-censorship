@@ -60,7 +60,7 @@ def build():
     labels={'any':'Any classifier data','all':'All 42 features','partial':'Other 38 features; four LyricLens values missing','none':'All 42 features missing (no usable lyrics)'}
     for key,label in labels.items():lines.append(f"| {label} | {rows[key]:,} | {len(songs[key]):,} |")
     lines+=['','“Any classifier data” includes the complete and partial groups; it is not an additional disjoint group. Blank cells mean NULL/missing, not zero. All 2,737,342 populated feature cells are finite and within [0,1].','',
-            'The two partial records are “Chinese Checkers” by Booker T. & The MG\'s and “Snap Shot” by Slave, each appearing in one monthly basket. Their reason is `unsupported/empty-after-LyricLens-normalization`. All valid Detoxify, GoEmotions and Cardiff features remain populated. See the [accepted-missingness policy](../docs/classifier_accepted_missingness.json).','',
+            'The two partial records are “Chinese Checkers” by Booker T. & The MG\'s and “Snap Shot” by Slave, each appearing in one monthly basket. Their reason is `unsupported/empty-after-LyricLens-normalization`. All valid Detoxify, GoEmotions and Cardiff features remain populated. See the [accepted-missingness policy](../../docs/classifier_accepted_missingness.json).','',
             '## Validation','',
             '- The original 31-column projection serializes to exactly the pre-join SHA-256: `'+legacy.hexdigest()+'`. Every original value, row and row order is preserved.',
             '- Every public feature value independently reconciles to the correct private classifier row through `song_id`. No extra or missing study observations; no duplicate monthly keys.',
@@ -70,9 +70,9 @@ def build():
             '- The feature list is explicit and namespaced; no CSI, MCR, hardness, consensus or combined outcome is exported. No historical/COVID analysis was performed.','',
             '## Rebuild','',
             '```sh','python3 src/public_dataset.py build','python3 src/public_dataset.py validate','python3 src/public_classifier_report.py','python3 -m unittest discover -s tests -v','```','',
-            'Rebuilding requires the retained local research and classifier databases. Downloads do not require these private inputs. The model-derived features are not ground-truth content measurements. Exact columns and source checksums are in [manifest.json](../data/public/manifest.json) and [the release evidence](classifier_public_release.json).','',
+            'Rebuilding requires the retained local research and classifier databases. Downloads do not require these private inputs. The model-derived features are not ground-truth content measurements. Exact columns and source checksums are in [manifest.json](../../data/public/manifest.json) and [the release evidence](../../reports/classifier_public_release.json).','',
             'The reviewed master exceeds GitHub’s 50 MiB warning threshold but is below its 100 MiB hard limit. It is committed directly to retain the requested simple raw CSV download and full numerical precision; no LFS is introduced. [GitHub size limits](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).']
-    (ROOT/'reports/classifier_public_release.md').write_text('\n'.join(lines)+'\n')
+    (ROOT/'archive/intermediate_reports/classifier_public_release.md').write_text('\n'.join(lines)+'\n')
     print(json.dumps({k:v for k,v in data.items() if k!='classifier_columns'},indent=2))
 
 if __name__=='__main__':build()

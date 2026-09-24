@@ -8,7 +8,7 @@ import sqlite3
 from genre_evidence import ro
 import genre_production as g
 
-REPORT=g.ROOT/'reports/genre_production_checkpoint.md'
+REPORT=g.ROOT/'archive/intermediate_reports/genre_production_checkpoint.md'
 
 
 def review_sample(rows):
@@ -62,7 +62,7 @@ def main():
         lines+=['','## Validation and remaining work','',validation,'',
                 'Population IDs, input/request hashes, frozen configuration and completed structured outputs pass the production validator. Public datasets are not rebuilt by this runner.',
                 '', 'Post-run protected-file validation, complete test suite and qualitative audit remain required. No post-run plausible/questionable/wrong counts are claimed before that review.',
-                '', 'Rebuild this checkpoint with `python3 src/genre_production_audit.py`. Run/resume instructions are in [production.md](../docs/genre/production.md).','']
+                '', 'Rebuild this checkpoint with `python3 src/genre_production_audit.py`. Run/resume instructions are in [production.md](../../docs/genre/production.md).','']
         REPORT.write_text('\n'.join(lines))
         if complete:
             rows=[dict(r) for r in c.execute("SELECT song_id,title,artist,period,primary_genre,secondary_genres,confidence,reason FROM songs WHERE status='completed'")]

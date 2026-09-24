@@ -2,7 +2,7 @@
 
 This is a bounded experiment on the unchanged `reports/genre/sample.csv` (300
 identities). No full-population command is provided. All three earlier genre
-experiments and the public datasets remain separate.
+archive/experiments and the public datasets remain separate.
 
 ## Inputs and inference
 

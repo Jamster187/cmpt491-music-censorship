@@ -58,7 +58,7 @@ python3 src/phase1.py validate
 python3 src/lyrics_completion_check.py --manifest-synchronized
 python3 -m unittest discover -s tests -v
 python3 src/research_report.py
-python3 src/post_run_audit.py --output reports/lyrics_completion_audit.md --decisions ../docs/lyrics_completion.md
+python3 src/post_run_audit.py --output archive/intermediate_reports/lyrics_completion_audit.md --decisions ../docs/lyrics_completion.md
 ```
 
 It builds a temporary research copy, extends the manifest status constraint to
@@ -95,9 +95,9 @@ wrong-identity or not-found case was manually rescued.
 | Unprocessed | 0 |
 
 Usable coverage is **76.38%**. All **19,372 canonical local files** reconcile with
-the sidecar and synchronized research manifest. See the [generated final audit](../reports/lyrics_completion_audit.md)
+the sidecar and synchronized research manifest. See the [generated final audit](../archive/intermediate_reports/lyrics_completion_audit.md)
 for periods, every first-chart year, metadata fields, descriptive missingness and
-persisted runs; the [production report](../reports/lyrics_production_status.md)
+persisted runs; the [production report](../archive/intermediate_reports/lyrics_production_status.md)
 retains detailed loss/warning counts.
 
 All 21,646 pre-resume result payloads retain their hashes. All 66,083 protected

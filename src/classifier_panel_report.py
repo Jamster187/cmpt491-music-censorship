@@ -17,7 +17,7 @@ def main():
     lines=['# Five-classifier judge panel: design and 200-song test','',
     '**The five-model pilot is operational, but not yet approved for full-corpus classification.** All five judges evaluated the exact frozen 200 songs with deterministic whole-input chunking. Keep the individual outputs and aggregation alternatives. The immediate methodological blocker is BART\'s neutral-dominant high theme scores; validate neutral handling and label-specific aggregation with a blinded content/context review. BART memory must also be bounded before a long run. No consensus or hardness score was created.','',
     '## Classifiers and conceptual scope','',
-    '[Complete specification, exact checkpoints, training data, licenses, limitations, concept mapping and rebuild commands](../docs/classifier_panel_specification.md). [Pinned file hashes](classifier_panel/artifacts.json).','',
+    '[Complete specification, exact checkpoints, training data, licenses, limitations, concept mapping and rebuild commands](../old_methodology/classifier_panel_specification.md). [Pinned file hashes](classifier_panel/artifacts.json).','',
     '| Judge | Input | Numerical outputs retained | Principal limitation |','|---|---|---|---|',
     '| LyricLens | English-normalized lyric; Longformer, 1,024 tokens/chunk | Four logits/sigmoids: sexual, violence, language, substance | Lossy normalization; saturation/metaphor errors; training-label provenance limits |',
     '| Detoxify unbiased | Original lyric; RoBERTa, 512 tokens/chunk | Seven main logits/sigmoids plus nine auxiliary outputs | Comment toxicity differs from lyrical content; threat is not narrated violence |',
@@ -27,7 +27,7 @@ def main():
     '',
     'The panel has **59 model-label outputs**, not 59 independent dimensions or five interchangeable raters. Concept families group sexual content, violence, explicit language, substance use, hostility/negative affect, emotion, sentiment and themes without equating their labels. All original outputs survive; no cross-model averaging is performed.',
     '', '## Frozen BART themes','',
-    'Frozen in commit `88eb28b` before new panel inference. Template: `This song contains {}.`. `multi_label=True` semantics score every theme independently. [Versioned labels and rationale](../docs/classifier_panel_themes.json).','',
+    'Frozen in commit `88eb28b` before new panel inference. Template: `This song contains {}.`. `multi_label=True` semantics score every theme independently. [Versioned labels and rationale](../../docs/classifier_panel_themes.json).','',
     '| Stable theme ID | Hypothesis label |','|---|---|']
     for t in themes:lines.append(f"| {t['id']} | {t['label']} |")
     lines+=['',
@@ -43,7 +43,7 @@ def main():
         r=runs[m];c=counts['counts'][m]
         lines.append(f"| {m} | {r['successful']} / {r['failed']} | {c['chunks']} | {c['multichunk']} | {c['max_chunks']} | {r['fingerprint']['content_budget']} | {r['model_input_pairs']} |")
     lines+=['',
-    'All 1,000 song/model dispositions are successful. Numerical chunk evidence, four summaries per label, processing metadata and run fingerprints are in [the experimental output directory](classifier_panel/). Token IDs, lyric text, checkpoints and caches are excluded. The 81,800-row public master and all 19,372 accepted lyric files remain unchanged.',
+    'All 1,000 song/model dispositions are successful. Numerical chunk evidence, four summaries per label, processing metadata and run fingerprints are in [the experimental output directory](classifier_panel). Token IDs, lyric text, checkpoints and caches are excluded. The 81,800-row public master and all 19,372 accepted lyric files remain unchanged.',
     '',
     '### Distributions and low-information outputs','',
     '[Full distributions](classifier_panel/distributions.csv) contain min, max, mean, median, sample SD, Q05/Q25/Q75/Q95 and floor/ceiling counts for all 59 labels × four aggregations, separately for the core 180 and all 200. [Highest/lowest identities](classifier_panel/extremes.csv) contain top/bottom three for every token-weighted label. Below are all-200 token-weighted summaries for the overlapping outputs, all sentiment outputs and selected emotions.','',
@@ -70,7 +70,7 @@ def main():
     lines+=['',
     '[Selected agreements/disagreements](classifier_panel/agreement_cases.csv) preserve raw scores, percentiles and song identities for 160 pair-specific selections. These are diagnostic selections, not independent ground truth. Rank normalization removes scale units but cannot repair domain mismatch, label inequivalence or a nearly constant output. The core/full-sample distinction also shows that percentile positions depend on the reference set.',
     '', '### Interpretation of cases','']
-    notes_path=ROOT/'docs/classifier_panel_findings.md'
+    notes_path=ROOT/'archive/old_methodology/classifier_panel_findings.md'
     if notes_path.exists():lines+=notes_path.read_text().splitlines()+['']
     else:lines+=['Case interpretation pending complete inference review.','']
     lines+=['## Retained outputs and future panel design','',
@@ -97,8 +97,8 @@ def main():
     '',
     '**Validation completed:** 203 tests passed; 4,715 exact chunk/pair input hashes were independently reconstructed. All 198 single-chunk LyricLens and 135 single-chunk Detoxify cases reproduced the prior pilot within 1e-6. The research/public-data/corpus validators and two deterministic diagnostic rebuilds passed.',
     '',
-    'Validation includes exact sample identity, input hashes after independent retokenization, full token coverage, all raw-logit activations, every song summary, previous-pilot single-chunk replays, artifact/version pins, deterministic diagnostics, output safety, the complete test suite and existing corpus/research/public-dataset validators. See [reproduction commands](../docs/classifier_panel_specification.md). No full-corpus classifier run, master modification, consensus/hardness score or longitudinal/COVID analysis was performed.','']
-    (REPORTS/'classifier_panel_design.md').write_text('\n'.join(lines))
+    'Validation includes exact sample identity, input hashes after independent retokenization, full token coverage, all raw-logit activations, every song summary, previous-pilot single-chunk replays, artifact/version pins, deterministic diagnostics, output safety, the complete test suite and existing corpus/research/public-dataset validators. See [reproduction commands](../old_methodology/classifier_panel_specification.md). No full-corpus classifier run, master modification, consensus/hardness score or longitudinal/COVID analysis was performed.','']
+    (ROOT/'archive/intermediate_reports/classifier_panel_design.md').write_text('\n'.join(lines))
     print('Generated classifier panel design report.')
 
 if __name__=='__main__':main()

@@ -274,7 +274,7 @@ def generate_report():
             writer.writeheader()
             writer.writerows(rows)
         temporary.replace(path)
-    report = ROOT / "reports/phase2b_metadata_feasibility.md"
+    report = ROOT / "archive/intermediate_reports/phase2b_metadata_feasibility.md"
     temporary = report.with_suffix(".md.tmp")
     temporary.write_text(markdown(summary, results, a_results), encoding="utf-8")
     temporary.replace(report)

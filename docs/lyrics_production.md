@@ -15,7 +15,7 @@ The gate must pass with the exact current code and review-ledger hashes. It
 requires no observed false accepts, compatible selected texts compared with the
 reviewed sources, and at least 145 automatically accepted assets. This threshold
 is an engineering check on the development sample, not independent validation.
-The [generated comparison](../reports/lyrics_production_pilot.md) measures automatic
+The [generated comparison](../archive/intermediate_reports/lyrics_production_pilot.md) measures automatic
 performance separately from the manually reviewed pilot mappings.
 
 ## Deterministic acceptance
@@ -115,7 +115,7 @@ Do not rebuild `research.db` or run the original pilot import to fix this expect
 sidecar separation. A later unified import requires a separate production-aware
 migration after metadata writing has stopped.
 
-The [status report](../reports/lyrics_production_status.md) contains all requested
+The [status report](../archive/intermediate_reports/lyrics_production_status.md) contains all requested
 periods and individual years. During a running acquisition, distinguish usable
 coverage of attempted assets from usable coverage of the whole population.
 The [startup review](../reports/lyrics_production_startup_review.json) records a

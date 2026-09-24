@@ -20,7 +20,7 @@ import descriptive_analysis as descriptive
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = ROOT / 'data/public/master_monthly.csv'
-OUTPUT = ROOT / 'reports/moving_averages'
+OUTPUT = ROOT / 'analysis/moving_averages'
 FEATURES = descriptive.FEATURES
 MAJOR = ['Pop', 'Rock', 'Hip-Hop / Rap', 'R&B / Soul', 'Country']
 WINDOW = 12

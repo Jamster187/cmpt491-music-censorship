@@ -83,7 +83,7 @@ def report(c, root=l.ROOT):
         lines.append(f"| {p['period']} | {p['attempted']} | {co['success']} | {co['ambiguous']} | {co['not_found']} | {co['error']} | {p['coverage']}% |")
     lines += ['', '2015–2019 overlaps 2010–2019. Periods use first Billboard appearance, not release dates. Instrumental candidates are unresolved/ambiguous rather than empty successful lyric files.', '',
               '## Quality review','',
-              f"Codex B inspected {len(reviews)} initially successful assets using the scopes recorded in [the review ledger](lyrics_pilot_review.json). {data['review_rejections']} were removed from usable coverage and quarantined. These are assistant text/metadata reviews, not human or audio-verified ground truth.", '',
+              f"Codex B inspected {len(reviews)} initially successful assets using the scopes recorded in [the review ledger](../../reports/lyrics_pilot_review.json). {data['review_rejections']} were removed from usable coverage and quarantined. These are assistant text/metadata reviews, not human or audio-verified ground truth.", '',
               'No obvious wrong-artist, same-title substitution, or cover substitution was observed in the inspected successful set. This does not establish transcription accuracy, completeness, or absence of subtle version substitution. Masked words occurred without clean-version flags in the source metadata.', '',
               'Rejected texts and all raw responses remain private. Review findings are bound to the selected LRCLIB ID and exact text SHA-256. Original decisions remain in `review_history`; rerunning the report applies reviews idempotently.', '',
               f"Duration metadata was available for {len(supported)} pilot assets; {len(selected_support)} usable selections have a duration within two seconds of at least one linked recording. {len(selected_album)} usable selections match an available album/release title. Metadata is a frozen read-only snapshot, not refreshed as Codex A progresses. Multiple linked recordings and reissues make it supporting evidence rather than authoritative version selection.", '',
@@ -105,7 +105,7 @@ def report(c, root=l.ROOT):
               f'- Linear full-population estimate under these conditions: about {estimate_requests:,} HTTP attempts and {estimate_hours:.2f} hours, excluding human review, long throttles, and changed catalogue conditions. This is an extrapolation, not authorization or a full-corpus execution plan.', '',
               '## Recommendation','',
               '**NO-GO for unattended full acquisition with the current acceptance rules.** Local acquisition works, but reviewed text defects demonstrate that identity agreement does not guarantee a complete, clean research input. Resolve text-quality checks and review the weak period/credit coverage before scaling. No classifier or full-population acquisition was started.', '']
-    l.atomic(root/'reports/lyrics_pilot_results.md','\n'.join(lines).encode())
+    l.atomic(root/'archive/intermediate_reports/lyrics_pilot_results.md','\n'.join(lines).encode())
     l.save_json(root/'data/processed/lyrics_pilot_summary.json',data)
     return data
 

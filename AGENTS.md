@@ -9,16 +9,19 @@ from 1958 to approximately 2019/2020 and subsequent coverage through 2026. The e
 breakpoint, sampling/weighting choices, classifier, and statistical methods remain
 undecided. Chart dates are not song release dates.
 
-Phase 1, the monthly population, and Phase 2A-R are approved. Current authorized
-work is a unified research database, MusicBrainz asset-level enrichment of the
-25,363 monthly-population identities, and lyrics-source research. Lyrics retrieval
-requires a source permitting the automated acquisition and storage; bulk retrieval
-also requires a successful, reviewed deterministic pilot from the actual study
-population. Stop the lyrics stage if suitable permissions/access cannot be established.
-Preserve earlier experiments and open Phase 1 inputs read-only. Never download
-lyrics into tracked paths; verify ignore rules first. Checkpoint and push tested,
-validated engineering milestones to main. Never commit credentials, lyrics, or
-their caches. Do not implement classifiers, genre taxonomy, or statistical analysis.
+Dataset construction, enrichment, genre/classifier production, and the existing
+descriptive analyses are complete. The final monthly population has 28,041 exact
+study-song identities. Current maintenance covers repository organization and
+reproducing existing outputs. Do not restart acquisition/classification, change
+methodology, or begin new statistical/COVID analysis without explicit authorization.
+
+Final downloadable datasets remain in `data/public/`. Current outputs are in
+`analysis/milestone2/` and `analysis/moving_averages/`; historical work is preserved
+in `archive/`. Consult `docs/repository_structure.md` and `docs/commands.md` first.
+Preserve raw inputs and the Phase 1 foundation read-only. Never commit lyrics,
+credentials, private databases, caches, checkpoints or environments. Checkpoint and
+push tested, validated engineering milestones to main. Frozen release dependencies
+retain their canonical paths; navigation indexes document deliberate exceptions.
 
 ## Source and data model
 

@@ -24,9 +24,9 @@ shell/web/memory/multi-agent features disabled. No inference tool calls occurred
 on 18 songs; 13 affected metadata batches were rerun after removing those tags.
 Two rebatching batches and one exact-repeat batch were also refreshed. Original
 nonconforming attempts remain archived locally and are excluded from final results.
-The exact [prompt](../docs/genre/llm/prompt.txt),
-[schema](../docs/genre/llm/output.schema.json), [inputs](genre_llm/inputs.json),
-[manifest](genre_llm/manifest.json) and [request hashes/usage](genre_llm/runs.json)
+The exact [prompt](../../docs/genre/llm/prompt.txt),
+[schema](../../docs/genre/llm/output.schema.json), [inputs](../../reports/genre_llm/inputs.json),
+[manifest](../../reports/genre_llm/manifest.json) and [request hashes/usage](../../reports/genre_llm/runs.json)
 are saved. Raw requests/responses and transport events remain local.
 
 There is no exposed temperature/seed setting, and the CLI returns no resolved
@@ -81,10 +81,10 @@ not calibrated and not a measure of accuracy or population coverage.
 Reviewed {q['n']} A predictions: **{q['counts'].get('plausible',0)} plausible,
 {q['counts'].get('questionable',0)} questionable,
 {q['counts'].get('clearly wrong',0)} clearly wrong**.
-[Case-level review](genre_llm/review.csv) records each judgment and basis.
+[Case-level review](../../reports/genre_llm/review.csv) records each judgment and basis.
 This is assistant qualitative inspection, including factual checks where needed,
 **not an independently labeled human accuracy study**. Team review has not been
-claimed; a [blank review template](genre_llm/review_template.csv) is provided.
+claimed; a [blank review template](../../reports/genre_llm/review_template.csv) is provided.
 The review deliberately includes all B cases, original challenge anchors, strong-tag disagreements, earlier
 failure examples and all low-confidence A cases, then fills by hash to 140.
 Three additional diagnostic cases surfaced during inspection. This is not a random accuracy sample.
@@ -172,7 +172,7 @@ public joins or historical estimates are produced.
 
 ## Validation and rebuild
 
-See [commands and input rules](../docs/genre/llm/README.md).
+See [commands and input rules](../../docs/genre/llm/README.md).
 `genre_llm_validate.py` verifies all IDs, enums, exact inputs/request hashes,
 unaltered response hashes, no tool calls and exact-repeat request equivalence.
 The prior genre integrity validation protects 21,706 files including 21,693 lyric
@@ -185,6 +185,6 @@ experiment; local raw logs are ignored by Git.
     for genre in TAXONOMY:text+=f"| {genre} | {s['genres'].get(genre,0)} |\n"
     notes=ROOT/'docs/genre/llm/findings.md'
     if notes.exists():text+='\n'+notes.read_text()
-    (ROOT/'reports/llm_genre_evaluation.md').write_text(text)
+    (ROOT/'archive/intermediate_reports/llm_genre_evaluation.md').write_text(text)
 
 if __name__=='__main__':report()

@@ -16,7 +16,7 @@ def analyze():
     ids=[r['song_id'] for r in sample]
     a,b,repeat,exact=[load(x) for x in ('metadata','identity','repeat','exact_repeat')]
     check_predictions({'predictions':list(a.values())},ids)
-    old={r['song_id']:r for r in csv.DictReader((ROOT/'reports/genre_refinement/pilot.csv').open())}
+    old={r['song_id']:r for r in csv.DictReader((ROOT/'archive/intermediate_reports/genre_refinement/pilot.csv').open())}
     direct={sid:r for sid,r in old.items() if r['primary_genre']}
     strong={sid:r for sid,r in old.items() if json.loads(r['mapped_genres'])}
     summary={'assigned':len(a), 'confidence':dict(Counter(r['confidence'] for r in a.values())),

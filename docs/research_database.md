@@ -68,7 +68,7 @@ schemas, tests, reports, and these instructions are the reproducible deliverable
 Lyrics paths and source rights must be established before any acquisition; a
 populated empty manifest is not evidence that lyrics have been attempted.
 
-The earlier [source-access assessment](../reports/lyrics_source_assessment.md)
+The earlier [source-access assessment](../archive/intermediate_reports/lyrics_source_assessment.md)
 records the pre-pilot decision. The user subsequently authorized a local-only
 LRCLIB technical pilot of exactly the existing 200 assets; full acquisition is
 not authorized by that pilot instruction.
@@ -86,7 +86,7 @@ explain cache/resume behavior and runtime limits.
 
 ## Lyrics pilot sidecar
 
-The [original pilot results](../reports/lyrics_pilot_results.md) describe the first
+The [original pilot results](../archive/intermediate_reports/lyrics_pilot_results.md) describe the first
 review. [LRCLIB-R](#offline-lrclib-r-review) provides the revised coverage separately.
 Acquisition writes only `data/processed/lyrics.db`, with
 frozen pilot identities/available metadata in `settings` and incremental results
@@ -134,7 +134,7 @@ not an automatic process-control action.
 
 ## Offline LRCLIB-R review
 
-[Phase LRCLIB-R](../reports/lyrics_lrclib_r_results.md) separates identity confidence
+[Phase LRCLIB-R](../archive/intermediate_reports/lyrics_lrclib_r_results.md) separates identity confidence
 from text quality for all 83 originally ambiguous assets. The 112 original usable
 files and five not-found cases are carried forward unchanged. It uses no network
 requests and does not alter either acquisition database or canonical lyrics files.

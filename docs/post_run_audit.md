@@ -1,6 +1,6 @@
 # Post-run audit decisions — 2026-09-20
 
-The [reproducible aggregate audit](../reports/post_run_audit.md) supersedes the
+The [reproducible aggregate audit](../archive/intermediate_reports/post_run_audit.md) supersedes the
 running checkpoints. The earlier reports are historical records. No acquisition
 was restarted, no matching rule changed, and neither database was migrated.
 

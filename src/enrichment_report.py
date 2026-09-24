@@ -151,7 +151,7 @@ def generate_report(output_dir, cache_dir, report_path):
             writer.writerows(flat)
     statuses, coverage, audit = summary["status_counts"], summary["coverage"], summary["cache_audit"]
     lines = ["# Phase 2A: metadata feasibility", "", "Generated from the cached MusicBrainz experiment. No manual match overrides were applied.", "",
-             "MusicBrainz is the only provider tested. See [source research](phase2a_source_research.md) for fields, authentication, rate limits, terms, and possible complements; see [experiment instructions](../experiments/phase2a/README.md) for reproduction and exact matching rules.", "",
+             "MusicBrainz is the only provider tested. See [source research](phase2a_source_research.md) for fields, authentication, rate limits, terms, and possible complements; see [experiment instructions](../archive/experiments/phase2a/README.md) for reproduction and exact matching rules.", "",
              "## Sample and scope", "",
              "The fixed sample has {} unique Billboard title/artist pairs from {} identities. Periods use first Billboard appearance, not release year. Every first-appearance year from 1958 through 2026 is represented. The sample deliberately balances periods and oversamples difficult credits; its aggregate rates are descriptive pilot results, not population estimates.".format(summary["sample_size"], sample["population_size"]), "",
              "Difficulty flags overlap: `{}`. Selection reasons: `{}`.".format(json.dumps(summary["difficulty_counts"], ensure_ascii=False, sort_keys=True), json.dumps(summary["selection_counts"], sort_keys=True)), "",

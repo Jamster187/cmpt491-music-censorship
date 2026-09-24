@@ -10,7 +10,7 @@ from genre_pilot import load_sample
 from genre_rules import eligible,mapping,TAXONOMY
 from genre_sample import complex_credit
 from genre_refined_rules import assign,CONFIG
-DEST=ROOT/'reports/genre_refinement'
+DEST=ROOT/'archive/intermediate_reports/genre_refinement'
 LOCAL=ROOT/'data/experiments/genre_refinement'
 
 

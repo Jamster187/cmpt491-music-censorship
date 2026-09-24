@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data/processed/music.db"
 RAW = ROOT / "data/raw/billboard-hot-100.json"
 OUTPUT = ROOT / "data/processed/populations"
-REPORT = ROOT / "reports/analysis_populations.md"
+REPORT = ROOT / "archive/intermediate_reports/analysis_populations.md"
 MONTHLY_COLUMNS = ("month", "monthly_rank", "song_id", "monthly_points", "weeks_present",
                    "best_weekly_rank", "average_weekly_rank", "weekly_observations")
 PERIODS = [(1958, 1969, "1958–1969"), (1970, 1979, "1970s"), (1980, 1989, "1980s"),
@@ -184,7 +184,7 @@ def markdown(s):
             lines.append("| " + " | ".join(str(v).replace('|','\\|') for v in values) + " |")
         lines.append("")
     lines += ["## Validation and reproduction", "", "All monthly rows, statistics, and top-100 selection reconcile to an independent Python aggregation using exact rational average-rank comparisons. Monthly ranks are unique and contiguous, basket sizes never exceed 100, and every song_id resolves to the canonical songs table. Both CSV exports were read back and reconciled row-for-row. Source JSON and canonical database hashes were unchanged across the build.",
-        "The derived SQLite database, weekly/monthly CSVs, complete month inventory, yearly entrant counts, frequency distribution, and JSON report are under `data/processed/populations/` (ignored and rebuildable). See [population instructions](../docs/analysis_populations.md) for joins and commands. Song metadata is not duplicated in the derived database or weekly/monthly exports. No classifier or COVID breakpoint is implemented.", ""]
+        "The derived SQLite database, weekly/monthly CSVs, complete month inventory, yearly entrant counts, frequency distribution, and JSON report are under `data/processed/populations/` (ignored and rebuildable). See [population instructions](../old_methodology/analysis_populations.md) for joins and commands. Song metadata is not duplicated in the derived database or weekly/monthly exports. No classifier or COVID breakpoint is implemented.", ""]
     return "\n".join(lines)
 
 

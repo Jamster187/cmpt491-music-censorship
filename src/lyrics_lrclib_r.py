@@ -203,8 +203,8 @@ def render(data):
               'An American Trilogy is recovered by removing its explicit metadata header. The raw source, raw-text hash, cleaning operations and cleaned-text hash are retained. The cleaner is applied only to selected newly recoverable texts, with every choice bound to a specific cached candidate revision.', '',
               '## Reproduce and audit','',
               '```bash','python3 src/lyrics_lrclib_r.py build','python3 -m unittest discover -s tests -v','```','',
-              '- [Versioned review ledger](lyrics_lrclib_r_review.json): one explicit identity grade, text grade, selected candidate, source hash, reason and warning list for every ambiguous asset.',
-              '- [Generated case table](lyrics_lrclib_r_cases.csv): 83 rows with original Billboard identity, matched LRCLIB identity, independent grades and review reasons; no lyrics.',
+              '- [Versioned review ledger](../../reports/lyrics_lrclib_r_review.json): one explicit identity grade, text grade, selected candidate, source hash, reason and warning list for every ambiguous asset.',
+              '- [Generated case table](../../reports/lyrics_lrclib_r_cases.csv): 83 rows with original Billboard identity, matched LRCLIB identity, independent grades and review reasons; no lyrics.',
               '- Local result/combined-corpus manifest: `data/processed/lyrics_lrclib_r.json`.',
               '- Newly recoverable cleaned texts: `data/cache/lrclib-r/texts/<song_id>.txt`; original accepted files remain `data/lyrics/<song_id>.txt`. No canonical files were replaced and no unified-database import was run.',
               '- Existing candidate responses remain under `data/cache/lrclib/`. Outputs reference their URLs, retrieval timestamps, response hashes and frozen metadata evidence. Rebuild validates all 83 ledger entries and their cached candidate hashes, and leaves both acquisition databases untouched.',
@@ -258,7 +258,7 @@ def build(root=ROOT):
              'normalization_unicode_version':unicodedata.unidata_version,'summary':data,
              'reviews':serialized,'corpus':sorted(corpus,key=lambda x:x['song_id'])}
     save_json(root/'data/processed/lyrics_lrclib_r.json',payload)
-    atomic(root/'reports/lyrics_lrclib_r_results.md',render(data).encode())
+    atomic(root/'archive/intermediate_reports/lyrics_lrclib_r_results.md',render(data).encode())
     buf=io.StringIO(newline='')
     fields=['song_id','billboard_title','billboard_artist','first_chart_date','candidate_id','matched_title','matched_artist','album','duration','identity_confidence','text_quality','outcome','reason','warnings','cleaning_steps','source_text_sha256','cleaned_sha256']
     writer=csv.DictWriter(buf,fieldnames=fields,lineterminator='\n');writer.writeheader()

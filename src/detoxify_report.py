@@ -15,12 +15,12 @@ def main():
     lines=['# Detoxify evaluation: same 200-song pilot','',
     '**Recommendation C: retain selected outputs from both models as complementary candidate features, not as a validated primary severity measure.** Detoxify obscene is a useful independent language benchmark; sexual_explicit offers a narrower sexual-content comparison. LyricLens addresses broader sexual themes, violence and substance use, but retains documented errors. Detoxify toxicity, threat and severe_toxicity should not replace these lyrical constructs. Neither model establishes a continuous severity scale.','',
     '## Model','',
-    'English Detoxify **unbiased**, repository 0.5.3, pinned commit `d5376446b6accee5dd2d346f2d3050f9d8a69af1`; RoBERTa-base sequence classifier, 124,657,936 parameters. Official Apache-2.0 distribution; trained on the first two Jigsaw comment datasets, not lyrics. Upstream reports **93.74** on its composite toxicity/bias AUC benchmark, not accuracy or lyric performance. [Inspection, sources, label definitions, license and reproduction](../docs/detoxify_methodology.md).','',
+    'English Detoxify **unbiased**, repository 0.5.3, pinned commit `d5376446b6accee5dd2d346f2d3050f9d8a69af1`; RoBERTa-base sequence classifier, 124,657,936 parameters. Official Apache-2.0 distribution; trained on the first two Jigsaw comment datasets, not lyrics. Upstream reports **93.74** on its composite toxicity/bias AUC benchmark, not accuracy or lyric performance. [Inspection, sources, label definitions, license and reproduction](../../docs/detoxify_methodology.md).','',
     'Seven returned sigmoid confidence scores: toxicity, severe_toxicity, obscene, threat, insult, identity_attack, sexual_explicit. They are not calibrated severity probabilities. No substance score, CSI, MCR or combined hardness score is introduced.','',
     '## Scope and evidence','',
     '- **200/200 successful, zero failed/missing predictions** on the exact frozen LyricLens sample (180 stratified core plus 20 preselected sentinels). No new sample was selected.',
-    '- [Predictions](detoxify_predictions.csv), [all raw logits/sigmoids](detoxify_raw_outputs.jsonl), [run provenance](detoxify_run.json), [artifact hashes](detoxify_artifacts.json), [full diagnostics](detoxify_diagnostics.json). Raw outputs include nine auxiliary identity heads for reproducibility only.',
-    '- [50 deterministic qualitative reviews](detoxify_review.csv): all 20 sentinels, directional differences for five overlapping pairs, each Detoxify minimum/maximum, period midpoints, Spanish cases and deterministic supplementation. Selection is score-informed, so review counts are not accuracy estimates.',
+    '- [Predictions](../../reports/detoxify_predictions.csv), [all raw logits/sigmoids](../../reports/detoxify_raw_outputs.jsonl), [run provenance](../../reports/detoxify_run.json), [artifact hashes](../../reports/detoxify_artifacts.json), [full diagnostics](../../reports/detoxify_diagnostics.json). Raw outputs include nine auxiliary identity heads for reproducibility only.',
+    '- [50 deterministic qualitative reviews](../../reports/detoxify_review.csv): all 20 sentinels, directional differences for five overlapping pairs, each Detoxify minimum/maximum, period midpoints, Spanish cases and deterministic supplementation. Selection is score-informed, so review counts are not accuracy estimates.',
     '- Existing accepted lyrics, all acquisition databases, the LyricLens pilot and public master remain unchanged. Only these 200 unique songs received Detoxify predictions; eight were replayed in separate input-sensitivity diagnostics.','',
     '## Score distributions: all 200','',
     'Sample standard deviation (n−1); quantiles use linear interpolation. Scientific notation preserves small nonzero values.','',
@@ -31,7 +31,7 @@ def main():
         lines.append('| '+k+' | '+' | '.join(f'{s[x]:.5g}' for x in ('min','q05','q25','median','mean','sd','q75','q95','max'))+f" | {s['below_01']} | {s['above_99']} |")
     lines+=['','No outputs equal exactly zero or one. Threat (182/200 below .01) and severe_toxicity (181/200 below .01) are strongly compressed near zero. Sexual_explicit is below .01 for 149/200. Toxicity has three values above .99. This is not a failed model run: all logits are finite and match upstream sigmoid outputs. These sparse/confident responses still offer poor resolution for broad content severity.','',
     '### Highest and lowest identities','',
-    'Full top/bottom three per label are in [the extremes table](detoxify_extremes.csv). These are model extremes, not rankings of actual harmfulness.','',
+    'Full top/bottom three per label are in [the extremes table](../../reports/detoxify_extremes.csv). These are model extremes, not rankings of actual harmfulness.','',
     '| Score | Minimum identity (score) | Maximum identity (score) |','|---|---|---|']
     extremes=[]
     for k in LABELS:
@@ -68,7 +68,7 @@ def main():
     '',
     f"**Truncation:** {d['truncation']['all_200']}/200 lyrics ({d['truncation']['core_180']}/180 core) exceed Detoxify's 512-token input, compared with 2/200 for LyricLens's differently preprocessed 1,024-token input. Detoxify always sees at most 510 content tokens. The unmatched input coverage is a major confound in comparing models.",
     '',
-    '[Eight-song sensitivity results](detoxify_sensitivity.csv) preserve original replay, unique-line and final-510-token scores separately. All eight original replays agree within 1e-6. Because I Got High obscene changes .275 → .800 for the tail; Survivor .131 → .007. Removing repeated lines changes How Country Feels threat .381 → .158, while Foolish Heart insult remains high (.867 → .955). These probes change context as well as repetition/position, so they demonstrate input sensitivity without isolating a single causal mechanism. No alternative aggregation or preprocessing is approved here.',
+    '[Eight-song sensitivity results](../../reports/detoxify_sensitivity.csv) preserve original replay, unique-line and final-510-token scores separately. All eight original replays agree within 1e-6. Because I Got High obscene changes .275 → .800 for the tail; Survivor .131 → .007. Removing repeated lines changes How Country Feels threat .381 → .158, while Foolish Heart insult remains high (.867 → .955). These probes change context as well as repetition/position, so they demonstrate input sensitivity without isolating a single causal mechanism. No alternative aggregation or preprocessing is approved here.',
     '',
     '| Score | Spearman with word count, core 180 |','|---|---:|']
     for k in LABELS:lines.append(f"| {k} | {d['core_180']['word_count_spearman'][k]:.3f} |")
@@ -94,7 +94,7 @@ def main():
     'Validation completed: **192 tests passed**; research database, public exports, all 19,372 lyric files, original LyricLens artifacts, Detoxify score reconciliation and deterministic diagnostic rebuilds passed. No lyrics, caches, databases, model files or credentials are staged for publication.',
     '',
     'Validation commands: `python3 -m unittest discover -s tests -v`, `python3 src/detoxify_evaluation.py validate`, `python3 src/detoxify_validate.py`, `python3 src/lyriclens_validate.py`, `python3 src/public_dataset.py validate`, and `python3 src/research.py validate`. Together, these validators check deterministic diagnostics/review/report regeneration, artifact and corpus integrity, raw-score reconciliation and public-output safety. Full-corpus classification and historical analysis have not started.','']
-    (REPORTS/'detoxify_evaluation.md').write_text('\n'.join(lines))
+    (ROOT/'archive/intermediate_reports/detoxify_evaluation.md').write_text('\n'.join(lines))
     print('Generated Detoxify evaluation report and 42-row extremes table.')
 
 if __name__=='__main__':main()

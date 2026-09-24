@@ -82,7 +82,7 @@ def gate(root=ROOT):
           '## Disagreements','', '| Billboard title | Reviewed disposition | Automatic disposition | Reason |','|---|---|---|---|']
     for x in cases:
         if x['expected']!=x['automatic']:text.append('| '+' | '.join(str(x[k]).replace('|','/') for k in ('title','expected','automatic','reason'))+' |')
-    atomic(root/'reports/lyrics_production_pilot.md',('\n'.join(text)+'\n').encode())
+    atomic(root/'archive/intermediate_reports/lyrics_production_pilot.md',('\n'.join(text)+'\n').encode())
     buf=io.StringIO();fields=['song_id','title','artist','expected','automatic','selected','reviewed_candidate','reason','false_accept']
     writer=csv.DictWriter(buf,fieldnames=fields,lineterminator='\n');writer.writeheader()
     for x in cases:writer.writerow({k:x[k] for k in fields})
@@ -294,7 +294,7 @@ def report(root=ROOT):
               '- Sequential identified requests, 500 ms minimum extra delay, persistent Retry-After cooldown, bounded retries, per-song file then SQLite persistence, exclusive lyrics-worker lock. SIGINT/SIGTERM finish the current asset and stop; SIGKILL is recoverable from cache/deterministic files.',
               '- `research.db` is never written; metadata is a frozen read-only snapshot. No classifier or historical analysis is run.', '', '## Worker runs','', '| Started | Finished | State | New attempts | HTTP requests |','|---|---|---|---:|---:|']
     lines += [f"| {r['started_at']} | {r['finished_at'] or ''} | {r['state']} | {r['processed']} | {r['requests']} |" for r in runs]
-    atomic(root/'reports/lyrics_production_status.md',('\n'.join(lines)+'\n').encode())
+    atomic(root/'archive/intermediate_reports/lyrics_production_status.md',('\n'.join(lines)+'\n').encode())
     return data
 
 

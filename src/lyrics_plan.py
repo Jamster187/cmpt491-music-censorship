@@ -10,7 +10,7 @@ from musicbrainz import write_json
 VERSION='study-lyrics-pilot-v1'
 PERIODS=[(1958,1969,'1958–1969',29),(1970,1979,'1970s',29),(1980,1989,'1980s',29),
          (1990,1999,'1990s',29),(2000,2009,'2000s',28),(2010,2019,'2010–2019',28),(2020,2026,'2020–2026',28)]
-BLOCKER='No verified project entitlement for automated full-lyrics acquisition, retention, and intended research reuse; see reports/lyrics_source_assessment.md'
+BLOCKER='No verified project entitlement for automated full-lyrics acquisition, retention, and intended research reuse; see archive/intermediate_reports/lyrics_source_assessment.md'
 
 
 def select(songs):
@@ -43,7 +43,7 @@ def prepare(conn):
     existing=conn.execute('SELECT * FROM lyrics_pilot ORDER BY selection_order').fetchall()
     if existing and existing!=expected:
         raise ValueError('Existing lyrics pilot differs; refuse to replace it')
-    report=ROOT/'reports/lyrics_source_assessment.md'
+    report=ROOT/'archive/intermediate_reports/lyrics_source_assessment.md'
     provenance=json.dumps({'assessment_path':str(report.relative_to(ROOT)),'assessment_sha256':sha(report),'retrieval_attempted':False},sort_keys=True)
     with conn:
         if not existing:

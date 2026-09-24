@@ -327,11 +327,11 @@ def write_report():
       'Coverage below uses first Billboard appearance and the full 28,041-song denominator, including pending catch-up work. The 2015–2019 subset overlaps 2010–2019.',
       '', '| Period | Songs | Usable lyrics | Lyrics % | Any classifier % | All 42 % |','|---|---:|---:|---:|---:|---:|']
     for r in result['periods']:lines.append(f"| {r['period']} | {r['songs']} | {r['usable']} | {r['usable_percent']} | {r['any_classifier_percent']} | {r['all_42_percent']} |")
-    lines += ['', 'See [catch-up commands and storage](../docs/month_end_catchup.md). Current public CSVs and research databases are unchanged. No genre assignment or longitudinal/COVID analysis is performed.',
+    lines += ['', 'See [catch-up commands and storage](../../docs/month_end_catchup.md). Current public CSVs and research databases are unchanged. No genre assignment or longitudinal/COVID analysis is performed.',
       '', 'MusicBrainz replays the archived 19-song evidence before network work. Lyrics use the fixed pre-run metadata snapshot, so concurrent metadata progress cannot change matching inputs. The original matchers, clients, rates, cleaning, classifier checkpoints and token-weighted aggregation are unchanged.',
       '', 'Completion requires all acquisition dispositions, all four attempted model jobs per new usable lyric, verified files/outputs and protected-input hashes. Live counts alone do not establish successful completion.']
     if result['status']=='COMPLETE':lines += ['', 'Ready for genre assignment on the final 28,041-song population.']
-    lp.atomic(ROOT/'reports/month_end_catchup.md',('\n'.join(lines)+'\n').encode())
+    lp.atomic(ROOT/'archive/intermediate_reports/month_end_catchup.md',('\n'.join(lines)+'\n').encode())
     return result
 
 

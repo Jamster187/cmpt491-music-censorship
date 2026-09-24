@@ -64,7 +64,7 @@ def render(s):
     lines=['# Research database construction status','',
       'Generated with `python3 src/research_report.py`. Counts describe persisted decisions at report generation; rerun after resuming acquisition. Historical periods use first Billboard appearance, not release year or first monthly entry.','',
       f"Database: `data/processed/research.db`. **{c['songs']:,} assets, {c['chart_observations']:,} weekly observations, {c['monthly_top100']:,} monthly observations, {c['study_population']:,} study members.**",
-      'The canonical Phase 1 database and raw JSON are unchanged. All weekly and monthly rows were reconciled field-for-field. Study membership does not depend on metadata/lyrics availability. See [schema and build instructions](../docs/research_database.md).','',
+      'The canonical Phase 1 database and raw JSON are unchanged. All weekly and monthly rows were reconciled field-for-field. Study membership does not depend on metadata/lyrics availability. See [schema and build instructions](../../docs/research_database.md).','',
       '## Metadata','',
       f"Attempted: **{s['metadata_attempted']:,}**. High confidence: **{m.get('high_confidence',0):,}**; ambiguous: **{m.get('ambiguous',0):,}**; not found: **{m.get('not_found',0):,}**; errors: **{m.get('error',0):,}**; pending: **{m.get('pending',0):,}**.",
       f"Accepted coverage is **{s['metadata_high_confidence_percent_of_population']}% of the study population**, or **{s['metadata_high_confidence_percent_of_attempted']}% of attempted assets**. Attempted and population denominators coincide only when every study asset has a disposition.",
@@ -85,7 +85,7 @@ def render(s):
             'All returned raw tag/genre values remain scoped to recordings, release groups, or artists. Missing new detailed genre lookups are unmeasured. Multiple recordings and conflicting dates/durations are retained; the database does not select a canonical recording or assign artist genres to songs. No final genre taxonomy is constructed.','',
             'Matching limitations remain visible in the decision files: missing candidates, incompatible full artist credits, conflicting artist identities, unsupported versions, and inadequate temporal anchors can leave an asset unresolved. Accepted later/undated manifestations inherit asset support from a compatible dated candidate; their own dates and durations should not be treated as the original release. Raw tags can include non-genre labels, and their presence is not a validated genre assignment. Production decisions have not received exhaustive manual review.','',
             '## Lyrics','',
-            f"Manifest sources: **{', '.join(s['source_selected']) or 'none recorded'}**. Status: **{s['lyrics_stage']}**. Production details and local storage are described in [lyrics instructions](../docs/lyrics_production.md).",
+            f"Manifest sources: **{', '.join(s['source_selected']) or 'none recorded'}**. Status: **{s['lyrics_stage']}**. Production details and local storage are described in [lyrics instructions](../../docs/lyrics_production.md).",
             f"Pilot: **{c['lyrics_pilot']} study-member identities, {s['lyrics_pilot_attempted']} attempted**. Total attempted: **{s['lyrics_attempted']}**; successful: **{l.get('success',0)}**. Overall acquired coverage: **{s['lyrics_success_percent_of_population']}%**.",
             'Manifest dispositions: `'+json.dumps(l,sort_keys=True)+'`. Unattempted/blocked rows are not provider misses; wrong identity, bad/missing text, quarantine and API errors remain distinct. Only successful paths supply the corpus. No lyric text is copied into this report.','',
             '| First-chart period | Population | Lyrics attempted | Retrieved | Acquired coverage |',
@@ -105,7 +105,7 @@ def render(s):
             f"Lyrics without a disposition in this manifest: **{s['population']-s['lyrics_attempted']:,}**. Do not restart a complete pass merely to improve acceptance. Unresolved outcomes remain explicit; no manual rescue or classifier is run by these commands.",
             '```bash','python3 src/research.py validate','python3 src/lyrics_production.py validate',
             'python3 -m unittest discover -s tests -v','```','',
-            'Lyrics, caches and generated databases remain local and Git-ignored. See [completion record](../docs/lyrics_completion.md) for acquisition, synchronization, validation and remaining limitations.','']
+            'Lyrics, caches and generated databases remain local and Git-ignored. See [completion record](../../docs/lyrics_completion.md) for acquisition, synchronization, validation and remaining limitations.','']
     return '\n'.join(lines)
 
 
@@ -115,7 +115,7 @@ def main():
         summary=collect(conn)
         conn.rollback()
     write_json(ROOT/'data/processed/research_status.json',summary)
-    target=ROOT/'reports/research_dataset_status.md'
+    target=ROOT/'archive/intermediate_reports/research_dataset_status.md'
     tmp=target.with_suffix('.md.tmp');tmp.write_text(render(summary),encoding='utf-8');tmp.replace(target)
     fields=('year','population','metadata_attempted','metadata_accepted','lyrics_attempted','lyrics_success','lyrics_coverage_percent')
     with (ROOT/'data/processed/research_coverage_by_year.csv').open('w',newline='',encoding='utf-8') as f:

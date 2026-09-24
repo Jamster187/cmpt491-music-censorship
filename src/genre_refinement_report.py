@@ -5,7 +5,7 @@ from genre_evidence import ROOT
 from genre_rules import TAXONOMY
 
 def render():
-    base=ROOT/'reports/genre_refinement';s=json.loads((base/'summary.json').read_text())
+    base=ROOT/'archive/intermediate_reports/genre_refinement';s=json.loads((base/'summary.json').read_text())
     review=list(csv.DictReader((base/'review.csv').open()));q=Counter(r['judgment'] for r in review)
     tests=(ROOT/'data/experiments/genre_refinement/tests.log').read_text()
     n=re.search(r'Ran (\d+) tests',tests)
@@ -36,7 +36,7 @@ def render():
     'Strong direct support requires one of: a tag with at least three votes; two compatible tag families each with at least two votes; three compatible families with at least one two-vote family; or two direct providers agreeing. All-one-vote clusters remain weak: Redbone demonstrates why a cluster of related house tags can still be misleading. These are interpretable pilot gates, not confidence probabilities.',
     'Recording/accepted song-item evidence controls primary assignment. Release and artist counts remain separate context; compilation ambiguity prevents automatic release-to-song inheritance. One strong category produces a primary. Multiple strong categories require a twofold maximum-support advantage and no smaller backed-family count; otherwise leave the primary missing. Other uses the same gate. Category order never breaks a tie.',
     'Generic Pop cannot veto a strong specific category. The parent check considers backed labels, so a stray one-vote pop-rock tag cannot defeat the rule. Explicit supported Pop styles and compound genres remain competitors. Generic Rock is a parent for strongly supported Metal/Alternative; hard rock is not automatically Metal. This parent rule still produces questionable boundary decisions, such as Elvis’s Can’t Help Falling In Love.',
-    'Full definitions, thresholds and development history: [method](../docs/genre/refinement.md), [configuration](../docs/genre/refinement_rules.json). The successive development trials yielded 75, 80 and 90 primaries. Threshold development used this pilot, so subsequent face review is not held-out validation. No historical content results informed these choices.',
+    'Full definitions, thresholds and development history: [method](../old_methodology/genre_refinement.md), [configuration](../../docs/genre/refinement_rules.json). The successive development trials yielded 75, 80 and 90 primaries. Threshold development used this pilot, so subsequent face review is not held-out validation. No historical content results informed these choices.',
     '', '## Qualitative review and human review readiness','',
     f"Reviewed **{len(review)} primaries**: **{q['plausible']} plausible, {q['questionable']} questionable, {q['clearly_wrong']} clearly misleading**. Fifty-eight were recovered from the previous ambiguous cohort. Selection takes up to nine per period, (six for the latest period), prioritizing predeclared challenge identities, uncommon genres and recovered cases, then fills to 60 using a fixed hash order. This is error discovery, not an unbiased accuracy estimate.",
     '**These are assistant qualitative metadata judgments, not completed human labels or listening-based ground truth.** Independent human adjudication remains outstanding. A [human review template](genre_refinement/human_review_template.csv) is supplied for those exact 60 cases. The [review ledger](genre_refinement/review.csv) identifies the reviewer and distinguishes external review references from production evidence. No reference or review verdict is read by the assignment engine.',
@@ -70,6 +70,6 @@ def render():
     '**C — EXISTING EVIDENCE IS INSUFFICIENT; ADD A SECOND GENRE SOURCE.** Keep this broad-support prototype and multi-genre representation, but obtain independent song-specific corroboration in a future bounded pilot before scaling. Further lowering thresholds would re-admit demonstrated single-tag and coherent-but-wrong tag clusters. A Pop-only adjustment would not fill the 9,282 evidence-free songs or solve the modern/global gap. No additional source was acquired in this task.',
     f"**{n[1]} tests passed**, including 17 new support-rule regression tests. The original protected-data validation passed. Replays reproduce the refined pilot, audit and summary byte-for-byte. All original v1 tracked artifacts and all public datasets, source/research/classifier databases and 21,693 lyrics remain unchanged. No new full-population genre table was generated.",
     '', 'Rebuild: `python3 src/genre_refinement.py`, then `python3 src/genre_refinement_report.py`. See the method for tests and integrity checks. Stopped before production assignment, public export changes or historical/COVID analysis.']
-    (ROOT/'reports/genre_assignment_refinement.md').write_text('\n'.join(lines)+'\n')
+    (ROOT/'archive/intermediate_reports/genre_assignment_refinement.md').write_text('\n'.join(lines)+'\n')
 
 if __name__=='__main__':render()

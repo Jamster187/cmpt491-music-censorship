@@ -1,6 +1,6 @@
 # Four-model classifier panel
 
-The frozen production panel is **LyricLens, Detoxify Unbiased, GoEmotions and Cardiff sentiment**. BART is excluded. We retain 42 separate numerical features, without CSI, MCR, hardness or consensus. The [200-song readiness report](../reports/classifier_production_readiness.md) records the evidence and benchmark. The full corpus is now classified. The user accepted two deterministic LyricLens
+The frozen production panel is **LyricLens, Detoxify Unbiased, GoEmotions and Cardiff sentiment**. BART is excluded. We retain 42 separate numerical features, without CSI, MCR, hardness or consensus. The [200-song readiness report](../archive/intermediate_reports/classifier_production_readiness.md) records the evidence and benchmark. The full corpus is now classified. The user accepted two deterministic LyricLens
 normalization failures as documented missingness: 19,370 songs have all four
 models and two retain their other three models. See the
 [accepted-missingness policy](classifier_accepted_missingness.json). Do not retry

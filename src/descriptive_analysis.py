@@ -18,7 +18,7 @@ import scipy
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = ROOT / 'data/public/master_monthly.csv'
-OUTPUT = ROOT / 'reports/milestone2'
+OUTPUT = ROOT / 'analysis/milestone2'
 VERSION = 'milestone2-descriptive-v1'
 LL = ['ll_sexual_content', 'll_violence', 'll_explicit_language', 'll_substance_use']
 DETOX = ['detox_' + s for s in ('toxicity', 'severe_toxicity', 'obscene', 'threat',
@@ -387,8 +387,10 @@ def build(out, frame, songs):
     song_corr = correlations(songs, SONG_NUMERIC, 'song')
     for method in obs_corr:
         tables[method+'_correlations'] = pd.concat([obs_corr[method], song_corr[method]], ignore_index=True)
+    table_dir = out/'tables'
+    table_dir.mkdir(exist_ok=True)
     for name, data in tables.items():
-        data.to_csv(out/(name+'.csv'), index=False, float_format='%.10g', lineterminator='\n')
+        data.to_csv(table_dir/(name+'.csv'), index=False, float_format='%.10g', lineterminator='\n')
     figures(out, frame, songs, tables['genre_summary'], tables['yearly_summary'], tables['availability_by_group'])
     findings(out, frame, songs, tables)
     return tables

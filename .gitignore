@@ -50,5 +50,14 @@ local_config.*
 /data/public/master_weekly.csv
 
 # Reproducible large moving-average CSVs; lossless .csv.xz copies are tracked.
-/reports/moving_averages/data/monthly_classifier_overall.csv
-/reports/moving_averages/data/monthly_classifier_by_genre.csv
+/analysis/moving_averages/data/monthly_classifier_overall.csv
+/analysis/moving_averages/data/monthly_classifier_by_genre.csv
+
+# Defense in depth if private stores/checkpoints are accidentally relocated.
+*.db
+*.sqlite
+*.sqlite3
+*.safetensors
+*.ckpt
+*.pt
+*.pth

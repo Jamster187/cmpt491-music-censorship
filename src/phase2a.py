@@ -217,7 +217,7 @@ def main(argv=None):
             run(args.database, args.output_dir, args.cache_dir, args.offline, args.retry_errors, args.limit, args.replay)
         else:
             from enrichment_report import generate_report
-            generate_report(args.output_dir, args.cache_dir, ROOT / "reports/phase2a_metadata_feasibility.md")
+            generate_report(args.output_dir, args.cache_dir, ROOT / "archive/intermediate_reports/phase2a_metadata_feasibility.md")
     except (APIError, OSError, ValueError, sqlite3.Error) as exc:
         print("Phase 2A failed: " + str(exc), file=sys.stderr)
         return 1

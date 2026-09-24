@@ -55,7 +55,7 @@ def build(db,replay):
     sample={x['song_id']:x for x in read(ROOT/'reports/lyriclens_sample.csv')}
     old_max=0
     for model,oldname in OLD.items():
-        with (ROOT/'reports/classifier_panel'/(oldname+'_chunks.jsonl')).open() as f:old={(x['song_id'],x['chunk_index']):x for x in map(json.loads,f)}
+        with (ROOT/'archive/intermediate_reports/classifier_panel'/(oldname+'_chunks.jsonl')).open() as f:old={(x['song_id'],x['chunk_index']):x for x in map(json.loads,f)}
         subset=[x for x in raw if x['model']==model]
         if len(subset)!=len(old):raise ValueError('Prior chunk count differs')
         for x in subset:
@@ -99,9 +99,9 @@ def build(db,replay):
     ceilings=[d for d in distributions if d['above_99']>0]
     sentiment_winners={label:sum(max(SPEC['models']['cardiff']['columns'],key=lambda col:song[col])=='sentiment_'+label for song in songs) for label in ('negative','neutral','positive')}
     lines=['# Four-model production readiness','', '**READY for a separately authorized full-corpus run. Only the frozen 200-song sample has been classified by this production runner.**','',
-           'BART is excluded from the production schema, executable model choices, replays and performance estimates. Earlier five-model experiments remain archived. The production panel preserves 42 separate content, emotion and sentiment features; it does not calculate CSI, MCR, hardness or consensus.','',
+           'BART is excluded from the production schema, executable model choices, replays and performance estimates. Earlier five-model archive/experiments remain archived. The production panel preserves 42 separate content, emotion and sentiment features; it does not calculate CSI, MCR, hardness or consensus.','',
            '## Frozen panel and schema','',
-           'The machine-readable [schema](../docs/classifier_production_schema.json) fixes labels, raw-head indices, artifact hashes, checkpoint revisions, windows and aggregation. The [operating guide](../docs/classifier_production.md) describes the local results database and resume commands. Model cards, licenses and training-domain limitations are retained in the [model specification](../docs/classifier_panel_specification.md); only its four retained models apply here.','',
+           'The machine-readable [schema](../../docs/classifier_production_schema.json) fixes labels, raw-head indices, artifact hashes, checkpoint revisions, windows and aggregation. The [operating guide](../../docs/classifier_production.md) describes the local results database and resume commands. Model cards, licenses and training-domain limitations are retained in the [model specification](../old_methodology/classifier_panel_specification.md); only its four retained models apply here.','',
            '| Model | Outputs | Context including special tokens | Aggregation |','|---|---:|---:|---|']
     for m in MODELS:lines.append(f"| {m} | {len(SPEC['models'][m]['columns'])} | {SPEC['models'][m]['window']} | Content-token-weighted chunk mean |")
     lines+=['','All four models use their own pinned tokenizer. Balanced, contiguous, non-overlapping partitions cover every normalized token exactly once. No truncation is enabled. Limits reserve two special tokens: 1,022 content tokens for LyricLens; 510 for the other models. LyricLens retains its upstream lossy English normalization; complete coverage refers to **normalized tokens**, not preservation of all original punctuation, inflections or non-English text. The original files are untouched. Cardiff retains its documented mention/URL substitution.','',
@@ -111,7 +111,7 @@ def build(db,replay):
             f"All four models completed **200/200** songs: **800 successful song/model jobs**, **{len(raw):,} chunks**, zero failed jobs. The 180 stratified songs and 20 pre-existing sentinel songs are unchanged. Two fresh database runs reproduce all 42 song scores, processing metadata, chunk input hashes, raw logits and activated outputs **exactly** on this CPU configuration. Prior whole-song pilot maximum absolute logit difference: **{old_max:.3g}**. The coverage checks reconstruct every contiguous token range and verify the earlier independently persisted input hashes. No NaN/inf or out-of-range scores were accepted.",'',
             '| Model | Chunks | Songs needing >1 chunk | Maximum chunks/song |','|---|---:|---:|---:|']
     for x in performance:lines.append(f"| {x['model']} | {x['chunks']} | {x['multi_chunk_songs']} | {x['max_chunks']} |")
-    lines+=['','All score distributions (min/max, mean/median/SD, quantiles and saturation counts) are in [distributions.csv](classifier_production/distributions.csv). Whole-song coverage does not repair domain mismatch or model saturation. Neither agreement nor numerical reproducibility establishes construct validity.','',
+    lines+=['','All score distributions (min/max, mean/median/SD, quantiles and saturation counts) are in [distributions.csv](../../reports/classifier_production/distributions.csv). Whole-song coverage does not repair domain mismatch or model saturation. Neither agreement nor numerical reproducibility establishes construct validity.','',
             'At least 90% of sample scores are below 0.01 for: '+', '.join(f"{d['column']} ({d['below_01']}/200)" for d in floors)+'. These can be sparse or domain-sensitive features; they are retained rather than silently dropped.', '',
             'Scores above 0.99 occur in: '+', '.join(f"{d['column']} ({d['above_99']}/200)" for d in ceilings)+'. Saturation is not cured by whole-song chunking.', '',
             'Cardiff largest-score classes: '+', '.join(f'{k} {v}/200' for k,v in sentiment_winners.items())+'. This neutral dominance is a domain diagnostic, not a historical finding.', '',
@@ -133,7 +133,7 @@ def build(db,replay):
             'The runner freezes an exact approved manifest, verifies all 19,372 source hashes and study membership, and opens research inputs read-only. It persists each completed chunk and finalizes each song/model independently in SQLite transactions. Pending/interrupted jobs resume; successful jobs skip; recorded errors require `--retry-errors`. Locks prevent concurrent writes by duplicate workers. Changed code, tokenizer/checkpoint, dependency versions, targets or lyric hashes fail closed rather than overwriting a prior run. Exception messages are not stored because they could contain input text.','',
             (f"The second fresh run was deliberately interrupted with SIGTERM and resumed: all {interruption['completed_jobs_preserved']} completed jobs and {interruption['persisted_chunks_preserved']} persisted chunks remained byte-for-byte equivalent as database row values. " if interruption else '')+'A no-op rerun and interruption/failure regression tests verify resume behavior. Full population and public-dataset integrity validation is recorded in the accompanying checkpoint validation note. The separate `song_results` table joins through stable `song_id`; the public 31-column master remains unchanged. The runner has not been invoked with full scope.','',
             '**READY for the authorized panel as reproducible exploratory features**, not validated calibrated severity measurements. The next action requires a separate decision to start the full run. No further BART work is needed.']
-    (ROOT/'reports/classifier_production_readiness.md').write_text('\n'.join(lines)+'\n')
+    (ROOT/'archive/intermediate_reports/classifier_production_readiness.md').write_text('\n'.join(lines)+'\n')
     print(json.dumps(info['performance'],indent=2))
 
 if __name__=='__main__':

@@ -16,7 +16,7 @@ import pandas as pd
 import moving_average_analysis as ma
 
 ROOT = Path(__file__).resolve().parents[1]
-REPORT = ROOT/'reports/moving_averages'
+REPORT = ROOT/'analysis/moving_averages'
 OUTPUT = REPORT/'figures/all_genres'
 MAJOR_ENDPOINTS = 120
 VERSION = 'all-genres-overlays-v1'

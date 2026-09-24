@@ -21,8 +21,8 @@ def population():
 class LyricsPlanningTests(unittest.TestCase):
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory();self.root=Path(self.tmp.name)
-        (self.root/'reports').mkdir()
-        (self.root/'reports/lyrics_source_assessment.md').write_text('Test: acquisition permission not established.')
+        (self.root/'archive/intermediate_reports').mkdir(parents=True)
+        (self.root/'archive/intermediate_reports/lyrics_source_assessment.md').write_text('Test: acquisition permission not established.')
         self.conn=sqlite3.connect(':memory:');self.conn.execute('PRAGMA foreign_keys=ON');self.conn.executescript(SCHEMA)
         for s in population():
             self.conn.execute('INSERT INTO songs VALUES (?,?,?,?,?,?,?,?,?,?,?)',(s['song_id'],s['title'],s['artist'],s['title'],s['artist'],s['first_chart_date'],s['first_chart_date'],1,1,1,100))
