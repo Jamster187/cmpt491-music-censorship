@@ -36,3 +36,9 @@ and its shared diagnostics module retain their canonical paths/bytes because
 production fingerprints include them. These are deliberate reproducibility exceptions.
 
 Run `python3 src/repository_layout.py` to repeat the structural integrity checks.
+
+The all-genres overlay PNGs were subsequently regenerated with observed-range axes
+and full-scale references. Their current hashes are validated against
+`analysis/moving_averages/figures/all_genres/manifest.json`, including its code hashes
+and complete figure catalog. The cleanup manifest remains the historical relocation
+snapshot; all other immutable artifact checks still use its original hashes.

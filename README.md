@@ -65,3 +65,8 @@ These commands use public data/saved time series and perform no acquisition or m
 inference. For the offline dataset builder/validator and retained private prerequisites,
 see the [command guide](docs/commands.md). Do not run historical acquisition or model
 commands just to view or rebuild the analyses.
+
+To regenerate only the all-genres charts from saved values, run
+`python3 src/moving_average_all_genres.py`. Defaults use independently scaled
+observed-range Y-axes; `_full_scale.png` references retain 0–1. See the
+[moving-average guide](analysis/moving_averages/README.md) for the deterministic rule.

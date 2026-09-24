@@ -32,7 +32,7 @@ class OverlayTests(unittest.TestCase):
             self.assertEqual([r['valid_endpoints'] for r in records],[120,2])
             ax=fig.axes[0]
             self.assertEqual(len(fig.axes),1)
-            self.assertEqual(ax.get_ylim(),(0.,1.))
+            self.assertEqual(ax.get_ylim(),a.observed_limits([0., .8]))
             for line,r in zip(ax.lines,records):
                 g=frame[frame.primary_genre.eq(r['primary_genre'])]
                 np.testing.assert_array_equal(line.get_ydata(),g.rolling_12m_mean.to_numpy())
@@ -70,6 +70,48 @@ class OverlayTests(unittest.TestCase):
                 plt.close(fig)
                 for r in records:
                     self.assertEqual((r['color'],r['line_style']),a.STYLES[r['primary_genre']])
+
+    def test_limits_padding_minimum_span_and_domain(self):
+        for values, expected in [([.31, .67], (.28, .70)),
+                                 ([.015, .085], (0., .10)),
+                                 ([.05, .95], (0., 1.)),
+                                 ([.5, .5], (.49, .51)),
+                                 ([0., 0.], (0., .02)),
+                                 ([1., 1.], (.98, 1.)),
+                                 ([np.nan], (0., 1.))]:
+            self.assertEqual(a.observed_limits(values), expected)
+        with self.assertRaises(ValueError):
+            a.observed_limits([1.1])
+
+    def test_independent_coverage_limits_and_full_scale(self):
+        frame = fixture()
+        frame.loc[frame.primary_genre.eq('Pop'), 'rolling_12m_mean'] *= .1
+        for major, expected in [(False, (0., .35)), (True, (0., .10))]:
+            for full in [False, True]:
+                fig, records = a.plot(frame, 'll_explicit_language', major, full)
+                try:
+                    self.assertEqual(fig.axes[0].get_ylim(), (0., 1.) if full else expected)
+                    low, high = fig.axes[0].get_ylim()
+                    for line in fig.axes[0].lines[:len(records)]:
+                        values = line.get_ydata()
+                        values = values[np.isfinite(values)]
+                        self.assertTrue(((values >= low) & (values <= high)).all())
+                    self.assertTrue(any('classifier scores range 0–1' in t.get_text() for t in fig.texts))
+                finally:
+                    plt.close(fig)
+
+    def test_numeric_tick_labels_preserve_tick_values(self):
+        frame = fixture()
+        frame.loc[frame.primary_genre.eq('Pop'), 'rolling_12m_mean'] *= .15
+        frame.loc[frame.primary_genre.eq('Latin'), 'rolling_12m_mean'] = np.nan
+        fig, _ = a.plot(frame, 'll_explicit_language')
+        try:
+            fig.canvas.draw()
+            ax = fig.axes[0]
+            for value, label in zip(ax.get_yticks(), ax.get_yticklabels()):
+                self.assertAlmostEqual(float(label.get_text()), value)
+        finally:
+            plt.close(fig)
 
     def test_figure_is_deterministic(self):
         with tempfile.TemporaryDirectory() as tmp:

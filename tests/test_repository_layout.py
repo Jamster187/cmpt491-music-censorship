@@ -3,6 +3,7 @@ from pathlib import Path
 import json
 import sys
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 import repository_layout as r
@@ -24,6 +25,13 @@ class RepositoryLayoutTests(unittest.TestCase):
         self.assertGreaterEqual(result['immutable_artifacts_checked'],647)
         self.assertEqual(result['stale_active_paths'],0)
         self.assertEqual(result['private_tracked_files'],0)
+
+    def test_overlay_corruption_is_not_exempt_from_integrity_checks(self):
+        original_sha = r.sha
+        target = a.OUTPUT/'emotion_joy.png'
+        with patch.object(r, 'sha', side_effect=lambda p: 'corrupt' if p == target else original_sha(p)):
+            with self.assertRaisesRegex(ValueError, 'Immutable data/result changed'):
+                r.validate()
 
     def test_manifest_covers_relocation_and_preserved_alias(self):
         manifest=json.loads(r.MANIFEST.read_text())

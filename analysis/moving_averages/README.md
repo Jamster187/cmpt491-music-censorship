@@ -7,7 +7,7 @@ limits and the original overall-trajectory shortlist.
 
 | Location | Contents |
 |---|---|
-| [figures/all_genres/](figures/all_genres/) | Preferred comparisons: 42 all-genres and 42 major-coverage overlays |
+| [figures/all_genres/](figures/all_genres/) | Preferred comparisons: 42 all-genres and 42 major-coverage overlays, plus 84 full-scale references |
 | `figures/<classifier>/` | Original 420 overall, major-genre, individual-genre and rank-sensitivity figures |
 | [data/](data/) | Monthly series, coverage, endpoint summaries, rank sensitivity and duplicate audit |
 | [manifest.json](manifest.json) | Original-analysis provenance and hashes |
@@ -31,3 +31,12 @@ The two large monthly CSVs are generated locally and ignored by Git; tracked los
 findings; the overlay command appends its additional section. No recommended-image
 copies or symlinks are created: the shortlist links directly to canonical images,
 so provenance and updates remain unambiguous. See [detailed methods](../../docs/methodology/descriptive_analysis.md).
+
+Default overlays scale each Y-axis independently to its finite plotted values, with
+8% padding per side and a minimum span of 0.02. The window shifts inward at domain
+boundaries; bounds round outward to multiples of 0.01 and stay within [0, 1]. Empty
+charts use [0, 1]. Numeric ticks and a note disclose the theoretical 0–1 domain.
+Visual line separation alone does not establish effect magnitude. Reference files
+append `_full_scale` (including `<classifier>_major_coverage_full_scale.png`).
+To rebuild only these figures without recalculating any series, run
+`python3 src/moving_average_all_genres.py`.

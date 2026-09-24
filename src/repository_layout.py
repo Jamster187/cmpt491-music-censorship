@@ -52,9 +52,26 @@ def stale_paths(manifest):
     return failures
 
 
+def current_artifact_hashes(manifest):
+    """Keep cleanup history; validate revised overlays against current provenance."""
+    expected = dict(manifest['immutable_artifact_sha256'])
+    prefix = 'analysis/moving_averages/figures/all_genres/'
+    overlay = json.loads((ROOT/prefix/'manifest.json').read_text())
+    original = {Path(name).name for name in expected if name.startswith(prefix)}
+    required = original | {name[:-4]+'_full_scale.png' for name in original}
+    if set(overlay['figures']) != required:
+        raise ValueError('Unexpected overlay figure catalog')
+    for name, digest in overlay['code_sha256'].items():
+        if sha(ROOT/name) != digest:
+            raise ValueError('Overlay implementation changed: '+name)
+    for name, digest in overlay['figures'].items():
+        expected[prefix+name] = digest
+    return expected
+
+
 def validate():
     manifest=json.loads(MANIFEST.read_text());checked=0
-    for name,expected in manifest['immutable_artifact_sha256'].items():
+    for name,expected in current_artifact_hashes(manifest).items():
         p=ROOT/name
         if name in OPTIONAL_PLAIN and not p.exists():
             continue

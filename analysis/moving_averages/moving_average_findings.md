@@ -115,11 +115,11 @@ These ten figures cover content, contrasting score families, coverage-qualified 
 
 Rebuild only these overlays with `python3 src/moving_average_all_genres.py`. The original tables, calculations and 420 figures remain unchanged.
 
-- Added 84 single-panel, 5100 × 2550 pixel PNGs (300 dpi): all qualifying genres and a cleaner major-coverage version for each of 42 scores. No raw monthly series or rank sensitivity is added to these overlays.
+- Added 168 single-panel, 5100 × 2550 pixel PNGs (300 dpi): all qualifying genres and a cleaner major-coverage version for each of 42 scores, each with a default observed-range view and a `_full_scale.png` reference. No raw monthly series or rank sensitivity is added to these overlays.
 - Major coverage means **at least 120 valid rolling endpoints per classifier**, about ten years of endpoints, not necessarily consecutive. This is only a figure-selection rule; monthly N ≥5 and 12 consecutive qualifying months are unchanged.
 - Every non-missing exported rolling value is plotted in the all-genres version, including Latin’s four endpoints. Full calendar arrays retain missing periods; markers make isolated endpoints visible. Eight genres have any endpoints, while five pass the major-coverage threshold for each classifier.
 - Genre colors and line styles are fixed across all images; the mapping and plotted counts are in figures/all_genres/manifest.json. Legends list plotted genres and their endpoint counts. Genres with no endpoints remain in the original coverage table.
-- Every chart uses a 0–1 y-axis for comparison. Low-amplitude emotion series may look nearly flat; cross-model scales do not imply equivalent substantive effects.
+- Each default chart independently uses only finite plotted rolling values. Pad the observed range by 8% on each side, expand symmetrically to a minimum span of 0.02 score units, shift inward at domain boundaries, round the lower bound down and upper bound up to multiples of 0.01, and clamp to [0, 1]. Empty charts fall back to [0, 1]. Ticks use up to six intervals with 1/2/5/10 steps and two decimal places (three when the axis span is below 0.06). Each chart prints its scale and the theoretical domain. Full-scale references retain [0, 1]; visual distances on independently scaled charts do not establish effect magnitude or comparable cross-model effects.
 
 ### Inspection of the requested dimensions
 
@@ -141,7 +141,7 @@ For a like-for-like descriptive comparison, the table uses the first and last da
 
 - LyricLens explicit language, violence, sexual content and substance use show clear genre separation where coverage overlaps. Their five-genre endpoint spreads narrow across the common interval, while substantial differences remain. The overlays show non-monotonic paths and coverage gaps, so this is not a claim of uniform long-run convergence.
 - Hip-Hop/Rap remains visually separated on explicit language and toxicity across much of its eligible history. Country approaches Hip-Hop/Rap in several later substance-use windows, while Pop remains lower; these local approaches are not uniform convergence.
-- Sentiment curves occupy a tighter band on the shared 0–1 axes. Across the common comparison dates, the positive-sentiment spread narrows slightly (0.0461 to 0.0421), while negative sentiment widens (0.0422 to 0.0551). Cross-model scale differences are not equivalent substantive effects.
+- Sentiment curves occupy a tighter band in the full-scale references. Across the common comparison dates, the positive-sentiment spread narrows slightly (0.0461 to 0.0421), while negative sentiment widens (0.0422 to 0.0551). Cross-model scale differences are not equivalent substantive effects.
 - Love shows a narrower five-genre spread at the later common endpoint (0.1923 to 0.1000), with several trajectories drawing closer during parts of that interval. Hip-Hop/Rap generally occupies the lower portion of the love and sadness overlays during eligible periods. Joy stays close to zero on this scale; later Hip-Hop/Rap anger separates upward from Pop and Country. Near-zero values and short runs are not evidence of no change.
 - Alternative/Indie and Electronic/Dance add shorter historical trajectories beyond the five major-coverage genres. Latin has only four qualifying endpoints and should be treated as a brief observed segment, not a full trajectory. No curves are drawn for the eight genres with no eligible windows.
 
@@ -157,4 +157,4 @@ For a like-for-like descriptive comparison, the table uses the first and last da
 - [emotion_love](figures/all_genres/emotion_love.png) · [cleaner coverage version](figures/all_genres/emotion_love_major_coverage.png)
 - [emotion_sadness](figures/all_genres/emotion_sadness.png) · [cleaner coverage version](figures/all_genres/emotion_sadness_major_coverage.png)
 
-These choices span content, toxicity, sentiment and contrasting emotions with overlapping genre coverage; they are not selected solely for dramatic extrema. Inspect joy and anger too, but their smaller absolute levels are less visible on the fixed scale. No significance tests or causal interpretation are supplied.
+These choices span content, toxicity, sentiment and contrasting emotions with overlapping genre coverage; they are not selected solely for dramatic extrema. Inspect joy and anger too, but their smaller absolute levels are less visible in the full-scale references. No significance tests or causal interpretation are supplied.
