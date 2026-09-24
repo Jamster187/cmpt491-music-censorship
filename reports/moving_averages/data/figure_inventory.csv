@@ -1,0 +1,421 @@
+classifier,figure_type,primary_genre,path
+ll_sexual_content,overall,All genres,figures/ll_sexual_content/overall.png
+ll_sexual_content,major_genres,Major genres,figures/ll_sexual_content/major_genres.png
+ll_sexual_content,rank_sensitivity,All genres,figures/ll_sexual_content/rank_sensitivity.png
+ll_sexual_content,individual_genre,Alternative / Indie,figures/ll_sexual_content/alternative_indie.png
+ll_sexual_content,individual_genre,Country,figures/ll_sexual_content/country.png
+ll_sexual_content,individual_genre,Electronic / Dance,figures/ll_sexual_content/electronic_dance.png
+ll_sexual_content,individual_genre,Hip-Hop / Rap,figures/ll_sexual_content/hip_hop_rap.png
+ll_sexual_content,individual_genre,Pop,figures/ll_sexual_content/pop.png
+ll_sexual_content,individual_genre,R&B / Soul,figures/ll_sexual_content/r_b_soul.png
+ll_sexual_content,individual_genre,Rock,figures/ll_sexual_content/rock.png
+ll_violence,overall,All genres,figures/ll_violence/overall.png
+ll_violence,major_genres,Major genres,figures/ll_violence/major_genres.png
+ll_violence,rank_sensitivity,All genres,figures/ll_violence/rank_sensitivity.png
+ll_violence,individual_genre,Alternative / Indie,figures/ll_violence/alternative_indie.png
+ll_violence,individual_genre,Country,figures/ll_violence/country.png
+ll_violence,individual_genre,Electronic / Dance,figures/ll_violence/electronic_dance.png
+ll_violence,individual_genre,Hip-Hop / Rap,figures/ll_violence/hip_hop_rap.png
+ll_violence,individual_genre,Pop,figures/ll_violence/pop.png
+ll_violence,individual_genre,R&B / Soul,figures/ll_violence/r_b_soul.png
+ll_violence,individual_genre,Rock,figures/ll_violence/rock.png
+ll_explicit_language,overall,All genres,figures/ll_explicit_language/overall.png
+ll_explicit_language,major_genres,Major genres,figures/ll_explicit_language/major_genres.png
+ll_explicit_language,rank_sensitivity,All genres,figures/ll_explicit_language/rank_sensitivity.png
+ll_explicit_language,individual_genre,Alternative / Indie,figures/ll_explicit_language/alternative_indie.png
+ll_explicit_language,individual_genre,Country,figures/ll_explicit_language/country.png
+ll_explicit_language,individual_genre,Electronic / Dance,figures/ll_explicit_language/electronic_dance.png
+ll_explicit_language,individual_genre,Hip-Hop / Rap,figures/ll_explicit_language/hip_hop_rap.png
+ll_explicit_language,individual_genre,Pop,figures/ll_explicit_language/pop.png
+ll_explicit_language,individual_genre,R&B / Soul,figures/ll_explicit_language/r_b_soul.png
+ll_explicit_language,individual_genre,Rock,figures/ll_explicit_language/rock.png
+ll_substance_use,overall,All genres,figures/ll_substance_use/overall.png
+ll_substance_use,major_genres,Major genres,figures/ll_substance_use/major_genres.png
+ll_substance_use,rank_sensitivity,All genres,figures/ll_substance_use/rank_sensitivity.png
+ll_substance_use,individual_genre,Alternative / Indie,figures/ll_substance_use/alternative_indie.png
+ll_substance_use,individual_genre,Country,figures/ll_substance_use/country.png
+ll_substance_use,individual_genre,Electronic / Dance,figures/ll_substance_use/electronic_dance.png
+ll_substance_use,individual_genre,Hip-Hop / Rap,figures/ll_substance_use/hip_hop_rap.png
+ll_substance_use,individual_genre,Pop,figures/ll_substance_use/pop.png
+ll_substance_use,individual_genre,R&B / Soul,figures/ll_substance_use/r_b_soul.png
+ll_substance_use,individual_genre,Rock,figures/ll_substance_use/rock.png
+detox_toxicity,overall,All genres,figures/detox_toxicity/overall.png
+detox_toxicity,major_genres,Major genres,figures/detox_toxicity/major_genres.png
+detox_toxicity,rank_sensitivity,All genres,figures/detox_toxicity/rank_sensitivity.png
+detox_toxicity,individual_genre,Alternative / Indie,figures/detox_toxicity/alternative_indie.png
+detox_toxicity,individual_genre,Country,figures/detox_toxicity/country.png
+detox_toxicity,individual_genre,Electronic / Dance,figures/detox_toxicity/electronic_dance.png
+detox_toxicity,individual_genre,Hip-Hop / Rap,figures/detox_toxicity/hip_hop_rap.png
+detox_toxicity,individual_genre,Pop,figures/detox_toxicity/pop.png
+detox_toxicity,individual_genre,R&B / Soul,figures/detox_toxicity/r_b_soul.png
+detox_toxicity,individual_genre,Rock,figures/detox_toxicity/rock.png
+detox_severe_toxicity,overall,All genres,figures/detox_severe_toxicity/overall.png
+detox_severe_toxicity,major_genres,Major genres,figures/detox_severe_toxicity/major_genres.png
+detox_severe_toxicity,rank_sensitivity,All genres,figures/detox_severe_toxicity/rank_sensitivity.png
+detox_severe_toxicity,individual_genre,Alternative / Indie,figures/detox_severe_toxicity/alternative_indie.png
+detox_severe_toxicity,individual_genre,Country,figures/detox_severe_toxicity/country.png
+detox_severe_toxicity,individual_genre,Electronic / Dance,figures/detox_severe_toxicity/electronic_dance.png
+detox_severe_toxicity,individual_genre,Hip-Hop / Rap,figures/detox_severe_toxicity/hip_hop_rap.png
+detox_severe_toxicity,individual_genre,Pop,figures/detox_severe_toxicity/pop.png
+detox_severe_toxicity,individual_genre,R&B / Soul,figures/detox_severe_toxicity/r_b_soul.png
+detox_severe_toxicity,individual_genre,Rock,figures/detox_severe_toxicity/rock.png
+detox_obscene,overall,All genres,figures/detox_obscene/overall.png
+detox_obscene,major_genres,Major genres,figures/detox_obscene/major_genres.png
+detox_obscene,rank_sensitivity,All genres,figures/detox_obscene/rank_sensitivity.png
+detox_obscene,individual_genre,Alternative / Indie,figures/detox_obscene/alternative_indie.png
+detox_obscene,individual_genre,Country,figures/detox_obscene/country.png
+detox_obscene,individual_genre,Electronic / Dance,figures/detox_obscene/electronic_dance.png
+detox_obscene,individual_genre,Hip-Hop / Rap,figures/detox_obscene/hip_hop_rap.png
+detox_obscene,individual_genre,Pop,figures/detox_obscene/pop.png
+detox_obscene,individual_genre,R&B / Soul,figures/detox_obscene/r_b_soul.png
+detox_obscene,individual_genre,Rock,figures/detox_obscene/rock.png
+detox_threat,overall,All genres,figures/detox_threat/overall.png
+detox_threat,major_genres,Major genres,figures/detox_threat/major_genres.png
+detox_threat,rank_sensitivity,All genres,figures/detox_threat/rank_sensitivity.png
+detox_threat,individual_genre,Alternative / Indie,figures/detox_threat/alternative_indie.png
+detox_threat,individual_genre,Country,figures/detox_threat/country.png
+detox_threat,individual_genre,Electronic / Dance,figures/detox_threat/electronic_dance.png
+detox_threat,individual_genre,Hip-Hop / Rap,figures/detox_threat/hip_hop_rap.png
+detox_threat,individual_genre,Pop,figures/detox_threat/pop.png
+detox_threat,individual_genre,R&B / Soul,figures/detox_threat/r_b_soul.png
+detox_threat,individual_genre,Rock,figures/detox_threat/rock.png
+detox_insult,overall,All genres,figures/detox_insult/overall.png
+detox_insult,major_genres,Major genres,figures/detox_insult/major_genres.png
+detox_insult,rank_sensitivity,All genres,figures/detox_insult/rank_sensitivity.png
+detox_insult,individual_genre,Alternative / Indie,figures/detox_insult/alternative_indie.png
+detox_insult,individual_genre,Country,figures/detox_insult/country.png
+detox_insult,individual_genre,Electronic / Dance,figures/detox_insult/electronic_dance.png
+detox_insult,individual_genre,Hip-Hop / Rap,figures/detox_insult/hip_hop_rap.png
+detox_insult,individual_genre,Pop,figures/detox_insult/pop.png
+detox_insult,individual_genre,R&B / Soul,figures/detox_insult/r_b_soul.png
+detox_insult,individual_genre,Rock,figures/detox_insult/rock.png
+detox_identity_attack,overall,All genres,figures/detox_identity_attack/overall.png
+detox_identity_attack,major_genres,Major genres,figures/detox_identity_attack/major_genres.png
+detox_identity_attack,rank_sensitivity,All genres,figures/detox_identity_attack/rank_sensitivity.png
+detox_identity_attack,individual_genre,Alternative / Indie,figures/detox_identity_attack/alternative_indie.png
+detox_identity_attack,individual_genre,Country,figures/detox_identity_attack/country.png
+detox_identity_attack,individual_genre,Electronic / Dance,figures/detox_identity_attack/electronic_dance.png
+detox_identity_attack,individual_genre,Hip-Hop / Rap,figures/detox_identity_attack/hip_hop_rap.png
+detox_identity_attack,individual_genre,Pop,figures/detox_identity_attack/pop.png
+detox_identity_attack,individual_genre,R&B / Soul,figures/detox_identity_attack/r_b_soul.png
+detox_identity_attack,individual_genre,Rock,figures/detox_identity_attack/rock.png
+detox_sexual_explicit,overall,All genres,figures/detox_sexual_explicit/overall.png
+detox_sexual_explicit,major_genres,Major genres,figures/detox_sexual_explicit/major_genres.png
+detox_sexual_explicit,rank_sensitivity,All genres,figures/detox_sexual_explicit/rank_sensitivity.png
+detox_sexual_explicit,individual_genre,Alternative / Indie,figures/detox_sexual_explicit/alternative_indie.png
+detox_sexual_explicit,individual_genre,Country,figures/detox_sexual_explicit/country.png
+detox_sexual_explicit,individual_genre,Electronic / Dance,figures/detox_sexual_explicit/electronic_dance.png
+detox_sexual_explicit,individual_genre,Hip-Hop / Rap,figures/detox_sexual_explicit/hip_hop_rap.png
+detox_sexual_explicit,individual_genre,Pop,figures/detox_sexual_explicit/pop.png
+detox_sexual_explicit,individual_genre,R&B / Soul,figures/detox_sexual_explicit/r_b_soul.png
+detox_sexual_explicit,individual_genre,Rock,figures/detox_sexual_explicit/rock.png
+emotion_admiration,overall,All genres,figures/emotion_admiration/overall.png
+emotion_admiration,major_genres,Major genres,figures/emotion_admiration/major_genres.png
+emotion_admiration,rank_sensitivity,All genres,figures/emotion_admiration/rank_sensitivity.png
+emotion_admiration,individual_genre,Alternative / Indie,figures/emotion_admiration/alternative_indie.png
+emotion_admiration,individual_genre,Country,figures/emotion_admiration/country.png
+emotion_admiration,individual_genre,Electronic / Dance,figures/emotion_admiration/electronic_dance.png
+emotion_admiration,individual_genre,Hip-Hop / Rap,figures/emotion_admiration/hip_hop_rap.png
+emotion_admiration,individual_genre,Pop,figures/emotion_admiration/pop.png
+emotion_admiration,individual_genre,R&B / Soul,figures/emotion_admiration/r_b_soul.png
+emotion_admiration,individual_genre,Rock,figures/emotion_admiration/rock.png
+emotion_amusement,overall,All genres,figures/emotion_amusement/overall.png
+emotion_amusement,major_genres,Major genres,figures/emotion_amusement/major_genres.png
+emotion_amusement,rank_sensitivity,All genres,figures/emotion_amusement/rank_sensitivity.png
+emotion_amusement,individual_genre,Alternative / Indie,figures/emotion_amusement/alternative_indie.png
+emotion_amusement,individual_genre,Country,figures/emotion_amusement/country.png
+emotion_amusement,individual_genre,Electronic / Dance,figures/emotion_amusement/electronic_dance.png
+emotion_amusement,individual_genre,Hip-Hop / Rap,figures/emotion_amusement/hip_hop_rap.png
+emotion_amusement,individual_genre,Pop,figures/emotion_amusement/pop.png
+emotion_amusement,individual_genre,R&B / Soul,figures/emotion_amusement/r_b_soul.png
+emotion_amusement,individual_genre,Rock,figures/emotion_amusement/rock.png
+emotion_anger,overall,All genres,figures/emotion_anger/overall.png
+emotion_anger,major_genres,Major genres,figures/emotion_anger/major_genres.png
+emotion_anger,rank_sensitivity,All genres,figures/emotion_anger/rank_sensitivity.png
+emotion_anger,individual_genre,Alternative / Indie,figures/emotion_anger/alternative_indie.png
+emotion_anger,individual_genre,Country,figures/emotion_anger/country.png
+emotion_anger,individual_genre,Electronic / Dance,figures/emotion_anger/electronic_dance.png
+emotion_anger,individual_genre,Hip-Hop / Rap,figures/emotion_anger/hip_hop_rap.png
+emotion_anger,individual_genre,Pop,figures/emotion_anger/pop.png
+emotion_anger,individual_genre,R&B / Soul,figures/emotion_anger/r_b_soul.png
+emotion_anger,individual_genre,Rock,figures/emotion_anger/rock.png
+emotion_annoyance,overall,All genres,figures/emotion_annoyance/overall.png
+emotion_annoyance,major_genres,Major genres,figures/emotion_annoyance/major_genres.png
+emotion_annoyance,rank_sensitivity,All genres,figures/emotion_annoyance/rank_sensitivity.png
+emotion_annoyance,individual_genre,Alternative / Indie,figures/emotion_annoyance/alternative_indie.png
+emotion_annoyance,individual_genre,Country,figures/emotion_annoyance/country.png
+emotion_annoyance,individual_genre,Electronic / Dance,figures/emotion_annoyance/electronic_dance.png
+emotion_annoyance,individual_genre,Hip-Hop / Rap,figures/emotion_annoyance/hip_hop_rap.png
+emotion_annoyance,individual_genre,Pop,figures/emotion_annoyance/pop.png
+emotion_annoyance,individual_genre,R&B / Soul,figures/emotion_annoyance/r_b_soul.png
+emotion_annoyance,individual_genre,Rock,figures/emotion_annoyance/rock.png
+emotion_approval,overall,All genres,figures/emotion_approval/overall.png
+emotion_approval,major_genres,Major genres,figures/emotion_approval/major_genres.png
+emotion_approval,rank_sensitivity,All genres,figures/emotion_approval/rank_sensitivity.png
+emotion_approval,individual_genre,Alternative / Indie,figures/emotion_approval/alternative_indie.png
+emotion_approval,individual_genre,Country,figures/emotion_approval/country.png
+emotion_approval,individual_genre,Electronic / Dance,figures/emotion_approval/electronic_dance.png
+emotion_approval,individual_genre,Hip-Hop / Rap,figures/emotion_approval/hip_hop_rap.png
+emotion_approval,individual_genre,Pop,figures/emotion_approval/pop.png
+emotion_approval,individual_genre,R&B / Soul,figures/emotion_approval/r_b_soul.png
+emotion_approval,individual_genre,Rock,figures/emotion_approval/rock.png
+emotion_caring,overall,All genres,figures/emotion_caring/overall.png
+emotion_caring,major_genres,Major genres,figures/emotion_caring/major_genres.png
+emotion_caring,rank_sensitivity,All genres,figures/emotion_caring/rank_sensitivity.png
+emotion_caring,individual_genre,Alternative / Indie,figures/emotion_caring/alternative_indie.png
+emotion_caring,individual_genre,Country,figures/emotion_caring/country.png
+emotion_caring,individual_genre,Electronic / Dance,figures/emotion_caring/electronic_dance.png
+emotion_caring,individual_genre,Hip-Hop / Rap,figures/emotion_caring/hip_hop_rap.png
+emotion_caring,individual_genre,Pop,figures/emotion_caring/pop.png
+emotion_caring,individual_genre,R&B / Soul,figures/emotion_caring/r_b_soul.png
+emotion_caring,individual_genre,Rock,figures/emotion_caring/rock.png
+emotion_confusion,overall,All genres,figures/emotion_confusion/overall.png
+emotion_confusion,major_genres,Major genres,figures/emotion_confusion/major_genres.png
+emotion_confusion,rank_sensitivity,All genres,figures/emotion_confusion/rank_sensitivity.png
+emotion_confusion,individual_genre,Alternative / Indie,figures/emotion_confusion/alternative_indie.png
+emotion_confusion,individual_genre,Country,figures/emotion_confusion/country.png
+emotion_confusion,individual_genre,Electronic / Dance,figures/emotion_confusion/electronic_dance.png
+emotion_confusion,individual_genre,Hip-Hop / Rap,figures/emotion_confusion/hip_hop_rap.png
+emotion_confusion,individual_genre,Pop,figures/emotion_confusion/pop.png
+emotion_confusion,individual_genre,R&B / Soul,figures/emotion_confusion/r_b_soul.png
+emotion_confusion,individual_genre,Rock,figures/emotion_confusion/rock.png
+emotion_curiosity,overall,All genres,figures/emotion_curiosity/overall.png
+emotion_curiosity,major_genres,Major genres,figures/emotion_curiosity/major_genres.png
+emotion_curiosity,rank_sensitivity,All genres,figures/emotion_curiosity/rank_sensitivity.png
+emotion_curiosity,individual_genre,Alternative / Indie,figures/emotion_curiosity/alternative_indie.png
+emotion_curiosity,individual_genre,Country,figures/emotion_curiosity/country.png
+emotion_curiosity,individual_genre,Electronic / Dance,figures/emotion_curiosity/electronic_dance.png
+emotion_curiosity,individual_genre,Hip-Hop / Rap,figures/emotion_curiosity/hip_hop_rap.png
+emotion_curiosity,individual_genre,Pop,figures/emotion_curiosity/pop.png
+emotion_curiosity,individual_genre,R&B / Soul,figures/emotion_curiosity/r_b_soul.png
+emotion_curiosity,individual_genre,Rock,figures/emotion_curiosity/rock.png
+emotion_desire,overall,All genres,figures/emotion_desire/overall.png
+emotion_desire,major_genres,Major genres,figures/emotion_desire/major_genres.png
+emotion_desire,rank_sensitivity,All genres,figures/emotion_desire/rank_sensitivity.png
+emotion_desire,individual_genre,Alternative / Indie,figures/emotion_desire/alternative_indie.png
+emotion_desire,individual_genre,Country,figures/emotion_desire/country.png
+emotion_desire,individual_genre,Electronic / Dance,figures/emotion_desire/electronic_dance.png
+emotion_desire,individual_genre,Hip-Hop / Rap,figures/emotion_desire/hip_hop_rap.png
+emotion_desire,individual_genre,Pop,figures/emotion_desire/pop.png
+emotion_desire,individual_genre,R&B / Soul,figures/emotion_desire/r_b_soul.png
+emotion_desire,individual_genre,Rock,figures/emotion_desire/rock.png
+emotion_disappointment,overall,All genres,figures/emotion_disappointment/overall.png
+emotion_disappointment,major_genres,Major genres,figures/emotion_disappointment/major_genres.png
+emotion_disappointment,rank_sensitivity,All genres,figures/emotion_disappointment/rank_sensitivity.png
+emotion_disappointment,individual_genre,Alternative / Indie,figures/emotion_disappointment/alternative_indie.png
+emotion_disappointment,individual_genre,Country,figures/emotion_disappointment/country.png
+emotion_disappointment,individual_genre,Electronic / Dance,figures/emotion_disappointment/electronic_dance.png
+emotion_disappointment,individual_genre,Hip-Hop / Rap,figures/emotion_disappointment/hip_hop_rap.png
+emotion_disappointment,individual_genre,Pop,figures/emotion_disappointment/pop.png
+emotion_disappointment,individual_genre,R&B / Soul,figures/emotion_disappointment/r_b_soul.png
+emotion_disappointment,individual_genre,Rock,figures/emotion_disappointment/rock.png
+emotion_disapproval,overall,All genres,figures/emotion_disapproval/overall.png
+emotion_disapproval,major_genres,Major genres,figures/emotion_disapproval/major_genres.png
+emotion_disapproval,rank_sensitivity,All genres,figures/emotion_disapproval/rank_sensitivity.png
+emotion_disapproval,individual_genre,Alternative / Indie,figures/emotion_disapproval/alternative_indie.png
+emotion_disapproval,individual_genre,Country,figures/emotion_disapproval/country.png
+emotion_disapproval,individual_genre,Electronic / Dance,figures/emotion_disapproval/electronic_dance.png
+emotion_disapproval,individual_genre,Hip-Hop / Rap,figures/emotion_disapproval/hip_hop_rap.png
+emotion_disapproval,individual_genre,Pop,figures/emotion_disapproval/pop.png
+emotion_disapproval,individual_genre,R&B / Soul,figures/emotion_disapproval/r_b_soul.png
+emotion_disapproval,individual_genre,Rock,figures/emotion_disapproval/rock.png
+emotion_disgust,overall,All genres,figures/emotion_disgust/overall.png
+emotion_disgust,major_genres,Major genres,figures/emotion_disgust/major_genres.png
+emotion_disgust,rank_sensitivity,All genres,figures/emotion_disgust/rank_sensitivity.png
+emotion_disgust,individual_genre,Alternative / Indie,figures/emotion_disgust/alternative_indie.png
+emotion_disgust,individual_genre,Country,figures/emotion_disgust/country.png
+emotion_disgust,individual_genre,Electronic / Dance,figures/emotion_disgust/electronic_dance.png
+emotion_disgust,individual_genre,Hip-Hop / Rap,figures/emotion_disgust/hip_hop_rap.png
+emotion_disgust,individual_genre,Pop,figures/emotion_disgust/pop.png
+emotion_disgust,individual_genre,R&B / Soul,figures/emotion_disgust/r_b_soul.png
+emotion_disgust,individual_genre,Rock,figures/emotion_disgust/rock.png
+emotion_embarrassment,overall,All genres,figures/emotion_embarrassment/overall.png
+emotion_embarrassment,major_genres,Major genres,figures/emotion_embarrassment/major_genres.png
+emotion_embarrassment,rank_sensitivity,All genres,figures/emotion_embarrassment/rank_sensitivity.png
+emotion_embarrassment,individual_genre,Alternative / Indie,figures/emotion_embarrassment/alternative_indie.png
+emotion_embarrassment,individual_genre,Country,figures/emotion_embarrassment/country.png
+emotion_embarrassment,individual_genre,Electronic / Dance,figures/emotion_embarrassment/electronic_dance.png
+emotion_embarrassment,individual_genre,Hip-Hop / Rap,figures/emotion_embarrassment/hip_hop_rap.png
+emotion_embarrassment,individual_genre,Pop,figures/emotion_embarrassment/pop.png
+emotion_embarrassment,individual_genre,R&B / Soul,figures/emotion_embarrassment/r_b_soul.png
+emotion_embarrassment,individual_genre,Rock,figures/emotion_embarrassment/rock.png
+emotion_excitement,overall,All genres,figures/emotion_excitement/overall.png
+emotion_excitement,major_genres,Major genres,figures/emotion_excitement/major_genres.png
+emotion_excitement,rank_sensitivity,All genres,figures/emotion_excitement/rank_sensitivity.png
+emotion_excitement,individual_genre,Alternative / Indie,figures/emotion_excitement/alternative_indie.png
+emotion_excitement,individual_genre,Country,figures/emotion_excitement/country.png
+emotion_excitement,individual_genre,Electronic / Dance,figures/emotion_excitement/electronic_dance.png
+emotion_excitement,individual_genre,Hip-Hop / Rap,figures/emotion_excitement/hip_hop_rap.png
+emotion_excitement,individual_genre,Pop,figures/emotion_excitement/pop.png
+emotion_excitement,individual_genre,R&B / Soul,figures/emotion_excitement/r_b_soul.png
+emotion_excitement,individual_genre,Rock,figures/emotion_excitement/rock.png
+emotion_fear,overall,All genres,figures/emotion_fear/overall.png
+emotion_fear,major_genres,Major genres,figures/emotion_fear/major_genres.png
+emotion_fear,rank_sensitivity,All genres,figures/emotion_fear/rank_sensitivity.png
+emotion_fear,individual_genre,Alternative / Indie,figures/emotion_fear/alternative_indie.png
+emotion_fear,individual_genre,Country,figures/emotion_fear/country.png
+emotion_fear,individual_genre,Electronic / Dance,figures/emotion_fear/electronic_dance.png
+emotion_fear,individual_genre,Hip-Hop / Rap,figures/emotion_fear/hip_hop_rap.png
+emotion_fear,individual_genre,Pop,figures/emotion_fear/pop.png
+emotion_fear,individual_genre,R&B / Soul,figures/emotion_fear/r_b_soul.png
+emotion_fear,individual_genre,Rock,figures/emotion_fear/rock.png
+emotion_gratitude,overall,All genres,figures/emotion_gratitude/overall.png
+emotion_gratitude,major_genres,Major genres,figures/emotion_gratitude/major_genres.png
+emotion_gratitude,rank_sensitivity,All genres,figures/emotion_gratitude/rank_sensitivity.png
+emotion_gratitude,individual_genre,Alternative / Indie,figures/emotion_gratitude/alternative_indie.png
+emotion_gratitude,individual_genre,Country,figures/emotion_gratitude/country.png
+emotion_gratitude,individual_genre,Electronic / Dance,figures/emotion_gratitude/electronic_dance.png
+emotion_gratitude,individual_genre,Hip-Hop / Rap,figures/emotion_gratitude/hip_hop_rap.png
+emotion_gratitude,individual_genre,Pop,figures/emotion_gratitude/pop.png
+emotion_gratitude,individual_genre,R&B / Soul,figures/emotion_gratitude/r_b_soul.png
+emotion_gratitude,individual_genre,Rock,figures/emotion_gratitude/rock.png
+emotion_grief,overall,All genres,figures/emotion_grief/overall.png
+emotion_grief,major_genres,Major genres,figures/emotion_grief/major_genres.png
+emotion_grief,rank_sensitivity,All genres,figures/emotion_grief/rank_sensitivity.png
+emotion_grief,individual_genre,Alternative / Indie,figures/emotion_grief/alternative_indie.png
+emotion_grief,individual_genre,Country,figures/emotion_grief/country.png
+emotion_grief,individual_genre,Electronic / Dance,figures/emotion_grief/electronic_dance.png
+emotion_grief,individual_genre,Hip-Hop / Rap,figures/emotion_grief/hip_hop_rap.png
+emotion_grief,individual_genre,Pop,figures/emotion_grief/pop.png
+emotion_grief,individual_genre,R&B / Soul,figures/emotion_grief/r_b_soul.png
+emotion_grief,individual_genre,Rock,figures/emotion_grief/rock.png
+emotion_joy,overall,All genres,figures/emotion_joy/overall.png
+emotion_joy,major_genres,Major genres,figures/emotion_joy/major_genres.png
+emotion_joy,rank_sensitivity,All genres,figures/emotion_joy/rank_sensitivity.png
+emotion_joy,individual_genre,Alternative / Indie,figures/emotion_joy/alternative_indie.png
+emotion_joy,individual_genre,Country,figures/emotion_joy/country.png
+emotion_joy,individual_genre,Electronic / Dance,figures/emotion_joy/electronic_dance.png
+emotion_joy,individual_genre,Hip-Hop / Rap,figures/emotion_joy/hip_hop_rap.png
+emotion_joy,individual_genre,Pop,figures/emotion_joy/pop.png
+emotion_joy,individual_genre,R&B / Soul,figures/emotion_joy/r_b_soul.png
+emotion_joy,individual_genre,Rock,figures/emotion_joy/rock.png
+emotion_love,overall,All genres,figures/emotion_love/overall.png
+emotion_love,major_genres,Major genres,figures/emotion_love/major_genres.png
+emotion_love,rank_sensitivity,All genres,figures/emotion_love/rank_sensitivity.png
+emotion_love,individual_genre,Alternative / Indie,figures/emotion_love/alternative_indie.png
+emotion_love,individual_genre,Country,figures/emotion_love/country.png
+emotion_love,individual_genre,Electronic / Dance,figures/emotion_love/electronic_dance.png
+emotion_love,individual_genre,Hip-Hop / Rap,figures/emotion_love/hip_hop_rap.png
+emotion_love,individual_genre,Pop,figures/emotion_love/pop.png
+emotion_love,individual_genre,R&B / Soul,figures/emotion_love/r_b_soul.png
+emotion_love,individual_genre,Rock,figures/emotion_love/rock.png
+emotion_nervousness,overall,All genres,figures/emotion_nervousness/overall.png
+emotion_nervousness,major_genres,Major genres,figures/emotion_nervousness/major_genres.png
+emotion_nervousness,rank_sensitivity,All genres,figures/emotion_nervousness/rank_sensitivity.png
+emotion_nervousness,individual_genre,Alternative / Indie,figures/emotion_nervousness/alternative_indie.png
+emotion_nervousness,individual_genre,Country,figures/emotion_nervousness/country.png
+emotion_nervousness,individual_genre,Electronic / Dance,figures/emotion_nervousness/electronic_dance.png
+emotion_nervousness,individual_genre,Hip-Hop / Rap,figures/emotion_nervousness/hip_hop_rap.png
+emotion_nervousness,individual_genre,Pop,figures/emotion_nervousness/pop.png
+emotion_nervousness,individual_genre,R&B / Soul,figures/emotion_nervousness/r_b_soul.png
+emotion_nervousness,individual_genre,Rock,figures/emotion_nervousness/rock.png
+emotion_optimism,overall,All genres,figures/emotion_optimism/overall.png
+emotion_optimism,major_genres,Major genres,figures/emotion_optimism/major_genres.png
+emotion_optimism,rank_sensitivity,All genres,figures/emotion_optimism/rank_sensitivity.png
+emotion_optimism,individual_genre,Alternative / Indie,figures/emotion_optimism/alternative_indie.png
+emotion_optimism,individual_genre,Country,figures/emotion_optimism/country.png
+emotion_optimism,individual_genre,Electronic / Dance,figures/emotion_optimism/electronic_dance.png
+emotion_optimism,individual_genre,Hip-Hop / Rap,figures/emotion_optimism/hip_hop_rap.png
+emotion_optimism,individual_genre,Pop,figures/emotion_optimism/pop.png
+emotion_optimism,individual_genre,R&B / Soul,figures/emotion_optimism/r_b_soul.png
+emotion_optimism,individual_genre,Rock,figures/emotion_optimism/rock.png
+emotion_pride,overall,All genres,figures/emotion_pride/overall.png
+emotion_pride,major_genres,Major genres,figures/emotion_pride/major_genres.png
+emotion_pride,rank_sensitivity,All genres,figures/emotion_pride/rank_sensitivity.png
+emotion_pride,individual_genre,Alternative / Indie,figures/emotion_pride/alternative_indie.png
+emotion_pride,individual_genre,Country,figures/emotion_pride/country.png
+emotion_pride,individual_genre,Electronic / Dance,figures/emotion_pride/electronic_dance.png
+emotion_pride,individual_genre,Hip-Hop / Rap,figures/emotion_pride/hip_hop_rap.png
+emotion_pride,individual_genre,Pop,figures/emotion_pride/pop.png
+emotion_pride,individual_genre,R&B / Soul,figures/emotion_pride/r_b_soul.png
+emotion_pride,individual_genre,Rock,figures/emotion_pride/rock.png
+emotion_realization,overall,All genres,figures/emotion_realization/overall.png
+emotion_realization,major_genres,Major genres,figures/emotion_realization/major_genres.png
+emotion_realization,rank_sensitivity,All genres,figures/emotion_realization/rank_sensitivity.png
+emotion_realization,individual_genre,Alternative / Indie,figures/emotion_realization/alternative_indie.png
+emotion_realization,individual_genre,Country,figures/emotion_realization/country.png
+emotion_realization,individual_genre,Electronic / Dance,figures/emotion_realization/electronic_dance.png
+emotion_realization,individual_genre,Hip-Hop / Rap,figures/emotion_realization/hip_hop_rap.png
+emotion_realization,individual_genre,Pop,figures/emotion_realization/pop.png
+emotion_realization,individual_genre,R&B / Soul,figures/emotion_realization/r_b_soul.png
+emotion_realization,individual_genre,Rock,figures/emotion_realization/rock.png
+emotion_relief,overall,All genres,figures/emotion_relief/overall.png
+emotion_relief,major_genres,Major genres,figures/emotion_relief/major_genres.png
+emotion_relief,rank_sensitivity,All genres,figures/emotion_relief/rank_sensitivity.png
+emotion_relief,individual_genre,Alternative / Indie,figures/emotion_relief/alternative_indie.png
+emotion_relief,individual_genre,Country,figures/emotion_relief/country.png
+emotion_relief,individual_genre,Electronic / Dance,figures/emotion_relief/electronic_dance.png
+emotion_relief,individual_genre,Hip-Hop / Rap,figures/emotion_relief/hip_hop_rap.png
+emotion_relief,individual_genre,Pop,figures/emotion_relief/pop.png
+emotion_relief,individual_genre,R&B / Soul,figures/emotion_relief/r_b_soul.png
+emotion_relief,individual_genre,Rock,figures/emotion_relief/rock.png
+emotion_remorse,overall,All genres,figures/emotion_remorse/overall.png
+emotion_remorse,major_genres,Major genres,figures/emotion_remorse/major_genres.png
+emotion_remorse,rank_sensitivity,All genres,figures/emotion_remorse/rank_sensitivity.png
+emotion_remorse,individual_genre,Alternative / Indie,figures/emotion_remorse/alternative_indie.png
+emotion_remorse,individual_genre,Country,figures/emotion_remorse/country.png
+emotion_remorse,individual_genre,Electronic / Dance,figures/emotion_remorse/electronic_dance.png
+emotion_remorse,individual_genre,Hip-Hop / Rap,figures/emotion_remorse/hip_hop_rap.png
+emotion_remorse,individual_genre,Pop,figures/emotion_remorse/pop.png
+emotion_remorse,individual_genre,R&B / Soul,figures/emotion_remorse/r_b_soul.png
+emotion_remorse,individual_genre,Rock,figures/emotion_remorse/rock.png
+emotion_sadness,overall,All genres,figures/emotion_sadness/overall.png
+emotion_sadness,major_genres,Major genres,figures/emotion_sadness/major_genres.png
+emotion_sadness,rank_sensitivity,All genres,figures/emotion_sadness/rank_sensitivity.png
+emotion_sadness,individual_genre,Alternative / Indie,figures/emotion_sadness/alternative_indie.png
+emotion_sadness,individual_genre,Country,figures/emotion_sadness/country.png
+emotion_sadness,individual_genre,Electronic / Dance,figures/emotion_sadness/electronic_dance.png
+emotion_sadness,individual_genre,Hip-Hop / Rap,figures/emotion_sadness/hip_hop_rap.png
+emotion_sadness,individual_genre,Pop,figures/emotion_sadness/pop.png
+emotion_sadness,individual_genre,R&B / Soul,figures/emotion_sadness/r_b_soul.png
+emotion_sadness,individual_genre,Rock,figures/emotion_sadness/rock.png
+emotion_surprise,overall,All genres,figures/emotion_surprise/overall.png
+emotion_surprise,major_genres,Major genres,figures/emotion_surprise/major_genres.png
+emotion_surprise,rank_sensitivity,All genres,figures/emotion_surprise/rank_sensitivity.png
+emotion_surprise,individual_genre,Alternative / Indie,figures/emotion_surprise/alternative_indie.png
+emotion_surprise,individual_genre,Country,figures/emotion_surprise/country.png
+emotion_surprise,individual_genre,Electronic / Dance,figures/emotion_surprise/electronic_dance.png
+emotion_surprise,individual_genre,Hip-Hop / Rap,figures/emotion_surprise/hip_hop_rap.png
+emotion_surprise,individual_genre,Pop,figures/emotion_surprise/pop.png
+emotion_surprise,individual_genre,R&B / Soul,figures/emotion_surprise/r_b_soul.png
+emotion_surprise,individual_genre,Rock,figures/emotion_surprise/rock.png
+emotion_neutral,overall,All genres,figures/emotion_neutral/overall.png
+emotion_neutral,major_genres,Major genres,figures/emotion_neutral/major_genres.png
+emotion_neutral,rank_sensitivity,All genres,figures/emotion_neutral/rank_sensitivity.png
+emotion_neutral,individual_genre,Alternative / Indie,figures/emotion_neutral/alternative_indie.png
+emotion_neutral,individual_genre,Country,figures/emotion_neutral/country.png
+emotion_neutral,individual_genre,Electronic / Dance,figures/emotion_neutral/electronic_dance.png
+emotion_neutral,individual_genre,Hip-Hop / Rap,figures/emotion_neutral/hip_hop_rap.png
+emotion_neutral,individual_genre,Pop,figures/emotion_neutral/pop.png
+emotion_neutral,individual_genre,R&B / Soul,figures/emotion_neutral/r_b_soul.png
+emotion_neutral,individual_genre,Rock,figures/emotion_neutral/rock.png
+sentiment_negative,overall,All genres,figures/sentiment_negative/overall.png
+sentiment_negative,major_genres,Major genres,figures/sentiment_negative/major_genres.png
+sentiment_negative,rank_sensitivity,All genres,figures/sentiment_negative/rank_sensitivity.png
+sentiment_negative,individual_genre,Alternative / Indie,figures/sentiment_negative/alternative_indie.png
+sentiment_negative,individual_genre,Country,figures/sentiment_negative/country.png
+sentiment_negative,individual_genre,Electronic / Dance,figures/sentiment_negative/electronic_dance.png
+sentiment_negative,individual_genre,Hip-Hop / Rap,figures/sentiment_negative/hip_hop_rap.png
+sentiment_negative,individual_genre,Pop,figures/sentiment_negative/pop.png
+sentiment_negative,individual_genre,R&B / Soul,figures/sentiment_negative/r_b_soul.png
+sentiment_negative,individual_genre,Rock,figures/sentiment_negative/rock.png
+sentiment_neutral,overall,All genres,figures/sentiment_neutral/overall.png
+sentiment_neutral,major_genres,Major genres,figures/sentiment_neutral/major_genres.png
+sentiment_neutral,rank_sensitivity,All genres,figures/sentiment_neutral/rank_sensitivity.png
+sentiment_neutral,individual_genre,Alternative / Indie,figures/sentiment_neutral/alternative_indie.png
+sentiment_neutral,individual_genre,Country,figures/sentiment_neutral/country.png
+sentiment_neutral,individual_genre,Electronic / Dance,figures/sentiment_neutral/electronic_dance.png
+sentiment_neutral,individual_genre,Hip-Hop / Rap,figures/sentiment_neutral/hip_hop_rap.png
+sentiment_neutral,individual_genre,Pop,figures/sentiment_neutral/pop.png
+sentiment_neutral,individual_genre,R&B / Soul,figures/sentiment_neutral/r_b_soul.png
+sentiment_neutral,individual_genre,Rock,figures/sentiment_neutral/rock.png
+sentiment_positive,overall,All genres,figures/sentiment_positive/overall.png
+sentiment_positive,major_genres,Major genres,figures/sentiment_positive/major_genres.png
+sentiment_positive,rank_sensitivity,All genres,figures/sentiment_positive/rank_sensitivity.png
+sentiment_positive,individual_genre,Alternative / Indie,figures/sentiment_positive/alternative_indie.png
+sentiment_positive,individual_genre,Country,figures/sentiment_positive/country.png
+sentiment_positive,individual_genre,Electronic / Dance,figures/sentiment_positive/electronic_dance.png
+sentiment_positive,individual_genre,Hip-Hop / Rap,figures/sentiment_positive/hip_hop_rap.png
+sentiment_positive,individual_genre,Pop,figures/sentiment_positive/pop.png
+sentiment_positive,individual_genre,R&B / Soul,figures/sentiment_positive/r_b_soul.png
+sentiment_positive,individual_genre,Rock,figures/sentiment_positive/rock.png

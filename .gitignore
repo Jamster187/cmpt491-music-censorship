@@ -48,3 +48,7 @@ local_config.*
 
 # Full weekly CSV is distributed as a lossless XZ file below GitHub's blob limit.
 /data/public/master_weekly.csv
+
+# Reproducible large moving-average CSVs; lossless .csv.xz copies are tracked.
+/reports/moving_averages/data/monthly_classifier_overall.csv
+/reports/moving_averages/data/monthly_classifier_by_genre.csv

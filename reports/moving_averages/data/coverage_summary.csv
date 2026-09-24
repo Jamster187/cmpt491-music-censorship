@@ -1,0 +1,715 @@
+primary_genre,classifier,possible_months,months_genre_absent,months_present_without_scores,months_below_minimum,months_below_minimum_pct,months_present_below_minimum,present_months_failure_pct,sufficient_months,valid_rolling_endpoints,individual_plot_generated
+All genres,detox_identity_attack,818,0,0,0,0,0,0,818,807,False
+All genres,detox_insult,818,0,0,0,0,0,0,818,807,False
+All genres,detox_obscene,818,0,0,0,0,0,0,818,807,False
+All genres,detox_severe_toxicity,818,0,0,0,0,0,0,818,807,False
+All genres,detox_sexual_explicit,818,0,0,0,0,0,0,818,807,False
+All genres,detox_threat,818,0,0,0,0,0,0,818,807,False
+All genres,detox_toxicity,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_admiration,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_amusement,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_anger,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_annoyance,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_approval,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_caring,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_confusion,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_curiosity,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_desire,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_disappointment,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_disapproval,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_disgust,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_embarrassment,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_excitement,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_fear,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_gratitude,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_grief,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_joy,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_love,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_nervousness,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_neutral,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_optimism,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_pride,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_realization,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_relief,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_remorse,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_sadness,818,0,0,0,0,0,0,818,807,False
+All genres,emotion_surprise,818,0,0,0,0,0,0,818,807,False
+All genres,ll_explicit_language,818,0,0,0,0,0,0,818,807,False
+All genres,ll_sexual_content,818,0,0,0,0,0,0,818,807,False
+All genres,ll_substance_use,818,0,0,0,0,0,0,818,807,False
+All genres,ll_violence,818,0,0,0,0,0,0,818,807,False
+All genres,sentiment_negative,818,0,0,0,0,0,0,818,807,False
+All genres,sentiment_neutral,818,0,0,0,0,0,0,818,807,False
+All genres,sentiment_positive,818,0,0,0,0,0,0,818,807,False
+Afrobeats / African Pop,detox_identity_attack,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,detox_insult,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,detox_obscene,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,detox_severe_toxicity,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,detox_sexual_explicit,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,detox_threat,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,detox_toxicity,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_admiration,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_amusement,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_anger,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_annoyance,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_approval,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_caring,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_confusion,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_curiosity,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_desire,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_disappointment,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_disapproval,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_disgust,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_embarrassment,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_excitement,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_fear,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_gratitude,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_grief,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_joy,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_love,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_nervousness,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_neutral,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_optimism,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_pride,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_realization,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_relief,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_remorse,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_sadness,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,emotion_surprise,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,ll_explicit_language,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,ll_sexual_content,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,ll_substance_use,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,ll_violence,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,sentiment_negative,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,sentiment_neutral,818,780,8,818,100,38,100,0,0,False
+Afrobeats / African Pop,sentiment_positive,818,780,8,818,100,38,100,0,0,False
+Alternative / Indie,detox_identity_attack,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,detox_insult,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,detox_obscene,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,detox_severe_toxicity,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,detox_sexual_explicit,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,detox_threat,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,detox_toxicity,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_admiration,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_amusement,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_anger,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_annoyance,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_approval,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_caring,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_confusion,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_curiosity,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_desire,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_disappointment,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_disapproval,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_disgust,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_embarrassment,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_excitement,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_fear,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_gratitude,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_grief,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_joy,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_love,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_nervousness,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_neutral,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_optimism,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_pride,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_realization,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_relief,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_remorse,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_sadness,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,emotion_surprise,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,ll_explicit_language,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,ll_sexual_content,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,ll_substance_use,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,ll_violence,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,sentiment_negative,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,sentiment_neutral,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Alternative / Indie,sentiment_positive,818,267,14,563,68.82640587,296,53.72050817,255,87,True
+Country,detox_identity_attack,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,detox_insult,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,detox_obscene,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,detox_severe_toxicity,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,detox_sexual_explicit,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,detox_threat,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,detox_toxicity,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_admiration,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_amusement,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_anger,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_annoyance,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_approval,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_caring,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_confusion,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_curiosity,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_desire,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_disappointment,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_disapproval,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_disgust,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_embarrassment,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_excitement,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_fear,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_gratitude,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_grief,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_joy,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_love,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_nervousness,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_neutral,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_optimism,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_pride,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_realization,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_relief,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_remorse,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_sadness,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,emotion_surprise,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,ll_explicit_language,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,ll_sexual_content,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,ll_substance_use,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,ll_violence,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,sentiment_negative,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,sentiment_neutral,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Country,sentiment_positive,818,72,9,297,36.30806846,225,30.16085791,521,355,True
+Electronic / Dance,detox_identity_attack,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,detox_insult,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,detox_obscene,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,detox_severe_toxicity,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,detox_sexual_explicit,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,detox_threat,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,detox_toxicity,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_admiration,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_amusement,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_anger,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_annoyance,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_approval,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_caring,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_confusion,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_curiosity,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_desire,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_disappointment,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_disapproval,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_disgust,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_embarrassment,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_excitement,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_fear,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_gratitude,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_grief,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_joy,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_love,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_nervousness,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_neutral,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_optimism,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_pride,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_realization,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_relief,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_remorse,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_sadness,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,emotion_surprise,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,ll_explicit_language,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,ll_sexual_content,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,ll_substance_use,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,ll_violence,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,sentiment_negative,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,sentiment_neutral,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Electronic / Dance,sentiment_positive,818,242,20,541,66.13691932,299,51.90972222,277,92,True
+Folk / Singer-Songwriter,detox_identity_attack,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,detox_insult,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,detox_obscene,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,detox_severe_toxicity,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,detox_sexual_explicit,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,detox_threat,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,detox_toxicity,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_admiration,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_amusement,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_anger,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_annoyance,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_approval,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_caring,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_confusion,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_curiosity,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_desire,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_disappointment,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_disapproval,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_disgust,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_embarrassment,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_excitement,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_fear,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_gratitude,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_grief,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_joy,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_love,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_nervousness,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_neutral,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_optimism,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_pride,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_realization,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_relief,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_remorse,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_sadness,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,emotion_surprise,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,ll_explicit_language,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,ll_sexual_content,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,ll_substance_use,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,ll_violence,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,sentiment_negative,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,sentiment_neutral,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Folk / Singer-Songwriter,sentiment_positive,818,359,16,772,94.37652812,413,89.97821351,46,0,False
+Gospel / Christian,detox_identity_attack,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,detox_insult,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,detox_obscene,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,detox_severe_toxicity,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,detox_sexual_explicit,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,detox_threat,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,detox_toxicity,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_admiration,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_amusement,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_anger,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_annoyance,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_approval,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_caring,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_confusion,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_curiosity,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_desire,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_disappointment,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_disapproval,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_disgust,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_embarrassment,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_excitement,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_fear,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_gratitude,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_grief,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_joy,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_love,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_nervousness,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_neutral,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_optimism,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_pride,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_realization,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_relief,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_remorse,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_sadness,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,emotion_surprise,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,ll_explicit_language,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,ll_sexual_content,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,ll_substance_use,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,ll_violence,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,sentiment_negative,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,sentiment_neutral,818,658,30,818,100,160,100,0,0,False
+Gospel / Christian,sentiment_positive,818,658,30,818,100,160,100,0,0,False
+Hip-Hop / Rap,detox_identity_attack,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,detox_insult,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,detox_obscene,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,detox_severe_toxicity,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,detox_sexual_explicit,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,detox_threat,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,detox_toxicity,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_admiration,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_amusement,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_anger,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_annoyance,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_approval,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_caring,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_confusion,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_curiosity,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_desire,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_disappointment,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_disapproval,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_disgust,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_embarrassment,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_excitement,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_fear,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_gratitude,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_grief,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_joy,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_love,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_nervousness,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_neutral,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_optimism,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_pride,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_realization,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_relief,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_remorse,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_sadness,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,emotion_surprise,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,ll_explicit_language,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,ll_sexual_content,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,ll_substance_use,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,ll_violence,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,sentiment_negative,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,sentiment_neutral,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Hip-Hop / Rap,sentiment_positive,818,310,11,380,46.45476773,70,13.77952756,438,406,True
+Jazz / Blues,detox_identity_attack,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,detox_insult,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,detox_obscene,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,detox_severe_toxicity,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,detox_sexual_explicit,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,detox_threat,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,detox_toxicity,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_admiration,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_amusement,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_anger,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_annoyance,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_approval,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_caring,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_confusion,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_curiosity,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_desire,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_disappointment,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_disapproval,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_disgust,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_embarrassment,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_excitement,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_fear,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_gratitude,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_grief,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_joy,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_love,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_nervousness,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_neutral,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_optimism,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_pride,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_realization,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_relief,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_remorse,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_sadness,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,emotion_surprise,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,ll_explicit_language,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,ll_sexual_content,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,ll_substance_use,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,ll_violence,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,sentiment_negative,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,sentiment_neutral,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+Jazz / Blues,sentiment_positive,818,408,99,781,95.47677262,373,90.97560976,37,0,False
+K-Pop,detox_identity_attack,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,detox_insult,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,detox_obscene,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,detox_severe_toxicity,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,detox_sexual_explicit,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,detox_threat,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,detox_toxicity,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_admiration,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_amusement,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_anger,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_annoyance,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_approval,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_caring,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_confusion,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_curiosity,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_desire,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_disappointment,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_disapproval,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_disgust,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_embarrassment,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_excitement,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_fear,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_gratitude,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_grief,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_joy,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_love,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_nervousness,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_neutral,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_optimism,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_pride,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_realization,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_relief,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_remorse,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_sadness,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,emotion_surprise,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,ll_explicit_language,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,ll_sexual_content,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,ll_substance_use,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,ll_violence,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,sentiment_negative,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,sentiment_neutral,818,754,6,814,99.51100244,60,93.75,4,0,False
+K-Pop,sentiment_positive,818,754,6,814,99.51100244,60,93.75,4,0,False
+Latin,detox_identity_attack,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,detox_insult,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,detox_obscene,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,detox_severe_toxicity,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,detox_sexual_explicit,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,detox_threat,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,detox_toxicity,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_admiration,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_amusement,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_anger,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_annoyance,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_approval,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_caring,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_confusion,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_curiosity,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_desire,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_disappointment,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_disapproval,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_disgust,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_embarrassment,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_excitement,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_fear,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_gratitude,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_grief,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_joy,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_love,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_nervousness,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_neutral,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_optimism,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_pride,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_realization,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_relief,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_remorse,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_sadness,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,emotion_surprise,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,ll_explicit_language,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,ll_sexual_content,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,ll_substance_use,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,ll_violence,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,sentiment_negative,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,sentiment_neutral,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Latin,sentiment_positive,818,443,47,775,94.74327628,332,88.53333333,43,4,False
+Metal,detox_identity_attack,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,detox_insult,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,detox_obscene,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,detox_severe_toxicity,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,detox_sexual_explicit,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,detox_threat,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,detox_toxicity,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_admiration,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_amusement,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_anger,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_annoyance,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_approval,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_caring,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_confusion,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_curiosity,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_desire,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_disappointment,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_disapproval,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_disgust,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_embarrassment,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_excitement,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_fear,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_gratitude,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_grief,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_joy,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_love,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_nervousness,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_neutral,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_optimism,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_pride,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_realization,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_relief,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_remorse,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_sadness,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,emotion_surprise,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,ll_explicit_language,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,ll_sexual_content,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,ll_substance_use,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,ll_violence,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,sentiment_negative,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,sentiment_neutral,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Metal,sentiment_positive,818,576,9,813,99.38875306,237,97.9338843,5,0,False
+Other,detox_identity_attack,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,detox_insult,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,detox_obscene,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,detox_severe_toxicity,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,detox_sexual_explicit,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,detox_threat,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,detox_toxicity,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_admiration,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_amusement,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_anger,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_annoyance,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_approval,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_caring,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_confusion,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_curiosity,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_desire,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_disappointment,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_disapproval,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_disgust,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_embarrassment,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_excitement,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_fear,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_gratitude,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_grief,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_joy,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_love,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_nervousness,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_neutral,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_optimism,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_pride,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_realization,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_relief,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_remorse,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_sadness,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,emotion_surprise,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,ll_explicit_language,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,ll_sexual_content,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,ll_substance_use,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,ll_violence,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,sentiment_negative,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,sentiment_neutral,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Other,sentiment_positive,818,441,162,809,98.8997555,368,97.6127321,9,0,False
+Pop,detox_identity_attack,818,0,0,0,0,0,0,818,807,True
+Pop,detox_insult,818,0,0,0,0,0,0,818,807,True
+Pop,detox_obscene,818,0,0,0,0,0,0,818,807,True
+Pop,detox_severe_toxicity,818,0,0,0,0,0,0,818,807,True
+Pop,detox_sexual_explicit,818,0,0,0,0,0,0,818,807,True
+Pop,detox_threat,818,0,0,0,0,0,0,818,807,True
+Pop,detox_toxicity,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_admiration,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_amusement,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_anger,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_annoyance,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_approval,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_caring,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_confusion,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_curiosity,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_desire,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_disappointment,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_disapproval,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_disgust,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_embarrassment,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_excitement,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_fear,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_gratitude,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_grief,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_joy,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_love,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_nervousness,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_neutral,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_optimism,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_pride,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_realization,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_relief,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_remorse,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_sadness,818,0,0,0,0,0,0,818,807,True
+Pop,emotion_surprise,818,0,0,0,0,0,0,818,807,True
+Pop,ll_explicit_language,818,0,0,0,0,0,0,818,807,True
+Pop,ll_sexual_content,818,0,0,0,0,0,0,818,807,True
+Pop,ll_substance_use,818,0,0,0,0,0,0,818,807,True
+Pop,ll_violence,818,0,0,0,0,0,0,818,807,True
+Pop,sentiment_negative,818,0,0,0,0,0,0,818,807,True
+Pop,sentiment_neutral,818,0,0,0,0,0,0,818,807,True
+Pop,sentiment_positive,818,0,0,0,0,0,0,818,807,True
+R&B / Soul,detox_identity_attack,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,detox_insult,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,detox_obscene,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,detox_severe_toxicity,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,detox_sexual_explicit,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,detox_threat,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,detox_toxicity,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_admiration,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_amusement,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_anger,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_annoyance,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_approval,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_caring,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_confusion,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_curiosity,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_desire,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_disappointment,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_disapproval,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_disgust,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_embarrassment,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_excitement,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_fear,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_gratitude,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_grief,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_joy,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_love,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_nervousness,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_neutral,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_optimism,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_pride,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_realization,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_relief,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_remorse,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_sadness,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,emotion_surprise,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,ll_explicit_language,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,ll_sexual_content,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,ll_substance_use,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,ll_violence,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,sentiment_negative,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,sentiment_neutral,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+R&B / Soul,sentiment_positive,818,0,2,42,5.134474328,42,5.134474328,776,658,True
+Reggae / Dancehall,detox_identity_attack,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,detox_insult,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,detox_obscene,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,detox_severe_toxicity,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,detox_sexual_explicit,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,detox_threat,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,detox_toxicity,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_admiration,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_amusement,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_anger,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_annoyance,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_approval,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_caring,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_confusion,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_curiosity,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_desire,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_disappointment,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_disapproval,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_disgust,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_embarrassment,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_excitement,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_fear,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_gratitude,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_grief,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_joy,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_love,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_nervousness,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_neutral,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_optimism,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_pride,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_realization,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_relief,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_remorse,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_sadness,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,emotion_surprise,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,ll_explicit_language,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,ll_sexual_content,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,ll_substance_use,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,ll_violence,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,sentiment_negative,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,sentiment_neutral,818,526,47,818,100,292,100,0,0,False
+Reggae / Dancehall,sentiment_positive,818,526,47,818,100,292,100,0,0,False
+Rock,detox_identity_attack,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,detox_insult,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,detox_obscene,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,detox_severe_toxicity,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,detox_sexual_explicit,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,detox_threat,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,detox_toxicity,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_admiration,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_amusement,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_anger,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_annoyance,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_approval,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_caring,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_confusion,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_curiosity,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_desire,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_disappointment,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_disapproval,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_disgust,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_embarrassment,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_excitement,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_fear,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_gratitude,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_grief,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_joy,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_love,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_nervousness,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_neutral,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_optimism,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_pride,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_realization,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_relief,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_remorse,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_sadness,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,emotion_surprise,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,ll_explicit_language,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,ll_sexual_content,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,ll_substance_use,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,ll_violence,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,sentiment_negative,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,sentiment_neutral,818,79,3,211,25.79462103,132,17.86197564,607,527,True
+Rock,sentiment_positive,818,79,3,211,25.79462103,132,17.86197564,607,527,True

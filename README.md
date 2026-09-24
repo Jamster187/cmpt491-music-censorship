@@ -162,9 +162,9 @@ See [complete schema, provenance and decompression documentation](data/public/RE
 Billboard → Weekly/monthly snapshots → Metadata + lyrics
     → 42 classifier features → Genre → Final master datasets
     ↓
-WE ARE HERE: Milestone 2 descriptives complete
+Milestone 2 descriptives complete
     ↓
-Moving averages / genre comparisons
+WE ARE HERE: moving averages / genre comparisons complete
     ↓
 Historical trend modelling
     ↓
@@ -231,3 +231,85 @@ relationship figures use song weights except when monthly rank is involved. Rank
 is best and 100 worst; the rank axis is inverted in relationship plots. No derived
 popularity field is added to the dataset. Annual summaries are chart-calendar
 summaries, not release-year cohorts or COVID comparisons.
+
+## Monthly classifier moving averages
+
+Rebuild all tables and figures with the existing Python dependencies:
+
+```bash
+python3 src/moving_average_analysis.py
+python3 -m unittest discover -s tests -v
+```
+
+Outputs are in [reports/moving_averages](reports/moving_averages/). Start with the
+[findings and ten-figure shortlist](reports/moving_averages/moving_average_findings.md).
+Every one of the 42 classifier scores remains a separate measurement. This is
+exploratory description, with no composite score or COVID hypothesis test.
+
+The primary series represents equal-weight Billboard song-month presence. A song
+contributes in every snapshot where it appears, without weighting by rank or
+collapsing its appearances across time. Three source song-months have duplicate
+rows; `data/duplicate_song_months.csv` records their identities and ranks. Verified
+identical scores/genres contribute once within those months (81,794 analysis
+song-months from 81,797 immutable source rows). Source counts remain in exports.
+This is an explicit difference from the earlier Milestone 2 source-row descriptives.
+No input rows or public files are edited.
+
+For each calendar month, overall and within each of 16 genres, the pipeline reports
+`n` (distinct songs with a score), `n_songs_total`, `source_observations`, mean,
+median and sample standard deviation (`ddof=1`). Missing scores are omitted from
+measurement calculations, never replaced by zero. All 818 calendar months are
+reindexed for every score/genre, so absent groups have zero counts and blank
+statistics, rather than disappearing from the time axis.
+
+A monthly mean qualifies for plotting with at least **30 scored songs overall** or
+**5 within a genre**. These are conservative display choices, not guarantees of
+statistical precision. `sample_size_flag` distinguishes `no_scores`,
+`below_minimum` and `sufficient`. Raw low-count statistics remain in the CSVs.
+The trailing mean requires **12 consecutive qualifying calendar months**, including
+the current month, and weights their means equally. It is not a pooled average
+weighted by each month's N. A missing/low-count month interrupts rolling output
+until a new full qualifying window exists. No interpolation or gap bridging occurs.
+`rolling_qualifying_months`, `rolling_12m_n` and `rolling_12m_min_monthly_n` preserve
+coverage context. Rolling N counts song-months, not independent songs.
+
+Rank sensitivity uses `101 - monthly_rank` among scored songs within each month,
+then the same equal-month rolling calculation and coverage mask. The three duplicate
+song-months use their average source-row rank weight. This sensitivity never replaces
+the primary series. Both versions retain their original score scale.
+
+The data folder contains:
+
+- `monthly_classifier_overall.csv`: 34,356 rows (818 × 42).
+- `monthly_classifier_by_genre.csv`: 549,696 rows (818 × 16 × 42).
+- `trajectory_summary.csv`: first/latest/minimum/maximum eligible rolling values, dates and sample counts for all 714 series. Tied extrema use the earliest date.
+- `coverage_summary.csv`: failures across all calendar months and among months with the genre present, for each classifier; absent months and present-but-unscored months are distinguished.
+- `rank_weighting_sensitivity.csv`: paired rolling differences and endpoint changes.
+- `duplicate_song_months.csv`: the explicit within-month duplicate audit.
+- `figure_inventory.csv`: every generated chart and its series.
+
+The two large monthly CSVs are generated locally and ignored by Git. Deterministic,
+lossless `.csv.xz` copies are included for sharing; for example, they can be read
+with `pd.read_csv('reports/moving_averages/data/monthly_classifier_by_genre.csv.xz')`.
+The rebuild command restores both plain and compressed versions. No spreadsheet
+steps are required.
+
+There are 420 figures: for every classifier, overall raw/smoothed means, five-major-
+genre rolling comparisons, overall rank sensitivity, and seven eligible individual
+genres (Pop, Rock, Hip-Hop / Rap, R&B / Soul, Country, Alternative / Indie,
+Electronic / Dance). Individual genre plots require at least 12 available rolling
+endpoints; ineligible genres are retained and explicitly reported in coverage tables.
+All charts include scored-song counts. Limits are shared within a classifier, start
+at zero and cover the eligible monthly means, allowing small-scale emotion outputs
+to remain visible. Different classifiers can have different y-limits and are not
+cross-model effect-size comparisons. The vertical line labelled 2020 is orientation
+only. Figures contain gaps wherever coverage is insufficient.
+
+Input SHA-256 and in-memory equality checks protect the public data, classifier
+values and genres. The build validates grid sizes, unique keys, counts, score bounds
+and rolling eligibility before publishing. The manifest records code/source hashes,
+runtime versions and every artifact hash; files are staged in a temporary directory
+and replaced individually only after a complete successful build. Rebuilding in the
+same runtime is deterministic. Tests include hand-calculated rolling windows,
+missing-period recovery, weighting, deduplication, sparse genres and the actual
+818-month population. No private data or model inference is used.
