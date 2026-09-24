@@ -42,3 +42,12 @@ and full-scale references. Their current hashes are validated against
 `analysis/moving_averages/figures/all_genres/manifest.json`, including its code hashes
 and complete figure catalog. The cleanup manifest remains the historical relocation
 snapshot; all other immutable artifact checks still use its original hashes.
+
+The subsequent repository-wide visualization audit is recorded in
+`analysis/figure_inventory_before.csv` and `analysis/figure_audit.csv`.
+`analysis/figure_manifest.json` now validates the current analytical image catalog,
+rendering dependencies and protected numerical files. The historical cleanup
+manifest remains intact; only current PNG hashes supersede its image snapshots.
+The original descriptive and moving-average manifests retain all numerical hashes
+and record refreshed rendering provenance. Use `python3 src/figure_audit.py` for
+presentation-only rebuilds, and its `--validate` option for read-only verification.

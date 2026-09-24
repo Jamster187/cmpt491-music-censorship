@@ -192,79 +192,8 @@ def label(c):
 
 
 def figures(stage, overall, genres, coverage):
-    plt.rcParams.update({'font.size': 9, 'savefig.dpi': 110})
-    records = []
-    def axes(title):
-        fig, (ax, count_ax) = plt.subplots(2, 1, figsize=(10, 5.5), sharex=True,
-            gridspec_kw={'height_ratios': [4, 1]})
-        ax.set(title=title, ylabel='Classifier score (0–1)', ylim=(-.02, 1.02))
-        count_ax.set(ylabel='Scored songs', xlabel='Chart month (not release month)')
-        for panel in [ax, count_ax]:
-            panel.axvline(pd.Timestamp('2020-01-01'), color='gray', linestyle=':', linewidth=1)
-            panel.grid(alpha=.15)
-        ax.text(pd.Timestamp('2020-01-01'), .99, '2020', transform=ax.get_xaxis_transform(), color='gray', ha='right', va='top', fontsize=8)
-        return fig, ax, count_ax
-    def save(fig, path, c, kind, genre='All genres'):
-        target = stage/'figures'/c/path
-        target.parent.mkdir(parents=True, exist_ok=True)
-        for panel in fig.axes:
-            panel.set_xlim(pd.Timestamp(overall.month.min()), pd.Timestamp(overall.month.max()))
-        fig.axes[0].set_ylim(0, score_limits[c])
-        fig.tight_layout()
-        fig.savefig(target, metadata={'Software': VERSION})
-        plt.close(fig)
-        records.append(dict(classifier=c, figure_type=kind, primary_genre=genre,
-                            path=str(target.relative_to(stage))))
-    score_limits = {}
-    for c in FEATURES:
-        o = overall[overall.classifier.eq(c) & overall.n.ge(MIN_OVERALL_N)]
-        g = genres[genres.classifier.eq(c) & genres.n.ge(MIN_GENRE_N)]
-        maximum = max(o['mean'].max(), o.rank_weighted_mean.max(), g['mean'].max(), g.rank_weighted_mean.max())
-        score_limits[c] = min(1.02, max(.005, 1.08*maximum))
-    indexed_genres = {(g,c): d for (g,c),d in genres.groupby(['primary_genre','classifier'], sort=True)}
-    for number, c in enumerate(FEATURES, 1):
-        data = overall[overall.classifier.eq(c)].sort_values('month')
-        dates = pd.to_datetime(data.month)
-        fig, ax, count_ax = axes(label(c) + '\nOverall equal-weight Top-100 representation; trailing 12 months')
-        ax.plot(dates, data['mean'].where(data.n.ge(MIN_OVERALL_N)), color='#0072B2', alpha=.22, linewidth=.7, label='Raw monthly mean')
-        ax.plot(dates, data.rolling_12m_mean, color='#0072B2', linewidth=1.7, label='12-month mean')
-        count_ax.plot(dates, data.n, color='#0072B2', linewidth=.7)
-        count_ax.axhline(MIN_OVERALL_N, color='gray', linestyle='--', linewidth=.7)
-        ax.legend(loc='upper left', fontsize=8)
-        save(fig, 'overall.png', c, 'overall')
-        fig, ax, count_ax = axes(label(c) + '\nMajor genres: 12 consecutive months with ≥5 scored songs/month')
-        for genre in MAJOR:
-            g = indexed_genres[(genre,c)].sort_values('month')
-            dates = pd.to_datetime(g.month)
-            ax.plot(dates, g.rolling_12m_mean, color=COLORS[genre], label=f'{genre} ({g.rolling_12m_mean.notna().sum()} endpoints)', linewidth=1.3)
-            count_ax.plot(dates, g.n, color=COLORS[genre], alpha=.7, linewidth=.7)
-        count_ax.axhline(MIN_GENRE_N, color='gray', linestyle='--', linewidth=.7)
-        ax.legend(loc='upper left', fontsize=7, ncol=2)
-        save(fig, 'major_genres.png', c, 'major_genres', 'Major genres')
-        fig, ax, count_ax = axes(label(c) + '\nOverall sensitivity: equal-weight vs rank-weighted Top-100 representation')
-        dates = pd.to_datetime(data.month)
-        ax.plot(dates, data.rolling_12m_mean, color='#0072B2', label='Equal weight; 12-month mean')
-        ax.plot(dates, data.rank_weighted_rolling_12m_mean, color='#D55E00', linestyle='--', label='Weight = 101 − rank; 12-month mean')
-        count_ax.plot(dates, data.n, color='#0072B2', linewidth=.7)
-        ax.legend(loc='upper left', fontsize=8)
-        save(fig, 'rank_sensitivity.png', c, 'rank_sensitivity')
-        eligible = coverage[(coverage.classifier == c) & coverage.individual_plot_generated]
-        for genre in eligible.primary_genre:
-            g = indexed_genres[(genre,c)].sort_values('month')
-            dates = pd.to_datetime(g.month)
-            fig, ax, count_ax = axes(label(c) + '\n' + genre + ': gaps mark insufficient coverage')
-            ax.plot(dates, g['mean'].where(g.n.ge(MIN_GENRE_N)), color='#0072B2', alpha=.25, linewidth=.7, label='Monthly mean; n ≥ 5')
-            ax.plot(dates, g.rolling_12m_mean, color='#0072B2', label='Equal weight; 12-month mean', linewidth=1.7)
-            ax.plot(dates, g.rank_weighted_rolling_12m_mean, color='#D55E00', linestyle='--', linewidth=1, label='Rank-weighted sensitivity')
-            count_ax.plot(dates, g.n, color='#0072B2', linewidth=.7)
-            count_ax.axhline(MIN_GENRE_N, color='gray', linestyle='--', linewidth=.7)
-            low = g.n.lt(MIN_GENRE_N)
-            count_ax.scatter(dates[low], g.loc[low, 'n'], color='#D55E00', s=3)
-            ax.legend(loc='upper left', fontsize=7)
-            save(fig, slug(genre)+'.png', c, 'individual_genre', genre)
-        if number % 7 == 0:
-            print(f'Figures complete for {number}/42 classifiers', flush=True)
-    return pd.DataFrame(records)
+    from moving_average_figures import figures as render
+    return render(stage, overall, genres, coverage)
 
 
 def findings(stage, overall, genres, checks, coverage, sensitivity, audit, inventory):
@@ -280,7 +209,7 @@ def findings(stage, overall, genres, checks, coverage, sensitivity, audit, inven
         '- Raw statistics use only non-missing scores; std uses ddof=1. Every month × classifier × genre exists in the export, including n=0 and blank measurements. n is the number of distinct songs with a score.',
         '- Overall monthly minimum: 30 scored songs; genre minimum: 5. Raw low-count statistics remain exported but are flagged and hidden in plots. These are pragmatic display rules, not precision guarantees.',
         '- Trailing 12-month means require all 12 consecutive calendar months to meet the minimum. Each qualifying monthly mean receives equal weight; this is not a pooled 12-month song mean. No interpolation or bridging of gaps. Rolling N counts song-months, not independent songs.',
-        '- Individual genre plots require at least 12 emitted rolling endpoints. All genres remain in tables and the coverage report, including those with no eligible plot. Count panels show coverage. Y-limits are shared within each classifier, start at zero and expand to cover available monthly means; different classifiers can use different limits. Scores retain their original 0–1 scale.',
+        '- Individual genre plots require at least 12 emitted rolling endpoints. All genres remain in tables and the coverage report, including those with no eligible plot. Count panels show coverage. Y-limits follow only the displayed rolling series with 8% padding. Faint raw monthly context may exceed the displayed range; counts are disclosed and full-scale companions retain it. Scores retain their original 0–1 scale.',
         '- Rank sensitivity weights each available song by 101 − monthly_rank, renormalizes within month among available scores, then averages 12 monthly weighted means under the identical coverage rule.',
         '- 2020 is a neutral visual reference only. Trailing windows lag short-term changes; changing coverage, genre composition and model behavior can affect trajectories. Dataset endpoints may have incomplete calendar years.', '',
         '## Overall movements', '',

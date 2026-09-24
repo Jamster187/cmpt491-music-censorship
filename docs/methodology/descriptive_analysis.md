@@ -116,15 +116,17 @@ with `pd.read_csv('analysis/moving_averages/data/monthly_classifier_by_genre.csv
 The rebuild command restores both plain and compressed versions. No spreadsheet
 steps are required.
 
-There are 420 figures: for every classifier, overall raw/smoothed means, five-major-
+There are 420 default figures (plus full-scale context companions): for every classifier, overall raw/smoothed means, five-major-
 genre rolling comparisons, overall rank sensitivity, and seven eligible individual
 genres (Pop, Rock, Hip-Hop / Rap, R&B / Soul, Country, Alternative / Indie,
 Electronic / Dance). Individual genre plots require at least 12 available rolling
 endpoints; ineligible genres are retained and explicitly reported in coverage tables.
-All charts include scored-song counts. Limits are shared within a classifier, start
-at zero and cover the eligible monthly means, allowing small-scale emotion outputs
-to remain visible. Different classifiers can have different y-limits and are not
-cross-model effect-size comparisons. The vertical line labelled 2020 is orientation
+All charts include scored-song counts. Limits follow the finite displayed rolling
+series, including rank-weighted sensitivity when present, with 8% padding and
+outward rounding. Raw monthly context cannot determine these limits; outside
+values are disclosed and full-scale companions retain them. Independent axes
+are not cross-model effect-size comparisons. See the
+[figure audit](../../analysis/figure_audit.md) for the exact presentation rules. The vertical line labelled 2020 is orientation
 only. Figures contain gaps wherever coverage is insufficient.
 
 Input SHA-256 and in-memory equality checks protect the public data, classifier

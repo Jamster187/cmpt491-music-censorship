@@ -70,3 +70,8 @@ To regenerate only the all-genres charts from saved values, run
 `python3 src/moving_average_all_genres.py`. Defaults use independently scaled
 observed-range Y-axes; `_full_scale.png` references retain 0–1. See the
 [moving-average guide](analysis/moving_averages/README.md) for the deterministic rule.
+
+For a repository-wide presentation-only rebuild (no numerical exports rewritten),
+run `python3 src/figure_audit.py`. The [figure audit](analysis/figure_audit.md)
+records all analytical families, axis decisions and validation; the
+[visual review](analysis/figure_visual_review.md) records representative inspections.

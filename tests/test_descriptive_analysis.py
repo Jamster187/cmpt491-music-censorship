@@ -119,7 +119,7 @@ class PublicDatasetTests(unittest.TestCase):
             self.assertEqual(len(tables['song_level_summary_statistics']), 48)
             self.assertEqual(len(tables['missingness']), 78)
             self.assertEqual(len(tables['genre_statistics']), 16)
-            self.assertEqual(len(list((out/'figures').glob('*.png'))), 27)
+            self.assertEqual(len(list((out/'figures').glob('*.png'))), 29)
             self.assertTrue((out/'descriptive_findings.md').is_file())
             for method in ['pearson', 'spearman']:
                 t = tables[method+'_correlations']

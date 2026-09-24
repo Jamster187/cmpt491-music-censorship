@@ -66,6 +66,17 @@ def current_artifact_hashes(manifest):
             raise ValueError('Overlay implementation changed: '+name)
     for name, digest in overlay['figures'].items():
         expected[prefix+name] = digest
+    presentation_path = ROOT/'analysis/figure_manifest.json'
+    if presentation_path.exists():
+        presentation = json.loads(presentation_path.read_text())
+        for category in ['code_sha256', 'numerical_sha256', 'audit_sha256']:
+            for name, digest in presentation[category].items():
+                if sha(ROOT/name) != digest:
+                    raise ValueError('Presentation provenance changed: '+name)
+        catalog = {str(p.relative_to(ROOT)) for p in (ROOT/'analysis').rglob('*.png')}
+        if catalog != set(presentation['figure_sha256']):
+            raise ValueError('Stale or missing analytical figure')
+        expected.update(presentation['figure_sha256'])
     return expected
 
 

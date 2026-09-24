@@ -8,7 +8,7 @@ limits and the original overall-trajectory shortlist.
 | Location | Contents |
 |---|---|
 | [figures/all_genres/](figures/all_genres/) | Preferred comparisons: 42 all-genres and 42 major-coverage overlays, plus 84 full-scale references |
-| `figures/<classifier>/` | Original 420 overall, major-genre, individual-genre and rank-sensitivity figures |
+| `figures/<classifier>/` | 420 default overall, major-genre, individual-genre and rank-sensitivity figures, plus full-scale context companions |
 | [data/](data/) | Monthly series, coverage, endpoint summaries, rank sensitivity and duplicate audit |
 | [manifest.json](manifest.json) | Original-analysis provenance and hashes |
 | [figures/all_genres/manifest.json](figures/all_genres/manifest.json) | Overlay hashes, palette, plotted counts and extended findings hash |
@@ -40,3 +40,16 @@ Visual line separation alone does not establish effect magnitude. Reference file
 append `_full_scale` (including `<classifier>_major_coverage_full_scale.png`).
 To rebuild only these figures without recalculating any series, run
 `python3 src/moving_average_all_genres.py`.
+
+Older figure families now use axes based solely on their displayed rolling series,
+including rank sensitivity when shown. Their faint raw monthly lines may extend
+beyond the view: each chart reports the outside count and supplies a `_full_scale`
+companion whenever needed. The 0.02 minimum above applies only to the newer
+all-genres overlays; other rolling charts use a tiny 0.000001 numerical guard.
+See the [repository-wide audit](../figure_audit.md). Rebuild all presentation without
+rewriting any saved numerical output with `python3 src/figure_audit.py`.
+
+The frozen `data/figure_inventory.csv` continues to identify the 420 default legacy
+paths. The current complete catalog, including all companion references, is
+[`../figure_audit.csv`](../figure_audit.csv); no numerical CSV was rewritten to add
+presentation metadata.

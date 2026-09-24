@@ -1,10 +1,10 @@
 {
   "code_sha256": {
-    "src/descriptive_analysis.py": "b5188b3c02a28dbb5a0340b8e230e4eaa90fcc1b9c4e4a1ce4f563186bb1cfa7",
+    "src/descriptive_analysis.py": "272f1fc599680b0ac14ce291c3ce58a139a191b5bf33cbb7c596dea56b12cee1",
     "src/moving_average_all_genres.py": "0dbf1808591ce31888d5db1f061274ea1b055e7095b2a0e0c928d1b85de3f71b",
-    "src/moving_average_analysis.py": "213e2806b6d007f89ec433080f1fa7e4ac24fe15b017c2f460eab56914e48fbf"
+    "src/moving_average_analysis.py": "e48b1c654256e8736671a80a753ee2ef87970e00227c1d85a3f25c7dcf23b1a7"
   },
-  "extended_findings_sha256": "1c5646da0987219eda34d0f60e9ccd0052df5bb1c424675c8341f9ac490febb6",
+  "extended_findings_sha256": "9dbe61b6ee7de2d819771bf76652324b44d9f96e064f69838f34ae429b804fb7",
   "figures": {
     "detox_identity_attack.png": "20962da154f052ebd9fd806c4427d5c417ec08f0f4eae3cbe5b786f9fc91a912",
     "detox_identity_attack_full_scale.png": "656f2b55396fd7d84cb7cba6afd893729d3493194d14dc0f0075f9d3125e6e2d",
@@ -176,7 +176,7 @@
     "sentiment_positive_major_coverage_full_scale.png": "b4cad70d2b285e808044cd1c465ed8935a7e2beaad98b015f2d7cf277be34a94"
   },
   "major_coverage_minimum_endpoints": 120,
-  "original_findings_prefix_sha256": "6997df5c0036d88ef8ec219b56112444cfd982233f70ba3c0e1198f6a5011972",
+  "original_findings_prefix_sha256": "9b9d22e4f81a4f960d613daa87961141e37133096215bdd2551f8ed225321677",
   "plot_validation": "Line2D values/dates exactly equal full exported arrays including NaNs; fixed styles checked; every finite plotted value inside Y-axis limits",
   "plotted_series": [
     {
