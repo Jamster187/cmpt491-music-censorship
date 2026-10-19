@@ -61,3 +61,11 @@ local_config.*
 *.ckpt
 *.pt
 *.pth
+
+# R session
+.Rproj.user
+.Rhistory
+.Rapp.history
+.RData
+.RDataTmp
+.Ruserdata
