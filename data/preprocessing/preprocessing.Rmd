@@ -7,6 +7,7 @@ date: "2026-10-18"
 ```{r setup}
 library(tidyverse)
 library(dplyr)
+library(jsonlite)
 ```
 
 ```{r preprocessing monthly}
@@ -25,14 +26,23 @@ m <- m %>%
   mutate(across(starts_with("ll_"), ~ ifelse(. > 0.5, 1, 0)))
 
 # Change all earliest release dates to year for consistency 
-m$mb_earliest_release_date <- as.integer(substr(as.character(m$mb_earliest_release_date), 1, 4))
+m$mb_earliest_release_date <- 
+  as.integer(substr(as.character(m$mb_earliest_release_date), 1, 4))
 
 # Remove low confidence genre rows
 m <- m  %>% filter(genre_confidence != "low")
 
+# Merge "Afrobeats / African Pop" genre with "Other" due to low frequency (13 distinct songs in primary_genre)
+m <- m %>%
+  mutate(primary_genre = if_else
+  (primary_genre == "Afrobeats / African Pop", "Other", primary_genre))
+
+m <- m %>%
+  mutate(secondary_genres = str_replace_all(secondary_genres,
+  fixed("Afrobeats / African Pop"), "Other"))
+
 # Remove duplicate song entries
 m_no_duplicates <- m[!duplicated(m$song_id), ]
-
 m <- select(m,-song_id)
 m_no_duplicates <- select(m_no_duplicates,-song_id)
 
@@ -59,11 +69,23 @@ w <- select(w, -weekly_rank, -source_row_index, -source_chart_index, -weekly_obs
 w <- w %>%
   mutate(across(starts_with("ll_"), ~ ifelse(. > 0.5, 1, 0)))
 
-w$mb_earliest_release_date <- as.integer(substr(as.character(w$mb_earliest_release_date), 1, 4))
+w$mb_earliest_release_date <- 
+  as.integer(substr(as.character(w$mb_earliest_release_date), 1, 4))
 
 # Remove genre labels from rows with low confidence
 w <- w %>%
   mutate(primary_genre = if_else(genre_confidence == "low", NA_character_, primary_genre))
+
+w <- w %>%
+  mutate(secondary_genres = if_else(genre_confidence == "low", NA_character_, secondary_genres))
+
+# Merge "Afrobeats / African Pop" genre with "Other" due to low frequency
+w <- w %>%
+  mutate(primary_genre = if_else(primary_genre == "Afrobeats / African Pop", "Other", primary_genre))
+
+w <- w %>%
+  mutate(secondary_genres = str_replace_all(secondary_genres,
+  fixed("Afrobeats / African Pop"), "Other"))
 
 # Remove duplicate song entries
 w_no_duplicates <- w[!duplicated(w$song_id), ]
@@ -73,5 +95,13 @@ w_no_duplicates <- select(w_no_duplicates,-song_id)
 
 write_csv(w, "weekly.csv.xz")
 write_csv(w_no_duplicates, "weekly_no_duplicates.csv")
+
+# If we wanted to change secondary genre to a list for analysis (lists do not show up if trying to use write_csv)
+# w <- w %>%
+# mutate(secondary_genres = lapply(secondary_genres, function(x) {
+# if (is.na(x)) return(character(0))
+# g <- as.character(fromJSON(x))
+# unique(replace(g, g == "Afrobeats / African Pop", "Other"))}))
 ```
+
 
