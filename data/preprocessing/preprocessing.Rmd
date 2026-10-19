@@ -1,0 +1,77 @@
+---
+title: "preprocessing"
+output: html_document
+date: "2026-10-18"
+---
+
+```{r setup}
+library(tidyverse)
+library(dplyr)
+```
+
+```{r preprocessing monthly}
+m <-read_csv("../public/master_monthly.csv")
+
+# Remove unnecessary columns 
+m <- select(m, -snapshot_chart_date, -monthly_rank, -source_row_index, -source_chart_index,
+ -musicbrainz_match_status, -weekly_observation_count, -snapshot_months_selected,
+ -reported_last_week_rank, 
+ -mb_recording_count, -mb_release_count, -mb_release_date_precision, -mb_release_title, 
+ -mb_duration_median_seconds, -mb_duration_min_seconds, -mb_duration_max_seconds,
+ -total_chart_points,- mb_distinct_duration_count, -in_final_study_population, -lyrics_status)
+
+# set lyric lens flags to 0 or 1 
+m <- m %>%
+  mutate(across(starts_with("ll_"), ~ ifelse(. > 0.5, 1, 0)))
+
+# Change all earliest release dates to year for consistency 
+m$mb_earliest_release_date <- as.integer(substr(as.character(m$mb_earliest_release_date), 1, 4))
+
+# Remove low confidence genre rows
+m <- m  %>% filter(genre_confidence != "low")
+
+# Remove duplicate song entries
+m_no_duplicates <- m[!duplicated(m$song_id), ]
+
+m <- select(m,-song_id)
+m_no_duplicates <- select(m_no_duplicates,-song_id)
+
+# Remove rows that are missing lyrics
+m_lyrics_available <- m_no_duplicates  %>% filter(lyrics_available != 0)
+
+write_csv(m, "monthly.csv")
+write_csv(m, "monthly_no_duplicates.csv")
+write_csv(m, "monthly_lyrics_available.csv")
+```
+
+```{r preprocessing weekly}
+w <-read_csv("../public/master_weekly.csv.xz")
+
+# Remove unnecessary columns 
+w <- select(w, -weekly_rank, -source_row_index, -source_chart_index, -weekly_observation_count,
+ -musicbrainz_match_status, -reported_last_week_rank, -first_snapshot_month,
+ -last_snapshot_month, -snapshot_months_selected,  -reported_weeks_on_chart,
+ -mb_recording_count, -mb_release_count, -mb_release_date_precision, -mb_release_title, 
+ -mb_duration_median_seconds, -mb_duration_min_seconds, -mb_duration_max_seconds,
+ -total_chart_points,- mb_distinct_duration_count, -lyrics_status)
+
+# set lyric lens flags to 0 or 1 
+w <- w %>%
+  mutate(across(starts_with("ll_"), ~ ifelse(. > 0.5, 1, 0)))
+
+w$mb_earliest_release_date <- as.integer(substr(as.character(w$mb_earliest_release_date), 1, 4))
+
+# Remove genre labels from rows with low confidence
+w <- w %>%
+  mutate(primary_genre = if_else(genre_confidence == "low", NA_character_, primary_genre))
+
+# Remove duplicate song entries
+w_no_duplicates <- w[!duplicated(w$song_id), ]
+
+w <- select(w,-song_id)
+w_no_duplicates <- select(w_no_duplicates,-song_id)
+
+write_csv(w, "weekly.csv.xz")
+write_csv(w_no_duplicates, "weekly_no_duplicates.csv")
+```
+
