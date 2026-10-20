@@ -1,0 +1,85 @@
+{
+  "campaign_methods_changed": false,
+  "checked_utc": "2026-10-20T21:14:18.388705+00:00",
+  "figure_validation": {
+    "figures": 951,
+    "status": "PASS",
+    "unchanged_numerical_input_files": 32
+  },
+  "frozen_implementation_verified": "426fdf199ea5bbc170f2b6089d4ba4d1b51b1245",
+  "independent_full_campaign_audits": [
+    "coverage_before_test.json",
+    "coverage_after_test.json"
+  ],
+  "private_rebuild_validation": "Not run: retained private reconstruction stores are not required for this frozen-public-data campaign.",
+  "protected_files_unchanged": 997,
+  "public_input_hashes_verified": 8,
+  "reporting_correction": "Snapshot-month errors labelled in months since 1970-01; frozen conversions/fits unchanged.",
+  "repository_validation": {
+    "frozen_release_hashes": "PASS",
+    "immutable_artifacts_checked": 1069,
+    "local_markdown_links_checked": 344,
+    "private_tracked_files": 0,
+    "stale_active_paths": 0
+  },
+  "status": "PASS",
+  "suites": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "elapsed_seconds": 78.482740333,
+      "log_sha256": "1397780be4caabc574e2be6c0e44518c2807a8e82b932d93d2645d3e23590323",
+      "name": "repository",
+      "passed": 388,
+      "returncode": 0,
+      "skipped": 1,
+      "tests": 389
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "analysis/planning/regression_search",
+        "-p",
+        "test_planning.py",
+        "-v"
+      ],
+      "elapsed_seconds": 1.6928913749999999,
+      "log_sha256": "16ef392d058b3695266d8381c7794901dc13820e6883c8c328068584007e190a",
+      "name": "historical_planning",
+      "passed": 12,
+      "returncode": 0,
+      "skipped": 0,
+      "tests": 12
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_regression_campaign_report.py",
+        "-v"
+      ],
+      "log_sha256": "ea67dc213a2a53aaa6800f31f08f1ebcc93c129bccc80d58355cc6da97a52ff7",
+      "name": "publication_after_unit_label_correction",
+      "passed": 7,
+      "returncode": 0,
+      "skipped": 0,
+      "tests": 7
+    }
+  ]
+}

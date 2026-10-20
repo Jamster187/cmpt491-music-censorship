@@ -1,6 +1,8 @@
 # Exhaustive regression search: three-predictor OLS
 
-**Implementation and bounded pilot complete. Full campaign NOT launched.**
+**Historical prelaunch snapshot.** The authorized full campaign is now complete; see [the full results](regression_search_results.md). Statements below describe the pilot and launch decision before that run.
+
+**At this snapshot: implementation and bounded pilot complete; full campaign not yet launched.**
 Revised 2026-10-20 under the explicit three-predictor, OLS-only instruction.
 The [previous four-predictor feasibility report](regression_search_four_predictor_feasibility.md)
 is retained as a historical snapshot; its Ridge grid, four-variable fits and runtime

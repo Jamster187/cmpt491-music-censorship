@@ -1,11 +1,21 @@
 # Exhaustive three-predictor OLS experiment
 
-Implementation and a bounded actual-data pilot are complete. **The exhaustive
-campaign has not been launched.** Read the [current report](../../docs/regression_search_plan.md)
-for measured runtime, findings, exact counts and the launch decision.
+**The authorized full numerical campaign is complete:** 59 targets, 1,998,901
+eligible combinations and 5,996,703 validation fits, followed by final evaluation
+of the 59 validation winners. Read the [full results](../../docs/regression_search_results.md)
+for measured resources, all target rankings, interpretation and validation.
+The [prelaunch pilot report](../../docs/regression_search_plan.md) remains historical evidence.
 
 | Location | Contents |
 |---|---|
+| [campaign/target_leaderboard.csv](campaign/target_leaderboard.csv) | All 59 validation-selected models: validation/test metrics, baselines, N, gaps, stability and intervals |
+| [campaign/best_by_predictor_count.csv](campaign/best_by_predictor_count.csv) | All 177 best one-, two- and three-variable models by validation |
+| [campaign/historical_stability.csv](campaign/historical_stability.csv) | Chosen model's rank in each historical period and each period's winner |
+| [campaign/hierarchy_manifest.json](campaign/hierarchy_manifest.json) | Local paths, sizes, row counts and hashes for all 1,998,901 exported hierarchy rows |
+| [campaign/hierarchy_top10_per_target.csv](campaign/hierarchy_top10_per_target.csv) | Small top-ten extract per target; complete hierarchy stays local |
+| [campaign/selected_models.json](campaign/selected_models.json) | Exact selected variables, common model specification and local fitted-artifact hashes |
+| [campaign/run_summary.json](campaign/run_summary.json) | Actual measured runtime, RAM/disk, checks and generalization flags |
+| [campaign/coverage_before_test.json](campaign/coverage_before_test.json), [coverage_after_test.json](campaign/coverage_after_test.json) | Exhaustive coverage, deterministic rankings, split checks and unchanged selection hashes |
 | [specification/](specification/) | Current data hashes/schema, all 73 targets, allowed predictors, exact counts, splits and censoring audit |
 | [pilot/predictor_hierarchy.csv](pilot/predictor_hierarchy.csv) | View A: every sampled combination, including poor models, ranked within target |
 | [pilot/best_by_predictor_count.csv](pilot/best_by_predictor_count.csv) | Best sampled one-, two- and three-variable models |
@@ -43,15 +53,38 @@ SQLite stores one candidate catalog plus three metric rows per combination;
 the `hierarchy` SQL view ranks the complete results. There are no millions of
 fitted objects. One final model JSON per target is saved only after selection.
 
-After explicit approval, the commands are:
+The completed run used the exact implementation from commit `426fdf1`. These
+commands reproduce it or resume existing results with matching code/data/library
+versions. The supplied execution wrapper additionally checks frozen code/data and
+measures resources; it does not change search methodology:
 
 ```bash
-python3 src/regression_search.py campaign --execute-full --workers 1
+python3 analysis/regression_search/measure_campaign.py search
 # Re-run the identical command to resume committed batches.
+# Only after every target's validation search has finished:
+python3 analysis/regression_search/campaign_report.py before-test
+python3 analysis/regression_search/measure_campaign.py resume_probe
+python3 analysis/regression_search/measure_campaign.py finalize
+python3 analysis/regression_search/campaign_report.py after-test
+python3 analysis/regression_search/campaign_report.py export
+python3 analysis/regression_search/publish_campaign.py
+```
+
+`before-test` intentionally refuses to run after final evaluation; use `after-test`
+to recheck an already completed campaign. The underlying engine commands remain
+`python3 src/regression_search.py campaign --execute-full --workers 1` and
+`python3 src/regression_search.py finalize --evaluate-final-test`.
+
+Complete rankings already exist locally as 59 compressed CSVs under
+`data/experiments/regression_search/campaign/hierarchies/`. Each target directory
+also has a `results.sqlite` database with a complete `hierarchy` SQL view,
+`selection.json`, `selected_model.json` (encoder, coefficients and baselines),
+split membership and final prediction files. These large artifacts are ignored.
+To regenerate or filter an individual hierarchy without fitting models:
+
+```bash
 python3 src/regression_search.py hierarchy --task songs:detox_toxicity --output /tmp/toxicity.csv.gz
 python3 src/regression_search.py hierarchy --task songs:detox_toxicity --k 2 --limit 20 --output /tmp/toxicity-two.csv
-# Only after every target's validation search has finished:
-python3 src/regression_search.py finalize --evaluate-final-test
 ```
 
 The full command refuses to run without its launch flag. Final evaluation first

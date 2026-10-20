@@ -1,0 +1,3271 @@
+{
+  "all_candidates_unique_and_present": true,
+  "all_three_periods_present": true,
+  "by_k": {
+    "1": 3466,
+    "2": 100118,
+    "3": 1895317
+  },
+  "categorical_ordinal_tasks_run": 0,
+  "checked_utc": "2026-10-20T21:05:46.189340+00:00",
+  "combinations": 1998901,
+  "deterministic_rankings": true,
+  "elapsed_seconds": 97.757954833,
+  "existing_analyses_unchanged": true,
+  "final_test_evaluated": true,
+  "frozen": {
+    "configuration": {
+      "estimator": "OLS",
+      "folds": [
+        [
+          "1990-01-01",
+          "2000-01-01"
+        ],
+        [
+          "2000-01-01",
+          "2010-01-01"
+        ],
+        [
+          "2010-01-01",
+          "2018-01-01"
+        ]
+      ],
+      "interactions": false,
+      "intercept": true,
+      "max_original_predictors": 3,
+      "preprocessing": "train median + missing flag, fixed 16 genres, unweighted train standardization, remove constant columns",
+      "rank_tolerance": "float64 eps * max(original training rows, selected columns) * largest singular value",
+      "scope": "retrospective frozen-release cohort generalization, not an as-of forecast",
+      "seed": 491,
+      "selection": "mean equal-fold baseline-relative MSE skill; then fewer variables; then lexicographic predictors",
+      "test_end": null,
+      "test_isolation": "pilot uses only pre-2018 songs; campaign final test reserved until all winners frozen",
+      "test_start": "2018-01-01",
+      "uncertainty": "500 song-cluster resamples of fixed final predictions; additional two-year debut-block intervals when at least three blocks exist; no selection/refit inside bootstrap",
+      "version": "ols-three-v1",
+      "weights": "inverse rows per song within target-observed partition, normalized to mean 1"
+    },
+    "frozen_implementation_commit": "426fdf199ea5bbc170f2b6089d4ba4d1b51b1245",
+    "input_sha256": {
+      "data/preprocessing/monthly.csv": "22df77162dc8ac00e377d50018d838edbdf6feb278a8b2d6ba7ea28cb5816b8d",
+      "data/preprocessing/monthly_lyrics_available.csv": "22df77162dc8ac00e377d50018d838edbdf6feb278a8b2d6ba7ea28cb5816b8d",
+      "data/preprocessing/monthly_no_duplicates.csv": "22df77162dc8ac00e377d50018d838edbdf6feb278a8b2d6ba7ea28cb5816b8d",
+      "data/preprocessing/weekly.csv.xz": "53c18dbf6d75c1f75f9ee26da3b00b6350fa3fc8c4449cdb46348faa592f2b31",
+      "data/preprocessing/weekly_no_duplicates.csv": "aa046f841b91bd317cb1891f8006400544f02d4d82e7ea226827cefabef8feac",
+      "data/public/master_monthly.csv": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+      "data/public/master_weekly.csv.xz": "60f1a27be135c6e862c3d8bb5e6193999f0a9b3f19e6ea89de1f77454cdfc477",
+      "data/public/songs.csv": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5"
+    },
+    "provenance": {
+      "code_sha256": {
+        "analysis/planning/regression_search/audit.py": "b8f615e4d7beb2e3fc17c555585aec9a937cd57e28c523348b4aa936e7b5af25",
+        "src/regression_core.py": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69",
+        "src/regression_pilot.py": "7d4488970ea0b1e647dd75c2ef899e5bad10e13237f91805ec7a9f6b30d0c4ab",
+        "src/regression_search.py": "5dc4097e73d0cc63eaea893d9d328ded8df4782fa8dfd424d8a23890bdaa7cc1",
+        "src/regression_spec.py": "b3e530f9824b029cd464f3c1cd413252affa6e153a9089fda833f4c469824408",
+        "src/regression_store.py": "5ce5b3d62cb30617ea3d8bae1b91fa6e39f452e1984bcabc75c09b10b6910a20"
+      },
+      "git_head": "426fdf199ea5bbc170f2b6089d4ba4d1b51b1245",
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "python": "3.9.6",
+      "scipy": "1.13.1",
+      "sqlite": "3.35.5"
+    }
+  },
+  "public_data_unchanged": true,
+  "selection_sha256": {
+    "monthly:reported_weeks_on_chart": "bfbd3dd18afe9d00399979b8ba221177715450bdf32a490f2847e86bd17d28a5",
+    "songs:chart_weeks": "f4658b86921afd3806e805da7091c3d1aef7aff76dc4a2454ecdb1c021559ded",
+    "songs:detox_identity_attack": "4e87613ea457d8470403ee20f7833142cd234885889f36252328859cfcc5b35e",
+    "songs:detox_insult": "1f9dc634da11af9b54237c491797a16416efbab07e4ad36d37c4d5f9d3eb5412",
+    "songs:detox_obscene": "bfd98e18eb6f78db1a84bd0c59dd29f7b5cce1b9f748b6a808377c8c1d0b17d8",
+    "songs:detox_severe_toxicity": "ac8a84b97435a9c28eb927e22e1c6e6a77fbc760499a646e99a14131fa541684",
+    "songs:detox_sexual_explicit": "f9661958d8abc248cd5d493a89d63b73e162c646faa2b3bcfc2ebe435d919585",
+    "songs:detox_threat": "2f1e8406b9f6e7ad19cdc93d3a7b09d47f04119bbf96767f6e9f9264735b8fce",
+    "songs:detox_toxicity": "5f239fcb3109b8280f174cdf4967f0f12dc37f199fdef203f910a1e7b7d6238d",
+    "songs:emotion_admiration": "258bb09665cee6b994f30b23c305df227fee9e2e98e0d83de0260900d69da32d",
+    "songs:emotion_amusement": "89fe2fab36dc62f85a0f93c027c3db4a4500ebcdd87c24ef149fe02d4849a040",
+    "songs:emotion_anger": "5970af7823e68fc2278555c17a96ecdea04111f9d7059d3c470fc647f9f2b33d",
+    "songs:emotion_annoyance": "c1ec10a417895921b7edbfc0f13a091267c72d8ab4585f3ec71535fd6bff7c52",
+    "songs:emotion_approval": "e34d385cbeb60b62d4d3a83addb6d4443788af122ffcb7a078fb20e9a1eec0c6",
+    "songs:emotion_caring": "e1677b1dbc476c34d9b9ebd24a2bd7af854975f77729c619fa897aad48c8e4e6",
+    "songs:emotion_confusion": "26e613d0c25846225528df92f8df0ac02ea09075e20764e5841baa23555662c7",
+    "songs:emotion_curiosity": "f96f1f3ac75612438d375e3fc1dd9f336650f4b1a57011bb08c775bcf446f5a2",
+    "songs:emotion_desire": "f69bbaf47a429028a24b4c9d5f6cac240af1827ddb6d1e4b4c456d849b3376e2",
+    "songs:emotion_disappointment": "0acf9f89165bec96d4087dbcb44bb3cd0a461160fac960217c202ac08d95be58",
+    "songs:emotion_disapproval": "453128bf0667e4c9b271ed00ae183aaed44489905ecedc3f0b9668516755ad65",
+    "songs:emotion_disgust": "7fa39274f58499636ced57933bb385cb8cee6fb6057d5887e9556302b98e14a0",
+    "songs:emotion_embarrassment": "07804109265206874af59696c4b75c221b95aab3cfe384e73756a65af357b3c4",
+    "songs:emotion_excitement": "b32c16bbe1b7b6de931293338f8093cb68f08c611be93e576afc89c55d89e599",
+    "songs:emotion_fear": "29699589d6615993cb4fb22818801c59eb0ce00d1e7c8189dd5c5f3e68b36c91",
+    "songs:emotion_gratitude": "0f25f6e8377aeb711b72f873ba4c19d8943f987632149f7b9e77435b5c995145",
+    "songs:emotion_grief": "99f5478f60dc9581f594f882203e4cf6fd9ce006cd9488ab4d2a66ebd09b4cf9",
+    "songs:emotion_joy": "35a741cfc2039ef2b53e46bbb1bbfc2753292a61cf55af723f2022e0dd65db2c",
+    "songs:emotion_love": "0b56f866bc484fb4f9b2aaccd87c334f23df157e9bc5315fa1acc93775f8caf3",
+    "songs:emotion_nervousness": "75cd1f747f7bf29c5a2f7ded875daef6f767b277d478705f812535d5932cdc61",
+    "songs:emotion_neutral": "a019a441d71c6cd8e80c27c6537ee27bbecb5e691f13364bba076b10dc0f2b5f",
+    "songs:emotion_optimism": "be4c53647b87a13b591e8e5dc9ff86c509c07f7e2e8a3974c1b94db4d612b1e7",
+    "songs:emotion_pride": "46b47dc985d35a39e6ea5c48434c55d190a3c3f6d43fb6bb7b2f9663516920cb",
+    "songs:emotion_realization": "79eb3de2298e70dbd6a97a47f34fea9632e6e808dcba55a3eb0c4c6da5b7f6ba",
+    "songs:emotion_relief": "0307014320fb6062d8c18e6d6db69c2b8e0291e18acb44e3bd13310981d43530",
+    "songs:emotion_remorse": "68b7fc5fee3d30360898c1a0162d7374fcbf220f8043121618a1fd1dd37a39be",
+    "songs:emotion_sadness": "ec74df0f1fc3da4b6d702ab478043367749144df9197153d5c2d7c474386bb05",
+    "songs:emotion_surprise": "fcf140d0e83cf536682d29aa071a568ea9164307188d33524805a098343d3934",
+    "songs:first_chart_date": "d040a48e08a28e0d5f5bcbf519b178058e97618f1616bfef856b1933f293d23f",
+    "songs:first_snapshot_month": "006729329f0aaebd849d74d735e20447b260a6cb92d26f80dba03dbe83a5c3e3",
+    "songs:last_chart_date": "b4643de8ae81876b8e8dc6323a1c55d36e64f58231263cc07fe2439f47eae706",
+    "songs:last_snapshot_month": "3d8c18fcba67e646cee0b6db93f6c294561db186dfb0eecad36de05735c32ac1",
+    "songs:ll_explicit_language": "41e383df96bac0c3903f77b07ea360008ee52b980de9a69a90c04fa40d5e9ba7",
+    "songs:ll_sexual_content": "0c93a2b9a728dce306ba0374a4198407747d65c01bdc981ff180aa4e50b37c58",
+    "songs:ll_substance_use": "88628edcfdaba4f67e7cd571043bac6a9dc08286d4be225b4b190ca9546fec25",
+    "songs:ll_violence": "37883659441a0804c8b3b49a06d62e868b77c90b08507355c71ba898d0fbaa71",
+    "songs:mb_distinct_duration_count": "76df4cd6646be87dc0f500cca6eba22bab2c52fda87f9ae83b21edcce9b20b9b",
+    "songs:mb_duration_max_seconds": "7bd9503b65b6c9d3882c3a762d2e98e48ab66a9a3faf746a002876c0ed20ebe1",
+    "songs:mb_duration_median_seconds": "1a9e3ac2ae2fbdff9a657fbfb25528902b573685dc62eb127cfcf1213e189b17",
+    "songs:mb_duration_min_seconds": "6bd4f9e8aaa6e5291ece9260694a0b655d8cc23344576f1af7a504ce4cd358a1",
+    "songs:mb_recording_count": "801bbe067a306541abbec77bc6cacab476c1a7f69a6c2aa164893c86a1186745",
+    "songs:mb_release_count": "cfad24a3b99b734405c625e3f976842c3a4bc4ff3d9ea974413785435d7b74bb",
+    "songs:mb_release_year": "7315d5e919e2d072044993ef8a6b9aa943c9b0c47561073c3260a25971078d73",
+    "songs:sentiment_negative": "0c2ead20f9df908072116c31d6686f40b7d1bed7cf0658a37c3e683f08f2d79d",
+    "songs:sentiment_neutral": "9d8501fb2ebb5858c8af3393da26ab5d58bfc075316f7a3618f325efc0e3dbe2",
+    "songs:sentiment_positive": "841b3601eee7110aecb4be5939fad2ac1f766b8c43bebb4114f142050293f121",
+    "songs:snapshot_months_selected": "f3367b450c9327a61294f757067c5d40170d19bfb658cbf5340db93055eac3f8",
+    "songs:total_chart_points": "58052696f464ad88bf739dbf632ca54b21e85c1417ceadee720005ae4759951f",
+    "songs:weekly_observation_count": "52354653ff633950ecceb2f92cfdc86b41b458d4e334a8c356c8d55956c7f7fd",
+    "weekly:reported_weeks_on_chart": "dd802471dc9bc48f916e3621d22976d5a2a34531db1c03813d08232995f86101"
+  },
+  "stage": "after-test",
+  "status": "PASS",
+  "target_count": 59,
+  "targets": [
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 8.326672684688674e-15,
+        "max_direct_prediction_scaled_error": 7.363798815699696e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18104,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11298,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11298,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13693,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13693,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16079,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16079,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 1206,
+      "ranking_sha256": "b6de4482e76fc8a7a10b99bb02ee95de1174c6425cdd45f83b3f4fb2f5deac52",
+      "score_rows_sha256": "ed137ce329ee7ac2ebeebc4f881d1434275669c521904851b8ce9f3ba6af6fcd",
+      "task_id": "songs:ll_sexual_content",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 4.85722573273506e-15,
+        "max_direct_prediction_scaled_error": 4.85722573273506e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18104,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11298,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11298,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13693,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13693,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16079,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16079,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 1206,
+      "ranking_sha256": "35fd78f069bf0382f1d1966aa1a1c4c03d2d291a117bb3e3465ce4000895a1e4",
+      "score_rows_sha256": "10822b1dbc8d26ea0bfc15ae4a4f0eb8b363522dfacd96a991c7801838cc2b83",
+      "task_id": "songs:ll_violence",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 7.993605777301127e-15,
+        "max_direct_prediction_scaled_error": 6.571186047663889e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18104,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11298,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11298,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13693,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13693,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16079,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16079,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 1206,
+      "ranking_sha256": "9f1dd6d21edf18fee9efb94b97329f9cf92b143a4e0602ee2aa4b9bc4b9cdf7a",
+      "score_rows_sha256": "61b05b883add7d536aed73bdf9012b749377f85a53c6846632212bd764c37170",
+      "task_id": "songs:ll_explicit_language",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 9.769962616701378e-15,
+        "max_direct_prediction_scaled_error": 9.769962616701378e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18104,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11298,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11298,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13693,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13693,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16079,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16079,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 1206,
+      "ranking_sha256": "675125f88677f2c7b0ec0f7d68692014ac86b4801341f0a549ccbf56803a098a",
+      "score_rows_sha256": "44cc96ea81219107c6574ee01484703bc300cfa2ff77773f5fdce80814384d32",
+      "task_id": "songs:ll_substance_use",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.354472090042691e-14,
+        "max_direct_prediction_scaled_error": 9.951550216644376e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "eb9d46428427c5528cf3a4f40d9fac4f5e09df5982e6fb7604f7c17867556108",
+      "score_rows_sha256": "add511206f5c9fa549598ef8b9ab869d85bec30a2843108a6345533fd9e8c5d7",
+      "task_id": "songs:detox_toxicity",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.1379786002407855e-15,
+        "max_direct_prediction_scaled_error": 1.1379786002407855e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "68483f3c4706c4d7799dc72bc36d5b49b3c1a947a8135309a6a255007005f2f4",
+      "score_rows_sha256": "8050bf60fbbe9605642e84be66a1fd2fc711620f8b3a60997a50423d098f9b0d",
+      "task_id": "songs:detox_severe_toxicity",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 6.217248937900877e-15,
+        "max_direct_prediction_scaled_error": 3.589369607337216e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "fe0d445ca253efaed2fad74c51b4b354b0c6f2ea97d05a4078c32b920cb4bd8f",
+      "score_rows_sha256": "cc595c3b3b657882f00af09df2f06861f865dbf30f9a12fbfe63ed13faa09429",
+      "task_id": "songs:detox_obscene",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 5.967448757360216e-16,
+        "max_direct_prediction_scaled_error": 5.967448757360216e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "b5c3705bbc9c98f8b715fd66b4c1cebfc05c9831c0c373713b347c3547b14d83",
+      "score_rows_sha256": "5d115dd2a2b3f548c53ec0c052f3b0d368fc8fc7a0bac0052a4ab5c9a52be845",
+      "task_id": "songs:detox_threat",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 3.1308289294429414e-14,
+        "max_direct_prediction_scaled_error": 2.5035881312710894e-14,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "d907789c4d2f26993de54cce3654fd90691b5f508f80c332b5f73db275890b08",
+      "score_rows_sha256": "a4fa753db17e5c3cb646a4bc35ccbb2cd7741b2fbe7ec23c2f6c499e618645b7",
+      "task_id": "songs:detox_insult",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 2.8449465006019636e-15,
+        "max_direct_prediction_scaled_error": 2.8449465006019636e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "864d7f8f74c05ad3a9da4b29750015b898d45a50f806c863d42c849e1821bcb5",
+      "score_rows_sha256": "890c002a50868496918b517f2f6f42cc2cf21b8d38ef22c39eca426a9ff2f89d",
+      "task_id": "songs:detox_identity_attack",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 2.55351295663786e-15,
+        "max_direct_prediction_scaled_error": 2.55351295663786e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "cf033d1ce93392020e0a1540daed3780480dfca328e59b2ee301674461d0e50b",
+      "score_rows_sha256": "56dabfec0bc21481c30879782563b3b197ed3a6d8563417cba5db9a6e704242f",
+      "task_id": "songs:detox_sexual_explicit",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 3.608224830031759e-16,
+        "max_direct_prediction_scaled_error": 3.608224830031759e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "094bc1fc73b124471ee789aa3bc16f3fb3227d0e85d625801183c6ae06dbd419",
+      "score_rows_sha256": "e49c5e3780681937114bc0c12f0b457b4b4d2ad88a72475924db83ef61da0449",
+      "task_id": "songs:emotion_admiration",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 2.6367796834847468e-15,
+        "max_direct_prediction_scaled_error": 2.6367796834847468e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "a900b05ecfff22c9cd9d127386829673971b74743d8cfee7a4f82ef7229e8b4f",
+      "score_rows_sha256": "eeb7a71417c096bac01177e3a1a2b28c7562148f4ef01c760504172252c72b0f",
+      "task_id": "songs:emotion_amusement",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 3.497202527569243e-15,
+        "max_direct_prediction_scaled_error": 3.497202527569243e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "d42bed24dee7f80633928d7b329282fabf98704d08032803dcd4f5016b4cfb47",
+      "score_rows_sha256": "b82556c78e3e2fae7bfecf5936d26dda876650ba388e754bc6918c1708db965f",
+      "task_id": "songs:emotion_anger",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 3.774758283725532e-15,
+        "max_direct_prediction_scaled_error": 3.774758283725532e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "ab2076dde532ec5d8b7a82f98bd5ac72bb6ae104adacdf4da7b146c26777d3a4",
+      "score_rows_sha256": "02f20d50326cfbaa4688bc5d2da9dac7c351b07e9298e1f6fdbf6b9f75ca55af",
+      "task_id": "songs:emotion_annoyance",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 4.996003610813204e-16,
+        "max_direct_prediction_scaled_error": 4.996003610813204e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "e957331419901b126cfb9fad0d1ff79dea054c8196cea38b1967f701fbe5531d",
+      "score_rows_sha256": "61a6168ec8624fea42ee468072132a8109b58d925b1969773cff59d5021d4248",
+      "task_id": "songs:emotion_approval",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.887379141862766e-15,
+        "max_direct_prediction_scaled_error": 1.887379141862766e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "1b1ccc0b7cffd579bc5ae5513ac5f201468842a96973bd3b1b980cfc2aaaa61f",
+      "score_rows_sha256": "2dae08155a940ba09d4e9195616e516aded926cf0533580302c6c1a597513cea",
+      "task_id": "songs:emotion_caring",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 3.0531133177191805e-16,
+        "max_direct_prediction_scaled_error": 3.0531133177191805e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "fccf18ec6a21be8c8d3621d57cee40944f4df90a2c555fcf506db140925b7499",
+      "score_rows_sha256": "ade28422c32e63ee44f92099d68882a5edaff974a58848b73afaaa9eb4c82d8f",
+      "task_id": "songs:emotion_confusion",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.5543122344752192e-15,
+        "max_direct_prediction_scaled_error": 1.5543122344752192e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "0833b682f8d7f79cd5e6535e47577f00cca128b0ff6cacf65835fcabbad36d75",
+      "score_rows_sha256": "0eb787d4c2a0641afa04ced87806b65c315a8d98075d68c88af32de889d56de2",
+      "task_id": "songs:emotion_curiosity",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 6.245004513516506e-16,
+        "max_direct_prediction_scaled_error": 6.245004513516506e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "db64836c0b8605bd68097418ac4e3595dae1ecd7716992f2ebe878aa43d33edd",
+      "score_rows_sha256": "96051ed3a889ce0fd9c412907c6bb53b0d1f48c179e302173a177a7987c7ca10",
+      "task_id": "songs:emotion_desire",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 3.219646771412954e-15,
+        "max_direct_prediction_scaled_error": 3.219646771412954e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "240cb99d3250d8d6fa09b4af7b9ce90ac8f07fd258ff85eb6bb7424abce29b1c",
+      "score_rows_sha256": "b913fab2b31e592d1204452971b2448f5b2bc18635a2b555e981856d12b3a2df",
+      "task_id": "songs:emotion_disappointment",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.7208456881689926e-15,
+        "max_direct_prediction_scaled_error": 1.7208456881689926e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "596dc00a7caea7292ae59db7c620ea9f80ea6f6b631e8a5a78fa626a3b239025",
+      "score_rows_sha256": "fd72c3e8527a007f0ab704535c72d7ea699bddd432535f1dcd77daab16a9cde1",
+      "task_id": "songs:emotion_disapproval",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 4.996003610813204e-16,
+        "max_direct_prediction_scaled_error": 4.996003610813204e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "59742a50828de02bc6c508cc3158550473ec8b537534d79835bb141ce69624d0",
+      "score_rows_sha256": "04c33a478b6d33dbc373a503ec2edaab3e30e1612d71309cfe4da74aab8380bf",
+      "task_id": "songs:emotion_disgust",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.5543122344752192e-15,
+        "max_direct_prediction_scaled_error": 1.5543122344752192e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "bbc06c5a819adcaf6bfb3ad375006d80bbcf454b2f63bd0912b30f82ac57ff82",
+      "score_rows_sha256": "642519ba493e5e1f549f692dcf92b163ed6a872222e86f26cd3e86413719ba72",
+      "task_id": "songs:emotion_embarrassment",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 5.551115123125783e-16,
+        "max_direct_prediction_scaled_error": 5.551115123125783e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "2ad648ec33792c4a140b99ebe4f9555d1f3be0fb4ed4e44bee452e765694e3f5",
+      "score_rows_sha256": "ef9600209f025a7680c07e9296d25b3206b35e874cc413464e14d6c12b2ce08e",
+      "task_id": "songs:emotion_excitement",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 4.218847493575595e-15,
+        "max_direct_prediction_scaled_error": 3.91468637140338e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "524aa10aebccbb702adedf5e2ba2351bc54d98a067a29fabbeda03fabfcb845b",
+      "score_rows_sha256": "b61cc95e56e4437fbd6e26416e0e7f315184323c5a82832d05c84ecc8761e967",
+      "task_id": "songs:emotion_fear",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.0824674490095276e-15,
+        "max_direct_prediction_scaled_error": 1.0824674490095276e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "15f5c5425282d9d2bd6feedeb6f90ca9d00dd12d58057d680c61e737b6486b48",
+      "score_rows_sha256": "5ffe031ac7c435179045eb8fb97572d507ced7f32fe355287edd7711d4d55317",
+      "task_id": "songs:emotion_gratitude",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 7.632783294297951e-17,
+        "max_direct_prediction_scaled_error": 7.632783294297951e-17,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "d8316d2c4934cdf30d49000a50d642900ffe42f4be5dc002f595aee9d5764792",
+      "score_rows_sha256": "6c25c4ca249594c86995b136bdf61bf9bda4c14e241868913340f5eea3f7bd1a",
+      "task_id": "songs:emotion_grief",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 3.219646771412954e-15,
+        "max_direct_prediction_scaled_error": 3.219646771412954e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "e73722057e8a4429fdaa703b20265e2be880fe05de3d1dcdfeaae4f32a0f9c33",
+      "score_rows_sha256": "d1a23515797996dbfd9da8c38162c61498464e81aae5dc92bec0be5aaaef6349",
+      "task_id": "songs:emotion_joy",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 4.829470157119431e-15,
+        "max_direct_prediction_scaled_error": 4.829470157119431e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "f726154e2973b1b05af93b45b05fa7236799418b15180b68b66434de0ca09d2f",
+      "score_rows_sha256": "7ad64e8654e96b33f255e7175d3a7c254244566b8ef963b260bf00927b9ea6fc",
+      "task_id": "songs:emotion_love",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 2.7755575615628914e-16,
+        "max_direct_prediction_scaled_error": 2.7755575615628914e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "eec45a41ae74d60e0bb059113aff3fc0a0c4fc24f1e340fad31afbad65ec8c2f",
+      "score_rows_sha256": "84f0f54fa79471145a567de4f1fb17c289810a7813913d61824ef8e78b31df6f",
+      "task_id": "songs:emotion_nervousness",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 4.440892098500626e-16,
+        "max_direct_prediction_scaled_error": 4.440892098500626e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "b7f09fbf1252efacd5527e48e0012eb0657e3e156e4825f8d452091518952735",
+      "score_rows_sha256": "bf45bf0dbb92286d025a6364f4d3631ec2615e2d156738491052a305a07f95ec",
+      "task_id": "songs:emotion_optimism",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 2.0122792321330962e-16,
+        "max_direct_prediction_scaled_error": 2.0122792321330962e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "9be2c956a5f86df19302b49c37a811d1d8b3fd95015d40d5be6b47b55c07cc1d",
+      "score_rows_sha256": "fd0184bdbf2d57fa2201bbac9c0fe100c90385bb41dfa06729c8bcd7637dd0df",
+      "task_id": "songs:emotion_pride",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.27675647831893e-15,
+        "max_direct_prediction_scaled_error": 1.27675647831893e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "b0afbbe8e966c1aa9deb4f7d01b9db7d305bc93f7258003a7cbf21ee6479d769",
+      "score_rows_sha256": "9cedb8495210909e230ff7de99ed5c7433b69847dacac6752309e9f95f360965",
+      "task_id": "songs:emotion_realization",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 2.1163626406917047e-16,
+        "max_direct_prediction_scaled_error": 2.1163626406917047e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "2a84799571ec665f89765daf96508000c45627916de5ef5d23de260bde7d4a35",
+      "score_rows_sha256": "ec219d3776d12d87ca64e179cb0e965b8a044b678947be19f717ebfa861c2bb1",
+      "task_id": "songs:emotion_relief",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 3.2612801348363973e-16,
+        "max_direct_prediction_scaled_error": 3.2612801348363973e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "9ee7d06e844ad39e1d0f8a81b96118cc1c75305c0fda4832f55af3761b58c5ec",
+      "score_rows_sha256": "43845970391ded0f14afcd52c18e025196f0fa080c75e63fa4b8247d2b3c062e",
+      "task_id": "songs:emotion_remorse",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.3322676295501878e-14,
+        "max_direct_prediction_scaled_error": 1.2159292517810242e-14,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "7fccfa1db9ff4d480af5526ffca27768bd51d7b48b812d195672a317e668a793",
+      "score_rows_sha256": "596f9176fa9d99a4588976238d13293ba3d16033df53f1afa181650f900b501e",
+      "task_id": "songs:emotion_sadness",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 5.273559366969494e-16,
+        "max_direct_prediction_scaled_error": 5.273559366969494e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "82d56a6369b75c87756bd6888c9a4133d2b4b3811d75bcecd421a6115bf57dd5",
+      "score_rows_sha256": "9892b1f165238bbf22b023a8cf6cf228a0c060ca40fcf1f632dbc35fdd3a285c",
+      "task_id": "songs:emotion_surprise",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 3.885780586188048e-15,
+        "max_direct_prediction_scaled_error": 3.885780586188048e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "56f3da4120a5995d8dc0e2130bc3d785564cc4a55d940fcd717de397dd2e568d",
+      "score_rows_sha256": "1a600d6f751bf5f607a06fc9be7eb892348791c2e4cd33d87b3daca109589068",
+      "task_id": "songs:emotion_neutral",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1710,
+        "3": 32452
+      },
+      "combinations": 34221,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.7763568394002505e-15,
+        "max_direct_prediction_scaled_error": 1.7763568394002505e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "386c55ee9c79344c0ac7761d0b56286ce693756c70e72ed8e676e88bb84373c0",
+      "score_rows_sha256": "d3095db3dc58757c8deb82427d6cb23edad3fc4bf586ed39d3c570ada329a3d6",
+      "task_id": "songs:sentiment_negative",
+      "validation_fits": 102663
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1710,
+        "3": 32452
+      },
+      "combinations": 34221,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 9.992007221626409e-16,
+        "max_direct_prediction_scaled_error": 9.992007221626409e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "2d0c4c263ccf66a7edfc513008c1ea1ec015e2f68d3d85158a3f464272f57853",
+      "score_rows_sha256": "5c4f8a32728dd8f81dff2c318e178b3483f7517633f2b14aaf3deae78b1335da",
+      "task_id": "songs:sentiment_neutral",
+      "validation_fits": 102663
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1710,
+        "3": 32452
+      },
+      "combinations": 34221,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 4.3298697960381105e-15,
+        "max_direct_prediction_scaled_error": 4.3298697960381105e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 18106,
+        "test_rows": 2729,
+        "test_songs": 2729
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11300,
+          "n_validation": 2316,
+          "start": "1990-01-01",
+          "train_songs": 11300,
+          "validation_songs": 2316
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 13695,
+          "n_validation": 2310,
+          "start": "2000-01-01",
+          "train_songs": 13695,
+          "validation_songs": 2310
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16081,
+          "n_validation": 1907,
+          "start": "2010-01-01",
+          "train_songs": 16081,
+          "validation_songs": 1907
+        }
+      ],
+      "qr_svd_fits": 2226,
+      "ranking_sha256": "558109e500d0d858d7d55a0117d5a0df0db323ed83cd2a733d1e31e56207adb6",
+      "score_rows_sha256": "73b74293ce952ce142fbcec2280e9d43e43a668c2e15b1630c1fba172de5a163",
+      "task_id": "songs:sentiment_positive",
+      "validation_fits": 102663
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 2.3305801732931286e-12,
+        "max_direct_prediction_scaled_error": 5.035511861934292e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 19098,
+        "test_rows": 2956,
+        "test_songs": 2956
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11529,
+          "n_validation": 2594,
+          "start": "1990-01-01",
+          "train_songs": 11529,
+          "validation_songs": 2594
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 14213,
+          "n_validation": 2590,
+          "start": "2000-01-01",
+          "train_songs": 14213,
+          "validation_songs": 2590
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16888,
+          "n_validation": 2093,
+          "start": "2010-01-01",
+          "train_songs": 16888,
+          "validation_songs": 2093
+        }
+      ],
+      "qr_svd_fits": 72781,
+      "ranking_sha256": "dede7c2a6d78bc77066a2cd0f307117913a33808e278a6537abea54271136412",
+      "score_rows_sha256": "8f10fa471f4c46e017e849f4a62af0aa6c9b9f7053bf377b7fbfe57bbee0c382",
+      "task_id": "songs:mb_duration_median_seconds",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 6.30961949354969e-12,
+        "max_direct_prediction_scaled_error": 1.6394156086328463e-14,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 19098,
+        "test_rows": 2956,
+        "test_songs": 2956
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11529,
+          "n_validation": 2594,
+          "start": "1990-01-01",
+          "train_songs": 11529,
+          "validation_songs": 2594
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 14213,
+          "n_validation": 2590,
+          "start": "2000-01-01",
+          "train_songs": 14213,
+          "validation_songs": 2590
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16888,
+          "n_validation": 2093,
+          "start": "2010-01-01",
+          "train_songs": 16888,
+          "validation_songs": 2093
+        }
+      ],
+      "qr_svd_fits": 72781,
+      "ranking_sha256": "bf54021af379788cdcbccef1895c8505b1d2fd44c104d3ea5041ae785e588021",
+      "score_rows_sha256": "44f73cd513b24bc59e6e47f42c5b231723da7917a014118c8249bdd4a2fe9b83",
+      "task_id": "songs:mb_duration_min_seconds",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 8.469669410260394e-12,
+        "max_direct_prediction_scaled_error": 1.5271595402845794e-14,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 19098,
+        "test_rows": 2956,
+        "test_songs": 2956
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11529,
+          "n_validation": 2594,
+          "start": "1990-01-01",
+          "train_songs": 11529,
+          "validation_songs": 2594
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 14213,
+          "n_validation": 2590,
+          "start": "2000-01-01",
+          "train_songs": 14213,
+          "validation_songs": 2590
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16888,
+          "n_validation": 2093,
+          "start": "2010-01-01",
+          "train_songs": 16888,
+          "validation_songs": 2093
+        }
+      ],
+      "qr_svd_fits": 72781,
+      "ranking_sha256": "44d4773fbda1e68f93526e279789852d6abbd3c4498e8d7269600d263f9fbfa2",
+      "score_rows_sha256": "0f06139b7eb114711b62932c0f06dd789c2a6daae5ed028e28ef3fa434c9771f",
+      "task_id": "songs:mb_duration_max_seconds",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 6.977529665164184e-12,
+        "max_direct_prediction_scaled_error": 7.721670267798647e-14,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 19177,
+        "test_rows": 2973,
+        "test_songs": 2973
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11586,
+          "n_validation": 2601,
+          "start": "1990-01-01",
+          "train_songs": 11586,
+          "validation_songs": 2601
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 14277,
+          "n_validation": 2600,
+          "start": "2000-01-01",
+          "train_songs": 14277,
+          "validation_songs": 2600
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16962,
+          "n_validation": 2097,
+          "start": "2010-01-01",
+          "train_songs": 16962,
+          "validation_songs": 2097
+        }
+      ],
+      "qr_svd_fits": 73297,
+      "ranking_sha256": "aff1a3f2877cc5e6973623cd160c66ac762cfad69183384f5c6d9f99485a17b1",
+      "score_rows_sha256": "4f15c63c19efea7f96f163adc5840e1451bf87f520e43534ec70aa0ea67efadd",
+      "task_id": "songs:mb_recording_count",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 5.6843418860808015e-12,
+        "max_direct_prediction_scaled_error": 2.3084892972671278e-14,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 19177,
+        "test_rows": 2973,
+        "test_songs": 2973
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11586,
+          "n_validation": 2601,
+          "start": "1990-01-01",
+          "train_songs": 11586,
+          "validation_songs": 2601
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 14277,
+          "n_validation": 2600,
+          "start": "2000-01-01",
+          "train_songs": 14277,
+          "validation_songs": 2600
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16962,
+          "n_validation": 2097,
+          "start": "2010-01-01",
+          "train_songs": 16962,
+          "validation_songs": 2097
+        }
+      ],
+      "qr_svd_fits": 73297,
+      "ranking_sha256": "b275777885d202033e46136a4c276c0469288e2d16aa0630585e0ac15e20a5ae",
+      "score_rows_sha256": "43a49e0ef1c058cd7a89094fc3eda6f558026492afa9fb91386119159e6e4377",
+      "task_id": "songs:mb_release_count",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 5.950795411990839e-14,
+        "max_direct_prediction_scaled_error": 8.7621733989569075e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 19177,
+        "test_rows": 2973,
+        "test_songs": 2973
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11586,
+          "n_validation": 2601,
+          "start": "1990-01-01",
+          "train_songs": 11586,
+          "validation_songs": 2601
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 14277,
+          "n_validation": 2600,
+          "start": "2000-01-01",
+          "train_songs": 14277,
+          "validation_songs": 2600
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16962,
+          "n_validation": 2097,
+          "start": "2010-01-01",
+          "train_songs": 16962,
+          "validation_songs": 2097
+        }
+      ],
+      "qr_svd_fits": 73297,
+      "ranking_sha256": "6eb92540d0d849db85a5441fd8ce4b50d2ab3614ec1970bd98a23970cb83ae10",
+      "score_rows_sha256": "01cdd8d5b596e1db7abb88983a6954956f807c7c2ded311c761bd5cd31315e89",
+      "task_id": "songs:mb_distinct_duration_count",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.2136069926782511e-11,
+        "max_direct_prediction_scaled_error": 1.0833895978449748e-13,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 24493,
+        "test_rows": 3387,
+        "test_songs": 3387
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 15672,
+          "n_validation": 3225,
+          "start": "1990-01-01",
+          "train_songs": 15672,
+          "validation_songs": 3225
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 18998,
+          "n_validation": 2937,
+          "start": "2000-01-01",
+          "train_songs": 18998,
+          "validation_songs": 2937
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 22032,
+          "n_validation": 2326,
+          "start": "2010-01-01",
+          "train_songs": 22032,
+          "validation_songs": 2326
+        }
+      ],
+      "qr_svd_fits": 73755,
+      "ranking_sha256": "1c79eb213e863cf1dd1e89ad824a4be43679142fc1f99f7bd38a6012ceacfe81",
+      "score_rows_sha256": "4c297ad3dabad252749063b38f1ab6a8435f79052dc45c998a8f8714624e4114",
+      "task_id": "songs:weekly_observation_count",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.829647544582258e-12,
+        "max_direct_prediction_scaled_error": 1.6340127678757802e-14,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 24493,
+        "test_rows": 3387,
+        "test_songs": 3387
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 15672,
+          "n_validation": 3225,
+          "start": "1990-01-01",
+          "train_songs": 15672,
+          "validation_songs": 3225
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 18998,
+          "n_validation": 2937,
+          "start": "2000-01-01",
+          "train_songs": 18998,
+          "validation_songs": 2937
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 22032,
+          "n_validation": 2326,
+          "start": "2010-01-01",
+          "train_songs": 22032,
+          "validation_songs": 2326
+        }
+      ],
+      "qr_svd_fits": 73755,
+      "ranking_sha256": "805895ef834690fd150dae64661c0717bebe7246a0c566a0d84ed7539e7ebeeb",
+      "score_rows_sha256": "f3685f35a3bc85be7820c2a8d536bc4bc2d1f4274c67bbc00d53452f8e9206ab",
+      "task_id": "songs:chart_weeks",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 3.8198777474462986e-11,
+        "max_direct_prediction_scaled_error": 5.6243734823066566e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 24493,
+        "test_rows": 3387,
+        "test_songs": 3387
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 15672,
+          "n_validation": 3225,
+          "start": "1990-01-01",
+          "train_songs": 15672,
+          "validation_songs": 3225
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 18998,
+          "n_validation": 2937,
+          "start": "2000-01-01",
+          "train_songs": 18998,
+          "validation_songs": 2937
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 22032,
+          "n_validation": 2326,
+          "start": "2010-01-01",
+          "train_songs": 22032,
+          "validation_songs": 2326
+        }
+      ],
+      "qr_svd_fits": 73813,
+      "ranking_sha256": "5026bef574d85c53f9b3a669838de28e0e23307bb36b06ba820deda0a26bb174",
+      "score_rows_sha256": "0df5b25c8c9e50e5346bfe76c939953ef11dccc603ecae880acbe29b72b51616",
+      "task_id": "songs:total_chart_points",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.5572254596918356e-09,
+        "max_direct_prediction_scaled_error": 6.189972571480684e-11,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 24493,
+        "test_rows": 3387,
+        "test_songs": 3387
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 15672,
+          "n_validation": 3225,
+          "start": "1990-01-01",
+          "train_songs": 15672,
+          "validation_songs": 3225
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 18998,
+          "n_validation": 2937,
+          "start": "2000-01-01",
+          "train_songs": 18998,
+          "validation_songs": 2937
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 22032,
+          "n_validation": 2326,
+          "start": "2010-01-01",
+          "train_songs": 22032,
+          "validation_songs": 2326
+        }
+      ],
+      "qr_svd_fits": 73813,
+      "ranking_sha256": "362571a33c90205c25ea4fcce167ffca0755dff8ce19503c61009eddebf51531",
+      "score_rows_sha256": "7e74e42c7fac4d91b2328a1b4fd5847693d8bb3a45aa1a2423fb3ea9d5564da8",
+      "task_id": "songs:snapshot_months_selected",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 50,
+        "2": 1225,
+        "3": 19599
+      },
+      "combinations": 20874,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.7826096154749393e-10,
+        "max_direct_prediction_scaled_error": 8.603952743487353e-15,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 24493,
+        "test_rows": 3387,
+        "test_songs": 3387
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 15672,
+          "n_validation": 3225,
+          "start": "1990-01-01",
+          "train_songs": 15672,
+          "validation_songs": 3225
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 18998,
+          "n_validation": 2937,
+          "start": "2000-01-01",
+          "train_songs": 18998,
+          "validation_songs": 2937
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 22032,
+          "n_validation": 2326,
+          "start": "2010-01-01",
+          "train_songs": 22032,
+          "validation_songs": 2326
+        }
+      ],
+      "qr_svd_fits": 53629,
+      "ranking_sha256": "dde51fb6bd2f9ca636b66ea590da8ca2c4c91267928aa79275fad41cee4e4d51",
+      "score_rows_sha256": "5be737f1a43ddee5a218a541430c8d14688d8df1aba328f889cbff919fc3af84",
+      "task_id": "songs:first_chart_date",
+      "validation_fits": 62622
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 2.1100277081131935e-10,
+        "max_direct_prediction_scaled_error": 1.0157577137335006e-14,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 24493,
+        "test_rows": 3387,
+        "test_songs": 3387
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 15672,
+          "n_validation": 3225,
+          "start": "1990-01-01",
+          "train_songs": 15672,
+          "validation_songs": 3225
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 18998,
+          "n_validation": 2937,
+          "start": "2000-01-01",
+          "train_songs": 18998,
+          "validation_songs": 2937
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 22032,
+          "n_validation": 2326,
+          "start": "2010-01-01",
+          "train_songs": 22032,
+          "validation_songs": 2326
+        }
+      ],
+      "qr_svd_fits": 73813,
+      "ranking_sha256": "40e7675c606b5d85ab65ebd7f0bddbe70645116642945de0045207c32627df25",
+      "score_rows_sha256": "dda1315e42ed6ebc760e0ac2da1d8c4750c99bfdaab2b7d1a9a04a466bc98311",
+      "task_id": "songs:last_chart_date",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.5688783605583012e-11,
+        "max_direct_prediction_scaled_error": 2.307586855261537e-14,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 24493,
+        "test_rows": 3387,
+        "test_songs": 3387
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 15672,
+          "n_validation": 3225,
+          "start": "1990-01-01",
+          "train_songs": 15672,
+          "validation_songs": 3225
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 18998,
+          "n_validation": 2937,
+          "start": "2000-01-01",
+          "train_songs": 18998,
+          "validation_songs": 2937
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 22032,
+          "n_validation": 2326,
+          "start": "2010-01-01",
+          "train_songs": 22032,
+          "validation_songs": 2326
+        }
+      ],
+      "qr_svd_fits": 73813,
+      "ranking_sha256": "b2c6d59b77188bd9a181a2eda3533e0d7d207fd768134aec5211cd4563f6e25e",
+      "score_rows_sha256": "6c6caed486e0ccf3252a88a46cd144fc9dd216f8d2c0724fbc0db847f1ef8527",
+      "task_id": "songs:first_snapshot_month",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 2.000888343900442e-11,
+        "max_direct_prediction_scaled_error": 2.941986191988342e-14,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 24493,
+        "test_rows": 3387,
+        "test_songs": 3387
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 15672,
+          "n_validation": 3225,
+          "start": "1990-01-01",
+          "train_songs": 15672,
+          "validation_songs": 3225
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 18998,
+          "n_validation": 2937,
+          "start": "2000-01-01",
+          "train_songs": 18998,
+          "validation_songs": 2937
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 22032,
+          "n_validation": 2326,
+          "start": "2010-01-01",
+          "train_songs": 22032,
+          "validation_songs": 2326
+        }
+      ],
+      "qr_svd_fits": 73813,
+      "ranking_sha256": "1bdc05f1e81eefcc9db51407874e57302704747d5321e281c89a8ecbdf27d4fa",
+      "score_rows_sha256": "723d44b47821f4ec80a17b961cc8f577d9a8ec1d4270f76005ff92c940e3c254",
+      "task_id": "songs:last_snapshot_month",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 59,
+        "2": 1711,
+        "3": 32508
+      },
+      "combinations": 34278,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 1.3642420526593924e-12,
+        "max_direct_prediction_scaled_error": 6.73443894187587e-16,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 19080,
+        "test_rows": 2838,
+        "test_songs": 2838
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 11516,
+          "n_validation": 2588,
+          "start": "1990-01-01",
+          "train_songs": 11516,
+          "validation_songs": 2588
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 14194,
+          "n_validation": 2594,
+          "start": "2000-01-01",
+          "train_songs": 14194,
+          "validation_songs": 2594
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 16873,
+          "n_validation": 2089,
+          "start": "2010-01-01",
+          "train_songs": 16873,
+          "validation_songs": 2089
+        }
+      ],
+      "qr_svd_fits": 73297,
+      "ranking_sha256": "912998849492481bd483f8ddf50c15eb2a729f16e657a9687f129a0c73c92a3b",
+      "score_rows_sha256": "603e7f3d989e706cbfd612ee6fffbf16c6f9715b5bac0f8f265528332ce8cf7a",
+      "task_id": "songs:mb_release_year",
+      "validation_fits": 102834
+    },
+    {
+      "by_k": {
+        "1": 56,
+        "2": 1540,
+        "3": 27719
+      },
+      "combinations": 29315,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 7.531752999057062e-13,
+        "max_direct_prediction_scaled_error": 2.9542003038283564e-14,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 70691,
+        "test_rows": 10110,
+        "test_songs": 3387
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 37265,
+          "n_validation": 11511,
+          "start": "1990-01-01",
+          "train_songs": 15672,
+          "validation_songs": 3225
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 49205,
+          "n_validation": 11441,
+          "start": "2000-01-01",
+          "train_songs": 18998,
+          "validation_songs": 2937
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 61121,
+          "n_validation": 8875,
+          "start": "2010-01-01",
+          "train_songs": 22032,
+          "validation_songs": 2326
+        }
+      ],
+      "qr_svd_fits": 67320,
+      "ranking_sha256": "7873127da15c8ff10c96c646c2b295b71ea859209bce446ded4df55b66c3ad40",
+      "score_rows_sha256": "d12e8d46b1523e90e475a02056695899df814764eddf88963795058063016dcb",
+      "task_id": "monthly:reported_weeks_on_chart",
+      "validation_fits": 87945
+    },
+    {
+      "by_k": {
+        "1": 56,
+        "2": 1540,
+        "3": 27719
+      },
+      "combinations": 29315,
+      "final": {
+        "encoder_train_only": true,
+        "max_direct_prediction_absolute_error": 4.815703391614079e-12,
+        "max_direct_prediction_scaled_error": 1.8923035426301987e-13,
+        "metrics_recomputed": true,
+        "predictions_replayed": true,
+        "refit_rows": 307466,
+        "test_rows": 43696,
+        "test_songs": 5377
+      },
+      "minimum_encoded_rank": 2,
+      "periods": [
+        {
+          "end": "2000-01-01",
+          "fold": 0,
+          "n_train": 162131,
+          "n_validation": 50055,
+          "start": "1990-01-01",
+          "train_songs": 17041,
+          "validation_songs": 3320
+        },
+        {
+          "end": "2010-01-01",
+          "fold": 1,
+          "n_train": 214056,
+          "n_validation": 49751,
+          "start": "2000-01-01",
+          "train_songs": 20462,
+          "validation_songs": 3286
+        },
+        {
+          "end": "2018-01-01",
+          "fold": 2,
+          "n_train": 265873,
+          "n_validation": 38580,
+          "start": "2010-01-01",
+          "train_songs": 23845,
+          "validation_songs": 3198
+        }
+      ],
+      "qr_svd_fits": 67485,
+      "ranking_sha256": "43012bbacad542e684bdca3c8345714447296c1f7ac4239e6a747fd0abd2377e",
+      "score_rows_sha256": "6788c9535f47e20243f7df25dc9b10b7300b0177e87136256e9d7dc213af9fe6",
+      "task_id": "weekly:reported_weeks_on_chart",
+      "validation_fits": 87945
+    }
+  ],
+  "validation_fits": 5996703
+}

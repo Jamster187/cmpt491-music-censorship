@@ -1,0 +1,421 @@
+{
+  "elapsed_seconds": 317.324621917,
+  "files": [
+    {
+      "bytes": 6621440,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__ll_sexual_content.csv.gz",
+      "rows": 34278,
+      "sha256": "c2703fa814d459c31287b014222c8a3d07716a8f547c3472379c2b7fb29f8747",
+      "task_id": "songs:ll_sexual_content"
+    },
+    {
+      "bytes": 6572768,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__ll_violence.csv.gz",
+      "rows": 34278,
+      "sha256": "d33c70dd8bf69196a026cbe3f782963371a5d7dbd76e3738e3b0c007fdb9f85a",
+      "task_id": "songs:ll_violence"
+    },
+    {
+      "bytes": 6549416,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__ll_explicit_language.csv.gz",
+      "rows": 34278,
+      "sha256": "bd8b204ba614481519df0f7553a130948e970d87ebf5439430bff1b778c07084",
+      "task_id": "songs:ll_explicit_language"
+    },
+    {
+      "bytes": 6570305,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__ll_substance_use.csv.gz",
+      "rows": 34278,
+      "sha256": "90103260e79ad6f926eccafa15a12f0e74cb613f93e902fc70974742894d0d30",
+      "task_id": "songs:ll_substance_use"
+    },
+    {
+      "bytes": 6499002,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__detox_toxicity.csv.gz",
+      "rows": 34278,
+      "sha256": "543631cd336e5d73f9cabde80f45b6703c5f6df0c1512d26bc4ec0c0152a228e",
+      "task_id": "songs:detox_toxicity"
+    },
+    {
+      "bytes": 6346351,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__detox_severe_toxicity.csv.gz",
+      "rows": 34278,
+      "sha256": "4c145fdea02e950b5995aecf2016172f9996b23623a87329eecaff7dd7287685",
+      "task_id": "songs:detox_severe_toxicity"
+    },
+    {
+      "bytes": 6424224,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__detox_obscene.csv.gz",
+      "rows": 34278,
+      "sha256": "ff161cb7036e96970c3938e09c6cc124e57039d3ec890110a14820df8a8bb84c",
+      "task_id": "songs:detox_obscene"
+    },
+    {
+      "bytes": 6703211,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__detox_threat.csv.gz",
+      "rows": 34278,
+      "sha256": "fdc9c120e8993153d37a8ce64ad88a7d86736136e7739f407d930caa92e2bd23",
+      "task_id": "songs:detox_threat"
+    },
+    {
+      "bytes": 6545116,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__detox_insult.csv.gz",
+      "rows": 34278,
+      "sha256": "40d12b7522881dd010e1b061b74c3143ff177e3d0c1b62e1c704ced6e09adc0d",
+      "task_id": "songs:detox_insult"
+    },
+    {
+      "bytes": 6432746,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__detox_identity_attack.csv.gz",
+      "rows": 34278,
+      "sha256": "e225fe816d2f070685b2e613616ce5297a94afd991f0f9d7c5fbe79ca3ffc30d",
+      "task_id": "songs:detox_identity_attack"
+    },
+    {
+      "bytes": 6453174,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__detox_sexual_explicit.csv.gz",
+      "rows": 34278,
+      "sha256": "747aea0e12a8b769b8fc4921e6064911fa3f1f5b2d428e971cc23c93a127eaf2",
+      "task_id": "songs:detox_sexual_explicit"
+    },
+    {
+      "bytes": 6646841,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_admiration.csv.gz",
+      "rows": 34278,
+      "sha256": "9b1903525094238433a46e312c3fea06e8b5ad7da175cc80e0312b7dcea71cf2",
+      "task_id": "songs:emotion_admiration"
+    },
+    {
+      "bytes": 6697408,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_amusement.csv.gz",
+      "rows": 34278,
+      "sha256": "bd3ec77b24b3c24032fa13e84ba220dea19949eaabbff25e6126facd396d1201",
+      "task_id": "songs:emotion_amusement"
+    },
+    {
+      "bytes": 6535910,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_anger.csv.gz",
+      "rows": 34278,
+      "sha256": "e7659fee43a6704e7924cce44e8cae1453a777f30b31fd3f13816c26859345d2",
+      "task_id": "songs:emotion_anger"
+    },
+    {
+      "bytes": 6604798,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_annoyance.csv.gz",
+      "rows": 34278,
+      "sha256": "978dd860cf5965e281c356b4781aea5c3f4467f89205e6293c3515bd6ed7c15d",
+      "task_id": "songs:emotion_annoyance"
+    },
+    {
+      "bytes": 6638662,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_approval.csv.gz",
+      "rows": 34278,
+      "sha256": "f1ddb8ff1794678b58ae1ba61514693205634475a17830d5da2fcc04b8e48205",
+      "task_id": "songs:emotion_approval"
+    },
+    {
+      "bytes": 6708840,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_caring.csv.gz",
+      "rows": 34278,
+      "sha256": "6fdba4371c816fce183d28e59bcee6acf61a9141aeb77bdb3cac42c025a1b3ac",
+      "task_id": "songs:emotion_caring"
+    },
+    {
+      "bytes": 6674192,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_confusion.csv.gz",
+      "rows": 34278,
+      "sha256": "4580673ca2a0c43cee73ca3a9edeca579f6ec89c82cc4ce794cef220aa04a0c0",
+      "task_id": "songs:emotion_confusion"
+    },
+    {
+      "bytes": 6688749,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_curiosity.csv.gz",
+      "rows": 34278,
+      "sha256": "372095b37ebd38331202a7381ae8f1d930ebaf1a9e13b5eea4315732320d3867",
+      "task_id": "songs:emotion_curiosity"
+    },
+    {
+      "bytes": 6672630,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_desire.csv.gz",
+      "rows": 34278,
+      "sha256": "94c656f503eb6d27634a9305a6b1422e1acae86427fda20015e99198ea4c8418",
+      "task_id": "songs:emotion_desire"
+    },
+    {
+      "bytes": 6684635,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_disappointment.csv.gz",
+      "rows": 34278,
+      "sha256": "8333d68f3674a5aa6329cf5fd5496263ab789fb222487840dd6a72573ca4fe31",
+      "task_id": "songs:emotion_disappointment"
+    },
+    {
+      "bytes": 6692434,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_disapproval.csv.gz",
+      "rows": 34278,
+      "sha256": "49b282dfb7e27f7c3274f5de40117fbec56ab0c1768ec68cedb77d2a13423df0",
+      "task_id": "songs:emotion_disapproval"
+    },
+    {
+      "bytes": 6652752,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_disgust.csv.gz",
+      "rows": 34278,
+      "sha256": "fa34f4a68247ee05e57fa5dc32d67be00214a92e5c5e8138535e6bad1e05fa23",
+      "task_id": "songs:emotion_disgust"
+    },
+    {
+      "bytes": 6668558,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_embarrassment.csv.gz",
+      "rows": 34278,
+      "sha256": "41920dca093f9bdeb13aeb4e8174f8cb38d0f3259d9255b1f6ca47059b6b062e",
+      "task_id": "songs:emotion_embarrassment"
+    },
+    {
+      "bytes": 6708690,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_excitement.csv.gz",
+      "rows": 34278,
+      "sha256": "3bf7a939d255f4a02dc6442ea29c1fca342fed20da00d8cae2a53d6ea63e5708",
+      "task_id": "songs:emotion_excitement"
+    },
+    {
+      "bytes": 6691278,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_fear.csv.gz",
+      "rows": 34278,
+      "sha256": "3bc1381ed8672b144d6cedfa8ef832eb6bf1e9c2f3533253a25b815303d91723",
+      "task_id": "songs:emotion_fear"
+    },
+    {
+      "bytes": 6803215,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_gratitude.csv.gz",
+      "rows": 34278,
+      "sha256": "1ec3007bf5e3629d351f29fc504397b4f32e0d38a7cd7b869ff79a693b59fcef",
+      "task_id": "songs:emotion_gratitude"
+    },
+    {
+      "bytes": 6782069,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_grief.csv.gz",
+      "rows": 34278,
+      "sha256": "2b65b5b20b0a2b1c903651d0616988a1a7feb48060f0586abac699356ba44b42",
+      "task_id": "songs:emotion_grief"
+    },
+    {
+      "bytes": 6700818,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_joy.csv.gz",
+      "rows": 34278,
+      "sha256": "bb88de0632ad1f333f3155279158aa7bd9a05a96b47e0987cd5134126932a28d",
+      "task_id": "songs:emotion_joy"
+    },
+    {
+      "bytes": 6672852,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_love.csv.gz",
+      "rows": 34278,
+      "sha256": "5c0a27b9b4d935108afa5541b28a1085679f12567fb2e9a067ca54de9298a57d",
+      "task_id": "songs:emotion_love"
+    },
+    {
+      "bytes": 6628583,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_nervousness.csv.gz",
+      "rows": 34278,
+      "sha256": "cf30444e854273a6694f62965a16e9a8c2110487bf2ede634d2dd35525a1dbc3",
+      "task_id": "songs:emotion_nervousness"
+    },
+    {
+      "bytes": 6640821,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_optimism.csv.gz",
+      "rows": 34278,
+      "sha256": "a480e347baed8b18b390acb0e673343fb21a75da85515751f168bd0d52a111bd",
+      "task_id": "songs:emotion_optimism"
+    },
+    {
+      "bytes": 6746961,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_pride.csv.gz",
+      "rows": 34278,
+      "sha256": "6e182c1219bcdbf222b6905d5fe3360fd8e08fc88cca92358c2dc50debd9bdf2",
+      "task_id": "songs:emotion_pride"
+    },
+    {
+      "bytes": 6718871,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_realization.csv.gz",
+      "rows": 34278,
+      "sha256": "9eebff240854585229ed5b76a41105c22eb69a5f8b560ac26e577529b2a9e8dd",
+      "task_id": "songs:emotion_realization"
+    },
+    {
+      "bytes": 6704332,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_relief.csv.gz",
+      "rows": 34278,
+      "sha256": "e8c97a72273a314468bd9efa03dbac6685e0fb0797730114a18e451e9b563f55",
+      "task_id": "songs:emotion_relief"
+    },
+    {
+      "bytes": 6687930,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_remorse.csv.gz",
+      "rows": 34278,
+      "sha256": "fc6758a3a6da506758c0dafaa3de4f8101a61f1ec1d4817bf9418792c4832e34",
+      "task_id": "songs:emotion_remorse"
+    },
+    {
+      "bytes": 6753079,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_sadness.csv.gz",
+      "rows": 34278,
+      "sha256": "295312d4feb9a8c83ce994b86facb0f8eaee36d4a3d3f20b687c2ea0617f2e4e",
+      "task_id": "songs:emotion_sadness"
+    },
+    {
+      "bytes": 6684568,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_surprise.csv.gz",
+      "rows": 34278,
+      "sha256": "133140744bfdfdc33b519b2af8c1f98b61b454c5da9d9211ac00da6da33ad260",
+      "task_id": "songs:emotion_surprise"
+    },
+    {
+      "bytes": 6635707,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__emotion_neutral.csv.gz",
+      "rows": 34278,
+      "sha256": "7b6e39be9fbf4a2f0fb6124fca487412228feb60b33a287e079a5c87458c83c4",
+      "task_id": "songs:emotion_neutral"
+    },
+    {
+      "bytes": 6743951,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__sentiment_negative.csv.gz",
+      "rows": 34221,
+      "sha256": "632eeb26d2fb7a3701cd5e955c2183275b83d2a21f3cc5a18ff4b2c45dbbcc19",
+      "task_id": "songs:sentiment_negative"
+    },
+    {
+      "bytes": 6781619,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__sentiment_neutral.csv.gz",
+      "rows": 34221,
+      "sha256": "92eaf77c35fe22d1ccffb7603f890526d1ba131d595d24394db8bd22b9bd45a7",
+      "task_id": "songs:sentiment_neutral"
+    },
+    {
+      "bytes": 6754820,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__sentiment_positive.csv.gz",
+      "rows": 34221,
+      "sha256": "335963f3a259b1439d8f1c21f507fa870df0c9eedadbd50f2c11abd654015607",
+      "task_id": "songs:sentiment_positive"
+    },
+    {
+      "bytes": 6854961,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__mb_duration_median_seconds.csv.gz",
+      "rows": 34278,
+      "sha256": "9950c39a305377dc93410750777d76362d69cd2203684c1b2de6c99136009169",
+      "task_id": "songs:mb_duration_median_seconds"
+    },
+    {
+      "bytes": 6781858,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__mb_duration_min_seconds.csv.gz",
+      "rows": 34278,
+      "sha256": "23450f5424c3163525fe688be4c9d723422dac11b8aaf0d443617da3b898dd5d",
+      "task_id": "songs:mb_duration_min_seconds"
+    },
+    {
+      "bytes": 6801516,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__mb_duration_max_seconds.csv.gz",
+      "rows": 34278,
+      "sha256": "ebe5762c3e6d4b1ce5111181d970253cff13ca92e022bff026a88dd8c3142459",
+      "task_id": "songs:mb_duration_max_seconds"
+    },
+    {
+      "bytes": 6712522,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__mb_recording_count.csv.gz",
+      "rows": 34278,
+      "sha256": "98530cc18f8fb4af638f613ebdf60b6a9d3174d40f49b0524fa27747ab107aa3",
+      "task_id": "songs:mb_recording_count"
+    },
+    {
+      "bytes": 6815908,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__mb_release_count.csv.gz",
+      "rows": 34278,
+      "sha256": "ff01a32601a032ff330ce4f0e264170b206a367df6936a952bc3890228a5e13f",
+      "task_id": "songs:mb_release_count"
+    },
+    {
+      "bytes": 6705427,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__mb_distinct_duration_count.csv.gz",
+      "rows": 34278,
+      "sha256": "25df98fe2a9534e4b59cbe6ef0d7f16d431069f8b922c77d57271be47d448fe6",
+      "task_id": "songs:mb_distinct_duration_count"
+    },
+    {
+      "bytes": 6518281,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__weekly_observation_count.csv.gz",
+      "rows": 34278,
+      "sha256": "63473c4e984f90be8c79e56748c1751d9f953a18afdc1c424e3d67aad369c5b4",
+      "task_id": "songs:weekly_observation_count"
+    },
+    {
+      "bytes": 6511199,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__chart_weeks.csv.gz",
+      "rows": 34278,
+      "sha256": "14757749e95698f7e8504e4b27349bc1d67026688d381df7f35bd1e7436b65d9",
+      "task_id": "songs:chart_weeks"
+    },
+    {
+      "bytes": 6664957,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__total_chart_points.csv.gz",
+      "rows": 34278,
+      "sha256": "7204960fc01f0230a640e24ffd279fe25538415a757a9f953b94369dee8d3b9e",
+      "task_id": "songs:total_chart_points"
+    },
+    {
+      "bytes": 6541052,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__snapshot_months_selected.csv.gz",
+      "rows": 34278,
+      "sha256": "44c96173e880e2368916f034a77c644dc7701cecc51cd47ed6588c1d1be6e021",
+      "task_id": "songs:snapshot_months_selected"
+    },
+    {
+      "bytes": 4007502,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__first_chart_date.csv.gz",
+      "rows": 20874,
+      "sha256": "5fcecf8aea538848d231aff47c4807f02e6f7776888831e4a7ea6a0476aacff8",
+      "task_id": "songs:first_chart_date"
+    },
+    {
+      "bytes": 6681487,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__last_chart_date.csv.gz",
+      "rows": 34278,
+      "sha256": "ec7600d68cf9a14db84294cb26bf33fd1d4e7e21a892a7d844b780ad85ee94d4",
+      "task_id": "songs:last_chart_date"
+    },
+    {
+      "bytes": 6625719,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__first_snapshot_month.csv.gz",
+      "rows": 34278,
+      "sha256": "234dc68add79346507f509d12520b9d0d36be8f9720c4bc1fb7029dee796531b",
+      "task_id": "songs:first_snapshot_month"
+    },
+    {
+      "bytes": 6632374,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__last_snapshot_month.csv.gz",
+      "rows": 34278,
+      "sha256": "5646383e59e1a0cabfe8d1bb1bdfcfe962b4270d4f4f98b59189916ab742c14e",
+      "task_id": "songs:last_snapshot_month"
+    },
+    {
+      "bytes": 6630140,
+      "path": "data/experiments/regression_search/campaign/hierarchies/songs__mb_release_year.csv.gz",
+      "rows": 34278,
+      "sha256": "a839719a63cf9b7c25c643c41a12e1ceb2a70ad78324e96226f0a6670803a685",
+      "task_id": "songs:mb_release_year"
+    },
+    {
+      "bytes": 5598762,
+      "path": "data/experiments/regression_search/campaign/hierarchies/monthly__reported_weeks_on_chart.csv.gz",
+      "rows": 29315,
+      "sha256": "cfdc72159fa30d4dd227c28d2cffb008f33daaaf849f459b8ce49980093987aa",
+      "task_id": "monthly:reported_weeks_on_chart"
+    },
+    {
+      "bytes": 5529984,
+      "path": "data/experiments/regression_search/campaign/hierarchies/weekly__reported_weeks_on_chart.csv.gz",
+      "rows": 29315,
+      "sha256": "9be60b77064e18859fc17de13a0304432ae7c0a133a45c73a2d7812165b3ab49",
+      "task_id": "weekly:reported_weeks_on_chart"
+    }
+  ],
+  "peak_rss_bytes": 348274688,
+  "storage": "Local ignored outputs; reproduce with the frozen hierarchy command",
+  "total_rows": 1998901
+}

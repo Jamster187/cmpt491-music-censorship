@@ -1,6 +1,21 @@
 {
   "artifacts_sha256": {
-    "analysis/regression_search/README.md": "e1e1ee9a6cb17061363f4dc541239ecff9c9310fafa6ec8d70415bb160ef9d9c",
+    "README.md": "5422478c295168c57e5328fecf5666a0f7f1035ff2e39a300023ece2f76f24de",
+    "analysis/regression_search/README.md": "2c829dca1b1a149c79fed480771bac560995d7591b8b6ddc4ddf8153c59790bb",
+    "analysis/regression_search/campaign/best_by_predictor_count.csv": "bb6c939a7f3f807da2d0a974e69e248f02d73ccc3d0ac95071b2833654c9b159",
+    "analysis/regression_search/campaign/coverage_after_test.json": "d36ea5094e1a5105bc7d332fd4b1eaa5a8fad6acf56c149966d03cc7eb90aa85",
+    "analysis/regression_search/campaign/coverage_before_test.json": "7b19708a4105d4d25d5b19f98bfe4bd4eaead271f836bb6dd4784c648d318ef7",
+    "analysis/regression_search/campaign/hierarchy_manifest.json": "519b939dd6096c0388dc5367a146758ddce2cd3581db0465d3f1333bb08a04a5",
+    "analysis/regression_search/campaign/hierarchy_top10_per_target.csv": "ffebd50191557a69b1d26c2305734083304f83000b0ead2b77e58b912060f605",
+    "analysis/regression_search/campaign/historical_stability.csv": "11f5b2d7b1e35cd322843bd06030799e75c4a848fb010cf9fd1bbb8d86fd77af",
+    "analysis/regression_search/campaign/run_summary.json": "e2ec9703fed74a407b412321a341689eb418e563b93a7c64bc32df1101b34f1b",
+    "analysis/regression_search/campaign/selected_models.json": "cd6603be97c4d77301db903190d74ea92e569ded50921c546b35d11e0b6d1ace",
+    "analysis/regression_search/campaign/target_leaderboard.csv": "71b49dc56ebc04e0b8919d0038348998f7f5ede688dc2bcde39141da4d48de96",
+    "analysis/regression_search/campaign/target_leaderboard.json": "ef35b1ee81c51369bd9f811c0a0fb71c469cd2324682e23b3825fec6adec5558",
+    "analysis/regression_search/campaign/test_cohorts.csv": "f109fd04cc55d30319ef8d27536998abe9fc1613240554440e2ac7b517ee2543",
+    "analysis/regression_search/campaign/validation.json": "444bbec1b9e40f4d82fac19833ea29332ff2631d88fdea9a1fcf9dcd4ed3eba5",
+    "analysis/regression_search/campaign_report.py": "a8a92211af5486530fea85e7f6280cb92833f48dd3ec0a6770a8a809a98e12d8",
+    "analysis/regression_search/measure_campaign.py": "a25c8956af12e5358e4064d71206acf25576a598f6c07b144c54d7b1d8f2d98a",
     "analysis/regression_search/pilot/benchmark.json": "5c595fc4aecdf3f896920b01cca8c4dff27d2fcdeac23fde3d4e6aed5240a091",
     "analysis/regression_search/pilot/best_by_predictor_count.csv": "dd777b07f8f051e1930eb6359d4ae14a6a063680ef8a2f008e56a8ca4a629a1c",
     "analysis/regression_search/pilot/historical_stability.csv": "bc723ebde4742add6e434d859b2b6103abef524af365ba958a3369582065a094",
@@ -13,7 +28,8 @@
     "analysis/regression_search/pilot/runtime_strata.csv": "db5597d04078bdfdfc45733ae444ecde2bd7c718ea342e96e746d4b347f075df",
     "analysis/regression_search/pilot/target_leaderboard.csv": "9c61aa0b72f7c81c82fdb141718414e6de3e17e651d800f0a1acade2853afd7e",
     "analysis/regression_search/pilot/target_leaderboard.json": "10bb117b5383c07479cfd2df00c648298d789669f24e4df05e351f2141869afc",
-    "analysis/regression_search/render_report.py": "f06189af43672479c4fd30b86d50df617bac209a1a219bba67d5aeb48de59903",
+    "analysis/regression_search/publish_campaign.py": "e1aff661ef72d28f38ea6a003629344761dcb050ba10293bb8751cf91e37a434",
+    "analysis/regression_search/render_report.py": "e3d72d00504bb2df9bb9da98c47ae8666d5c3a7ce4a0ff82ad39b61f0537ca0b",
     "analysis/regression_search/specification/categorical_ordinal_tasks.csv": "c20b465d4da77149aeb2128cf49967a3984e579a1f8ac2742929f879a4767ca8",
     "analysis/regression_search/specification/censoring_audit.json": "1f64701530320cd75171090cc43e813830acaace985527114ed2a3629134b6e9",
     "analysis/regression_search/specification/datasets.json": "1ef63a3b7a2efb3ac5d971ef198fa5a647b18bf243d283529edca890e7db2af6",
@@ -25,7 +41,8 @@
     "analysis/regression_search/specification/target_inventory.csv": "c37792c81d94fcf83f62f960700aa8c8fa840c2f70bf59f97ca3c59a55f52903",
     "analysis/regression_search/validation.json": "c0f3327d49cdb6202b973c92d2dd157efda82d53947142ef7b17e4dfd17de51f",
     "docs/assets/regression_search_professor_demo.png": "0e80194189e63b92de762782794fd7445649a3698cc53498da6d5cfda31852c3",
-    "docs/regression_search_plan.md": "040d24b336167cd96e3e9ebc7512f9b1a05f853ff71d49ab81c4956c218e4aa2",
+    "docs/regression_search_plan.md": "c95ebffa853ce495160d7e043060df3498382924fbdefdebf76e3b3951f7e854",
+    "docs/regression_search_results.md": "9451aa0657d291a936d0f8a54d07b3c8660254020ce6b8d00c7ed92ead23982c",
     "src/artifact_integrity.py": "0a7e31ebfd867c91c006ef171adcdd5736e62d58e549c74167bac2b4ee8cd50a",
     "src/regression_core.py": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69",
     "src/regression_pilot.py": "7d4488970ea0b1e647dd75c2ef899e5bad10e13237f91805ec7a9f6b30d0c4ab",
@@ -33,7 +50,8 @@
     "src/regression_spec.py": "b3e530f9824b029cd464f3c1cd413252affa6e153a9089fda833f4c469824408",
     "src/regression_store.py": "5ce5b3d62cb30617ea3d8bae1b91fa6e39f452e1984bcabc75c09b10b6910a20",
     "tests/test_artifact_integrity.py": "0043e53e5065405e322a53c7bdfa4138c67425b95cf21d8975c1903c744aaa46",
+    "tests/test_regression_campaign_report.py": "24c356f6a0cf7d1d0fd3eff4c0d962de851c42b5f861cbdf178bcfe114efe5c1",
     "tests/test_regression_search.py": "faca69990b6c2f041453fe61c5f5d03b00edf2588c239a9edb79a89cd137a514"
   },
-  "scope": "Three-predictor OLS implementation and bounded pilot; full campaign not launched"
+  "scope": "Frozen three-predictor OLS implementation, historical bounded pilot, and completed authorized numerical campaign"
 }

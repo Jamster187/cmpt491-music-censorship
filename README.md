@@ -77,12 +77,14 @@ run `python3 src/figure_audit.py`. The [figure audit](analysis/figure_audit.md)
 records all analytical families, axis decisions and validation; the
 [visual review](analysis/figure_visual_review.md) records representative inspections.
 
-The [regression experiment](docs/regression_search_plan.md) implements an exhaustive
-additive OLS search with one to three original predictors. Its bounded pilot and
-professor demonstration use public data; the full campaign remains gated pending
-approval. Run `python3 src/regression_search.py pilot`, then
-`python3 src/regression_search.py demo` to reproduce the demonstration. Checkpoints,
-full model rankings and most fitted artifacts stay in ignored `data/experiments/`.
+The [completed regression campaign](docs/regression_search_results.md) evaluated
+all 1,998,901 eligible one- to three-predictor additive OLS combinations across
+59 numerical targets. Validation-selected models were evaluated on the reserved
+2018-onward test population. Small leaderboards, model specifications and audits
+are versioned; complete rankings, checkpoints and fitted models remain in ignored
+`data/experiments/`. See the [experiment guide](analysis/regression_search/README.md)
+for access and reproduction, and the [prelaunch pilot report](docs/regression_search_plan.md)
+for the original feasibility evidence and professor demonstration.
 
 Fresh-clone integrity checks read the canonical bytes directly from the three
 tracked XZ archives when optional decompressed CSVs are absent. Private local
