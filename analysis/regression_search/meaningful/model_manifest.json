@@ -1,0 +1,2126 @@
+{
+  "evaluation_label": "POST-HOC EXPLORATORY",
+  "models": [
+    {
+      "artifacts": {
+        "metrics.json": "e35496b37ce020e35f2edd139dea64dd58f8383b428427b297bd2c7ba5ece2b2",
+        "model.json": "c5e3f7c2794ac276ac4969acc84bb79839d938bed4045ec6e6466dfc96672825",
+        "predictions.csv.gz": "2918ca6d8a4aebc4959287a2a67ecb37457700fb082acf0a35cbdf721e58654f",
+        "split.csv.gz": "1bf444464bae40e88f0ebaf9add0a9fad4c5d34da6aee51c60f6afa38acae2da"
+      },
+      "candidate_id": 28795,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__ll_sexual_content/28795/model.json",
+      "model_sha256": "c5e3f7c2794ac276ac4969acc84bb79839d938bed4045ec6e6466dfc96672825",
+      "predictors": [
+        "emotion_grief",
+        "primary_genre",
+        "secondary_genres"
+      ],
+      "task_id": "songs:ll_sexual_content",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "8288d46717e53e7f4e41207845f5ab1c7fc2f1076ac42362da4c7bc1ef802ab5",
+        "model.json": "f2dafc3ce9430bbeda711b969b9bbb63fce0585665a67a7bfad973eac3427b52",
+        "predictions.csv.gz": "3f453537875981e818c15c1708f25c6cc9265861161d2ed4e7c9932d2bc59bee",
+        "split.csv.gz": "1bf444464bae40e88f0ebaf9add0a9fad4c5d34da6aee51c60f6afa38acae2da"
+      },
+      "candidate_id": 9214,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__ll_sexual_content/9214/model.json",
+      "model_sha256": "f2dafc3ce9430bbeda711b969b9bbb63fce0585665a67a7bfad973eac3427b52",
+      "predictors": [
+        "detox_obscene",
+        "emotion_sadness",
+        "primary_genre"
+      ],
+      "task_id": "songs:ll_sexual_content",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "edf4ea36a96e0bebc1f59c9a6e9106f4561b5e13370279a5b06ac233ab41906d",
+        "model.json": "14ec2fd6c739b8d2b4dfa942af8a4707eab2517a42f050e6c0b1d88f5f18f6e2",
+        "predictions.csv.gz": "c46e0686b9c9ba7f5d81d2f83f7f59e3b63bf1df3c57d2fdd524456ef70e9333",
+        "split.csv.gz": "2c7c5f1950ac3e1bd1f35c1b6d2d3e2e3c8f6b0abe7e6794f1320a17fc53fb5e"
+      },
+      "candidate_id": 19072,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__ll_violence/19072/model.json",
+      "model_sha256": "14ec2fd6c739b8d2b4dfa942af8a4707eab2517a42f050e6c0b1d88f5f18f6e2",
+      "predictors": [
+        "emotion_annoyance",
+        "primary_genre",
+        "sentiment_negative"
+      ],
+      "task_id": "songs:ll_violence",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "83e1fc6db20d22aa428a1a3c034fb1b02da5375b9399e67a8db2fa61b13ea4fa",
+        "model.json": "fb8db8aed89a5d8b864605fb4abe9a479da0c18dfe9ac816a95a97d5ee5e7600",
+        "predictions.csv.gz": "227565cd2a0b70fcf804356ba1e50beb9b125cf2f3a7e1f91c19c851b3c68454",
+        "split.csv.gz": "bb9adc72ecac7c0c0fb96820825cdd241a119e51a3190313ecfcf05424eb1513"
+      },
+      "candidate_id": 14652,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__ll_violence/14652/model.json",
+      "model_sha256": "fb8db8aed89a5d8b864605fb4abe9a479da0c18dfe9ac816a95a97d5ee5e7600",
+      "predictors": [
+        "detox_toxicity",
+        "primary_genre",
+        "sentiment_negative"
+      ],
+      "task_id": "songs:ll_violence",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "be7870447b88f5e15d854729c73a59ae066e95e2c81879b7ad4d7512cdad1ce0",
+        "model.json": "95f77c662183cf81bb699818d2c839f63dfe391d98a1cc491d6a7016054d2587",
+        "predictions.csv.gz": "65d6706f6d462d51ce5b6f1e782528e76f15e98f5dcb3f1f30bf68f7219a6fa3",
+        "split.csv.gz": "2288a84e74b694bf2e95811b46d438bcab5c3880a0a21e6bde195f10ffa2c145"
+      },
+      "candidate_id": 19071,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__ll_explicit_language/19071/model.json",
+      "model_sha256": "95f77c662183cf81bb699818d2c839f63dfe391d98a1cc491d6a7016054d2587",
+      "predictors": [
+        "emotion_annoyance",
+        "primary_genre",
+        "secondary_genres"
+      ],
+      "task_id": "songs:ll_explicit_language",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "048a49e459f58f3a5460cb113aaa21a529753040b7952221b5eae3d04e9f7bc0",
+        "model.json": "2fac9087950a53ff7b3609ce453f9017110ba33f6cb2abc46d164915ca898508",
+        "predictions.csv.gz": "83a728b9de237a262e4b8fd5d63868245cfd065c590e11ea1bfcc183e40b2272",
+        "split.csv.gz": "d056afe041e373a0f7903288162789f0520180f2759d289e6a67b0731443706d"
+      },
+      "candidate_id": 14651,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__ll_explicit_language/14651/model.json",
+      "model_sha256": "2fac9087950a53ff7b3609ce453f9017110ba33f6cb2abc46d164915ca898508",
+      "predictors": [
+        "detox_toxicity",
+        "primary_genre",
+        "secondary_genres"
+      ],
+      "task_id": "songs:ll_explicit_language",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "c65c85ac77d7986b8660db2b7f032b2ab7b0696bc89958eb349ac16ec7568488",
+        "model.json": "72687c05f5b3aba1d17224d04ab0085ef887ae12febcbe8a189256f45ec85b75",
+        "predictions.csv.gz": "601877c422dd4cfacbbc721f7c0b469d6246e43abc15eb79d24048db908084e3",
+        "split.csv.gz": "d056afe041e373a0f7903288162789f0520180f2759d289e6a67b0731443706d"
+      },
+      "candidate_id": 30427,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__ll_substance_use/30427/model.json",
+      "model_sha256": "72687c05f5b3aba1d17224d04ab0085ef887ae12febcbe8a189256f45ec85b75",
+      "predictors": [
+        "emotion_neutral",
+        "first_snapshot_month",
+        "primary_genre"
+      ],
+      "task_id": "songs:ll_substance_use",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "7a9c92e417d119a86a380657c3e250a76e44d0101e6d497b09f509470afa252a",
+        "model.json": "cf6effe18f5806b0cc5e1476d7ff33094391866f65923c0902625dfe03ac4544",
+        "predictions.csv.gz": "85f7ff07b47c76d9493ba6d4618fb4bf27504296c731be591abda1bc90d45f7d",
+        "split.csv.gz": "0cd14444697e5f0ad73fb046ab5ebe430d8098fc8ace8aae258c2d9239489d83"
+      },
+      "candidate_id": 9314,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__ll_substance_use/9314/model.json",
+      "model_sha256": "cf6effe18f5806b0cc5e1476d7ff33094391866f65923c0902625dfe03ac4544",
+      "predictors": [
+        "detox_obscene",
+        "last_snapshot_month",
+        "primary_genre"
+      ],
+      "task_id": "songs:ll_substance_use",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "12e911ec32ba4e0ca6c82add8cdffc9125d167a157f93c85597d034a4f0fbd8e",
+        "model.json": "63df8fabb046af9dcc75b148a6eeac5c05447adb971350796609c40f12951327",
+        "predictions.csv.gz": "c4a4c0cc217c0ef39bc7a29e97efb792ce9445e8e185f94f74ca71c859609370",
+        "split.csv.gz": "8365c16f8e5cad577d608c75e48095cfcde2a6da2af500c6383c57fdc0cbcf51"
+      },
+      "candidate_id": 15894,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_toxicity/15894/model.json",
+      "model_sha256": "63df8fabb046af9dcc75b148a6eeac5c05447adb971350796609c40f12951327",
+      "predictors": [
+        "emotion_anger",
+        "emotion_annoyance",
+        "primary_genre"
+      ],
+      "task_id": "songs:detox_toxicity",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "0525efa91f795e5fded0d3ab28f9fd3052313003896722b62db3bbffe9517972",
+        "model.json": "36879f30bd22887f3fc26acf76d3610f8a0935c9f43391045e9f7a144589e3e5",
+        "predictions.csv.gz": "d9dbe48be434e3df19fa255a6790bfb327aa3bf4332f791df68eb81551e35c47",
+        "split.csv.gz": "8365c16f8e5cad577d608c75e48095cfcde2a6da2af500c6383c57fdc0cbcf51"
+      },
+      "candidate_id": 6559,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_toxicity/6559/model.json",
+      "model_sha256": "36879f30bd22887f3fc26acf76d3610f8a0935c9f43391045e9f7a144589e3e5",
+      "predictors": [
+        "detox_insult",
+        "detox_obscene",
+        "detox_severe_toxicity"
+      ],
+      "task_id": "songs:detox_toxicity",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "b5025378314dc191bb7bcb338686eaefec7d971b5abcee4ae2abd68e5e63ceb2",
+        "model.json": "cd9698ac976dba2db64e6e6abd997d3c409ae30c5d912a82a0a3824a0c48a8aa",
+        "predictions.csv.gz": "875a2f2009b3404a2bbd04c8f5e37270b1e6bac014a81e4f4e986893c960311f",
+        "split.csv.gz": "1fff15c70f9e7188a448c72af45968777bda15674add95f40e559fc120b9b220"
+      },
+      "candidate_id": 16195,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_severe_toxicity/16195/model.json",
+      "model_sha256": "cd9698ac976dba2db64e6e6abd997d3c409ae30c5d912a82a0a3824a0c48a8aa",
+      "predictors": [
+        "emotion_anger",
+        "emotion_disapproval",
+        "primary_genre"
+      ],
+      "task_id": "songs:detox_severe_toxicity",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "8f190a635f2eaa1c0a12bc829de48d35dc5351277288650595144301dcedc7a5",
+        "model.json": "b16127d76c3199b5896b5ae933a0dd8889a70e86493aa756e5f5b554fe69605a",
+        "predictions.csv.gz": "6f15ac9872c159ad07483fc277b4ed0a35a9c7edd0b9e68951ff5531523d125a",
+        "split.csv.gz": "6fedce26d881c84585c0f933e483c5c0df223a518c86c9fc5b660786a8fb5436"
+      },
+      "candidate_id": 5074,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_severe_toxicity/5074/model.json",
+      "model_sha256": "b16127d76c3199b5896b5ae933a0dd8889a70e86493aa756e5f5b554fe69605a",
+      "predictors": [
+        "detox_identity_attack",
+        "detox_obscene",
+        "detox_sexual_explicit"
+      ],
+      "task_id": "songs:detox_severe_toxicity",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "8a8c718191c7ae999bad8267f199aa3ef9699bef0ad5d20a16fbfc1620709bda",
+        "model.json": "ac67ec08502b2d04d94332a14ba54260ef52ee5c5eae2ac7f10ebd92409d7067",
+        "predictions.csv.gz": "09499b26196b4b431e7cbbbf85db155b846902dd7b416e5a817261c3970b0e7b",
+        "split.csv.gz": "6fedce26d881c84585c0f933e483c5c0df223a518c86c9fc5b660786a8fb5436"
+      },
+      "candidate_id": 16744,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_obscene/16744/model.json",
+      "model_sha256": "ac67ec08502b2d04d94332a14ba54260ef52ee5c5eae2ac7f10ebd92409d7067",
+      "predictors": [
+        "emotion_anger",
+        "first_chart_date",
+        "primary_genre"
+      ],
+      "task_id": "songs:detox_obscene",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "b426d772fcc9c15848a9182f28094cc414890e40d31ba34856af34c0e7578c33",
+        "model.json": "dae37cbee53ccbc2c9f27428ff52f5032539d9148a764aaa08c50e893f55299c",
+        "predictions.csv.gz": "d40e9da579353f6d20675b155e1633cc8d50ada3e4ec16a09f562bcfcda93125",
+        "split.csv.gz": "a9223ed5b131dc34d691aa356946bbf6479ea486fd7ad24efa5031638b998e42"
+      },
+      "candidate_id": 6561,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_obscene/6561/model.json",
+      "model_sha256": "dae37cbee53ccbc2c9f27428ff52f5032539d9148a764aaa08c50e893f55299c",
+      "predictors": [
+        "detox_insult",
+        "detox_severe_toxicity",
+        "detox_toxicity"
+      ],
+      "task_id": "songs:detox_obscene",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "99fbbe87949764f663352a63dd790652fa501fe3ced374c597b807a499da2785",
+        "model.json": "9e65beb5f90e840aae59b3479f35d02df1b8b020ac88b7ebdfd33d4bb58e5fe1",
+        "predictions.csv.gz": "3f6f88f4a8f6518bfa373ef8d717910a1b5c7a10a19c926620d4cf38051d0a83",
+        "split.csv.gz": "2616822596702663a2491a54029fe6a98093d494f8cf92bbd6d52628a471e7d7"
+      },
+      "candidate_id": 16540,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_threat/16540/model.json",
+      "model_sha256": "9e65beb5f90e840aae59b3479f35d02df1b8b020ac88b7ebdfd33d4bb58e5fe1",
+      "predictors": [
+        "emotion_anger",
+        "emotion_neutral",
+        "primary_genre"
+      ],
+      "task_id": "songs:detox_threat",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "666b426fe432d861ef37a178636e6679e7a092f6db8c731d3d805cf05412a4ed",
+        "model.json": "4a56f25145e556842b3ed8aa7a1c0edcb37fe82cec3bd6e61c1c7b894119c1fe",
+        "predictions.csv.gz": "b4b46c71d59b9741a74bffbfd0db5560c2fbd82ceb5553aa2fafd359e75811b6",
+        "split.csv.gz": "809db085633408f10326767215100420f6ef518016f00d1324f8f31166509b73"
+      },
+      "candidate_id": 8184,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_threat/8184/model.json",
+      "model_sha256": "4a56f25145e556842b3ed8aa7a1c0edcb37fe82cec3bd6e61c1c7b894119c1fe",
+      "predictors": [
+        "detox_obscene",
+        "detox_toxicity",
+        "ll_violence"
+      ],
+      "task_id": "songs:detox_threat",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "567ed398acf4066bcc29d7ac5ffc959e915f27432b8071f6ea2437d909d7e584",
+        "model.json": "2e69f2834920826e0fc2790a7722ac24ffca5fb517f5bd881591ca7a6d40d826",
+        "predictions.csv.gz": "dbb7f5f5faa977634bb5394fafe6afc89ae44300cb9e0069392976430dc4a244",
+        "split.csv.gz": "809db085633408f10326767215100420f6ef518016f00d1324f8f31166509b73"
+      },
+      "candidate_id": 15894,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_insult/15894/model.json",
+      "model_sha256": "2e69f2834920826e0fc2790a7722ac24ffca5fb517f5bd881591ca7a6d40d826",
+      "predictors": [
+        "emotion_anger",
+        "emotion_annoyance",
+        "primary_genre"
+      ],
+      "task_id": "songs:detox_insult",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "c9079a36c9d27ad4e7d840e13272c298637b501c9e782d61f8a5f69105fced4e",
+        "model.json": "dcfe85f05b6ad0d715a8d05827a2fc1a6e74de2b84d1ddd070f394b16d028295",
+        "predictions.csv.gz": "20230c38e9654276e1e1df02623fdd88929733688d5982bee1e5e49d4ad24fa2",
+        "split.csv.gz": "46eef234c9ac14982bac1c7dc8f2a999e98cffa5681f5bc51ad6f7c619ac9b06"
+      },
+      "candidate_id": 6561,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_insult/6561/model.json",
+      "model_sha256": "dcfe85f05b6ad0d715a8d05827a2fc1a6e74de2b84d1ddd070f394b16d028295",
+      "predictors": [
+        "detox_obscene",
+        "detox_severe_toxicity",
+        "detox_toxicity"
+      ],
+      "task_id": "songs:detox_insult",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "77db149bdc13493ce489500d3e796ac3ecfc2ba759963ec95a13868f207f11eb",
+        "model.json": "ed8e4edfea151b272f63b6697fda578f9c1ab01056bedcfe68329877e8cb5a8a",
+        "predictions.csv.gz": "537c75b168a60490e6ad42458591b4a0d83c550bb1c5d33ea3bd9e32072060e9",
+        "split.csv.gz": "4c5272a94b0bffe8d519d97210d021fbe3eb9c5d3c17ae06048a3ca44686b67d"
+      },
+      "candidate_id": 16955,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_identity_attack/16955/model.json",
+      "model_sha256": "ed8e4edfea151b272f63b6697fda578f9c1ab01056bedcfe68329877e8cb5a8a",
+      "predictors": [
+        "emotion_anger",
+        "primary_genre",
+        "secondary_genres"
+      ],
+      "task_id": "songs:detox_identity_attack",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "902c907608b02d15d40ba18c4ca5d482f2f99fbf75cf9f336bac2a8e2696c4e6",
+        "model.json": "5ed4bf51fc1a41fdcf48973f28521b6e7cf5a5c3b2ac23ee345f07800e973d1f",
+        "predictions.csv.gz": "beec9bf5fd9f649d5c2c5efbba404708aedecbeb584a3c59af96c7ab8533f561",
+        "split.csv.gz": "4c5272a94b0bffe8d519d97210d021fbe3eb9c5d3c17ae06048a3ca44686b67d"
+      },
+      "candidate_id": 6605,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_identity_attack/6605/model.json",
+      "model_sha256": "5ed4bf51fc1a41fdcf48973f28521b6e7cf5a5c3b2ac23ee345f07800e973d1f",
+      "predictors": [
+        "detox_obscene",
+        "detox_severe_toxicity",
+        "primary_genre"
+      ],
+      "task_id": "songs:detox_identity_attack",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "20ef92c67e72a6d77b8701f7472bad2b587d6b4066999802eb1e31e8b50fff29",
+        "model.json": "07f24d2afdbf8d4e3681e54dfae7fdb3684f28af99529c212e86c3e0fd116787",
+        "predictions.csv.gz": "92a7c17a6a1892bc51210e3a8bddd6cf59338e4a3fdfbd6e4e582d2acebed1c1",
+        "split.csv.gz": "0cdc5cde709eba5ffec4febfa922f1783784614d6652b5fd12fe6c060ca36be7"
+      },
+      "candidate_id": 16804,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_sexual_explicit/16804/model.json",
+      "model_sha256": "07f24d2afdbf8d4e3681e54dfae7fdb3684f28af99529c212e86c3e0fd116787",
+      "predictors": [
+        "emotion_anger",
+        "last_snapshot_month",
+        "primary_genre"
+      ],
+      "task_id": "songs:detox_sexual_explicit",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "5dc67cefc6e086a1a350009dbd8e391ce033008e27305a3154c74676a8dd71c1",
+        "model.json": "05dcac654d8a61e092021f9b9c0ebed40cfd2dc759e4de08284e74cb3da43d95",
+        "predictions.csv.gz": "c16aef43b8b0eac4c84b6f3b5912c7fa64ecba9bb0b8887351203215e456555b",
+        "split.csv.gz": "923a0c249f5610862225507524701986d54c653b01aedb1f55079fba6ced5366"
+      },
+      "candidate_id": 6614,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_sexual_explicit/6614/model.json",
+      "model_sha256": "05dcac654d8a61e092021f9b9c0ebed40cfd2dc759e4de08284e74cb3da43d95",
+      "predictors": [
+        "detox_insult",
+        "detox_severe_toxicity",
+        "detox_toxicity"
+      ],
+      "task_id": "songs:detox_sexual_explicit",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "b07a7d9e732da2913837d31850bfecfe7b8e55a1d73c28c098bf104e21032224",
+        "model.json": "cf4b7ea1236a6b67a990843fa54e83889f94ff5929cdaf302e3a476a6c7e8f83",
+        "predictions.csv.gz": "2f1b48cc8d8e97ba5f7819675af8a46ed837f83905737b05e46d6a12489c7834",
+        "split.csv.gz": "b284274227bb2fcd799955dfa2fb2f94767383dc3586deda6ddbf33b94cbf8ce"
+      },
+      "candidate_id": 6407,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_admiration/6407/model.json",
+      "model_sha256": "cf4b7ea1236a6b67a990843fa54e83889f94ff5929cdaf302e3a476a6c7e8f83",
+      "predictors": [
+        "detox_identity_attack",
+        "ll_sexual_content",
+        "ll_violence"
+      ],
+      "task_id": "songs:emotion_admiration",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "2c9aa0c7f4a5f76bb84dde06434286cfb848baf66c964006b968755ad8577185",
+        "model.json": "2d3aaba9df9d8fe9dbc93a3a18cadab56340ea0d2bd7f31653cc038222b6624f",
+        "predictions.csv.gz": "d83d7da66ae86b09b78c28c3e1a529eb90ca9bfa915c378f3ca904127f7fdc34",
+        "split.csv.gz": "b284274227bb2fcd799955dfa2fb2f94767383dc3586deda6ddbf33b94cbf8ce"
+      },
+      "candidate_id": 18660,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_admiration/18660/model.json",
+      "model_sha256": "2d3aaba9df9d8fe9dbc93a3a18cadab56340ea0d2bd7f31653cc038222b6624f",
+      "predictors": [
+        "emotion_approval",
+        "emotion_neutral",
+        "sentiment_positive"
+      ],
+      "task_id": "songs:emotion_admiration",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "74600775d20b11d303d0fc79757a98659b080454e5277cb1ee4391b3be32abf1",
+        "model.json": "ea14901d6fef03864742ea5b9022c2e8c7dfe88a7687ff8652b2c04372dc4085",
+        "predictions.csv.gz": "cd3b7083521474c94c80ed0e47268178df5fa68b8585ab1779822b0b32dca95c",
+        "split.csv.gz": "e4ecf159f2dcc467a9f9fec82c103d8d4b7b2bce81febec0c573701ac6c1ba11"
+      },
+      "candidate_id": 7908,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_amusement/7908/model.json",
+      "model_sha256": "ea14901d6fef03864742ea5b9022c2e8c7dfe88a7687ff8652b2c04372dc4085",
+      "predictors": [
+        "detox_insult",
+        "ll_substance_use",
+        "ll_violence"
+      ],
+      "task_id": "songs:emotion_amusement",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "e472035a0294b0dd81eab1940265d4b48dfa39e7d9dc44d8a8fa1923604be64a",
+        "model.json": "d930ac7436be8b9e4bd32446b6ff67d1e4c99bc3d552ed85ab539e20d19b5e37",
+        "predictions.csv.gz": "98d67c2a5642ba0ce7dd7f7e904327e5ae866b8de84959d6cc0cbed674f09482",
+        "split.csv.gz": "e827333bc843b2722c16bafe45fc54f9f8a0dd2e7a63ae98572758bfab39145f"
+      },
+      "candidate_id": 28300,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_amusement/28300/model.json",
+      "model_sha256": "d930ac7436be8b9e4bd32446b6ff67d1e4c99bc3d552ed85ab539e20d19b5e37",
+      "predictors": [
+        "emotion_joy",
+        "emotion_love",
+        "emotion_relief"
+      ],
+      "task_id": "songs:emotion_amusement",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "0336a950c82abf0ec67eed206f8ad4d2a18a33a145176a756e93cf522d21db0f",
+        "model.json": "736a24b797b8d83f068ba51cb08bead1d3a809878c31d643c60f6ae5d0411715",
+        "predictions.csv.gz": "066ab300d966407d25ed7cfbbcf7e93442db1f7ae4ced07f1b4839515e39e876",
+        "split.csv.gz": "e827333bc843b2722c16bafe45fc54f9f8a0dd2e7a63ae98572758bfab39145f"
+      },
+      "candidate_id": 9476,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_anger/9476/model.json",
+      "model_sha256": "736a24b797b8d83f068ba51cb08bead1d3a809878c31d643c60f6ae5d0411715",
+      "predictors": [
+        "detox_severe_toxicity",
+        "detox_sexual_explicit",
+        "detox_toxicity"
+      ],
+      "task_id": "songs:emotion_anger",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "0dfeca1b5712bee4822aafe257f89c11b0de14e2d9a5885c322e2ee1b90763cb",
+        "model.json": "eee99d1e1b5ab9902c99c5b03f05fa084337015c375f91873936f1cb410b7b59",
+        "predictions.csv.gz": "728c8f04490cfa6f4e7fac1ccfacb7623840539b9ab810f37a4b4b47306a3f5a",
+        "split.csv.gz": "c8d34710d08e4fc07a463b1f88c43d1f71eb6f5e6eef47a751f13460ea921158"
+      },
+      "candidate_id": 9741,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_anger/9741/model.json",
+      "model_sha256": "eee99d1e1b5ab9902c99c5b03f05fa084337015c375f91873936f1cb410b7b59",
+      "predictors": [
+        "detox_severe_toxicity",
+        "emotion_annoyance",
+        "emotion_neutral"
+      ],
+      "task_id": "songs:emotion_anger",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "4fca82e3a432b6da20f99fb162bcb139bcc9a53ff285319b9da09e427c338c1f",
+        "model.json": "6392483fc6b5616db1147e87024af189ff0f99473758789855ae5aecea95009c",
+        "predictions.csv.gz": "3e2ea318690e76ff9498d193ec63172f30ad3e81aec8a64f0f7e9bee712ee672",
+        "split.csv.gz": "9945ebfee85c0ba9c0cf803fe7447b3355a3ea39a46075f339d17aea7aa9358f"
+      },
+      "candidate_id": 6560,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_annoyance/6560/model.json",
+      "model_sha256": "6392483fc6b5616db1147e87024af189ff0f99473758789855ae5aecea95009c",
+      "predictors": [
+        "detox_insult",
+        "detox_obscene",
+        "detox_sexual_explicit"
+      ],
+      "task_id": "songs:emotion_annoyance",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "a08c8859610c0cef9c7280c48026bba8ef1645885459d9b37d20c1c52e937d5b",
+        "model.json": "5225f5790728b699c74af86c35864b96770efa9d7d53e565ffdd0bcad6f1b1aa",
+        "predictions.csv.gz": "3f7a26935f942d49b36952eb144b730809d527389d85cdb088927f84b8fda2ae",
+        "split.csv.gz": "9945ebfee85c0ba9c0cf803fe7447b3355a3ea39a46075f339d17aea7aa9358f"
+      },
+      "candidate_id": 13557,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_annoyance/13557/model.json",
+      "model_sha256": "5225f5790728b699c74af86c35864b96770efa9d7d53e565ffdd0bcad6f1b1aa",
+      "predictors": [
+        "detox_toxicity",
+        "emotion_anger",
+        "emotion_disapproval"
+      ],
+      "task_id": "songs:emotion_annoyance",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "0a9b2413e83da1cb8b71b9510c26d979dfd8776258f17639bfe353418bd69e55",
+        "model.json": "8d4abbf0b7631e60ffc9662ff4f54171f62cae651e634c9d3ae7bf11151db915",
+        "predictions.csv.gz": "e3a0d292d94ec3c902cb8b110a42fde6b5fa9458499daeb296732a8ce1959b7e",
+        "split.csv.gz": "9fd87b416a0b288d761eac43fa3ba0675dc7d29d8bb7f4596400c04a34dc2094"
+      },
+      "candidate_id": 14531,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_approval/14531/model.json",
+      "model_sha256": "8d4abbf0b7631e60ffc9662ff4f54171f62cae651e634c9d3ae7bf11151db915",
+      "predictors": [
+        "detox_toxicity",
+        "ll_sexual_content",
+        "mb_duration_min_seconds"
+      ],
+      "task_id": "songs:emotion_approval",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "9a96466eb9e1c2d8d8e4dbef04fc26b50a49275c9892fe5070ee67cb88f08544",
+        "model.json": "cf895740a661ded3c6fa8397ca204e05cbae1861b7a47dde25c090382ab036b1",
+        "predictions.csv.gz": "ef63b279cb48139dfdeed151d9b52d38da26b44c27a10157faa3b2232a7be988",
+        "split.csv.gz": "3a1970d25dd6f681a2564094237e4c40d31fc9b0e0c567367782c446c6fa454c"
+      },
+      "candidate_id": 18511,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_approval/18511/model.json",
+      "model_sha256": "cf895740a661ded3c6fa8397ca204e05cbae1861b7a47dde25c090382ab036b1",
+      "predictors": [
+        "emotion_annoyance",
+        "emotion_grief",
+        "emotion_relief"
+      ],
+      "task_id": "songs:emotion_approval",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "47c7217fdb364c41f5a7b9eca005d4e9d0267bd8cb54dec8ecbdbaaea07d7e00",
+        "model.json": "083a486e931a72db2995cb217051487c916097fd1c7f359cd2fdd125182536c5",
+        "predictions.csv.gz": "d7720d89a9448819364f245503f9d46a5694f6733ad55db112cf66e6837c093b",
+        "split.csv.gz": "3a1970d25dd6f681a2564094237e4c40d31fc9b0e0c567367782c446c6fa454c"
+      },
+      "candidate_id": 33335,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_caring/33335/model.json",
+      "model_sha256": "083a486e931a72db2995cb217051487c916097fd1c7f359cd2fdd125182536c5",
+      "predictors": [
+        "ll_explicit_language",
+        "ll_substance_use",
+        "primary_genre"
+      ],
+      "task_id": "songs:emotion_caring",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "29bb98d81fc545c3f305c88d138286617bfd9d607f2b27dca06eede0bc1cc449",
+        "model.json": "6c8e83aca91cb016b33c5862061a70d21ed2e709eb0f159e0e85b60784b720d8",
+        "predictions.csv.gz": "89cb8e82df7e55ef1d5bf9b621e893e6b6b1e97941b1c90da7d15e3e59051b5c",
+        "split.csv.gz": "e7d5921a82724c4420d1831f118e48756a423d5008ea9b21eb746c34ef6a5b7d"
+      },
+      "candidate_id": 19666,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_caring/19666/model.json",
+      "model_sha256": "6c8e83aca91cb016b33c5862061a70d21ed2e709eb0f159e0e85b60784b720d8",
+      "predictors": [
+        "emotion_approval",
+        "emotion_optimism",
+        "ll_substance_use"
+      ],
+      "task_id": "songs:emotion_caring",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "27ab6d2add4ba53c41874ba9d397bebfb78f80a78b17311ccf927b9ca9e687c8",
+        "model.json": "f83b1c51b296026c9ee04eb90313b8c705bb33126b754c7bc6fd10f9ffc80214",
+        "predictions.csv.gz": "07e89210cbaef1036d1d7eef7b5482769aedf915aeb40b1e34e6b01c9dcb3828",
+        "split.csv.gz": "9b74ed612c7e181c90dbe5392b228d2dc9014a8eecb2410e5630e0f19325b141"
+      },
+      "candidate_id": 13310,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_confusion/13310/model.json",
+      "model_sha256": "f83b1c51b296026c9ee04eb90313b8c705bb33126b754c7bc6fd10f9ffc80214",
+      "predictors": [
+        "detox_threat",
+        "ll_sexual_content",
+        "primary_genre"
+      ],
+      "task_id": "songs:emotion_confusion",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "72fef6b0462993e67a2c2db565ef9f692e31bf18e6e618cd836666210c1757e8",
+        "model.json": "5321d94da4b462b26274c9dfc36c67b752948158041ef955d341b3e8432f1db5",
+        "predictions.csv.gz": "7e315c1bfa958194f8d5ce29c1d477fadc472e056433b8b5503d0f96bc1e36cd",
+        "split.csv.gz": "beffbf94eb36f9976b46eeaa8efdb97ec46f10fbfd5045e7fd46e770923c724f"
+      },
+      "candidate_id": 21445,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_confusion/21445/model.json",
+      "model_sha256": "5321d94da4b462b26274c9dfc36c67b752948158041ef955d341b3e8432f1db5",
+      "predictors": [
+        "emotion_curiosity",
+        "emotion_nervousness",
+        "emotion_realization"
+      ],
+      "task_id": "songs:emotion_confusion",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "7251f2f9ca603133b3e8fb5f0ee93c53796a30a28f7090c33fb4b19869919794",
+        "model.json": "42f5ed5623b5e88448e4d298fa4b969b215c2aa200d09d3023a1ebedb44cc131",
+        "predictions.csv.gz": "4d436b7a36b8f1e1fcfd951128e99ca01bf46e5997c2d0d437df6e43a5462c7e",
+        "split.csv.gz": "beffbf94eb36f9976b46eeaa8efdb97ec46f10fbfd5045e7fd46e770923c724f"
+      },
+      "candidate_id": 33011,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_curiosity/33011/model.json",
+      "model_sha256": "42f5ed5623b5e88448e4d298fa4b969b215c2aa200d09d3023a1ebedb44cc131",
+      "predictors": [
+        "last_chart_date",
+        "ll_substance_use",
+        "primary_genre"
+      ],
+      "task_id": "songs:emotion_curiosity",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "01cc60235e40ded34524f69ff93acf8d322f5ca593b37432a5ae529bf69767aa",
+        "model.json": "6699fd7fea639841fa8c437567b4b612c698ba6bcaa3770c3c98a5a657d33963",
+        "predictions.csv.gz": "f4f02d3fa09df67ba8efadb78c896890ad0d59fee55a17605abd63aecca5a0eb",
+        "split.csv.gz": "559a3a9be6deec1e348ce237c456cdfbe03ce2660ac78714f1b6b8e7189db709"
+      },
+      "candidate_id": 21475,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_curiosity/21475/model.json",
+      "model_sha256": "6699fd7fea639841fa8c437567b4b612c698ba6bcaa3770c3c98a5a657d33963",
+      "predictors": [
+        "emotion_confusion",
+        "emotion_neutral",
+        "emotion_realization"
+      ],
+      "task_id": "songs:emotion_curiosity",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "74e06410379d094aad16997c16e5b7cc1d420cbed0a8f4d88866b11ba4697a7f",
+        "model.json": "b159744c0fbbe65ab9ba731d21ed6ed986fe1da76cf52fb233d8ff3870a106fe",
+        "predictions.csv.gz": "5bde391236180156051d681023de7413ef1d5189846bc295129294e5fecda82d",
+        "split.csv.gz": "130d260f2e879434f632ab3dbb912c19552a7916427bb31f8bbe3c00bdb450db"
+      },
+      "candidate_id": 33311,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_desire/33311/model.json",
+      "model_sha256": "b159744c0fbbe65ab9ba731d21ed6ed986fe1da76cf52fb233d8ff3870a106fe",
+      "predictors": [
+        "ll_explicit_language",
+        "ll_sexual_content",
+        "ll_violence"
+      ],
+      "task_id": "songs:emotion_desire",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "a4fb9c169d86011a29f1a9a13e2dc06fa77fa01fa6af22ae33b57e6704e44883",
+        "model.json": "c7812f7899f0018ed944cf20bad1b6eed204e193db5f01e3b8bfab4fd9b89d2a",
+        "predictions.csv.gz": "43a6f82266b8211b111379ad64432eca7545542f7d9783306f3eadf22a20b621",
+        "split.csv.gz": "130d260f2e879434f632ab3dbb912c19552a7916427bb31f8bbe3c00bdb450db"
+      },
+      "candidate_id": 19624,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_desire/19624/model.json",
+      "model_sha256": "c7812f7899f0018ed944cf20bad1b6eed204e193db5f01e3b8bfab4fd9b89d2a",
+      "predictors": [
+        "emotion_approval",
+        "emotion_neutral",
+        "emotion_optimism"
+      ],
+      "task_id": "songs:emotion_desire",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "2fd2ac09de45dffc68e27792c5c9d851b5da18a6b8d213adbe79b299f97bff13",
+        "model.json": "09c7e24bdfbcf2bbf19a87481be28c8bb421ee0de9ff98168bd192a6a4cdc131",
+        "predictions.csv.gz": "0637de0ee7a3f56cd96d4eedd973b776b9af90a44e91a9d3423ebd50858c3f00",
+        "split.csv.gz": "a645c3f5b866599e8357c1d30fb16f142493ec0b13d93f79d636226f9ae0d4d5"
+      },
+      "candidate_id": 12031,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_disappointment/12031/model.json",
+      "model_sha256": "09c7e24bdfbcf2bbf19a87481be28c8bb421ee0de9ff98168bd192a6a4cdc131",
+      "predictors": [
+        "detox_sexual_explicit",
+        "ll_sexual_content",
+        "mb_duration_min_seconds"
+      ],
+      "task_id": "songs:emotion_disappointment",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "85fddff15a00d033ad8dfd8f47b01fccf1b2b07e92664dbb4c36bb339b50b790",
+        "model.json": "6999c279c534031f961696662d751da54be6344f3b47fe6a56624733891861cf",
+        "predictions.csv.gz": "9575eea0db0917e9e15323bc3411053c25f5e083c2b0d10ee71089dc04870cc0",
+        "split.csv.gz": "9a465a0ef8d68394766b3ac3660ec2921b850614d9b7c2b441cdef75862dd653"
+      },
+      "candidate_id": 23813,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_disappointment/23813/model.json",
+      "model_sha256": "6999c279c534031f961696662d751da54be6344f3b47fe6a56624733891861cf",
+      "predictors": [
+        "emotion_disapproval",
+        "emotion_grief",
+        "emotion_sadness"
+      ],
+      "task_id": "songs:emotion_disappointment",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "60608544202bb6418a81fe31bd67b07845f60b42d9ee7fb8498f4f957bc15ad6",
+        "model.json": "001f24b0e57988b5565e18e1701ca8f6b0cfdf60843e7270f80a120fd9b0972f",
+        "predictions.csv.gz": "ffcc10033b2189be6edfe8167cebe3b9bee6fcd17b089c4bc0fdf12d3999f06c",
+        "split.csv.gz": "9a465a0ef8d68394766b3ac3660ec2921b850614d9b7c2b441cdef75862dd653"
+      },
+      "candidate_id": 10946,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_disapproval/10946/model.json",
+      "model_sha256": "001f24b0e57988b5565e18e1701ca8f6b0cfdf60843e7270f80a120fd9b0972f",
+      "predictors": [
+        "detox_sexual_explicit",
+        "detox_toxicity",
+        "primary_genre"
+      ],
+      "task_id": "songs:emotion_disapproval",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "519ccfb7516fb4cd37ded41f43851498192e725692a52e0ad691333d2ab6fd09",
+        "model.json": "d8af42ee42e28a243a20e455446e615986373afb8f9f64044b9851a9771fa282",
+        "predictions.csv.gz": "d8f8dd143abd423a4b8f1141dcc1af55edb1f45185a9b3ca775d6155d7a06300",
+        "split.csv.gz": "222e7305f9342a4a4714f275072eb44e28d7361cac3f1757f0996cc2cd2533e9"
+      },
+      "candidate_id": 8436,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_disapproval/8436/model.json",
+      "model_sha256": "d8af42ee42e28a243a20e455446e615986373afb8f9f64044b9851a9771fa282",
+      "predictors": [
+        "detox_obscene",
+        "emotion_annoyance",
+        "sentiment_positive"
+      ],
+      "task_id": "songs:emotion_disapproval",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "84b35f1151688a0f624d4e0f27e610f0d576ac6566e266838933b4ecbaba2f77",
+        "model.json": "fc7513c9b35fbba4be6bd4aab7cb082c8388f5c87ed1c5bff2cdd2faf4e8c125",
+        "predictions.csv.gz": "420481526ccc696aa16edcbfb841999040f4f0fd58865de14b28f2040c8365b3",
+        "split.csv.gz": "70f9dfeb1cf4bb0924ab5786a0d25ddb1939208fbafaec48afb9b1b9ecd0a821"
+      },
+      "candidate_id": 6811,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_disgust/6811/model.json",
+      "model_sha256": "fc7513c9b35fbba4be6bd4aab7cb082c8388f5c87ed1c5bff2cdd2faf4e8c125",
+      "predictors": [
+        "detox_insult",
+        "detox_toxicity",
+        "primary_genre"
+      ],
+      "task_id": "songs:emotion_disgust",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "07b18d49ba042a315f3e78b2ac328926505317b5c09e981fd6fa27c74170a97b",
+        "model.json": "12cf96431c2dfdf3caf9b1712240de5e505e250a48c83c27831910487fc2faa9",
+        "predictions.csv.gz": "36d1e0781d82934f299170bf0c43ad07937eefffea31a3de5f0142de662ca252",
+        "split.csv.gz": "70f9dfeb1cf4bb0924ab5786a0d25ddb1939208fbafaec48afb9b1b9ecd0a821"
+      },
+      "candidate_id": 16990,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_disgust/16990/model.json",
+      "model_sha256": "12cf96431c2dfdf3caf9b1712240de5e505e250a48c83c27831910487fc2faa9",
+      "predictors": [
+        "emotion_anger",
+        "emotion_annoyance",
+        "emotion_embarrassment"
+      ],
+      "task_id": "songs:emotion_disgust",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "bec99dc1988e3b3db71266a0fa11bb62475f2adb27a8a76a45a9a5f197527f61",
+        "model.json": "ef368aeda374149789c442c685d52f04fc6a93f13e1cb3303cd4e45c2421f0b7",
+        "predictions.csv.gz": "c9a767af44dca240a4e80ebaa384178e349e89310617387cb43b5b0a88b43816",
+        "split.csv.gz": "391f754be99e7e53dfb50289b4b3848af6323e411b009daf2bc3d74072d1f2fe"
+      },
+      "candidate_id": 6648,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_embarrassment/6648/model.json",
+      "model_sha256": "ef368aeda374149789c442c685d52f04fc6a93f13e1cb3303cd4e45c2421f0b7",
+      "predictors": [
+        "detox_insult",
+        "detox_severe_toxicity",
+        "ll_sexual_content"
+      ],
+      "task_id": "songs:emotion_embarrassment",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "822b517ce484fb9dfd7ab12d44f7be5d5d63dfcc78146a09cf77cd9581dbe553",
+        "model.json": "a3397005f746e0f0c787da2c4d366f81f22a04d56e8341e1cc99cdac8ea10e12",
+        "predictions.csv.gz": "eef0cb59eee8524fb02760bdb0102fdc4a7cd747023d09324787531b68641e22",
+        "split.csv.gz": "067bcc4aefe2e95877da33351779ff4c9cba094f236393c1a11d361f5295a4c0"
+      },
+      "candidate_id": 23668,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_embarrassment/23668/model.json",
+      "model_sha256": "a3397005f746e0f0c787da2c4d366f81f22a04d56e8341e1cc99cdac8ea10e12",
+      "predictors": [
+        "emotion_disappointment",
+        "emotion_disgust",
+        "emotion_realization"
+      ],
+      "task_id": "songs:emotion_embarrassment",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "56727e635f9d5765cb6a3072b5ccb5e33e818c0ac25e17634f4f9a21282f7fef",
+        "model.json": "f81a1ea0c9a5f3a1dc73d64e27633445359487963d3704912d0f7baa74618336",
+        "predictions.csv.gz": "97be6e76c70b0f660c8bf91624c524787ef102f5b101a5acdf3e2ece40a7324f",
+        "split.csv.gz": "067bcc4aefe2e95877da33351779ff4c9cba094f236393c1a11d361f5295a4c0"
+      },
+      "candidate_id": 9323,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_excitement/9323/model.json",
+      "model_sha256": "f81a1ea0c9a5f3a1dc73d64e27633445359487963d3704912d0f7baa74618336",
+      "predictors": [
+        "detox_obscene",
+        "ll_sexual_content",
+        "ll_violence"
+      ],
+      "task_id": "songs:emotion_excitement",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "4497ff683bb4b06c40e9142ba4ac4b99fbe1dd327b496a8dd896545f6ac5b4fe",
+        "model.json": "79c73095c1d4deea287f34cd4760c48fc30529968e9d73d18866d28d5fcd4122",
+        "predictions.csv.gz": "74ba8dac9547bfb08c0f499790137c8b57ce29b346e6152ed8e73e1a2da6d5ec",
+        "split.csv.gz": "d9ca19b73bed5b08dd590c441175c9a1b948dc9f654755c8b9f3fd407cda65b8"
+      },
+      "candidate_id": 28566,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_excitement/28566/model.json",
+      "model_sha256": "79c73095c1d4deea287f34cd4760c48fc30529968e9d73d18866d28d5fcd4122",
+      "predictors": [
+        "emotion_joy",
+        "emotion_surprise",
+        "sentiment_positive"
+      ],
+      "task_id": "songs:emotion_excitement",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "f34bd28d2f610cc38b10df0509398fd8596042e4037121b03e1d42cc8a9f84ea",
+        "model.json": "60c5792159e5e9c817c27dbce7fa148d3a29b05ee533573984306141978dd550",
+        "predictions.csv.gz": "c8faaa74e93dd623bd8c72b149d10d094e221d704ad801a8ff2a9b48a2543113",
+        "split.csv.gz": "bcbd5e176a97ebf8ed40f803a23d77b7f2792cf159bc55d15ad445318c7ed774"
+      },
+      "candidate_id": 33472,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_fear/33472/model.json",
+      "model_sha256": "60c5792159e5e9c817c27dbce7fa148d3a29b05ee533573984306141978dd550",
+      "predictors": [
+        "ll_sexual_content",
+        "ll_substance_use",
+        "secondary_genres"
+      ],
+      "task_id": "songs:emotion_fear",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "469347a1b4137bf083b2db7b60399c806847ade36348f14191b557c7515faec4",
+        "model.json": "b6926c7ac122ad750e3aaf858f9623292416e44aada1fde74b33a8d56d8887c5",
+        "predictions.csv.gz": "9b58c62c060934446ae112afe4a327a9b8b9d70d1982e21d0e7162b0dbfd3f69",
+        "split.csv.gz": "994824f4296b114ced17e06c6767c1379c8a5e22854548a2ccc24cb94891135f"
+      },
+      "candidate_id": 23664,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_fear/23664/model.json",
+      "model_sha256": "b6926c7ac122ad750e3aaf858f9623292416e44aada1fde74b33a8d56d8887c5",
+      "predictors": [
+        "emotion_disappointment",
+        "emotion_disgust",
+        "emotion_nervousness"
+      ],
+      "task_id": "songs:emotion_fear",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "78ea973ef8a1723231a8bac430cf9ce1ac233d6d801cd9029a2ede439ddce149",
+        "model.json": "fc2000bd6eebb1f5e4ff8d7108210977755584f36b01cc46a96f5588e53f7407",
+        "predictions.csv.gz": "a80918de9175874ca3c3774846984b7182b24a7dc74ee96fa737839fd4f81e5f",
+        "split.csv.gz": "994824f4296b114ced17e06c6767c1379c8a5e22854548a2ccc24cb94891135f"
+      },
+      "candidate_id": 32778,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_gratitude/32778/model.json",
+      "model_sha256": "fc2000bd6eebb1f5e4ff8d7108210977755584f36b01cc46a96f5588e53f7407",
+      "predictors": [
+        "first_snapshot_month",
+        "ll_explicit_language",
+        "ll_sexual_content"
+      ],
+      "task_id": "songs:emotion_gratitude",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "5e44898cf4f433742da0187f157f658768c5d75f882075a690768a7bc7b6b96d",
+        "model.json": "e0cca6a92714d81b37c541c48aeed5aa94acb77979d24880e19afc2946033cd8",
+        "predictions.csv.gz": "9cf82af0d936dc57c0ba1389649ff0ce49c7453d8859d4ee554fde7e356feb3b",
+        "split.csv.gz": "eb79a699be045f5e6f9743ce1f9b9e2d89a6a72760a3ce19af0d5d937db64f13"
+      },
+      "candidate_id": 28361,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_gratitude/28361/model.json",
+      "model_sha256": "e0cca6a92714d81b37c541c48aeed5aa94acb77979d24880e19afc2946033cd8",
+      "predictors": [
+        "emotion_joy",
+        "emotion_neutral",
+        "emotion_relief"
+      ],
+      "task_id": "songs:emotion_gratitude",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "b18597f47e39c1d30b488a9b5ad279aa3992de7b9020310e5b4bb1f669c630a4",
+        "model.json": "6812888fafd0e3ad87d4933be5c05762950c4d90e8a75ee7827d77d9d08039e9",
+        "predictions.csv.gz": "1107c5affca8fbe39c31cfe9127338fb6860b041d4039f568c3de6c7e9c45be0",
+        "split.csv.gz": "a61ae2898a394e19176a7c10957557110cf706aac90d22705570af8918c8546c"
+      },
+      "candidate_id": 33310,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_grief/33310/model.json",
+      "model_sha256": "6812888fafd0e3ad87d4933be5c05762950c4d90e8a75ee7827d77d9d08039e9",
+      "predictors": [
+        "ll_explicit_language",
+        "ll_sexual_content",
+        "ll_substance_use"
+      ],
+      "task_id": "songs:emotion_grief",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "fe84dd68e98efff8074d8e1324f1e7c88884cfb6fe5515f4159f8f4a554a7ca8",
+        "model.json": "12b297b2f080eb9bc0fce3838a8dbe1470d03c8fd8e09be15fc628fd8b511497",
+        "predictions.csv.gz": "1e045cda5b05a88e2b6fed3d0f68a0cc0284ebbdc209580471d59c28d86641cf",
+        "split.csv.gz": "276c5bc73f748ef23323db6a4de37308a66ee1f8345e42bc1cb0aefe89ab91a0"
+      },
+      "candidate_id": 29434,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_grief/29434/model.json",
+      "model_sha256": "12b297b2f080eb9bc0fce3838a8dbe1470d03c8fd8e09be15fc628fd8b511497",
+      "predictors": [
+        "emotion_nervousness",
+        "emotion_relief",
+        "emotion_sadness"
+      ],
+      "task_id": "songs:emotion_grief",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "ec052f05e6651e7a23861f405b37f6fd82bc4b9216a9ad6ded9bddd088546c17",
+        "model.json": "5c1a8114c9d95f70ac3e0c500069bf3c1a08a6ced7a756c55db00b1f257fa1fc",
+        "predictions.csv.gz": "3ce82798c01b6f7b1c5665e2c97dc7bd6d84cbf556dac91c1dc6f14dcb878c02",
+        "split.csv.gz": "276c5bc73f748ef23323db6a4de37308a66ee1f8345e42bc1cb0aefe89ab91a0"
+      },
+      "candidate_id": 14530,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_joy/14530/model.json",
+      "model_sha256": "5c1a8114c9d95f70ac3e0c500069bf3c1a08a6ced7a756c55db00b1f257fa1fc",
+      "predictors": [
+        "detox_toxicity",
+        "ll_sexual_content",
+        "mb_duration_median_seconds"
+      ],
+      "task_id": "songs:emotion_joy",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "7140ae641802ba8501f6b81491909a5a32f338d27031a922d5ba82442bbabf79",
+        "model.json": "aa7da3ce4910ab5365c40aef63e3c26663fe13f0ea3cd0b1389e23b21a2c79fa",
+        "predictions.csv.gz": "6fad81040d8e9022372ce45a2d50190c2c39e2b434bdc1828865e8681b19d03f",
+        "split.csv.gz": "2d5ce2d3f67434ee035aa8d9f74cabcf61af6ec17e391722fd346799ad8558d6"
+      },
+      "candidate_id": 16326,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_joy/16326/model.json",
+      "model_sha256": "aa7da3ce4910ab5365c40aef63e3c26663fe13f0ea3cd0b1389e23b21a2c79fa",
+      "predictors": [
+        "emotion_amusement",
+        "emotion_excitement",
+        "emotion_relief"
+      ],
+      "task_id": "songs:emotion_joy",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "86ed2d0f90102ffe88628504dd0f642e5df7bbb999feb6ea260a488f1703177e",
+        "model.json": "2b550b1c2cc0542b2c1cee236acb49b62bfad1437f5fc285d309abade7d819db",
+        "predictions.csv.gz": "7fa15f37ab0477508d88efe69dae125838d9aaf24121a7701b331cbaccd21c95",
+        "split.csv.gz": "ffe938b9c71cd17cb4f033133d47f2a9b177448df08b7f125b73234cf3416fd0"
+      },
+      "candidate_id": 33319,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_love/33319/model.json",
+      "model_sha256": "2b550b1c2cc0542b2c1cee236acb49b62bfad1437f5fc285d309abade7d819db",
+      "predictors": [
+        "ll_explicit_language",
+        "ll_sexual_content",
+        "primary_genre"
+      ],
+      "task_id": "songs:emotion_love",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "c1292478cfb238738c757bcb903ef1e7be945aa3dd983456042ab4a9fb49da9e",
+        "model.json": "69b8b63bf3102a7d4aab4ab540f37af55d669a1f76d15bf8a44e0e2dc7152e8d",
+        "predictions.csv.gz": "5dcee96f8c9f19d026a9016d80e25dcf10f719044ca783299655cb84931c9946",
+        "split.csv.gz": "fd5f6ce4078825259c65a11b6843c50e9e889eb381e094ebbbcac08329b9345c"
+      },
+      "candidate_id": 18288,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_love/18288/model.json",
+      "model_sha256": "69b8b63bf3102a7d4aab4ab540f37af55d669a1f76d15bf8a44e0e2dc7152e8d",
+      "predictors": [
+        "emotion_annoyance",
+        "emotion_disappointment",
+        "emotion_neutral"
+      ],
+      "task_id": "songs:emotion_love",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "4d72e32cbc83286fb81a16c5d31fd90cee6f78dda8e29749a99590bfb8aebcc5",
+        "model.json": "955bdcbfc607dd226dfd12ab64540a78d9c4585a127777ec7e53e1367c9c3f00",
+        "predictions.csv.gz": "872e55024643c89debe5636659bc378ccfbb2edb42be0a4cd2ddf57e96e8dac5",
+        "split.csv.gz": "fd5f6ce4078825259c65a11b6843c50e9e889eb381e094ebbbcac08329b9345c"
+      },
+      "candidate_id": 33472,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_nervousness/33472/model.json",
+      "model_sha256": "955bdcbfc607dd226dfd12ab64540a78d9c4585a127777ec7e53e1367c9c3f00",
+      "predictors": [
+        "ll_sexual_content",
+        "ll_substance_use",
+        "secondary_genres"
+      ],
+      "task_id": "songs:emotion_nervousness",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "1e09baa98d5a4d7d2a6096093568b3930d994037da43638ed3bc04ba63b03644",
+        "model.json": "4156f26e03c925fd186bca8254c30807fb52cfb91a8793680f61fe493ee37a1a",
+        "predictions.csv.gz": "cbb3f50bda8da1653668638e8efda0af3e6a372efb82b21f3a6f28e9dd0c6662",
+        "split.csv.gz": "e61cef0ba5aa1f803e99e9f901eab4a9551ad3fbfb7971cbd456d55ec79b6e0a"
+      },
+      "candidate_id": 21309,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_nervousness/21309/model.json",
+      "model_sha256": "4156f26e03c925fd186bca8254c30807fb52cfb91a8793680f61fe493ee37a1a",
+      "predictors": [
+        "emotion_confusion",
+        "emotion_fear",
+        "emotion_grief"
+      ],
+      "task_id": "songs:emotion_nervousness",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "8f83bb366d556b021a4c079cb111c7f418fd7973b64c1c4bf6b24db308cdcdfe",
+        "model.json": "e0c495b94b093931239b33a460f680a4fbedc7ec6fac7aeb76f1652d857f6dc8",
+        "predictions.csv.gz": "675d20686d8a22254aedd38de89e7e5321799fd8d344ee89ed7cfffbad04c806",
+        "split.csv.gz": "61f72dff6f212f4b12be516426d67b4ff94b8242d8755e23d351d77dd86fae2c"
+      },
+      "candidate_id": 14531,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_optimism/14531/model.json",
+      "model_sha256": "e0c495b94b093931239b33a460f680a4fbedc7ec6fac7aeb76f1652d857f6dc8",
+      "predictors": [
+        "detox_toxicity",
+        "ll_sexual_content",
+        "mb_duration_min_seconds"
+      ],
+      "task_id": "songs:emotion_optimism",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "0cff9d69724b9dda70f7481845c9492e4f51eda7472c8b6cfc29f9a179a83216",
+        "model.json": "8762169e952b57316d4b9d509978967c885ec97bb5378af28fac31deae677757",
+        "predictions.csv.gz": "11dd7a93191af61c2a1723146cf1f7fd39645a68e113eaf5ee550aa8fd3d2413",
+        "split.csv.gz": "7e2118949b5dc130b3f0d34d6ecb846339ed7e833a9e8f2fb14423776d284667"
+      },
+      "candidate_id": 20197,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_optimism/20197/model.json",
+      "model_sha256": "8762169e952b57316d4b9d509978967c885ec97bb5378af28fac31deae677757",
+      "predictors": [
+        "emotion_caring",
+        "emotion_desire",
+        "ll_sexual_content"
+      ],
+      "task_id": "songs:emotion_optimism",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "707f33c618798793b2c49c71dcda407e320b8350713f59c80aad31a25f9c219c",
+        "model.json": "3f379d4b52dce4590d799601946db1ab203fdb1d813b4d191ec3ffec329f61bc",
+        "predictions.csv.gz": "d7cf085f29bfb8049ca8ab0648ab97f9ab2fcd3da9e3fbc09fc5a36bdafa793f",
+        "split.csv.gz": "7e2118949b5dc130b3f0d34d6ecb846339ed7e833a9e8f2fb14423776d284667"
+      },
+      "candidate_id": 7857,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_pride/7857/model.json",
+      "model_sha256": "3f379d4b52dce4590d799601946db1ab203fdb1d813b4d191ec3ffec329f61bc",
+      "predictors": [
+        "detox_insult",
+        "last_snapshot_month",
+        "ll_violence"
+      ],
+      "task_id": "songs:emotion_pride",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "3231a973e1a6babb9770ad619218dca6da730f158ccc36968e67bdfcaa054f16",
+        "model.json": "3de4b1538a0cd195b1e5bc3b2002796e6a4347c5119035b9982b7c0c8b86dfe8",
+        "predictions.csv.gz": "4123dca905bd752d81ce5d699889e287e83ed67397a6edcdd70ab687d29fcca9",
+        "split.csv.gz": "a9119c177275d47a2f90a9a807039f4cfab9d9161ba00160d6ff0774ec10b4b7"
+      },
+      "candidate_id": 15198,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_pride/15198/model.json",
+      "model_sha256": "3de4b1538a0cd195b1e5bc3b2002796e6a4347c5119035b9982b7c0c8b86dfe8",
+      "predictors": [
+        "emotion_admiration",
+        "emotion_excitement",
+        "emotion_relief"
+      ],
+      "task_id": "songs:emotion_pride",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "e39b91df980e504634524a6cfcf8a45b4a41ba3d77cdf46bd5fe6da4dececbae",
+        "model.json": "87f0482bcd65b084e3a600b3bd5b9487dac493bcf4c38019bc4b8e1c54757c0c",
+        "predictions.csv.gz": "cff8445d0c751b930e87e3e97a977ddf8b8dd54109dde89204ef5faa02c454c5",
+        "split.csv.gz": "45eb6492c09e091411063cb1c709a9727c7285291e0214762f50228226bbf989"
+      },
+      "candidate_id": 6412,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_realization/6412/model.json",
+      "model_sha256": "87f0482bcd65b084e3a600b3bd5b9487dac493bcf4c38019bc4b8e1c54757c0c",
+      "predictors": [
+        "detox_identity_attack",
+        "ll_sexual_content",
+        "mb_recording_count"
+      ],
+      "task_id": "songs:emotion_realization",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "681d5fc81889bf4510c7b3f74fd9819c3a64b00d2c2d8bf3323d4e72dbd85916",
+        "model.json": "4ffefcfd58422919386a3db42c191c9c81515fe04de37b621da58e5d30b813b7",
+        "predictions.csv.gz": "7e09797322dfa453f0f40ee36a296f1b070113f65d96a7eccea1b25391ce3c50",
+        "split.csv.gz": "45eb6492c09e091411063cb1c709a9727c7285291e0214762f50228226bbf989"
+      },
+      "candidate_id": 26160,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_realization/26160/model.json",
+      "model_sha256": "4ffefcfd58422919386a3db42c191c9c81515fe04de37b621da58e5d30b813b7",
+      "predictors": [
+        "emotion_embarrassment",
+        "emotion_relief",
+        "emotion_surprise"
+      ],
+      "task_id": "songs:emotion_realization",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "d1f2b8545250a79e2b78170c536c0b4c569f7a69713f5cc52fe59bdc1d939f2b",
+        "model.json": "74ad1f6543b27ead0348d83ed6027b21edc44ca547660bd73fc9cfe9216a39be",
+        "predictions.csv.gz": "87eb266660826842d7002bf0ba89121ebf0e47f7812dbbc4d388aa5f84db6286",
+        "split.csv.gz": "d106f35655577439463ad9debca60d9e59a740b121e9cd0616809122e1d5a170"
+      },
+      "candidate_id": 7873,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_relief/7873/model.json",
+      "model_sha256": "74ad1f6543b27ead0348d83ed6027b21edc44ca547660bd73fc9cfe9216a39be",
+      "predictors": [
+        "detox_insult",
+        "ll_explicit_language",
+        "ll_sexual_content"
+      ],
+      "task_id": "songs:emotion_relief",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "c6731d35332242788646e7184d8b208d2358c78cd004180732a9620a5daee207",
+        "model.json": "0925b9fc6a59fcbc8544f0b15b615d9d892222f3565d074d23d10894c49052cd",
+        "predictions.csv.gz": "a0a0bad7138d7708e352396aac2c870ff19ddd8d6f88b4aff901bc1e4664e25d",
+        "split.csv.gz": "88af0ac2df68d8eaeba6ad8af19a4062bcd19c2b9efa3f91b3df90c810bd68a6"
+      },
+      "candidate_id": 28941,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_relief/28941/model.json",
+      "model_sha256": "0925b9fc6a59fcbc8544f0b15b615d9d892222f3565d074d23d10894c49052cd",
+      "predictors": [
+        "emotion_joy",
+        "emotion_pride",
+        "emotion_realization"
+      ],
+      "task_id": "songs:emotion_relief",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "a97019e2e423c48410a9d08340b4f3d36201b518e381aae03cdac4f1aa3415df",
+        "model.json": "7d97b61f2716f948c8364d4159086fb192a992dd8dca11d01d1e0afb9065cb00",
+        "predictions.csv.gz": "749ef6c490e9a5cea181929ac0680613773d9b63d8acc081acfa7ee1bc35f951",
+        "split.csv.gz": "88af0ac2df68d8eaeba6ad8af19a4062bcd19c2b9efa3f91b3df90c810bd68a6"
+      },
+      "candidate_id": 12041,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_remorse/12041/model.json",
+      "model_sha256": "7d97b61f2716f948c8364d4159086fb192a992dd8dca11d01d1e0afb9065cb00",
+      "predictors": [
+        "detox_sexual_explicit",
+        "ll_sexual_content",
+        "total_chart_points"
+      ],
+      "task_id": "songs:emotion_remorse",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "cb777094eda11b1bc75938a851218409eabcfe8175a86e9603d294f6158c7ae1",
+        "model.json": "1dc959cd85d55cd9ceccb3352c0b9ec165e96f558c42076128e07538e7de3d1f",
+        "predictions.csv.gz": "e71367c729c37a681df8f7bd2e0342eff959efad6ad42530ba77e2f4b7a809ea",
+        "split.csv.gz": "514f34d594aac394aefea794802c2add3f3f7f7af84518b1ce086cfd94ac38c6"
+      },
+      "candidate_id": 23708,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_remorse/23708/model.json",
+      "model_sha256": "1dc959cd85d55cd9ceccb3352c0b9ec165e96f558c42076128e07538e7de3d1f",
+      "predictors": [
+        "emotion_disappointment",
+        "emotion_embarrassment",
+        "emotion_sadness"
+      ],
+      "task_id": "songs:emotion_remorse",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "6d4adc8058f30b74f3076f74c1693b2f07d770954c677ed5f28b427d4d3b283d",
+        "model.json": "cdb0d9fffcb76767da58c7ebb0c11a2024fba9b16155e3d2f356bb375f32fba1",
+        "predictions.csv.gz": "1ab93f33052592d39faf5a8c4b0c7d6d46dc6da0759ed06c270e1bf787580433",
+        "split.csv.gz": "852a9237ab71b7cf1f9aa20b26efbc98128e971eb158b92bad5f993e14f57e16"
+      },
+      "candidate_id": 33310,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_sadness/33310/model.json",
+      "model_sha256": "cdb0d9fffcb76767da58c7ebb0c11a2024fba9b16155e3d2f356bb375f32fba1",
+      "predictors": [
+        "ll_explicit_language",
+        "ll_sexual_content",
+        "ll_substance_use"
+      ],
+      "task_id": "songs:emotion_sadness",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "eda87c344d85a75de0792e854143d864274d91c9908cf9ac7874501ff5757a0f",
+        "model.json": "e7ef86a66a5db55862dba45d28033a7af2779e68b2cb31ac9bcf0ed88c5c937b",
+        "predictions.csv.gz": "ae718605f064539f19416b5d25486759ebda3c12ee42cf631a063a0a6b69a7e3",
+        "split.csv.gz": "852a9237ab71b7cf1f9aa20b26efbc98128e971eb158b92bad5f993e14f57e16"
+      },
+      "candidate_id": 23840,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_sadness/23840/model.json",
+      "model_sha256": "e7ef86a66a5db55862dba45d28033a7af2779e68b2cb31ac9bcf0ed88c5c937b",
+      "predictors": [
+        "emotion_disappointment",
+        "emotion_grief",
+        "emotion_nervousness"
+      ],
+      "task_id": "songs:emotion_sadness",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "d4fa755134cf29934a6da631943e08b4b95bc4a3d15533b85327b3686b56471c",
+        "model.json": "a48229f6d0d29a1da63b10bed88008abb767c4c7c7b4fd27ac77488d25cc1bc8",
+        "predictions.csv.gz": "62a0ac5feed2c86b7fd473cace17b8019731dd91f1993ca757096650c83f2f0f",
+        "split.csv.gz": "5869e112cae280f7a103bcb20121b5ab1d5323d2316b9a73b2851fabb67b2fe2"
+      },
+      "candidate_id": 33310,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_surprise/33310/model.json",
+      "model_sha256": "a48229f6d0d29a1da63b10bed88008abb767c4c7c7b4fd27ac77488d25cc1bc8",
+      "predictors": [
+        "ll_explicit_language",
+        "ll_sexual_content",
+        "ll_substance_use"
+      ],
+      "task_id": "songs:emotion_surprise",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "58d18b9b47d3305bbe574609c3575ee1a5386fed07cb56a4d6281c0993f68f32",
+        "model.json": "e5d299daf5985fd4d10fc9d80836a1f73d616a1d8e9d99699167af5479fea7ea",
+        "predictions.csv.gz": "cb3b40f82e6b97607a7247f3c0c01dc026049c8052f1f577f6d3929f38101dde",
+        "split.csv.gz": "38ea67d31956fc5b9810c2211554b87c28cf3968831e996a06c67baa34d207f8"
+      },
+      "candidate_id": 22142,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_surprise/22142/model.json",
+      "model_sha256": "e5d299daf5985fd4d10fc9d80836a1f73d616a1d8e9d99699167af5479fea7ea",
+      "predictors": [
+        "emotion_curiosity",
+        "emotion_excitement",
+        "emotion_realization"
+      ],
+      "task_id": "songs:emotion_surprise",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "fbc89742fab13e9c8eb5cc264ddcc1ec3e90a19c0c2a14616bd4c11078f576a8",
+        "model.json": "304901010523194333fa6fd8473c1257693138e17a2ddd79d5a78abda8801a61",
+        "predictions.csv.gz": "e34be7b5ac572e5e31fcd46c3ce094d58c10f042341dd9592697a60e16fc1873",
+        "split.csv.gz": "38ea67d31956fc5b9810c2211554b87c28cf3968831e996a06c67baa34d207f8"
+      },
+      "candidate_id": 7916,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_neutral/7916/model.json",
+      "model_sha256": "304901010523194333fa6fd8473c1257693138e17a2ddd79d5a78abda8801a61",
+      "predictors": [
+        "detox_insult",
+        "ll_substance_use",
+        "primary_genre"
+      ],
+      "task_id": "songs:emotion_neutral",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "0e519eb24478eea2a6497d57ab74a64f346ed929d188a1b5af2368a684d22726",
+        "model.json": "1edf4d89c11e17be965f232bb75f9e25be80c4755d52935fce4f3513ccb691de",
+        "predictions.csv.gz": "c30d6120a3d5cf34d8bd159bdfec1058621b851d5c70b50a49f6ad2a18931b65",
+        "split.csv.gz": "d11bf90bb8f0de414ba9ee243975dec2d9f2c089f0f5e7656edbbcf247e1f48f"
+      },
+      "candidate_id": 15043,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__emotion_neutral/15043/model.json",
+      "model_sha256": "1edf4d89c11e17be965f232bb75f9e25be80c4755d52935fce4f3513ccb691de",
+      "predictors": [
+        "emotion_admiration",
+        "emotion_disappointment",
+        "emotion_love"
+      ],
+      "task_id": "songs:emotion_neutral",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "6f1070f2a0a85a3f9bf7cd36ac9752864683d9d487f8bbe3d393751e14089ce0",
+        "model.json": "55c0e7e7cbd6b70465f70a7ec515fa141eb147d37751a77829a35f4d21145894",
+        "predictions.csv.gz": "8b3f9c37f13b579396016e8bf5f7db50f558afa76271a94e24df05b1138f6c02",
+        "split.csv.gz": "ea377f8d2cc1435cd6203d8a907d97560d6172ed7f0a55b4fc8a302057fda629"
+      },
+      "candidate_id": 33422,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__sentiment_negative/33422/model.json",
+      "model_sha256": "55c0e7e7cbd6b70465f70a7ec515fa141eb147d37751a77829a35f4d21145894",
+      "predictors": [
+        "ll_explicit_language",
+        "ll_sexual_content",
+        "ll_violence"
+      ],
+      "task_id": "songs:sentiment_negative",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "90ec697c5423b709fcc163dfa0e16c8eb8af4132e296d879f8c5373120c8bcff",
+        "model.json": "7db27b866d902e498c5bb492df71dcda43612a6631a890cbfed06b313bf61470",
+        "predictions.csv.gz": "f0b97593dd07bd51e8ec51cbd73e019560e815abef15127cb68595fd0c446875",
+        "split.csv.gz": "ea377f8d2cc1435cd6203d8a907d97560d6172ed7f0a55b4fc8a302057fda629"
+      },
+      "candidate_id": 30500,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__sentiment_negative/30500/model.json",
+      "model_sha256": "7db27b866d902e498c5bb492df71dcda43612a6631a890cbfed06b313bf61470",
+      "predictors": [
+        "emotion_neutral",
+        "ll_violence",
+        "sentiment_positive"
+      ],
+      "task_id": "songs:sentiment_negative",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "828d28a9eb87a54917281d68fa2b4e55755cd8f38f8266fb2079b434426126e0",
+        "model.json": "0b352c891339d02f991c68fd02c4deee05eb73c45b45742b3abe53542ed5559a",
+        "predictions.csv.gz": "3e6c8614f2a65965fae0255b0fc65656983177eeb77a4178dafbfe0cc9ddbcd8",
+        "split.csv.gz": "2aa9500b8ed6596ce75692a81962787a89a8e01ff10b2a8a3a91e7013e1adcd0"
+      },
+      "candidate_id": 33172,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__sentiment_neutral/33172/model.json",
+      "model_sha256": "0b352c891339d02f991c68fd02c4deee05eb73c45b45742b3abe53542ed5559a",
+      "predictors": [
+        "last_chart_date",
+        "ll_violence",
+        "primary_genre"
+      ],
+      "task_id": "songs:sentiment_neutral",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "d1d11c98ef0bdaae9ce9f0058f2bd61d66a88bd11bcbf7401664de24eb80d8c0",
+        "model.json": "8b6f4d39c8cfd0a6cff99b30e21eb77f305602def6c4aac2469fe3efaf5f9ed0",
+        "predictions.csv.gz": "748c9ded57808ad795cb4b30054984cabf9ed834ed57fc14ab40fe8882df38f0",
+        "split.csv.gz": "37a06ae90422533c02915441866d39b3c6cdf297beed63a76a471be7e2bf8d9f"
+      },
+      "candidate_id": 28822,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__sentiment_neutral/28822/model.json",
+      "model_sha256": "8b6f4d39c8cfd0a6cff99b30e21eb77f305602def6c4aac2469fe3efaf5f9ed0",
+      "predictors": [
+        "emotion_joy",
+        "emotion_love",
+        "sentiment_negative"
+      ],
+      "task_id": "songs:sentiment_neutral",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "74b5b9618985287fc7cf1f0b1c481cd05bf91c886e5bc9aa68f4773f579947ed",
+        "model.json": "a187aef250b0f6841e4e2839e72587d71dcbbf6469b291a58c96ca0fa8468b7f",
+        "predictions.csv.gz": "dc380c6931ba82af99bc9bea7b0234a2ad9aff4f54888348ab7d5a8cd335c6b6",
+        "split.csv.gz": "8391d8378ad7d009cf1d53bce8592cbc6702693a46fb0c73d135d4576afbd5f2"
+      },
+      "candidate_id": 14539,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__sentiment_positive/14539/model.json",
+      "model_sha256": "a187aef250b0f6841e4e2839e72587d71dcbbf6469b291a58c96ca0fa8468b7f",
+      "predictors": [
+        "detox_toxicity",
+        "ll_sexual_content",
+        "mb_duration_min_seconds"
+      ],
+      "task_id": "songs:sentiment_positive",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "ed8e8743f45d725e79cdce47e2a1d33e94b1178f1e509891dbbe1979512fd5f5",
+        "model.json": "590cd05478859f8959dbde0e78f40999395b646f2eb6797d8e0b7304e2573c51",
+        "predictions.csv.gz": "914e2064c65bdb5624e1c8a435ee0954a76d50f5b89780745b73731ee4527966",
+        "split.csv.gz": "cfe828ced3304df9a7bcb8971dd914d92883d7c11a1717bd13ed05b5e8e07c59"
+      },
+      "candidate_id": 28822,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__sentiment_positive/28822/model.json",
+      "model_sha256": "590cd05478859f8959dbde0e78f40999395b646f2eb6797d8e0b7304e2573c51",
+      "predictors": [
+        "emotion_joy",
+        "emotion_love",
+        "sentiment_negative"
+      ],
+      "task_id": "songs:sentiment_positive",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "366502700905c7b1c62cbf15907870987c3d4fbf2d34c9626373e1d5fcb94eff",
+        "model.json": "e0181c26b64ab6fab2952ad8299007789a748144103aa8cd897343911ddc2f0a",
+        "predictions.csv.gz": "e6ffeb29907dc8c863c6b0caed4a98c1898a2b4c93ce4cc65eef4422e90f38ae",
+        "split.csv.gz": "046506f4f890be98b6d256e174d2c208fae17252ee1c6e4b37ea9dca95dd0159"
+      },
+      "candidate_id": 7893,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_duration_median_seconds/7893/model.json",
+      "model_sha256": "e0181c26b64ab6fab2952ad8299007789a748144103aa8cd897343911ddc2f0a",
+      "predictors": [
+        "detox_insult",
+        "ll_explicit_language",
+        "ll_violence"
+      ],
+      "task_id": "songs:mb_duration_median_seconds",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "d2e15f6ed5682dd48249f5cd751e15820babbe85b4e13043a1fbe0bedc4db4be",
+        "model.json": "588ab665c3726d870015e725a1add5a794627f9610341ec1e4776b401623ec9a",
+        "predictions.csv.gz": "0056911ea51534917c9df4381dd973242f3252f0db07253c21ddbce99551ba93",
+        "split.csv.gz": "ab4cc601f42a19a800140b42484b7b30fead4a1e5e5dac780efb1c212a71a755"
+      },
+      "candidate_id": 33826,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_duration_median_seconds/33826/model.json",
+      "model_sha256": "588ab665c3726d870015e725a1add5a794627f9610341ec1e4776b401623ec9a",
+      "predictors": [
+        "ll_violence",
+        "mb_distinct_duration_count",
+        "mb_recording_count"
+      ],
+      "task_id": "songs:mb_duration_median_seconds",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "3cf547a2ba6f54e8aaa42f76fd2a2a33a5e5600c5757a33dff0f00c8b53e93cc",
+        "model.json": "420488ba724e92cf2cdce1b941ad139ea1003d29c453062175f93e8415a4a6e1",
+        "predictions.csv.gz": "2a9888309701d3c8fc09e5a8cda108bb51a9d9d71d149131b48d3f0986dc67dd",
+        "split.csv.gz": "e512aa2aa1e2fd94da5db6a83eb4728e0840f3b672b12ef64942d9275106e942"
+      },
+      "candidate_id": 3420,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_duration_min_seconds/3420/model.json",
+      "model_sha256": "420488ba724e92cf2cdce1b941ad139ea1003d29c453062175f93e8415a4a6e1",
+      "predictors": [
+        "best_chart_rank",
+        "snapshot_months_selected",
+        "total_chart_points"
+      ],
+      "task_id": "songs:mb_duration_min_seconds",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "312a4d7f8caf14440013122f4e2ccbb32216906fe66b8e7f1a01631a677e2173",
+        "model.json": "f9b2145e381ae33dbefb1d6fa3c4fb9c5b8aa3cfae2c9805c657857039831f76",
+        "predictions.csv.gz": "ef3a607d041f2e1f0edb90d84cb9616ab4772ef470c9fc8c24ea54ffc26de77d",
+        "split.csv.gz": "e512aa2aa1e2fd94da5db6a83eb4728e0840f3b672b12ef64942d9275106e942"
+      },
+      "candidate_id": 33990,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_duration_min_seconds/33990/model.json",
+      "model_sha256": "f9b2145e381ae33dbefb1d6fa3c4fb9c5b8aa3cfae2c9805c657857039831f76",
+      "predictors": [
+        "mb_distinct_duration_count",
+        "snapshot_months_selected",
+        "total_chart_points"
+      ],
+      "task_id": "songs:mb_duration_min_seconds",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "177be05f7ef37fdadf8c6b0b96f5793837dc4cca26424bb55c810de760d3ec18",
+        "model.json": "724b0a552f7f486a3240e5ea535217dfb525c3f40e4f23944700000de09442a9",
+        "predictions.csv.gz": "921cb93d41b3258addf69289b638934d5febf7c82eda9197d0858061fbe865ae",
+        "split.csv.gz": "659ffd4b4ae21126b0de6909466833772558cf0599ff605f27addd11c2830fc6"
+      },
+      "candidate_id": 0,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_duration_max_seconds/0/model.json",
+      "model_sha256": "724b0a552f7f486a3240e5ea535217dfb525c3f40e4f23944700000de09442a9",
+      "predictors": [
+        "best_chart_rank"
+      ],
+      "task_id": "songs:mb_duration_max_seconds",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "0ea11a0bc9e74d3de68c5697feb5029ca4c7ea21ec4d8b6b7bf8cfcb29e0e049",
+        "model.json": "4cd7a32168dcacbc610a304bf878be0b3c1bad5b038eec54af07b0bc963b7828",
+        "predictions.csv.gz": "b4cfe12447a4020ff692b79f14830ed6cd7ab3c1ba4e02f2bd38540e28b072ef",
+        "split.csv.gz": "62cbc9017a5877af0f634781ae5b8540e135c73fc12fac24e5b1b5e41737da1c"
+      },
+      "candidate_id": 1681,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_duration_max_seconds/1681/model.json",
+      "model_sha256": "4cd7a32168dcacbc610a304bf878be0b3c1bad5b038eec54af07b0bc963b7828",
+      "predictors": [
+        "mb_distinct_duration_count",
+        "mb_recording_count"
+      ],
+      "task_id": "songs:mb_duration_max_seconds",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "8fa991d179f41f50a41dda4fae75f2d16693b3d560ac9265bccaecf9d9b3b04a",
+        "model.json": "2ba6ba84f3b918d82ca284f7cdfdde09e397be5854edff22d132dfd6539d3ec9",
+        "predictions.csv.gz": "51a7406f1fecd3cbfb2c1a17b7f66adf65d21150f8a6ae63059d839e93236390",
+        "split.csv.gz": "1a1def2d251ed71a3f54cbb40f6df4bb52f0ba82ed6a5512091751c69261f2fb"
+      },
+      "candidate_id": 32977,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_recording_count/32977/model.json",
+      "model_sha256": "2ba6ba84f3b918d82ca284f7cdfdde09e397be5854edff22d132dfd6539d3ec9",
+      "predictors": [
+        "first_snapshot_month",
+        "last_snapshot_month",
+        "mb_release_year"
+      ],
+      "task_id": "songs:mb_recording_count",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "f063083dc32018f81ae1dba41b9b335579bacbbe7a2f05c3b5d7aad5e8673e13",
+        "model.json": "636e7475b6d0a6f0238162ae7d6df441201ef6c7a3651b85da16dc4cfc94a857",
+        "predictions.csv.gz": "e33c9cf453352db58775aad2bea55557cfabeacf9d945252831fe546c05471f4",
+        "split.csv.gz": "1a1def2d251ed71a3f54cbb40f6df4bb52f0ba82ed6a5512091751c69261f2fb"
+      },
+      "candidate_id": 33917,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_recording_count/33917/model.json",
+      "model_sha256": "636e7475b6d0a6f0238162ae7d6df441201ef6c7a3651b85da16dc4cfc94a857",
+      "predictors": [
+        "mb_distinct_duration_count",
+        "mb_duration_max_seconds",
+        "mb_release_count"
+      ],
+      "task_id": "songs:mb_recording_count",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "0d0fdf38dfce71ce8aeffbd32148e5ad5001c1e1a3b0ea952a87e7956a701868",
+        "model.json": "b4a2f4c919788669bbbc53a0ad81966908ca18a97cbf73cdc2e181349278e046",
+        "predictions.csv.gz": "face002bcd93fece3fdf2254598ede4b64e049fa7e545a377728edba4577b2ab",
+        "split.csv.gz": "c3326ed32d170307cf87ac83656b08f8fa518f1a00bea0b7202300ccdbffbcc7"
+      },
+      "candidate_id": 34195,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_release_count/34195/model.json",
+      "model_sha256": "b4a2f4c919788669bbbc53a0ad81966908ca18a97cbf73cdc2e181349278e046",
+      "predictors": [
+        "mb_release_year",
+        "primary_genre",
+        "secondary_genres"
+      ],
+      "task_id": "songs:mb_release_count",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "7237447012d7b9250276598672593c0a865f2801f82f6faf35eb4bec8f1c2669",
+        "model.json": "b977140e2f7a0d0536b6de3470c969a217a4a531a95f7594a81dfcb3b2749dff",
+        "predictions.csv.gz": "b0b506448c8c91d40589a467fa7297f5d6242e05f134b0e4d659d5b5915887e9",
+        "split.csv.gz": "df104988690ba6666634210d8e8f3c6e8e5dcef68710d1db8d458257252c8cf8"
+      },
+      "candidate_id": 3379,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_release_count/3379/model.json",
+      "model_sha256": "b977140e2f7a0d0536b6de3470c969a217a4a531a95f7594a81dfcb3b2749dff",
+      "predictors": [
+        "best_chart_rank",
+        "mb_recording_count",
+        "primary_genre"
+      ],
+      "task_id": "songs:mb_release_count",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "0e4ad31093eba877a4545b90e8f95b61c2f49301f5ebc8255f0095bb67213268",
+        "model.json": "717bee69638b1d431aabae509404b2b24fa1ef77a144b97321821e21ab10c870",
+        "predictions.csv.gz": "c4cef0c95ead03832d3382f4cb8c9f2f4f25742899e87bf2cb80bdc563c0aff4",
+        "split.csv.gz": "93b77633de32413b7a540a425970039bb8b77104e7b85efac30bac9857867454"
+      },
+      "candidate_id": 32978,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_distinct_duration_count/32978/model.json",
+      "model_sha256": "717bee69638b1d431aabae509404b2b24fa1ef77a144b97321821e21ab10c870",
+      "predictors": [
+        "first_snapshot_month",
+        "last_snapshot_month",
+        "primary_genre"
+      ],
+      "task_id": "songs:mb_distinct_duration_count",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "de8bca43141f716225bc012e1732723bbd05b6cffb3889138b8a3f7f15193d7d",
+        "model.json": "a2beb5a42d37e96d674b3cb879f2ad37b9831110b774a289d20b66aa89978eb9",
+        "predictions.csv.gz": "61a1579ea1260299e661459dc070f031f070be3bd05c20498a07af44d7638b17",
+        "split.csv.gz": "93b77633de32413b7a540a425970039bb8b77104e7b85efac30bac9857867454"
+      },
+      "candidate_id": 33993,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_distinct_duration_count/33993/model.json",
+      "model_sha256": "a2beb5a42d37e96d674b3cb879f2ad37b9831110b774a289d20b66aa89978eb9",
+      "predictors": [
+        "mb_duration_median_seconds",
+        "mb_duration_min_seconds",
+        "mb_recording_count"
+      ],
+      "task_id": "songs:mb_distinct_duration_count",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "47bb752786a5da9d9d683a5a0c2e0cb891cfbc7b7bcda6579bf9d5bb7f796cc2",
+        "model.json": "053a82e6fb55ca56415645dc261e05f33b5b7cbbf4f8dba7c05dcd09f942e401",
+        "predictions.csv.gz": "0e5bf4f2af90a40d214235f07b2f5f5973e6d5424c5fbc2e62337c8fcab07736",
+        "split.csv.gz": "5362eba3ecaba948aeaf6269fb66fc4504125e18aa2795b7ced1bc218f600803"
+      },
+      "candidate_id": 33276,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__weekly_observation_count/33276/model.json",
+      "model_sha256": "053a82e6fb55ca56415645dc261e05f33b5b7cbbf4f8dba7c05dcd09f942e401",
+      "predictors": [
+        "last_chart_date",
+        "mb_release_count",
+        "secondary_genres"
+      ],
+      "task_id": "songs:weekly_observation_count",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "f7dd6de09bda7442bbeeebeeda32f9f3a5c20e7b0888c08f7c074c1d75a08b5e",
+        "model.json": "c682821d5a6342df857d0ec2dc189ca2f89946724cf4bedd6844fc3039bfcc45",
+        "predictions.csv.gz": "343322d9fd3f9f78b623de9271bfe515cf0c80d807f38cd35ef27f7597b9c4f3",
+        "split.csv.gz": "2deb82fae3cf52a98d98ee02f48bb2645a851a8a85569018d69f059955d3e5e8"
+      },
+      "candidate_id": 32757,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__weekly_observation_count/32757/model.json",
+      "model_sha256": "c682821d5a6342df857d0ec2dc189ca2f89946724cf4bedd6844fc3039bfcc45",
+      "predictors": [
+        "first_chart_date",
+        "first_snapshot_month",
+        "snapshot_months_selected"
+      ],
+      "task_id": "songs:weekly_observation_count",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "7bef35cf265ea31a962348fe477fa7561ec976d990c942c255928470c9bb7bb5",
+        "model.json": "a871ab99b022505500bd5775b9daca3d133912ca18aed42a5656b627b19a16e4",
+        "predictions.csv.gz": "562bc7a0171a36bff0f75709fd83fa5825f9996fd06c175dc707f6c9d28a9f5a",
+        "split.csv.gz": "345cce2c8f659637774e30ee3ba66425d2be9880348fd0c51db01c860e06fd1b"
+      },
+      "candidate_id": 33096,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__chart_weeks/33096/model.json",
+      "model_sha256": "a871ab99b022505500bd5775b9daca3d133912ca18aed42a5656b627b19a16e4",
+      "predictors": [
+        "last_chart_date",
+        "mb_release_count",
+        "secondary_genres"
+      ],
+      "task_id": "songs:chart_weeks",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "52dd8a6d88e92cf176c6bf4b4f4e2c01c6411256022a6c79f95110bb82ad4beb",
+        "model.json": "d797191323147832de72bd78375ce964342f77937777859dbb15ee83928c199e",
+        "predictions.csv.gz": "06df754c3cd3ac9c40329492622d6e68bd5148858c5e1e533601a5051310551c",
+        "split.csv.gz": "862701df197968246f7d3fd7abf72e020b5959ff1b6d82cf37f16e7c56a7ad55"
+      },
+      "candidate_id": 32526,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__chart_weeks/32526/model.json",
+      "model_sha256": "d797191323147832de72bd78375ce964342f77937777859dbb15ee83928c199e",
+      "predictors": [
+        "first_chart_date",
+        "first_snapshot_month",
+        "snapshot_months_selected"
+      ],
+      "task_id": "songs:chart_weeks",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "787ee4330625161d7f5d3033f15d40049f9889ab35759bbf72868df83e3f893b",
+        "model.json": "a1afb35c68ecb5ae6f6188a0fde195e15e50b6f359a604e595b7d5eb225e1649",
+        "predictions.csv.gz": "301356b8a0cb0e70e5204e533a94b6b06bc786d0e076201cc159db415b57a448",
+        "split.csv.gz": "862701df197968246f7d3fd7abf72e020b5959ff1b6d82cf37f16e7c56a7ad55"
+      },
+      "candidate_id": 32787,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__total_chart_points/32787/model.json",
+      "model_sha256": "a1afb35c68ecb5ae6f6188a0fde195e15e50b6f359a604e595b7d5eb225e1649",
+      "predictors": [
+        "first_chart_date",
+        "last_snapshot_month",
+        "mb_release_count"
+      ],
+      "task_id": "songs:total_chart_points",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "aab06e31b99cc88dc12ed85e15559459c28d16cc9103353bffa7bd853cc0e112",
+        "model.json": "7101d58699c054480a385006ac03fbf5e1e66f1094b031cf911b209bbd1bc46d",
+        "predictions.csv.gz": "7c416bc275394a29a6aa23fcddfe5d33ea921f4b3e7c9ccc0f36d638d1d3ab38",
+        "split.csv.gz": "c9770f6a9e8b6f7ff62e224b25ad62d4b9e356210add86fadade3a91bc361ea9"
+      },
+      "candidate_id": 1820,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__total_chart_points/1820/model.json",
+      "model_sha256": "7101d58699c054480a385006ac03fbf5e1e66f1094b031cf911b209bbd1bc46d",
+      "predictors": [
+        "best_chart_rank",
+        "chart_weeks",
+        "primary_genre"
+      ],
+      "task_id": "songs:total_chart_points",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "33d2ed419e42f4d310aabe4a57c255907489d87da5a8158bee7f9bd832a5c536",
+        "model.json": "2a0dddec6623fbb1f01e1dcf95b623d1fd391506d36495b18e8887d0c5dd2e3d",
+        "predictions.csv.gz": "06e070a0e4d735e9775d7f9b175c3c9b6e08fbd5b400691efa885a6813e5f127",
+        "split.csv.gz": "2c3544642ea99de7bcda929380496631873745af920b475ab6e4ea9582e2e472"
+      },
+      "candidate_id": 33429,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__snapshot_months_selected/33429/model.json",
+      "model_sha256": "2a0dddec6623fbb1f01e1dcf95b623d1fd391506d36495b18e8887d0c5dd2e3d",
+      "predictors": [
+        "last_snapshot_month",
+        "mb_release_count",
+        "secondary_genres"
+      ],
+      "task_id": "songs:snapshot_months_selected",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "8d4e6d454447084969629abafc9023a4c33372775fa4ea8b8b2b770dc934de44",
+        "model.json": "c69eaa2487eff8757535c88a81d5b5211346252e6f6966ce1aa25d25cce67ec0",
+        "predictions.csv.gz": "ba33ff975dc2aee98c7264e078f8a93a9478ecba96c06c12b57f100b31b0833e",
+        "split.csv.gz": "95af368d0a2012b4bff98dbc3735fa0dc427546b5fae3e2d5602ff7b82ceb76e"
+      },
+      "candidate_id": 32758,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__snapshot_months_selected/32758/model.json",
+      "model_sha256": "c69eaa2487eff8757535c88a81d5b5211346252e6f6966ce1aa25d25cce67ec0",
+      "predictors": [
+        "first_chart_date",
+        "first_snapshot_month",
+        "weekly_observation_count"
+      ],
+      "task_id": "songs:snapshot_months_selected",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "c8775ebd772c5f7ae7e30d8c09333715226c7aca34142d570f640c5f7fd38d2e",
+        "model.json": "d71a6383922bfa1ef02d1c0b7b9cdb878058c6b45d43651cdba4671c49a60dd0",
+        "predictions.csv.gz": "b8ac18dd281b451ac9ac5cd0cff057c76cb86b6341d6999c30961445498214ba",
+        "split.csv.gz": "5e68eb7b603d5a922b185bb00723d50177bc9aee394675bfc93c6577f211d377"
+      },
+      "candidate_id": 1277,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__first_chart_date/1277/model.json",
+      "model_sha256": "d71a6383922bfa1ef02d1c0b7b9cdb878058c6b45d43651cdba4671c49a60dd0",
+      "predictors": [
+        "best_chart_rank",
+        "chart_weeks",
+        "detox_obscene"
+      ],
+      "task_id": "songs:first_chart_date",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "c8775ebd772c5f7ae7e30d8c09333715226c7aca34142d570f640c5f7fd38d2e",
+        "model.json": "d71a6383922bfa1ef02d1c0b7b9cdb878058c6b45d43651cdba4671c49a60dd0",
+        "predictions.csv.gz": "b8ac18dd281b451ac9ac5cd0cff057c76cb86b6341d6999c30961445498214ba",
+        "split.csv.gz": "5e68eb7b603d5a922b185bb00723d50177bc9aee394675bfc93c6577f211d377"
+      },
+      "candidate_id": 1277,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__first_chart_date/1277/model.json",
+      "model_sha256": "d71a6383922bfa1ef02d1c0b7b9cdb878058c6b45d43651cdba4671c49a60dd0",
+      "predictors": [
+        "best_chart_rank",
+        "chart_weeks",
+        "detox_obscene"
+      ],
+      "task_id": "songs:first_chart_date",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "89794144cc6518ad8da60f262fa0d5e270345247c342432a9ca9dfe450477506",
+        "model.json": "f1702dbceac6257a9076f520e386b2f41723029975708e2bf1284e316fb526f2",
+        "predictions.csv.gz": "d155f54a8cf6d5d0c404e176b452b82d2411d2f321cb613cb27c51f17cab743f",
+        "split.csv.gz": "c308425f90165a2889aa30ce4401d429405e980f0f8ba45c44aac90957fa6fd3"
+      },
+      "candidate_id": 34090,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__last_chart_date/34090/model.json",
+      "model_sha256": "f1702dbceac6257a9076f520e386b2f41723029975708e2bf1284e316fb526f2",
+      "predictors": [
+        "mb_duration_min_seconds",
+        "primary_genre",
+        "snapshot_months_selected"
+      ],
+      "task_id": "songs:last_chart_date",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "ecaf152847eeb3e66652cfdf2dff73b75236363eec6eb2f915ff87687a714e7a",
+        "model.json": "d6044a2961d230ec42cdfc1b75230925a3357e4e5ff9ea9947e79003e1f0da49",
+        "predictions.csv.gz": "3790135687004e4d629f9010841159a8aac4dfee80007d064afdce55a575b69c",
+        "split.csv.gz": "c308425f90165a2889aa30ce4401d429405e980f0f8ba45c44aac90957fa6fd3"
+      },
+      "candidate_id": 34199,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__last_chart_date/34199/model.json",
+      "model_sha256": "d6044a2961d230ec42cdfc1b75230925a3357e4e5ff9ea9947e79003e1f0da49",
+      "predictors": [
+        "mb_release_year",
+        "primary_genre",
+        "snapshot_months_selected"
+      ],
+      "task_id": "songs:last_chart_date",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "88b73501f830049e2d1383b259a6dc93b20b5a314c059f049465c9b4f972f035",
+        "model.json": "d93f577ae246cefb99aa9b575bcf16d69aa4e80cc1f59c833c0fc634767be986",
+        "predictions.csv.gz": "ff516c6ba6f3aa5cade837b6bc9557f7f703e78970ecb704546bc7bce3b4f165",
+        "split.csv.gz": "fef56d350fcccd70843bfc9266dc5eafdde03e1e77d901b5691dd7e3fd9de78f"
+      },
+      "candidate_id": 34090,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__first_snapshot_month/34090/model.json",
+      "model_sha256": "d93f577ae246cefb99aa9b575bcf16d69aa4e80cc1f59c833c0fc634767be986",
+      "predictors": [
+        "mb_duration_min_seconds",
+        "primary_genre",
+        "snapshot_months_selected"
+      ],
+      "task_id": "songs:first_snapshot_month",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "494aa377fb36225eaefb5e930cf433a2bfe1e6cb3d73b61ccb0cda3a74b2e896",
+        "model.json": "cf3e5573336f896e76004ed20edbf7407853ab565edac95d69118ce9586d80e6",
+        "predictions.csv.gz": "db8b0b12cfe9a8433e8700f0d8d96540d3b86c6d4bb6a5b4f80c847d97167071",
+        "split.csv.gz": "9533c56aeb489d5c79b705f7dc5defc9a95e3643bad24f7d4794577212802a7a"
+      },
+      "candidate_id": 34199,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__first_snapshot_month/34199/model.json",
+      "model_sha256": "cf3e5573336f896e76004ed20edbf7407853ab565edac95d69118ce9586d80e6",
+      "predictors": [
+        "mb_release_year",
+        "primary_genre",
+        "snapshot_months_selected"
+      ],
+      "task_id": "songs:first_snapshot_month",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "0ba3d0c3a67647bfa69f2dad031e32f65628b37bf19ed536bf552da1923fb6de",
+        "model.json": "a3a522e699e2cf21cf5518718fdf14b90ebaab013ee68ea8ea678e47327a4c21",
+        "predictions.csv.gz": "452c9115680f4d4fbaa206141a71f5644ac0a330e3c4788e5425519987fe50b4",
+        "split.csv.gz": "fbd5d271eefe5d0db479cc8cd866736d735c1f0d321afbaf8c321e5decb59c32"
+      },
+      "candidate_id": 34090,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__last_snapshot_month/34090/model.json",
+      "model_sha256": "a3a522e699e2cf21cf5518718fdf14b90ebaab013ee68ea8ea678e47327a4c21",
+      "predictors": [
+        "mb_duration_min_seconds",
+        "primary_genre",
+        "snapshot_months_selected"
+      ],
+      "task_id": "songs:last_snapshot_month",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "c782a17bc790070a4be2d47fb62736454b65f2c7b0fe2b8ee0df45c0d5ce1b45",
+        "model.json": "7719ac1cc789d2bf10f8876319b124a56cd4b14d2cc5ff25d05c3e6364d121de",
+        "predictions.csv.gz": "a19cb366c367ff9bbcc506888f0dc10891e259cd9efff2e9aecabbea3a068c39",
+        "split.csv.gz": "a7a5355f17ee782183d30cade7c13eb020bf15b632867ae9bd27667854114b03"
+      },
+      "candidate_id": 34199,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__last_snapshot_month/34199/model.json",
+      "model_sha256": "7719ac1cc789d2bf10f8876319b124a56cd4b14d2cc5ff25d05c3e6364d121de",
+      "predictors": [
+        "mb_release_year",
+        "primary_genre",
+        "snapshot_months_selected"
+      ],
+      "task_id": "songs:last_snapshot_month",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "40e291aa5aacc76e05fa3ce6b3870c429bc4e410d44624abcc7bb92521ea3745",
+        "model.json": "9382a580df9e569d337ba82989e00754413d92f81544e622e5231b6f31933d7b",
+        "predictions.csv.gz": "d5b2eae00a004331a3f07460314ee56285cebb795fe5dd68eeaeffe5df0bd130",
+        "split.csv.gz": "700989878c3ba8ae85b84fa241839b977c220c116c1305d9404f18a7e8c78e55"
+      },
+      "candidate_id": 1819,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_release_year/1819/model.json",
+      "model_sha256": "9382a580df9e569d337ba82989e00754413d92f81544e622e5231b6f31933d7b",
+      "predictors": [
+        "best_chart_rank",
+        "chart_weeks",
+        "primary_genre"
+      ],
+      "task_id": "songs:mb_release_year",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "d1c6257e1e47d115471b330d575e948965d77b57e5e3be08499d32384fc08bf5",
+        "model.json": "a13e9a4889467fa624abef0f5abc89c0266f0880eba2c0f97176d96a3be7d5c4",
+        "predictions.csv.gz": "b4ebb98da66a0543f3c765e6240f0ac533e2ea5889629db58987ad8a694a296a",
+        "split.csv.gz": "c8ccc9dcaaa83c62ad4d1ae1e8c59afe5bf1bd7b145312268f396681c1103364"
+      },
+      "candidate_id": 33104,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__mb_release_year/33104/model.json",
+      "model_sha256": "a13e9a4889467fa624abef0f5abc89c0266f0880eba2c0f97176d96a3be7d5c4",
+      "predictors": [
+        "first_snapshot_month",
+        "mb_release_count",
+        "secondary_genres"
+      ],
+      "task_id": "songs:mb_release_year",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "d25af0501d47a0db369be9ac5258e3e1a9744ddc3fabbcc0add36ba97b0c49e6",
+        "model.json": "be85a7b6b4a541ec2bdb1e1b30eda207df2adaa9f48a96e555165732a85b033c",
+        "predictions.csv.gz": "39cd33e3a3ba51874ed615f7c1e61e3e93bed0f01a8d595a9d0328f05f930faa",
+        "split.csv.gz": "74a6ce4fbc5e51729268eb7ddc8a9f15802cacc3a954294c4df497748255f7b6"
+      },
+      "candidate_id": 28130,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/monthly__reported_weeks_on_chart/28130/model.json",
+      "model_sha256": "be85a7b6b4a541ec2bdb1e1b30eda207df2adaa9f48a96e555165732a85b033c",
+      "predictors": [
+        "first_chart_date",
+        "mb_release_count",
+        "snapshot_chart_date"
+      ],
+      "task_id": "monthly:reported_weeks_on_chart",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "b4fe07fd85e97065afcaa6c99ee56ec884dbd0c749d9bd3a71dc3b07c4e25d17",
+        "model.json": "0b8f8b236eb5bd6cdff98d8a4282b99f0ab8545a7f70d1e3c78a346a9585ada4",
+        "predictions.csv.gz": "be61961df93bda78211091d399be3c9a36a779187de50c63e0557a383b6e9a71",
+        "split.csv.gz": "ba47d1b59da6bf411872f78a9e9d23e4d3efcb87e286468cae0ecb5edd8cb7c9"
+      },
+      "candidate_id": 29249,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/monthly__reported_weeks_on_chart/29249/model.json",
+      "model_sha256": "0b8f8b236eb5bd6cdff98d8a4282b99f0ab8545a7f70d1e3c78a346a9585ada4",
+      "predictors": [
+        "monthly_rank",
+        "reported_peak_position",
+        "snapshot_chart_date"
+      ],
+      "task_id": "monthly:reported_weeks_on_chart",
+      "view": "filtered"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "8290ae951c25b28c80a33bb96524de66d09c9fb16ec8a4cd6550c1635377f348",
+        "model.json": "a99d7f27980a1b2530f797becbbd1c9d59b08992ce089faa9f78288fb0f8723d",
+        "predictions.csv.gz": "80b485ae40d39320d1cadc5705d601624e7b1bd3d82f8967ffe22c9db0708bb8",
+        "split.csv.gz": "3f4506b3f150a2a0a5a9473316cce82f2eb4cf5ac5dd67676db804bd867f783e"
+      },
+      "candidate_id": 2905,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/weekly__reported_weeks_on_chart/2905/model.json",
+      "model_sha256": "a99d7f27980a1b2530f797becbbd1c9d59b08992ce089faa9f78288fb0f8723d",
+      "predictors": [
+        "chart_date",
+        "first_chart_date",
+        "secondary_genres"
+      ],
+      "task_id": "weekly:reported_weeks_on_chart",
+      "view": "cross_domain"
+    },
+    {
+      "artifacts": {
+        "metrics.json": "e9d4cf698c6b9edb4cbd1c17e94f19f0a47030de6e7912ec4e54730884bb4ceb",
+        "model.json": "30e9f4c00ae8cfd8bd7229505217536fdf7b840be462311ca42dd06add461768",
+        "predictions.csv.gz": "b2c3beb68d9b118253ab472659f91e356551f37554726f409e7f468bb1a2c2ba",
+        "split.csv.gz": "1fca071cb41670b8b668cd41fa4c9a9299d4553d82bf11b642f6068dd3a38039"
+      },
+      "candidate_id": 29249,
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/weekly__reported_weeks_on_chart/29249/model.json",
+      "model_sha256": "30e9f4c00ae8cfd8bd7229505217536fdf7b840be462311ca42dd06add461768",
+      "predictors": [
+        "mb_release_year",
+        "reported_peak_position",
+        "weekly_rank"
+      ],
+      "task_id": "weekly:reported_weeks_on_chart",
+      "view": "filtered"
+    }
+  ]
+}

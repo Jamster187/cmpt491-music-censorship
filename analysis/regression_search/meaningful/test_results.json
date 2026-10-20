@@ -1,0 +1,68 @@
+{
+  "actual_streamlit_app_suite": {
+    "command": ".venv-regression-demo/bin/python -m unittest discover -s tests -p test_regression_demo_app.py -v",
+    "elapsed_seconds": 23.043,
+    "local_log_sha256": "6476cc273aa7d856c3941f9d1de3862824b1da7c32385719e6d724099e99de22",
+    "passed": 4,
+    "skipped": 0,
+    "status": "PASS",
+    "tests_run": 4
+  },
+  "complete_hierarchy_and_model_audit": {
+    "elapsed_seconds": 53.7611345,
+    "evidence": "validation.json",
+    "source_combinations": 1998901,
+    "status": "PASS",
+    "unique_selected_models_verified": 117
+  },
+  "figure_validation": {
+    "command": "python3 src/figure_audit.py --validate",
+    "figures": 951,
+    "status": "PASS",
+    "unchanged_numerical_input_files": 32
+  },
+  "final_test_previously_inspected": true,
+  "full_search_rerun": false,
+  "historical_planning_suite": {
+    "command": "python3 -m unittest discover -s analysis/planning/regression_search -p test_planning.py -v",
+    "elapsed_seconds": 0.451,
+    "local_log_sha256": "92ba382701120fa18c303edac37b940530d316014c146cf7e40be7d98e7f5be9",
+    "passed": 12,
+    "skipped": 0,
+    "status": "PASS",
+    "tests_run": 12
+  },
+  "local_demo_http": {
+    "base_url": "http://127.0.0.1:8501",
+    "health_status": 200,
+    "root_status": 200,
+    "status": "PASS"
+  },
+  "original_artifacts": {
+    "hash_snapshot_sha256": "98c47ff83f143913264c0df945e922b66c5435e17e77671cb93ca36212b7ae9d",
+    "protected_files": 1853,
+    "published_manifest_files": 52,
+    "status": "PASS"
+  },
+  "recorded_utc": "2026-10-20T22:09:26.854596+00:00",
+  "repository_layout": {
+    "command": "python3 src/repository_layout.py",
+    "immutable_artifacts_checked": 1069,
+    "local_markdown_links_checked": 370,
+    "private_tracked_files": 0,
+    "stale_active_paths": 0,
+    "status": "PASS"
+  },
+  "repository_suite": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "elapsed_seconds": 77.936,
+    "local_log_sha256": "64876a648b8988fbce906c3d2644074a70c161a97b98654901aed2158e0e59a5",
+    "passed": 399,
+    "skipped": 5,
+    "status": "PASS",
+    "tests_run": 404
+  },
+  "skip_explanation": "Four optional real-data Streamlit tests are skipped in the original Python environment and passed separately in the isolated demo environment. One pre-existing offline acquisition-cache test lacks its retained cache.",
+  "status": "PASS",
+  "test_based_reselection": false
+}

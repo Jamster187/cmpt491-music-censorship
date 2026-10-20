@@ -1,0 +1,387 @@
+{
+  "classification_code_sha256": "542b4b5a563afd823f437a37eace74cbdc6ff95c1c640aa0956fa8ca1893bdcd",
+  "locked_utc": "2026-10-20T21:50:35.949319+00:00",
+  "new_test_evaluations_at_lock": 0,
+  "policy": {
+    "categories": {
+      "A": "A: circular/reconstruction",
+      "B": "B: redundant/same-family",
+      "C": "C: cross-domain"
+    },
+    "cross_domain_caveat": "Different constructs can still share lyrics, models or provenance. C is not evidence of independent measurement or causality.",
+    "domain_rationale": {
+      "chart_performance": "Ranks, exposure counts and chart-point totals.",
+      "genre": "Frozen genre assignments.",
+      "historical_calendar": "Calendar placement, including linked release year.",
+      "lyrical_affect": "GoEmotions and sentiment measure related affective constructs; conservatively grouped together.",
+      "lyrical_content": "LyricLens and Detoxify measure overlapping content moderation constructs.",
+      "musicbrainz_metadata": "Counts and recording-length summaries from the same linked metadata evidence."
+    },
+    "evaluation": "POST-HOC EXPLORATORY: the 2018-onward test was inspected in the unrestricted campaign; no newly untouched holdout is claimed.",
+    "precedence": "A if any reconstruction rule applies; otherwise B if any predictor shares the target domain; otherwise C. Mixed B/C models remain B with cross-domain tags.",
+    "retained_examples": [
+      "MusicBrainz counts remain B, including counts versus durations.",
+      "Total chart points versus weeks/rank remains B: sum(101-rank) cannot be recovered exactly from count plus best rank.",
+      "Monthly sample count versus weekly count remains B: sampling and gaps affect the counts.",
+      "A single episode endpoint versus a count remains available; the two-endpoint combination is excluded."
+    ],
+    "rules": [
+      {
+        "explanation": "Rows and distinct chart dates count the same weekly appearances; duplicates are the documented exception.",
+        "id": "row_date_count_alias",
+        "kind": "pair",
+        "sources": [
+          "data/public/README.md:76",
+          "src/public_dataset.py:126"
+        ],
+        "targets": [
+          "chart_weeks",
+          "weekly_observation_count"
+        ]
+      },
+      {
+        "explanation": "First/last weekly dates and first/last selected months locate the same observed chart career. Exclude these alternative calendar coordinates as episode reconstruction, including opposite endpoints. They are not asserted to be mathematically identical; gaps and monthly sampling matter.",
+        "id": "same_career_calendar",
+        "kind": "pair",
+        "sources": [
+          "data/public/README.md:74",
+          "data/public/README.md:78",
+          "src/month_end_snapshots.py"
+        ],
+        "targets": [
+          "first_chart_date",
+          "first_snapshot_month",
+          "last_chart_date",
+          "last_snapshot_month"
+        ]
+      },
+      {
+        "explanation": "Min/median/max summarize the same set of distinct positive recording lengths. Treat predicting one length summary from another as reconstruction of the same physical measurement. Different versions prevent universal equality; this is an explicit interpretation restriction, not an equality claim.",
+        "id": "same_recording_duration",
+        "kind": "pair",
+        "sources": [
+          "data/public/README.md:83",
+          "data/public/README.md:94",
+          "src/public_dataset.py"
+        ],
+        "targets": [
+          "mb_duration_max_seconds",
+          "mb_duration_median_seconds",
+          "mb_duration_min_seconds"
+        ]
+      },
+      {
+        "explanation": "Both a first and a last coordinate bound the same chart-history window whose observations/months are counted. Exclude interval-to-exposure reconstruction. Counts need not equal elapsed intervals because of gaps; this conservative scope rule follows the shared history window, not a correlation threshold.",
+        "id": "career_interval_exposure",
+        "kind": "combination",
+        "required_groups": [
+          [
+            "first_chart_date",
+            "first_snapshot_month"
+          ],
+          [
+            "last_chart_date",
+            "last_snapshot_month"
+          ]
+        ],
+        "sources": [
+          "data/public/README.md:74",
+          "data/public/README.md:76",
+          "data/public/README.md:78"
+        ],
+        "targets": [
+          "chart_weeks",
+          "snapshot_months_selected",
+          "weekly_observation_count"
+        ]
+      },
+      {
+        "explanation": "The other two softmax outputs reconstruct the remaining sentiment probability. Already forbidden by the original campaign; this policy does not restore those candidates.",
+        "id": "sentiment_complement",
+        "kind": "combination",
+        "sources": [
+          "analysis/planning/regression_search/audit.py",
+          "docs/regression_search_plan.md"
+        ],
+        "targets": [
+          "sentiment_negative",
+          "sentiment_neutral",
+          "sentiment_positive"
+        ]
+      }
+    ],
+    "selection": "Filter saved complete validation hierarchies; retain original skill/k/id order. No final-test values or correlation cutoffs enter the policy.",
+    "variables": {
+      "best_chart_rank": {
+        "availability": "After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.",
+        "domain": "chart_performance"
+      },
+      "chart_date": {
+        "availability": "Identity or sampling/bookkeeping coordinate; not a substantive forecasting feature.",
+        "domain": "historical_calendar"
+      },
+      "chart_weeks": {
+        "availability": "After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.",
+        "domain": "chart_performance"
+      },
+      "detox_identity_attack": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_content"
+      },
+      "detox_insult": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_content"
+      },
+      "detox_obscene": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_content"
+      },
+      "detox_severe_toxicity": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_content"
+      },
+      "detox_sexual_explicit": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_content"
+      },
+      "detox_threat": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_content"
+      },
+      "detox_toxicity": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_content"
+      },
+      "emotion_admiration": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_amusement": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_anger": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_annoyance": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_approval": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_caring": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_confusion": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_curiosity": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_desire": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_disappointment": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_disapproval": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_disgust": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_embarrassment": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_excitement": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_fear": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_gratitude": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_grief": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_joy": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_love": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_nervousness": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_neutral": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_optimism": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_pride": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_realization": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_relief": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_remorse": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_sadness": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "emotion_surprise": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "first_chart_date": {
+        "availability": "At first chart appearance; history is left-truncated at 1958-08-04.",
+        "domain": "historical_calendar"
+      },
+      "first_snapshot_month": {
+        "availability": "After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.",
+        "domain": "historical_calendar"
+      },
+      "last_chart_date": {
+        "availability": "After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.",
+        "domain": "historical_calendar"
+      },
+      "last_snapshot_month": {
+        "availability": "After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.",
+        "domain": "historical_calendar"
+      },
+      "ll_explicit_language": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_content"
+      },
+      "ll_sexual_content": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_content"
+      },
+      "ll_substance_use": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_content"
+      },
+      "ll_violence": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_content"
+      },
+      "mb_distinct_duration_count": {
+        "availability": "After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.",
+        "domain": "musicbrainz_metadata"
+      },
+      "mb_duration_max_seconds": {
+        "availability": "After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.",
+        "domain": "musicbrainz_metadata"
+      },
+      "mb_duration_median_seconds": {
+        "availability": "After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.",
+        "domain": "musicbrainz_metadata"
+      },
+      "mb_duration_min_seconds": {
+        "availability": "After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.",
+        "domain": "musicbrainz_metadata"
+      },
+      "mb_recording_count": {
+        "availability": "After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.",
+        "domain": "musicbrainz_metadata"
+      },
+      "mb_release_count": {
+        "availability": "After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.",
+        "domain": "musicbrainz_metadata"
+      },
+      "mb_release_year": {
+        "availability": "After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.",
+        "domain": "historical_calendar"
+      },
+      "monthly_rank": {
+        "availability": "Current chart publication; peak/weeks include current observation, not a prior-origin measurement.",
+        "domain": "chart_performance"
+      },
+      "primary_genre": {
+        "availability": "After frozen genre assignment; historical as-of availability not established.",
+        "domain": "genre"
+      },
+      "reported_last_week_rank": {
+        "availability": "Refers to prior chart, exported on current chart; missing on debut/re-entry, verify source chronology before forecasting.",
+        "domain": "chart_performance"
+      },
+      "reported_peak_position": {
+        "availability": "Current chart publication; peak/weeks include current observation, not a prior-origin measurement.",
+        "domain": "chart_performance"
+      },
+      "reported_weeks_on_chart": {
+        "availability": "Current chart publication; peak/weeks include current observation, not a prior-origin measurement.",
+        "domain": "chart_performance"
+      },
+      "secondary_genres": {
+        "availability": "After frozen genre assignment; historical as-of availability not established.",
+        "domain": "genre"
+      },
+      "sentiment_negative": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "sentiment_neutral": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "sentiment_positive": {
+        "availability": "After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.",
+        "domain": "lyrical_affect"
+      },
+      "snapshot_chart_date": {
+        "availability": "Identity or sampling/bookkeeping coordinate; not a substantive forecasting feature.",
+        "domain": "historical_calendar"
+      },
+      "snapshot_months_selected": {
+        "availability": "After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.",
+        "domain": "chart_performance"
+      },
+      "total_chart_points": {
+        "availability": "After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.",
+        "domain": "chart_performance"
+      },
+      "weekly_observation_count": {
+        "availability": "After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.",
+        "domain": "chart_performance"
+      },
+      "weekly_rank": {
+        "availability": "Current chart publication; peak/weeks include current observation, not a prior-origin measurement.",
+        "domain": "chart_performance"
+      }
+    },
+    "version": "meaningful-v1"
+  },
+  "source_commit": "6d8da5fab45b3fd3326355282e4b6f95175dd9fc"
+}

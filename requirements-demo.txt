@@ -1,0 +1,10 @@
+# Isolated local demo environment; do not replace the campaign environment.
+# Python 3.11; numerical package versions match the completed campaign.
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+matplotlib==3.9.4
+threadpoolctl==3.7.0
+streamlit==1.66.0
+# Preserve NumPy 1.x compatibility for the frozen model preprocessing.
+pyarrow==21.0.0

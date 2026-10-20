@@ -14,6 +14,8 @@ Run from the repository root. Public-data analysis uses the existing `requiremen
 | Three-predictor OLS schema/count audit | `python3 src/regression_search.py audit` | Read-only public data → current specification; no model fits |
 | Bounded OLS pilot and benchmark | `python3 src/regression_search.py pilot` | Nine targets, at most 1,179 unique combinations; campaign final test excluded |
 | Professor model demonstration | `python3 src/regression_search.py demo` | Replays saved pilot model and verifies predictions; run the bounded pilot first |
+| Interactive professor demonstration | `.venv-regression-demo/bin/streamlit run src/regression_demo.py --server.address 127.0.0.1 --browser.gatherUsageStats false` | Local real-model explorer; see the [setup guide](../analysis/regression_search/meaningful/README.md) |
+| Meaningful-result integrity | `python3 analysis/regression_search/meaningful/verify.py` | Read-only complete filtered-rank and selected-model replay audit |
 | Public dataset build | `python3 src/final_dataset.py build` | Offline frozen private inputs; replaces public exports only after validation |
 | Public dataset validation | `python3 src/final_dataset.py validate` | Offline reconstruction/comparison; no acquisition or inference |
 | Phase 1 foundation check | `python3 src/phase1.py validate` | Existing raw snapshot and immutable chart foundation |

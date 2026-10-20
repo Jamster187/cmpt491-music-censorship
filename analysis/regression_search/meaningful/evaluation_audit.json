@@ -1,0 +1,16 @@
+{
+  "cross_domain_models": 59,
+  "elapsed_seconds": 103.830190667,
+  "evaluation_label": "POST-HOC EXPLORATORY",
+  "filtered_models": 59,
+  "original_preservation": {
+    "files": 1853,
+    "snapshot_sha256": "98c47ff83f143913264c0df945e922b66c5435e17e77671cb93ca36212b7ae9d",
+    "status": "PASS"
+  },
+  "policy_sha256": "adfa4bf280c8a86124fa19aaf884b94f9afc66f6d4828703e494c6be8a5a8b9c",
+  "selection_sha256": "c071fc7bf6335c25a9ca7a3410479f4e67e6edfc98ea863db42ea6594df94fc2",
+  "status": "PASS",
+  "test_based_reselection": false,
+  "unique_selected_models": 117
+}

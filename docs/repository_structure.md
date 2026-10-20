@@ -11,7 +11,8 @@ For presentation figures, go directly to the moving-average all-genres shortlist
 | [docs/](README.md) | Methods, schemas and technical documentation |
 | [src/](../src/README.md) | Reproducible pipeline/analysis code and current entry points |
 | [tests/](../tests/) | Regression and integrity validation |
-| [analysis/regression_search/](../analysis/regression_search/README.md) | Three-predictor OLS specification and bounded pilot; full campaign pending approval |
+| [analysis/regression_search/](../analysis/regression_search/README.md) | Preserved complete three-predictor OLS campaign and pilot |
+| [analysis/regression_search/meaningful/](../analysis/regression_search/meaningful/README.md) | Separate post-hoc meaningful/cross-domain results and local interactive demo instructions |
 | [reports/](../reports/README.md) | Final audits and required production evidence |
 | [archive/](../archive/README.md) | Superseded experiments, narratives and intermediate reports |
 

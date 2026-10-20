@@ -1,0 +1,32 @@
+{
+  "scope": "Separate post-hoc exploratory meaningful analysis; original campaign preserved",
+  "sha256": {
+    "analysis/regression_search/meaningful/README.md": "91d16917d743abc49e16d7e307ad8bd91a01aa3c12adbe7508519f770b1370cb",
+    "analysis/regression_search/meaningful/best_by_predictor_count.csv": "2d04d7a7b574398ec4528576d63b25bae7014f9a53417ff99bddbf8cdac808f2",
+    "analysis/regression_search/meaningful/changes_from_unrestricted.csv": "aac5c6dd285921f7d461242760b4ba03d4e5e2b9c12a5b530f58a32ff2e27132",
+    "analysis/regression_search/meaningful/cross_domain_leaderboard.csv": "bb954c2005f204ea5c39b9ead79e077aa675b5c66ce479726acb1422254b2211",
+    "analysis/regression_search/meaningful/cross_domain_leaderboard.json": "a60a7d07bb4c8b3808471e069fb70ba000d8e6e765b16d3f7eb6bffc480f943c",
+    "analysis/regression_search/meaningful/evaluation_audit.json": "39a906ced1f99e18341bfab5eb5736c99c680e292fc238fda00a0329a650a837",
+    "analysis/regression_search/meaningful/filter_audit.json": "863bbe109c68832f4bfccaa457732f0a3989c7e3c270e69647930ff29ebc4508",
+    "analysis/regression_search/meaningful/filtered_leaderboard.csv": "e5f5e27e8a9e854a418b2807fffe241188a2fa3e0949517b45994f2ad2c667da",
+    "analysis/regression_search/meaningful/filtered_leaderboard.json": "e0e6fa5c4b219de079e4020deb429aa8e898d64a54c3ead0bb5d3a3e4c3a8ad8",
+    "analysis/regression_search/meaningful/model_manifest.json": "f72e052ec8bbea30a625cb3e4bfa20b8bfb0379e0dd6627cfca2c2a8ff0a1749",
+    "analysis/regression_search/meaningful/original_annotated_leaderboard.csv": "d44bd6dcc5e49d3e7856805345beaa64ea9794fcd449458b32d5b9a3dc63f01a",
+    "analysis/regression_search/meaningful/relationship_pairs.csv": "e68bb19379eb2a98f1cdb04e45dc462ef38b5b1c49c4168940afb0aa9d73ae7e",
+    "analysis/regression_search/meaningful/relationship_policy.json": "99c75c74f1ca9aae061134644653de7b9858519e84f0f3037066e6931efdecf1",
+    "analysis/regression_search/meaningful/render.py": "14ba59a10adb08ae4173cb652b47f32e4cb639178985c0ff315edf37737803d9",
+    "analysis/regression_search/meaningful/run_summary.json": "7403a096d57cf4f3bde9b4ea11e33efaba77ff35df1585d10c97ccc3a796950a",
+    "analysis/regression_search/meaningful/selected_candidates.json": "c071fc7bf6335c25a9ca7a3410479f4e67e6edfc98ea863db42ea6594df94fc2",
+    "analysis/regression_search/meaningful/test_results.json": "89ebfca13997c0fa27022cf6d3e5f035ef4dc9dcecffedea807596c95915c6c5",
+    "analysis/regression_search/meaningful/validation.json": "443d761a7f3b7b0ac54e3fe0f0d8d6f07b24f22beb60c496771ae5d629aec4c0",
+    "analysis/regression_search/meaningful/verify.py": "c8b63f385203fcdaa4fe9bfcb6e685117e8d432b86348a30e319a5e448389837",
+    "analysis/regression_search/meaningful_findings.md": "efb47a1a91a1057d47f66ec80e7115fa2446b28aa67fbe7344b13f9272719c87",
+    "requirements-demo.txt": "820eab6b96ea0176b68b05e166f2da4ffae984f5a09aac492c30fc7ad696074e",
+    "src/regression_demo.py": "466cd4d4f57ff8fcf7efb30d751e25be8e5b4f37de7372da5668e86be63e69b5",
+    "src/regression_demo_model.py": "1106f0c506f2add2a8e0e617109264d5160fa9bfa7c0245a85f1f372107b236e",
+    "src/regression_meaningful.py": "fb7a2171cce09b45403684353a7e551e6ed9cee4c1a220601e406afab154f0f5",
+    "src/regression_relationships.py": "542b4b5a563afd823f437a37eace74cbdc6ff95c1c640aa0956fa8ca1893bdcd",
+    "tests/test_regression_demo_app.py": "dbf208c33291825393fc7e02d45ac0869613e05f7136c816d5658e8577490609",
+    "tests/test_regression_meaningful.py": "cf7285508e6e9bdf8d8fdb552069213889157a2649ec122be1b440de61599c17"
+  }
+}
