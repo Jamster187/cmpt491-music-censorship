@@ -1,0 +1,90 @@
+[
+  {
+    "bytes": 26094309,
+    "columns": 70,
+    "deep_frame_bytes": 41658217,
+    "duplicate_identity_rows": 0,
+    "has_song_id": true,
+    "path": "data/public/songs.csv",
+    "rows": 28041,
+    "sha256": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5",
+    "unique_exact_identities": 28041
+  },
+  {
+    "bytes": 82138319,
+    "columns": 78,
+    "deep_frame_bytes": 136481722,
+    "duplicate_identity_rows": 53756,
+    "has_song_id": true,
+    "path": "data/public/master_monthly.csv",
+    "rows": 81797,
+    "sha256": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+    "unique_exact_identities": 28041
+  },
+  {
+    "bytes": 15122944,
+    "columns": 77,
+    "deep_frame_bytes": 568882385,
+    "duplicate_identity_rows": 322764,
+    "has_song_id": true,
+    "path": "data/public/master_weekly.csv.xz",
+    "rows": 355487,
+    "sha256": "60f1a27be135c6e862c3d8bb5e6193999f0a9b3f19e6ea89de1f77454cdfc477",
+    "unique_exact_identities": 32723
+  },
+  {
+    "bytes": 59641014,
+    "columns": 58,
+    "deep_frame_bytes": 82675255,
+    "duplicate_identity_rows": 52428,
+    "has_song_id": false,
+    "path": "data/preprocessing/monthly.csv",
+    "rows": 78587,
+    "sha256": "22df77162dc8ac00e377d50018d838edbdf6feb278a8b2d6ba7ea28cb5816b8d",
+    "unique_exact_identities": 26159
+  },
+  {
+    "bytes": 59641014,
+    "columns": 58,
+    "deep_frame_bytes": 82675255,
+    "duplicate_identity_rows": 52428,
+    "has_song_id": false,
+    "path": "data/preprocessing/monthly_no_duplicates.csv",
+    "rows": 78587,
+    "sha256": "22df77162dc8ac00e377d50018d838edbdf6feb278a8b2d6ba7ea28cb5816b8d",
+    "unique_exact_identities": 26159
+  },
+  {
+    "bytes": 59641014,
+    "columns": 58,
+    "deep_frame_bytes": 82675255,
+    "duplicate_identity_rows": 52428,
+    "has_song_id": false,
+    "path": "data/preprocessing/monthly_lyrics_available.csv",
+    "rows": 78587,
+    "sha256": "22df77162dc8ac00e377d50018d838edbdf6feb278a8b2d6ba7ea28cb5816b8d",
+    "unique_exact_identities": 26159
+  },
+  {
+    "bytes": 9604176,
+    "columns": 56,
+    "deep_frame_bytes": 327848218,
+    "duplicate_identity_rows": 322764,
+    "has_song_id": false,
+    "path": "data/preprocessing/weekly.csv.xz",
+    "rows": 355487,
+    "sha256": "53c18dbf6d75c1f75f9ee26da3b00b6350fa3fc8c4449cdb46348faa592f2b31",
+    "unique_exact_identities": 32723
+  },
+  {
+    "bytes": 20932280,
+    "columns": 56,
+    "deep_frame_bytes": 29706122,
+    "duplicate_identity_rows": 0,
+    "has_song_id": false,
+    "path": "data/preprocessing/weekly_no_duplicates.csv",
+    "rows": 32723,
+    "sha256": "aa046f841b91bd317cb1891f8006400544f02d4d82e7ea226827cefabef8feac",
+    "unique_exact_identities": 32723
+  }
+]

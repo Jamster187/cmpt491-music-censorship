@@ -1,0 +1,126 @@
+{
+  "actual_sets": 192,
+  "benchmark_script_sha256": "8b18e93a7df1e5511f400d85f657be530cba6e8daee6d2fd4475543ae4336e1a",
+  "blas_threads": 1,
+  "cached_fit_calls": 1152,
+  "direct_fit_calls": 1152,
+  "elapsed_seconds": 26.150385209,
+  "estimator_specifications": 384,
+  "full_campaign_run": false,
+  "hardware": [
+    "Apple M2 Pro",
+    "17179869184",
+    "12"
+  ],
+  "input_hashes": {
+    "data/public/master_monthly.csv": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+    "data/public/master_weekly.csv.xz": "60f1a27be135c6e862c3d8bb5e6193999f0a9b3f19e6ea89de1f77454cdfc477",
+    "data/public/songs.csv": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5"
+  },
+  "max_sets": 192,
+  "note": "Direct and cached paths both execute each timing repeat; NumPy rank-aware OLS and sklearn Ridge only. Ordinal likelihoods and categorical classifiers not benchmarked.",
+  "peak_process_rss_bytes": 1940422656,
+  "peak_rss_includes": "CSV parsing, DataFrames, copies, preprocessing and all three sequential cases; not solely linear algebra",
+  "ridge_objective": "sum(weight * squared error) + alpha * squared coefficients; mean weight=1; alpha=n_train*0.001; intercept unpenalized",
+  "seed": 491,
+  "summaries": [
+    {
+      "batch_mae_seconds_per_estimator_fit": 1.3990882812500369e-05,
+      "cached_crossproducts_bytes": 158400,
+      "estimators": 2,
+      "full_crossproducts_seconds": 0.012284916000000035,
+      "max_direct_cached_prediction_abs_difference": 7.993605777301127e-14,
+      "max_direct_cached_sse_relative_difference": 8.383670656930328e-14,
+      "membership_check_seconds_per_set": 4.127220000000008e-07,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "prepared_matrix_bytes": 14246496,
+      "prepared_matrix_columns": 99,
+      "preprocessing_and_read_seconds": 0.36917954200000014,
+      "sampled_sets": 64,
+      "svd_fallback_fit_specifications": 2,
+      "task_id": "songs:detox_toxicity",
+      "timing_repeats": 3,
+      "train_songs": 16081,
+      "validation_songs": 1907
+    },
+    {
+      "batch_mae_seconds_per_estimator_fit": 7.52239609374955e-05,
+      "cached_crossproducts_bytes": 289440,
+      "estimators": 2,
+      "full_crossproducts_seconds": 0.07494270800000002,
+      "max_direct_cached_prediction_abs_difference": 1.2233414281581645e-10,
+      "max_direct_cached_sse_relative_difference": 6.560287150389999e-13,
+      "membership_check_seconds_per_set": 4.0836262500000554e-07,
+      "n_train": 61121,
+      "n_validation": 8875,
+      "prepared_matrix_bytes": 75035712,
+      "prepared_matrix_columns": 134,
+      "preprocessing_and_read_seconds": 1.380621417,
+      "sampled_sets": 64,
+      "svd_fallback_fit_specifications": 35,
+      "task_id": "monthly:monthly_rank",
+      "timing_repeats": 3,
+      "train_songs": 22032,
+      "validation_songs": 2326
+    },
+    {
+      "batch_mae_seconds_per_estimator_fit": 0.00034553873437498384,
+      "cached_crossproducts_bytes": 298112,
+      "estimators": 2,
+      "full_crossproducts_seconds": 0.30874358300000004,
+      "max_direct_cached_prediction_abs_difference": 1.0531664429436205e-10,
+      "max_direct_cached_sse_relative_difference": 1.5558280188379078e-12,
+      "membership_check_seconds_per_set": 4.125644531249861e-07,
+      "n_train": 265873,
+      "n_validation": 38580,
+      "prepared_matrix_bytes": 331244864,
+      "prepared_matrix_columns": 136,
+      "preprocessing_and_read_seconds": 9.358035375,
+      "sampled_sets": 64,
+      "svd_fallback_fit_specifications": 37,
+      "task_id": "weekly:weekly_rank",
+      "timing_repeats": 3,
+      "train_songs": 23845,
+      "validation_songs": 3198
+    }
+  ],
+  "test_rows_used": 0,
+  "threadpools": [
+    {
+      "architecture": "armv8",
+      "filepath": "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libopenblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.23.dev"
+    },
+    {
+      "architecture": "neoversen1",
+      "filepath": "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scipy/.dylibs/libopenblas.0.dylib",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libopenblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.27"
+    },
+    {
+      "filepath": "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sklearn/.dylibs/libomp.dylib",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libomp",
+      "user_api": "openmp",
+      "version": null
+    }
+  ],
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2"
+  }
+}

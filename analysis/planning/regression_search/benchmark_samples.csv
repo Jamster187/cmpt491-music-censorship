@@ -1,0 +1,193 @@
+task_id,sample_number,k,predictors,n_train,n_validation,encoded_coefficients,train_gather_seconds,validation_gather_seconds,crossproduct_gather_seconds,matrix_rank
+songs:detox_toxicity,0,1,"[""emotion_anger""]",16081,1907,2,0.0001257909999998752,1.0457999999990975e-05,4.458299999998694e-05,2
+songs:detox_toxicity,1,1,"[""emotion_curiosity""]",16081,1907,2,0.00012270800000013793,1.0666000000103537e-05,1.6542000000008272e-05,2
+songs:detox_toxicity,2,1,"[""emotion_excitement""]",16081,1907,2,9.024999999995842e-05,1.1540999999892776e-05,1.4165999999926626e-05,2
+songs:detox_toxicity,3,1,"[""emotion_joy""]",16081,1907,2,9.083300000001238e-05,1.137499999992464e-05,1.4249999999993435e-05,2
+songs:detox_toxicity,4,1,"[""emotion_nervousness""]",16081,1907,2,0.00010970799999987513,1.4374999999899885e-05,2.220899999993975e-05,2
+songs:detox_toxicity,5,1,"[""emotion_pride""]",16081,1907,2,0.00012029199999985529,1.5792000000125483e-05,1.975000000009608e-05,2
+songs:detox_toxicity,6,1,"[""emotion_realization""]",16081,1907,2,0.00011183300000006113,1.229200000008035e-05,1.608300000000007e-05,2
+songs:detox_toxicity,7,1,"[""emotion_sadness""]",16081,1907,2,8.562499999986706e-05,1.1084000000050054e-05,1.4041999999880872e-05,2
+songs:detox_toxicity,8,1,"[""emotion_surprise""]",16081,1907,2,0.00011354200000002201,1.5249999999911168e-05,1.712500000006223e-05,2
+songs:detox_toxicity,9,1,"[""first_chart_date""]",16081,1907,2,0.00011379099999997422,1.3083000000024825e-05,1.49170000001142e-05,2
+songs:detox_toxicity,10,1,"[""last_snapshot_month""]",16081,1907,2,9.120900000003651e-05,1.1999999999900979e-05,1.3958000000036108e-05,2
+songs:detox_toxicity,11,1,"[""ll_sexual_content""]",16081,1907,3,0.00012575000000003556,1.6583999999930654e-05,1.7332999999952747e-05,3
+songs:detox_toxicity,12,1,"[""mb_recording_count""]",16081,1907,3,0.00013737499999999514,1.8541000000205088e-05,1.4667000000079256e-05,3
+songs:detox_toxicity,13,1,"[""primary_genre""]",16081,1907,16,0.00047316699999999656,5.416700000004937e-05,2.462500000000034e-05,16
+songs:detox_toxicity,14,1,"[""secondary_genres""]",16081,1907,16,0.0005161250000000894,6.77090000000824e-05,2.3416999999970045e-05,16
+songs:detox_toxicity,15,1,"[""sentiment_negative""]",16081,1907,2,0.00019645800000001046,3.741700000015058e-05,1.7791000000100254e-05,2
+songs:detox_toxicity,16,2,"[""best_chart_rank"", ""emotion_relief""]",16081,1907,3,0.00017370799999993913,2.199999999996649e-05,1.5749999999981057e-05,3
+songs:detox_toxicity,17,2,"[""detox_obscene"", ""emotion_gratitude""]",16081,1907,3,0.00019820800000003302,2.1665999999864738e-05,1.6165999999984138e-05,3
+songs:detox_toxicity,18,2,"[""detox_obscene"", ""ll_sexual_content""]",16081,1907,4,0.00020375000000005805,2.333300000012528e-05,1.6250000000050946e-05,4
+songs:detox_toxicity,19,2,"[""emotion_amusement"", ""emotion_realization""]",16081,1907,3,0.00015045800000001996,2.524999999997668e-05,1.925000000002619e-05,3
+songs:detox_toxicity,20,2,"[""emotion_caring"", ""emotion_relief""]",16081,1907,3,0.00012345799999979867,1.5083000000082336e-05,1.3792000000067972e-05,3
+songs:detox_toxicity,21,2,"[""emotion_caring"", ""sentiment_positive""]",16081,1907,3,0.00014962499999993106,1.8250000000108457e-05,1.558299999993018e-05,3
+songs:detox_toxicity,22,2,"[""emotion_confusion"", ""primary_genre""]",16081,1907,17,0.00072162500000017,8.391699999998892e-05,2.1708000000009164e-05,17
+songs:detox_toxicity,23,2,"[""emotion_desire"", ""emotion_disappointment""]",16081,1907,3,0.00022079099999983143,4.8540999999957535e-05,2.4666000000062027e-05,3
+songs:detox_toxicity,24,2,"[""emotion_fear"", ""snapshot_months_selected""]",16081,1907,3,0.0001888340000000266,2.0750000000013813e-05,1.762500000013212e-05,3
+songs:detox_toxicity,25,2,"[""emotion_gratitude"", ""secondary_genres""]",16081,1907,17,0.0005627079999999118,4.104199999988012e-05,3.454199999985974e-05,17
+songs:detox_toxicity,26,2,"[""emotion_joy"", ""emotion_realization""]",16081,1907,3,0.00019150000000012213,8.1208999999971e-05,2.470799999998441e-05,3
+songs:detox_toxicity,27,2,"[""emotion_neutral"", ""weekly_observation_count""]",16081,1907,3,7.54999999998951e-05,9.874999999937017e-06,1.387500000005204e-05,3
+songs:detox_toxicity,28,2,"[""emotion_pride"", ""sentiment_neutral""]",16081,1907,3,9.362499999987506e-05,9.833000000014636e-06,1.358399999995541e-05,3
+songs:detox_toxicity,29,2,"[""first_snapshot_month"", ""weekly_observation_count""]",16081,1907,3,0.0001503339999999742,2.1583000000102714e-05,1.3167000000091633e-05,3
+songs:detox_toxicity,30,2,"[""primary_genre"", ""secondary_genres""]",16081,1907,31,0.0008817089999999528,8.345799999998071e-05,3.0915999999825416e-05,31
+songs:detox_toxicity,31,2,"[""secondary_genres"", ""snapshot_months_selected""]",16081,1907,17,0.0006848749999999182,7.837499999996389e-05,2.6124999999987963e-05,17
+songs:detox_toxicity,32,3,"[""best_chart_rank"", ""last_chart_date"", ""sentiment_neutral""]",16081,1907,4,0.00035862499999983477,0.0001215830000000917,2.262499999994283e-05,4
+songs:detox_toxicity,33,3,"[""best_chart_rank"", ""mb_release_count"", ""primary_genre""]",16081,1907,19,0.0005922089999998992,7.845800000017e-05,2.2332999999985503e-05,19
+songs:detox_toxicity,34,3,"[""detox_identity_attack"", ""emotion_love"", ""emotion_remorse""]",16081,1907,4,0.00032799999999988394,3.6208000000037543e-05,2.2000000000188535e-05,4
+songs:detox_toxicity,35,3,"[""detox_insult"", ""emotion_admiration"", ""emotion_embarrassment""]",16081,1907,4,0.00013179200000013047,1.6750000000120835e-05,1.4541999999950761e-05,4
+songs:detox_toxicity,36,3,"[""detox_sexual_explicit"", ""secondary_genres"", ""sentiment_neutral""]",16081,1907,18,0.0003574170000000265,4.599999999999049e-05,1.987500000000253e-05,18
+songs:detox_toxicity,37,3,"[""emotion_caring"", ""emotion_excitement"", ""sentiment_positive""]",16081,1907,4,0.0002765829999999969,3.408400000015632e-05,2.9709000000099905e-05,4
+songs:detox_toxicity,38,3,"[""emotion_confusion"", ""emotion_joy"", ""last_chart_date""]",16081,1907,4,0.00016937500000002714,2.1374999999990152e-05,1.987500000000253e-05,4
+songs:detox_toxicity,39,3,"[""emotion_confusion"", ""mb_duration_median_seconds"", ""mb_recording_count""]",16081,1907,6,0.00022150000000009662,2.5666999999840456e-05,1.674999999989879e-05,6
+songs:detox_toxicity,40,3,"[""emotion_curiosity"", ""emotion_disapproval"", ""primary_genre""]",16081,1907,18,0.0005581669999998873,7.341599999999282e-05,2.054099999981851e-05,18
+songs:detox_toxicity,41,3,"[""emotion_desire"", ""emotion_excitement"", ""emotion_gratitude""]",16081,1907,4,0.0002835830000000872,4.42079999998235e-05,1.674999999989879e-05,4
+songs:detox_toxicity,42,3,"[""emotion_grief"", ""emotion_sadness"", ""weekly_observation_count""]",16081,1907,4,0.00013495800000007385,1.633399999989571e-05,1.358399999995541e-05,4
+songs:detox_toxicity,43,3,"[""emotion_nervousness"", ""secondary_genres"", ""sentiment_neutral""]",16081,1907,18,0.0006066670000000052,0.0002639160000001972,2.4250000000058947e-05,18
+songs:detox_toxicity,44,3,"[""emotion_realization"", ""emotion_remorse"", ""total_chart_points""]",16081,1907,4,0.00018879199999988217,8.925000000004069e-05,1.7083000000139847e-05,4
+songs:detox_toxicity,45,3,"[""first_chart_date"", ""secondary_genres"", ""sentiment_neutral""]",16081,1907,18,0.0003829579999998778,4.4332999999951994e-05,2.0082999999893048e-05,18
+songs:detox_toxicity,46,3,"[""last_snapshot_month"", ""mb_distinct_duration_count"", ""snapshot_months_selected""]",16081,1907,5,0.00023262500000020836,3.470800000004992e-05,2.274999999984928e-05,5
+songs:detox_toxicity,47,3,"[""mb_recording_count"", ""primary_genre"", ""secondary_genres""]",16081,1907,33,0.0007710000000000772,9.775000000011858e-05,2.6874999999870752e-05,33
+songs:detox_toxicity,48,4,"[""best_chart_rank"", ""emotion_disapproval"", ""ll_explicit_language"", ""mb_duration_median_seconds""]",16081,1907,7,0.0004912500000000541,6.987500000010805e-05,2.9124999999963208e-05,7
+songs:detox_toxicity,49,4,"[""best_chart_rank"", ""mb_release_count"", ""sentiment_negative"", ""total_chart_points""]",16081,1907,6,0.00021183300000005012,2.5417000000027556e-05,1.9082999999975314e-05,6
+songs:detox_toxicity,50,4,"[""chart_weeks"", ""emotion_excitement"", ""mb_distinct_duration_count"", ""total_chart_points""]",16081,1907,6,0.00022133399999990644,3.124999999992717e-05,1.76670000000545e-05,6
+songs:detox_toxicity,51,4,"[""detox_insult"", ""emotion_curiosity"", ""emotion_fear"", ""emotion_joy""]",16081,1907,5,0.00019029200000009183,1.7541999999926006e-05,1.4999999999876223e-05,5
+songs:detox_toxicity,52,4,"[""detox_insult"", ""emotion_relief"", ""emotion_surprise"", ""secondary_genres""]",16081,1907,19,0.00048166700000007445,4.004100000010169e-05,2.0582999999962936e-05,19
+songs:detox_toxicity,53,4,"[""detox_severe_toxicity"", ""emotion_grief"", ""last_chart_date"", ""total_chart_points""]",16081,1907,5,0.0003264170000001343,0.0002670000000000172,3.2791999999837174e-05,5
+songs:detox_toxicity,54,4,"[""detox_threat"", ""emotion_caring"", ""mb_recording_count"", ""mb_release_count""]",16081,1907,7,0.00031175000000005504,3.5833999999956845e-05,1.9833000000080148e-05,6
+songs:detox_toxicity,55,4,"[""emotion_admiration"", ""emotion_desire"", ""mb_release_count"", ""mb_release_year""]",16081,1907,7,0.0003546670000000862,8.104099999983738e-05,2.2791999999993706e-05,7
+songs:detox_toxicity,56,4,"[""emotion_amusement"", ""emotion_sadness"", ""mb_duration_min_seconds"", ""mb_release_year""]",16081,1907,7,0.00027083300000008137,2.9000000000056758e-05,1.6666999999914722e-05,7
+songs:detox_toxicity,57,4,"[""emotion_anger"", ""ll_sexual_content"", ""primary_genre"", ""secondary_genres""]",16081,1907,34,0.0012181250000000698,0.00017849999999985933,3.6083000000131094e-05,34
+songs:detox_toxicity,58,4,"[""emotion_caring"", ""last_snapshot_month"", ""mb_duration_max_seconds"", ""secondary_genres""]",16081,1907,20,0.0009093330000000677,0.00010791700000001292,3.1375000000055664e-05,20
+songs:detox_toxicity,59,4,"[""emotion_disappointment"", ""emotion_sadness"", ""mb_release_year"", ""sentiment_positive""]",16081,1907,6,0.0004242080000000925,4.741699999999405e-05,2.158299999988067e-05,6
+songs:detox_toxicity,60,4,"[""emotion_disgust"", ""emotion_embarrassment"", ""emotion_grief"", ""emotion_realization""]",16081,1907,5,0.00019662500000006133,2.2667000000087256e-05,1.8999999999991246e-05,5
+songs:detox_toxicity,61,4,"[""emotion_joy"", ""emotion_optimism"", ""mb_recording_count"", ""total_chart_points""]",16081,1907,6,0.00022745799999990268,7.825000000005744e-05,1.8875000000084796e-05,6
+songs:detox_toxicity,62,4,"[""emotion_neutral"", ""mb_duration_median_seconds"", ""primary_genre"", ""sentiment_neutral""]",16081,1907,20,0.0006294159999999938,9.133300000008227e-05,2.3415999999887305e-05,20
+songs:detox_toxicity,63,4,"[""emotion_optimism"", ""emotion_sadness"", ""ll_explicit_language"", ""ll_sexual_content""]",16081,1907,7,0.00035687500000003425,7.774999999998755e-05,2.1583000000102714e-05,6
+monthly:monthly_rank,0,1,"[""emotion_annoyance""]",61121,8875,3,0.0006974170000000335,4.874999999993079e-05,3.454199999985974e-05,3
+monthly:monthly_rank,1,1,"[""emotion_fear""]",61121,8875,3,0.0005902500000001254,0.0001135830000000837,1.570900000036346e-05,3
+monthly:monthly_rank,2,1,"[""emotion_love""]",61121,8875,3,0.0005769999999998277,8.579199999969589e-05,1.4584000000095187e-05,3
+monthly:monthly_rank,3,1,"[""emotion_realization""]",61121,8875,3,0.0004904159999998825,8.333300000007426e-05,1.3791999999845928e-05,3
+monthly:monthly_rank,4,1,"[""emotion_relief""]",61121,8875,3,0.00048624999999979934,6.90419999997971e-05,1.3458999999826915e-05,3
+monthly:monthly_rank,5,1,"[""emotion_surprise""]",61121,8875,3,0.0004465830000000004,8.595800000010811e-05,1.3249999999853657e-05,3
+monthly:monthly_rank,6,1,"[""first_chart_date""]",61121,8875,2,0.0003430830000001883,5.945799999995671e-05,1.3583000000316758e-05,2
+monthly:monthly_rank,7,1,"[""ll_explicit_language""]",61121,8875,3,0.00045275000000000176,4.820799999993852e-05,1.3207999999931275e-05,3
+monthly:monthly_rank,8,1,"[""ll_violence""]",61121,8875,3,0.0004110410000000009,5.308299999962074e-05,1.3749999999923546e-05,3
+monthly:monthly_rank,9,1,"[""mb_duration_max_seconds""]",61121,8875,3,0.0004024579999999389,8.200000000035956e-05,1.3833000000129658e-05,3
+monthly:monthly_rank,10,1,"[""primary_genre""]",61121,8875,16,0.0021482499999998517,0.00027100000000013225,1.987500000000253e-05,16
+monthly:monthly_rank,11,1,"[""reported_last_week_rank""]",61121,8875,3,0.0008508329999998843,0.00018329099999991882,1.7333000000174792e-05,3
+monthly:monthly_rank,12,1,"[""secondary_genres""]",61121,8875,16,0.0021578330000000534,0.0002962910000001706,1.9708999999590304e-05,16
+monthly:monthly_rank,13,1,"[""sentiment_negative""]",61121,8875,3,0.0007280419999999843,0.00014854099999972448,1.7166000000123915e-05,3
+monthly:monthly_rank,14,1,"[""sentiment_neutral""]",61121,8875,3,0.00047470800000004587,4.937500000012918e-05,1.387500000005204e-05,3
+monthly:monthly_rank,15,1,"[""sentiment_positive""]",61121,8875,3,0.0004386670000000592,6.833399999983669e-05,1.3124999999725162e-05,3
+monthly:monthly_rank,16,2,"[""detox_identity_attack"", ""emotion_disapproval""]",61121,8875,5,0.0007964169999996606,0.00013037499999990487,1.7333999999813443e-05,4
+monthly:monthly_rank,17,2,"[""detox_sexual_explicit"", ""emotion_grief""]",61121,8875,5,0.0010506249999999717,0.00012612499999997695,1.6374999999957396e-05,4
+monthly:monthly_rank,18,2,"[""detox_sexual_explicit"", ""emotion_realization""]",61121,8875,5,0.0009898330000002176,0.00011433299999996649,1.5625000000074607e-05,4
+monthly:monthly_rank,19,2,"[""emotion_anger"", ""emotion_relief""]",61121,8875,5,0.0010779589999998507,0.00014220799999975497,1.5874999999887507e-05,4
+monthly:monthly_rank,20,2,"[""emotion_confusion"", ""emotion_fear""]",61121,8875,5,0.0010751250000002877,0.00014029199999976427,2.2667000000087256e-05,4
+monthly:monthly_rank,21,2,"[""emotion_confusion"", ""emotion_remorse""]",61121,8875,5,0.0010933330000000296,0.00012591700000008643,2.2125000000094985e-05,4
+monthly:monthly_rank,22,2,"[""emotion_confusion"", ""sentiment_positive""]",61121,8875,5,0.0009303330000003385,0.00014195799999994207,2.1499999999896602e-05,4
+monthly:monthly_rank,23,2,"[""emotion_curiosity"", ""secondary_genres""]",61121,8875,18,0.0023138750000000208,0.0003877910000000817,2.2958000000183887e-05,18
+monthly:monthly_rank,24,2,"[""emotion_desire"", ""emotion_neutral""]",61121,8875,5,0.0013682500000000708,0.00026254099999967195,2.6375000000022908e-05,4
+monthly:monthly_rank,25,2,"[""emotion_disappointment"", ""emotion_remorse""]",61121,8875,5,0.0011467920000001186,0.00015470799999972584,2.1084000000115566e-05,4
+monthly:monthly_rank,26,2,"[""emotion_gratitude"", ""mb_duration_max_seconds""]",61121,8875,5,0.0011183329999999714,0.00013216599999976708,2.1124999999955207e-05,5
+monthly:monthly_rank,27,2,"[""emotion_grief"", ""snapshot_chart_date""]",61121,8875,4,0.0008647920000002252,0.00010258399999996115,1.6374999999957396e-05,4
+monthly:monthly_rank,28,2,"[""emotion_love"", ""emotion_relief""]",61121,8875,5,0.0009372500000002226,0.00013079100000013,1.595800000009362e-05,4
+monthly:monthly_rank,29,2,"[""emotion_optimism"", ""primary_genre""]",61121,8875,18,0.002817290999999944,0.0003140410000002092,2.4458000000393554e-05,18
+monthly:monthly_rank,30,2,"[""ll_sexual_content"", ""sentiment_neutral""]",61121,8875,5,0.0012544160000000915,0.00013479100000024502,2.2208000000301098e-05,5
+monthly:monthly_rank,31,2,"[""primary_genre"", ""secondary_genres""]",61121,8875,31,0.004585916999999995,0.0005685419999998942,3.479200000011673e-05,31
+monthly:monthly_rank,32,3,"[""detox_identity_attack"", ""ll_explicit_language"", ""sentiment_negative""]",61121,8875,7,0.0016188750000001306,0.00019137499999999363,2.6000000000081513e-05,6
+monthly:monthly_rank,33,3,"[""detox_identity_attack"", ""sentiment_neutral"", ""snapshot_chart_date""]",61121,8875,6,0.0009873329999998681,0.00012412500000014148,2.2041999999888873e-05,5
+monthly:monthly_rank,34,3,"[""detox_obscene"", ""emotion_grief"", ""emotion_sadness""]",61121,8875,7,0.0018461250000001428,0.0002887920000000932,5.416700000004937e-05,5
+monthly:monthly_rank,35,3,"[""detox_severe_toxicity"", ""emotion_amusement"", ""emotion_excitement""]",61121,8875,7,0.00158725000000004,0.00021883299999991834,2.199999999996649e-05,5
+monthly:monthly_rank,36,3,"[""detox_severe_toxicity"", ""emotion_desire"", ""emotion_gratitude""]",61121,8875,7,0.0014210000000001166,0.00016437500000021643,2.0334000000232777e-05,5
+monthly:monthly_rank,37,3,"[""detox_toxicity"", ""emotion_nervousness"", ""snapshot_chart_date""]",61121,8875,6,0.0014462079999999489,0.0001665000000001804,1.9291999999726528e-05,5
+monthly:monthly_rank,38,3,"[""emotion_curiosity"", ""emotion_love"", ""ll_substance_use""]",61121,8875,7,0.0015831669999997189,0.00024366699999989194,2.324999999991917e-05,6
+monthly:monthly_rank,39,3,"[""emotion_curiosity"", ""mb_release_year"", ""reported_last_week_rank""]",61121,8875,7,0.0015815839999997472,0.0002099999999995994,2.2917000000344245e-05,7
+monthly:monthly_rank,40,3,"[""emotion_desire"", ""emotion_sadness"", ""sentiment_negative""]",61121,8875,7,0.001587499999999853,0.0001830830000000283,1.8707999999811875e-05,5
+monthly:monthly_rank,41,3,"[""emotion_disappointment"", ""emotion_fear"", ""emotion_relief""]",61121,8875,7,0.001479417000000094,0.0002415000000000056,1.8499999999921357e-05,5
+monthly:monthly_rank,42,3,"[""emotion_disgust"", ""primary_genre"", ""secondary_genres""]",61121,8875,33,0.004675042000000129,0.00047941700000020404,3.354199999971996e-05,33
+monthly:monthly_rank,43,3,"[""emotion_joy"", ""emotion_love"", ""emotion_surprise""]",61121,8875,7,0.001788624999999655,0.00019687499999943014,2.6292000000260884e-05,5
+monthly:monthly_rank,44,3,"[""emotion_neutral"", ""sentiment_neutral"", ""snapshot_chart_date""]",61121,8875,6,0.0012834589999997092,0.00012291700000055528,1.82909999999481e-05,5
+monthly:monthly_rank,45,3,"[""emotion_optimism"", ""mb_release_year"", ""sentiment_neutral""]",61121,8875,7,0.0015415000000000845,0.00020041700000028584,1.8167000000346434e-05,6
+monthly:monthly_rank,46,3,"[""ll_violence"", ""mb_recording_count"", ""secondary_genres""]",61121,8875,20,0.0028544579999998376,0.0004222089999998957,3.0416999999616223e-05,20
+monthly:monthly_rank,47,3,"[""primary_genre"", ""reported_weeks_on_chart"", ""snapshot_chart_date""]",61121,8875,18,0.0028614170000000883,0.0002835000000001031,2.487500000025733e-05,18
+monthly:monthly_rank,48,4,"[""detox_identity_attack"", ""emotion_disgust"", ""mb_distinct_duration_count"", ""mb_release_year""]",61121,8875,9,0.0020290840000001253,0.00023029200000035388,2.5542000000378096e-05,8
+monthly:monthly_rank,49,4,"[""detox_identity_attack"", ""emotion_surprise"", ""reported_weeks_on_chart"", ""sentiment_positive""]",61121,8875,8,0.002202416999999457,0.0003487080000006415,2.1958000000488198e-05,6
+monthly:monthly_rank,50,4,"[""detox_insult"", ""emotion_surprise"", ""mb_recording_count"", ""primary_genre""]",61121,8875,22,0.0034644169999999974,0.00036725000000004115,2.799999999947289e-05,21
+monthly:monthly_rank,51,4,"[""detox_severe_toxicity"", ""emotion_pride"", ""emotion_remorse"", ""secondary_genres""]",61121,8875,22,0.0039055829999998792,0.0004794580000000437,3.6207999999149365e-05,20
+monthly:monthly_rank,52,4,"[""detox_threat"", ""emotion_joy"", ""ll_substance_use"", ""secondary_genres""]",61121,8875,22,0.0036561659999998497,0.00045412500000008293,2.8625000000559453e-05,21
+monthly:monthly_rank,53,4,"[""emotion_admiration"", ""emotion_pride"", ""mb_distinct_duration_count"", ""mb_duration_max_seconds""]",61121,8875,9,0.0020808329999999486,0.00022937499999997613,2.4542000000238318e-05,8
+monthly:monthly_rank,54,4,"[""emotion_amusement"", ""emotion_anger"", ""emotion_disappointment"", ""secondary_genres""]",61121,8875,22,0.0033005829999996905,0.0004017499999999785,2.612499999976592e-05,20
+monthly:monthly_rank,55,4,"[""emotion_amusement"", ""emotion_annoyance"", ""emotion_grief"", ""emotion_nervousness""]",61121,8875,9,0.0025958749999999142,0.00023912500000022874,2.2165999999934627e-05,6
+monthly:monthly_rank,56,4,"[""emotion_annoyance"", ""emotion_confusion"", ""ll_violence"", ""mb_release_count""]",61121,8875,9,0.0019064159999997443,0.00023887499999997175,3.970800000008268e-05,8
+monthly:monthly_rank,57,4,"[""emotion_confusion"", ""emotion_fear"", ""reported_last_week_rank"", ""reported_weeks_on_chart""]",61121,8875,8,0.001721207999999308,0.0002137919999993798,1.987499999955844e-05,7
+monthly:monthly_rank,58,4,"[""emotion_disapproval"", ""emotion_surprise"", ""reported_weeks_on_chart"", ""secondary_genres""]",61121,8875,21,0.0034863749999995974,0.0004322089999995171,2.562500000014012e-05,20
+monthly:monthly_rank,59,4,"[""emotion_disgust"", ""emotion_nervousness"", ""emotion_sadness"", ""reported_last_week_rank""]",61121,8875,9,0.0023022919999995395,0.0002731249999996521,2.662499999939172e-05,7
+monthly:monthly_rank,60,4,"[""emotion_embarrassment"", ""emotion_excitement"", ""emotion_joy"", ""emotion_relief""]",61121,8875,9,0.0016997499999993337,0.00021233299999945388,2.1624999999581007e-05,6
+monthly:monthly_rank,61,4,"[""emotion_love"", ""primary_genre"", ""reported_weeks_on_chart"", ""secondary_genres""]",61121,8875,34,0.004659207999999637,0.0004990839999994279,3.587500000001853e-05,34
+monthly:monthly_rank,62,4,"[""emotion_sadness"", ""first_chart_date"", ""ll_sexual_content"", ""snapshot_chart_date""]",61121,8875,7,0.001622666999999467,0.00018966699999989345,2.120799999971723e-05,7
+monthly:monthly_rank,63,4,"[""first_chart_date"", ""mb_duration_max_seconds"", ""primary_genre"", ""snapshot_chart_date""]",61121,8875,20,0.0031375000000002373,0.00042383400000023386,2.5708999999984883e-05,20
+weekly:weekly_rank,0,1,"[""emotion_anger""]",265873,38580,3,0.003276166000000913,0.00033591699999924174,3.5500000000965315e-05,3
+weekly:weekly_rank,1,1,"[""emotion_curiosity""]",265873,38580,3,0.00329987499999973,0.000436958999999959,3.5207999999897766e-05,3
+weekly:weekly_rank,2,1,"[""emotion_excitement""]",265873,38580,3,0.0033937920000006727,0.0004319160000001432,1.6333999999673665e-05,3
+weekly:weekly_rank,3,1,"[""emotion_joy""]",265873,38580,3,0.00335745799999998,0.0004553749999995915,1.5499999999946112e-05,3
+weekly:weekly_rank,4,1,"[""emotion_nervousness""]",265873,38580,3,0.0033600840000005405,0.0003991670000011993,1.6083000000222114e-05,3
+weekly:weekly_rank,5,1,"[""emotion_pride""]",265873,38580,3,0.003388666000001095,0.0005045419999998302,1.6042000000382473e-05,3
+weekly:weekly_rank,6,1,"[""emotion_realization""]",265873,38580,3,0.003333209000000892,0.0003896670000003155,2.1083000000032825e-05,3
+weekly:weekly_rank,7,1,"[""emotion_sadness""]",265873,38580,3,0.0038088330000007886,0.0006042500000003059,2.250000000003638e-05,3
+weekly:weekly_rank,8,1,"[""emotion_surprise""]",265873,38580,3,0.0036382919999997654,0.00045466600000132473,1.6875000000027285e-05,3
+weekly:weekly_rank,9,1,"[""first_chart_date""]",265873,38580,2,0.00254512499999926,0.00045033299999985843,1.6375000001289663e-05,2
+weekly:weekly_rank,10,1,"[""ll_substance_use""]",265873,38580,3,0.0034327499999999844,0.00045004100000056724,1.5749999999314923e-05,3
+weekly:weekly_rank,11,1,"[""mb_distinct_duration_count""]",265873,38580,3,0.003553124999999824,0.00045091700000021717,1.5790999999154565e-05,3
+weekly:weekly_rank,12,1,"[""primary_genre""]",265873,38580,17,0.015538707999999346,0.0015961250000007254,2.250000000003638e-05,17
+weekly:weekly_rank,13,1,"[""secondary_genres""]",265873,38580,17,0.015573249999999206,0.00148708299999889,2.566700000095068e-05,17
+weekly:weekly_rank,14,1,"[""sentiment_negative""]",265873,38580,3,0.003857416999998975,0.0005339580000001121,1.7708000001448454e-05,3
+weekly:weekly_rank,15,1,"[""sentiment_neutral""]",265873,38580,3,0.0035571660000002225,0.0004556659999988,1.7209000001017216e-05,3
+weekly:weekly_rank,16,2,"[""chart_date"", ""emotion_excitement""]",265873,38580,4,0.004799625000000418,0.0007318749999996044,1.7458000000303286e-05,4
+weekly:weekly_rank,17,2,"[""chart_date"", ""emotion_relief""]",265873,38580,4,0.004912041000000755,0.0005716670000008861,1.804099999880293e-05,4
+weekly:weekly_rank,18,2,"[""detox_severe_toxicity"", ""emotion_realization""]",265873,38580,5,0.00511266700000057,0.0007162499999999739,1.8167000000346434e-05,4
+weekly:weekly_rank,19,2,"[""detox_severe_toxicity"", ""mb_distinct_duration_count""]",265873,38580,5,0.006842000000002457,0.0006402080000000865,3.5624999998873363e-05,5
+weekly:weekly_rank,20,2,"[""emotion_amusement"", ""sentiment_negative""]",265873,38580,5,0.005967583000000332,0.0006000420000020767,2.3291999998065194e-05,4
+weekly:weekly_rank,21,2,"[""emotion_caring"", ""emotion_relief""]",265873,38580,5,0.006020917000000736,0.0006431249999998556,1.891700000200558e-05,4
+weekly:weekly_rank,22,2,"[""emotion_caring"", ""ll_explicit_language""]",265873,38580,5,0.006004292000000078,0.0006435420000023839,1.8457999999554886e-05,5
+weekly:weekly_rank,23,2,"[""emotion_caring"", ""sentiment_neutral""]",265873,38580,5,0.005794292000000922,0.0006207499999995036,1.7667000001608812e-05,4
+weekly:weekly_rank,24,2,"[""emotion_confusion"", ""emotion_neutral""]",265873,38580,5,0.005822333000001123,0.0006166249999992601,1.745799999852693e-05,4
+weekly:weekly_rank,25,2,"[""emotion_desire"", ""emotion_disappointment""]",265873,38580,5,0.00564708399999958,0.0005354590000017367,1.804200000066203e-05,4
+weekly:weekly_rank,26,2,"[""emotion_fear"", ""emotion_joy""]",265873,38580,5,0.00579154200000076,0.0005820000000014147,2.3041999998696383e-05,4
+weekly:weekly_rank,27,2,"[""emotion_gratitude"", ""emotion_realization""]",265873,38580,5,0.007138541999999859,0.0010799579999982711,2.4542000002014674e-05,4
+weekly:weekly_rank,28,2,"[""emotion_gratitude"", ""primary_genre""]",265873,38580,19,0.024799125000001254,0.0015377919999970402,3.2999999998395424e-05,19
+weekly:weekly_rank,29,2,"[""emotion_pride"", ""secondary_genres""]",265873,38580,19,0.026693666999999976,0.0021025409999992917,2.7917000000599046e-05,19
+weekly:weekly_rank,30,2,"[""first_chart_date"", ""reported_last_week_rank""]",265873,38580,4,0.005350708000001703,0.0009420420000019192,2.033299999837368e-05,4
+weekly:weekly_rank,31,2,"[""primary_genre"", ""secondary_genres""]",265873,38580,33,0.033647999999999456,0.002426708000001554,3.983300000243162e-05,32
+weekly:weekly_rank,32,3,"[""chart_date"", ""sentiment_negative"", ""sentiment_positive""]",265873,38580,6,0.0077432500000007565,0.000570040999999577,2.691699999957109e-05,5
+weekly:weekly_rank,33,3,"[""detox_insult"", ""emotion_gratitude"", ""emotion_remorse""]",265873,38580,7,0.008130957999998856,0.0008440420000006554,2.099999999671809e-05,5
+weekly:weekly_rank,34,3,"[""detox_obscene"", ""emotion_admiration"", ""emotion_embarrassment""]",265873,38580,7,0.008018832999997727,0.0007777910000008603,2.025000000216437e-05,5
+weekly:weekly_rank,35,3,"[""detox_obscene"", ""emotion_curiosity"", ""emotion_fear""]",265873,38580,7,0.008109624999999454,0.0007986250000016071,2.0916000000426038e-05,5
+weekly:weekly_rank,36,3,"[""detox_threat"", ""emotion_love"", ""sentiment_positive""]",265873,38580,7,0.008175250000000744,0.0009030000000009863,2.6416000000750728e-05,5
+weekly:weekly_rank,37,3,"[""emotion_caring"", ""ll_substance_use"", ""mb_recording_count""]",265873,38580,7,0.008227707999999723,0.0009948330000000283,2.604199999822754e-05,7
+weekly:weekly_rank,38,3,"[""emotion_confusion"", ""emotion_joy"", ""ll_sexual_content""]",265873,38580,7,0.008293709000000149,0.0009828749999982733,2.045900000169354e-05,6
+weekly:weekly_rank,39,3,"[""emotion_confusion"", ""mb_release_count"", ""primary_genre""]",265873,38580,21,0.019431332999999995,0.0018395419999990281,3.570799999863539e-05,21
+weekly:weekly_rank,40,3,"[""emotion_curiosity"", ""secondary_genres"", ""sentiment_neutral""]",265873,38580,21,0.020538916999999657,0.0016190420000015138,2.8958000001466644e-05,20
+weekly:weekly_rank,41,3,"[""emotion_desire"", ""emotion_excitement"", ""emotion_realization""]",265873,38580,7,0.00916241700000242,0.0008617080000021815,2.491700000106789e-05,5
+weekly:weekly_rank,42,3,"[""emotion_disapproval"", ""ll_substance_use"", ""primary_genre""]",265873,38580,21,0.020501207999998883,0.0018889590000021883,2.8125000000045475e-05,21
+weekly:weekly_rank,43,3,"[""emotion_grief"", ""emotion_joy"", ""emotion_sadness""]",265873,38580,7,0.00845216700000151,0.0008855840000023818,2.1332999999401636e-05,5
+weekly:weekly_rank,44,3,"[""emotion_nervousness"", ""sentiment_negative"", ""sentiment_positive""]",265873,38580,7,0.007760832999998968,0.0008419169999989151,2.070800000097961e-05,5
+weekly:weekly_rank,45,3,"[""emotion_neutral"", ""mb_release_count"", ""sentiment_negative""]",265873,38580,7,0.008414791999999949,0.0009182499999980109,2.229100000050721e-05,6
+weekly:weekly_rank,46,3,"[""emotion_remorse"", ""primary_genre"", ""secondary_genres""]",265873,38580,35,0.032719291999999456,0.0028420829999973307,3.4374999998476596e-05,34
+weekly:weekly_rank,47,3,"[""mb_duration_min_seconds"", ""reported_last_week_rank"", ""sentiment_positive""]",265873,38580,7,0.009587666999998135,0.001396833000001152,2.312500000201112e-05,7
+weekly:weekly_rank,48,4,"[""chart_date"", ""emotion_disapproval"", ""emotion_embarrassment"", ""ll_violence""]",265873,38580,8,0.009847374999999658,0.0009965409999992403,3.066600000067865e-05,7
+weekly:weekly_rank,49,4,"[""chart_date"", ""emotion_sadness"", ""reported_last_week_rank"", ""sentiment_neutral""]",265873,38580,8,0.009817749999999847,0.0011840829999982816,2.225000000066757e-05,7
+weekly:weekly_rank,50,4,"[""detox_identity_attack"", ""emotion_sadness"", ""mb_duration_min_seconds"", ""mb_release_year""]",265873,38580,9,0.009976041000001601,0.001133875000000728,2.3708000000510765e-05,8
+weekly:weekly_rank,51,4,"[""detox_obscene"", ""emotion_optimism"", ""emotion_relief"", ""primary_genre""]",265873,38580,23,0.02432666600000033,0.0023742919999989454,3.645800000029453e-05,21
+weekly:weekly_rank,52,4,"[""detox_sexual_explicit"", ""emotion_grief"", ""ll_sexual_content"", ""mb_release_count""]",265873,38580,9,0.011796333000003045,0.001364749999996917,6.458300000034001e-05,8
+weekly:weekly_rank,53,4,"[""detox_threat"", ""emotion_fear"", ""emotion_nervousness"", ""primary_genre""]",265873,38580,23,0.021631417000001818,0.0017727500000006557,3.0166999998471056e-05,21
+weekly:weekly_rank,54,4,"[""detox_toxicity"", ""emotion_optimism"", ""ll_violence"", ""mb_distinct_duration_count""]",265873,38580,9,0.01058641699999896,0.0011061669999996582,2.429199999909315e-05,8
+weekly:weekly_rank,55,4,"[""emotion_admiration"", ""emotion_amusement"", ""emotion_desire"", ""reported_weeks_on_chart""]",265873,38580,8,0.008941749999998194,0.0009848750000003292,2.1832999998139258e-05,6
+weekly:weekly_rank,56,4,"[""emotion_admiration"", ""emotion_anger"", ""emotion_gratitude"", ""emotion_love""]",265873,38580,9,0.010236332999998154,0.0010946250000003488,2.4124999999486363e-05,6
+weekly:weekly_rank,57,4,"[""emotion_anger"", ""emotion_surprise"", ""mb_distinct_duration_count"", ""sentiment_positive""]",265873,38580,9,0.012504040999999688,0.0013590420000006986,2.9624999999811052e-05,7
+weekly:weekly_rank,58,4,"[""emotion_caring"", ""emotion_excitement"", ""primary_genre"", ""reported_last_week_rank""]",265873,38580,23,0.026509292000000073,0.00345512499999856,3.150000000218256e-05,22
+weekly:weekly_rank,59,4,"[""emotion_disappointment"", ""emotion_sadness"", ""reported_last_week_rank"", ""reported_weeks_on_chart""]",265873,38580,8,0.009942834000000289,0.001133792000000966,2.3374999997827217e-05,7
+weekly:weekly_rank,60,4,"[""emotion_disapproval"", ""emotion_love"", ""emotion_remorse"", ""primary_genre""]",265873,38580,23,0.02138054199999928,0.0022012910000022146,2.7541999997993116e-05,21
+weekly:weekly_rank,61,4,"[""emotion_disgust"", ""emotion_realization"", ""primary_genre"", ""secondary_genres""]",265873,38580,37,0.03251933299999976,0.0030271669999990536,3.3915999999578617e-05,35
+weekly:weekly_rank,62,4,"[""emotion_grief"", ""emotion_joy"", ""reported_last_week_rank"", ""secondary_genres""]",265873,38580,23,0.02118983399999763,0.0020597910000006436,3.049999999760189e-05,22
+weekly:weekly_rank,63,4,"[""emotion_remorse"", ""emotion_surprise"", ""ll_explicit_language"", ""sentiment_positive""]",265873,38580,9,0.00988399999999956,0.0009602919999984749,2.229100000050721e-05,7

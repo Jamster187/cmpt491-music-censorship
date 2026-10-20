@@ -1,0 +1,79 @@
+{
+  "caveats": [
+    "No native ordinal/logistic/multilabel model timings; their runtime remains unmeasured.",
+    "MAE requires row-level predictions; cross-products alone yield squared-error metrics, not exact MAE.",
+    "Batch MAE timing uses all sampled coefficient vectors including wide groups; real production batch sizes and memory bandwidth need a bounded pilot.",
+    "No measured parallel speedup; use 2\u20134 workers initially, one BLAS thread each; validate peak RSS before increasing.",
+    "Timing extrapolates by exact k and genre stratum, target sample size and data resolution, not an unweighted average of handpicked combinations."
+  ],
+  "multiplicity": {
+    "all_sets": 33131785,
+    "final_test_refits": "One selected estimator/set per target; final test never evaluated for every candidate.",
+    "regression_sets": 28442928,
+    "three_folds_one_ols_four_ridge_regression_fit_count": 426643920
+  },
+  "planning_uncertainty_multiplier": [
+    0.5,
+    5.0
+  ],
+  "scenarios": {
+    "ordinal_rank": {
+      "cached_all_metrics_one_fold_seconds": {
+        "note": "Uses largest fold timing for all 3 folds; excludes categorical/ordinal likelihood fits and final refit.",
+        "ols_one_fold_hours": 13.007336424339398,
+        "ols_plus_four_ridge_alphas_three_folds_hours": 45.86045589716082,
+        "ridge_one_alpha_one_fold_hours": 0.569870552011885
+      },
+      "cached_batch_mae_one_fold_seconds": {
+        "note": "Uses largest fold timing for all 3 folds; excludes categorical/ordinal likelihood fits and final refit.",
+        "ols_one_fold_hours": 12.595373935738303,
+        "ols_plus_four_ridge_alphas_three_folds_hours": 39.94266844067756,
+        "ridge_one_alpha_one_fold_hours": 0.17971221945522112
+      },
+      "cached_sse_only_one_fold_seconds": {
+        "note": "Uses largest fold timing for all 3 folds; excludes categorical/ordinal likelihood fits and final refit.",
+        "ols_one_fold_hours": 12.472764685764151,
+        "ols_plus_four_ridge_alphas_three_folds_hours": 38.10352969106528,
+        "ridge_one_alpha_one_fold_hours": 0.05710296948106935
+      },
+      "naive_direct_one_fold_seconds": {
+        "note": "Uses largest fold timing for all 3 folds; excludes categorical/ordinal likelihood fits and final refit.",
+        "ols_one_fold_hours": 13.401505084379227,
+        "ols_plus_four_ridge_alphas_three_folds_hours": 152.75176246319677,
+        "ridge_one_alpha_one_fold_hours": 9.378937267504924
+      }
+    },
+    "regression": {
+      "cached_all_metrics_one_fold_seconds": {
+        "note": "Uses largest fold timing for all 3 folds; excludes categorical/ordinal likelihood fits and final refit.",
+        "ols_one_fold_hours": 7.033611535659858,
+        "ols_plus_four_ridge_alphas_three_folds_hours": 36.203803984758586,
+        "ridge_one_alpha_one_fold_hours": 1.2585807814815841
+      },
+      "cached_batch_mae_one_fold_seconds": {
+        "note": "Uses largest fold timing for all 3 folds; excludes categorical/ordinal likelihood fits and final refit.",
+        "ols_one_fold_hours": 6.386740333376597,
+        "ols_plus_four_ridge_alphas_three_folds_hours": 26.624386669749267,
+        "ridge_one_alpha_one_fold_hours": 0.6220138058016228
+      },
+      "cached_sse_only_one_fold_seconds": {
+        "note": "Uses largest fold timing for all 3 folds; excludes categorical/ordinal likelihood fits and final refit.",
+        "ols_one_fold_hours": 6.22848902714809,
+        "ols_plus_four_ridge_alphas_three_folds_hours": 24.250617076321642,
+        "ridge_one_alpha_one_fold_hours": 0.46376249957311455
+      },
+      "naive_direct_one_fold_seconds": {
+        "note": "Uses largest fold timing for all 3 folds; excludes categorical/ordinal likelihood fits and final refit.",
+        "ols_one_fold_hours": 16.63127655909433,
+        "ols_plus_four_ridge_alphas_three_folds_hours": 213.73584947253678,
+        "ridge_one_alpha_one_fold_hours": 13.65350164960448
+      }
+    }
+  },
+  "storage_bytes": {
+    "all_specifications_one_aggregate_result_128_bytes": 4240868480,
+    "regression_15_fit_coefficients_max_38_float64": 129699751680,
+    "regression_15_fit_records_at_128_bytes": 54610421760,
+    "regression_five_estimator_aggregates_at_128_bytes": 18203473920
+  }
+}

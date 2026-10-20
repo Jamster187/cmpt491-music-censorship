@@ -1,0 +1,882 @@
+{
+  "reason": "No agreed forecast origin/horizon or historically certified enrichment availability; retrospective counts must not be called forecast counts.",
+  "status": "not_specified_or_authorized",
+  "tasks": [
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:ll_sexual_content"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:ll_violence"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:ll_explicit_language"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:ll_substance_use"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:detox_toxicity"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:detox_severe_toxicity"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:detox_obscene"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:detox_threat"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:detox_insult"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:detox_identity_attack"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:detox_sexual_explicit"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_admiration"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_amusement"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_anger"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_annoyance"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_approval"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_caring"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_confusion"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_curiosity"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_desire"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_disappointment"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_disapproval"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_disgust"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_embarrassment"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_excitement"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_fear"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_gratitude"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_grief"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_joy"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_love"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_nervousness"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_optimism"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_pride"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_realization"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_relief"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_remorse"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_sadness"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_surprise"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:emotion_neutral"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 487751,
+      "task_id": "songs:sentiment_negative"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 487751,
+      "task_id": "songs:sentiment_neutral"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 487751,
+      "task_id": "songs:sentiment_positive"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:mb_duration_median_seconds"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:mb_duration_min_seconds"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:mb_duration_max_seconds"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:mb_recording_count"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:mb_release_count"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:mb_distinct_duration_count"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:weekly_observation_count"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:chart_weeks"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:total_chart_points"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:snapshot_months_selected"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 251127,
+      "task_id": "songs:first_chart_date"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:last_chart_date"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:first_snapshot_month"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:last_snapshot_month"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:mb_release_year"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 489348,
+      "task_id": "songs:best_chart_rank"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 456781,
+      "task_id": "songs:primary_genre"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 456781,
+      "task_id": "songs:secondary_genres"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 317631,
+      "task_id": "songs:musicbrainz_match_status"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 317631,
+      "task_id": "songs:mb_release_date_precision"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 4047,
+      "task_id": "songs:lyrics_status"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 4047,
+      "task_id": "songs:lyrics_available"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 523627,
+      "task_id": "songs:genre_confidence"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 368777,
+      "task_id": "monthly:monthly_rank"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 294153,
+      "task_id": "monthly:reported_last_week_rank"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 396552,
+      "task_id": "monthly:reported_peak_position"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 396552,
+      "task_id": "monthly:reported_weeks_on_chart"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 368777,
+      "task_id": "weekly:weekly_rank"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 294153,
+      "task_id": "weekly:reported_last_week_rank"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 396552,
+      "task_id": "weekly:reported_peak_position"
+    },
+    {
+      "executable_forecast_combinations": null,
+      "required": [
+        "origin and horizon",
+        "as-of enrichment provenance",
+        "strictly lagged chart covariates",
+        "outcome observation window/censoring",
+        "forecast population selection"
+      ],
+      "retrospective_specifications_count": 396552,
+      "task_id": "weekly:reported_weeks_on_chart"
+    }
+  ]
+}

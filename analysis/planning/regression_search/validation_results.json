@@ -1,0 +1,47 @@
+{
+  "all_data_input_hashes_unchanged": true,
+  "all_json_parse": true,
+  "audited_head": "1211545e6087112e6e9e189799d2061ef302d470",
+  "existing_suite": {
+    "cause": "Fresh clone lacks analysis/moving_averages/data/monthly_classifier_by_genre.csv; only its .csv.xz is tracked. No analysis artifact was rebuilt or changed.",
+    "command": "python3 -m unittest discover -s tests -v",
+    "error_tests": [
+      "test_published_audit_covers_catalog_and_no_unresolved_default_flags (test_figure_presentation.PresentationTests)",
+      "test_artifacts_links_frozen_implementation_and_ignore_rules (test_repository_layout.RepositoryLayoutTests)",
+      "test_overlay_corruption_is_not_exempt_from_integrity_checks (test_repository_layout.RepositoryLayoutTests)"
+    ],
+    "errors": 3,
+    "passed": 360,
+    "run": 364,
+    "skipped": 1,
+    "transcript_sha256": "d8ac6680f832c57b9827f814cdb8cea80ad973a56aaa4f35e51fdcce39566b0b"
+  },
+  "final_private_store_dataset_validator": "Not run: required private chart/enrichment stores are absent in the fresh clone.",
+  "full_campaign_run": false,
+  "numerical_stability_probe": {
+    "design_columns_including_intercept": 7,
+    "gram_condition": 8.874440486894264e+16,
+    "gram_rank": 6,
+    "predictors": [
+      "detox_threat",
+      "emotion_caring",
+      "mb_recording_count",
+      "mb_release_count"
+    ],
+    "resolution": "Use explicit rank-aware NumPy lstsq for OLS reference and singular/ill-conditioned cache fallback; retained benchmark checks pass.",
+    "sklearn_1_5_2_default_ols_vs_rank_aware_svd_max_prediction_difference": 0.002154077318244345,
+    "task": "songs:detox_toxicity"
+  },
+  "planning_csv_line_endings": "LF; no input files normalized",
+  "planning_suite": {
+    "command": "python3 -m unittest discover -s analysis/planning/regression_search -p 'test_*.py' -v",
+    "passed": 12,
+    "result": "OK",
+    "run": 12,
+    "transcript_sha256": "3c3ba4a3470561df187ad2c9a33f9b5187bbf0bf315f79f0a0e5680b3bcd1ff5"
+  },
+  "preexisting_tracked_files_modified": false,
+  "public_release_manifest_hashes_match": true,
+  "report_local_links_resolve": true,
+  "test_predictions_or_model_selection_performed": false
+}

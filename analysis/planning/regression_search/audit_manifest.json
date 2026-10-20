@@ -1,0 +1,42 @@
+{
+  "audit_script_sha256": "b8f615e4d7beb2e3fc17c555585aec9a937cd57e28c523348b4aa936e7b5af25",
+  "audited_head": "1211545e6087112e6e9e189799d2061ef302d470",
+  "full_campaign_run": false,
+  "input_hashes": {
+    "data/preprocessing/monthly.csv": "22df77162dc8ac00e377d50018d838edbdf6feb278a8b2d6ba7ea28cb5816b8d",
+    "data/preprocessing/monthly_lyrics_available.csv": "22df77162dc8ac00e377d50018d838edbdf6feb278a8b2d6ba7ea28cb5816b8d",
+    "data/preprocessing/monthly_no_duplicates.csv": "22df77162dc8ac00e377d50018d838edbdf6feb278a8b2d6ba7ea28cb5816b8d",
+    "data/preprocessing/preprocessing.Rmd": "9008c29d80fe66cf42512ba0b21ae65dfecc744327b2cf3e96efd2243810d13c",
+    "data/preprocessing/weekly.csv.xz": "53c18dbf6d75c1f75f9ee26da3b00b6350fa3fc8c4449cdb46348faa592f2b31",
+    "data/preprocessing/weekly_no_duplicates.csv": "aa046f841b91bd317cb1891f8006400544f02d4d82e7ea226827cefabef8feac",
+    "data/public/README.md": "8ed3aee43dca1aa26803305fdd204259e90f74dd61f845802d95f61f94572424",
+    "data/public/legacy_classifier_v2/README.md": "f5914bb067208c31ac8219e151786af27a40531572ff33e7fe7b9a4e7cdea2f0",
+    "data/public/legacy_classifier_v2/manifest.json": "95789f7fd19c7807130c6f0d49fd57b8d00c694f882dd958adc811d55b91e9e6",
+    "data/public/legacy_classifier_v2/songs.csv": "f798bc2b184fae80b127a2af3285f2d7715fdc4ecd46338cebe46a44e5f0c9b8",
+    "data/public/manifest.json": "9062f244998c6105f1a4ed0fe8449e44fd06d89048598747049319d63717e060",
+    "data/public/master_dataset.csv": "16f7e70a68c869522ed1c0e6dc26e4f4cd65a86549734eed82f3ee9aaf12f9bd",
+    "data/public/master_monthly.csv": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+    "data/public/master_weekly.csv.xz": "60f1a27be135c6e862c3d8bb5e6193999f0a9b3f19e6ea89de1f77454cdfc477",
+    "data/public/monthly_top100.csv": "fb93fb92e9f2d886f59c8be9a6408e6503e0d8a399112ae7fea98f4f5c6b9a15",
+    "data/public/songs.csv": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5",
+    "data/raw/billboard-hot-100.json": "e1ac3678d7618d07537001447574869bb2350bc6522b9cd24c4588ad19237462"
+  },
+  "origin_main_at_audit": "1211545e6087112e6e9e189799d2061ef302d470",
+  "recent_commits": [
+    "1211545e6087112e6e9e189799d2061ef302d470 2026-10-19T13:55:15-06:00 alesa30garcia Merge pull request #2 from Jamster187/preprocessing",
+    "1fa2eb7bb8dc26b44b2a1e69e778ee2328f23e10 2026-10-19T13:53:56-06:00 alesa30garcia Merged Afrobeats genre with Other due to low frequency",
+    "5b1a59ea4be54e99841b2fa69e14a01ab701c837 2026-10-18T23:14:50-06:00 alesa30garcia Merge pull request #1 from Jamster187/preprocessing",
+    "c8fb5a176c3de3430cc7340acd1d20e91a2d3394 2026-10-18T23:12:57-06:00 alesa30garcia Preprocessing master_monthly and master_weekly",
+    "a933fe893f241e24626fca74c5a08cf25d95338e 2026-09-24T02:29:02-06:00 Jamster187 Audit analytical figures and scale primary series for readable presentation",
+    "4fc34ba2a5ce77abb33dd78cda65eac212c72127 2026-09-24T01:52:41-06:00 Jamster187 Scale moving-average overlays to observed ranges and retain full-scale references",
+    "d4497c85d68aeb47a3d9890c5815a4c832028a2a 2026-09-24T01:04:52-06:00 Jamster187 Organize analysis outputs and archive historical research documentation",
+    "6c7aaff81f7e24c1d65e23803b04b0995d2771da 2026-09-24T00:40:27-06:00 Jamster187 Add all-genre classifier overlays from frozen moving averages"
+  ],
+  "repository": "https://github.com/Jamster187/cmpt491-music-censorship",
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "python": "3.9.6"
+  },
+  "sync": "No checkout initially; fresh clone followed by git fetch origin; clean main; 0/0 ahead/behind; merge --ff-only already up to date."
+}

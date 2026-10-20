@@ -1,0 +1,201 @@
+task_id,split,category,positive_rows,denominator,fewer_than_30
+songs:primary_genre,train,Afrobeats / African Pop,3,22032,True
+songs:primary_genre,train,Alternative / Indie,575,22032,False
+songs:primary_genre,train,Country,1815,22032,False
+songs:primary_genre,train,Electronic / Dance,755,22032,False
+songs:primary_genre,train,Folk / Singer-Songwriter,427,22032,False
+songs:primary_genre,train,Gospel / Christian,52,22032,False
+songs:primary_genre,train,Hip-Hop / Rap,1322,22032,False
+songs:primary_genre,train,Jazz / Blues,679,22032,False
+songs:primary_genre,train,K-Pop,1,22032,True
+songs:primary_genre,train,Latin,118,22032,False
+songs:primary_genre,train,Metal,134,22032,False
+songs:primary_genre,train,Other,406,22032,False
+songs:primary_genre,train,Pop,5223,22032,False
+songs:primary_genre,train,R&B / Soul,5472,22032,False
+songs:primary_genre,train,Reggae / Dancehall,133,22032,False
+songs:primary_genre,train,Rock,4917,22032,False
+songs:primary_genre,validation,Afrobeats / African Pop,0,2326,True
+songs:primary_genre,validation,Alternative / Indie,75,2326,False
+songs:primary_genre,validation,Country,548,2326,False
+songs:primary_genre,validation,Electronic / Dance,141,2326,False
+songs:primary_genre,validation,Folk / Singer-Songwriter,21,2326,True
+songs:primary_genre,validation,Gospel / Christian,5,2326,True
+songs:primary_genre,validation,Hip-Hop / Rap,611,2326,False
+songs:primary_genre,validation,Jazz / Blues,5,2326,True
+songs:primary_genre,validation,K-Pop,3,2326,True
+songs:primary_genre,validation,Latin,28,2326,True
+songs:primary_genre,validation,Metal,3,2326,True
+songs:primary_genre,validation,Other,6,2326,True
+songs:primary_genre,validation,Pop,608,2326,False
+songs:primary_genre,validation,R&B / Soul,204,2326,False
+songs:primary_genre,validation,Reggae / Dancehall,8,2326,True
+songs:primary_genre,validation,Rock,60,2326,False
+songs:primary_genre,test,Afrobeats / African Pop,10,3387,True
+songs:primary_genre,test,Alternative / Indie,102,3387,False
+songs:primary_genre,test,Country,615,3387,False
+songs:primary_genre,test,Electronic / Dance,56,3387,False
+songs:primary_genre,test,Folk / Singer-Songwriter,27,3387,True
+songs:primary_genre,test,Gospel / Christian,7,3387,True
+songs:primary_genre,test,Hip-Hop / Rap,1399,3387,False
+songs:primary_genre,test,Jazz / Blues,12,3387,True
+songs:primary_genre,test,K-Pop,46,3387,False
+songs:primary_genre,test,Latin,228,3387,False
+songs:primary_genre,test,Metal,6,3387,True
+songs:primary_genre,test,Other,43,3387,False
+songs:primary_genre,test,Pop,575,3387,False
+songs:primary_genre,test,R&B / Soul,232,3387,False
+songs:primary_genre,test,Reggae / Dancehall,3,3387,True
+songs:primary_genre,test,Rock,26,3387,True
+songs:primary_genre,purged_boundary_song,Afrobeats / African Pop,0,296,True
+songs:primary_genre,purged_boundary_song,Alternative / Indie,10,296,True
+songs:primary_genre,purged_boundary_song,Country,54,296,False
+songs:primary_genre,purged_boundary_song,Electronic / Dance,11,296,True
+songs:primary_genre,purged_boundary_song,Folk / Singer-Songwriter,2,296,True
+songs:primary_genre,purged_boundary_song,Gospel / Christian,0,296,True
+songs:primary_genre,purged_boundary_song,Hip-Hop / Rap,69,296,False
+songs:primary_genre,purged_boundary_song,Jazz / Blues,2,296,True
+songs:primary_genre,purged_boundary_song,K-Pop,1,296,True
+songs:primary_genre,purged_boundary_song,Latin,7,296,True
+songs:primary_genre,purged_boundary_song,Metal,1,296,True
+songs:primary_genre,purged_boundary_song,Other,1,296,True
+songs:primary_genre,purged_boundary_song,Pop,86,296,False
+songs:primary_genre,purged_boundary_song,R&B / Soul,27,296,True
+songs:primary_genre,purged_boundary_song,Reggae / Dancehall,0,296,True
+songs:primary_genre,purged_boundary_song,Rock,25,296,True
+songs:secondary_genres,train,Pop,7274,22032,False
+songs:secondary_genres,train,Rock,4130,22032,False
+songs:secondary_genres,train,Hip-Hop / Rap,650,22032,False
+songs:secondary_genres,train,R&B / Soul,1733,22032,False
+songs:secondary_genres,train,Country,541,22032,False
+songs:secondary_genres,train,Latin,167,22032,False
+songs:secondary_genres,train,Electronic / Dance,1962,22032,False
+songs:secondary_genres,train,Alternative / Indie,817,22032,False
+songs:secondary_genres,train,Metal,367,22032,False
+songs:secondary_genres,train,Folk / Singer-Songwriter,853,22032,False
+songs:secondary_genres,train,Jazz / Blues,1129,22032,False
+songs:secondary_genres,train,Reggae / Dancehall,88,22032,False
+songs:secondary_genres,train,Gospel / Christian,104,22032,False
+songs:secondary_genres,train,K-Pop,0,22032,True
+songs:secondary_genres,train,Afrobeats / African Pop,4,22032,True
+songs:secondary_genres,train,Other,42,22032,False
+songs:secondary_genres,validation,Pop,736,2326,False
+songs:secondary_genres,validation,Rock,348,2326,False
+songs:secondary_genres,validation,Hip-Hop / Rap,262,2326,False
+songs:secondary_genres,validation,R&B / Soul,328,2326,False
+songs:secondary_genres,validation,Country,15,2326,True
+songs:secondary_genres,validation,Latin,16,2326,True
+songs:secondary_genres,validation,Electronic / Dance,412,2326,False
+songs:secondary_genres,validation,Alternative / Indie,120,2326,False
+songs:secondary_genres,validation,Metal,9,2326,True
+songs:secondary_genres,validation,Folk / Singer-Songwriter,62,2326,False
+songs:secondary_genres,validation,Jazz / Blues,18,2326,True
+songs:secondary_genres,validation,Reggae / Dancehall,46,2326,False
+songs:secondary_genres,validation,Gospel / Christian,9,2326,True
+songs:secondary_genres,validation,K-Pop,1,2326,True
+songs:secondary_genres,validation,Afrobeats / African Pop,5,2326,True
+songs:secondary_genres,validation,Other,8,2326,True
+songs:secondary_genres,test,Pop,760,3387,False
+songs:secondary_genres,test,Rock,211,3387,False
+songs:secondary_genres,test,Hip-Hop / Rap,241,3387,False
+songs:secondary_genres,test,R&B / Soul,416,3387,False
+songs:secondary_genres,test,Country,55,3387,False
+songs:secondary_genres,test,Latin,12,3387,True
+songs:secondary_genres,test,Electronic / Dance,299,3387,False
+songs:secondary_genres,test,Alternative / Indie,175,3387,False
+songs:secondary_genres,test,Metal,3,3387,True
+songs:secondary_genres,test,Folk / Singer-Songwriter,102,3387,False
+songs:secondary_genres,test,Jazz / Blues,15,3387,True
+songs:secondary_genres,test,Reggae / Dancehall,56,3387,False
+songs:secondary_genres,test,Gospel / Christian,8,3387,True
+songs:secondary_genres,test,K-Pop,10,3387,True
+songs:secondary_genres,test,Afrobeats / African Pop,8,3387,True
+songs:secondary_genres,test,Other,1,3387,True
+songs:secondary_genres,purged_boundary_song,Pop,98,296,False
+songs:secondary_genres,purged_boundary_song,Rock,54,296,False
+songs:secondary_genres,purged_boundary_song,Hip-Hop / Rap,31,296,False
+songs:secondary_genres,purged_boundary_song,R&B / Soul,59,296,False
+songs:secondary_genres,purged_boundary_song,Country,4,296,True
+songs:secondary_genres,purged_boundary_song,Latin,3,296,True
+songs:secondary_genres,purged_boundary_song,Electronic / Dance,60,296,False
+songs:secondary_genres,purged_boundary_song,Alternative / Indie,13,296,True
+songs:secondary_genres,purged_boundary_song,Metal,6,296,True
+songs:secondary_genres,purged_boundary_song,Folk / Singer-Songwriter,10,296,True
+songs:secondary_genres,purged_boundary_song,Jazz / Blues,4,296,True
+songs:secondary_genres,purged_boundary_song,Reggae / Dancehall,5,296,True
+songs:secondary_genres,purged_boundary_song,Gospel / Christian,1,296,True
+songs:secondary_genres,purged_boundary_song,K-Pop,0,296,True
+songs:secondary_genres,purged_boundary_song,Afrobeats / African Pop,0,296,True
+songs:secondary_genres,purged_boundary_song,Other,0,296,True
+songs:musicbrainz_match_status,train,ambiguous,3609,22032,False
+songs:musicbrainz_match_status,train,error,1,22032,True
+songs:musicbrainz_match_status,train,high_confidence,16962,22032,False
+songs:musicbrainz_match_status,train,not_found,1460,22032,False
+songs:musicbrainz_match_status,validation,ambiguous,139,2326,False
+songs:musicbrainz_match_status,validation,error,0,2326,True
+songs:musicbrainz_match_status,validation,high_confidence,2097,2326,False
+songs:musicbrainz_match_status,validation,not_found,90,2326,False
+songs:musicbrainz_match_status,test,ambiguous,187,3387,False
+songs:musicbrainz_match_status,test,error,0,3387,True
+songs:musicbrainz_match_status,test,high_confidence,2973,3387,False
+songs:musicbrainz_match_status,test,not_found,227,3387,False
+songs:musicbrainz_match_status,purged_boundary_song,ambiguous,28,296,True
+songs:musicbrainz_match_status,purged_boundary_song,error,0,296,True
+songs:musicbrainz_match_status,purged_boundary_song,high_confidence,258,296,False
+songs:musicbrainz_match_status,purged_boundary_song,not_found,10,296,True
+songs:mb_release_date_precision,train,day,1843,16873,False
+songs:mb_release_date_precision,train,month,1099,16873,False
+songs:mb_release_date_precision,train,year,13931,16873,False
+songs:mb_release_date_precision,validation,day,983,2089,False
+songs:mb_release_date_precision,validation,month,30,2089,False
+songs:mb_release_date_precision,validation,year,1076,2089,False
+songs:mb_release_date_precision,test,day,2255,2838,False
+songs:mb_release_date_precision,test,month,13,2838,True
+songs:mb_release_date_precision,test,year,570,2838,False
+songs:mb_release_date_precision,purged_boundary_song,day,85,258,False
+songs:mb_release_date_precision,purged_boundary_song,month,0,258,True
+songs:mb_release_date_precision,purged_boundary_song,year,173,258,False
+songs:lyrics_status,train,bad_missing_text,200,22032,False
+songs:lyrics_status,train,error,70,22032,False
+songs:lyrics_status,train,not_found,1129,22032,False
+songs:lyrics_status,train,quarantined,2911,22032,False
+songs:lyrics_status,train,success,16081,22032,False
+songs:lyrics_status,train,wrong_identity,1641,22032,False
+songs:lyrics_status,validation,bad_missing_text,0,2326,True
+songs:lyrics_status,validation,error,10,2326,True
+songs:lyrics_status,validation,not_found,1,2326,True
+songs:lyrics_status,validation,quarantined,340,2326,False
+songs:lyrics_status,validation,success,1907,2326,False
+songs:lyrics_status,validation,wrong_identity,68,2326,False
+songs:lyrics_status,test,bad_missing_text,1,3387,True
+songs:lyrics_status,test,error,12,3387,True
+songs:lyrics_status,test,not_found,10,3387,True
+songs:lyrics_status,test,quarantined,537,3387,False
+songs:lyrics_status,test,success,2729,3387,False
+songs:lyrics_status,test,wrong_identity,98,3387,False
+songs:lyrics_status,purged_boundary_song,bad_missing_text,0,296,True
+songs:lyrics_status,purged_boundary_song,error,1,296,True
+songs:lyrics_status,purged_boundary_song,not_found,0,296,True
+songs:lyrics_status,purged_boundary_song,quarantined,29,296,True
+songs:lyrics_status,purged_boundary_song,success,264,296,False
+songs:lyrics_status,purged_boundary_song,wrong_identity,2,296,True
+songs:lyrics_available,train,0,5951,22032,False
+songs:lyrics_available,train,1,16081,22032,False
+songs:lyrics_available,validation,0,419,2326,False
+songs:lyrics_available,validation,1,1907,2326,False
+songs:lyrics_available,test,0,658,3387,False
+songs:lyrics_available,test,1,2729,3387,False
+songs:lyrics_available,purged_boundary_song,0,32,296,False
+songs:lyrics_available,purged_boundary_song,1,264,296,False
+songs:genre_confidence,train,high,14049,22032,False
+songs:genre_confidence,train,low,1684,22032,False
+songs:genre_confidence,train,medium,6299,22032,False
+songs:genre_confidence,validation,high,2033,2326,False
+songs:genre_confidence,validation,low,5,2326,True
+songs:genre_confidence,validation,medium,288,2326,False
+songs:genre_confidence,test,high,2260,3387,False
+songs:genre_confidence,test,low,193,3387,False
+songs:genre_confidence,test,medium,934,3387,False
+songs:genre_confidence,purged_boundary_song,high,279,296,False
+songs:genre_confidence,purged_boundary_song,low,0,296,True
+songs:genre_confidence,purged_boundary_song,medium,17,296,True

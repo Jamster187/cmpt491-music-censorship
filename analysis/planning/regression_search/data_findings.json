@@ -1,0 +1,79 @@
+{
+  "all_42_available_songs": 20979,
+  "duration_min_median_max_all_equal_songs": 4686,
+  "goemotion_sum_min_max": [
+    0.5788757440168397,
+    2.7381268836907102
+  ],
+  "mb_duration_max_over_one_hour_songs": 4,
+  "monthly_duplicate_song_dates_extra_rows": 3,
+  "monthly_preprocessing_expected_deduplicated_songs": 26159,
+  "monthly_preprocessing_expected_deduplicated_with_lyrics": 20184,
+  "monthly_preprocessing_rows_without_lyrics": 15685,
+  "monthly_preprocessing_three_files_byte_identical": true,
+  "primary_genre_counts": {
+    "Afrobeats / African Pop": 13,
+    "Alternative / Indie": 762,
+    "Country": 3032,
+    "Electronic / Dance": 963,
+    "Folk / Singer-Songwriter": 477,
+    "Gospel / Christian": 64,
+    "Hip-Hop / Rap": 3401,
+    "Jazz / Blues": 698,
+    "K-Pop": 51,
+    "Latin": 381,
+    "Metal": 144,
+    "Other": 456,
+    "Pop": 6492,
+    "R&B / Soul": 5935,
+    "Reggae / Dancehall": 144,
+    "Rock": 5028
+  },
+  "release_year_after_first_chart_year_songs": 998,
+  "sentiment_sum_max_abs_error": 1.341104507446289e-07,
+  "song_week_count_vs_row_count_different_songs": 1,
+  "split_row_counts": {
+    "monthly": {
+      "purged_boundary_song": 1691,
+      "test": 10110,
+      "train": 61121,
+      "validation": 8875
+    },
+    "songs": {
+      "purged_boundary_song": 296,
+      "test": 3387,
+      "train": 22032,
+      "validation": 2326
+    },
+    "weekly": {
+      "purged_boundary_song": 7338,
+      "test": 43696,
+      "train": 265873,
+      "validation": 38580
+    }
+  },
+  "split_unique_song_counts": {
+    "monthly": {
+      "purged_boundary_song": 296,
+      "test": 3387,
+      "train": 22032,
+      "validation": 2326
+    },
+    "songs": {
+      "purged_boundary_song": 296,
+      "test": 3387,
+      "train": 22032,
+      "validation": 2326
+    },
+    "weekly": {
+      "purged_boundary_song": 303,
+      "test": 5377,
+      "train": 23845,
+      "validation": 3198
+    }
+  },
+  "test_use": "Schema/coverage audit only; no benchmark fitting, prediction, scoring, or selection on test rows.",
+  "weekly_duplicate_song_dates_extra_rows": 13,
+  "weekly_outside_final_population_rows": 7492,
+  "weekly_outside_final_population_songs": 4682
+}
