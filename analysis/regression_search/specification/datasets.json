@@ -1,0 +1,932 @@
+[
+  {
+    "columns": 70,
+    "fields": {
+      "artist": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "best_chart_rank": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "chart_weeks": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "detox_identity_attack": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "detox_insult": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "detox_obscene": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "detox_severe_toxicity": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "detox_sexual_explicit": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "detox_threat": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "detox_toxicity": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_admiration": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_amusement": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_anger": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_annoyance": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_approval": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_caring": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_confusion": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_curiosity": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_desire": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_disappointment": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_disapproval": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_disgust": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_embarrassment": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_excitement": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_fear": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_gratitude": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_grief": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_joy": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_love": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_nervousness": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_neutral": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_optimism": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_pride": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_realization": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_relief": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_remorse": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_sadness": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "emotion_surprise": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "first_chart_date": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "first_snapshot_month": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "genre_confidence": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "in_final_study_population": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "last_chart_date": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "last_snapshot_month": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "ll_explicit_language": {
+        "dtype": "float64",
+        "missing": 7062
+      },
+      "ll_sexual_content": {
+        "dtype": "float64",
+        "missing": 7062
+      },
+      "ll_substance_use": {
+        "dtype": "float64",
+        "missing": 7062
+      },
+      "ll_violence": {
+        "dtype": "float64",
+        "missing": 7062
+      },
+      "lyrics_available": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "lyrics_status": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "mb_distinct_duration_count": {
+        "dtype": "float64",
+        "missing": 5751
+      },
+      "mb_duration_max_seconds": {
+        "dtype": "float64",
+        "missing": 5847
+      },
+      "mb_duration_median_seconds": {
+        "dtype": "float64",
+        "missing": 5847
+      },
+      "mb_duration_min_seconds": {
+        "dtype": "float64",
+        "missing": 5847
+      },
+      "mb_earliest_release_date": {
+        "dtype": "object",
+        "missing": 5983
+      },
+      "mb_recording_count": {
+        "dtype": "float64",
+        "missing": 5751
+      },
+      "mb_release_count": {
+        "dtype": "float64",
+        "missing": 5751
+      },
+      "mb_release_date_precision": {
+        "dtype": "object",
+        "missing": 5983
+      },
+      "mb_release_title": {
+        "dtype": "object",
+        "missing": 5751
+      },
+      "musicbrainz_match_status": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "primary_genre": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "secondary_genres": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "sentiment_negative": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "sentiment_neutral": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "sentiment_positive": {
+        "dtype": "float64",
+        "missing": 7060
+      },
+      "snapshot_months_selected": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "song_id": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "title": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "total_chart_points": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "weekly_observation_count": {
+        "dtype": "int64",
+        "missing": 0
+      }
+    },
+    "path": "data/public/songs.csv",
+    "rows": 28041,
+    "sha256": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5",
+    "songs": 28041,
+    "table": "songs"
+  },
+  {
+    "columns": 78,
+    "fields": {
+      "artist": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "best_chart_rank": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "chart_weeks": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "detox_identity_attack": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "detox_insult": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "detox_obscene": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "detox_severe_toxicity": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "detox_sexual_explicit": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "detox_threat": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "detox_toxicity": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_admiration": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_amusement": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_anger": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_annoyance": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_approval": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_caring": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_confusion": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_curiosity": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_desire": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_disappointment": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_disapproval": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_disgust": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_embarrassment": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_excitement": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_fear": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_gratitude": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_grief": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_joy": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_love": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_nervousness": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_neutral": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_optimism": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_pride": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_realization": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_relief": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_remorse": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_sadness": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "emotion_surprise": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "first_chart_date": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "first_snapshot_month": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "genre_confidence": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "in_final_study_population": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "last_chart_date": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "last_snapshot_month": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "ll_explicit_language": {
+        "dtype": "float64",
+        "missing": 17375
+      },
+      "ll_sexual_content": {
+        "dtype": "float64",
+        "missing": 17375
+      },
+      "ll_substance_use": {
+        "dtype": "float64",
+        "missing": 17375
+      },
+      "ll_violence": {
+        "dtype": "float64",
+        "missing": 17375
+      },
+      "lyrics_available": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "lyrics_status": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "mb_distinct_duration_count": {
+        "dtype": "float64",
+        "missing": 14287
+      },
+      "mb_duration_max_seconds": {
+        "dtype": "float64",
+        "missing": 14484
+      },
+      "mb_duration_median_seconds": {
+        "dtype": "float64",
+        "missing": 14484
+      },
+      "mb_duration_min_seconds": {
+        "dtype": "float64",
+        "missing": 14484
+      },
+      "mb_earliest_release_date": {
+        "dtype": "object",
+        "missing": 14703
+      },
+      "mb_recording_count": {
+        "dtype": "float64",
+        "missing": 14287
+      },
+      "mb_release_count": {
+        "dtype": "float64",
+        "missing": 14287
+      },
+      "mb_release_date_precision": {
+        "dtype": "object",
+        "missing": 14703
+      },
+      "mb_release_title": {
+        "dtype": "object",
+        "missing": 14287
+      },
+      "month": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "monthly_rank": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "musicbrainz_match_status": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "primary_genre": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "reported_last_week_rank": {
+        "dtype": "float64",
+        "missing": 8373
+      },
+      "reported_peak_position": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "reported_weeks_on_chart": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "secondary_genres": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "sentiment_negative": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "sentiment_neutral": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "sentiment_positive": {
+        "dtype": "float64",
+        "missing": 17371
+      },
+      "snapshot_chart_date": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "snapshot_months_selected": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "song_id": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "source_chart_index": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "source_row_index": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "title": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "total_chart_points": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "weekly_observation_count": {
+        "dtype": "int64",
+        "missing": 0
+      }
+    },
+    "path": "data/public/master_monthly.csv",
+    "rows": 81797,
+    "sha256": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+    "songs": 28041,
+    "table": "monthly"
+  },
+  {
+    "columns": 77,
+    "fields": {
+      "artist": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "best_chart_rank": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "chart_date": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "chart_weeks": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "detox_identity_attack": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "detox_insult": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "detox_obscene": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "detox_severe_toxicity": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "detox_sexual_explicit": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "detox_threat": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "detox_toxicity": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_admiration": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_amusement": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_anger": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_annoyance": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_approval": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_caring": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_confusion": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_curiosity": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_desire": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_disappointment": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_disapproval": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_disgust": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_embarrassment": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_excitement": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_fear": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_gratitude": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_grief": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_joy": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_love": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_nervousness": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_neutral": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_optimism": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_pride": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_realization": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_relief": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_remorse": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_sadness": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "emotion_surprise": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "first_chart_date": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "first_snapshot_month": {
+        "dtype": "object",
+        "missing": 7492
+      },
+      "genre_confidence": {
+        "dtype": "object",
+        "missing": 7492
+      },
+      "in_final_study_population": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "last_chart_date": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "last_snapshot_month": {
+        "dtype": "object",
+        "missing": 7492
+      },
+      "ll_explicit_language": {
+        "dtype": "float64",
+        "missing": 80367
+      },
+      "ll_sexual_content": {
+        "dtype": "float64",
+        "missing": 80367
+      },
+      "ll_substance_use": {
+        "dtype": "float64",
+        "missing": 80367
+      },
+      "ll_violence": {
+        "dtype": "float64",
+        "missing": 80367
+      },
+      "lyrics_available": {
+        "dtype": "float64",
+        "missing": 7492
+      },
+      "lyrics_status": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "mb_distinct_duration_count": {
+        "dtype": "float64",
+        "missing": 67536
+      },
+      "mb_duration_max_seconds": {
+        "dtype": "float64",
+        "missing": 68333
+      },
+      "mb_duration_median_seconds": {
+        "dtype": "float64",
+        "missing": 68333
+      },
+      "mb_duration_min_seconds": {
+        "dtype": "float64",
+        "missing": 68333
+      },
+      "mb_earliest_release_date": {
+        "dtype": "object",
+        "missing": 69056
+      },
+      "mb_recording_count": {
+        "dtype": "float64",
+        "missing": 67536
+      },
+      "mb_release_count": {
+        "dtype": "float64",
+        "missing": 67536
+      },
+      "mb_release_date_precision": {
+        "dtype": "object",
+        "missing": 69056
+      },
+      "mb_release_title": {
+        "dtype": "object",
+        "missing": 67536
+      },
+      "musicbrainz_match_status": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "primary_genre": {
+        "dtype": "object",
+        "missing": 7492
+      },
+      "reported_last_week_rank": {
+        "dtype": "float64",
+        "missing": 36357
+      },
+      "reported_peak_position": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "reported_weeks_on_chart": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "secondary_genres": {
+        "dtype": "object",
+        "missing": 7492
+      },
+      "sentiment_negative": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "sentiment_neutral": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "sentiment_positive": {
+        "dtype": "float64",
+        "missing": 80353
+      },
+      "snapshot_months_selected": {
+        "dtype": "float64",
+        "missing": 7492
+      },
+      "song_id": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "source_chart_index": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "source_row_index": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "title": {
+        "dtype": "object",
+        "missing": 0
+      },
+      "total_chart_points": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "weekly_observation_count": {
+        "dtype": "int64",
+        "missing": 0
+      },
+      "weekly_rank": {
+        "dtype": "int64",
+        "missing": 0
+      }
+    },
+    "path": "data/public/master_weekly.csv.xz",
+    "rows": 355487,
+    "sha256": "60f1a27be135c6e862c3d8bb5e6193999f0a9b3f19e6ea89de1f77454cdfc477",
+    "songs": 32723,
+    "table": "weekly"
+  }
+]

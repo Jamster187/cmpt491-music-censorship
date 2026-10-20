@@ -1,0 +1,31 @@
+{
+  "estimator": "OLS",
+  "folds": [
+    [
+      "1990-01-01",
+      "2000-01-01"
+    ],
+    [
+      "2000-01-01",
+      "2010-01-01"
+    ],
+    [
+      "2010-01-01",
+      "2018-01-01"
+    ]
+  ],
+  "interactions": false,
+  "intercept": true,
+  "max_original_predictors": 3,
+  "preprocessing": "train median + missing flag, fixed 16 genres, unweighted train standardization, remove constant columns",
+  "rank_tolerance": "float64 eps * max(original training rows, selected columns) * largest singular value",
+  "scope": "retrospective frozen-release cohort generalization, not an as-of forecast",
+  "seed": 491,
+  "selection": "mean equal-fold baseline-relative MSE skill; then fewer variables; then lexicographic predictors",
+  "test_end": null,
+  "test_isolation": "pilot uses only pre-2018 songs; campaign final test reserved until all winners frozen",
+  "test_start": "2018-01-01",
+  "uncertainty": "500 song-cluster resamples of fixed final predictions; additional two-year debut-block intervals when at least three blocks exist; no selection/refit inside bootstrap",
+  "version": "ols-three-v1",
+  "weights": "inverse rows per song within target-observed partition, normalized to mean 1"
+}

@@ -1,0 +1,28 @@
+task_id,fold,best_predictors,best_skill,selected_period_rank,selected_skill,selected_r2,candidates
+songs:ll_violence,0,"[""detox_toxicity"", ""primary_genre""]",0.2724562091647432,1,0.2724562091647432,0.2309175882191652,131
+songs:ll_violence,1,"[""primary_genre"", ""secondary_genres"", ""sentiment_negative""]",0.23950910332754882,4,0.23083831538306165,0.162875324214525,131
+songs:ll_violence,2,"[""detox_toxicity"", ""primary_genre""]",0.19736532199056556,1,0.19736532199056556,0.1225984761763309,131
+songs:detox_toxicity,0,"[""detox_insult"", ""emotion_optimism"", ""primary_genre""]",0.7178656015542367,2,0.7104962794961001,0.680961622974491,131
+songs:detox_toxicity,1,"[""detox_obscene"", ""secondary_genres"", ""sentiment_negative""]",0.843916396169537,1,0.843916396169537,0.8200254000146926,131
+songs:detox_toxicity,2,"[""detox_obscene"", ""secondary_genres"", ""sentiment_negative""]",0.8691859686034396,1,0.8691859686034396,0.8399945915509586,131
+songs:emotion_joy,0,"[""emotion_disapproval"", ""emotion_gratitude"", ""emotion_relief""]",0.3600848738768705,2,0.35936763222432055,0.3527518288075532,131
+songs:emotion_joy,1,"[""emotion_disgust"", ""emotion_relief"", ""primary_genre""]",0.32947993400514697,2,0.32899356855750284,0.31999148064535543,131
+songs:emotion_joy,2,"[""emotion_disgust"", ""emotion_relief"", ""primary_genre""]",0.36121280555886237,3,0.3592076496631692,0.35622560064942477,131
+songs:sentiment_positive,0,"[""first_snapshot_month"", ""secondary_genres"", ""sentiment_negative""]",0.7771582439346071,2,0.7745715001610429,0.7614179147100848,131
+songs:sentiment_positive,1,"[""first_snapshot_month"", ""secondary_genres"", ""sentiment_negative""]",0.7781385570559424,2,0.7734991971759986,0.7419533028424637,131
+songs:sentiment_positive,2,"[""primary_genre"", ""secondary_genres"", ""sentiment_negative""]",0.7664839535364838,2,0.7648495003413542,0.7597008409904769,131
+songs:mb_duration_median_seconds,0,"[""mb_duration_min_seconds"", ""secondary_genres"", ""total_chart_points""]",0.4861652153276752,2,0.4522870575605872,-0.11394315014525902,131
+songs:mb_duration_median_seconds,1,"[""mb_duration_min_seconds"", ""mb_recording_count""]",0.3311330701603733,1,0.3311330701603733,0.19951853250575668,131
+songs:mb_duration_median_seconds,2,"[""mb_duration_min_seconds"", ""mb_recording_count""]",0.603432680259788,1,0.603432680259788,0.5848984975628283,131
+songs:chart_weeks,0,"[""emotion_joy"", ""weekly_observation_count""]",1.0,4,1.0,1.0,131
+songs:chart_weeks,1,"[""emotion_relief"", ""ll_explicit_language"", ""weekly_observation_count""]",0.9999992961098357,1,0.9999992961098357,0.999999013562503,131
+songs:chart_weeks,2,"[""emotion_relief"", ""ll_explicit_language"", ""weekly_observation_count""]",0.9999996730067753,1,0.9999996730067753,0.9999996335295362,131
+songs:mb_release_year,0,"[""first_snapshot_month"", ""secondary_genres"", ""sentiment_negative""]",0.9951284963169803,1,0.9951284963169803,0.7967226750812499,131
+songs:mb_release_year,1,"[""first_snapshot_month"", ""secondary_genres"", ""sentiment_negative""]",0.9981573281169189,1,0.9981573281169189,0.860231135521003,131
+songs:mb_release_year,2,"[""first_snapshot_month"", ""secondary_genres"", ""sentiment_negative""]",0.998334633427246,1,0.998334633427246,0.42671453265914006,131
+monthly:reported_weeks_on_chart,0,"[""emotion_confusion"", ""mb_release_year"", ""reported_peak_position""]",0.4586220995891437,1,0.4586220995891437,0.3614158168545444,131
+monthly:reported_weeks_on_chart,1,"[""emotion_confusion"", ""mb_release_year"", ""reported_peak_position""]",0.4489799079472958,1,0.4489799079472958,0.3606789351150268,131
+monthly:reported_weeks_on_chart,2,"[""emotion_optimism"", ""mb_release_year"", ""reported_last_week_rank""]",0.3682188489187379,3,0.3443355493752154,0.3068047693244409,131
+weekly:reported_weeks_on_chart,0,"[""emotion_confusion"", ""mb_release_year"", ""reported_peak_position""]",0.4832573731021065,1,0.4832573731021065,0.3864359759015934,131
+weekly:reported_weeks_on_chart,1,"[""emotion_confusion"", ""mb_release_year"", ""reported_peak_position""]",0.4709222916563689,1,0.4709222916563689,0.4127514739582576,131
+weekly:reported_weeks_on_chart,2,"[""emotion_optimism"", ""mb_release_year"", ""reported_last_week_rank""]",0.45808451579541154,4,0.38007583774012355,0.37996441393592995,131

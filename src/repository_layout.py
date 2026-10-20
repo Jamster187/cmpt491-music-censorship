@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import re
 import subprocess
+from artifact_integrity import sha, COMPRESSED_PUBLIC
 
 ROOT=Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/'docs/repository_cleanup_manifest.json'
@@ -11,14 +12,13 @@ HISTORICAL_MARKDOWN={'archive/old_methodology/repository_readme_before_cleanup.m
                      'data/public/legacy_classifier_v2/README.md'}
 OPTIONAL_PLAIN={'analysis/moving_averages/data/monthly_classifier_overall.csv',
                 'analysis/moving_averages/data/monthly_classifier_by_genre.csv'}
-
-
-def sha(path):
-    digest=hashlib.sha256()
-    with path.open('rb') as stream:
-        for block in iter(lambda:stream.read(1048576),b''):
-            digest.update(block)
-    return digest.hexdigest()
+# These exact documents explicitly describe local, ignored artifacts. This is
+# not a blanket exemption for private directories or unknown broken links.
+OPTIONAL_LOCAL_LINKS={
+    ('archive/intermediate_reports/lyrics_exclusion_audit.md', '../../data/processed/lyrics_exclusion_categories.csv'),
+    ('docs/lyrics_exclusion_audit.md', '../data/processed/lyrics_exclusion_categories.csv'),
+    ('reports/phase1_data_quality.md', 'phase1_data_quality.json'),
+}
 
 
 def markdown_files():
@@ -35,7 +35,7 @@ def broken_links():
             if re.match(r'[a-z]+://|#|mailto:',target):
                 continue
             count+=1
-            if not (path.parent/target.split('#')[0]).exists():
+            if not (path.parent/target.split('#')[0]).exists() and (str(path.relative_to(ROOT)),target) not in OPTIONAL_LOCAL_LINKS:
                 failures.append((str(path.relative_to(ROOT)),target))
     return failures,count
 
@@ -84,9 +84,7 @@ def validate():
     manifest=json.loads(MANIFEST.read_text());checked=0
     for name,expected in current_artifact_hashes(manifest).items():
         p=ROOT/name
-        if name in OPTIONAL_PLAIN and not p.exists():
-            continue
-        if not p.exists() or sha(p)!=expected:
+        if (not p.exists() and name not in COMPRESSED_PUBLIC) or sha(p)!=expected:
             raise ValueError('Immutable data/result changed: '+name)
         checked+=1
     release=json.loads((ROOT/'data/public/manifest.json').read_text())

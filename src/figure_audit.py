@@ -12,6 +12,7 @@ import descriptive_analysis as d
 import moving_average_analysis as m
 import moving_average_all_genres as overlays
 import figure_style as style
+from artifact_integrity import sha as canonical_sha
 
 ROOT=Path(__file__).resolve().parents[1]
 ANALYSIS=ROOT/'analysis'
@@ -153,7 +154,7 @@ def validate():
     manifest=json.loads(MANIFEST.read_text())
     for category in ['numerical_sha256','code_sha256','figure_sha256','audit_sha256']:
         for name,digest in manifest[category].items():
-            if d.sha(ROOT/name)!=digest: raise ValueError(category+' changed: '+name)
+            if canonical_sha(ROOT/name)!=digest: raise ValueError(category+' changed: '+name)
     actual={str(p.relative_to(ROOT)) for p in ANALYSIS.rglob('*.png')}
     if actual!=set(manifest['figure_sha256']): raise ValueError('Stale or missing generated analytical figures')
     print(f'Validated {len(actual)} figures; {len(manifest["numerical_sha256"])} unchanged numerical/input files',flush=True)

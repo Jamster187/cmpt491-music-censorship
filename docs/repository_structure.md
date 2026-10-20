@@ -11,6 +11,7 @@ For presentation figures, go directly to the moving-average all-genres shortlist
 | [docs/](README.md) | Methods, schemas and technical documentation |
 | [src/](../src/README.md) | Reproducible pipeline/analysis code and current entry points |
 | [tests/](../tests/) | Regression and integrity validation |
+| [analysis/regression_search/](../analysis/regression_search/README.md) | Three-predictor OLS specification and bounded pilot; full campaign pending approval |
 | [reports/](../reports/README.md) | Final audits and required production evidence |
 | [archive/](../archive/README.md) | Superseded experiments, narratives and intermediate reports |
 
@@ -51,3 +52,10 @@ manifest remains intact; only current PNG hashes supersede its image snapshots.
 The original descriptive and moving-average manifests retain all numerical hashes
 and record refreshed rendering provenance. Use `python3 src/figure_audit.py` for
 presentation-only rebuilds, and its `--validate` option for read-only verification.
+
+Fresh clones can run both integrity validators without private/generated local
+files. The canonical bytes of three optional plain CSVs are streamed from their
+tracked XZ archives; mismatched or corrupt bytes still fail validation. The link
+checker exempts only three documented links to two ignored local artifacts.
+The regression demo plot lives under `docs/assets/` and does not alter the frozen
+catalog of existing analytical figures.

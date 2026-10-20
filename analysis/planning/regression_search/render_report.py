@@ -715,7 +715,7 @@ except this requested report; existing datasets, scores, labels and analyses rem
 
 **Stop point reached: feasibility audit and planning artifacts only.**
 """
-    (a.ROOT/"docs/regression_search_plan.md").write_text(report)
+    (a.ROOT/"docs/regression_search_four_predictor_feasibility.md").write_text(report)
     specs=load("predictor_sets.json")
     a.write_json("forecast_constraints.json",dict(
         status="not_specified_or_authorized",

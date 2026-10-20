@@ -1,0 +1,12 @@
+{
+  "actual_data_scores_identical": true,
+  "interrupted": {
+    "interrupted_after_batches": 2,
+    "task_id": "songs:ll_violence"
+  },
+  "no_op_resume": {
+    "already_complete": true,
+    "completed_combinations": 131,
+    "task_id": "songs:ll_violence"
+  }
+}

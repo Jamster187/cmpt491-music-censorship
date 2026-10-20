@@ -1,8 +1,11 @@
 # Regression-search planning artifacts
 
-Read the [planning report](../../../docs/regression_search_plan.md) first.
-This is an unapproved search specification and a bounded feasibility audit,
-not a trained exhaustive campaign.
+Historical four-predictor feasibility snapshot, superseded by the
+[current three-predictor OLS implementation](../../regression_search/README.md).
+The [original report](../../../docs/regression_search_four_predictor_feasibility.md)
+and measurements are retained for provenance. Do not run this directory’s
+four-predictor OLS/Ridge benchmark for the current campaign. The current engine
+imports only the audited variable/eligibility definitions from `audit.py`.
 
 | Artifact | Purpose |
 |---|---|
@@ -24,7 +27,7 @@ not a trained exhaustive campaign.
 | `validation_results.json` | Planning checks and existing-suite limitations |
 | `artifact_manifest.json` | Hashes of deliverables, excluding this manifest itself |
 
-Reproduction, from the repository root:
+Historical reproduction only (not the current campaign), from the repository root:
 
 ```bash
 python3 analysis/planning/regression_search/audit.py

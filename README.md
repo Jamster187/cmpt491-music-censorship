@@ -17,6 +17,7 @@ changes do not establish causation.
 | Final audits and production evidence | [reports/](reports/README.md) |
 | Superseded experiments and historical reports | [archive/](archive/README.md) |
 | Regression tests | [tests/](tests/) |
+| Three-predictor OLS experiment and professor demo | [analysis/regression_search/](analysis/regression_search/README.md) |
 
 For a quick tour, see [repository structure](docs/repository_structure.md).
 
@@ -75,3 +76,14 @@ For a repository-wide presentation-only rebuild (no numerical exports rewritten)
 run `python3 src/figure_audit.py`. The [figure audit](analysis/figure_audit.md)
 records all analytical families, axis decisions and validation; the
 [visual review](analysis/figure_visual_review.md) records representative inspections.
+
+The [regression experiment](docs/regression_search_plan.md) implements an exhaustive
+additive OLS search with one to three original predictors. Its bounded pilot and
+professor demonstration use public data; the full campaign remains gated pending
+approval. Run `python3 src/regression_search.py pilot`, then
+`python3 src/regression_search.py demo` to reproduce the demonstration. Checkpoints,
+full model rankings and most fitted artifacts stay in ignored `data/experiments/`.
+
+Fresh-clone integrity checks read the canonical bytes directly from the three
+tracked XZ archives when optional decompressed CSVs are absent. Private local
+artifacts are not required for `repository_layout.py` or `figure_audit.py --validate`.

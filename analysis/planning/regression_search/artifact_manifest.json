@@ -1,6 +1,6 @@
 {
   "artifacts_sha256": {
-    "analysis/planning/regression_search/README.md": "ba2978ffabf502ea9a6264f02b2e021a5b19075edb28ad5667729a1d565c1b03",
+    "analysis/planning/regression_search/README.md": "bd93af7fe4e77e30b0066037ead914f50756ae4826fbeddf73a19d56b8e823f2",
     "analysis/planning/regression_search/audit.py": "b8f615e4d7beb2e3fc17c555585aec9a937cd57e28c523348b4aa936e7b5af25",
     "analysis/planning/regression_search/audit_manifest.json": "57a13d10a3dbe7880c2a71d0fdb6be26059fc8d72bfd11c73c6d7a7af9eadb7d",
     "analysis/planning/regression_search/benchmark.py": "8b18e93a7df1e5511f400d85f657be530cba6e8daee6d2fd4475543ae4336e1a",
@@ -14,7 +14,7 @@
     "analysis/planning/regression_search/feasibility_estimates.json": "dcb502dc095810be73a9c68cba47eb539bb79ba389caad55b362b2fc3d3af51e",
     "analysis/planning/regression_search/forecast_constraints.json": "201669d3273cbe767b5754acda804c849b750e6db8a62834d8a45c5d4c19a653",
     "analysis/planning/regression_search/predictor_sets.json": "2a3425908d57640eea0024a194b124c20850756c21c8997324658bbb72c060b7",
-    "analysis/planning/regression_search/render_report.py": "1659ce8a542f2c9f41a5453707064b128ebd3ee42b974e90d8797bae97067466",
+    "analysis/planning/regression_search/render_report.py": "443ddf232d296980b6373c06acc8e33a31c2ee82fb548db6ad59c4892e890820",
     "analysis/planning/regression_search/runtime_estimates.csv": "72689ce5cf4872dbf8c6c344f8f7b3d5130c1044265037d896704bf0c880e1f8",
     "analysis/planning/regression_search/schema_inventory.csv": "41de3f3b7394e7703fdf557c99b217bad1a44d6f5ede5053a9e99ef69d50a57b",
     "analysis/planning/regression_search/search_counts.csv": "517d7fddafbaee8b282e2b07abb91d3312ad44207a8e3ee39102b3eb954d2246",
@@ -25,8 +25,9 @@
     "analysis/planning/regression_search/test_planning.py": "db00c0fc1e4318c8c0c10e329711cc86ad350b9bc4b4efa0f0961782b6230ccc",
     "analysis/planning/regression_search/validation_results.json": "988f42d41c269444485dce35b8337fdb9729f40075557596746192d43ade3336",
     "analysis/planning/regression_search/variable_catalog.json": "e85bfef01b8ec8965670fe062156ad218de0ed30d6c040798668122f9c386432",
-    "docs/regression_search_plan.md": "ffb88dd1f5d9dec48a57428b9bbfdcd51e3458cc69f4f18203741f5f3244abee"
+    "docs/regression_search_four_predictor_feasibility.md": "ffb88dd1f5d9dec48a57428b9bbfdcd51e3458cc69f4f18203741f5f3244abee"
   },
   "audited_source_head": "1211545e6087112e6e9e189799d2061ef302d470",
-  "excludes_self": true
+  "excludes_self": true,
+  "historical_status": "Four-predictor feasibility snapshot; report relocated without changing bytes; current campaign is analysis/regression_search. README and renderer destination updated only."
 }

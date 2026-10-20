@@ -58,7 +58,7 @@
   "presentation_pipeline_sha256": {
     "src/descriptive_analysis.py": "272f1fc599680b0ac14ce291c3ce58a139a191b5bf33cbb7c596dea56b12cee1",
     "src/descriptive_figures.py": "a8f35f47cb7466b9301904ee3d62e37c8b3e59a69b958ba9c377bbd740cf26d7",
-    "src/figure_audit.py": "0cc58f56448056d68e79ddac95fd2ca6625f5929a54901e58bb8a09cb72e9a72",
+    "src/figure_audit.py": "cea927ac5bc6073c4ad831d679a35e0ddc5eee92dd91eb76ce89b28ce1f9f932",
     "src/figure_style.py": "3a100ace1b2b1bffa9d7c156194bc08307ff66efa935930971e6973abc41db52",
     "src/moving_average_all_genres.py": "0dbf1808591ce31888d5db1f061274ea1b055e7095b2a0e0c928d1b85de3f71b",
     "src/moving_average_analysis.py": "e48b1c654256e8736671a80a753ee2ef87970e00227c1d85a3f25c7dcf23b1a7",

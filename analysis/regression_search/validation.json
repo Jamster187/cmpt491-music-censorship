@@ -1,0 +1,1488 @@
+{
+  "actual_final_test_rows_evaluated": 0,
+  "all_177_numerical_validation_periods_have_target_variation": true,
+  "code_hashes_match_pilot": true,
+  "existing_numerical_and_image_outputs_unchanged": true,
+  "filtered_hierarchy_cli": "PASS: k=2, limit=5",
+  "focused_search_tests": 15,
+  "fresh_clone_integrity_regressions": 4,
+  "full_campaign_run": false,
+  "historical_artifact_manifest_matches": true,
+  "historical_planning_suite": {
+    "passed": 12,
+    "run": 12,
+    "transcript_sha256": "ccfc2c71547c61df3d9ae999ad2389dd101569fb95f64fcbe986be80ad844fb1"
+  },
+  "numerical_period_support": [
+    {
+      "fold": 0,
+      "n_train": 11298,
+      "n_validation": 2316,
+      "task_id": "songs:ll_sexual_content",
+      "train_unique": 11255,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 1,
+      "n_train": 13693,
+      "n_validation": 2310,
+      "task_id": "songs:ll_sexual_content",
+      "train_unique": 13629,
+      "validation_unique": 2304
+    },
+    {
+      "fold": 2,
+      "n_train": 16079,
+      "n_validation": 1907,
+      "task_id": "songs:ll_sexual_content",
+      "train_unique": 15985,
+      "validation_unique": 1902
+    },
+    {
+      "fold": 0,
+      "n_train": 11298,
+      "n_validation": 2316,
+      "task_id": "songs:ll_violence",
+      "train_unique": 11267,
+      "validation_unique": 2315
+    },
+    {
+      "fold": 1,
+      "n_train": 13693,
+      "n_validation": 2310,
+      "task_id": "songs:ll_violence",
+      "train_unique": 13652,
+      "validation_unique": 2308
+    },
+    {
+      "fold": 2,
+      "n_train": 16079,
+      "n_validation": 1907,
+      "task_id": "songs:ll_violence",
+      "train_unique": 16025,
+      "validation_unique": 1905
+    },
+    {
+      "fold": 0,
+      "n_train": 11298,
+      "n_validation": 2316,
+      "task_id": "songs:ll_explicit_language",
+      "train_unique": 11267,
+      "validation_unique": 2314
+    },
+    {
+      "fold": 1,
+      "n_train": 13693,
+      "n_validation": 2310,
+      "task_id": "songs:ll_explicit_language",
+      "train_unique": 13655,
+      "validation_unique": 2307
+    },
+    {
+      "fold": 2,
+      "n_train": 16079,
+      "n_validation": 1907,
+      "task_id": "songs:ll_explicit_language",
+      "train_unique": 16025,
+      "validation_unique": 1903
+    },
+    {
+      "fold": 0,
+      "n_train": 11298,
+      "n_validation": 2316,
+      "task_id": "songs:ll_substance_use",
+      "train_unique": 11265,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13693,
+      "n_validation": 2310,
+      "task_id": "songs:ll_substance_use",
+      "train_unique": 13656,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16079,
+      "n_validation": 1907,
+      "task_id": "songs:ll_substance_use",
+      "train_unique": 16035,
+      "validation_unique": 1906
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:detox_toxicity",
+      "train_unique": 11285,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:detox_toxicity",
+      "train_unique": 13679,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:detox_toxicity",
+      "train_unique": 16065,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:detox_severe_toxicity",
+      "train_unique": 11277,
+      "validation_unique": 2315
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:detox_severe_toxicity",
+      "train_unique": 13666,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:detox_severe_toxicity",
+      "train_unique": 16047,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:detox_obscene",
+      "train_unique": 11285,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:detox_obscene",
+      "train_unique": 13677,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:detox_obscene",
+      "train_unique": 16062,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:detox_threat",
+      "train_unique": 11274,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:detox_threat",
+      "train_unique": 13665,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:detox_threat",
+      "train_unique": 16049,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:detox_insult",
+      "train_unique": 11286,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:detox_insult",
+      "train_unique": 13680,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:detox_insult",
+      "train_unique": 16063,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:detox_identity_attack",
+      "train_unique": 11277,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:detox_identity_attack",
+      "train_unique": 13669,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:detox_identity_attack",
+      "train_unique": 16053,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:detox_sexual_explicit",
+      "train_unique": 11284,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:detox_sexual_explicit",
+      "train_unique": 13677,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:detox_sexual_explicit",
+      "train_unique": 16062,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_admiration",
+      "train_unique": 11286,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_admiration",
+      "train_unique": 13677,
+      "validation_unique": 2309
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_admiration",
+      "train_unique": 16061,
+      "validation_unique": 1906
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_amusement",
+      "train_unique": 11282,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_amusement",
+      "train_unique": 13674,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_amusement",
+      "train_unique": 16059,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_anger",
+      "train_unique": 11282,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_anger",
+      "train_unique": 13674,
+      "validation_unique": 2309
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_anger",
+      "train_unique": 16056,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_annoyance",
+      "train_unique": 11280,
+      "validation_unique": 2315
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_annoyance",
+      "train_unique": 13672,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_annoyance",
+      "train_unique": 16056,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_approval",
+      "train_unique": 11283,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_approval",
+      "train_unique": 13676,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_approval",
+      "train_unique": 16059,
+      "validation_unique": 1906
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_caring",
+      "train_unique": 11284,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_caring",
+      "train_unique": 13676,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_caring",
+      "train_unique": 16062,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_confusion",
+      "train_unique": 11285,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_confusion",
+      "train_unique": 13676,
+      "validation_unique": 2309
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_confusion",
+      "train_unique": 16060,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_curiosity",
+      "train_unique": 11286,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_curiosity",
+      "train_unique": 13677,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_curiosity",
+      "train_unique": 16063,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_desire",
+      "train_unique": 11289,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_desire",
+      "train_unique": 13682,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_desire",
+      "train_unique": 16068,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_disappointment",
+      "train_unique": 11284,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_disappointment",
+      "train_unique": 13675,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_disappointment",
+      "train_unique": 16061,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_disapproval",
+      "train_unique": 11286,
+      "validation_unique": 2315
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_disapproval",
+      "train_unique": 13677,
+      "validation_unique": 2309
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_disapproval",
+      "train_unique": 16060,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_disgust",
+      "train_unique": 11284,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_disgust",
+      "train_unique": 13677,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_disgust",
+      "train_unique": 16056,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_embarrassment",
+      "train_unique": 11286,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_embarrassment",
+      "train_unique": 13677,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_embarrassment",
+      "train_unique": 16061,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_excitement",
+      "train_unique": 11287,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_excitement",
+      "train_unique": 13677,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_excitement",
+      "train_unique": 16061,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_fear",
+      "train_unique": 11282,
+      "validation_unique": 2315
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_fear",
+      "train_unique": 13672,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_fear",
+      "train_unique": 16056,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_gratitude",
+      "train_unique": 11281,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_gratitude",
+      "train_unique": 13671,
+      "validation_unique": 2309
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_gratitude",
+      "train_unique": 16054,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_grief",
+      "train_unique": 11287,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_grief",
+      "train_unique": 13678,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_grief",
+      "train_unique": 16062,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_joy",
+      "train_unique": 11283,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_joy",
+      "train_unique": 13677,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_joy",
+      "train_unique": 16063,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_love",
+      "train_unique": 11288,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_love",
+      "train_unique": 13681,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_love",
+      "train_unique": 16066,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_nervousness",
+      "train_unique": 11288,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_nervousness",
+      "train_unique": 13682,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_nervousness",
+      "train_unique": 16068,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_optimism",
+      "train_unique": 11283,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_optimism",
+      "train_unique": 13674,
+      "validation_unique": 2309
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_optimism",
+      "train_unique": 16058,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_pride",
+      "train_unique": 11282,
+      "validation_unique": 2315
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_pride",
+      "train_unique": 13674,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_pride",
+      "train_unique": 16057,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_realization",
+      "train_unique": 11282,
+      "validation_unique": 2315
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_realization",
+      "train_unique": 13675,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_realization",
+      "train_unique": 16060,
+      "validation_unique": 1906
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_relief",
+      "train_unique": 11280,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_relief",
+      "train_unique": 13668,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_relief",
+      "train_unique": 16051,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_remorse",
+      "train_unique": 11289,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_remorse",
+      "train_unique": 13681,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_remorse",
+      "train_unique": 16065,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_sadness",
+      "train_unique": 11284,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_sadness",
+      "train_unique": 13676,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_sadness",
+      "train_unique": 16061,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_surprise",
+      "train_unique": 11276,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_surprise",
+      "train_unique": 13668,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_surprise",
+      "train_unique": 16051,
+      "validation_unique": 1906
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:emotion_neutral",
+      "train_unique": 11287,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:emotion_neutral",
+      "train_unique": 13681,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:emotion_neutral",
+      "train_unique": 16066,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:sentiment_negative",
+      "train_unique": 11282,
+      "validation_unique": 2316
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:sentiment_negative",
+      "train_unique": 13674,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:sentiment_negative",
+      "train_unique": 16057,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:sentiment_neutral",
+      "train_unique": 11269,
+      "validation_unique": 2315
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:sentiment_neutral",
+      "train_unique": 13656,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:sentiment_neutral",
+      "train_unique": 16035,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11300,
+      "n_validation": 2316,
+      "task_id": "songs:sentiment_positive",
+      "train_unique": 11282,
+      "validation_unique": 2315
+    },
+    {
+      "fold": 1,
+      "n_train": 13695,
+      "n_validation": 2310,
+      "task_id": "songs:sentiment_positive",
+      "train_unique": 13674,
+      "validation_unique": 2310
+    },
+    {
+      "fold": 2,
+      "n_train": 16081,
+      "n_validation": 1907,
+      "task_id": "songs:sentiment_positive",
+      "train_unique": 16055,
+      "validation_unique": 1907
+    },
+    {
+      "fold": 0,
+      "n_train": 11529,
+      "n_validation": 2594,
+      "task_id": "songs:mb_duration_median_seconds",
+      "train_unique": 7684,
+      "validation_unique": 2187
+    },
+    {
+      "fold": 1,
+      "n_train": 14213,
+      "n_validation": 2590,
+      "task_id": "songs:mb_duration_median_seconds",
+      "train_unique": 9366,
+      "validation_unique": 2020
+    },
+    {
+      "fold": 2,
+      "n_train": 16888,
+      "n_validation": 2093,
+      "task_id": "songs:mb_duration_median_seconds",
+      "train_unique": 10763,
+      "validation_unique": 1566
+    },
+    {
+      "fold": 0,
+      "n_train": 11529,
+      "n_validation": 2594,
+      "task_id": "songs:mb_duration_min_seconds",
+      "train_unique": 4210,
+      "validation_unique": 1630
+    },
+    {
+      "fold": 1,
+      "n_train": 14213,
+      "n_validation": 2590,
+      "task_id": "songs:mb_duration_min_seconds",
+      "train_unique": 5312,
+      "validation_unique": 1574
+    },
+    {
+      "fold": 2,
+      "n_train": 16888,
+      "n_validation": 2093,
+      "task_id": "songs:mb_duration_min_seconds",
+      "train_unique": 6261,
+      "validation_unique": 1193
+    },
+    {
+      "fold": 0,
+      "n_train": 11529,
+      "n_validation": 2594,
+      "task_id": "songs:mb_duration_max_seconds",
+      "train_unique": 5791,
+      "validation_unique": 1841
+    },
+    {
+      "fold": 1,
+      "n_train": 14213,
+      "n_validation": 2590,
+      "task_id": "songs:mb_duration_max_seconds",
+      "train_unique": 7037,
+      "validation_unique": 1713
+    },
+    {
+      "fold": 2,
+      "n_train": 16888,
+      "n_validation": 2093,
+      "task_id": "songs:mb_duration_max_seconds",
+      "train_unique": 8127,
+      "validation_unique": 1324
+    },
+    {
+      "fold": 0,
+      "n_train": 11586,
+      "n_validation": 2601,
+      "task_id": "songs:mb_recording_count",
+      "train_unique": 100,
+      "validation_unique": 87
+    },
+    {
+      "fold": 1,
+      "n_train": 14277,
+      "n_validation": 2600,
+      "task_id": "songs:mb_recording_count",
+      "train_unique": 100,
+      "validation_unique": 52
+    },
+    {
+      "fold": 2,
+      "n_train": 16962,
+      "n_validation": 2097,
+      "task_id": "songs:mb_recording_count",
+      "train_unique": 100,
+      "validation_unique": 28
+    },
+    {
+      "fold": 0,
+      "n_train": 11586,
+      "n_validation": 2601,
+      "task_id": "songs:mb_release_count",
+      "train_unique": 443,
+      "validation_unique": 238
+    },
+    {
+      "fold": 1,
+      "n_train": 14277,
+      "n_validation": 2600,
+      "task_id": "songs:mb_release_count",
+      "train_unique": 452,
+      "validation_unique": 193
+    },
+    {
+      "fold": 2,
+      "n_train": 16962,
+      "n_validation": 2097,
+      "task_id": "songs:mb_release_count",
+      "train_unique": 455,
+      "validation_unique": 155
+    },
+    {
+      "fold": 0,
+      "n_train": 11586,
+      "n_validation": 2601,
+      "task_id": "songs:mb_distinct_duration_count",
+      "train_unique": 81,
+      "validation_unique": 70
+    },
+    {
+      "fold": 1,
+      "n_train": 14277,
+      "n_validation": 2600,
+      "task_id": "songs:mb_distinct_duration_count",
+      "train_unique": 81,
+      "validation_unique": 42
+    },
+    {
+      "fold": 2,
+      "n_train": 16962,
+      "n_validation": 2097,
+      "task_id": "songs:mb_distinct_duration_count",
+      "train_unique": 81,
+      "validation_unique": 24
+    },
+    {
+      "fold": 0,
+      "n_train": 15672,
+      "n_validation": 3225,
+      "task_id": "songs:weekly_observation_count",
+      "train_unique": 41,
+      "validation_unique": 56
+    },
+    {
+      "fold": 1,
+      "n_train": 18998,
+      "n_validation": 2937,
+      "task_id": "songs:weekly_observation_count",
+      "train_unique": 57,
+      "validation_unique": 58
+    },
+    {
+      "fold": 2,
+      "n_train": 22032,
+      "n_validation": 2326,
+      "task_id": "songs:weekly_observation_count",
+      "train_unique": 64,
+      "validation_unique": 64
+    },
+    {
+      "fold": 0,
+      "n_train": 15672,
+      "n_validation": 3225,
+      "task_id": "songs:chart_weeks",
+      "train_unique": 41,
+      "validation_unique": 56
+    },
+    {
+      "fold": 1,
+      "n_train": 18998,
+      "n_validation": 2937,
+      "task_id": "songs:chart_weeks",
+      "train_unique": 56,
+      "validation_unique": 58
+    },
+    {
+      "fold": 2,
+      "n_train": 22032,
+      "n_validation": 2326,
+      "task_id": "songs:chart_weeks",
+      "train_unique": 64,
+      "validation_unique": 64
+    },
+    {
+      "fold": 0,
+      "n_train": 15672,
+      "n_validation": 3225,
+      "task_id": "songs:total_chart_points",
+      "train_unique": 1769,
+      "validation_unique": 1582
+    },
+    {
+      "fold": 1,
+      "n_train": 18998,
+      "n_validation": 2937,
+      "task_id": "songs:total_chart_points",
+      "train_unique": 2071,
+      "validation_unique": 1566
+    },
+    {
+      "fold": 2,
+      "n_train": 22032,
+      "n_validation": 2326,
+      "task_id": "songs:total_chart_points",
+      "train_unique": 2354,
+      "validation_unique": 1286
+    },
+    {
+      "fold": 0,
+      "n_train": 15672,
+      "n_validation": 3225,
+      "task_id": "songs:snapshot_months_selected",
+      "train_unique": 10,
+      "validation_unique": 15
+    },
+    {
+      "fold": 1,
+      "n_train": 18998,
+      "n_validation": 2937,
+      "task_id": "songs:snapshot_months_selected",
+      "train_unique": 15,
+      "validation_unique": 16
+    },
+    {
+      "fold": 2,
+      "n_train": 22032,
+      "n_validation": 2326,
+      "task_id": "songs:snapshot_months_selected",
+      "train_unique": 17,
+      "validation_unique": 18
+    },
+    {
+      "fold": 0,
+      "n_train": 15672,
+      "n_validation": 3225,
+      "task_id": "songs:first_chart_date",
+      "train_unique": 1619,
+      "validation_unique": 511
+    },
+    {
+      "fold": 1,
+      "n_train": 18998,
+      "n_validation": 2937,
+      "task_id": "songs:first_chart_date",
+      "train_unique": 2136,
+      "validation_unique": 517
+    },
+    {
+      "fold": 2,
+      "n_train": 22032,
+      "n_validation": 2326,
+      "task_id": "songs:first_chart_date",
+      "train_unique": 2660,
+      "validation_unique": 413
+    },
+    {
+      "fold": 0,
+      "n_train": 15672,
+      "n_validation": 3225,
+      "task_id": "songs:last_chart_date",
+      "train_unique": 1622,
+      "validation_unique": 513
+    },
+    {
+      "fold": 1,
+      "n_train": 18998,
+      "n_validation": 2937,
+      "task_id": "songs:last_chart_date",
+      "train_unique": 2140,
+      "validation_unique": 515
+    },
+    {
+      "fold": 2,
+      "n_train": 22032,
+      "n_validation": 2326,
+      "task_id": "songs:last_chart_date",
+      "train_unique": 2661,
+      "validation_unique": 408
+    },
+    {
+      "fold": 0,
+      "n_train": 15672,
+      "n_validation": 3225,
+      "task_id": "songs:first_snapshot_month",
+      "train_unique": 376,
+      "validation_unique": 119
+    },
+    {
+      "fold": 1,
+      "n_train": 18998,
+      "n_validation": 2937,
+      "task_id": "songs:first_snapshot_month",
+      "train_unique": 496,
+      "validation_unique": 120
+    },
+    {
+      "fold": 2,
+      "n_train": 22032,
+      "n_validation": 2326,
+      "task_id": "songs:first_snapshot_month",
+      "train_unique": 617,
+      "validation_unique": 96
+    },
+    {
+      "fold": 0,
+      "n_train": 15672,
+      "n_validation": 3225,
+      "task_id": "songs:last_snapshot_month",
+      "train_unique": 377,
+      "validation_unique": 120
+    },
+    {
+      "fold": 1,
+      "n_train": 18998,
+      "n_validation": 2937,
+      "task_id": "songs:last_snapshot_month",
+      "train_unique": 497,
+      "validation_unique": 120
+    },
+    {
+      "fold": 2,
+      "n_train": 22032,
+      "n_validation": 2326,
+      "task_id": "songs:last_snapshot_month",
+      "train_unique": 617,
+      "validation_unique": 96
+    },
+    {
+      "fold": 0,
+      "n_train": 11516,
+      "n_validation": 2588,
+      "task_id": "songs:mb_release_year",
+      "train_unique": 62,
+      "validation_unique": 28
+    },
+    {
+      "fold": 1,
+      "n_train": 14194,
+      "n_validation": 2594,
+      "task_id": "songs:mb_release_year",
+      "train_unique": 64,
+      "validation_unique": 23
+    },
+    {
+      "fold": 2,
+      "n_train": 16873,
+      "n_validation": 2089,
+      "task_id": "songs:mb_release_year",
+      "train_unique": 67,
+      "validation_unique": 19
+    },
+    {
+      "fold": 0,
+      "n_train": 37265,
+      "n_validation": 11511,
+      "task_id": "monthly:reported_weeks_on_chart",
+      "train_unique": 40,
+      "validation_unique": 59
+    },
+    {
+      "fold": 1,
+      "n_train": 49205,
+      "n_validation": 11441,
+      "task_id": "monthly:reported_weeks_on_chart",
+      "train_unique": 59,
+      "validation_unique": 64
+    },
+    {
+      "fold": 2,
+      "n_train": 61121,
+      "n_validation": 8875,
+      "task_id": "monthly:reported_weeks_on_chart",
+      "train_unique": 66,
+      "validation_unique": 71
+    },
+    {
+      "fold": 0,
+      "n_train": 162131,
+      "n_validation": 50055,
+      "task_id": "weekly:reported_weeks_on_chart",
+      "train_unique": 43,
+      "validation_unique": 69
+    },
+    {
+      "fold": 1,
+      "n_train": 214056,
+      "n_validation": 49751,
+      "task_id": "weekly:reported_weeks_on_chart",
+      "train_unique": 69,
+      "validation_unique": 76
+    },
+    {
+      "fold": 2,
+      "n_train": 265873,
+      "n_validation": 38580,
+      "task_id": "weekly:reported_weeks_on_chart",
+      "train_unique": 76,
+      "validation_unique": 87
+    }
+  ],
+  "optimized_vs_direct_svd": {
+    "checks": 297,
+    "max_prediction_absolute_error": 1.2946088645549025e-11,
+    "max_prediction_scaled_error": 6.338407909893521e-13
+  },
+  "optional_artifacts_absent_during_repository_checks": [
+    "data/public/master_weekly.csv",
+    "analysis/moving_averages/data/monthly_classifier_overall.csv",
+    "analysis/moving_averages/data/monthly_classifier_by_genre.csv",
+    "data/processed/lyrics_exclusion_categories.csv",
+    "reports/phase1_data_quality.json"
+  ],
+  "private_store_dataset_rebuild": "Not run: private prerequisites absent; public hashes and frozen implementation checks pass",
+  "professor_demo_replay": "PASS: all 907 saved predictions reproduced",
+  "protected_input_hashes_unchanged": true,
+  "provenance": {
+    "code_sha256": {
+      "analysis/planning/regression_search/audit.py": "b8f615e4d7beb2e3fc17c555585aec9a937cd57e28c523348b4aa936e7b5af25",
+      "src/regression_core.py": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69",
+      "src/regression_pilot.py": "7d4488970ea0b1e647dd75c2ef899e5bad10e13237f91805ec7a9f6b30d0c4ab",
+      "src/regression_search.py": "5dc4097e73d0cc63eaea893d9d328ded8df4782fa8dfd424d8a23890bdaa7cc1",
+      "src/regression_spec.py": "b3e530f9824b029cd464f3c1cd413252affa6e153a9089fda833f4c469824408",
+      "src/regression_store.py": "5ce5b3d62cb30617ea3d8bae1b91fa6e39f452e1984bcabc75c09b10b6910a20"
+    },
+    "git_head": "38929afaf28fbcc36904c0d14b033f26ecfb73ab",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "sqlite": "3.35.5"
+  },
+  "repository_suite": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "errors": 0,
+    "failures": 0,
+    "passed": 382,
+    "run": 383,
+    "seconds": 81.687,
+    "skipped": 1,
+    "transcript_sha256": "0a009541eadf94f2f0b5532d7b0c8b05f8266194015faecf6705ee36274b7dea"
+  },
+  "resume": {
+    "actual_data_scores_identical": true,
+    "interrupted": {
+      "interrupted_after_batches": 2,
+      "task_id": "songs:ll_violence"
+    },
+    "no_op_resume": {
+      "already_complete": true,
+      "completed_combinations": 131,
+      "task_id": "songs:ll_violence"
+    }
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,25 @@
+{
+  "blas_threads": 1,
+  "bottleneck": "Exact held-out absolute errors require all predictions; caching avoids per-combination full-row fitting.",
+  "completed_combinations_per_end_to_end_second": 30.348933645126717,
+  "estimated_results_bytes": 1124999793,
+  "estimated_retained_bytes": 1289332886,
+  "final_refits_and_bootstrap": "59 small selected-model refits and 500-resample fixed-prediction cluster intervals; allow an additional 5-15 minutes",
+  "measured_combinations": 1179,
+  "measured_validation_fits": 3537,
+  "measured_workers": 1,
+  "numerical_campaign_ready": true,
+  "parallelism": "Optional 2-3 independent target workers with one BLAS thread each; no unmeasured speedup assumed",
+  "peak_rss_bytes": 2700967936,
+  "planning_range_hours": [
+    0.08800740668643266,
+    0.528044440118596
+  ],
+  "recommended_free_disk_bytes": 3867998660,
+  "single_worker_hours": 0.17601481337286531,
+  "timing_basis": "Measured full-population three-period OLS pilot; k/genre/target strata include checkpoint writes; catalog/ranking costs scale by candidate count; exact MAE for every candidate",
+  "total_combinations": 1998901,
+  "uncertainty": "Scenario range, not a confidence interval; tiny genre strata, SVD mix, thermal/storage effects and worker contention vary.",
+  "validation_fits": 5996703,
+  "validation_fits_per_kernel_second": 7217.6604875686135
+}

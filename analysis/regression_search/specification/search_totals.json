@@ -1,0 +1,83 @@
+{
+  "by_family": {
+    "binary": {
+      "k1": 18,
+      "k2": 153,
+      "k3": 816,
+      "previous_k4": 3060,
+      "targets": 1,
+      "total": 987
+    },
+    "multiclass": {
+      "k1": 182,
+      "k2": 4562,
+      "k3": 78521,
+      "previous_k4": 1012825,
+      "targets": 4,
+      "total": 83265
+    },
+    "multilabel": {
+      "k1": 58,
+      "k2": 1653,
+      "k3": 30855,
+      "previous_k4": 424215,
+      "targets": 1,
+      "total": 32566
+    },
+    "ordinal_diagnostic": {
+      "k1": 60,
+      "k2": 1770,
+      "k3": 34219,
+      "previous_k4": 487578,
+      "targets": 1,
+      "total": 36049
+    },
+    "ordinal_rank": {
+      "k1": 385,
+      "k2": 10413,
+      "k3": 184612,
+      "previous_k4": 2412902,
+      "targets": 7,
+      "total": 195410
+    },
+    "regression": {
+      "k1": 3466,
+      "k2": 100118,
+      "k3": 1895317,
+      "previous_k4": 26444027,
+      "previous_total": 28442928,
+      "reduction_pct": 92.97223900436693,
+      "targets": 59,
+      "total": 1998901
+    }
+  },
+  "current_data_hashes": {
+    "data/preprocessing/monthly.csv": "22df77162dc8ac00e377d50018d838edbdf6feb278a8b2d6ba7ea28cb5816b8d",
+    "data/preprocessing/monthly_lyrics_available.csv": "22df77162dc8ac00e377d50018d838edbdf6feb278a8b2d6ba7ea28cb5816b8d",
+    "data/preprocessing/monthly_no_duplicates.csv": "22df77162dc8ac00e377d50018d838edbdf6feb278a8b2d6ba7ea28cb5816b8d",
+    "data/preprocessing/weekly.csv.xz": "53c18dbf6d75c1f75f9ee26da3b00b6350fa3fc8c4449cdb46348faa592f2b31",
+    "data/preprocessing/weekly_no_duplicates.csv": "aa046f841b91bd317cb1891f8006400544f02d4d82e7ea226827cefabef8feac",
+    "data/public/master_monthly.csv": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+    "data/public/master_weekly.csv.xz": "60f1a27be135c6e862c3d8bb5e6193999f0a9b3f19e6ea89de1f77454cdfc477",
+    "data/public/songs.csv": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5"
+  },
+  "full_campaign_run": false,
+  "numerical_targets": 59,
+  "provenance": {
+    "code_sha256": {
+      "analysis/planning/regression_search/audit.py": "b8f615e4d7beb2e3fc17c555585aec9a937cd57e28c523348b4aa936e7b5af25",
+      "src/regression_core.py": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69",
+      "src/regression_pilot.py": "7d4488970ea0b1e647dd75c2ef899e5bad10e13237f91805ec7a9f6b30d0c4ab",
+      "src/regression_search.py": "5dc4097e73d0cc63eaea893d9d328ded8df4782fa8dfd424d8a23890bdaa7cc1",
+      "src/regression_spec.py": "b3e530f9824b029cd464f3c1cd413252affa6e153a9089fda833f4c469824408",
+      "src/regression_store.py": "5ce5b3d62cb30617ea3d8bae1b91fa6e39f452e1984bcabc75c09b10b6910a20"
+    },
+    "git_head": "38929afaf28fbcc36904c0d14b033f26ecfb73ab",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "sqlite": "3.35.5"
+  },
+  "separate_categorical_ordinal_targets": 14
+}

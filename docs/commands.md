@@ -11,6 +11,9 @@ Run from the repository root. Public-data analysis uses the existing `requiremen
 | Published figure validation | `python3 src/figure_audit.py --validate` | Read-only image catalog, numerical and code hashes |
 | Repository integrity/navigation | `python3 src/repository_layout.py` | Read-only hashes, frozen code, links, paths and ignore rules |
 | All regression tests | `python3 -m unittest discover -s tests -v` | Fixtures plus public-data integrity checks |
+| Three-predictor OLS schema/count audit | `python3 src/regression_search.py audit` | Read-only public data → current specification; no model fits |
+| Bounded OLS pilot and benchmark | `python3 src/regression_search.py pilot` | Nine targets, at most 1,179 unique combinations; campaign final test excluded |
+| Professor model demonstration | `python3 src/regression_search.py demo` | Replays saved pilot model and verifies predictions; run the bounded pilot first |
 | Public dataset build | `python3 src/final_dataset.py build` | Offline frozen private inputs; replaces public exports only after validation |
 | Public dataset validation | `python3 src/final_dataset.py validate` | Offline reconstruction/comparison; no acquisition or inference |
 | Phase 1 foundation check | `python3 src/phase1.py validate` | Existing raw snapshot and immutable chart foundation |

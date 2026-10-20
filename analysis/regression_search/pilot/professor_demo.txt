@@ -1,0 +1,8 @@
+Target: detox_toxicity
+Predictors (3): detox_obscene, secondary_genres, sentiment_negative
+Training rows: 17,094; held-out rehearsal rows: 907
+R² 0.8959; MAE 0.0797; RMSE 0.1170
+Training-mean baseline R² -0.3404; RMSE 0.4199; training-median baseline MAE 0.3140
+95% song-bootstrap R² interval: [0.8717653962077128, 0.9174236122319874]
+Interpretation: this measures agreement among frozen model outputs on later songs. It does not establish causation or accuracy against human toxicity labels. The winner comes from a bounded deterministic sample, not the exhaustive campaign. OLS predictions are unbounded and are not clipped.
+The campaign's 2018-onward test remains untouched. Poor performance would mean difficult to predict with these variables and additive OLS, not objectively random.

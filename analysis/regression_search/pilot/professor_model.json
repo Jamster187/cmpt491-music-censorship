@@ -1,0 +1,247 @@
+{
+  "coefficients": [
+    2.9610834738275244e-16,
+    0.16742474405337665,
+    -0.002277824833357188,
+    -0.00039597237620347947,
+    0.0023660601390940936,
+    0.0011251476929029745,
+    -0.0006568843647238986,
+    0.0008849525484532807,
+    0.0032177651957596733,
+    0.001942997756806314,
+    0.0031170561165639737,
+    -0.002381631240742404,
+    0.0014325974363297443,
+    -0.000518136314331015,
+    0.0018332101411153642,
+    -0.0006753849504734614,
+    0.0009584044582024737,
+    0.027012334306426182
+  ],
+  "data_sha256": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5",
+  "encoder": {
+    "detox_obscene": {
+      "constant_values": [
+        0.0
+      ],
+      "keep": [
+        0
+      ],
+      "mean": [
+        0.046185499563801864
+      ],
+      "median": 0.001394228788797,
+      "std": [
+        0.15393391244961657
+      ],
+      "train_absent_columns": [
+        1
+      ]
+    },
+    "secondary_genres": {
+      "constant_values": [
+        0.0,
+        0.0
+      ],
+      "keep": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "mean": [
+        0.3593073593073593,
+        0.2115947115947116,
+        0.03305253305253305,
+        0.0802035802035802,
+        0.027144027144027146,
+        0.007137007137007137,
+        0.10477360477360477,
+        0.04674154674154674,
+        0.019656019656019656,
+        0.04451854451854452,
+        0.05224055224055224,
+        0.0046215046215046214,
+        0.004797004797004797,
+        0.000234000234000234,
+        0.001521001521001521
+      ],
+      "median": 0.0,
+      "std": [
+        0.4797974373159276,
+        0.40843896682351744,
+        0.1787737763525296,
+        0.2716081109357894,
+        0.16250301207802723,
+        0.08417879938638614,
+        0.30626148389301133,
+        0.21108475679156596,
+        0.13881520286806423,
+        0.2062441361893591,
+        0.22251174562740358,
+        0.06782437848250461,
+        0.06909409194701316,
+        0.015295276326066224,
+        0.03897034866888711
+      ],
+      "train_absent_columns": [
+        13,
+        16
+      ]
+    },
+    "sentiment_negative": {
+      "constant_values": [
+        0.0
+      ],
+      "keep": [
+        0
+      ],
+      "mean": [
+        0.2664040907134033
+      ],
+      "median": 0.2571283280849456,
+      "std": [
+        0.08223616820084542
+      ],
+      "train_absent_columns": [
+        1
+      ]
+    }
+  },
+  "predictors": [
+    "detox_obscene",
+    "secondary_genres",
+    "sentiment_negative"
+  ],
+  "provenance": {
+    "code_sha256": {
+      "analysis/planning/regression_search/audit.py": "b8f615e4d7beb2e3fc17c555585aec9a937cd57e28c523348b4aa936e7b5af25",
+      "src/regression_core.py": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69",
+      "src/regression_pilot.py": "7d4488970ea0b1e647dd75c2ef899e5bad10e13237f91805ec7a9f6b30d0c4ab",
+      "src/regression_search.py": "5dc4097e73d0cc63eaea893d9d328ded8df4782fa8dfd424d8a23890bdaa7cc1",
+      "src/regression_spec.py": "b3e530f9824b029cd464f3c1cd413252affa6e153a9089fda833f4c469824408",
+      "src/regression_store.py": "5ce5b3d62cb30617ea3d8bae1b91fa6e39f452e1984bcabc75c09b10b6910a20"
+    },
+    "git_head": "38929afaf28fbcc36904c0d14b033f26ecfb73ab",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "sqlite": "3.35.5"
+  },
+  "rank": 18,
+  "selected_before_test": true,
+  "selection_sha256": "36d1461fdc525a1b41a12fc3a6b9605068b564fe2b57b4e1c5e8d168d759701d",
+  "target_center": 0.11336652350924671,
+  "task": {
+    "all_subsets_rule": "Every allowed unordered subset of 1, 2 or 3 original variables.",
+    "campaign_status": "OLS",
+    "excluded_predictors": {
+      "artist": "High-cardinality exact artist-credit identity; not an arbitrary numeric code. New-artist analysis requires a separately approved representation.",
+      "detox_toxicity": "Target itself.",
+      "genre_confidence": "Qualitative annotation confidence, not musical content; diagnostic target only.",
+      "in_final_study_population": "Bookkeeping/selection indicator; constant in songs/monthly, structural enrichment scope in weekly.",
+      "lyrics_available": "Acquisition bookkeeping and deterministic proxy for missing scores; diagnostic target only.",
+      "lyrics_status": "Acquisition bookkeeping and direct proxy for score availability; diagnostic target only.",
+      "mb_earliest_release_date": "Partial dates represented once as mb_release_year; never invent month/day.",
+      "mb_release_date_precision": "Acquisition precision bookkeeping; diagnostic target only.",
+      "mb_release_title": "High-cardinality linked-release identity; not an album measurement.",
+      "month": "Monthly date alias; use snapshot_chart_date once, not both encodings.",
+      "musicbrainz_match_status": "Acquisition bookkeeping; diagnostic target only, never substantive predictor.",
+      "song_id": "Exact identity/group key; no numerical or categorical model input.",
+      "source_chart_index": "Source coordinate; arbitrary order and row leakage.",
+      "source_row_index": "Source coordinate; effectively exposes chart ordering/rank.",
+      "title": "High-cardinality identity text; no validated content encoding in this scalar search."
+    },
+    "forbidden_reason": "Sentiment softmax composition: other two reconstruct a sentiment target; all three are affine redundant with an intercept.",
+    "forbidden_subsets": [
+      [
+        "sentiment_negative",
+        "sentiment_neutral",
+        "sentiment_positive"
+      ]
+    ],
+    "forecast_status": "Not historically as-of certified. Requires new availability audit and a separately frozen forecast specification.",
+    "model_family": "regression",
+    "predictors": [
+      "best_chart_rank",
+      "chart_weeks",
+      "detox_identity_attack",
+      "detox_insult",
+      "detox_obscene",
+      "detox_severe_toxicity",
+      "detox_sexual_explicit",
+      "detox_threat",
+      "emotion_admiration",
+      "emotion_amusement",
+      "emotion_anger",
+      "emotion_annoyance",
+      "emotion_approval",
+      "emotion_caring",
+      "emotion_confusion",
+      "emotion_curiosity",
+      "emotion_desire",
+      "emotion_disappointment",
+      "emotion_disapproval",
+      "emotion_disgust",
+      "emotion_embarrassment",
+      "emotion_excitement",
+      "emotion_fear",
+      "emotion_gratitude",
+      "emotion_grief",
+      "emotion_joy",
+      "emotion_love",
+      "emotion_nervousness",
+      "emotion_neutral",
+      "emotion_optimism",
+      "emotion_pride",
+      "emotion_realization",
+      "emotion_relief",
+      "emotion_remorse",
+      "emotion_sadness",
+      "emotion_surprise",
+      "first_chart_date",
+      "first_snapshot_month",
+      "last_chart_date",
+      "last_snapshot_month",
+      "ll_explicit_language",
+      "ll_sexual_content",
+      "ll_substance_use",
+      "ll_violence",
+      "mb_distinct_duration_count",
+      "mb_duration_max_seconds",
+      "mb_duration_median_seconds",
+      "mb_duration_min_seconds",
+      "mb_recording_count",
+      "mb_release_count",
+      "mb_release_year",
+      "primary_genre",
+      "secondary_genres",
+      "sentiment_negative",
+      "sentiment_neutral",
+      "sentiment_positive",
+      "snapshot_months_selected",
+      "total_chart_points",
+      "weekly_observation_count"
+    ],
+    "same_model_predictors_retained": true,
+    "scope": "retrospective_frozen_release",
+    "table": "songs",
+    "target": "detox_toxicity",
+    "task_id": "songs:detox_toxicity"
+  },
+  "training_mean_baseline": 0.11336652350924671,
+  "training_median_baseline": 0.0145238465629518
+}

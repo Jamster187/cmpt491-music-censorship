@@ -1,0 +1,15 @@
+task_id,family,status,appropriate_metrics
+songs:best_chart_rank,ordinal_rank,not_run_requires_native_model_specification,ranked probability score; ordinal log loss; rank MAE
+songs:primary_genre,multiclass,not_run_requires_native_model_specification,log loss; balanced accuracy; macro F1; Brier/PR-AUC for binary
+songs:secondary_genres,multilabel,not_run_requires_native_model_specification,macro/micro F1; per-label PR-AUC; log loss
+songs:musicbrainz_match_status,multiclass,not_run_requires_native_model_specification,log loss; balanced accuracy; macro F1; Brier/PR-AUC for binary
+songs:mb_release_date_precision,multiclass,not_run_requires_native_model_specification,log loss; balanced accuracy; macro F1; Brier/PR-AUC for binary
+songs:lyrics_status,multiclass,not_run_requires_native_model_specification,log loss; balanced accuracy; macro F1; Brier/PR-AUC for binary
+songs:lyrics_available,binary,not_run_requires_native_model_specification,log loss; balanced accuracy; macro F1; Brier/PR-AUC for binary
+songs:genre_confidence,ordinal_diagnostic,not_run_requires_native_model_specification,ranked probability score; ordinal log loss; rank MAE
+monthly:monthly_rank,ordinal_rank,not_run_requires_native_model_specification,ranked probability score; ordinal log loss; rank MAE
+monthly:reported_last_week_rank,ordinal_rank,not_run_requires_native_model_specification,ranked probability score; ordinal log loss; rank MAE
+monthly:reported_peak_position,ordinal_rank,not_run_requires_native_model_specification,ranked probability score; ordinal log loss; rank MAE
+weekly:weekly_rank,ordinal_rank,not_run_requires_native_model_specification,ranked probability score; ordinal log loss; rank MAE
+weekly:reported_last_week_rank,ordinal_rank,not_run_requires_native_model_specification,ranked probability score; ordinal log loss; rank MAE
+weekly:reported_peak_position,ordinal_rank,not_run_requires_native_model_specification,ranked probability score; ordinal log loss; rank MAE

@@ -1,0 +1,62 @@
+{
+  "cohorts": [
+    {
+      "debut_decade": "1950s",
+      "last_seen_within_90_days": 0,
+      "median_possible_followup_days": 24645.0,
+      "songs": 775,
+      "under_two_years_followup": 0
+    },
+    {
+      "debut_decade": "1960s",
+      "last_seen_within_90_days": 0,
+      "median_possible_followup_days": 22463.0,
+      "songs": 6033,
+      "under_two_years_followup": 0
+    },
+    {
+      "debut_decade": "1970s",
+      "last_seen_within_90_days": 3,
+      "median_possible_followup_days": 18991.0,
+      "songs": 5008,
+      "under_two_years_followup": 0
+    },
+    {
+      "debut_decade": "1980s",
+      "last_seen_within_90_days": 5,
+      "median_possible_followup_days": 15323.0,
+      "songs": 4000,
+      "under_two_years_followup": 0
+    },
+    {
+      "debut_decade": "1990s",
+      "last_seen_within_90_days": 1,
+      "median_possible_followup_days": 11676.0,
+      "songs": 3329,
+      "under_two_years_followup": 0
+    },
+    {
+      "debut_decade": "2000s",
+      "last_seen_within_90_days": 3,
+      "median_possible_followup_days": 7875.0,
+      "songs": 3065,
+      "under_two_years_followup": 0
+    },
+    {
+      "debut_decade": "2010s",
+      "last_seen_within_90_days": 1,
+      "median_possible_followup_days": 4200.0,
+      "songs": 3168,
+      "under_two_years_followup": 0
+    },
+    {
+      "debut_decade": "2020s",
+      "last_seen_within_90_days": 177,
+      "median_possible_followup_days": 1197.0,
+      "songs": 2663,
+      "under_two_years_followup": 776
+    }
+  ],
+  "cutoff": "2026-09-19",
+  "interpretation": "Observed-through-snapshot histories, not uncensored lifetime outcomes; purging also selects against recurrent songs."
+}
