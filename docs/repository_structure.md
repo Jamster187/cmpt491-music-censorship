@@ -13,6 +13,7 @@ For presentation figures, go directly to the moving-average all-genres shortlist
 | [tests/](../tests/) | Regression and integrity validation |
 | [analysis/regression_search/](../analysis/regression_search/README.md) | Preserved complete three-predictor OLS campaign and pilot |
 | [analysis/regression_search/meaningful/](../analysis/regression_search/meaningful/README.md) | Separate post-hoc meaningful/cross-domain results and local interactive demo instructions |
+| [analysis/relationship_discovery/](../analysis/relationship_discovery/README.md) | Bounded statistical discovery pilot, search-space design, benchmarks and classroom view; full campaign not run |
 | [reports/](../reports/README.md) | Final audits and required production evidence |
 | [archive/](../archive/README.md) | Superseded experiments, narratives and intermediate reports |
 

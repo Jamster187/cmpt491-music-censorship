@@ -1,0 +1,19 @@
+{
+  "candidates": 137,
+  "fit_count": 2879,
+  "full_campaign_launched": false,
+  "logical_results_sha256": "3c4c03f0cb256d4dc93397a2595e6b223c5bf4fe540b7cb78448c0a5ac09ca64",
+  "maximum_process_rss_bytes": 786563072,
+  "newly_computed": 0,
+  "original_preservation": {
+    "protected_files": 2663,
+    "snapshot_sha256": "ab3c357c375a910aaae78bab6efff42e94888fa6bce1533bef98fee6d91bc129",
+    "status": "PASS"
+  },
+  "protocol_sha256": "15bca3f818ee8ee35e0a981791cb11ff5d69d2a07f1242c02017a3f0eeaec172",
+  "resumed": 137,
+  "status": "PASS",
+  "total_candidate_seconds": 55.993901669999985,
+  "wall_seconds": 0.40206341599999984,
+  "workers": 1
+}

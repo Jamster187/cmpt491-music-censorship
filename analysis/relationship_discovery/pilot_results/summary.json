@@ -1,0 +1,163 @@
+{
+  "adequate_temporal_comparisons": 252,
+  "all_temporal_comparisons": 1275,
+  "benchmark": {
+    "conservative_budget_seconds": 153209.3841965213,
+    "detailed_uncompressed_bytes_estimate": 10006121350,
+    "families": [
+      {
+        "candidates_per_second": 1.793108619212465,
+        "conservative_budget_seconds": 3560.2974251520013,
+        "detailed_uncompressed_bytes_estimate": 63384570,
+        "estimated_serial_seconds": 1780.1487125760007,
+        "extrapolation": "mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",
+        "family": "genre_interaction",
+        "pilot_candidates": 28,
+        "pilot_fit_calls": 224,
+        "pilot_seconds": 15.615339584000006,
+        "proposed_candidates": 3192
+      },
+      {
+        "candidates_per_second": 3.996222807880671,
+        "conservative_budget_seconds": 1597.5085241519969,
+        "detailed_uncompressed_bytes_estimate": 140147838,
+        "estimated_serial_seconds": 798.7542620759984,
+        "extrapolation": "mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",
+        "family": "nonlinear",
+        "pilot_candidates": 28,
+        "pilot_fit_calls": 2223,
+        "pilot_seconds": 7.006616333999986,
+        "proposed_candidates": 3192
+      },
+      {
+        "candidates_per_second": 8.180949881828,
+        "conservative_budget_seconds": 21459.610746420047,
+        "detailed_uncompressed_bytes_estimate": 1429548505,
+        "estimated_serial_seconds": 10729.805373210023,
+        "extrapolation": "mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",
+        "family": "numeric_interaction",
+        "pilot_candidates": 12,
+        "pilot_fit_calls": 96,
+        "pilot_seconds": 1.4668223340000033,
+        "proposed_candidates": 87780
+      },
+      {
+        "candidates_per_second": 1.8282923674967484,
+        "conservative_budget_seconds": 3035.619520525002,
+        "detailed_uncompressed_bytes_estimate": 9947565,
+        "estimated_serial_seconds": 1517.809760262501,
+        "extrapolation": "mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",
+        "family": "pairwise",
+        "pilot_candidates": 24,
+        "pilot_fit_calls": 0,
+        "pilot_seconds": 13.127003332000008,
+        "proposed_candidates": 2775
+      },
+      {
+        "candidates_per_second": 1.0772060343244665,
+        "conservative_budget_seconds": 52.21842266718761,
+        "detailed_uncompressed_bytes_estimate": 384046,
+        "estimated_serial_seconds": 26.109211333593805,
+        "extrapolation": "360 proposed model/stability fits, scaled from pilot, plus 25% allowance for larger k",
+        "family": "structure",
+        "pilot_candidates": 12,
+        "pilot_fit_calls": 192,
+        "pilot_seconds": 11.139930169000024,
+        "proposed_candidates": null
+      },
+      {
+        "candidates_per_second": 2.703371401346138,
+        "conservative_budget_seconds": 1222.9174276067968,
+        "detailed_uncompressed_bytes_estimate": 137869126,
+        "estimated_serial_seconds": 611.4587138033984,
+        "extrapolation": "mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",
+        "family": "temporal",
+        "pilot_candidates": 15,
+        "pilot_fit_calls": 0,
+        "pilot_seconds": 5.548627166999985,
+        "proposed_candidates": 1653
+      },
+      {
+        "candidates_per_second": 8.614242381570142,
+        "conservative_budget_seconds": 122281.21212999827,
+        "detailed_uncompressed_bytes_estimate": 8224839700,
+        "estimated_serial_seconds": 61140.606064999134,
+        "extrapolation": "mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",
+        "family": "threshold_interaction",
+        "pilot_candidates": 18,
+        "pilot_fit_calls": 144,
+        "pilot_seconds": 2.0895627499999705,
+        "proposed_candidates": 526680
+      }
+    ],
+    "inference_precision_warning": "Estimates retain pilot resampling counts. Adequate full-search Monte Carlo precision and null calibration can cost substantially more; these are not guaranteed full-inference runtimes.",
+    "parallel": {
+      "logical_equality": true,
+      "runs": [
+        {
+          "candidates": 4,
+          "fits": 319,
+          "logical_sha256": "64c8e831abb2610def9ebe8fbcf4786fd8072c546e42bae44e042efff43c8855",
+          "max_worker_rss_bytes": 367263744,
+          "wall_seconds": 1.577051,
+          "workers": 1
+        },
+        {
+          "candidates": 4,
+          "fits": 319,
+          "logical_sha256": "64c8e831abb2610def9ebe8fbcf4786fd8072c546e42bae44e042efff43c8855",
+          "max_worker_rss_bytes": 396918784,
+          "wall_seconds": 2.1678770829999987,
+          "workers": 2
+        }
+      ],
+      "speedup": 0.7274632922534571,
+      "warning": "Four candidate microbenchmark; process startup included; no extrapolated speedup guarantee"
+    },
+    "peak_single_process_rss_bytes": 786563072,
+    "proposed_predictive_fit_upper_bound": 5196576,
+    "proposed_structure_fits": 360,
+    "total_estimated_serial_seconds": 76604.69209826065,
+    "total_proposed_fit_upper_bound": 5196936
+  },
+  "candidates": 137,
+  "category_counts": {
+    "A": 19,
+    "B": 43,
+    "C": 75
+  },
+  "exploratory_global_by_passes": 35,
+  "full_campaign_launched": false,
+  "independently_confirmed": 0,
+  "non_A_global_by_passes": 30,
+  "pilot_fit_calls": 2879,
+  "positive_r2_nonlinear_example_ids": [
+    "4b046a6f5bf3d856409f",
+    "e993a1c54baf04c0d8a9",
+    "e8be6f0a8f1e8f02c148",
+    "5401cb2b935ccfdb4a37"
+  ],
+  "primary_hypotheses": 110,
+  "status": "EXPLORATORY PILOT",
+  "top_conditional_ids": [
+    "299894d420391ad9913d",
+    "aa0d4be7821cda999b92",
+    "e43c6c3c50a4043b91bb",
+    "7e82c417bb677467b324",
+    "04606007b08758755e83"
+  ],
+  "top_cross_domain_ids": [
+    "168acc75c841406ae9d0",
+    "46cc335b8f5feda83234",
+    "aa0d4be7821cda999b92",
+    "b4308ba69d0fc1bade05",
+    "e43c6c3c50a4043b91bb"
+  ],
+  "top_nonlinear_ids": [
+    "168acc75c841406ae9d0",
+    "49c8d1919742f3ae241b",
+    "46cc335b8f5feda83234",
+    "fbdda1222b5e021cf6fa",
+    "1f66ea70b488c33412a1"
+  ]
+}

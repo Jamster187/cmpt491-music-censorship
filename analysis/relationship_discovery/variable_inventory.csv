@@ -1,0 +1,76 @@
+availability,domain,kind,role,variable
+After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.,chart_performance,ordinal,association and ordered dependence only,best_chart_rank
+After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.,chart_performance,count,numerical target/predictor,chart_weeks
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_content,continuous,numerical target/predictor,detox_identity_attack
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_content,continuous,numerical target/predictor,detox_insult
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_content,continuous,numerical target/predictor,detox_obscene
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_content,continuous,numerical target/predictor,detox_severe_toxicity
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_content,continuous,numerical target/predictor,detox_sexual_explicit
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_content,continuous,numerical target/predictor,detox_threat
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_content,continuous,numerical target/predictor,detox_toxicity
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_admiration
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_amusement
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_anger
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_annoyance
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_approval
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_caring
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_confusion
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_curiosity
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_desire
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_disappointment
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_disapproval
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_disgust
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_embarrassment
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_excitement
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_fear
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_gratitude
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_grief
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_joy
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_love
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_nervousness
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_neutral
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_optimism
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_pride
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_realization
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_relief
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_remorse
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_sadness
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,emotion_surprise
+At first chart appearance; history is left-truncated at 1958-08-04.,historical_calendar,calendar,numerical target/predictor,first_chart_date
+After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.,historical_calendar,calendar,numerical target/predictor,first_snapshot_month
+After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.,historical_calendar,calendar,numerical target/predictor,last_chart_date
+After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.,historical_calendar,calendar,numerical target/predictor,last_snapshot_month
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_content,continuous,numerical target/predictor,ll_explicit_language
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_content,continuous,numerical target/predictor,ll_sexual_content
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_content,continuous,numerical target/predictor,ll_substance_use
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_content,continuous,numerical target/predictor,ll_violence
+After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.,musicbrainz_metadata,count,numerical target/predictor,mb_distinct_duration_count
+After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.,musicbrainz_metadata,continuous,numerical target/predictor,mb_duration_max_seconds
+After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.,musicbrainz_metadata,continuous,numerical target/predictor,mb_duration_median_seconds
+After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.,musicbrainz_metadata,continuous,numerical target/predictor,mb_duration_min_seconds
+After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.,musicbrainz_metadata,count,numerical target/predictor,mb_recording_count
+After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.,musicbrainz_metadata,count,numerical target/predictor,mb_release_count
+After metadata lookup/acceptance; later recordings/releases/reissues may be included; no historical as-of guarantee.,historical_calendar,calendar,numerical target/predictor,mb_release_year
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,primary_genre
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Afrobeats / African Pop
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Alternative / Indie
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Country
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Electronic / Dance
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Folk / Singer-Songwriter
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Gospel / Christian
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Hip-Hop / Rap
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Jazz / Blues
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::K-Pop
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Latin
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Metal
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Other
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Pop
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::R&B / Soul
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Reggae / Dancehall
+After frozen genre assignment; historical as-of availability not established.,genre,categorical,nominal labels or membership flags,secondary_genre::Rock
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,sentiment_negative
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,sentiment_neutral
+After usable lyrics and frozen inference; historical as-of availability not recorded in public tables.,lyrical_affect,continuous,numerical target/predictor,sentiment_positive
+After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.,chart_performance,count,numerical target/predictor,snapshot_months_selected
+After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.,chart_performance,count,numerical target/predictor,total_chart_points
+After the observed career/snapshot history through 2026-09-19; unavailable at earlier prediction origins.,chart_performance,count,numerical target/predictor,weekly_observation_count

@@ -1,0 +1,74 @@
+{
+  "final_focused_statistical_suite": {
+    "command": "python3 -m unittest discover -s tests -p test_relationship_discovery.py -v",
+    "elapsed_seconds": 0.182,
+    "local_log_sha256": "d0b27ede3c4c322e5534e30c8ba973f3fe7f92f378b128d6732cd8950446a8b8",
+    "passed": 23,
+    "skipped": 0,
+    "status": "PASS",
+    "tests_run": 23
+  },
+  "full_campaign_launched": false,
+  "historical_planning_suite": {
+    "command": "python3 -m unittest discover -s analysis/planning/regression_search -p test_planning.py -v",
+    "elapsed_seconds": null,
+    "local_log_sha256": "9a09911ca5e2f7fce17980abfb7ce35b6700d640ab4456d82c8ab172629b166c",
+    "passed": 12,
+    "skipped": 0,
+    "status": "PASS",
+    "tests_run": 12
+  },
+  "http_health": {
+    "discovery_port": 8502,
+    "health_statuses": [
+      200,
+      200
+    ],
+    "original_regression_port": 8501,
+    "root_statuses": [
+      200,
+      200
+    ]
+  },
+  "independent_confirmation": false,
+  "optional_real_streamlit_suite": {
+    "command": ".venv-regression-demo/bin/python -m unittest discover -s tests -p test_relationship_demo.py -v",
+    "elapsed_seconds": 6.605,
+    "local_log_sha256": "91860dbc0b7ab4206bb84b66733a5e1bc85f72427ad5554b8993f009a9c33eef",
+    "passed": 3,
+    "skipped": 0,
+    "status": "PASS",
+    "tests_run": 3
+  },
+  "original_preservation": {
+    "files": 2663,
+    "status": "PASS"
+  },
+  "previous_figures": {
+    "figures": 951,
+    "status": "PASS",
+    "unchanged_numerical_input_files": 32
+  },
+  "protocol_validation": "validation.json",
+  "recorded_utc": "2026-10-20T23:14:25.565279+00:00",
+  "replay_evidence": "replay_validation.json",
+  "repository_layout": {
+    "immutable_artifacts_checked": 1069,
+    "markdown_links_checked": 403,
+    "private_tracked_files": 0,
+    "stale_paths": 0,
+    "status": "PASS"
+  },
+  "repository_suite": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "elapsed_seconds": 76.572,
+    "local_log_sha256": "b8242446bcb7ce45de30c23e5dbd605537c72b06d8790cfcc97bd74c5254c1d4",
+    "passed": 421,
+    "skipped": 8,
+    "status": "PASS",
+    "tests_run": 429
+  },
+  "revision_evidence": "revision_check.json",
+  "skip_explanation": "The standard Python environment skips seven optional Streamlit tests and one pre-existing offline cache test. Three new Streamlit tests passed separately. One final published-output FDR consistency test was added after the 429-test run and passed in the 23-test focused suite.",
+  "status": "PASS"
+}

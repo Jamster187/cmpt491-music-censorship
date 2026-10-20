@@ -1,0 +1,16 @@
+{
+  "annual_scipy_checks": 1020,
+  "elapsed_seconds": 20.414273375,
+  "independent_raw_linear_reference_checks": 112,
+  "original_metric_implementation_agreement": true,
+  "original_preservation": {
+    "protected_files": 2663,
+    "snapshot_sha256": "ab3c357c375a910aaae78bab6efff42e94888fa6bce1533bef98fee6d91bc129",
+    "status": "PASS"
+  },
+  "outer_model_folds_replayed": 344,
+  "pairwise_scipy_checks": 24,
+  "predictive_p_values_and_intervals_replayed": true,
+  "saved_curves_replayed": 112,
+  "status": "PASS"
+}

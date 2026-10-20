@@ -1,0 +1,9 @@
+{
+  "additional_genre_adjusted_global_annual_cells": 112404,
+  "additional_genre_adjusted_global_breakpoint_cells": 8265,
+  "continuous_pair_knn_mi_estimations": 990,
+  "crossed_genre_period_cells": 196707,
+  "marginal_pair_group_cells": 38019,
+  "note": "Counts are bounds before coverage/variation exclusions; crossed and genre-adjusted diagnostics supplement the compact audit. No new candidates are fitted.",
+  "unadjusted_annual_cells": 1910868
+}

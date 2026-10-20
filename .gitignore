@@ -1,5 +1,6 @@
 .venv/
 .venv-regression-demo/
+.venv-relationship-discovery/
 __pycache__/
 .DS_Store
 .ipynb_checkpoints/

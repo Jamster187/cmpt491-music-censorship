@@ -1,0 +1,23 @@
+{
+  "logical_equality": true,
+  "runs": [
+    {
+      "candidates": 4,
+      "fits": 319,
+      "logical_sha256": "64c8e831abb2610def9ebe8fbcf4786fd8072c546e42bae44e042efff43c8855",
+      "max_worker_rss_bytes": 367263744,
+      "wall_seconds": 1.577051,
+      "workers": 1
+    },
+    {
+      "candidates": 4,
+      "fits": 319,
+      "logical_sha256": "64c8e831abb2610def9ebe8fbcf4786fd8072c546e42bae44e042efff43c8855",
+      "max_worker_rss_bytes": 396918784,
+      "wall_seconds": 2.1678770829999987,
+      "workers": 2
+    }
+  ],
+  "speedup": 0.7274632922534571,
+  "warning": "Four candidate microbenchmark; process startup included; no extrapolated speedup guarantee"
+}

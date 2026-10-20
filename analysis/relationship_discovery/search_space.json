@@ -1,0 +1,87 @@
+{
+  "conditional_correlations": {
+    "optional_numeric_threshold_cells": 1053360,
+    "pair_group_cells": 38019
+  },
+  "enumeration_seconds": 3.0076898749999996,
+  "full_campaign_launched": false,
+  "genre_interaction": {
+    "candidates": 3192,
+    "fit_upper_bound": 25536
+  },
+  "nonlinear": {
+    "candidates": 3192,
+    "method_variants": 9,
+    "nested_fit_upper_bound": 255360
+  },
+  "numeric_interaction": {
+    "candidates": 87780,
+    "fit_upper_bound": 702240
+  },
+  "pairwise": {
+    "candidates": 2775,
+    "categorical_pairs": 136,
+    "cramers_v": 136,
+    "distance_correlation": 1653,
+    "eta_squared": 986,
+    "mutual_information": 2775,
+    "numeric_categorical_pairs": 986,
+    "numeric_or_ordinal_pairs": 1653,
+    "pearson": 1596,
+    "primary_tests": 2775,
+    "spearman": 1653
+  },
+  "pilot_counts": {
+    "genre_interaction": 28,
+    "nonlinear": 28,
+    "numeric_interaction": 12,
+    "pairwise": 24,
+    "structure": 12,
+    "temporal": 15,
+    "threshold_interaction": 18
+  },
+  "planned_primary_pilot_tests": 110,
+  "preservation": {
+    "protected_files": 2663,
+    "snapshot_sha256": "ab3c357c375a910aaae78bab6efff42e94888fa6bce1533bef98fee6d91bc129",
+    "status": "PASS"
+  },
+  "structure": {
+    "cluster_counts": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "clustering_fits_with_five_stability_refits": 288,
+    "panels": 3,
+    "pca_decompositions_with_five_stability_refits": 72,
+    "pca_ranks": [
+      2,
+      5,
+      10
+    ]
+  },
+  "temporal": {
+    "annual_estimates": 1910868,
+    "breakpoint_comparisons": 140505,
+    "formal_p_values": "not certified; pilot reports block intervals and inadequate-block flags",
+    "pairs": 1653,
+    "rolling_estimates": 337212,
+    "strata": 17
+  },
+  "threshold_interaction": {
+    "candidates": 526680,
+    "fit_upper_bound": 4213440
+  },
+  "total_proposed_predictive_model_fits_upper_bound": 5196576,
+  "total_proposed_primary_inferential_hypotheses": 623619,
+  "variables": {
+    "cardinal_numeric": 57,
+    "categorical": 17,
+    "categorical_detail": "one primary genre plus 16 secondary membership flags; no new genre classification",
+    "numerical_targets": 57,
+    "ordinal": 1,
+    "total": 75
+  }
+}

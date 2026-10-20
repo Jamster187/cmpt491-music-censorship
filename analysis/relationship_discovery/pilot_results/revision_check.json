@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "reason": "Guard undefined constant-subgroup correlations and record complete-predictor sample sizes",
+  "prior_pilot_seen": true,
+  "candidate_list_unchanged": true,
+  "selection_rules_unchanged": true,
+  "all_primary_effects_metrics_p_values_unchanged": true,
+  "prior_protocol_sha256": "451e6a2d98a1b62e9945026f629263698501af4f801005b523f58fcf033a1b6e"
+}

@@ -1,0 +1,8 @@
+{
+  "cross_domain": "same rule restricted to strict C",
+  "nonlinear_conditional": "lower block improvement bound, then measured improvement, then ID",
+  "stable": "four complete periods: worst-period relative MSE improvement, then positive-period fraction, then ID",
+  "statistical": "non-A inferential candidates: global BY q, then stability, then fixed ID; no cross-unit effect magnitude tie-break",
+  "temporal": "non-A adequately covered prespecified comparisons: absolute annual Fisher-z contrast; descriptive only",
+  "weighted_novelty_score": false
+}

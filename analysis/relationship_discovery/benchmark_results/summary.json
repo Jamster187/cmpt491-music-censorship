@@ -1,0 +1,119 @@
+{
+  "conservative_budget_seconds": 153209.3841965213,
+  "detailed_uncompressed_bytes_estimate": 10006121350,
+  "families": [
+    {
+      "candidates_per_second": 1.793108619212465,
+      "conservative_budget_seconds": 3560.2974251520013,
+      "detailed_uncompressed_bytes_estimate": 63384570,
+      "estimated_serial_seconds": 1780.1487125760007,
+      "extrapolation": "mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",
+      "family": "genre_interaction",
+      "pilot_candidates": 28,
+      "pilot_fit_calls": 224,
+      "pilot_seconds": 15.615339584000006,
+      "proposed_candidates": 3192
+    },
+    {
+      "candidates_per_second": 3.996222807880671,
+      "conservative_budget_seconds": 1597.5085241519969,
+      "detailed_uncompressed_bytes_estimate": 140147838,
+      "estimated_serial_seconds": 798.7542620759984,
+      "extrapolation": "mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",
+      "family": "nonlinear",
+      "pilot_candidates": 28,
+      "pilot_fit_calls": 2223,
+      "pilot_seconds": 7.006616333999986,
+      "proposed_candidates": 3192
+    },
+    {
+      "candidates_per_second": 8.180949881828,
+      "conservative_budget_seconds": 21459.610746420047,
+      "detailed_uncompressed_bytes_estimate": 1429548505,
+      "estimated_serial_seconds": 10729.805373210023,
+      "extrapolation": "mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",
+      "family": "numeric_interaction",
+      "pilot_candidates": 12,
+      "pilot_fit_calls": 96,
+      "pilot_seconds": 1.4668223340000033,
+      "proposed_candidates": 87780
+    },
+    {
+      "candidates_per_second": 1.8282923674967484,
+      "conservative_budget_seconds": 3035.619520525002,
+      "detailed_uncompressed_bytes_estimate": 9947565,
+      "estimated_serial_seconds": 1517.809760262501,
+      "extrapolation": "mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",
+      "family": "pairwise",
+      "pilot_candidates": 24,
+      "pilot_fit_calls": 0,
+      "pilot_seconds": 13.127003332000008,
+      "proposed_candidates": 2775
+    },
+    {
+      "candidates_per_second": 1.0772060343244665,
+      "conservative_budget_seconds": 52.21842266718761,
+      "detailed_uncompressed_bytes_estimate": 384046,
+      "estimated_serial_seconds": 26.109211333593805,
+      "extrapolation": "360 proposed model/stability fits, scaled from pilot, plus 25% allowance for larger k",
+      "family": "structure",
+      "pilot_candidates": 12,
+      "pilot_fit_calls": 192,
+      "pilot_seconds": 11.139930169000024,
+      "proposed_candidates": null
+    },
+    {
+      "candidates_per_second": 2.703371401346138,
+      "conservative_budget_seconds": 1222.9174276067968,
+      "detailed_uncompressed_bytes_estimate": 137869126,
+      "estimated_serial_seconds": 611.4587138033984,
+      "extrapolation": "mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",
+      "family": "temporal",
+      "pilot_candidates": 15,
+      "pilot_fit_calls": 0,
+      "pilot_seconds": 5.548627166999985,
+      "proposed_candidates": 1653
+    },
+    {
+      "candidates_per_second": 8.614242381570142,
+      "conservative_budget_seconds": 122281.21212999827,
+      "detailed_uncompressed_bytes_estimate": 8224839700,
+      "estimated_serial_seconds": 61140.606064999134,
+      "extrapolation": "mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",
+      "family": "threshold_interaction",
+      "pilot_candidates": 18,
+      "pilot_fit_calls": 144,
+      "pilot_seconds": 2.0895627499999705,
+      "proposed_candidates": 526680
+    }
+  ],
+  "inference_precision_warning": "Estimates retain pilot resampling counts. Adequate full-search Monte Carlo precision and null calibration can cost substantially more; these are not guaranteed full-inference runtimes.",
+  "parallel": {
+    "logical_equality": true,
+    "runs": [
+      {
+        "candidates": 4,
+        "fits": 319,
+        "logical_sha256": "64c8e831abb2610def9ebe8fbcf4786fd8072c546e42bae44e042efff43c8855",
+        "max_worker_rss_bytes": 367263744,
+        "wall_seconds": 1.577051,
+        "workers": 1
+      },
+      {
+        "candidates": 4,
+        "fits": 319,
+        "logical_sha256": "64c8e831abb2610def9ebe8fbcf4786fd8072c546e42bae44e042efff43c8855",
+        "max_worker_rss_bytes": 396918784,
+        "wall_seconds": 2.1678770829999987,
+        "workers": 2
+      }
+    ],
+    "speedup": 0.7274632922534571,
+    "warning": "Four candidate microbenchmark; process startup included; no extrapolated speedup guarantee"
+  },
+  "peak_single_process_rss_bytes": 786563072,
+  "proposed_predictive_fit_upper_bound": 5196576,
+  "proposed_structure_fits": 360,
+  "total_estimated_serial_seconds": 76604.69209826065,
+  "total_proposed_fit_upper_bound": 5196936
+}

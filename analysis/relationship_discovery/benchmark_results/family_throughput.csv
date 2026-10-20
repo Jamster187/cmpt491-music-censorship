@@ -1,0 +1,8 @@
+candidates_per_second,conservative_budget_seconds,detailed_uncompressed_bytes_estimate,estimated_serial_seconds,extrapolation,family,pilot_candidates,pilot_fit_calls,pilot_seconds,proposed_candidates
+1.793108619212465,3560.2974251520013,63384570,1780.1487125760007,"mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",genre_interaction,28,224,15.615339584000006,3192
+3.996222807880671,1597.5085241519969,140147838,798.7542620759984,"mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",nonlinear,28,2223,7.006616333999986,3192
+8.180949881828,21459.610746420047,1429548505,10729.805373210023,"mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",numeric_interaction,12,96,1.4668223340000033,87780
+1.8282923674967484,3035.619520525002,9947565,1517.809760262501,"mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",pairwise,24,0,13.127003332000008,2775
+1.0772060343244665,52.21842266718761,384046,26.109211333593805,"360 proposed model/stability fits, scaled from pilot, plus 25% allowance for larger k",structure,12,192,11.139930169000024,
+2.703371401346138,1222.9174276067968,137869126,611.4587138033984,"mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",temporal,15,0,5.548627166999985,1653
+8.614242381570142,122281.21212999827,8224839700,61140.606064999134,"mean measured cost per candidate, same resampling counts; factor-two planning margin, not a confidence interval",threshold_interaction,18,144,2.0895627499999705,526680

@@ -1,0 +1,3455 @@
+{
+  "full_campaign_approved": false,
+  "identity": {
+    "code_sha256": {
+      "analysis/planning/regression_search/audit.py": "b8f615e4d7beb2e3fc17c555585aec9a937cd57e28c523348b4aa936e7b5af25",
+      "src/regression_core.py": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69",
+      "src/regression_relationships.py": "542b4b5a563afd823f437a37eace74cbdc6ff95c1c640aa0956fa8ca1893bdcd",
+      "src/regression_spec.py": "b3e530f9824b029cd464f3c1cd413252affa6e153a9089fda833f4c469824408",
+      "src/relationship_discovery.py": "bedb27fa050fd01e6f564fd268bb67028241df145cf916efca6510d0a0a9baae",
+      "src/relationship_discovery_models.py": "12b6614cfa3d0388d6b3d35d7d436db31d64a0b5ac004c2835241f7406d7e140",
+      "src/relationship_discovery_spec.py": "9aea92cc927da27086f7d2fac1d879087eb47e9a70d4f4fd185664c55549c834",
+      "src/relationship_discovery_stats.py": "0455ee9b7dc753f1634ec1122189732faf1de0da017cb9451e2f84c4e5352f95"
+    },
+    "configuration": {
+      "block_years": 2,
+      "bootstrap_repeats": 499,
+      "inference": "exploratory; block resampling assumes short-range dependence; no independent confirmation",
+      "inner_rule": "two consecutive five-year validation blocks ending at each outer start; expanding history; whole chart windows purged",
+      "methods": [
+        "linear",
+        "quadratic",
+        "hinge25",
+        "hinge50",
+        "hinge75",
+        "spline4",
+        "spline6",
+        "tree2",
+        "tree3"
+      ],
+      "minimum_evaluation": 200,
+      "minimum_group_evaluation": 100,
+      "minimum_group_train": 100,
+      "minimum_group_years": 5,
+      "minimum_inference_blocks": 8,
+      "minimum_train": 500,
+      "minimum_year": 30,
+      "multiple_testing": "Benjamini-Yekutieli across all attempted pilot primary hypotheses; invalid/unavailable p values contribute p=1; also report family BY",
+      "nominal": "fixed genre labels/one-hot membership; never arbitrary numeric distances",
+      "ordinal": "best_chart_rank: Spearman, dependence and temporal descriptions only; no cardinal-response regression",
+      "outer_periods": [
+        [
+          1990,
+          2000
+        ],
+        [
+          2000,
+          2010
+        ],
+        [
+          2010,
+          2018
+        ],
+        [
+          2018,
+          2026
+        ]
+      ],
+      "paired_loss_block_sign_flips": 32767,
+      "pairwise_primary_test": "permute the response within debut year; pooled statistic; conditional year-exchangeability null",
+      "pairwise_within_year_permutations": 999,
+      "periods": [
+        [
+          1958,
+          1970
+        ],
+        [
+          1970,
+          1980
+        ],
+        [
+          1980,
+          1990
+        ],
+        [
+          1990,
+          2000
+        ],
+        [
+          2000,
+          2010
+        ],
+        [
+          2010,
+          2020
+        ],
+        [
+          2020,
+          2026
+        ]
+      ],
+      "pilot_sampling": "smallest seeded candidate hashes within predefined domain/type/category strata",
+      "population": "songs.csv; observed history completed before 2026-01-01 for association/temporal analyses",
+      "preserve_categories": "A retained in inventory; B retained and labelled; C strict; D/E are additional family tags, not replacements",
+      "prior_pilot_results_seen": true,
+      "revision_reason": "Constant-subgroup guard and explicit predictor-complete counts; candidate universe and selection rules unchanged from v1",
+      "rolling_starts": [
+        1960,
+        1965,
+        1970,
+        1975,
+        1980,
+        1985,
+        1990,
+        1995,
+        2000,
+        2005,
+        2010,
+        2015
+      ],
+      "rolling_width": 10,
+      "seed": 4912026,
+      "source_commit": "35c6782edc73dfce0991d52afd0a0c015cfbe7a6",
+      "status": "PILOT ONLY; no full campaign command",
+      "temporal_breakpoints": [
+        1980,
+        1990,
+        2000,
+        2010,
+        2020
+      ],
+      "temporal_matched_years_each_side": 5,
+      "test_previously_inspected": true,
+      "unit": "one exact title/artist song identity",
+      "version": "relationship-pilot-v2"
+    },
+    "data_sha256": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5",
+    "pilot_candidates": [
+      {
+        "candidate_id": "01f84d157588361e2469",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "musicbrainz_metadata",
+          "genre"
+        ],
+        "predictors": [
+          "mb_release_count"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "mb_release_count"
+        ],
+        "target": "mb_duration_max_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "036ea9198f81e19d26db",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "row_date_count_alias"
+        ],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "chart_performance",
+          "genre"
+        ],
+        "predictors": [
+          "chart_weeks"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "chart_weeks"
+        ],
+        "target": "weekly_observation_count",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "04606007b08758755e83",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "mb_duration_max_seconds",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata",
+          "genre"
+        ],
+        "predictors": [
+          "mb_duration_max_seconds"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "snapshot_months_selected",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "0638168dce697e3e8dc9",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "last_chart_date",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar",
+          "genre"
+        ],
+        "predictors": [
+          "last_chart_date"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "emotion_curiosity",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "0d421c72bed7b9950530",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "detox_threat",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content",
+          "genre"
+        ],
+        "predictors": [
+          "detox_threat"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_duration_median_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "0f5bcc7a6cbcf76093ca",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "weekly_observation_count",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance",
+          "genre"
+        ],
+        "predictors": [
+          "weekly_observation_count"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_duration_max_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "299894d420391ad9913d",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_content",
+          "genre"
+        ],
+        "predictors": [
+          "ll_sexual_content"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "ll_sexual_content"
+        ],
+        "target": "detox_severe_toxicity",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "3e030a35f51c9508da3b",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "emotion_realization",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect",
+          "genre"
+        ],
+        "predictors": [
+          "emotion_realization"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "first_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "412b969ccda64621f498",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "detox_sexual_explicit",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content",
+          "genre"
+        ],
+        "predictors": [
+          "detox_sexual_explicit"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "last_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "42dc57e3d59a7b7149a6",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "first_chart_date",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar",
+          "genre"
+        ],
+        "predictors": [
+          "first_chart_date"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "snapshot_months_selected",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "4696a3cef7c14d01ddcb",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "ll_violence",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content",
+          "genre"
+        ],
+        "predictors": [
+          "ll_violence"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "emotion_nervousness",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "4d8c0d2114f727485de0",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "detox_threat",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content",
+          "genre"
+        ],
+        "predictors": [
+          "detox_threat"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "snapshot_months_selected",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "550abe7dd324a81d343f",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "mb_recording_count",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata",
+          "genre"
+        ],
+        "predictors": [
+          "mb_recording_count"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "ll_sexual_content",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "656af3afa0d1d9db7af1",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "emotion_amusement",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect",
+          "genre"
+        ],
+        "predictors": [
+          "emotion_amusement"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "ll_substance_use",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "69c992648fccf9ab99d5",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "emotion_relief",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect",
+          "genre"
+        ],
+        "predictors": [
+          "emotion_relief"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_duration_median_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "6c8fb04bddfd15bf0b25",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_career_calendar"
+        ],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "historical_calendar",
+          "genre"
+        ],
+        "predictors": [
+          "last_snapshot_month"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "last_snapshot_month"
+        ],
+        "target": "first_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "78a45adda3f87a1df3bd",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_affect",
+          "genre"
+        ],
+        "predictors": [
+          "emotion_embarrassment"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "emotion_embarrassment"
+        ],
+        "target": "emotion_admiration",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "7e82c417bb677467b324",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "chart_weeks",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance",
+          "genre"
+        ],
+        "predictors": [
+          "chart_weeks"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "first_chart_date",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "84d27615cc089ae554e6",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "mb_duration_median_seconds",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata",
+          "genre"
+        ],
+        "predictors": [
+          "mb_duration_median_seconds"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "emotion_fear",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "98eb4c35b9c4f9643f49",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "emotion_disappointment",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect",
+          "genre"
+        ],
+        "predictors": [
+          "emotion_disappointment"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "weekly_observation_count",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "a88ca21709259e73bda5",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_recording_duration"
+        ],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "musicbrainz_metadata",
+          "genre"
+        ],
+        "predictors": [
+          "mb_duration_max_seconds"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "mb_duration_max_seconds"
+        ],
+        "target": "mb_duration_min_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "aa0d4be7821cda999b92",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "first_chart_date",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar",
+          "genre"
+        ],
+        "predictors": [
+          "first_chart_date"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_duration_min_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "ae23ec9c041fda7434ac",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "historical_calendar",
+          "genre"
+        ],
+        "predictors": [
+          "first_snapshot_month"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "first_snapshot_month"
+        ],
+        "target": "mb_release_year",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "b278c84e86b9b5e74446",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "chart_weeks",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance",
+          "genre"
+        ],
+        "predictors": [
+          "chart_weeks"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "sentiment_positive",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "dfa34a3c2ce4b5e25630",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "chart_weeks",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance",
+          "genre"
+        ],
+        "predictors": [
+          "chart_weeks"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "ll_violence",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "e43c6c3c50a4043b91bb",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "mb_release_count",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata",
+          "genre"
+        ],
+        "predictors": [
+          "mb_release_count"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "first_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "f9d43bc704559845a73c",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "chart_performance",
+          "genre"
+        ],
+        "predictors": [
+          "total_chart_points"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "total_chart_points"
+        ],
+        "target": "snapshot_months_selected",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "fb006b37eb38b45cd0b9",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "primary_genre",
+        "cross_domain_predictors": [
+          "first_chart_date",
+          "primary_genre"
+        ],
+        "family": "genre_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar",
+          "genre"
+        ],
+        "predictors": [
+          "first_chart_date"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "detox_identity_attack",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "0573ac66e552867978e3",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_duration_min_seconds"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "mb_duration_min_seconds"
+        ],
+        "target": "mb_release_count",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "0585bf0c1d25ea0c5235",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "detox_sexual_explicit"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "detox_sexual_explicit"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "emotion_disapproval",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "09e76f6d201938c5450b",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "emotion_amusement"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_amusement"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "snapshot_months_selected",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "168acc75c841406ae9d0",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "weekly_observation_count"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance"
+        ],
+        "predictors": [
+          "weekly_observation_count"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_release_year",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "1c24622635246b1fa21a",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "mb_release_year"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "mb_release_year"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "detox_sexual_explicit",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "1f66ea70b488c33412a1",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "detox_insult"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "detox_insult"
+        ],
+        "target": "ll_substance_use",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "2c9f7f7b53aaa274ef4e",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "ll_explicit_language"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "ll_explicit_language"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "weekly_observation_count",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "3680b04d8875b9b157d7",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_recording_duration"
+        ],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_duration_max_seconds"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "mb_duration_max_seconds"
+        ],
+        "target": "mb_duration_median_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "3a7291c5fc71d31c3842",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "ll_sexual_content"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "ll_sexual_content"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_duration_min_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "3c1ebfc1ad960c9bf21f",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "mb_recording_count"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_recording_count"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "detox_threat",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "46cc335b8f5feda83234",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "ll_sexual_content"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "ll_sexual_content"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_release_year",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "49c8d1919742f3ae241b",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "mb_duration_median_seconds"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_duration_median_seconds"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "first_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "4b046a6f5bf3d856409f",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_optimism"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "emotion_optimism"
+        ],
+        "target": "emotion_relief",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "5401cb2b935ccfdb4a37",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance"
+        ],
+        "predictors": [
+          "total_chart_points"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "total_chart_points"
+        ],
+        "target": "chart_weeks",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "5ccf3dbe86a96cb0e4ce",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "mb_duration_median_seconds"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_duration_median_seconds"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "snapshot_months_selected",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "712940b406aa2624c7ea",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "row_date_count_alias"
+        ],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance"
+        ],
+        "predictors": [
+          "weekly_observation_count"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "weekly_observation_count"
+        ],
+        "target": "chart_weeks",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "7d560fb082deb48d58c4",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "last_chart_date"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "last_chart_date"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "weekly_observation_count",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "81d64fe64556060d58c7",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_career_calendar"
+        ],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "last_chart_date"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "last_chart_date"
+        ],
+        "target": "last_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "b4308ba69d0fc1bade05",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "emotion_relief"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_relief"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "first_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "b992b5556e6692eb4cec",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "last_snapshot_month"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "last_snapshot_month"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "emotion_admiration",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "d41c094a54af6768601c",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "chart_weeks"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance"
+        ],
+        "predictors": [
+          "chart_weeks"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "ll_violence",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "dafd8dbb9aa6b58d6946",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "total_chart_points"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance"
+        ],
+        "predictors": [
+          "total_chart_points"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_duration_max_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "df1982da17250a5ed50b",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "emotion_caring"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_caring"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_distinct_duration_count",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "e8be6f0a8f1e8f02c148",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "first_chart_date"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "first_chart_date"
+        ],
+        "target": "mb_release_year",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "e993a1c54baf04c0d8a9",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "mb_release_year"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "mb_release_year"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_recording_count",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "f67cc968405e3c95d8b5",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "mb_recording_count"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_recording_count"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "emotion_disapproval",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "f90b68dbb98e3190132f",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "snapshot_months_selected"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance"
+        ],
+        "predictors": [
+          "snapshot_months_selected"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "emotion_pride",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "fbdda1222b5e021cf6fa",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "emotion_amusement"
+        ],
+        "family": "nonlinear",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_amusement"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "detox_identity_attack",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "28189810351504e5f903",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "mb_duration_max_seconds",
+        "cross_domain_predictors": [
+          "mb_duration_max_seconds"
+        ],
+        "family": "numeric_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_affect",
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "emotion_confusion"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "emotion_confusion"
+        ],
+        "target": "sentiment_neutral",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "396cc9a1ceee52585a0b",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "mb_duration_min_seconds",
+        "cross_domain_predictors": [
+          "mb_duration_max_seconds",
+          "mb_duration_min_seconds"
+        ],
+        "family": "numeric_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata",
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_duration_max_seconds"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "emotion_curiosity",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "4f6de9890f3469c9fe1d",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_career_calendar"
+        ],
+        "conditioner": "last_chart_date",
+        "cross_domain_predictors": [
+          "emotion_love"
+        ],
+        "family": "numeric_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_affect",
+          "historical_calendar"
+        ],
+        "predictors": [
+          "emotion_love"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "last_chart_date"
+        ],
+        "target": "first_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "6b82aa5a2ba3569b5c40",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_recording_duration"
+        ],
+        "conditioner": "mb_duration_min_seconds",
+        "cross_domain_predictors": [
+          "emotion_relief"
+        ],
+        "family": "numeric_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_affect",
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "emotion_relief"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "mb_duration_min_seconds"
+        ],
+        "target": "mb_duration_max_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "7742ea51c3cf01d6981d",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "emotion_nervousness",
+        "cross_domain_predictors": [
+          "chart_weeks"
+        ],
+        "family": "numeric_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "chart_performance",
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "chart_weeks"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "emotion_nervousness"
+        ],
+        "target": "sentiment_negative",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "7f560c1c9e2a06039bcf",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "emotion_pride",
+        "cross_domain_predictors": [
+          "emotion_embarrassment",
+          "emotion_pride"
+        ],
+        "family": "numeric_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect",
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_embarrassment"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "first_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "95735b10f33b3aaf8f4e",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_career_calendar"
+        ],
+        "conditioner": "first_chart_date",
+        "cross_domain_predictors": [
+          "emotion_annoyance"
+        ],
+        "family": "numeric_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_affect",
+          "historical_calendar"
+        ],
+        "predictors": [
+          "emotion_annoyance"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "first_chart_date"
+        ],
+        "target": "first_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "9642cb2490edf60e246a",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "emotion_sadness",
+        "cross_domain_predictors": [],
+        "family": "numeric_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect",
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_approval"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "emotion_approval",
+          "emotion_sadness"
+        ],
+        "target": "emotion_embarrassment",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "bb1104a1e3365929e56b",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "last_chart_date",
+        "cross_domain_predictors": [
+          "detox_identity_attack",
+          "last_chart_date"
+        ],
+        "family": "numeric_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content",
+          "historical_calendar"
+        ],
+        "predictors": [
+          "detox_identity_attack"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "emotion_grief",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "bc02d575a6ffd074559d",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_recording_duration"
+        ],
+        "conditioner": "mb_duration_min_seconds",
+        "cross_domain_predictors": [
+          "emotion_approval"
+        ],
+        "family": "numeric_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_affect",
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "emotion_approval"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "mb_duration_min_seconds"
+        ],
+        "target": "mb_duration_median_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "d034ced2b73b60b78459",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "emotion_realization",
+        "cross_domain_predictors": [
+          "detox_threat",
+          "emotion_realization"
+        ],
+        "family": "numeric_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content",
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "detox_threat"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "total_chart_points",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "da383ea9d8d330b12761",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "emotion_annoyance",
+        "cross_domain_predictors": [
+          "detox_identity_attack"
+        ],
+        "family": "numeric_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_content",
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "detox_identity_attack"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "emotion_annoyance"
+        ],
+        "target": "emotion_anger",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "02d55020b325836a2289",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "detox_identity_attack"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "detox_identity_attack"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "first_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "07fd0beced7d67c0a1a8",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "row_date_count_alias"
+        ],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance"
+        ],
+        "predictors": [
+          "chart_weeks"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "chart_weeks"
+        ],
+        "target": "weekly_observation_count",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "1255df89825bc66bac71",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "mb_release_count"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_release_count"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "total_chart_points",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "15542218a2d964eadec9",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "first_snapshot_month"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "first_snapshot_month"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "secondary_genre::Hip-Hop / Rap",
+        "target_domain": "genre"
+      },
+      {
+        "candidate_id": "171811b4293f22618b41",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "last_snapshot_month"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "last_snapshot_month"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "weekly_observation_count",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "21ee1d683a9e4cde3f19",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "detox_severe_toxicity"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "detox_severe_toxicity"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_duration_min_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "22b4bcd97792a4a64a85",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_disgust"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "emotion_disgust"
+        ],
+        "target": "sentiment_neutral",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "793ad267a4c82309c916",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "first_chart_date"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "first_chart_date"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_duration_min_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "7f90bd15775c6c5a7e3a",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "best_chart_rank"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance"
+        ],
+        "predictors": [
+          "best_chart_rank"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "detox_sexual_explicit",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "901f2a292b3f37cc2a11",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "chart_weeks"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance"
+        ],
+        "predictors": [
+          "chart_weeks"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "secondary_genre::Country",
+        "target_domain": "genre"
+      },
+      {
+        "candidate_id": "9417c66a7437da974585",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "mb_recording_count"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_recording_count"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "secondary_genre::Country",
+        "target_domain": "genre"
+      },
+      {
+        "candidate_id": "9fd6d370c5572201c07b",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "detox_toxicity"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "detox_toxicity"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "emotion_approval",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "a3340094f9da07296dd3",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_career_calendar"
+        ],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "first_snapshot_month"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "first_snapshot_month"
+        ],
+        "target": "last_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "a93daa400debfa8682da",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "emotion_desire"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_desire"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "total_chart_points",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "af67dd0c367ec4e3d68c",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "detox_toxicity"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "detox_toxicity"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "secondary_genre::Alternative / Indie",
+        "target_domain": "genre"
+      },
+      {
+        "candidate_id": "b60a8e87d808b44a22c7",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "emotion_curiosity"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_curiosity"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "last_chart_date",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "c885ec00a7fb0bf0b058",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_duration_max_seconds"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "mb_duration_max_seconds"
+        ],
+        "target": "mb_recording_count",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "c8d4f5fae8ac599cc1ae",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "last_chart_date"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "last_chart_date"
+        ],
+        "target": "mb_release_year",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "cb380f200429af3eb6c5",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "detox_obscene"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "detox_obscene"
+        ],
+        "target": "detox_toxicity",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "d26d3215d0f1dbd8c0f6",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance"
+        ],
+        "predictors": [
+          "best_chart_rank"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "best_chart_rank"
+        ],
+        "target": "weekly_observation_count",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "d554ac90cc018b796f88",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_recording_duration"
+        ],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_duration_max_seconds"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "mb_duration_max_seconds"
+        ],
+        "target": "mb_duration_min_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "da7d838df909ba8699e9",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "emotion_excitement"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_excitement"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "secondary_genre::Folk / Singer-Songwriter",
+        "target_domain": "genre"
+      },
+      {
+        "candidate_id": "ea172eea5b9fe01166a2",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "genre"
+        ],
+        "predictors": [
+          "secondary_genre::Country"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "secondary_genres"
+        ],
+        "target": "secondary_genre::Pop",
+        "target_domain": "genre"
+      },
+      {
+        "candidate_id": "fd35418d8a155e3bddf3",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "emotion_disappointment"
+        ],
+        "family": "pairwise",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_disappointment"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_distinct_duration_count",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "12d787af3981c45d35f0",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "family": "structure",
+        "k": 2,
+        "method": "kmeans",
+        "predictors": [
+          "ll_sexual_content",
+          "ll_violence",
+          "ll_explicit_language",
+          "ll_substance_use",
+          "detox_toxicity",
+          "detox_severe_toxicity",
+          "detox_obscene",
+          "detox_threat",
+          "detox_insult",
+          "detox_identity_attack",
+          "detox_sexual_explicit"
+        ],
+        "pure_cross_domain": false,
+        "target": "content"
+      },
+      {
+        "candidate_id": "2322dfed6bcf7c4e1e20",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "family": "structure",
+        "k": 2,
+        "method": "pca",
+        "predictors": [
+          "ll_sexual_content",
+          "ll_violence",
+          "ll_explicit_language",
+          "ll_substance_use",
+          "detox_toxicity",
+          "detox_severe_toxicity",
+          "detox_obscene",
+          "detox_threat",
+          "detox_insult",
+          "detox_identity_attack",
+          "detox_sexual_explicit"
+        ],
+        "pure_cross_domain": false,
+        "target": "content"
+      },
+      {
+        "candidate_id": "4251e8e97039fdfefb01",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "family": "structure",
+        "k": 3,
+        "method": "kmeans",
+        "predictors": [
+          "ll_sexual_content",
+          "ll_violence",
+          "ll_explicit_language",
+          "ll_substance_use",
+          "detox_toxicity",
+          "detox_severe_toxicity",
+          "detox_obscene",
+          "detox_threat",
+          "detox_insult",
+          "detox_identity_attack",
+          "detox_sexual_explicit",
+          "emotion_admiration",
+          "emotion_amusement",
+          "emotion_anger",
+          "emotion_annoyance",
+          "emotion_approval",
+          "emotion_caring",
+          "emotion_confusion",
+          "emotion_curiosity",
+          "emotion_desire",
+          "emotion_disappointment",
+          "emotion_disapproval",
+          "emotion_disgust",
+          "emotion_embarrassment",
+          "emotion_excitement",
+          "emotion_fear",
+          "emotion_gratitude",
+          "emotion_grief",
+          "emotion_joy",
+          "emotion_love",
+          "emotion_nervousness",
+          "emotion_optimism",
+          "emotion_pride",
+          "emotion_realization",
+          "emotion_relief",
+          "emotion_remorse",
+          "emotion_sadness",
+          "emotion_surprise",
+          "emotion_neutral",
+          "sentiment_negative",
+          "sentiment_neutral",
+          "sentiment_positive"
+        ],
+        "pure_cross_domain": false,
+        "target": "all_lyrics"
+      },
+      {
+        "candidate_id": "6325e285bf42e915e006",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "family": "structure",
+        "k": 3,
+        "method": "kmeans",
+        "predictors": [
+          "emotion_admiration",
+          "emotion_amusement",
+          "emotion_anger",
+          "emotion_annoyance",
+          "emotion_approval",
+          "emotion_caring",
+          "emotion_confusion",
+          "emotion_curiosity",
+          "emotion_desire",
+          "emotion_disappointment",
+          "emotion_disapproval",
+          "emotion_disgust",
+          "emotion_embarrassment",
+          "emotion_excitement",
+          "emotion_fear",
+          "emotion_gratitude",
+          "emotion_grief",
+          "emotion_joy",
+          "emotion_love",
+          "emotion_nervousness",
+          "emotion_optimism",
+          "emotion_pride",
+          "emotion_realization",
+          "emotion_relief",
+          "emotion_remorse",
+          "emotion_sadness",
+          "emotion_surprise",
+          "emotion_neutral",
+          "sentiment_negative",
+          "sentiment_neutral",
+          "sentiment_positive"
+        ],
+        "pure_cross_domain": false,
+        "target": "affect"
+      },
+      {
+        "candidate_id": "7392be4747ad5c638f76",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "family": "structure",
+        "k": 2,
+        "method": "pca",
+        "predictors": [
+          "emotion_admiration",
+          "emotion_amusement",
+          "emotion_anger",
+          "emotion_annoyance",
+          "emotion_approval",
+          "emotion_caring",
+          "emotion_confusion",
+          "emotion_curiosity",
+          "emotion_desire",
+          "emotion_disappointment",
+          "emotion_disapproval",
+          "emotion_disgust",
+          "emotion_embarrassment",
+          "emotion_excitement",
+          "emotion_fear",
+          "emotion_gratitude",
+          "emotion_grief",
+          "emotion_joy",
+          "emotion_love",
+          "emotion_nervousness",
+          "emotion_optimism",
+          "emotion_pride",
+          "emotion_realization",
+          "emotion_relief",
+          "emotion_remorse",
+          "emotion_sadness",
+          "emotion_surprise",
+          "emotion_neutral",
+          "sentiment_negative",
+          "sentiment_neutral",
+          "sentiment_positive"
+        ],
+        "pure_cross_domain": false,
+        "target": "affect"
+      },
+      {
+        "candidate_id": "7d6bfddabdc2b40c4a6e",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "family": "structure",
+        "k": 5,
+        "method": "pca",
+        "predictors": [
+          "ll_sexual_content",
+          "ll_violence",
+          "ll_explicit_language",
+          "ll_substance_use",
+          "detox_toxicity",
+          "detox_severe_toxicity",
+          "detox_obscene",
+          "detox_threat",
+          "detox_insult",
+          "detox_identity_attack",
+          "detox_sexual_explicit",
+          "emotion_admiration",
+          "emotion_amusement",
+          "emotion_anger",
+          "emotion_annoyance",
+          "emotion_approval",
+          "emotion_caring",
+          "emotion_confusion",
+          "emotion_curiosity",
+          "emotion_desire",
+          "emotion_disappointment",
+          "emotion_disapproval",
+          "emotion_disgust",
+          "emotion_embarrassment",
+          "emotion_excitement",
+          "emotion_fear",
+          "emotion_gratitude",
+          "emotion_grief",
+          "emotion_joy",
+          "emotion_love",
+          "emotion_nervousness",
+          "emotion_optimism",
+          "emotion_pride",
+          "emotion_realization",
+          "emotion_relief",
+          "emotion_remorse",
+          "emotion_sadness",
+          "emotion_surprise",
+          "emotion_neutral",
+          "sentiment_negative",
+          "sentiment_neutral",
+          "sentiment_positive"
+        ],
+        "pure_cross_domain": false,
+        "target": "all_lyrics"
+      },
+      {
+        "candidate_id": "8cc4e0dce3ff758c36c1",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "family": "structure",
+        "k": 2,
+        "method": "kmeans",
+        "predictors": [
+          "emotion_admiration",
+          "emotion_amusement",
+          "emotion_anger",
+          "emotion_annoyance",
+          "emotion_approval",
+          "emotion_caring",
+          "emotion_confusion",
+          "emotion_curiosity",
+          "emotion_desire",
+          "emotion_disappointment",
+          "emotion_disapproval",
+          "emotion_disgust",
+          "emotion_embarrassment",
+          "emotion_excitement",
+          "emotion_fear",
+          "emotion_gratitude",
+          "emotion_grief",
+          "emotion_joy",
+          "emotion_love",
+          "emotion_nervousness",
+          "emotion_optimism",
+          "emotion_pride",
+          "emotion_realization",
+          "emotion_relief",
+          "emotion_remorse",
+          "emotion_sadness",
+          "emotion_surprise",
+          "emotion_neutral",
+          "sentiment_negative",
+          "sentiment_neutral",
+          "sentiment_positive"
+        ],
+        "pure_cross_domain": false,
+        "target": "affect"
+      },
+      {
+        "candidate_id": "98dc2c31e2619652d2ea",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "family": "structure",
+        "k": 2,
+        "method": "kmeans",
+        "predictors": [
+          "ll_sexual_content",
+          "ll_violence",
+          "ll_explicit_language",
+          "ll_substance_use",
+          "detox_toxicity",
+          "detox_severe_toxicity",
+          "detox_obscene",
+          "detox_threat",
+          "detox_insult",
+          "detox_identity_attack",
+          "detox_sexual_explicit",
+          "emotion_admiration",
+          "emotion_amusement",
+          "emotion_anger",
+          "emotion_annoyance",
+          "emotion_approval",
+          "emotion_caring",
+          "emotion_confusion",
+          "emotion_curiosity",
+          "emotion_desire",
+          "emotion_disappointment",
+          "emotion_disapproval",
+          "emotion_disgust",
+          "emotion_embarrassment",
+          "emotion_excitement",
+          "emotion_fear",
+          "emotion_gratitude",
+          "emotion_grief",
+          "emotion_joy",
+          "emotion_love",
+          "emotion_nervousness",
+          "emotion_optimism",
+          "emotion_pride",
+          "emotion_realization",
+          "emotion_relief",
+          "emotion_remorse",
+          "emotion_sadness",
+          "emotion_surprise",
+          "emotion_neutral",
+          "sentiment_negative",
+          "sentiment_neutral",
+          "sentiment_positive"
+        ],
+        "pure_cross_domain": false,
+        "target": "all_lyrics"
+      },
+      {
+        "candidate_id": "9f7a6cda5e9759d694b1",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "family": "structure",
+        "k": 2,
+        "method": "pca",
+        "predictors": [
+          "ll_sexual_content",
+          "ll_violence",
+          "ll_explicit_language",
+          "ll_substance_use",
+          "detox_toxicity",
+          "detox_severe_toxicity",
+          "detox_obscene",
+          "detox_threat",
+          "detox_insult",
+          "detox_identity_attack",
+          "detox_sexual_explicit",
+          "emotion_admiration",
+          "emotion_amusement",
+          "emotion_anger",
+          "emotion_annoyance",
+          "emotion_approval",
+          "emotion_caring",
+          "emotion_confusion",
+          "emotion_curiosity",
+          "emotion_desire",
+          "emotion_disappointment",
+          "emotion_disapproval",
+          "emotion_disgust",
+          "emotion_embarrassment",
+          "emotion_excitement",
+          "emotion_fear",
+          "emotion_gratitude",
+          "emotion_grief",
+          "emotion_joy",
+          "emotion_love",
+          "emotion_nervousness",
+          "emotion_optimism",
+          "emotion_pride",
+          "emotion_realization",
+          "emotion_relief",
+          "emotion_remorse",
+          "emotion_sadness",
+          "emotion_surprise",
+          "emotion_neutral",
+          "sentiment_negative",
+          "sentiment_neutral",
+          "sentiment_positive"
+        ],
+        "pure_cross_domain": false,
+        "target": "all_lyrics"
+      },
+      {
+        "candidate_id": "ca15355cfc6e1c4b7e65",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "family": "structure",
+        "k": 3,
+        "method": "kmeans",
+        "predictors": [
+          "ll_sexual_content",
+          "ll_violence",
+          "ll_explicit_language",
+          "ll_substance_use",
+          "detox_toxicity",
+          "detox_severe_toxicity",
+          "detox_obscene",
+          "detox_threat",
+          "detox_insult",
+          "detox_identity_attack",
+          "detox_sexual_explicit"
+        ],
+        "pure_cross_domain": false,
+        "target": "content"
+      },
+      {
+        "candidate_id": "d10ce172626505f51c5d",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "family": "structure",
+        "k": 5,
+        "method": "pca",
+        "predictors": [
+          "emotion_admiration",
+          "emotion_amusement",
+          "emotion_anger",
+          "emotion_annoyance",
+          "emotion_approval",
+          "emotion_caring",
+          "emotion_confusion",
+          "emotion_curiosity",
+          "emotion_desire",
+          "emotion_disappointment",
+          "emotion_disapproval",
+          "emotion_disgust",
+          "emotion_embarrassment",
+          "emotion_excitement",
+          "emotion_fear",
+          "emotion_gratitude",
+          "emotion_grief",
+          "emotion_joy",
+          "emotion_love",
+          "emotion_nervousness",
+          "emotion_optimism",
+          "emotion_pride",
+          "emotion_realization",
+          "emotion_relief",
+          "emotion_remorse",
+          "emotion_sadness",
+          "emotion_surprise",
+          "emotion_neutral",
+          "sentiment_negative",
+          "sentiment_neutral",
+          "sentiment_positive"
+        ],
+        "pure_cross_domain": false,
+        "target": "affect"
+      },
+      {
+        "candidate_id": "fe763dc3cf98a2bff779",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "family": "structure",
+        "k": 5,
+        "method": "pca",
+        "predictors": [
+          "ll_sexual_content",
+          "ll_violence",
+          "ll_explicit_language",
+          "ll_substance_use",
+          "detox_toxicity",
+          "detox_severe_toxicity",
+          "detox_obscene",
+          "detox_threat",
+          "detox_insult",
+          "detox_identity_attack",
+          "detox_sexual_explicit"
+        ],
+        "pure_cross_domain": false,
+        "target": "content"
+      },
+      {
+        "candidate_id": "0497c7312dd7927bac8b",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "mb_duration_min_seconds"
+        ],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_duration_min_seconds"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "snapshot_months_selected",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "27cd8f82641e7da595ff",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "emotion_realization"
+        ],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_realization"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "snapshot_months_selected",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "288c383d5ff992d11f89",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "detox_insult"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "detox_insult"
+        ],
+        "target": "detox_obscene",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "35bcf87eb2fc260ea6e0",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_disappointment"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "emotion_disappointment"
+        ],
+        "target": "emotion_sadness",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "407687ea7789a15edb68",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "chart_performance"
+        ],
+        "predictors": [
+          "chart_weeks"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "chart_weeks"
+        ],
+        "target": "total_chart_points",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "6892d234afa2dd486dbf",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "last_chart_date"
+        ],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "last_chart_date"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_recording_count",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "6e6de66047c176eec45b",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "last_snapshot_month"
+        ],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "last_snapshot_month"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "ll_violence",
+        "target_domain": "lyrical_content"
+      },
+      {
+        "candidate_id": "85ec5ff589f07f1fb76e",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "detox_severe_toxicity"
+        ],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "detox_severe_toxicity"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "emotion_grief",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "968a7462694961bada39",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "last_snapshot_month"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "last_snapshot_month"
+        ],
+        "target": "mb_release_year",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "a289314d7c9db01b0899",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "emotion_love"
+        ],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_love"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_distinct_duration_count",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "b7992d5036fcb2c1664a",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "detox_threat"
+        ],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "detox_threat"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "mb_duration_min_seconds",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "ccd835e97ad2b6c21f66",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "mb_duration_median_seconds"
+        ],
+        "pure_cross_domain": false,
+        "same_family_predictors": [
+          "mb_duration_median_seconds"
+        ],
+        "target": "mb_recording_count",
+        "target_domain": "musicbrainz_metadata"
+      },
+      {
+        "candidate_id": "e5eb4c80db11271641c8",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "emotion_pride"
+        ],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "emotion_pride"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "last_chart_date",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "e70f79ae7949c54de7dc",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "mb_release_year"
+        ],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar"
+        ],
+        "predictors": [
+          "mb_release_year"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "snapshot_months_selected",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "f79fadd361ae957c83c3",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": null,
+        "cross_domain_predictors": [
+          "detox_sexual_explicit"
+        ],
+        "family": "temporal",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "lyrical_content"
+        ],
+        "predictors": [
+          "detox_sexual_explicit"
+        ],
+        "pure_cross_domain": true,
+        "same_family_predictors": [],
+        "target": "best_chart_rank",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "00e3d028d9f61ebbda29",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "emotion_surprise",
+        "cross_domain_predictors": [
+          "ll_explicit_language"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_content",
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "ll_explicit_language"
+        ],
+        "pure_cross_domain": false,
+        "quantile": 0.75,
+        "same_family_predictors": [
+          "emotion_surprise"
+        ],
+        "target": "emotion_realization",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "1248e0cb26631b382d63",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "emotion_surprise",
+        "cross_domain_predictors": [
+          "ll_explicit_language"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_content",
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "ll_explicit_language"
+        ],
+        "pure_cross_domain": false,
+        "quantile": 0.5,
+        "same_family_predictors": [
+          "emotion_surprise"
+        ],
+        "target": "emotion_realization",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "4dd2fe4831a1438bad67",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "mb_release_count",
+        "cross_domain_predictors": [
+          "mb_release_count"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_affect",
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "emotion_nervousness"
+        ],
+        "pure_cross_domain": false,
+        "quantile": 0.5,
+        "same_family_predictors": [
+          "emotion_nervousness"
+        ],
+        "target": "emotion_surprise",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "5f98528c26d80d652989",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "detox_obscene",
+        "cross_domain_predictors": [
+          "mb_release_year",
+          "detox_obscene"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar",
+          "lyrical_content"
+        ],
+        "predictors": [
+          "mb_release_year"
+        ],
+        "pure_cross_domain": true,
+        "quantile": 0.75,
+        "same_family_predictors": [],
+        "target": "emotion_curiosity",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "6dd0a1c345724e7be849",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "emotion_disappointment",
+        "cross_domain_predictors": [
+          "first_snapshot_month",
+          "emotion_disappointment"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar",
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "first_snapshot_month"
+        ],
+        "pure_cross_domain": true,
+        "quantile": 0.5,
+        "same_family_predictors": [],
+        "target": "snapshot_months_selected",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "7cd107576a9e4b1c065f",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_career_calendar"
+        ],
+        "conditioner": "last_chart_date",
+        "cross_domain_predictors": [
+          "emotion_sadness"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_affect",
+          "historical_calendar"
+        ],
+        "predictors": [
+          "emotion_sadness"
+        ],
+        "pure_cross_domain": false,
+        "quantile": 0.25,
+        "same_family_predictors": [
+          "last_chart_date"
+        ],
+        "target": "first_chart_date",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "7da2d449b3704b77579f",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_career_calendar"
+        ],
+        "conditioner": "first_chart_date",
+        "cross_domain_predictors": [
+          "ll_substance_use"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_content",
+          "historical_calendar"
+        ],
+        "predictors": [
+          "ll_substance_use"
+        ],
+        "pure_cross_domain": false,
+        "quantile": 0.25,
+        "same_family_predictors": [
+          "first_chart_date"
+        ],
+        "target": "last_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "849c5d5f7b0f13fda722",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_career_calendar"
+        ],
+        "conditioner": "last_chart_date",
+        "cross_domain_predictors": [
+          "emotion_sadness"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_affect",
+          "historical_calendar"
+        ],
+        "predictors": [
+          "emotion_sadness"
+        ],
+        "pure_cross_domain": false,
+        "quantile": 0.5,
+        "same_family_predictors": [
+          "last_chart_date"
+        ],
+        "target": "first_chart_date",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "a1474831d2e5aece68df",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_career_calendar"
+        ],
+        "conditioner": "first_chart_date",
+        "cross_domain_predictors": [
+          "ll_substance_use"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_content",
+          "historical_calendar"
+        ],
+        "predictors": [
+          "ll_substance_use"
+        ],
+        "pure_cross_domain": false,
+        "quantile": 0.75,
+        "same_family_predictors": [
+          "first_chart_date"
+        ],
+        "target": "last_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "b4360f28d3c1604881a6",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "mb_release_count",
+        "cross_domain_predictors": [
+          "mb_release_count"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_affect",
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "emotion_nervousness"
+        ],
+        "pure_cross_domain": false,
+        "quantile": 0.75,
+        "same_family_predictors": [
+          "emotion_nervousness"
+        ],
+        "target": "emotion_surprise",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "bd5fec5d9ac4d265126c",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "emotion_disappointment",
+        "cross_domain_predictors": [
+          "first_snapshot_month",
+          "emotion_disappointment"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar",
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "first_snapshot_month"
+        ],
+        "pure_cross_domain": true,
+        "quantile": 0.75,
+        "same_family_predictors": [],
+        "target": "snapshot_months_selected",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "c4c3ff0d81411bbccc16",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_career_calendar"
+        ],
+        "conditioner": "last_chart_date",
+        "cross_domain_predictors": [
+          "emotion_sadness"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_affect",
+          "historical_calendar"
+        ],
+        "predictors": [
+          "emotion_sadness"
+        ],
+        "pure_cross_domain": false,
+        "quantile": 0.75,
+        "same_family_predictors": [
+          "last_chart_date"
+        ],
+        "target": "first_chart_date",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "cb568e8c506583a83463",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "detox_obscene",
+        "cross_domain_predictors": [
+          "mb_release_year",
+          "detox_obscene"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar",
+          "lyrical_content"
+        ],
+        "predictors": [
+          "mb_release_year"
+        ],
+        "pure_cross_domain": true,
+        "quantile": 0.5,
+        "same_family_predictors": [],
+        "target": "emotion_curiosity",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "dbc2a34c94669749bdfd",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "emotion_disappointment",
+        "cross_domain_predictors": [
+          "first_snapshot_month",
+          "emotion_disappointment"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar",
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "first_snapshot_month"
+        ],
+        "pure_cross_domain": true,
+        "quantile": 0.25,
+        "same_family_predictors": [],
+        "target": "snapshot_months_selected",
+        "target_domain": "chart_performance"
+      },
+      {
+        "candidate_id": "ebb62bfd6d79eef94a3f",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "mb_release_count",
+        "cross_domain_predictors": [
+          "mb_release_count"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_affect",
+          "musicbrainz_metadata"
+        ],
+        "predictors": [
+          "emotion_nervousness"
+        ],
+        "pure_cross_domain": false,
+        "quantile": 0.25,
+        "same_family_predictors": [
+          "emotion_nervousness"
+        ],
+        "target": "emotion_surprise",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "eec0c60f28df37c78d79",
+        "category": "B: redundant/same-family",
+        "circular_rules": [],
+        "conditioner": "emotion_surprise",
+        "cross_domain_predictors": [
+          "ll_explicit_language"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_content",
+          "lyrical_affect"
+        ],
+        "predictors": [
+          "ll_explicit_language"
+        ],
+        "pure_cross_domain": false,
+        "quantile": 0.25,
+        "same_family_predictors": [
+          "emotion_surprise"
+        ],
+        "target": "emotion_realization",
+        "target_domain": "lyrical_affect"
+      },
+      {
+        "candidate_id": "ef79d8df6f41a0ee36da",
+        "category": "A: circular/reconstruction",
+        "circular_rules": [
+          "same_career_calendar"
+        ],
+        "conditioner": "first_chart_date",
+        "cross_domain_predictors": [
+          "ll_substance_use"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": true,
+        "predictor_domains": [
+          "lyrical_content",
+          "historical_calendar"
+        ],
+        "predictors": [
+          "ll_substance_use"
+        ],
+        "pure_cross_domain": false,
+        "quantile": 0.5,
+        "same_family_predictors": [
+          "first_chart_date"
+        ],
+        "target": "last_snapshot_month",
+        "target_domain": "historical_calendar"
+      },
+      {
+        "candidate_id": "f5d74fcf057550d9f880",
+        "category": "C: cross-domain",
+        "circular_rules": [],
+        "conditioner": "detox_obscene",
+        "cross_domain_predictors": [
+          "mb_release_year",
+          "detox_obscene"
+        ],
+        "family": "threshold_interaction",
+        "mixed_domains": false,
+        "predictor_domains": [
+          "historical_calendar",
+          "lyrical_content"
+        ],
+        "predictors": [
+          "mb_release_year"
+        ],
+        "pure_cross_domain": true,
+        "quantile": 0.25,
+        "same_family_predictors": [],
+        "target": "emotion_curiosity",
+        "target_domain": "lyrical_affect"
+      }
+    ],
+    "versions": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "python": "3.9.6",
+      "scipy": "1.13.1",
+      "sklearn": "1.5.2"
+    }
+  },
+  "locked_utc": "2026-10-20T22:57:34.078750+00:00",
+  "new_pilot_results_at_lock": 0
+}
