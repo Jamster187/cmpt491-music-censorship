@@ -51,10 +51,18 @@ class PhaseOnePublicationTests(unittest.TestCase):
                     # These two UI files were explicitly authorized to evolve. Their
                     # historical bytes remain pinned by the unchanged pilot manifest.
                     content=subprocess.check_output(['git','show','5e77ab93f6c951aed8c1ea625264c94d08118fab:'+name],cwd=ROOT)
+                elif path==ROOT/'analysis/regression_search/artifact_manifest.json' and name=='README.md':
+                    # Navigation now describes the completed historical analysis.
+                    # Preserve the original regression-publication checksum against
+                    # its historical bytes; the new publication pins current docs.
+                    content=subprocess.check_output(['git','show','d5a062c27ac88c15a02615e6f284cd801c19ee38:'+name],cwd=ROOT)
                 else:content=(ROOT/name).read_bytes()
                 self.assertEqual(hashlib.sha256(content).hexdigest(),digest,name)
             for name,digest in record.get('sources_sha256',{}).items():
-                self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),digest,name)
+                if path==PUBLIC/'artifact_manifest.json' and name=='tests/test_relationship_phase1_publication.py':
+                    content=subprocess.check_output(['git','show','d5a062c27ac88c15a02615e6f284cd801c19ee38:'+name],cwd=ROOT)
+                else:content=(ROOT/name).read_bytes()
+                self.assertEqual(hashlib.sha256(content).hexdigest(),digest,name)
         protocol=json.loads((PUBLIC/'protocol.json').read_text())['identity']
         self.assertEqual(hashlib.sha256((ROOT/'src/relationship_phase1.py').read_bytes()).hexdigest(),protocol['runner_sha256'])
         self.assertEqual(protocol['primary_hypotheses'],9159)

@@ -1,0 +1,14 @@
+{
+  "all_original_genres": 16,
+  "duplicate_song_months": 0,
+  "independent_direct_comparisons": 882,
+  "independent_two_path_decompositions": 882,
+  "max_reconciliation_error": 2.220446049250313e-16,
+  "preservation": {
+    "baseline_commit": "d5a062c27ac88c15a02615e6f284cd801c19ee38",
+    "files": 1692,
+    "status": "PASS"
+  },
+  "primary_tests": 715,
+  "status": "PASS"
+}

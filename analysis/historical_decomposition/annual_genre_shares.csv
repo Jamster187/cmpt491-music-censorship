@@ -1,0 +1,3169 @@
+year,weighting,genre,full_share,total_weight,unique_songs,lyrics_available_weight
+1960,song_month,Afrobeats / African Pop,0,0,0,0
+1960,song_month,Alternative / Indie,0,0,0,0
+1960,song_month,Country,0.10333333333333333,124,60,91
+1960,song_month,Electronic / Dance,0,0,0,0
+1960,song_month,Folk / Singer-Songwriter,0.018333333333333333,22,11,19
+1960,song_month,Gospel / Christian,0.0074999999999999997,9,6,4
+1960,song_month,Hip-Hop / Rap,0,0,0,0
+1960,song_month,Jazz / Blues,0.079166666666666663,95,54,53
+1960,song_month,K-Pop,0,0,0,0
+1960,song_month,Latin,0,0,0,0
+1960,song_month,Metal,0,0,0,0
+1960,song_month,Other,0.037499999999999999,45,27,13
+1960,song_month,Pop,0.33500000000000002,402,191,281
+1960,song_month,R&B / Soul,0.21166666666666667,254,122,195
+1960,song_month,Reggae / Dancehall,0,0,0,0
+1960,song_month,Rock,0.20749999999999999,249,115,173
+1960,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1960,rank_weighted,Alternative / Indie,0,0,0,0
+1960,rank_weighted,Country,0.099075907590759071,6004,60,4721
+1960,rank_weighted,Electronic / Dance,0,0,0,0
+1960,rank_weighted,Folk / Singer-Songwriter,0.01424092409240924,863,11,791
+1960,rank_weighted,Gospel / Christian,0.0064851485148514848,393,6,154
+1960,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1960,rank_weighted,Jazz / Blues,0.061369636963696371,3719,54,2110
+1960,rank_weighted,K-Pop,0,0,0,0
+1960,rank_weighted,Latin,0,0,0,0
+1960,rank_weighted,Metal,0,0,0,0
+1960,rank_weighted,Other,0.027755775577557755,1682,27,526
+1960,rank_weighted,Pop,0.36085808580858086,21868,191,15949
+1960,rank_weighted,R&B / Soul,0.20735973597359736,12566,122,9851
+1960,rank_weighted,Reggae / Dancehall,0,0,0,0
+1960,rank_weighted,Rock,0.22285478547854787,13505,115,9842
+1960,unique_song,Afrobeats / African Pop,0,0,0,0
+1960,unique_song,Alternative / Indie,0,0,0,0
+1960,unique_song,Country,0.10238907849829351,60,60,42
+1960,unique_song,Electronic / Dance,0,0,0,0
+1960,unique_song,Folk / Singer-Songwriter,0.01877133105802048,11,11,9
+1960,unique_song,Gospel / Christian,0.010238907849829351,6,6,3
+1960,unique_song,Hip-Hop / Rap,0,0,0,0
+1960,unique_song,Jazz / Blues,0.092150170648464161,54,54,30
+1960,unique_song,K-Pop,0,0,0,0
+1960,unique_song,Latin,0,0,0,0
+1960,unique_song,Metal,0,0,0,0
+1960,unique_song,Other,0.04607508532423208,27,27,7
+1960,unique_song,Pop,0.32593856655290104,191,191,129
+1960,unique_song,R&B / Soul,0.20819112627986347,122,122,87
+1960,unique_song,Reggae / Dancehall,0,0,0,0
+1960,unique_song,Rock,0.19624573378839591,115,115,76
+1961,song_month,Afrobeats / African Pop,0,0,0,0
+1961,song_month,Alternative / Indie,0,0,0,0
+1961,song_month,Country,0.076666666666666661,92,45,72
+1961,song_month,Electronic / Dance,0,0,0,0
+1961,song_month,Folk / Singer-Songwriter,0.013333333333333334,16,9,13
+1961,song_month,Gospel / Christian,0.0025000000000000001,3,2,2
+1961,song_month,Hip-Hop / Rap,0,0,0,0
+1961,song_month,Jazz / Blues,0.073333333333333334,88,54,42
+1961,song_month,K-Pop,0,0,0,0
+1961,song_month,Latin,0.00083333333333333339,1,1,0
+1961,song_month,Metal,0,0,0,0
+1961,song_month,Other,0.035000000000000003,42,32,8
+1961,song_month,Pop,0.33083333333333331,397,205,277
+1961,song_month,R&B / Soul,0.28833333333333333,346,185,241
+1961,song_month,Reggae / Dancehall,0,0,0,0
+1961,song_month,Rock,0.17916666666666667,215,109,158
+1961,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1961,rank_weighted,Alternative / Indie,0,0,0,0
+1961,rank_weighted,Country,0.072920792079207916,4419,45,3437
+1961,rank_weighted,Electronic / Dance,0,0,0,0
+1961,rank_weighted,Folk / Singer-Songwriter,0.015049504950495049,912,9,808
+1961,rank_weighted,Gospel / Christian,0.0020132013201320134,122,2,55
+1961,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1961,rank_weighted,Jazz / Blues,0.060693069306930691,3678,54,1639
+1961,rank_weighted,K-Pop,0,0,0,0
+1961,rank_weighted,Latin,0.00052805280528052802,32,1,0
+1961,rank_weighted,Metal,0,0,0,0
+1961,rank_weighted,Other,0.026138613861386138,1584,32,267
+1961,rank_weighted,Pop,0.33904290429042905,20546,205,15894
+1961,rank_weighted,R&B / Soul,0.28953795379537955,17546,185,12505
+1961,rank_weighted,Reggae / Dancehall,0,0,0,0
+1961,rank_weighted,Rock,0.19407590759075907,11761,109,9268
+1961,unique_song,Afrobeats / African Pop,0,0,0,0
+1961,unique_song,Alternative / Indie,0,0,0,0
+1961,unique_song,Country,0.070093457943925228,45,45,34
+1961,unique_song,Electronic / Dance,0,0,0,0
+1961,unique_song,Folk / Singer-Songwriter,0.014018691588785047,9,9,6
+1961,unique_song,Gospel / Christian,0.0031152647975077881,2,2,1
+1961,unique_song,Hip-Hop / Rap,0,0,0,0
+1961,unique_song,Jazz / Blues,0.084112149532710276,54,54,28
+1961,unique_song,K-Pop,0,0,0,0
+1961,unique_song,Latin,0.001557632398753894,1,1,0
+1961,unique_song,Metal,0,0,0,0
+1961,unique_song,Other,0.049844236760124609,32,32,7
+1961,unique_song,Pop,0.31931464174454827,205,205,135
+1961,unique_song,R&B / Soul,0.28816199376947038,185,185,129
+1961,unique_song,Reggae / Dancehall,0,0,0,0
+1961,unique_song,Rock,0.16978193146417445,109,109,75
+1962,song_month,Afrobeats / African Pop,0,0,0,0
+1962,song_month,Alternative / Indie,0,0,0,0
+1962,song_month,Country,0.093333333333333338,112,62,89
+1962,song_month,Electronic / Dance,0,0,0,0
+1962,song_month,Folk / Singer-Songwriter,0.017500000000000002,21,12,19
+1962,song_month,Gospel / Christian,0.0016666666666666668,2,2,1
+1962,song_month,Hip-Hop / Rap,0,0,0,0
+1962,song_month,Jazz / Blues,0.10583333333333333,127,66,55
+1962,song_month,K-Pop,0,0,0,0
+1962,song_month,Latin,0.00083333333333333339,1,1,0
+1962,song_month,Metal,0,0,0,0
+1962,song_month,Other,0.018333333333333333,22,16,11
+1962,song_month,Pop,0.33083333333333331,397,204,310
+1962,song_month,R&B / Soul,0.28833333333333333,346,178,232
+1962,song_month,Reggae / Dancehall,0,0,0,0
+1962,song_month,Rock,0.14333333333333334,172,86,115
+1962,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1962,rank_weighted,Alternative / Indie,0,0,0,0
+1962,rank_weighted,Country,0.084504950495049511,5121,62,4279
+1962,rank_weighted,Electronic / Dance,0,0,0,0
+1962,rank_weighted,Folk / Singer-Songwriter,0.015924092409240923,965,12,935
+1962,rank_weighted,Gospel / Christian,0.0012376237623762376,75,2,2
+1962,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1962,rank_weighted,Jazz / Blues,0.089075907590759076,5398,66,2261
+1962,rank_weighted,K-Pop,0,0,0,0
+1962,rank_weighted,Latin,0.00059405940594059404,36,1,0
+1962,rank_weighted,Metal,0,0,0,0
+1962,rank_weighted,Other,0.013679867986798679,829,16,549
+1962,rank_weighted,Pop,0.35869636963696372,21737,204,17620
+1962,rank_weighted,R&B / Soul,0.27529702970297032,16683,178,11763
+1962,rank_weighted,Reggae / Dancehall,0,0,0,0
+1962,rank_weighted,Rock,0.16099009900990099,9756,86,7085
+1962,unique_song,Afrobeats / African Pop,0,0,0,0
+1962,unique_song,Alternative / Indie,0,0,0,0
+1962,unique_song,Country,0.098883572567783087,62,62,48
+1962,unique_song,Electronic / Dance,0,0,0,0
+1962,unique_song,Folk / Singer-Songwriter,0.019138755980861243,12,12,10
+1962,unique_song,Gospel / Christian,0.003189792663476874,2,2,1
+1962,unique_song,Hip-Hop / Rap,0,0,0,0
+1962,unique_song,Jazz / Blues,0.10526315789473684,66,66,29
+1962,unique_song,K-Pop,0,0,0,0
+1962,unique_song,Latin,0.001594896331738437,1,1,0
+1962,unique_song,Metal,0,0,0,0
+1962,unique_song,Other,0.025518341307814992,16,16,7
+1962,unique_song,Pop,0.32535885167464113,204,204,153
+1962,unique_song,R&B / Soul,0.28389154704944181,178,178,116
+1962,unique_song,Reggae / Dancehall,0,0,0,0
+1962,unique_song,Rock,0.13716108452950559,86,86,52
+1963,song_month,Afrobeats / African Pop,0,0,0,0
+1963,song_month,Alternative / Indie,0,0,0,0
+1963,song_month,Country,0.051666666666666666,62,34,54
+1963,song_month,Electronic / Dance,0,0,0,0
+1963,song_month,Folk / Singer-Songwriter,0.04583333333333333,55,26,45
+1963,song_month,Gospel / Christian,0,0,0,0
+1963,song_month,Hip-Hop / Rap,0,0,0,0
+1963,song_month,Jazz / Blues,0.083333333333333329,100,54,41
+1963,song_month,K-Pop,0,0,0,0
+1963,song_month,Latin,0.0025000000000000001,3,2,0
+1963,song_month,Metal,0,0,0,0
+1963,song_month,Other,0.025000000000000001,30,16,13
+1963,song_month,Pop,0.38583333333333331,463,249,342
+1963,song_month,R&B / Soul,0.27833333333333332,334,181,254
+1963,song_month,Reggae / Dancehall,0,0,0,0
+1963,song_month,Rock,0.1275,153,84,97
+1963,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1963,rank_weighted,Alternative / Indie,0,0,0,0
+1963,rank_weighted,Country,0.052128712871287126,3159,34,2810
+1963,rank_weighted,Electronic / Dance,0,0,0,0
+1963,rank_weighted,Folk / Singer-Songwriter,0.049075907590759076,2974,26,2567
+1963,rank_weighted,Gospel / Christian,0,0,0,0
+1963,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1963,rank_weighted,Jazz / Blues,0.06638613861386139,4023,54,1529
+1963,rank_weighted,K-Pop,0,0,0,0
+1963,rank_weighted,Latin,0.0016501650165016502,100,2,0
+1963,rank_weighted,Metal,0,0,0,0
+1963,rank_weighted,Other,0.016105610561056107,976,16,535
+1963,rank_weighted,Pop,0.41097359735973599,24905,249,19726
+1963,rank_weighted,R&B / Soul,0.26136963696369636,15839,181,12114
+1963,rank_weighted,Reggae / Dancehall,0,0,0,0
+1963,rank_weighted,Rock,0.14231023102310231,8624,84,5801
+1963,unique_song,Afrobeats / African Pop,0,0,0,0
+1963,unique_song,Alternative / Indie,0,0,0,0
+1963,unique_song,Country,0.052631578947368418,34,34,29
+1963,unique_song,Electronic / Dance,0,0,0,0
+1963,unique_song,Folk / Singer-Songwriter,0.040247678018575851,26,26,20
+1963,unique_song,Gospel / Christian,0,0,0,0
+1963,unique_song,Hip-Hop / Rap,0,0,0,0
+1963,unique_song,Jazz / Blues,0.083591331269349839,54,54,22
+1963,unique_song,K-Pop,0,0,0,0
+1963,unique_song,Latin,0.0030959752321981426,2,2,0
+1963,unique_song,Metal,0,0,0,0
+1963,unique_song,Other,0.024767801857585141,16,16,7
+1963,unique_song,Pop,0.38544891640866874,249,249,176
+1963,unique_song,R&B / Soul,0.2801857585139319,181,181,131
+1963,unique_song,Reggae / Dancehall,0,0,0,0
+1963,unique_song,Rock,0.13003095975232198,84,84,52
+1964,song_month,Afrobeats / African Pop,0,0,0,0
+1964,song_month,Alternative / Indie,0,0,0,0
+1964,song_month,Country,0.035000000000000003,42,24,37
+1964,song_month,Electronic / Dance,0,0,0,0
+1964,song_month,Folk / Singer-Songwriter,0.028333333333333332,34,18,32
+1964,song_month,Gospel / Christian,0,0,0,0
+1964,song_month,Hip-Hop / Rap,0,0,0,0
+1964,song_month,Jazz / Blues,0.07166666666666667,86,51,53
+1964,song_month,K-Pop,0,0,0,0
+1964,song_month,Latin,0.0025000000000000001,3,2,3
+1964,song_month,Metal,0,0,0,0
+1964,song_month,Other,0.014166666666666666,17,11,3
+1964,song_month,Pop,0.32250000000000001,387,219,291
+1964,song_month,R&B / Soul,0.29666666666666669,356,209,281
+1964,song_month,Reggae / Dancehall,0.0033333333333333335,4,2,4
+1964,song_month,Rock,0.22583333333333333,271,142,227
+1964,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1964,rank_weighted,Alternative / Indie,0,0,0,0
+1964,rank_weighted,Country,0.027871287128712872,1689,24,1518
+1964,rank_weighted,Electronic / Dance,0,0,0,0
+1964,rank_weighted,Folk / Singer-Songwriter,0.024636963696369637,1493,18,1478
+1964,rank_weighted,Gospel / Christian,0,0,0,0
+1964,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1964,rank_weighted,Jazz / Blues,0.065445544554455448,3966,51,2939
+1964,rank_weighted,K-Pop,0,0,0,0
+1964,rank_weighted,Latin,0.0017656765676567657,107,2,107
+1964,rank_weighted,Metal,0,0,0,0
+1964,rank_weighted,Other,0.0090264026402640269,547,11,54
+1964,rank_weighted,Pop,0.32057755775577557,19427,219,15788
+1964,rank_weighted,R&B / Soul,0.26747524752475249,16209,209,13291
+1964,rank_weighted,Reggae / Dancehall,0.0048349834983498347,293,2,293
+1964,rank_weighted,Rock,0.27836633663366339,16869,142,14672
+1964,unique_song,Afrobeats / African Pop,0,0,0,0
+1964,unique_song,Alternative / Indie,0,0,0,0
+1964,unique_song,Country,0.035398230088495575,24,24,20
+1964,unique_song,Electronic / Dance,0,0,0,0
+1964,unique_song,Folk / Singer-Songwriter,0.026548672566371681,18,18,16
+1964,unique_song,Gospel / Christian,0,0,0,0
+1964,unique_song,Hip-Hop / Rap,0,0,0,0
+1964,unique_song,Jazz / Blues,0.075221238938053103,51,51,26
+1964,unique_song,K-Pop,0,0,0,0
+1964,unique_song,Latin,0.0029498525073746312,2,2,2
+1964,unique_song,Metal,0,0,0,0
+1964,unique_song,Other,0.016224188790560472,11,11,2
+1964,unique_song,Pop,0.32300884955752213,219,219,154
+1964,unique_song,R&B / Soul,0.30825958702064898,209,209,160
+1964,unique_song,Reggae / Dancehall,0.0029498525073746312,2,2,2
+1964,unique_song,Rock,0.20943952802359883,142,142,115
+1965,song_month,Afrobeats / African Pop,0,0,0,0
+1965,song_month,Alternative / Indie,0,0,0,0
+1965,song_month,Country,0.044999999999999998,54,30,45
+1965,song_month,Electronic / Dance,0,0,0,0
+1965,song_month,Folk / Singer-Songwriter,0.031666666666666669,38,19,33
+1965,song_month,Gospel / Christian,0.0025000000000000001,3,1,3
+1965,song_month,Hip-Hop / Rap,0,0,0,0
+1965,song_month,Jazz / Blues,0.067500000000000004,81,44,35
+1965,song_month,K-Pop,0,0,0,0
+1965,song_month,Latin,0.0025000000000000001,3,3,0
+1965,song_month,Metal,0,0,0,0
+1965,song_month,Other,0.01,12,10,3
+1965,song_month,Pop,0.34166666666666667,410,238,306
+1965,song_month,R&B / Soul,0.27916666666666667,335,199,224
+1965,song_month,Reggae / Dancehall,0,0,0,0
+1965,song_month,Rock,0.22,264,136,218
+1965,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1965,rank_weighted,Alternative / Indie,0,0,0,0
+1965,rank_weighted,Country,0.043399339933993399,2630,30,2310
+1965,rank_weighted,Electronic / Dance,0,0,0,0
+1965,rank_weighted,Folk / Singer-Songwriter,0.033745874587458743,2045,19,1752
+1965,rank_weighted,Gospel / Christian,0.0034983498349834986,212,1,212
+1965,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1965,rank_weighted,Jazz / Blues,0.054306930693069307,3291,44,1523
+1965,rank_weighted,K-Pop,0,0,0,0
+1965,rank_weighted,Latin,0.00079207920792079213,48,3,0
+1965,rank_weighted,Metal,0,0,0,0
+1965,rank_weighted,Other,0.0050330033003300328,305,10,92
+1965,rank_weighted,Pop,0.34970297029702968,21192,238,16736
+1965,rank_weighted,R&B / Soul,0.25528052805280527,15470,199,11279
+1965,rank_weighted,Reggae / Dancehall,0,0,0,0
+1965,rank_weighted,Rock,0.25424092409240923,15407,136,13429
+1965,unique_song,Afrobeats / African Pop,0,0,0,0
+1965,unique_song,Alternative / Indie,0,0,0,0
+1965,unique_song,Country,0.044117647058823532,30,30,24
+1965,unique_song,Electronic / Dance,0,0,0,0
+1965,unique_song,Folk / Singer-Songwriter,0.027941176470588237,19,19,16
+1965,unique_song,Gospel / Christian,0.0014705882352941176,1,1,1
+1965,unique_song,Hip-Hop / Rap,0,0,0,0
+1965,unique_song,Jazz / Blues,0.064705882352941183,44,44,22
+1965,unique_song,K-Pop,0,0,0,0
+1965,unique_song,Latin,0.0044117647058823529,3,3,0
+1965,unique_song,Metal,0,0,0,0
+1965,unique_song,Other,0.014705882352941176,10,10,2
+1965,unique_song,Pop,0.34999999999999998,238,238,173
+1965,unique_song,R&B / Soul,0.29264705882352943,199,199,131
+1965,unique_song,Reggae / Dancehall,0,0,0,0
+1965,unique_song,Rock,0.20000000000000001,136,136,108
+1966,song_month,Afrobeats / African Pop,0,0,0,0
+1966,song_month,Alternative / Indie,0,0,0,0
+1966,song_month,Country,0.048333333333333332,58,34,44
+1966,song_month,Electronic / Dance,0,0,0,0
+1966,song_month,Folk / Singer-Songwriter,0.031666666666666669,38,22,25
+1966,song_month,Gospel / Christian,0,0,0,0
+1966,song_month,Hip-Hop / Rap,0,0,0,0
+1966,song_month,Jazz / Blues,0.055833333333333332,67,41,31
+1966,song_month,K-Pop,0,0,0,0
+1966,song_month,Latin,0.0074999999999999997,9,6,7
+1966,song_month,Metal,0,0,0,0
+1966,song_month,Other,0.014999999999999999,18,12,4
+1966,song_month,Pop,0.29583333333333334,355,210,277
+1966,song_month,R&B / Soul,0.28833333333333333,346,201,272
+1966,song_month,Reggae / Dancehall,0,0,0,0
+1966,song_month,Rock,0.25750000000000001,309,172,239
+1966,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1966,rank_weighted,Alternative / Indie,0,0,0,0
+1966,rank_weighted,Country,0.043927392739273929,2662,34,2114
+1966,rank_weighted,Electronic / Dance,0,0,0,0
+1966,rank_weighted,Folk / Singer-Songwriter,0.034059405940594062,2064,22,1533
+1966,rank_weighted,Gospel / Christian,0,0,0,0
+1966,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1966,rank_weighted,Jazz / Blues,0.047821782178217823,2898,41,1572
+1966,rank_weighted,K-Pop,0,0,0,0
+1966,rank_weighted,Latin,0.0035973597359735972,218,6,196
+1966,rank_weighted,Metal,0,0,0,0
+1966,rank_weighted,Other,0.012706270627062706,770,12,200
+1966,rank_weighted,Pop,0.31245874587458744,18935,210,15829
+1966,rank_weighted,R&B / Soul,0.25945544554455446,15723,201,13266
+1966,rank_weighted,Reggae / Dancehall,0,0,0,0
+1966,rank_weighted,Rock,0.28597359735973599,17330,172,13966
+1966,unique_song,Afrobeats / African Pop,0,0,0,0
+1966,unique_song,Alternative / Indie,0,0,0,0
+1966,unique_song,Country,0.048710601719197708,34,34,25
+1966,unique_song,Electronic / Dance,0,0,0,0
+1966,unique_song,Folk / Singer-Songwriter,0.03151862464183381,22,22,14
+1966,unique_song,Gospel / Christian,0,0,0,0
+1966,unique_song,Hip-Hop / Rap,0,0,0,0
+1966,unique_song,Jazz / Blues,0.058739255014326648,41,41,20
+1966,unique_song,K-Pop,0,0,0,0
+1966,unique_song,Latin,0.0085959885386819486,6,6,4
+1966,unique_song,Metal,0,0,0,0
+1966,unique_song,Other,0.017191977077363897,12,12,3
+1966,unique_song,Pop,0.3008595988538682,210,210,160
+1966,unique_song,R&B / Soul,0.28796561604584525,201,201,149
+1966,unique_song,Reggae / Dancehall,0,0,0,0
+1966,unique_song,Rock,0.24641833810888253,172,172,131
+1967,song_month,Afrobeats / African Pop,0.0016666666666666668,2,1,2
+1967,song_month,Alternative / Indie,0,0,0,0
+1967,song_month,Country,0.035000000000000003,42,26,33
+1967,song_month,Electronic / Dance,0,0,0,0
+1967,song_month,Folk / Singer-Songwriter,0.034166666666666665,41,22,37
+1967,song_month,Gospel / Christian,0,0,0,0
+1967,song_month,Hip-Hop / Rap,0,0,0,0
+1967,song_month,Jazz / Blues,0.029999999999999999,36,26,15
+1967,song_month,K-Pop,0,0,0,0
+1967,song_month,Latin,0.0041666666666666666,5,4,4
+1967,song_month,Metal,0,0,0,0
+1967,song_month,Other,0.014999999999999999,18,14,3
+1967,song_month,Pop,0.29749999999999999,357,203,289
+1967,song_month,R&B / Soul,0.35333333333333333,424,245,300
+1967,song_month,Reggae / Dancehall,0.00083333333333333339,1,1,1
+1967,song_month,Rock,0.22833333333333333,274,159,236
+1967,rank_weighted,Afrobeats / African Pop,0.0025412541254125412,154,1,154
+1967,rank_weighted,Alternative / Indie,0,0,0,0
+1967,rank_weighted,Country,0.029983498349834985,1817,26,1498
+1967,rank_weighted,Electronic / Dance,0,0,0,0
+1967,rank_weighted,Folk / Singer-Songwriter,0.034917491749174918,2116,22,1916
+1967,rank_weighted,Gospel / Christian,0,0,0,0
+1967,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1967,rank_weighted,Jazz / Blues,0.02297029702970297,1392,26,674
+1967,rank_weighted,K-Pop,0,0,0,0
+1967,rank_weighted,Latin,0.0032343234323432344,196,4,166
+1967,rank_weighted,Metal,0,0,0,0
+1967,rank_weighted,Other,0.011254125412541255,682,14,173
+1967,rank_weighted,Pop,0.3314851485148515,20088,203,17263
+1967,rank_weighted,R&B / Soul,0.3241254125412541,19642,245,14899
+1967,rank_weighted,Reggae / Dancehall,0.00033003300330033004,20,1,20
+1967,rank_weighted,Rock,0.23915841584158415,14493,159,12672
+1967,unique_song,Afrobeats / African Pop,0.0014265335235378032,1,1,1
+1967,unique_song,Alternative / Indie,0,0,0,0
+1967,unique_song,Country,0.037089871611982884,26,26,20
+1967,unique_song,Electronic / Dance,0,0,0,0
+1967,unique_song,Folk / Singer-Songwriter,0.031383737517831668,22,22,19
+1967,unique_song,Gospel / Christian,0,0,0,0
+1967,unique_song,Hip-Hop / Rap,0,0,0,0
+1967,unique_song,Jazz / Blues,0.037089871611982884,26,26,10
+1967,unique_song,K-Pop,0,0,0,0
+1967,unique_song,Latin,0.0057061340941512127,4,4,3
+1967,unique_song,Metal,0,0,0,0
+1967,unique_song,Other,0.019971469329529243,14,14,3
+1967,unique_song,Pop,0.28958630527817403,203,203,156
+1967,unique_song,R&B / Soul,0.34950071326676174,245,245,168
+1967,unique_song,Reggae / Dancehall,0.0014265335235378032,1,1,1
+1967,unique_song,Rock,0.22681883024251071,159,159,134
+1968,song_month,Afrobeats / African Pop,0,0,0,0
+1968,song_month,Alternative / Indie,0,0,0,0
+1968,song_month,Country,0.048333333333333332,58,33,47
+1968,song_month,Electronic / Dance,0,0,0,0
+1968,song_month,Folk / Singer-Songwriter,0.025000000000000001,30,16,27
+1968,song_month,Gospel / Christian,0.0033333333333333335,4,2,3
+1968,song_month,Hip-Hop / Rap,0,0,0,0
+1968,song_month,Jazz / Blues,0.044999999999999998,54,33,28
+1968,song_month,K-Pop,0,0,0,0
+1968,song_month,Latin,0.0083333333333333332,10,4,8
+1968,song_month,Metal,0,0,0,0
+1968,song_month,Other,0.022499999999999999,27,15,7
+1968,song_month,Pop,0.26416666666666666,317,170,261
+1968,song_month,R&B / Soul,0.38166666666666665,458,271,317
+1968,song_month,Reggae / Dancehall,0.0033333333333333335,4,2,4
+1968,song_month,Rock,0.19833333333333333,238,133,181
+1968,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1968,rank_weighted,Alternative / Indie,0,0,0,0
+1968,rank_weighted,Country,0.040445544554455447,2451,33,2114
+1968,rank_weighted,Electronic / Dance,0,0,0,0
+1968,rank_weighted,Folk / Singer-Songwriter,0.030841584158415841,1869,16,1817
+1968,rank_weighted,Gospel / Christian,0.0031848184818481849,193,2,182
+1968,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1968,rank_weighted,Jazz / Blues,0.035247524752475244,2136,33,1315
+1968,rank_weighted,K-Pop,0,0,0,0
+1968,rank_weighted,Latin,0.011881188118811881,720,4,605
+1968,rank_weighted,Metal,0,0,0,0
+1968,rank_weighted,Other,0.019966996699669969,1210,15,254
+1968,rank_weighted,Pop,0.27778877887788778,16834,170,14704
+1968,rank_weighted,R&B / Soul,0.36653465346534653,22212,271,16625
+1968,rank_weighted,Reggae / Dancehall,0.0040264026402640268,244,2,244
+1968,rank_weighted,Rock,0.21008250825082508,12731,133,10094
+1968,unique_song,Afrobeats / African Pop,0,0,0,0
+1968,unique_song,Alternative / Indie,0,0,0,0
+1968,unique_song,Country,0.048600883652430045,33,33,25
+1968,unique_song,Electronic / Dance,0,0,0,0
+1968,unique_song,Folk / Singer-Songwriter,0.023564064801178203,16,16,14
+1968,unique_song,Gospel / Christian,0.0029455081001472753,2,2,1
+1968,unique_song,Hip-Hop / Rap,0,0,0,0
+1968,unique_song,Jazz / Blues,0.048600883652430045,33,33,16
+1968,unique_song,K-Pop,0,0,0,0
+1968,unique_song,Latin,0.0058910162002945507,4,4,3
+1968,unique_song,Metal,0,0,0,0
+1968,unique_song,Other,0.022091310751104567,15,15,5
+1968,unique_song,Pop,0.25036818851251841,170,170,136
+1968,unique_song,R&B / Soul,0.39911634756995584,271,271,182
+1968,unique_song,Reggae / Dancehall,0.0029455081001472753,2,2,2
+1968,unique_song,Rock,0.19587628865979381,133,133,100
+1969,song_month,Afrobeats / African Pop,0,0,0,0
+1969,song_month,Alternative / Indie,0,0,0,0
+1969,song_month,Country,0.055,66,39,45
+1969,song_month,Electronic / Dance,0.0016666666666666668,2,1,0
+1969,song_month,Folk / Singer-Songwriter,0.034166666666666665,41,24,27
+1969,song_month,Gospel / Christian,0.0025000000000000001,3,1,0
+1969,song_month,Hip-Hop / Rap,0,0,0,0
+1969,song_month,Jazz / Blues,0.030833333333333334,37,25,25
+1969,song_month,K-Pop,0,0,0,0
+1969,song_month,Latin,0.0066666666666666671,8,5,5
+1969,song_month,Metal,0,0,0,0
+1969,song_month,Other,0.02,24,16,7
+1969,song_month,Pop,0.27333333333333332,328,176,244
+1969,song_month,R&B / Soul,0.35416666666666669,425,239,300
+1969,song_month,Reggae / Dancehall,0.0058333333333333336,7,5,2
+1969,song_month,Rock,0.21583333333333332,259,133,193
+1969,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1969,rank_weighted,Alternative / Indie,0,0,0,0
+1969,rank_weighted,Country,0.047673267326732674,2889,39,2151
+1969,rank_weighted,Electronic / Dance,0.0012706270627062706,77,1,0
+1969,rank_weighted,Folk / Singer-Songwriter,0.034438943894389437,2087,24,1462
+1969,rank_weighted,Gospel / Christian,0.0032673267326732672,198,1,0
+1969,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1969,rank_weighted,Jazz / Blues,0.015973597359735973,968,25,731
+1969,rank_weighted,K-Pop,0,0,0,0
+1969,rank_weighted,Latin,0.0036303630363036304,220,5,117
+1969,rank_weighted,Metal,0,0,0,0
+1969,rank_weighted,Other,0.017145214521452144,1039,16,144
+1969,rank_weighted,Pop,0.28161716171617163,17066,176,13457
+1969,rank_weighted,R&B / Soul,0.3516006600660066,21307,239,15933
+1969,rank_weighted,Reggae / Dancehall,0.0058580858085808584,355,5,47
+1969,rank_weighted,Rock,0.23752475247524751,14394,133,11243
+1969,unique_song,Afrobeats / African Pop,0,0,0,0
+1969,unique_song,Alternative / Indie,0,0,0,0
+1969,unique_song,Country,0.058734939759036146,39,39,27
+1969,unique_song,Electronic / Dance,0.0015060240963855422,1,1,0
+1969,unique_song,Folk / Singer-Songwriter,0.03614457831325301,24,24,17
+1969,unique_song,Gospel / Christian,0.0015060240963855422,1,1,0
+1969,unique_song,Hip-Hop / Rap,0,0,0,0
+1969,unique_song,Jazz / Blues,0.037650602409638557,25,25,16
+1969,unique_song,K-Pop,0,0,0,0
+1969,unique_song,Latin,0.0075301204819277108,5,5,3
+1969,unique_song,Metal,0,0,0,0
+1969,unique_song,Other,0.024096385542168676,16,16,4
+1969,unique_song,Pop,0.26506024096385544,176,176,127
+1969,unique_song,R&B / Soul,0.35993975903614456,239,239,165
+1969,unique_song,Reggae / Dancehall,0.0075301204819277108,5,5,2
+1969,unique_song,Rock,0.2003012048192771,133,133,99
+1970,song_month,Afrobeats / African Pop,0,0,0,0
+1970,song_month,Alternative / Indie,0.00083333333333333339,1,1,1
+1970,song_month,Country,0.076666666666666661,92,53,80
+1970,song_month,Electronic / Dance,0,0,0,0
+1970,song_month,Folk / Singer-Songwriter,0.040833333333333333,49,24,39
+1970,song_month,Gospel / Christian,0.0025000000000000001,3,2,2
+1970,song_month,Hip-Hop / Rap,0,0,0,0
+1970,song_month,Jazz / Blues,0.017500000000000002,21,14,13
+1970,song_month,K-Pop,0,0,0,0
+1970,song_month,Latin,0,0,0,0
+1970,song_month,Metal,0.0016666666666666668,2,1,2
+1970,song_month,Other,0.014166666666666666,17,12,4
+1970,song_month,Pop,0.24083333333333334,289,148,222
+1970,song_month,R&B / Soul,0.32916666666666666,395,206,258
+1970,song_month,Reggae / Dancehall,0.0025000000000000001,3,3,1
+1970,song_month,Rock,0.27333333333333332,328,159,252
+1970,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1970,rank_weighted,Alternative / Indie,1.65016501650165e-05,1,1,1
+1970,rank_weighted,Country,0.06033003300330033,3656,53,3442
+1970,rank_weighted,Electronic / Dance,0,0,0,0
+1970,rank_weighted,Folk / Singer-Songwriter,0.044009900990099007,2667,24,2209
+1970,rank_weighted,Gospel / Christian,0.00051155115511551154,31,2,29
+1970,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1970,rank_weighted,Jazz / Blues,0.012755775577557756,773,14,542
+1970,rank_weighted,K-Pop,0,0,0,0
+1970,rank_weighted,Latin,0,0,0,0
+1970,rank_weighted,Metal,0.00077557755775577554,47,1,47
+1970,rank_weighted,Other,0.009125412541254126,553,12,134
+1970,rank_weighted,Pop,0.25518151815181517,15464,148,12298
+1970,rank_weighted,R&B / Soul,0.31392739273927395,19024,206,13095
+1970,rank_weighted,Reggae / Dancehall,0.0023762376237623762,144,3,12
+1970,rank_weighted,Rock,0.30099009900990098,18240,159,14532
+1970,unique_song,Afrobeats / African Pop,0,0,0,0
+1970,unique_song,Alternative / Indie,0.0016051364365971107,1,1,1
+1970,unique_song,Country,0.085072231139646876,53,53,45
+1970,unique_song,Electronic / Dance,0,0,0,0
+1970,unique_song,Folk / Singer-Songwriter,0.038523274478330656,24,24,19
+1970,unique_song,Gospel / Christian,0.0032102728731942215,2,2,1
+1970,unique_song,Hip-Hop / Rap,0,0,0,0
+1970,unique_song,Jazz / Blues,0.02247191011235955,14,14,8
+1970,unique_song,K-Pop,0,0,0,0
+1970,unique_song,Latin,0,0,0,0
+1970,unique_song,Metal,0.0016051364365971107,1,1,1
+1970,unique_song,Other,0.019261637239165328,12,12,3
+1970,unique_song,Pop,0.2375601926163724,148,148,110
+1970,unique_song,R&B / Soul,0.3306581059390048,206,206,131
+1970,unique_song,Reggae / Dancehall,0.004815409309791332,3,3,1
+1970,unique_song,Rock,0.2552166934189406,159,159,116
+1971,song_month,Afrobeats / African Pop,0,0,0,0
+1971,song_month,Alternative / Indie,0,0,0,0
+1971,song_month,Country,0.073333333333333334,88,50,71
+1971,song_month,Electronic / Dance,0,0,0,0
+1971,song_month,Folk / Singer-Songwriter,0.059166666666666666,71,32,60
+1971,song_month,Gospel / Christian,0.011666666666666667,14,5,12
+1971,song_month,Hip-Hop / Rap,0,0,0,0
+1971,song_month,Jazz / Blues,0.021666666666666667,26,13,9
+1971,song_month,K-Pop,0,0,0,0
+1971,song_month,Latin,0.0025000000000000001,3,1,0
+1971,song_month,Metal,0,0,0,0
+1971,song_month,Other,0.02,24,13,5
+1971,song_month,Pop,0.22666666666666666,272,133,186
+1971,song_month,R&B / Soul,0.32333333333333331,388,211,265
+1971,song_month,Reggae / Dancehall,0.0016666666666666668,2,1,2
+1971,song_month,Rock,0.26000000000000001,312,159,247
+1971,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1971,rank_weighted,Alternative / Indie,0,0,0,0
+1971,rank_weighted,Country,0.064488448844884486,3908,50,3361
+1971,rank_weighted,Electronic / Dance,0,0,0,0
+1971,rank_weighted,Folk / Singer-Songwriter,0.065924092409240923,3995,32,3626
+1971,rank_weighted,Gospel / Christian,0.010775577557755775,653,5,571
+1971,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1971,rank_weighted,Jazz / Blues,0.013762376237623762,834,13,229
+1971,rank_weighted,K-Pop,0,0,0,0
+1971,rank_weighted,Latin,0.0033498349834983499,203,1,0
+1971,rank_weighted,Metal,0,0,0,0
+1971,rank_weighted,Other,0.016765676567656766,1016,13,307
+1971,rank_weighted,Pop,0.24493399339933994,14843,133,10295
+1971,rank_weighted,R&B / Soul,0.31734323432343237,19231,211,14254
+1971,rank_weighted,Reggae / Dancehall,0.0021617161716171616,131,1,131
+1971,rank_weighted,Rock,0.2604950495049505,15786,159,12792
+1971,unique_song,Afrobeats / African Pop,0,0,0,0
+1971,unique_song,Alternative / Indie,0,0,0,0
+1971,unique_song,Country,0.080906148867313912,50,50,37
+1971,unique_song,Electronic / Dance,0,0,0,0
+1971,unique_song,Folk / Singer-Songwriter,0.051779935275080909,32,32,26
+1971,unique_song,Gospel / Christian,0.0080906148867313909,5,5,4
+1971,unique_song,Hip-Hop / Rap,0,0,0,0
+1971,unique_song,Jazz / Blues,0.021035598705501618,13,13,6
+1971,unique_song,K-Pop,0,0,0,0
+1971,unique_song,Latin,0.0016181229773462784,1,1,0
+1971,unique_song,Metal,0,0,0,0
+1971,unique_song,Other,0.021035598705501618,13,13,3
+1971,unique_song,Pop,0.21521035598705501,133,133,88
+1971,unique_song,R&B / Soul,0.34142394822006472,211,211,136
+1971,unique_song,Reggae / Dancehall,0.0016181229773462784,1,1,1
+1971,unique_song,Rock,0.25728155339805825,159,159,122
+1972,song_month,Afrobeats / African Pop,0,0,0,0
+1972,song_month,Alternative / Indie,0,0,0,0
+1972,song_month,Country,0.044999999999999998,54,28,35
+1972,song_month,Electronic / Dance,0.0033333333333333335,4,1,0
+1972,song_month,Folk / Singer-Songwriter,0.077499999999999999,93,45,78
+1972,song_month,Gospel / Christian,0.0033333333333333335,4,2,3
+1972,song_month,Hip-Hop / Rap,0,0,0,0
+1972,song_month,Jazz / Blues,0.014166666666666666,17,9,11
+1972,song_month,K-Pop,0,0,0,0
+1972,song_month,Latin,0.0016666666666666668,2,1,2
+1972,song_month,Metal,0.0025000000000000001,3,1,3
+1972,song_month,Other,0.014999999999999999,18,13,4
+1972,song_month,Pop,0.21916666666666668,263,125,195
+1972,song_month,R&B / Soul,0.315,378,192,272
+1972,song_month,Reggae / Dancehall,0.0058333333333333336,7,2,4
+1972,song_month,Rock,0.29749999999999999,357,181,295
+1972,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1972,rank_weighted,Alternative / Indie,0,0,0,0
+1972,rank_weighted,Country,0.034570957095709572,2095,28,1371
+1972,rank_weighted,Electronic / Dance,0.0047029702970297028,285,1,0
+1972,rank_weighted,Folk / Singer-Songwriter,0.080330033003300327,4868,45,4331
+1972,rank_weighted,Gospel / Christian,0.0033168316831683167,201,2,181
+1972,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1972,rank_weighted,Jazz / Blues,0.0093069306930693065,564,9,413
+1972,rank_weighted,K-Pop,0,0,0,0
+1972,rank_weighted,Latin,0.0022112211221122112,134,1,134
+1972,rank_weighted,Metal,0.0017491749174917493,106,1,106
+1972,rank_weighted,Other,0.010363036303630363,628,13,95
+1972,rank_weighted,Pop,0.2267986798679868,13744,125,10675
+1972,rank_weighted,R&B / Soul,0.31628712871287129,19167,192,14275
+1972,rank_weighted,Reggae / Dancehall,0.0095379537953795383,578,2,333
+1972,rank_weighted,Rock,0.30082508250825085,18230,181,15704
+1972,unique_song,Afrobeats / African Pop,0,0,0,0
+1972,unique_song,Alternative / Indie,0,0,0,0
+1972,unique_song,Country,0.046666666666666669,28,28,19
+1972,unique_song,Electronic / Dance,0.0016666666666666668,1,1,0
+1972,unique_song,Folk / Singer-Songwriter,0.074999999999999997,45,45,36
+1972,unique_song,Gospel / Christian,0.0033333333333333335,2,2,1
+1972,unique_song,Hip-Hop / Rap,0,0,0,0
+1972,unique_song,Jazz / Blues,0.014999999999999999,9,9,6
+1972,unique_song,K-Pop,0,0,0,0
+1972,unique_song,Latin,0.0016666666666666668,1,1,1
+1972,unique_song,Metal,0.0016666666666666668,1,1,1
+1972,unique_song,Other,0.021666666666666667,13,13,3
+1972,unique_song,Pop,0.20833333333333334,125,125,84
+1972,unique_song,R&B / Soul,0.32000000000000001,192,192,134
+1972,unique_song,Reggae / Dancehall,0.0033333333333333335,2,2,1
+1972,unique_song,Rock,0.30166666666666669,181,181,142
+1973,song_month,Afrobeats / African Pop,0.0016666666666666668,2,1,2
+1973,song_month,Alternative / Indie,0,0,0,0
+1973,song_month,Country,0.11166666666666666,134,63,118
+1973,song_month,Electronic / Dance,0.0016666666666666668,2,1,2
+1973,song_month,Folk / Singer-Songwriter,0.048333333333333332,58,30,53
+1973,song_month,Gospel / Christian,0,0,0,0
+1973,song_month,Hip-Hop / Rap,0,0,0,0
+1973,song_month,Jazz / Blues,0.024166666666666666,29,16,15
+1973,song_month,K-Pop,0,0,0,0
+1973,song_month,Latin,0.0016666666666666668,2,1,0
+1973,song_month,Metal,0,0,0,0
+1973,song_month,Other,0.010833333333333334,13,8,7
+1973,song_month,Pop,0.15416666666666667,185,86,121
+1973,song_month,R&B / Soul,0.36166666666666669,434,203,323
+1973,song_month,Reggae / Dancehall,0.0041666666666666666,5,2,3
+1973,song_month,Rock,0.28000000000000003,336,148,272
+1973,rank_weighted,Afrobeats / African Pop,0.0016006600660066006,97,1,97
+1973,rank_weighted,Alternative / Indie,0,0,0,0
+1973,rank_weighted,Country,0.092359735973597354,5597,63,4946
+1973,rank_weighted,Electronic / Dance,0.00077557755775577554,47,1,47
+1973,rank_weighted,Folk / Singer-Songwriter,0.051815181518151815,3140,30,3025
+1973,rank_weighted,Gospel / Christian,0,0,0,0
+1973,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1973,rank_weighted,Jazz / Blues,0.018811881188118811,1140,16,470
+1973,rank_weighted,K-Pop,0,0,0,0
+1973,rank_weighted,Latin,0.0013861386138613861,84,1,0
+1973,rank_weighted,Metal,0,0,0,0
+1973,rank_weighted,Other,0.0079372937293729368,481,8,367
+1973,rank_weighted,Pop,0.16295379537953794,9875,86,6546
+1973,rank_weighted,R&B / Soul,0.37153465346534653,22515,203,17316
+1973,rank_weighted,Reggae / Dancehall,0.0039273927392739277,238,2,227
+1973,rank_weighted,Rock,0.28689768976897689,17386,148,14677
+1973,unique_song,Afrobeats / African Pop,0.0017889087656529517,1,1,1
+1973,unique_song,Alternative / Indie,0,0,0,0
+1973,unique_song,Country,0.11270125223613596,63,63,53
+1973,unique_song,Electronic / Dance,0.0017889087656529517,1,1,1
+1973,unique_song,Folk / Singer-Songwriter,0.053667262969588549,30,30,27
+1973,unique_song,Gospel / Christian,0,0,0,0
+1973,unique_song,Hip-Hop / Rap,0,0,0,0
+1973,unique_song,Jazz / Blues,0.028622540250447227,16,16,9
+1973,unique_song,K-Pop,0,0,0,0
+1973,unique_song,Latin,0.0017889087656529517,1,1,0
+1973,unique_song,Metal,0,0,0,0
+1973,unique_song,Other,0.014311270125223614,8,8,4
+1973,unique_song,Pop,0.15384615384615385,86,86,57
+1973,unique_song,R&B / Soul,0.36314847942754919,203,203,150
+1973,unique_song,Reggae / Dancehall,0.0035778175313059034,2,2,1
+1973,unique_song,Rock,0.26475849731663686,148,148,116
+1974,song_month,Afrobeats / African Pop,0,0,0,0
+1974,song_month,Alternative / Indie,0,0,0,0
+1974,song_month,Country,0.11166666666666666,134,60,101
+1974,song_month,Electronic / Dance,0.010833333333333334,13,5,13
+1974,song_month,Folk / Singer-Songwriter,0.055833333333333332,67,28,57
+1974,song_month,Gospel / Christian,0.0025000000000000001,3,1,3
+1974,song_month,Hip-Hop / Rap,0,0,0,0
+1974,song_month,Jazz / Blues,0.025833333333333333,31,18,17
+1974,song_month,K-Pop,0,0,0,0
+1974,song_month,Latin,0,0,0,0
+1974,song_month,Metal,0,0,0,0
+1974,song_month,Other,0.017500000000000002,21,14,8
+1974,song_month,Pop,0.16166666666666665,194,83,156
+1974,song_month,R&B / Soul,0.36166666666666669,434,200,315
+1974,song_month,Reggae / Dancehall,0.0033333333333333335,4,2,4
+1974,song_month,Rock,0.24916666666666668,299,139,261
+1974,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1974,rank_weighted,Alternative / Indie,0,0,0,0
+1974,rank_weighted,Country,0.11046204620462047,6694,60,5254
+1974,rank_weighted,Electronic / Dance,0.013316831683168317,807,5,807
+1974,rank_weighted,Folk / Singer-Songwriter,0.060528052805280529,3668,28,3267
+1974,rank_weighted,Gospel / Christian,0.0018316831683168316,111,1,111
+1974,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1974,rank_weighted,Jazz / Blues,0.018712871287128712,1134,18,636
+1974,rank_weighted,K-Pop,0,0,0,0
+1974,rank_weighted,Latin,0,0,0,0
+1974,rank_weighted,Metal,0,0,0,0
+1974,rank_weighted,Other,0.014389438943894389,872,14,415
+1974,rank_weighted,Pop,0.17836633663366336,10809,83,9026
+1974,rank_weighted,R&B / Soul,0.34574257425742572,20952,200,14802
+1974,rank_weighted,Reggae / Dancehall,0.0041584158415841586,252,2,252
+1974,rank_weighted,Rock,0.25249174917491751,15301,139,13437
+1974,unique_song,Afrobeats / African Pop,0,0,0,0
+1974,unique_song,Alternative / Indie,0,0,0,0
+1974,unique_song,Country,0.10909090909090909,60,60,46
+1974,unique_song,Electronic / Dance,0.0090909090909090905,5,5,5
+1974,unique_song,Folk / Singer-Songwriter,0.050909090909090911,28,28,23
+1974,unique_song,Gospel / Christian,0.0018181818181818182,1,1,1
+1974,unique_song,Hip-Hop / Rap,0,0,0,0
+1974,unique_song,Jazz / Blues,0.03272727272727273,18,18,11
+1974,unique_song,K-Pop,0,0,0,0
+1974,unique_song,Latin,0,0,0,0
+1974,unique_song,Metal,0,0,0,0
+1974,unique_song,Other,0.025454545454545455,14,14,5
+1974,unique_song,Pop,0.15090909090909091,83,83,64
+1974,unique_song,R&B / Soul,0.36363636363636365,200,200,146
+1974,unique_song,Reggae / Dancehall,0.0036363636363636364,2,2,2
+1974,unique_song,Rock,0.25272727272727274,139,139,121
+1975,song_month,Afrobeats / African Pop,0,0,0,0
+1975,song_month,Alternative / Indie,0,0,0,0
+1975,song_month,Country,0.11333333333333333,136,65,101
+1975,song_month,Electronic / Dance,0.047500000000000001,57,26,33
+1975,song_month,Folk / Singer-Songwriter,0.048333333333333332,58,28,48
+1975,song_month,Gospel / Christian,0.00083333333333333339,1,1,0
+1975,song_month,Hip-Hop / Rap,0,0,0,0
+1975,song_month,Jazz / Blues,0.017500000000000002,21,10,6
+1975,song_month,K-Pop,0,0,0,0
+1975,song_month,Latin,0,0,0,0
+1975,song_month,Metal,0,0,0,0
+1975,song_month,Other,0.028333333333333332,34,20,8
+1975,song_month,Pop,0.20666666666666667,248,115,184
+1975,song_month,R&B / Soul,0.29999999999999999,360,178,222
+1975,song_month,Reggae / Dancehall,0.0050000000000000001,6,1,6
+1975,song_month,Rock,0.23250000000000001,279,145,234
+1975,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1975,rank_weighted,Alternative / Indie,0,0,0,0
+1975,rank_weighted,Country,0.11221122112211221,6800,65,5258
+1975,rank_weighted,Electronic / Dance,0.049471947194719472,2998,26,1836
+1975,rank_weighted,Folk / Singer-Songwriter,0.04806930693069307,2913,28,2585
+1975,rank_weighted,Gospel / Christian,9.9009900990099017e-05,6,1,0
+1975,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1975,rank_weighted,Jazz / Blues,0.013514851485148515,819,10,212
+1975,rank_weighted,K-Pop,0,0,0,0
+1975,rank_weighted,Latin,0,0,0,0
+1975,rank_weighted,Metal,0,0,0,0
+1975,rank_weighted,Other,0.021402640264026402,1297,20,386
+1975,rank_weighted,Pop,0.22524752475247525,13650,115,10860
+1975,rank_weighted,R&B / Soul,0.28480198019801978,17259,178,11405
+1975,rank_weighted,Reggae / Dancehall,0.0034323432343234322,208,1,208
+1975,rank_weighted,Rock,0.24174917491749176,14650,145,12468
+1975,unique_song,Afrobeats / African Pop,0,0,0,0
+1975,unique_song,Alternative / Indie,0,0,0,0
+1975,unique_song,Country,0.11035653650254669,65,65,47
+1975,unique_song,Electronic / Dance,0.044142614601018676,26,26,16
+1975,unique_song,Folk / Singer-Songwriter,0.047538200339558571,28,28,21
+1975,unique_song,Gospel / Christian,0.001697792869269949,1,1,0
+1975,unique_song,Hip-Hop / Rap,0,0,0,0
+1975,unique_song,Jazz / Blues,0.016977928692699491,10,10,3
+1975,unique_song,K-Pop,0,0,0,0
+1975,unique_song,Latin,0,0,0,0
+1975,unique_song,Metal,0,0,0,0
+1975,unique_song,Other,0.033955857385398983,20,20,4
+1975,unique_song,Pop,0.19524617996604415,115,115,79
+1975,unique_song,R&B / Soul,0.30220713073005095,178,178,107
+1975,unique_song,Reggae / Dancehall,0.001697792869269949,1,1,1
+1975,unique_song,Rock,0.24617996604414261,145,145,118
+1976,song_month,Afrobeats / African Pop,0,0,0,0
+1976,song_month,Alternative / Indie,0,0,0,0
+1976,song_month,Country,0.063386155129274396,76,48,43
+1976,song_month,Electronic / Dance,0.086738949124270229,104,41,75
+1976,song_month,Folk / Singer-Songwriter,0.030025020850708923,36,19,26
+1976,song_month,Gospel / Christian,0.0025020850708924102,3,1,3
+1976,song_month,Hip-Hop / Rap,0,0,0,0
+1976,song_month,Jazz / Blues,0.019182652210175146,23,12,8
+1976,song_month,K-Pop,0,0,0,0
+1976,song_month,Latin,0,0,0,0
+1976,song_month,Metal,0,0,0,0
+1976,song_month,Other,0.019182652210175146,23,14,6
+1976,song_month,Pop,0.22018348623853212,264,120,197
+1976,song_month,R&B / Soul,0.26522101751459548,318,141,229
+1976,song_month,Reggae / Dancehall,0.00083402835696413675,1,1,1
+1976,song_month,Rock,0.292743953294412,351,159,295
+1976,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1976,rank_weighted,Alternative / Indie,0,0,0,0
+1976,rank_weighted,Country,0.048763180910576083,2955,48,1730
+1976,rank_weighted,Electronic / Dance,0.091519662040627739,5546,41,4234
+1976,rank_weighted,Folk / Singer-Songwriter,0.029686958530668824,1799,19,1453
+1976,rank_weighted,Gospel / Christian,0.00095711150349015665,58,1,58
+1976,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1976,rank_weighted,Jazz / Blues,0.013696595653393621,830,12,249
+1976,rank_weighted,K-Pop,0,0,0,0
+1976,rank_weighted,Latin,0,0,0,0
+1976,rank_weighted,Metal,0,0,0,0
+1976,rank_weighted,Other,0.012524959157741877,759,14,282
+1976,rank_weighted,Pop,0.23840327398141883,14447,120,11455
+1976,rank_weighted,R&B / Soul,0.25525173682734037,15468,141,11477
+1976,rank_weighted,Reggae / Dancehall,0.00082509612369841088,50,1,50
+1976,rank_weighted,Rock,0.30837142527104405,18687,159,16127
+1976,unique_song,Afrobeats / African Pop,0,0,0,0
+1976,unique_song,Alternative / Indie,0,0,0,0
+1976,unique_song,Country,0.086330935251798566,48,48,26
+1976,unique_song,Electronic / Dance,0.073741007194244604,41,41,27
+1976,unique_song,Folk / Singer-Songwriter,0.0341726618705036,19,19,13
+1976,unique_song,Gospel / Christian,0.0017985611510791368,1,1,1
+1976,unique_song,Hip-Hop / Rap,0,0,0,0
+1976,unique_song,Jazz / Blues,0.021582733812949641,12,12,4
+1976,unique_song,K-Pop,0,0,0,0
+1976,unique_song,Latin,0,0,0,0
+1976,unique_song,Metal,0,0,0,0
+1976,unique_song,Other,0.025179856115107913,14,14,3
+1976,unique_song,Pop,0.21582733812949639,120,120,83
+1976,unique_song,R&B / Soul,0.25359712230215825,141,141,100
+1976,unique_song,Reggae / Dancehall,0.0017985611510791368,1,1,1
+1976,unique_song,Rock,0.28597122302158273,159,159,131
+1977,song_month,Afrobeats / African Pop,0,0,0,0
+1977,song_month,Alternative / Indie,0,0,0,0
+1977,song_month,Country,0.058430717863105178,70,30,55
+1977,song_month,Electronic / Dance,0.082637729549248751,99,40,64
+1977,song_month,Folk / Singer-Songwriter,0.024207011686143573,29,11,26
+1977,song_month,Gospel / Christian,0,0,0,0
+1977,song_month,Hip-Hop / Rap,0,0,0,0
+1977,song_month,Jazz / Blues,0.011686143572621035,14,8,6
+1977,song_month,K-Pop,0,0,0,0
+1977,song_month,Latin,0,0,0,0
+1977,song_month,Metal,0,0,0,0
+1977,song_month,Other,0.018363939899833055,22,13,1
+1977,song_month,Pop,0.25041736227045075,300,124,249
+1977,song_month,R&B / Soul,0.21118530884808012,253,114,178
+1977,song_month,Reggae / Dancehall,0,0,0,0
+1977,song_month,Rock,0.34307178631051755,411,175,372
+1977,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1977,rank_weighted,Alternative / Indie,0,0,0,0
+1977,rank_weighted,Country,0.062922868741542626,3813,30,3224
+1977,rank_weighted,Electronic / Dance,0.070002310307270874,4242,40,3189
+1977,rank_weighted,Folk / Singer-Songwriter,0.02379616488993036,1442,11,1216
+1977,rank_weighted,Gospel / Christian,0,0,0,0
+1977,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1977,rank_weighted,Jazz / Blues,0.0082015908115779402,497,8,208
+1977,rank_weighted,K-Pop,0,0,0,0
+1977,rank_weighted,Latin,0,0,0,0
+1977,rank_weighted,Metal,0,0,0,0
+1977,rank_weighted,Other,0.015545067493976699,942,13,50
+1977,rank_weighted,Pop,0.27396943793524536,16602,124,14739
+1977,rank_weighted,R&B / Soul,0.1935212383246972,11727,114,8880
+1977,rank_weighted,Reggae / Dancehall,0,0,0,0
+1977,rank_weighted,Rock,0.35204132149575895,21333,175,19725
+1977,unique_song,Afrobeats / African Pop,0,0,0,0
+1977,unique_song,Alternative / Indie,0,0,0,0
+1977,unique_song,Country,0.058252427184466021,30,30,21
+1977,unique_song,Electronic / Dance,0.077669902912621352,40,40,23
+1977,unique_song,Folk / Singer-Songwriter,0.021359223300970873,11,11,10
+1977,unique_song,Gospel / Christian,0,0,0,0
+1977,unique_song,Hip-Hop / Rap,0,0,0,0
+1977,unique_song,Jazz / Blues,0.015533980582524271,8,8,3
+1977,unique_song,K-Pop,0,0,0,0
+1977,unique_song,Latin,0,0,0,0
+1977,unique_song,Metal,0,0,0,0
+1977,unique_song,Other,0.02524271844660194,13,13,1
+1977,unique_song,Pop,0.24077669902912621,124,124,92
+1977,unique_song,R&B / Soul,0.22135922330097088,114,114,75
+1977,unique_song,Reggae / Dancehall,0,0,0,0
+1977,unique_song,Rock,0.33980582524271846,175,175,154
+1978,song_month,Afrobeats / African Pop,0,0,0,0
+1978,song_month,Alternative / Indie,0.0025000000000000001,3,2,3
+1978,song_month,Country,0.039166666666666669,47,23,43
+1978,song_month,Electronic / Dance,0.11833333333333333,142,52,114
+1978,song_month,Folk / Singer-Songwriter,0.017500000000000002,21,9,15
+1978,song_month,Gospel / Christian,0.00083333333333333339,1,1,1
+1978,song_month,Hip-Hop / Rap,0,0,0,0
+1978,song_month,Jazz / Blues,0.015833333333333335,19,6,17
+1978,song_month,K-Pop,0,0,0,0
+1978,song_month,Latin,0,0,0,0
+1978,song_month,Metal,0,0,0,0
+1978,song_month,Other,0.012500000000000001,15,9,5
+1978,song_month,Pop,0.23916666666666667,287,116,229
+1978,song_month,R&B / Soul,0.14999999999999999,180,86,137
+1978,song_month,Reggae / Dancehall,0.0041666666666666666,5,3,3
+1978,song_month,Rock,0.40000000000000002,480,199,410
+1978,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1978,rank_weighted,Alternative / Indie,0.0017656765676567657,107,2,107
+1978,rank_weighted,Country,0.031963696369636967,1937,23,1735
+1978,rank_weighted,Electronic / Dance,0.12123762376237623,7347,52,6210
+1978,rank_weighted,Folk / Singer-Songwriter,0.015462046204620461,937,9,681
+1978,rank_weighted,Gospel / Christian,0.000132013201320132,8,1,8
+1978,rank_weighted,Hip-Hop / Rap,0,0,0,0
+1978,rank_weighted,Jazz / Blues,0.017425742574257427,1056,6,1015
+1978,rank_weighted,K-Pop,0,0,0,0
+1978,rank_weighted,Latin,0,0,0,0
+1978,rank_weighted,Metal,0,0,0,0
+1978,rank_weighted,Other,0.0076732673267326731,465,9,195
+1978,rank_weighted,Pop,0.26663366336633665,16158,116,13438
+1978,rank_weighted,R&B / Soul,0.13407590759075907,8125,86,6724
+1978,rank_weighted,Reggae / Dancehall,0.0022772277227722771,138,3,96
+1978,rank_weighted,Rock,0.40135313531353134,24322,199,20780
+1978,unique_song,Afrobeats / African Pop,0,0,0,0
+1978,unique_song,Alternative / Indie,0.003952569169960474,2,2,2
+1978,unique_song,Country,0.045454545454545456,23,23,21
+1978,unique_song,Electronic / Dance,0.10276679841897234,52,52,39
+1978,unique_song,Folk / Singer-Songwriter,0.017786561264822136,9,9,6
+1978,unique_song,Gospel / Christian,0.001976284584980237,1,1,1
+1978,unique_song,Hip-Hop / Rap,0,0,0,0
+1978,unique_song,Jazz / Blues,0.011857707509881422,6,6,4
+1978,unique_song,K-Pop,0,0,0,0
+1978,unique_song,Latin,0,0,0,0
+1978,unique_song,Metal,0,0,0,0
+1978,unique_song,Other,0.017786561264822136,9,9,2
+1978,unique_song,Pop,0.22924901185770752,116,116,93
+1978,unique_song,R&B / Soul,0.16996047430830039,86,86,65
+1978,unique_song,Reggae / Dancehall,0.0059288537549407111,3,3,1
+1978,unique_song,Rock,0.3932806324110672,199,199,168
+1979,song_month,Afrobeats / African Pop,0,0,0,0
+1979,song_month,Alternative / Indie,0.0074999999999999997,9,4,8
+1979,song_month,Country,0.056666666666666664,68,28,53
+1979,song_month,Electronic / Dance,0.14499999999999999,174,71,153
+1979,song_month,Folk / Singer-Songwriter,0.018333333333333333,22,11,21
+1979,song_month,Gospel / Christian,0.00083333333333333339,1,1,1
+1979,song_month,Hip-Hop / Rap,0.0016666666666666668,2,1,2
+1979,song_month,Jazz / Blues,0.017500000000000002,21,7,8
+1979,song_month,K-Pop,0,0,0,0
+1979,song_month,Latin,0.00083333333333333339,1,1,1
+1979,song_month,Metal,0,0,0,0
+1979,song_month,Other,0.011666666666666667,14,10,1
+1979,song_month,Pop,0.18916666666666668,227,95,196
+1979,song_month,R&B / Soul,0.16500000000000001,198,86,164
+1979,song_month,Reggae / Dancehall,0.0016666666666666668,2,1,2
+1979,song_month,Rock,0.38416666666666666,461,214,396
+1979,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1979,rank_weighted,Alternative / Indie,0.0085148514851485155,516,4,495
+1979,rank_weighted,Country,0.059125412541254127,3583,28,2894
+1979,rank_weighted,Electronic / Dance,0.14693069306930692,8904,71,8256
+1979,rank_weighted,Folk / Singer-Songwriter,0.016947194719471946,1027,11,1013
+1979,rank_weighted,Gospel / Christian,0.00021452145214521451,13,1,13
+1979,rank_weighted,Hip-Hop / Rap,0.0015841584158415843,96,1,96
+1979,rank_weighted,Jazz / Blues,0.017475247524752477,1059,7,349
+1979,rank_weighted,K-Pop,0,0,0,0
+1979,rank_weighted,Latin,0.00023102310231023102,14,1,14
+1979,rank_weighted,Metal,0,0,0,0
+1979,rank_weighted,Other,0.0039273927392739277,238,10,17
+1979,rank_weighted,Pop,0.20057755775577557,12155,95,10806
+1979,rank_weighted,R&B / Soul,0.16242574257425743,9843,86,8705
+1979,rank_weighted,Reggae / Dancehall,0.00057755775577557756,35,1,35
+1979,rank_weighted,Rock,0.38146864686468646,23117,214,20375
+1979,unique_song,Afrobeats / African Pop,0,0,0,0
+1979,unique_song,Alternative / Indie,0.0075471698113207548,4,4,3
+1979,unique_song,Country,0.052830188679245285,28,28,22
+1979,unique_song,Electronic / Dance,0.13396226415094339,71,71,59
+1979,unique_song,Folk / Singer-Songwriter,0.020754716981132074,11,11,10
+1979,unique_song,Gospel / Christian,0.0018867924528301887,1,1,1
+1979,unique_song,Hip-Hop / Rap,0.0018867924528301887,1,1,1
+1979,unique_song,Jazz / Blues,0.013207547169811321,7,7,4
+1979,unique_song,K-Pop,0,0,0,0
+1979,unique_song,Latin,0.0018867924528301887,1,1,1
+1979,unique_song,Metal,0,0,0,0
+1979,unique_song,Other,0.018867924528301886,10,10,1
+1979,unique_song,Pop,0.17924528301886791,95,95,80
+1979,unique_song,R&B / Soul,0.16226415094339622,86,86,67
+1979,unique_song,Reggae / Dancehall,0.0018867924528301887,1,1,1
+1979,unique_song,Rock,0.4037735849056604,214,214,178
+1980,song_month,Afrobeats / African Pop,0,0,0,0
+1980,song_month,Alternative / Indie,0.014999999999999999,18,6,17
+1980,song_month,Country,0.089166666666666672,107,41,79
+1980,song_month,Electronic / Dance,0.035833333333333335,43,19,32
+1980,song_month,Folk / Singer-Songwriter,0.012500000000000001,15,5,15
+1980,song_month,Gospel / Christian,0,0,0,0
+1980,song_month,Hip-Hop / Rap,0.0016666666666666668,2,2,2
+1980,song_month,Jazz / Blues,0.02,24,11,14
+1980,song_month,K-Pop,0,0,0,0
+1980,song_month,Latin,0,0,0,0
+1980,song_month,Metal,0,0,0,0
+1980,song_month,Other,0.014999999999999999,18,12,6
+1980,song_month,Pop,0.23000000000000001,276,107,237
+1980,song_month,R&B / Soul,0.19083333333333333,229,92,183
+1980,song_month,Reggae / Dancehall,0.0050000000000000001,6,2,6
+1980,song_month,Rock,0.38500000000000001,462,208,383
+1980,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1980,rank_weighted,Alternative / Indie,0.014983498349834984,908,6,882
+1980,rank_weighted,Country,0.088465346534653461,5361,41,4195
+1980,rank_weighted,Electronic / Dance,0.034356435643564359,2082,19,1683
+1980,rank_weighted,Folk / Singer-Songwriter,0.013432343234323432,814,5,814
+1980,rank_weighted,Gospel / Christian,0,0,0,0
+1980,rank_weighted,Hip-Hop / Rap,0.00024752475247524753,15,2,15
+1980,rank_weighted,Jazz / Blues,0.017293729372937293,1048,11,645
+1980,rank_weighted,K-Pop,0,0,0,0
+1980,rank_weighted,Latin,0,0,0,0
+1980,rank_weighted,Metal,0,0,0,0
+1980,rank_weighted,Other,0.0056270627062706274,341,12,191
+1980,rank_weighted,Pop,0.2511221122112211,15218,107,13530
+1980,rank_weighted,R&B / Soul,0.1916006600660066,11611,92,9520
+1980,rank_weighted,Reggae / Dancehall,0.0076402640264026404,463,2,463
+1980,rank_weighted,Rock,0.37523102310231021,22739,208,19416
+1980,unique_song,Afrobeats / African Pop,0,0,0,0
+1980,unique_song,Alternative / Indie,0.011881188118811881,6,6,5
+1980,unique_song,Country,0.081188118811881191,41,41,28
+1980,unique_song,Electronic / Dance,0.037623762376237622,19,19,12
+1980,unique_song,Folk / Singer-Songwriter,0.0099009900990099011,5,5,5
+1980,unique_song,Gospel / Christian,0,0,0,0
+1980,unique_song,Hip-Hop / Rap,0.0039603960396039604,2,2,2
+1980,unique_song,Jazz / Blues,0.021782178217821781,11,11,6
+1980,unique_song,K-Pop,0,0,0,0
+1980,unique_song,Latin,0,0,0,0
+1980,unique_song,Metal,0,0,0,0
+1980,unique_song,Other,0.023762376237623763,12,12,3
+1980,unique_song,Pop,0.21188118811881188,107,107,86
+1980,unique_song,R&B / Soul,0.18217821782178217,92,92,73
+1980,unique_song,Reggae / Dancehall,0.0039603960396039604,2,2,2
+1980,unique_song,Rock,0.41188118811881186,208,208,173
+1981,song_month,Afrobeats / African Pop,0,0,0,0
+1981,song_month,Alternative / Indie,0.0066666666666666671,8,5,5
+1981,song_month,Country,0.10249999999999999,123,44,107
+1981,song_month,Electronic / Dance,0.0058333333333333336,7,7,5
+1981,song_month,Folk / Singer-Songwriter,0.023333333333333334,28,11,25
+1981,song_month,Gospel / Christian,0.0025000000000000001,3,1,3
+1981,song_month,Hip-Hop / Rap,0.0058333333333333336,7,3,7
+1981,song_month,Jazz / Blues,0.029166666666666667,35,14,11
+1981,song_month,K-Pop,0,0,0,0
+1981,song_month,Latin,0,0,0,0
+1981,song_month,Metal,0.0033333333333333335,4,1,4
+1981,song_month,Other,0.0091666666666666667,11,8,2
+1981,song_month,Pop,0.22916666666666666,275,110,215
+1981,song_month,R&B / Soul,0.16750000000000001,201,79,169
+1981,song_month,Reggae / Dancehall,0.0041666666666666666,5,2,5
+1981,song_month,Rock,0.41083333333333333,493,190,434
+1981,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1981,rank_weighted,Alternative / Indie,0.0051155115511551151,310,5,188
+1981,rank_weighted,Country,0.10793729372937294,6541,44,5736
+1981,rank_weighted,Electronic / Dance,0.0013531353135313531,82,7,52
+1981,rank_weighted,Folk / Singer-Songwriter,0.022277227722772276,1350,11,1154
+1981,rank_weighted,Gospel / Christian,0.0019801980198019802,120,1,120
+1981,rank_weighted,Hip-Hop / Rap,0.0042574257425742577,258,3,258
+1981,rank_weighted,Jazz / Blues,0.029191419141914192,1769,14,517
+1981,rank_weighted,K-Pop,0,0,0,0
+1981,rank_weighted,Latin,0,0,0,0
+1981,rank_weighted,Metal,0.0023762376237623762,144,1,144
+1981,rank_weighted,Other,0.0062871287128712875,381,8,56
+1981,rank_weighted,Pop,0.22773927392739274,13801,110,11278
+1981,rank_weighted,R&B / Soul,0.1593894389438944,9659,79,8479
+1981,rank_weighted,Reggae / Dancehall,0.0050660066006600656,307,2,307
+1981,rank_weighted,Rock,0.42702970297029702,25878,190,23032
+1981,unique_song,Afrobeats / African Pop,0,0,0,0
+1981,unique_song,Alternative / Indie,0.010526315789473684,5,5,3
+1981,unique_song,Country,0.092631578947368426,44,44,36
+1981,unique_song,Electronic / Dance,0.014736842105263158,7,7,5
+1981,unique_song,Folk / Singer-Songwriter,0.023157894736842106,11,11,10
+1981,unique_song,Gospel / Christian,0.0021052631578947368,1,1,1
+1981,unique_song,Hip-Hop / Rap,0.0063157894736842104,3,3,3
+1981,unique_song,Jazz / Blues,0.029473684210526315,14,14,5
+1981,unique_song,K-Pop,0,0,0,0
+1981,unique_song,Latin,0,0,0,0
+1981,unique_song,Metal,0.0021052631578947368,1,1,1
+1981,unique_song,Other,0.016842105263157894,8,8,2
+1981,unique_song,Pop,0.23157894736842105,110,110,81
+1981,unique_song,R&B / Soul,0.16631578947368422,79,79,63
+1981,unique_song,Reggae / Dancehall,0.0042105263157894736,2,2,2
+1981,unique_song,Rock,0.40000000000000002,190,190,163
+1982,song_month,Afrobeats / African Pop,0,0,0,0
+1982,song_month,Alternative / Indie,0.031666666666666669,38,16,36
+1982,song_month,Country,0.074166666666666672,89,34,70
+1982,song_month,Electronic / Dance,0.039166666666666669,47,14,36
+1982,song_month,Folk / Singer-Songwriter,0.0091666666666666667,11,6,11
+1982,song_month,Gospel / Christian,0,0,0,0
+1982,song_month,Hip-Hop / Rap,0.0074999999999999997,9,4,3
+1982,song_month,Jazz / Blues,0.020833333333333332,25,14,15
+1982,song_month,K-Pop,0,0,0,0
+1982,song_month,Latin,0,0,0,0
+1982,song_month,Metal,0.00083333333333333339,1,1,1
+1982,song_month,Other,0.014166666666666666,17,7,5
+1982,song_month,Pop,0.19833333333333333,238,93,190
+1982,song_month,R&B / Soul,0.16416666666666666,197,79,161
+1982,song_month,Reggae / Dancehall,0.00083333333333333339,1,1,1
+1982,song_month,Rock,0.43916666666666665,527,210,444
+1982,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1982,rank_weighted,Alternative / Indie,0.026056105610561056,1579,16,1515
+1982,rank_weighted,Country,0.075264026402640266,4561,34,3652
+1982,rank_weighted,Electronic / Dance,0.037904290429042906,2297,14,1712
+1982,rank_weighted,Folk / Singer-Songwriter,0.0078382838283828377,475,6,475
+1982,rank_weighted,Gospel / Christian,0,0,0,0
+1982,rank_weighted,Hip-Hop / Rap,0.0035313531353135313,214,4,48
+1982,rank_weighted,Jazz / Blues,0.015940594059405941,966,14,592
+1982,rank_weighted,K-Pop,0,0,0,0
+1982,rank_weighted,Latin,0,0,0,0
+1982,rank_weighted,Metal,0.00056105610561056108,34,1,34
+1982,rank_weighted,Other,0.011023102310231023,668,7,232
+1982,rank_weighted,Pop,0.20531353135313532,12442,93,10137
+1982,rank_weighted,R&B / Soul,0.1542904290429043,9350,79,7756
+1982,rank_weighted,Reggae / Dancehall,0.00069306930693069303,42,1,42
+1982,rank_weighted,Rock,0.46158415841584161,27972,210,23934
+1982,unique_song,Afrobeats / African Pop,0,0,0,0
+1982,unique_song,Alternative / Indie,0.033402922755741124,16,16,14
+1982,unique_song,Country,0.070981210855949897,34,34,26
+1982,unique_song,Electronic / Dance,0.029227557411273485,14,14,11
+1982,unique_song,Folk / Singer-Songwriter,0.012526096033402923,6,6,6
+1982,unique_song,Gospel / Christian,0,0,0,0
+1982,unique_song,Hip-Hop / Rap,0.008350730688935281,4,4,2
+1982,unique_song,Jazz / Blues,0.029227557411273485,14,14,9
+1982,unique_song,K-Pop,0,0,0,0
+1982,unique_song,Latin,0,0,0,0
+1982,unique_song,Metal,0.0020876826722338203,1,1,1
+1982,unique_song,Other,0.014613778705636743,7,7,2
+1982,unique_song,Pop,0.19415448851774531,93,93,69
+1982,unique_song,R&B / Soul,0.1649269311064718,79,79,64
+1982,unique_song,Reggae / Dancehall,0.0020876826722338203,1,1,1
+1982,unique_song,Rock,0.43841336116910229,210,210,176
+1983,song_month,Afrobeats / African Pop,0,0,0,0
+1983,song_month,Alternative / Indie,0.065833333333333327,79,34,72
+1983,song_month,Country,0.046666666666666669,56,25,42
+1983,song_month,Electronic / Dance,0.044166666666666667,53,21,46
+1983,song_month,Folk / Singer-Songwriter,0.0025000000000000001,3,2,1
+1983,song_month,Gospel / Christian,0,0,0,0
+1983,song_month,Hip-Hop / Rap,0.00083333333333333339,1,1,1
+1983,song_month,Jazz / Blues,0.014166666666666666,17,7,3
+1983,song_month,K-Pop,0,0,0,0
+1983,song_month,Latin,0,0,0,0
+1983,song_month,Metal,0.01,12,4,12
+1983,song_month,Other,0.0050000000000000001,6,4,4
+1983,song_month,Pop,0.26833333333333331,322,127,276
+1983,song_month,R&B / Soul,0.13750000000000001,165,74,125
+1983,song_month,Reggae / Dancehall,0.014999999999999999,18,6,18
+1983,song_month,Rock,0.39000000000000001,468,195,401
+1983,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1983,rank_weighted,Alternative / Indie,0.061287128712871286,3714,34,3494
+1983,rank_weighted,Country,0.04211221122112211,2552,25,1878
+1983,rank_weighted,Electronic / Dance,0.044026402640264028,2668,21,2445
+1983,rank_weighted,Folk / Singer-Songwriter,0.0012541254125412542,76,2,16
+1983,rank_weighted,Gospel / Christian,0,0,0,0
+1983,rank_weighted,Hip-Hop / Rap,0.00024752475247524753,15,1,15
+1983,rank_weighted,Jazz / Blues,0.011518151815181519,698,7,105
+1983,rank_weighted,K-Pop,0,0,0,0
+1983,rank_weighted,Latin,0,0,0,0
+1983,rank_weighted,Metal,0.011584158415841584,702,4,702
+1983,rank_weighted,Other,0.0037128712871287127,225,4,203
+1983,rank_weighted,Pop,0.29013201320132015,17582,127,15557
+1983,rank_weighted,R&B / Soul,0.12128712871287128,7350,74,5358
+1983,rank_weighted,Reggae / Dancehall,0.017887788778877887,1084,6,1084
+1983,rank_weighted,Rock,0.39495049504950497,23934,195,20876
+1983,unique_song,Afrobeats / African Pop,0,0,0,0
+1983,unique_song,Alternative / Indie,0.068000000000000005,34,34,29
+1983,unique_song,Country,0.050000000000000003,25,25,18
+1983,unique_song,Electronic / Dance,0.042000000000000003,21,21,17
+1983,unique_song,Folk / Singer-Songwriter,0.0040000000000000001,2,2,1
+1983,unique_song,Gospel / Christian,0,0,0,0
+1983,unique_song,Hip-Hop / Rap,0.002,1,1,1
+1983,unique_song,Jazz / Blues,0.014,7,7,1
+1983,unique_song,K-Pop,0,0,0,0
+1983,unique_song,Latin,0,0,0,0
+1983,unique_song,Metal,0.0080000000000000002,4,4,4
+1983,unique_song,Other,0.0080000000000000002,4,4,2
+1983,unique_song,Pop,0.254,127,127,104
+1983,unique_song,R&B / Soul,0.14799999999999999,74,74,58
+1983,unique_song,Reggae / Dancehall,0.012,6,6,6
+1983,unique_song,Rock,0.39000000000000001,195,195,166
+1984,song_month,Afrobeats / African Pop,0,0,0,0
+1984,song_month,Alternative / Indie,0.034166666666666665,41,18,27
+1984,song_month,Country,0.020833333333333332,25,14,22
+1984,song_month,Electronic / Dance,0.046666666666666669,56,23,46
+1984,song_month,Folk / Singer-Songwriter,0.0025000000000000001,3,2,3
+1984,song_month,Gospel / Christian,0,0,0,0
+1984,song_month,Hip-Hop / Rap,0.0025000000000000001,3,1,3
+1984,song_month,Jazz / Blues,0.0066666666666666671,8,4,6
+1984,song_month,K-Pop,0,0,0,0
+1984,song_month,Latin,0,0,0,0
+1984,song_month,Metal,0.014999999999999999,18,8,13
+1984,song_month,Other,0.0058333333333333336,7,6,3
+1984,song_month,Pop,0.32916666666666666,395,147,330
+1984,song_month,R&B / Soul,0.16333333333333333,196,85,151
+1984,song_month,Reggae / Dancehall,0.0091666666666666667,11,4,11
+1984,song_month,Rock,0.36416666666666669,437,179,365
+1984,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1984,rank_weighted,Alternative / Indie,0.02698019801980198,1635,18,1227
+1984,rank_weighted,Country,0.015231023102310231,923,14,872
+1984,rank_weighted,Electronic / Dance,0.041287128712871289,2502,23,2015
+1984,rank_weighted,Folk / Singer-Songwriter,0.0021452145214521452,130,2,130
+1984,rank_weighted,Gospel / Christian,0,0,0,0
+1984,rank_weighted,Hip-Hop / Rap,0.0016006600660066006,97,1,97
+1984,rank_weighted,Jazz / Blues,0.0050165016501650169,304,4,272
+1984,rank_weighted,K-Pop,0,0,0,0
+1984,rank_weighted,Latin,0,0,0,0
+1984,rank_weighted,Metal,0.013019801980198019,789,8,597
+1984,rank_weighted,Other,0.0037953795379537954,230,6,109
+1984,rank_weighted,Pop,0.35978547854785481,21803,147,18819
+1984,rank_weighted,R&B / Soul,0.14795379537953796,8966,85,7070
+1984,rank_weighted,Reggae / Dancehall,0.0065841584158415839,399,4,399
+1984,rank_weighted,Rock,0.37660066006600662,22822,179,19219
+1984,unique_song,Afrobeats / African Pop,0,0,0,0
+1984,unique_song,Alternative / Indie,0.036659877800407331,18,18,11
+1984,unique_song,Country,0.028513238289205704,14,14,12
+1984,unique_song,Electronic / Dance,0.04684317718940937,23,23,19
+1984,unique_song,Folk / Singer-Songwriter,0.0040733197556008143,2,2,2
+1984,unique_song,Gospel / Christian,0,0,0,0
+1984,unique_song,Hip-Hop / Rap,0.0020366598778004071,1,1,1
+1984,unique_song,Jazz / Blues,0.0081466395112016286,4,4,3
+1984,unique_song,K-Pop,0,0,0,0
+1984,unique_song,Latin,0,0,0,0
+1984,unique_song,Metal,0.016293279022403257,8,8,5
+1984,unique_song,Other,0.012219959266802444,6,6,2
+1984,unique_song,Pop,0.29938900203665986,147,147,115
+1984,unique_song,R&B / Soul,0.17311608961303462,85,85,64
+1984,unique_song,Reggae / Dancehall,0.0081466395112016286,4,4,4
+1984,unique_song,Rock,0.36456211812627293,179,179,149
+1985,song_month,Afrobeats / African Pop,0,0,0,0
+1985,song_month,Alternative / Indie,0.035000000000000003,42,15,39
+1985,song_month,Country,0.0041666666666666666,5,3,3
+1985,song_month,Electronic / Dance,0.056666666666666664,68,23,45
+1985,song_month,Folk / Singer-Songwriter,0.0025000000000000001,3,2,3
+1985,song_month,Gospel / Christian,0.0050000000000000001,6,2,6
+1985,song_month,Hip-Hop / Rap,0.0016666666666666668,2,2,0
+1985,song_month,Jazz / Blues,0.0050000000000000001,6,2,6
+1985,song_month,K-Pop,0,0,0,0
+1985,song_month,Latin,0.0025000000000000001,3,1,3
+1985,song_month,Metal,0.0066666666666666671,8,4,6
+1985,song_month,Other,0.0074999999999999997,9,5,7
+1985,song_month,Pop,0.33083333333333331,397,150,322
+1985,song_month,R&B / Soul,0.20250000000000001,243,90,207
+1985,song_month,Reggae / Dancehall,0.0033333333333333335,4,1,4
+1985,song_month,Rock,0.33666666666666667,404,163,360
+1985,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1985,rank_weighted,Alternative / Indie,0.034273927392739274,2077,15,1940
+1985,rank_weighted,Country,0.0013531353135313531,82,3,57
+1985,rank_weighted,Electronic / Dance,0.051155115511551157,3100,23,2037
+1985,rank_weighted,Folk / Singer-Songwriter,0.0011551155115511551,70,2,70
+1985,rank_weighted,Gospel / Christian,0.0035808580858085809,217,2,217
+1985,rank_weighted,Hip-Hop / Rap,0.00064356435643564359,39,2,0
+1985,rank_weighted,Jazz / Blues,0.0051320132013201319,311,2,311
+1985,rank_weighted,K-Pop,0,0,0,0
+1985,rank_weighted,Latin,0.0026732673267326735,162,1,162
+1985,rank_weighted,Metal,0.0034158415841584158,207,4,156
+1985,rank_weighted,Other,0.0033168316831683167,201,5,163
+1985,rank_weighted,Pop,0.34783828382838283,21079,150,17493
+1985,rank_weighted,R&B / Soul,0.19597359735973596,11876,90,10262
+1985,rank_weighted,Reggae / Dancehall,0.0023432343234323434,142,1,142
+1985,rank_weighted,Rock,0.34714521452145214,21037,163,19060
+1985,unique_song,Afrobeats / African Pop,0,0,0,0
+1985,unique_song,Alternative / Indie,0.032397408207343416,15,15,13
+1985,unique_song,Country,0.0064794816414686825,3,3,2
+1985,unique_song,Electronic / Dance,0.049676025917926567,23,23,16
+1985,unique_song,Folk / Singer-Songwriter,0.0043196544276457886,2,2,2
+1985,unique_song,Gospel / Christian,0.0043196544276457886,2,2,2
+1985,unique_song,Hip-Hop / Rap,0.0043196544276457886,2,2,0
+1985,unique_song,Jazz / Blues,0.0043196544276457886,2,2,2
+1985,unique_song,K-Pop,0,0,0,0
+1985,unique_song,Latin,0.0021598272138228943,1,1,1
+1985,unique_song,Metal,0.0086393088552915772,4,4,3
+1985,unique_song,Other,0.01079913606911447,5,5,3
+1985,unique_song,Pop,0.32397408207343414,150,150,118
+1985,unique_song,R&B / Soul,0.19438444924406048,90,90,76
+1985,unique_song,Reggae / Dancehall,0.0021598272138228943,1,1,1
+1985,unique_song,Rock,0.35205183585313177,163,163,142
+1986,song_month,Afrobeats / African Pop,0,0,0,0
+1986,song_month,Alternative / Indie,0.035833333333333335,43,19,35
+1986,song_month,Country,0.0041666666666666666,5,2,0
+1986,song_month,Electronic / Dance,0.057500000000000002,69,27,51
+1986,song_month,Folk / Singer-Songwriter,0.00083333333333333339,1,1,1
+1986,song_month,Gospel / Christian,0,0,0,0
+1986,song_month,Hip-Hop / Rap,0.0083333333333333332,10,4,5
+1986,song_month,Jazz / Blues,0.0058333333333333336,7,3,1
+1986,song_month,K-Pop,0,0,0,0
+1986,song_month,Latin,0.0083333333333333332,10,3,10
+1986,song_month,Metal,0.0041666666666666666,5,3,5
+1986,song_month,Other,0.0025000000000000001,3,3,1
+1986,song_month,Pop,0.31666666666666665,380,140,325
+1986,song_month,R&B / Soul,0.20583333333333334,247,96,193
+1986,song_month,Reggae / Dancehall,0,0,0,0
+1986,song_month,Rock,0.34999999999999998,420,172,372
+1986,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1986,rank_weighted,Alternative / Indie,0.030775577557755774,1865,19,1591
+1986,rank_weighted,Country,0.0024752475247524753,150,2,0
+1986,rank_weighted,Electronic / Dance,0.045445544554455444,2754,27,2158
+1986,rank_weighted,Folk / Singer-Songwriter,0.00031353135313531356,19,1,19
+1986,rank_weighted,Gospel / Christian,0,0,0,0
+1986,rank_weighted,Hip-Hop / Rap,0.008580858085808581,520,4,304
+1986,rank_weighted,Jazz / Blues,0.0058085808580858088,352,3,15
+1986,rank_weighted,K-Pop,0,0,0,0
+1986,rank_weighted,Latin,0.010990099009900989,666,3,666
+1986,rank_weighted,Metal,0.0017491749174917493,106,3,106
+1986,rank_weighted,Other,0.00018151815181518153,11,3,1
+1986,rank_weighted,Pop,0.35188118811881186,21324,140,18538
+1986,rank_weighted,R&B / Soul,0.19826732673267328,12015,96,9612
+1986,rank_weighted,Reggae / Dancehall,0,0,0,0
+1986,rank_weighted,Rock,0.34353135313531352,20818,172,18947
+1986,unique_song,Afrobeats / African Pop,0,0,0,0
+1986,unique_song,Alternative / Indie,0.040169133192389003,19,19,15
+1986,unique_song,Country,0.0042283298097251587,2,2,0
+1986,unique_song,Electronic / Dance,0.057082452431289642,27,27,18
+1986,unique_song,Folk / Singer-Songwriter,0.0021141649048625794,1,1,1
+1986,unique_song,Gospel / Christian,0,0,0,0
+1986,unique_song,Hip-Hop / Rap,0.0084566596194503175,4,4,2
+1986,unique_song,Jazz / Blues,0.0063424947145877377,3,3,1
+1986,unique_song,K-Pop,0,0,0,0
+1986,unique_song,Latin,0.0063424947145877377,3,3,3
+1986,unique_song,Metal,0.0063424947145877377,3,3,3
+1986,unique_song,Other,0.0063424947145877377,3,3,1
+1986,unique_song,Pop,0.29598308668076112,140,140,116
+1986,unique_song,R&B / Soul,0.20295983086680761,96,96,77
+1986,unique_song,Reggae / Dancehall,0,0,0,0
+1986,unique_song,Rock,0.36363636363636365,172,172,150
+1987,song_month,Afrobeats / African Pop,0,0,0,0
+1987,song_month,Alternative / Indie,0.028333333333333332,34,12,28
+1987,song_month,Country,0.0050000000000000001,6,2,6
+1987,song_month,Electronic / Dance,0.072499999999999995,87,31,61
+1987,song_month,Folk / Singer-Songwriter,0.00083333333333333339,1,1,1
+1987,song_month,Gospel / Christian,0.00083333333333333339,1,1,0
+1987,song_month,Hip-Hop / Rap,0.016666666666666666,20,10,14
+1987,song_month,Jazz / Blues,0.020833333333333332,25,8,11
+1987,song_month,K-Pop,0,0,0,0
+1987,song_month,Latin,0.013333333333333334,16,6,12
+1987,song_month,Metal,0.016666666666666666,20,9,20
+1987,song_month,Other,0.00083333333333333339,1,1,0
+1987,song_month,Pop,0.31166666666666665,374,139,302
+1987,song_month,R&B / Soul,0.18416666666666667,221,85,166
+1987,song_month,Reggae / Dancehall,0.00083333333333333339,1,1,1
+1987,song_month,Rock,0.32750000000000001,393,149,349
+1987,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1987,rank_weighted,Alternative / Indie,0.027458745874587458,1664,12,1488
+1987,rank_weighted,Country,0.0034158415841584158,207,2,207
+1987,rank_weighted,Electronic / Dance,0.068217821782178223,4134,31,2933
+1987,rank_weighted,Folk / Singer-Songwriter,6.6006600660066002e-05,4,1,4
+1987,rank_weighted,Gospel / Christian,0.00062706270627062711,38,1,0
+1987,rank_weighted,Hip-Hop / Rap,0.016402640264026401,994,10,682
+1987,rank_weighted,Jazz / Blues,0.020990099009900991,1272,8,468
+1987,rank_weighted,K-Pop,0,0,0,0
+1987,rank_weighted,Latin,0.016204620462046206,982,6,770
+1987,rank_weighted,Metal,0.010907590759075908,661,9,661
+1987,rank_weighted,Other,6.6006600660066002e-05,4,1,0
+1987,rank_weighted,Pop,0.33333333333333331,20200,139,16439
+1987,rank_weighted,R&B / Soul,0.17127062706270627,10379,85,8145
+1987,rank_weighted,Reggae / Dancehall,0.00011551155115511551,7,1,7
+1987,rank_weighted,Rock,0.33092409240924092,20054,149,18007
+1987,unique_song,Afrobeats / African Pop,0,0,0,0
+1987,unique_song,Alternative / Indie,0.026373626373626374,12,12,9
+1987,unique_song,Country,0.0043956043956043956,2,2,2
+1987,unique_song,Electronic / Dance,0.068131868131868126,31,31,22
+1987,unique_song,Folk / Singer-Songwriter,0.0021978021978021978,1,1,1
+1987,unique_song,Gospel / Christian,0.0021978021978021978,1,1,0
+1987,unique_song,Hip-Hop / Rap,0.02197802197802198,10,10,7
+1987,unique_song,Jazz / Blues,0.017582417582417582,8,8,5
+1987,unique_song,K-Pop,0,0,0,0
+1987,unique_song,Latin,0.013186813186813187,6,6,4
+1987,unique_song,Metal,0.019780219780219779,9,9,9
+1987,unique_song,Other,0.0021978021978021978,1,1,0
+1987,unique_song,Pop,0.30549450549450552,139,139,110
+1987,unique_song,R&B / Soul,0.18681318681318682,85,85,64
+1987,unique_song,Reggae / Dancehall,0.0021978021978021978,1,1,1
+1987,unique_song,Rock,0.32747252747252747,149,149,131
+1988,song_month,Afrobeats / African Pop,0,0,0,0
+1988,song_month,Alternative / Indie,0.019166666666666665,23,13,17
+1988,song_month,Country,0,0,0,0
+1988,song_month,Electronic / Dance,0.074999999999999997,90,36,71
+1988,song_month,Folk / Singer-Songwriter,0.0066666666666666671,8,4,8
+1988,song_month,Gospel / Christian,0.00083333333333333339,1,1,0
+1988,song_month,Hip-Hop / Rap,0.042500000000000003,51,18,34
+1988,song_month,Jazz / Blues,0.013333333333333334,16,7,5
+1988,song_month,K-Pop,0,0,0,0
+1988,song_month,Latin,0.0025000000000000001,3,2,1
+1988,song_month,Metal,0.015833333333333335,19,8,15
+1988,song_month,Other,0.0025000000000000001,3,3,1
+1988,song_month,Pop,0.38083333333333336,457,163,379
+1988,song_month,R&B / Soul,0.14583333333333334,175,64,132
+1988,song_month,Reggae / Dancehall,0.0091666666666666667,11,3,11
+1988,song_month,Rock,0.28583333333333333,343,127,286
+1988,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1988,rank_weighted,Alternative / Indie,0.013382838283828382,811,13,709
+1988,rank_weighted,Country,0,0,0,0
+1988,rank_weighted,Electronic / Dance,0.053877887788778875,3265,36,2778
+1988,rank_weighted,Folk / Singer-Songwriter,0.0068481848184818485,415,4,415
+1988,rank_weighted,Gospel / Christian,0.00011551155115511551,7,1,0
+1988,rank_weighted,Hip-Hop / Rap,0.031320132013201323,1898,18,1286
+1988,rank_weighted,Jazz / Blues,0.0097524752475247525,591,7,165
+1988,rank_weighted,K-Pop,0,0,0,0
+1988,rank_weighted,Latin,0.0012376237623762376,75,2,6
+1988,rank_weighted,Metal,0.014389438943894389,872,8,646
+1988,rank_weighted,Other,0.00061056105610561053,37,3,23
+1988,rank_weighted,Pop,0.41155115511551155,24940,163,20868
+1988,rank_weighted,R&B / Soul,0.14353135313531354,8698,64,6573
+1988,rank_weighted,Reggae / Dancehall,0.009257425742574257,561,3,561
+1988,rank_weighted,Rock,0.30412541254125414,18430,127,15674
+1988,unique_song,Afrobeats / African Pop,0,0,0,0
+1988,unique_song,Alternative / Indie,0.028953229398663696,13,13,9
+1988,unique_song,Country,0,0,0,0
+1988,unique_song,Electronic / Dance,0.080178173719376397,36,36,28
+1988,unique_song,Folk / Singer-Songwriter,0.0089086859688195987,4,4,4
+1988,unique_song,Gospel / Christian,0.0022271714922048997,1,1,0
+1988,unique_song,Hip-Hop / Rap,0.040089086859688199,18,18,13
+1988,unique_song,Jazz / Blues,0.015590200445434299,7,7,3
+1988,unique_song,K-Pop,0,0,0,0
+1988,unique_song,Latin,0.0044543429844097994,2,2,1
+1988,unique_song,Metal,0.017817371937639197,8,8,7
+1988,unique_song,Other,0.0066815144766146995,3,3,1
+1988,unique_song,Pop,0.36302895322939865,163,163,133
+1988,unique_song,R&B / Soul,0.14253897550111358,64,64,48
+1988,unique_song,Reggae / Dancehall,0.0066815144766146995,3,3,3
+1988,unique_song,Rock,0.2828507795100223,127,127,105
+1989,song_month,Afrobeats / African Pop,0,0,0,0
+1989,song_month,Alternative / Indie,0.040000000000000001,48,20,41
+1989,song_month,Country,0.00083333333333333339,1,1,1
+1989,song_month,Electronic / Dance,0.083333333333333329,100,41,74
+1989,song_month,Folk / Singer-Songwriter,0.0033333333333333335,4,3,4
+1989,song_month,Gospel / Christian,0,0,0,0
+1989,song_month,Hip-Hop / Rap,0.036666666666666667,44,15,43
+1989,song_month,Jazz / Blues,0.0033333333333333335,4,3,3
+1989,song_month,K-Pop,0,0,0,0
+1989,song_month,Latin,0.0041666666666666666,5,2,1
+1989,song_month,Metal,0.039166666666666669,47,16,43
+1989,song_month,Other,0.0033333333333333335,4,2,0
+1989,song_month,Pop,0.35499999999999998,426,151,349
+1989,song_month,R&B / Soul,0.14583333333333334,175,64,132
+1989,song_month,Reggae / Dancehall,0.0033333333333333335,4,3,3
+1989,song_month,Rock,0.28166666666666668,338,135,292
+1989,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1989,rank_weighted,Alternative / Indie,0.038118811881188118,2310,20,1973
+1989,rank_weighted,Country,0.00077557755775577554,47,1,47
+1989,rank_weighted,Electronic / Dance,0.071023102310231026,4304,41,3191
+1989,rank_weighted,Folk / Singer-Songwriter,0.0015181518151815181,92,3,92
+1989,rank_weighted,Gospel / Christian,0,0,0,0
+1989,rank_weighted,Hip-Hop / Rap,0.040148514851485149,2433,15,2425
+1989,rank_weighted,Jazz / Blues,0.0029702970297029703,180,3,121
+1989,rank_weighted,K-Pop,0,0,0,0
+1989,rank_weighted,Latin,0.0046699669966996701,283,2,46
+1989,rank_weighted,Metal,0.038019801980198019,2304,16,2074
+1989,rank_weighted,Other,0.0010726072607260726,65,2,0
+1989,rank_weighted,Pop,0.38985148514851486,23625,151,19312
+1989,rank_weighted,R&B / Soul,0.14273927392739275,8650,64,6900
+1989,rank_weighted,Reggae / Dancehall,0.0018316831683168316,111,3,75
+1989,rank_weighted,Rock,0.26726072607260726,16196,135,14022
+1989,unique_song,Afrobeats / African Pop,0,0,0,0
+1989,unique_song,Alternative / Indie,0.043859649122807015,20,20,18
+1989,unique_song,Country,0.0021929824561403508,1,1,1
+1989,unique_song,Electronic / Dance,0.089912280701754388,41,41,30
+1989,unique_song,Folk / Singer-Songwriter,0.0065789473684210523,3,3,3
+1989,unique_song,Gospel / Christian,0,0,0,0
+1989,unique_song,Hip-Hop / Rap,0.032894736842105261,15,15,14
+1989,unique_song,Jazz / Blues,0.0065789473684210523,3,3,2
+1989,unique_song,K-Pop,0,0,0,0
+1989,unique_song,Latin,0.0043859649122807015,2,2,1
+1989,unique_song,Metal,0.035087719298245612,16,16,14
+1989,unique_song,Other,0.0043859649122807015,2,2,0
+1989,unique_song,Pop,0.33114035087719296,151,151,125
+1989,unique_song,R&B / Soul,0.14035087719298245,64,64,45
+1989,unique_song,Reggae / Dancehall,0.0065789473684210523,3,3,2
+1989,unique_song,Rock,0.29605263157894735,135,135,115
+1990,song_month,Afrobeats / African Pop,0,0,0,0
+1990,song_month,Alternative / Indie,0.048454469507101083,58,22,55
+1990,song_month,Country,0.00083542188805346695,1,1,1
+1990,song_month,Electronic / Dance,0.1086048454469507,130,50,103
+1990,song_month,Folk / Singer-Songwriter,0,0,0,0
+1990,song_month,Gospel / Christian,0,0,0,0
+1990,song_month,Hip-Hop / Rap,0.067669172932330823,81,27,63
+1990,song_month,Jazz / Blues,0.0058479532163742687,7,4,4
+1990,song_month,K-Pop,0,0,0,0
+1990,song_month,Latin,0.0091896407685881365,11,4,10
+1990,song_month,Metal,0.040100250626566414,48,15,27
+1990,song_month,Other,0.0050125313283208017,6,4,2
+1990,song_month,Pop,0.28905597326649957,346,121,285
+1990,song_month,R&B / Soul,0.19883040935672514,238,82,180
+1990,song_month,Reggae / Dancehall,0.01086048454469507,13,4,8
+1990,song_month,Rock,0.21553884711779447,258,111,207
+1990,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1990,rank_weighted,Alternative / Indie,0.043527552278576333,2630,22,2547
+1990,rank_weighted,Country,0.00091027200582574088,55,1,55
+1990,rank_weighted,Electronic / Dance,0.10037817664242032,6065,50,4976
+1990,rank_weighted,Folk / Singer-Songwriter,0,0,0,0
+1990,rank_weighted,Gospel / Christian,0,0,0,0
+1990,rank_weighted,Hip-Hop / Rap,0.070173696449111658,4240,27,3371
+1990,rank_weighted,Jazz / Blues,0.0048327168309293877,292,4,183
+1990,rank_weighted,K-Pop,0,0,0,0
+1990,rank_weighted,Latin,0.0081758976523257452,494,4,442
+1990,rank_weighted,Metal,0.039373401851989773,2379,15,1413
+1990,rank_weighted,Other,0.0015226368097448755,92,4,24
+1990,rank_weighted,Pop,0.30852428357455541,18641.5,121,15594
+1990,rank_weighted,R&B / Soul,0.20889915013695456,12622,82,9939
+1990,rank_weighted,Reggae / Dancehall,0.012942412882831442,782,4,465
+1990,rank_weighted,Rock,0.20073980288473472,12129,111,9957
+1990,unique_song,Afrobeats / African Pop,0,0,0,0
+1990,unique_song,Alternative / Indie,0.049438202247191011,22,22,20
+1990,unique_song,Country,0.0022471910112359553,1,1,1
+1990,unique_song,Electronic / Dance,0.11235955056179775,50,50,39
+1990,unique_song,Folk / Singer-Songwriter,0,0,0,0
+1990,unique_song,Gospel / Christian,0,0,0,0
+1990,unique_song,Hip-Hop / Rap,0.060674157303370786,27,27,20
+1990,unique_song,Jazz / Blues,0.008988764044943821,4,4,2
+1990,unique_song,K-Pop,0,0,0,0
+1990,unique_song,Latin,0.008988764044943821,4,4,3
+1990,unique_song,Metal,0.033707865168539325,15,15,9
+1990,unique_song,Other,0.008988764044943821,4,4,1
+1990,unique_song,Pop,0.27191011235955054,121,121,97
+1990,unique_song,R&B / Soul,0.1842696629213483,82,82,63
+1990,unique_song,Reggae / Dancehall,0.008988764044943821,4,4,2
+1990,unique_song,Rock,0.24943820224719102,111,111,87
+1991,song_month,Afrobeats / African Pop,0,0,0,0
+1991,song_month,Alternative / Indie,0.051666666666666666,62,22,51
+1991,song_month,Country,0.0033333333333333335,4,1,4
+1991,song_month,Electronic / Dance,0.10916666666666666,131,54,90
+1991,song_month,Folk / Singer-Songwriter,0.00083333333333333339,1,1,1
+1991,song_month,Gospel / Christian,0.0050000000000000001,6,2,6
+1991,song_month,Hip-Hop / Rap,0.11333333333333333,136,56,95
+1991,song_month,Jazz / Blues,0.01,12,4,8
+1991,song_month,K-Pop,0,0,0,0
+1991,song_month,Latin,0.0066666666666666671,8,2,8
+1991,song_month,Metal,0.021666666666666667,26,12,24
+1991,song_month,Other,0.012500000000000001,15,7,10
+1991,song_month,Pop,0.23666666666666666,284,107,228
+1991,song_month,R&B / Soul,0.20083333333333334,241,85,178
+1991,song_month,Reggae / Dancehall,0.012500000000000001,15,6,10
+1991,song_month,Rock,0.21583333333333332,259,99,214
+1991,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1991,rank_weighted,Alternative / Indie,0.050115511551155116,3037,22,2586
+1991,rank_weighted,Country,0.0017326732673267327,105,1,105
+1991,rank_weighted,Electronic / Dance,0.094323432343234329,5716,54,4129
+1991,rank_weighted,Folk / Singer-Songwriter,4.9504950495049508e-05,3,1,3
+1991,rank_weighted,Gospel / Christian,0.0055940594059405938,339,2,339
+1991,rank_weighted,Hip-Hop / Rap,0.10867986798679868,6586,56,4888
+1991,rank_weighted,Jazz / Blues,0.0082508250825082501,500,4,286
+1991,rank_weighted,K-Pop,0,0,0,0
+1991,rank_weighted,Latin,0.0085313531353135314,517,2,517
+1991,rank_weighted,Metal,0.018300330033003302,1109,12,986
+1991,rank_weighted,Other,0.006237623762376238,378,7,274
+1991,rank_weighted,Pop,0.26183168316831684,15867,107,12886
+1991,rank_weighted,R&B / Soul,0.21391089108910891,12963,85,9785
+1991,rank_weighted,Reggae / Dancehall,0.010627062706270627,644,6,399
+1991,rank_weighted,Rock,0.21181518151815182,12836,99,11071
+1991,unique_song,Afrobeats / African Pop,0,0,0,0
+1991,unique_song,Alternative / Indie,0.048034934497816595,22,22,17
+1991,unique_song,Country,0.0021834061135371178,1,1,1
+1991,unique_song,Electronic / Dance,0.11790393013100436,54,54,36
+1991,unique_song,Folk / Singer-Songwriter,0.0021834061135371178,1,1,1
+1991,unique_song,Gospel / Christian,0.0043668122270742356,2,2,2
+1991,unique_song,Hip-Hop / Rap,0.1222707423580786,56,56,39
+1991,unique_song,Jazz / Blues,0.0087336244541484712,4,4,3
+1991,unique_song,K-Pop,0,0,0,0
+1991,unique_song,Latin,0.0043668122270742356,2,2,2
+1991,unique_song,Metal,0.026200873362445413,12,12,11
+1991,unique_song,Other,0.015283842794759825,7,7,5
+1991,unique_song,Pop,0.23362445414847161,107,107,83
+1991,unique_song,R&B / Soul,0.18558951965065501,85,85,64
+1991,unique_song,Reggae / Dancehall,0.013100436681222707,6,6,4
+1991,unique_song,Rock,0.21615720524017468,99,99,80
+1992,song_month,Afrobeats / African Pop,0,0,0,0
+1992,song_month,Alternative / Indie,0.047500000000000001,57,20,45
+1992,song_month,Country,0.013333333333333334,16,5,14
+1992,song_month,Electronic / Dance,0.099166666666666667,119,41,84
+1992,song_month,Folk / Singer-Songwriter,0,0,0,0
+1992,song_month,Gospel / Christian,0.0050000000000000001,6,2,5
+1992,song_month,Hip-Hop / Rap,0.14583333333333334,175,68,101
+1992,song_month,Jazz / Blues,0.0033333333333333335,4,2,0
+1992,song_month,K-Pop,0,0,0,0
+1992,song_month,Latin,0.00083333333333333339,1,1,1
+1992,song_month,Metal,0.022499999999999999,27,13,27
+1992,song_month,Other,0.010833333333333334,13,6,11
+1992,song_month,Pop,0.19333333333333333,232,81,189
+1992,song_month,R&B / Soul,0.27083333333333331,325,105,226
+1992,song_month,Reggae / Dancehall,0.010833333333333334,13,5,8
+1992,song_month,Rock,0.17666666666666667,212,74,190
+1992,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1992,rank_weighted,Alternative / Indie,0.047293729372937292,2866,20,2377
+1992,rank_weighted,Country,0.012359735973597359,749,5,717
+1992,rank_weighted,Electronic / Dance,0.079933993399339931,4844,41,3633
+1992,rank_weighted,Folk / Singer-Songwriter,0,0,0,0
+1992,rank_weighted,Gospel / Christian,0.0053630363036303629,325,2,321
+1992,rank_weighted,Hip-Hop / Rap,0.123003300330033,7454,68,4306
+1992,rank_weighted,Jazz / Blues,0.0017821782178217822,108,2,0
+1992,rank_weighted,K-Pop,0,0,0,0
+1992,rank_weighted,Latin,0.0012706270627062706,77,1,77
+1992,rank_weighted,Metal,0.011732673267326733,711,13,711
+1992,rank_weighted,Other,0.0059075907590759079,358,6,294
+1992,rank_weighted,Pop,0.21310231023102311,12914,81,10838
+1992,rank_weighted,R&B / Soul,0.29455445544554454,17850,105,12569
+1992,rank_weighted,Reggae / Dancehall,0.009818481848184818,595,5,397
+1992,rank_weighted,Rock,0.19387788778877887,11749,74,10581
+1992,unique_song,Afrobeats / African Pop,0,0,0,0
+1992,unique_song,Alternative / Indie,0.047281323877068557,20,20,15
+1992,unique_song,Country,0.011820330969267139,5,5,4
+1992,unique_song,Electronic / Dance,0.096926713947990545,41,41,26
+1992,unique_song,Folk / Singer-Songwriter,0,0,0,0
+1992,unique_song,Gospel / Christian,0.0047281323877068557,2,2,1
+1992,unique_song,Hip-Hop / Rap,0.16075650118203311,68,68,42
+1992,unique_song,Jazz / Blues,0.0047281323877068557,2,2,0
+1992,unique_song,K-Pop,0,0,0,0
+1992,unique_song,Latin,0.0023640661938534278,1,1,1
+1992,unique_song,Metal,0.030732860520094562,13,13,13
+1992,unique_song,Other,0.014184397163120567,6,6,4
+1992,unique_song,Pop,0.19148936170212766,81,81,64
+1992,unique_song,R&B / Soul,0.24822695035460993,105,105,72
+1992,unique_song,Reggae / Dancehall,0.011820330969267139,5,5,3
+1992,unique_song,Rock,0.17494089834515367,74,74,67
+1993,song_month,Afrobeats / African Pop,0,0,0,0
+1993,song_month,Alternative / Indie,0.061666666666666668,74,25,67
+1993,song_month,Country,0.036666666666666667,44,19,44
+1993,song_month,Electronic / Dance,0.066666666666666666,80,27,66
+1993,song_month,Folk / Singer-Songwriter,0,0,0,0
+1993,song_month,Gospel / Christian,0.0016666666666666668,2,1,2
+1993,song_month,Hip-Hop / Rap,0.20083333333333334,241,82,170
+1993,song_month,Jazz / Blues,0.0083333333333333332,10,3,0
+1993,song_month,K-Pop,0,0,0,0
+1993,song_month,Latin,0,0,0,0
+1993,song_month,Metal,0.0041666666666666666,5,1,5
+1993,song_month,Other,0.0066666666666666671,8,5,4
+1993,song_month,Pop,0.1875,225,71,184
+1993,song_month,R&B / Soul,0.28666666666666668,344,108,198
+1993,song_month,Reggae / Dancehall,0.039166666666666669,47,13,30
+1993,song_month,Rock,0.10000000000000001,120,50,103
+1993,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1993,rank_weighted,Alternative / Indie,0.061864686468646866,3749,25,3464
+1993,rank_weighted,Country,0.020214521452145213,1225,19,1225
+1993,rank_weighted,Electronic / Dance,0.05184818481848185,3142,27,2822
+1993,rank_weighted,Folk / Singer-Songwriter,0,0,0,0
+1993,rank_weighted,Gospel / Christian,0.00062706270627062711,38,1,38
+1993,rank_weighted,Hip-Hop / Rap,0.19333333333333333,11716,82,8464
+1993,rank_weighted,Jazz / Blues,0.008696369636963696,527,3,0
+1993,rank_weighted,K-Pop,0,0,0,0
+1993,rank_weighted,Latin,0,0,0,0
+1993,rank_weighted,Metal,0.0046864686468646869,284,1,284
+1993,rank_weighted,Other,0.0018976897689768977,115,5,50
+1993,rank_weighted,Pop,0.21262376237623762,12885,71,10717
+1993,rank_weighted,R&B / Soul,0.30409240924092407,18428,108,10949
+1993,rank_weighted,Reggae / Dancehall,0.042310231023102308,2564,13,1368
+1993,rank_weighted,Rock,0.097805280528052804,5927,50,5083
+1993,unique_song,Afrobeats / African Pop,0,0,0,0
+1993,unique_song,Alternative / Indie,0.061728395061728392,25,25,22
+1993,unique_song,Country,0.046913580246913583,19,19,19
+1993,unique_song,Electronic / Dance,0.066666666666666666,27,27,20
+1993,unique_song,Folk / Singer-Songwriter,0,0,0,0
+1993,unique_song,Gospel / Christian,0.0024691358024691358,1,1,1
+1993,unique_song,Hip-Hop / Rap,0.20246913580246914,82,82,54
+1993,unique_song,Jazz / Blues,0.0074074074074074077,3,3,0
+1993,unique_song,K-Pop,0,0,0,0
+1993,unique_song,Latin,0,0,0,0
+1993,unique_song,Metal,0.0024691358024691358,1,1,1
+1993,unique_song,Other,0.012345679012345678,5,5,2
+1993,unique_song,Pop,0.17530864197530865,71,71,59
+1993,unique_song,R&B / Soul,0.26666666666666666,108,108,61
+1993,unique_song,Reggae / Dancehall,0.032098765432098768,13,13,9
+1993,unique_song,Rock,0.12345679012345678,50,50,43
+1994,song_month,Afrobeats / African Pop,0.00083333333333333339,1,1,1
+1994,song_month,Alternative / Indie,0.11333333333333333,136,40,117
+1994,song_month,Country,0.035833333333333335,43,21,39
+1994,song_month,Electronic / Dance,0.070833333333333331,85,29,69
+1994,song_month,Folk / Singer-Songwriter,0,0,0,0
+1994,song_month,Gospel / Christian,0,0,0,0
+1994,song_month,Hip-Hop / Rap,0.20583333333333334,247,86,149
+1994,song_month,Jazz / Blues,0.0058333333333333336,7,3,6
+1994,song_month,K-Pop,0,0,0,0
+1994,song_month,Latin,0.0016666666666666668,2,1,2
+1994,song_month,Metal,0.0033333333333333335,4,2,4
+1994,song_month,Other,0.0091666666666666667,11,5,4
+1994,song_month,Pop,0.14833333333333334,178,50,146
+1994,song_month,R&B / Soul,0.25416666666666665,305,100,212
+1994,song_month,Reggae / Dancehall,0.037499999999999999,45,15,26
+1994,song_month,Rock,0.11333333333333333,136,48,120
+1994,rank_weighted,Afrobeats / African Pop,1.65016501650165e-05,1,1,1
+1994,rank_weighted,Alternative / Indie,0.10452145214521452,6334,40,5358
+1994,rank_weighted,Country,0.01844884488448845,1118,21,1088
+1994,rank_weighted,Electronic / Dance,0.063630363036303636,3856,29,3378
+1994,rank_weighted,Folk / Singer-Songwriter,0,0,0,0
+1994,rank_weighted,Gospel / Christian,0,0,0,0
+1994,rank_weighted,Hip-Hop / Rap,0.18821782178217822,11406,86,7041
+1994,rank_weighted,Jazz / Blues,0.0029207920792079208,177,3,158
+1994,rank_weighted,K-Pop,0,0,0,0
+1994,rank_weighted,Latin,0.00094059405940594056,57,1,57
+1994,rank_weighted,Metal,0.0020792079207920793,126,2,126
+1994,rank_weighted,Other,0.0031848184818481849,193,5,56
+1994,rank_weighted,Pop,0.19198019801980198,11634,50,9581
+1994,rank_weighted,R&B / Soul,0.27825082508250826,16862,100,11831
+1994,rank_weighted,Reggae / Dancehall,0.03367986798679868,2041,15,1158
+1994,rank_weighted,Rock,0.11212871287128713,6795,48,5981
+1994,unique_song,Afrobeats / African Pop,0.0024937655860349127,1,1,1
+1994,unique_song,Alternative / Indie,0.099750623441396513,40,40,34
+1994,unique_song,Country,0.052369077306733167,21,21,19
+1994,unique_song,Electronic / Dance,0.072319201995012475,29,29,23
+1994,unique_song,Folk / Singer-Songwriter,0,0,0,0
+1994,unique_song,Gospel / Christian,0,0,0,0
+1994,unique_song,Hip-Hop / Rap,0.21446384039900249,86,86,53
+1994,unique_song,Jazz / Blues,0.007481296758104738,3,3,2
+1994,unique_song,K-Pop,0,0,0,0
+1994,unique_song,Latin,0.0024937655860349127,1,1,1
+1994,unique_song,Metal,0.0049875311720698253,2,2,2
+1994,unique_song,Other,0.012468827930174564,5,5,2
+1994,unique_song,Pop,0.12468827930174564,50,50,42
+1994,unique_song,R&B / Soul,0.24937655860349128,100,100,68
+1994,unique_song,Reggae / Dancehall,0.037406483790523692,15,15,8
+1994,unique_song,Rock,0.11970074812967581,48,48,40
+1995,song_month,Afrobeats / African Pop,0,0,0,0
+1995,song_month,Alternative / Indie,0.087499999999999994,105,42,81
+1995,song_month,Country,0.022499999999999999,27,12,18
+1995,song_month,Electronic / Dance,0.10166666666666667,122,37,96
+1995,song_month,Folk / Singer-Songwriter,0.0033333333333333335,4,2,4
+1995,song_month,Gospel / Christian,0,0,0,0
+1995,song_month,Hip-Hop / Rap,0.19666666666666666,236,90,132
+1995,song_month,Jazz / Blues,0.0016666666666666668,2,1,2
+1995,song_month,K-Pop,0,0,0,0
+1995,song_month,Latin,0.011666666666666667,14,4,6
+1995,song_month,Metal,0,0,0,0
+1995,song_month,Other,0.0083333333333333332,10,4,1
+1995,song_month,Pop,0.115,138,39,112
+1995,song_month,R&B / Soul,0.29666666666666669,356,115,222
+1995,song_month,Reggae / Dancehall,0.030833333333333334,37,12,12
+1995,song_month,Rock,0.12416666666666666,149,45,126
+1995,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1995,rank_weighted,Alternative / Indie,0.076105610561056108,4612,42,3621
+1995,rank_weighted,Country,0.012277227722772278,744,12,507
+1995,rank_weighted,Electronic / Dance,0.089273927392739275,5410,37,4491
+1995,rank_weighted,Folk / Singer-Songwriter,0.0019141914191419141,116,2,116
+1995,rank_weighted,Gospel / Christian,0,0,0,0
+1995,rank_weighted,Hip-Hop / Rap,0.15745874587458747,9542,90,4607
+1995,rank_weighted,Jazz / Blues,0.00070957095709570962,43,1,43
+1995,rank_weighted,K-Pop,0,0,0,0
+1995,rank_weighted,Latin,0.011336633663366336,687,4,395
+1995,rank_weighted,Metal,0,0,0,0
+1995,rank_weighted,Other,0.004570957095709571,277,4,1
+1995,rank_weighted,Pop,0.14397689768976898,8725,39,7059
+1995,rank_weighted,R&B / Soul,0.32815181518151815,19886,115,13383
+1995,rank_weighted,Reggae / Dancehall,0.027623762376237624,1674,12,270
+1995,rank_weighted,Rock,0.14660066006600661,8884,45,7751
+1995,unique_song,Afrobeats / African Pop,0,0,0,0
+1995,unique_song,Alternative / Indie,0.10421836228287841,42,42,33
+1995,unique_song,Country,0.029776674937965261,12,12,9
+1995,unique_song,Electronic / Dance,0.091811414392059559,37,37,29
+1995,unique_song,Folk / Singer-Songwriter,0.0049627791563275434,2,2,2
+1995,unique_song,Gospel / Christian,0,0,0,0
+1995,unique_song,Hip-Hop / Rap,0.22332506203473945,90,90,56
+1995,unique_song,Jazz / Blues,0.0024813895781637717,1,1,1
+1995,unique_song,K-Pop,0,0,0,0
+1995,unique_song,Latin,0.0099255583126550868,4,4,2
+1995,unique_song,Metal,0,0,0,0
+1995,unique_song,Other,0.0099255583126550868,4,4,1
+1995,unique_song,Pop,0.096774193548387094,39,39,31
+1995,unique_song,R&B / Soul,0.28535980148883372,115,115,71
+1995,unique_song,Reggae / Dancehall,0.029776674937965261,12,12,5
+1995,unique_song,Rock,0.11166253101736973,45,45,35
+1996,song_month,Afrobeats / African Pop,0,0,0,0
+1996,song_month,Alternative / Indie,0.14249999999999999,171,51,133
+1996,song_month,Country,0.022499999999999999,27,12,23
+1996,song_month,Electronic / Dance,0.1075,129,35,97
+1996,song_month,Folk / Singer-Songwriter,0.015833333333333335,19,4,17
+1996,song_month,Gospel / Christian,0.0050000000000000001,6,2,6
+1996,song_month,Hip-Hop / Rap,0.17249999999999999,207,80,99
+1996,song_month,Jazz / Blues,0.0016666666666666668,2,1,0
+1996,song_month,K-Pop,0,0,0,0
+1996,song_month,Latin,0.025833333333333333,31,11,19
+1996,song_month,Metal,0.0050000000000000001,6,2,6
+1996,song_month,Other,0.0041666666666666666,5,2,3
+1996,song_month,Pop,0.1075,129,39,84
+1996,song_month,R&B / Soul,0.30166666666666669,362,115,222
+1996,song_month,Reggae / Dancehall,0.0091666666666666667,11,4,2
+1996,song_month,Rock,0.079166666666666663,95,30,73
+1996,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1996,rank_weighted,Alternative / Indie,0.15070957095709572,9133,51,7015
+1996,rank_weighted,Country,0.0095544554455445543,579,12,524
+1996,rank_weighted,Electronic / Dance,0.099851485148514857,6051,35,4884
+1996,rank_weighted,Folk / Singer-Songwriter,0.022673267326732673,1374,4,1266
+1996,rank_weighted,Gospel / Christian,0.0055280528052805283,335,2,335
+1996,rank_weighted,Hip-Hop / Rap,0.14551155115511552,8818,80,4490
+1996,rank_weighted,Jazz / Blues,0.0011386138613861385,69,1,0
+1996,rank_weighted,K-Pop,0,0,0,0
+1996,rank_weighted,Latin,0.025924092409240925,1571,11,770
+1996,rank_weighted,Metal,0.0042574257425742577,258,2,258
+1996,rank_weighted,Other,0.0014026402640264027,85,2,46
+1996,rank_weighted,Pop,0.11658415841584159,7065,39,3948
+1996,rank_weighted,R&B / Soul,0.32640264026402638,19780,115,12714
+1996,rank_weighted,Reggae / Dancehall,0.0067326732673267326,408,4,53
+1996,rank_weighted,Rock,0.083729372937293725,5074,30,4181
+1996,unique_song,Afrobeats / African Pop,0,0,0,0
+1996,unique_song,Alternative / Indie,0.13144329896907217,51,51,40
+1996,unique_song,Country,0.030927835051546393,12,12,10
+1996,unique_song,Electronic / Dance,0.090206185567010308,35,35,25
+1996,unique_song,Folk / Singer-Songwriter,0.010309278350515464,4,4,3
+1996,unique_song,Gospel / Christian,0.0051546391752577319,2,2,2
+1996,unique_song,Hip-Hop / Rap,0.20618556701030927,80,80,37
+1996,unique_song,Jazz / Blues,0.0025773195876288659,1,1,0
+1996,unique_song,K-Pop,0,0,0,0
+1996,unique_song,Latin,0.028350515463917526,11,11,8
+1996,unique_song,Metal,0.0051546391752577319,2,2,2
+1996,unique_song,Other,0.0051546391752577319,2,2,1
+1996,unique_song,Pop,0.10051546391752578,39,39,27
+1996,unique_song,R&B / Soul,0.29639175257731959,115,115,71
+1996,unique_song,Reggae / Dancehall,0.010309278350515464,4,4,1
+1996,unique_song,Rock,0.077319587628865982,30,30,23
+1997,song_month,Afrobeats / African Pop,0,0,0,0
+1997,song_month,Alternative / Indie,0.094166666666666662,113,33,103
+1997,song_month,Country,0.044999999999999998,54,24,43
+1997,song_month,Electronic / Dance,0.11083333333333334,133,45,112
+1997,song_month,Folk / Singer-Songwriter,0.014999999999999999,18,2,6
+1997,song_month,Gospel / Christian,0.0066666666666666671,8,3,4
+1997,song_month,Hip-Hop / Rap,0.19500000000000001,234,84,136
+1997,song_month,Jazz / Blues,0.0074999999999999997,9,5,3
+1997,song_month,K-Pop,0,0,0,0
+1997,song_month,Latin,0.010833333333333334,13,4,12
+1997,song_month,Metal,0.0041666666666666666,5,3,5
+1997,song_month,Other,0.010833333333333334,13,4,5
+1997,song_month,Pop,0.14166666666666666,170,56,137
+1997,song_month,R&B / Soul,0.30583333333333335,367,117,252
+1997,song_month,Reggae / Dancehall,0.0058333333333333336,7,4,5
+1997,song_month,Rock,0.046666666666666669,56,18,50
+1997,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1997,rank_weighted,Alternative / Indie,0.097706270627062705,5921,33,5606
+1997,rank_weighted,Country,0.038646864686468649,2342,24,1935
+1997,rank_weighted,Electronic / Dance,0.082607260726072607,5006,45,4173
+1997,rank_weighted,Folk / Singer-Songwriter,0.02542904290429043,1541,2,462
+1997,rank_weighted,Gospel / Christian,0.0047359735973597356,287,3,114
+1997,rank_weighted,Hip-Hop / Rap,0.18039603960396039,10932,84,6808
+1997,rank_weighted,Jazz / Blues,0.0025907590759075907,157,5,34
+1997,rank_weighted,K-Pop,0,0,0,0
+1997,rank_weighted,Latin,0.010775577557755775,653,4,586
+1997,rank_weighted,Metal,0.0029207920792079208,177,3,177
+1997,rank_weighted,Other,0.0065511551155115512,397,4,174
+1997,rank_weighted,Pop,0.1653960396039604,10023,56,7838
+1997,rank_weighted,R&B / Soul,0.33051155115511549,20029,117,14511
+1997,rank_weighted,Reggae / Dancehall,0.0021287128712871289,129,4,124
+1997,rank_weighted,Rock,0.049603960396039606,3006,18,2811
+1997,unique_song,Afrobeats / African Pop,0,0,0,0
+1997,unique_song,Alternative / Indie,0.082089552238805971,33,33,29
+1997,unique_song,Country,0.059701492537313432,24,24,21
+1997,unique_song,Electronic / Dance,0.11194029850746269,45,45,37
+1997,unique_song,Folk / Singer-Songwriter,0.0049751243781094526,2,2,1
+1997,unique_song,Gospel / Christian,0.007462686567164179,3,3,2
+1997,unique_song,Hip-Hop / Rap,0.20895522388059701,84,84,47
+1997,unique_song,Jazz / Blues,0.012437810945273632,5,5,2
+1997,unique_song,K-Pop,0,0,0,0
+1997,unique_song,Latin,0.0099502487562189053,4,4,3
+1997,unique_song,Metal,0.007462686567164179,3,3,3
+1997,unique_song,Other,0.0099502487562189053,4,4,1
+1997,unique_song,Pop,0.13930348258706468,56,56,46
+1997,unique_song,R&B / Soul,0.29104477611940299,117,117,76
+1997,unique_song,Reggae / Dancehall,0.0099502487562189053,4,4,2
+1997,unique_song,Rock,0.044776119402985072,18,18,16
+1998,song_month,Afrobeats / African Pop,0,0,0,0
+1998,song_month,Alternative / Indie,0.077499999999999999,93,39,79
+1998,song_month,Country,0.11916666666666667,143,59,123
+1998,song_month,Electronic / Dance,0.054166666666666669,65,25,57
+1998,song_month,Folk / Singer-Songwriter,0.0091666666666666667,11,4,10
+1998,song_month,Gospel / Christian,0.0025000000000000001,3,3,2
+1998,song_month,Hip-Hop / Rap,0.21833333333333332,262,88,108
+1998,song_month,Jazz / Blues,0.0016666666666666668,2,1,2
+1998,song_month,K-Pop,0,0,0,0
+1998,song_month,Latin,0.011666666666666667,14,5,14
+1998,song_month,Metal,0.0025000000000000001,3,1,3
+1998,song_month,Other,0.02,24,10,6
+1998,song_month,Pop,0.16166666666666665,194,62,149
+1998,song_month,R&B / Soul,0.28333333333333333,340,107,252
+1998,song_month,Reggae / Dancehall,0.01,12,6,11
+1998,song_month,Rock,0.028333333333333332,34,13,34
+1998,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1998,rank_weighted,Alternative / Indie,0.071056105610561054,4306,39,3927
+1998,rank_weighted,Country,0.092524752475247524,5607,59,4565
+1998,rank_weighted,Electronic / Dance,0.040231023102310234,2438,25,2262
+1998,rank_weighted,Folk / Singer-Songwriter,0.0089603960396039597,543,4,475
+1998,rank_weighted,Gospel / Christian,0.00095709570957095704,58,3,49
+1998,rank_weighted,Hip-Hop / Rap,0.2196864686468647,13313,88,6134
+1998,rank_weighted,Jazz / Blues,0.00036303630363036305,22,1,22
+1998,rank_weighted,K-Pop,0,0,0,0
+1998,rank_weighted,Latin,0.0083003300330032996,503,5,503
+1998,rank_weighted,Metal,0.0015511551155115511,94,1,94
+1998,rank_weighted,Other,0.0075907590759075909,460,10,111
+1998,rank_weighted,Pop,0.18991749174917491,11509,62,9008
+1998,rank_weighted,R&B / Soul,0.32458745874587458,19670,107,14941
+1998,rank_weighted,Reggae / Dancehall,0.0055610561056105611,337,6,319
+1998,rank_weighted,Rock,0.028712871287128714,1740,13,1740
+1998,unique_song,Afrobeats / African Pop,0,0,0,0
+1998,unique_song,Alternative / Indie,0.092198581560283682,39,39,33
+1998,unique_song,Country,0.13947990543735225,59,59,54
+1998,unique_song,Electronic / Dance,0.059101654846335699,25,25,20
+1998,unique_song,Folk / Singer-Songwriter,0.0094562647754137114,4,4,3
+1998,unique_song,Gospel / Christian,0.0070921985815602835,3,3,2
+1998,unique_song,Hip-Hop / Rap,0.20803782505910165,88,88,37
+1998,unique_song,Jazz / Blues,0.0023640661938534278,1,1,1
+1998,unique_song,K-Pop,0,0,0,0
+1998,unique_song,Latin,0.011820330969267139,5,5,5
+1998,unique_song,Metal,0.0023640661938534278,1,1,1
+1998,unique_song,Other,0.023640661938534278,10,10,2
+1998,unique_song,Pop,0.14657210401891252,62,62,48
+1998,unique_song,R&B / Soul,0.25295508274231676,107,107,80
+1998,unique_song,Reggae / Dancehall,0.014184397163120567,6,6,5
+1998,unique_song,Rock,0.030732860520094562,13,13,13
+1999,song_month,Afrobeats / African Pop,0,0,0,0
+1999,song_month,Alternative / Indie,0.096666666666666665,116,34,114
+1999,song_month,Country,0.23583333333333334,283,99,265
+1999,song_month,Electronic / Dance,0.028333333333333332,34,11,28
+1999,song_month,Folk / Singer-Songwriter,0.0041666666666666666,5,1,5
+1999,song_month,Gospel / Christian,0,0,0,0
+1999,song_month,Hip-Hop / Rap,0.13833333333333334,166,55,76
+1999,song_month,Jazz / Blues,0.00083333333333333339,1,1,0
+1999,song_month,K-Pop,0,0,0,0
+1999,song_month,Latin,0.024166666666666666,29,8,27
+1999,song_month,Metal,0.010833333333333334,13,5,12
+1999,song_month,Other,0.0016666666666666668,2,1,2
+1999,song_month,Pop,0.13250000000000001,159,50,128
+1999,song_month,R&B / Soul,0.24583333333333332,295,94,227
+1999,song_month,Reggae / Dancehall,0.0050000000000000001,6,2,3
+1999,song_month,Rock,0.075833333333333336,91,27,88
+1999,rank_weighted,Afrobeats / African Pop,0,0,0,0
+1999,rank_weighted,Alternative / Indie,0.10881188118811881,6594,34,6565
+1999,rank_weighted,Country,0.18427392739273926,11167,99,10411
+1999,rank_weighted,Electronic / Dance,0.026089108910891088,1581,11,1518
+1999,rank_weighted,Folk / Singer-Songwriter,0.0056435643564356434,342,1,342
+1999,rank_weighted,Gospel / Christian,0,0,0,0
+1999,rank_weighted,Hip-Hop / Rap,0.12009900990099009,7278,55,3692
+1999,rank_weighted,Jazz / Blues,0.00019801980198019803,12,1,0
+1999,rank_weighted,K-Pop,0,0,0,0
+1999,rank_weighted,Latin,0.033762376237623765,2046,8,1949
+1999,rank_weighted,Metal,0.0049669966996699674,301,5,278
+1999,rank_weighted,Other,0.0015676567656765677,95,1,95
+1999,rank_weighted,Pop,0.16801980198019803,10182,50,8088
+1999,rank_weighted,R&B / Soul,0.27171617161716172,16466,94,13094
+1999,rank_weighted,Reggae / Dancehall,0.0010726072607260726,65,2,30
+1999,rank_weighted,Rock,0.07377887788778878,4471,27,4275
+1999,unique_song,Afrobeats / African Pop,0,0,0,0
+1999,unique_song,Alternative / Indie,0.087628865979381437,34,34,32
+1999,unique_song,Country,0.25515463917525771,99,99,91
+1999,unique_song,Electronic / Dance,0.028350515463917526,11,11,10
+1999,unique_song,Folk / Singer-Songwriter,0.0025773195876288659,1,1,1
+1999,unique_song,Gospel / Christian,0,0,0,0
+1999,unique_song,Hip-Hop / Rap,0.14175257731958762,55,55,27
+1999,unique_song,Jazz / Blues,0.0025773195876288659,1,1,0
+1999,unique_song,K-Pop,0,0,0,0
+1999,unique_song,Latin,0.020618556701030927,8,8,7
+1999,unique_song,Metal,0.012886597938144329,5,5,4
+1999,unique_song,Other,0.0025773195876288659,1,1,1
+1999,unique_song,Pop,0.12886597938144329,50,50,40
+1999,unique_song,R&B / Soul,0.2422680412371134,94,94,72
+1999,unique_song,Reggae / Dancehall,0.0051546391752577319,2,2,1
+1999,unique_song,Rock,0.069587628865979384,27,27,26
+2000,song_month,Afrobeats / African Pop,0,0,0,0
+2000,song_month,Alternative / Indie,0.078333333333333338,94,25,81
+2000,song_month,Country,0.23416666666666666,281,88,246
+2000,song_month,Electronic / Dance,0.019166666666666665,23,8,21
+2000,song_month,Folk / Singer-Songwriter,0.00083333333333333339,1,1,1
+2000,song_month,Gospel / Christian,0.0091666666666666667,11,3,11
+2000,song_month,Hip-Hop / Rap,0.14000000000000001,168,64,107
+2000,song_month,Jazz / Blues,0,0,0,0
+2000,song_month,K-Pop,0,0,0,0
+2000,song_month,Latin,0.040833333333333333,49,12,47
+2000,song_month,Metal,0.015833333333333335,19,7,18
+2000,song_month,Other,0.0025000000000000001,3,2,2
+2000,song_month,Pop,0.16250000000000001,195,59,153
+2000,song_month,R&B / Soul,0.2175,261,82,201
+2000,song_month,Reggae / Dancehall,0.0091666666666666667,11,4,8
+2000,song_month,Rock,0.070000000000000007,84,21,81
+2000,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2000,rank_weighted,Alternative / Indie,0.08334983498349835,5051,25,4705
+2000,rank_weighted,Country,0.19229372937293729,11653,88,9801
+2000,rank_weighted,Electronic / Dance,0.019966996699669969,1210,8,1107
+2000,rank_weighted,Folk / Singer-Songwriter,0.00062706270627062711,38,1,38
+2000,rank_weighted,Gospel / Christian,0.0066171617161716175,401,3,401
+2000,rank_weighted,Hip-Hop / Rap,0.11433993399339934,6929,64,4849
+2000,rank_weighted,Jazz / Blues,0,0,0,0
+2000,rank_weighted,K-Pop,0,0,0,0
+2000,rank_weighted,Latin,0.047227722772277228,2862,12,2797
+2000,rank_weighted,Metal,0.0061386138613861389,372,7,361
+2000,rank_weighted,Other,0.00051155115511551154,31,2,28
+2000,rank_weighted,Pop,0.19759075907590759,11974,59,9502
+2000,rank_weighted,R&B / Soul,0.23757425742574256,14397,82,11315
+2000,rank_weighted,Reggae / Dancehall,0.0077722772277227722,471,4,387
+2000,rank_weighted,Rock,0.085990099009900983,5211,21,5007
+2000,unique_song,Afrobeats / African Pop,0,0,0,0
+2000,unique_song,Alternative / Indie,0.066489361702127658,25,25,22
+2000,unique_song,Country,0.23404255319148937,88,88,80
+2000,unique_song,Electronic / Dance,0.021276595744680851,8,8,7
+2000,unique_song,Folk / Singer-Songwriter,0.0026595744680851063,1,1,1
+2000,unique_song,Gospel / Christian,0.0079787234042553185,3,3,3
+2000,unique_song,Hip-Hop / Rap,0.1702127659574468,64,64,36
+2000,unique_song,Jazz / Blues,0,0,0,0
+2000,unique_song,K-Pop,0,0,0,0
+2000,unique_song,Latin,0.031914893617021274,12,12,11
+2000,unique_song,Metal,0.018617021276595744,7,7,6
+2000,unique_song,Other,0.0053191489361702126,2,2,1
+2000,unique_song,Pop,0.15691489361702127,59,59,48
+2000,unique_song,R&B / Soul,0.21808510638297873,82,82,61
+2000,unique_song,Reggae / Dancehall,0.010638297872340425,4,4,3
+2000,unique_song,Rock,0.055851063829787231,21,21,20
+2001,song_month,Afrobeats / African Pop,0,0,0,0
+2001,song_month,Alternative / Indie,0.069166666666666668,83,18,78
+2001,song_month,Country,0.20250000000000001,243,75,218
+2001,song_month,Electronic / Dance,0.029166666666666667,35,11,31
+2001,song_month,Folk / Singer-Songwriter,0.0025000000000000001,3,1,3
+2001,song_month,Gospel / Christian,0,0,0,0
+2001,song_month,Hip-Hop / Rap,0.17166666666666666,206,77,142
+2001,song_month,Jazz / Blues,0,0,0,0
+2001,song_month,K-Pop,0,0,0,0
+2001,song_month,Latin,0.0074999999999999997,9,4,9
+2001,song_month,Metal,0.018333333333333333,22,6,22
+2001,song_month,Other,0.0091666666666666667,11,3,10
+2001,song_month,Pop,0.14416666666666667,173,55,140
+2001,song_month,R&B / Soul,0.255,306,86,219
+2001,song_month,Reggae / Dancehall,0.0083333333333333332,10,3,9
+2001,song_month,Rock,0.082500000000000004,99,27,94
+2001,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2001,rank_weighted,Alternative / Indie,0.076386138613861385,4629,18,4532
+2001,rank_weighted,Country,0.17140264026402641,10387,75,9451
+2001,rank_weighted,Electronic / Dance,0.01844884488448845,1118,11,1072
+2001,rank_weighted,Folk / Singer-Songwriter,0.0012541254125412542,76,1,76
+2001,rank_weighted,Gospel / Christian,0,0,0,0
+2001,rank_weighted,Hip-Hop / Rap,0.15666666666666668,9494,77,7215
+2001,rank_weighted,Jazz / Blues,0,0,0,0
+2001,rank_weighted,K-Pop,0,0,0,0
+2001,rank_weighted,Latin,0.0046039603960396037,279,4,279
+2001,rank_weighted,Metal,0.012656765676567656,767,6,767
+2001,rank_weighted,Other,0.010132013201320131,614,3,612
+2001,rank_weighted,Pop,0.16696369636963695,10118,55,8712
+2001,rank_weighted,R&B / Soul,0.27646864686468647,16754,86,13268
+2001,rank_weighted,Reggae / Dancehall,0.013135313531353136,796,3,790
+2001,rank_weighted,Rock,0.09188118811881188,5568,27,5439
+2001,unique_song,Afrobeats / African Pop,0,0,0,0
+2001,unique_song,Alternative / Indie,0.049180327868852458,18,18,17
+2001,unique_song,Country,0.20491803278688525,75,75,67
+2001,unique_song,Electronic / Dance,0.030054644808743168,11,11,9
+2001,unique_song,Folk / Singer-Songwriter,0.0027322404371584699,1,1,1
+2001,unique_song,Gospel / Christian,0,0,0,0
+2001,unique_song,Hip-Hop / Rap,0.2103825136612022,77,77,48
+2001,unique_song,Jazz / Blues,0,0,0,0
+2001,unique_song,K-Pop,0,0,0,0
+2001,unique_song,Latin,0.01092896174863388,4,4,4
+2001,unique_song,Metal,0.016393442622950821,6,6,6
+2001,unique_song,Other,0.0081967213114754103,3,3,2
+2001,unique_song,Pop,0.15027322404371585,55,55,43
+2001,unique_song,R&B / Soul,0.23497267759562843,86,86,58
+2001,unique_song,Reggae / Dancehall,0.0081967213114754103,3,3,2
+2001,unique_song,Rock,0.073770491803278687,27,27,26
+2002,song_month,Afrobeats / African Pop,0,0,0,0
+2002,song_month,Alternative / Indie,0.065000000000000002,78,24,78
+2002,song_month,Country,0.19,228,70,213
+2002,song_month,Electronic / Dance,0.029999999999999999,36,12,33
+2002,song_month,Folk / Singer-Songwriter,0.0025000000000000001,3,1,3
+2002,song_month,Gospel / Christian,0,0,0,0
+2002,song_month,Hip-Hop / Rap,0.23000000000000001,276,89,154
+2002,song_month,Jazz / Blues,0.0033333333333333335,4,1,4
+2002,song_month,K-Pop,0,0,0,0
+2002,song_month,Latin,0.018333333333333333,22,8,17
+2002,song_month,Metal,0.026666666666666668,32,9,32
+2002,song_month,Other,0.00083333333333333339,1,1,1
+2002,song_month,Pop,0.099166666666666667,119,36,93
+2002,song_month,R&B / Soul,0.22,264,88,196
+2002,song_month,Reggae / Dancehall,0.016666666666666666,20,4,18
+2002,song_month,Rock,0.097500000000000003,117,36,114
+2002,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2002,rank_weighted,Alternative / Indie,0.066072607260726071,4004,24,4004
+2002,rank_weighted,Country,0.16270627062706269,9860,70,9220
+2002,rank_weighted,Electronic / Dance,0.030247524752475247,1833,12,1774
+2002,rank_weighted,Folk / Singer-Songwriter,0.0011386138613861385,69,1,69
+2002,rank_weighted,Gospel / Christian,0,0,0,0
+2002,rank_weighted,Hip-Hop / Rap,0.23600660066006601,14302,89,8486
+2002,rank_weighted,Jazz / Blues,0.0022607260726072607,137,1,137
+2002,rank_weighted,K-Pop,0,0,0,0
+2002,rank_weighted,Latin,0.01400990099009901,849,8,690
+2002,rank_weighted,Metal,0.014768976897689769,895,9,895
+2002,rank_weighted,Other,0.0010891089108910892,66,1,66
+2002,rank_weighted,Pop,0.1316006600660066,7975,36,6036
+2002,rank_weighted,R&B / Soul,0.21351485148514851,12939,88,10042
+2002,rank_weighted,Reggae / Dancehall,0.01466996699669967,889,4,788
+2002,rank_weighted,Rock,0.11191419141914191,6782,36,6730
+2002,unique_song,Afrobeats / African Pop,0,0,0,0
+2002,unique_song,Alternative / Indie,0.063324538258575203,24,24,24
+2002,unique_song,Country,0.18469656992084432,70,70,65
+2002,unique_song,Electronic / Dance,0.031662269129287601,12,12,10
+2002,unique_song,Folk / Singer-Songwriter,0.0026385224274406332,1,1,1
+2002,unique_song,Gospel / Christian,0,0,0,0
+2002,unique_song,Hip-Hop / Rap,0.23482849604221637,89,89,51
+2002,unique_song,Jazz / Blues,0.0026385224274406332,1,1,1
+2002,unique_song,K-Pop,0,0,0,0
+2002,unique_song,Latin,0.021108179419525065,8,8,6
+2002,unique_song,Metal,0.023746701846965697,9,9,9
+2002,unique_song,Other,0.0026385224274406332,1,1,1
+2002,unique_song,Pop,0.09498680738786279,36,36,30
+2002,unique_song,R&B / Soul,0.23218997361477572,88,88,62
+2002,unique_song,Reggae / Dancehall,0.010554089709762533,4,4,3
+2002,unique_song,Rock,0.09498680738786279,36,36,34
+2003,song_month,Afrobeats / African Pop,0,0,0,0
+2003,song_month,Alternative / Indie,0.041666666666666664,50,15,50
+2003,song_month,Country,0.20166666666666666,242,79,199
+2003,song_month,Electronic / Dance,0.0091666666666666667,11,8,8
+2003,song_month,Folk / Singer-Songwriter,0,0,0,0
+2003,song_month,Gospel / Christian,0.0025000000000000001,3,2,3
+2003,song_month,Hip-Hop / Rap,0.22666666666666666,272,94,188
+2003,song_month,Jazz / Blues,0.0033333333333333335,4,1,4
+2003,song_month,K-Pop,0,0,0,0
+2003,song_month,Latin,0.0016666666666666668,2,1,2
+2003,song_month,Metal,0.022499999999999999,27,7,27
+2003,song_month,Other,0,0,0,0
+2003,song_month,Pop,0.13,156,48,136
+2003,song_month,R&B / Soul,0.19833333333333333,238,75,172
+2003,song_month,Reggae / Dancehall,0.025000000000000001,30,7,15
+2003,song_month,Rock,0.13750000000000001,165,48,159
+2003,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2003,rank_weighted,Alternative / Indie,0.035775577557755775,2168,15,2168
+2003,rank_weighted,Country,0.17572607260726072,10649,79,8478
+2003,rank_weighted,Electronic / Dance,0.0026402640264026403,160,8,133
+2003,rank_weighted,Folk / Singer-Songwriter,0,0,0,0
+2003,rank_weighted,Gospel / Christian,0.00080858085808580861,49,2,49
+2003,rank_weighted,Hip-Hop / Rap,0.25513201320132012,15461,94,11026
+2003,rank_weighted,Jazz / Blues,0.0037623762376237622,228,1,228
+2003,rank_weighted,K-Pop,0,0,0,0
+2003,rank_weighted,Latin,0.00052805280528052802,32,1,32
+2003,rank_weighted,Metal,0.01533003300330033,929,7,929
+2003,rank_weighted,Other,0,0,0,0
+2003,rank_weighted,Pop,0.14097359735973597,8543,48,7238
+2003,rank_weighted,R&B / Soul,0.20864686468646865,12644,75,9131
+2003,rank_weighted,Reggae / Dancehall,0.032409240924092413,1964,7,1106
+2003,rank_weighted,Rock,0.12826732673267327,7773,48,7334
+2003,unique_song,Afrobeats / African Pop,0,0,0,0
+2003,unique_song,Alternative / Indie,0.03896103896103896,15,15,15
+2003,unique_song,Country,0.20519480519480521,79,79,67
+2003,unique_song,Electronic / Dance,0.020779220779220779,8,8,6
+2003,unique_song,Folk / Singer-Songwriter,0,0,0,0
+2003,unique_song,Gospel / Christian,0.0051948051948051948,2,2,2
+2003,unique_song,Hip-Hop / Rap,0.24415584415584415,94,94,64
+2003,unique_song,Jazz / Blues,0.0025974025974025974,1,1,1
+2003,unique_song,K-Pop,0,0,0,0
+2003,unique_song,Latin,0.0025974025974025974,1,1,1
+2003,unique_song,Metal,0.018181818181818181,7,7,7
+2003,unique_song,Other,0,0,0,0
+2003,unique_song,Pop,0.12467532467532468,48,48,41
+2003,unique_song,R&B / Soul,0.19480519480519481,75,75,53
+2003,unique_song,Reggae / Dancehall,0.018181818181818181,7,7,4
+2003,unique_song,Rock,0.12467532467532468,48,48,47
+2004,song_month,Afrobeats / African Pop,0,0,0,0
+2004,song_month,Alternative / Indie,0.041666666666666664,50,13,43
+2004,song_month,Country,0.19833333333333333,238,80,195
+2004,song_month,Electronic / Dance,0.0033333333333333335,4,2,4
+2004,song_month,Folk / Singer-Songwriter,0.0016666666666666668,2,1,2
+2004,song_month,Gospel / Christian,0.0016666666666666668,2,1,2
+2004,song_month,Hip-Hop / Rap,0.29166666666666669,350,108,235
+2004,song_month,Jazz / Blues,0,0,0,0
+2004,song_month,K-Pop,0,0,0,0
+2004,song_month,Latin,0.0066666666666666671,8,3,3
+2004,song_month,Metal,0.0083333333333333332,10,5,10
+2004,song_month,Other,0,0,0,0
+2004,song_month,Pop,0.10916666666666666,131,45,118
+2004,song_month,R&B / Soul,0.16750000000000001,201,60,139
+2004,song_month,Reggae / Dancehall,0.028333333333333332,34,9,29
+2004,song_month,Rock,0.14166666666666666,170,47,164
+2004,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2004,rank_weighted,Alternative / Indie,0.037211221122112212,2255,13,2092
+2004,rank_weighted,Country,0.15826732673267327,9591,80,7918
+2004,rank_weighted,Electronic / Dance,0.00056105610561056108,34,2,34
+2004,rank_weighted,Folk / Singer-Songwriter,0.0021122112211221121,128,1,128
+2004,rank_weighted,Gospel / Christian,0.00011551155115511551,7,1,7
+2004,rank_weighted,Hip-Hop / Rap,0.32948844884488449,19967,108,14632
+2004,rank_weighted,Jazz / Blues,0,0,0,0
+2004,rank_weighted,K-Pop,0,0,0,0
+2004,rank_weighted,Latin,0.0059075907590759079,358,3,43
+2004,rank_weighted,Metal,0.0043564356435643568,264,5,264
+2004,rank_weighted,Other,0,0,0,0
+2004,rank_weighted,Pop,0.11656765676567657,7064,45,6553
+2004,rank_weighted,R&B / Soul,0.18468646864686469,11192,60,8409
+2004,rank_weighted,Reggae / Dancehall,0.028795379537953796,1745,9,1671
+2004,rank_weighted,Rock,0.13193069306930694,7995,47,7797
+2004,unique_song,Afrobeats / African Pop,0,0,0,0
+2004,unique_song,Alternative / Indie,0.034759358288770054,13,13,11
+2004,unique_song,Country,0.21390374331550802,80,80,66
+2004,unique_song,Electronic / Dance,0.0053475935828877002,2,2,2
+2004,unique_song,Folk / Singer-Songwriter,0.0026737967914438501,1,1,1
+2004,unique_song,Gospel / Christian,0.0026737967914438501,1,1,1
+2004,unique_song,Hip-Hop / Rap,0.28877005347593582,108,108,68
+2004,unique_song,Jazz / Blues,0,0,0,0
+2004,unique_song,K-Pop,0,0,0,0
+2004,unique_song,Latin,0.0080213903743315516,3,3,2
+2004,unique_song,Metal,0.013368983957219251,5,5,5
+2004,unique_song,Other,0,0,0,0
+2004,unique_song,Pop,0.12032085561497326,45,45,40
+2004,unique_song,R&B / Soul,0.16042780748663102,60,60,41
+2004,unique_song,Reggae / Dancehall,0.024064171122994651,9,9,7
+2004,unique_song,Rock,0.12566844919786097,47,47,44
+2005,song_month,Afrobeats / African Pop,0,0,0,0
+2005,song_month,Alternative / Indie,0.055,66,19,55
+2005,song_month,Country,0.20083333333333334,241,91,209
+2005,song_month,Electronic / Dance,0.01,12,5,6
+2005,song_month,Folk / Singer-Songwriter,0.0058333333333333336,7,2,7
+2005,song_month,Gospel / Christian,0.00083333333333333339,1,1,0
+2005,song_month,Hip-Hop / Rap,0.25666666666666665,308,104,215
+2005,song_month,Jazz / Blues,0,0,0,0
+2005,song_month,K-Pop,0,0,0,0
+2005,song_month,Latin,0.016666666666666666,20,9,19
+2005,song_month,Metal,0.01,12,6,12
+2005,song_month,Other,0.0025000000000000001,3,1,3
+2005,song_month,Pop,0.125,150,42,145
+2005,song_month,R&B / Soul,0.19416666666666665,233,67,175
+2005,song_month,Reggae / Dancehall,0.0074999999999999997,9,4,5
+2005,song_month,Rock,0.115,138,45,118
+2005,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2005,rank_weighted,Alternative / Indie,0.053762376237623762,3258,19,2509
+2005,rank_weighted,Country,0.13141914191419141,7964,91,6989
+2005,rank_weighted,Electronic / Dance,0.01165016501650165,706,5,257
+2005,rank_weighted,Folk / Singer-Songwriter,0.0050660066006600656,307,2,307
+2005,rank_weighted,Gospel / Christian,0.00029702970297029702,18,1,0
+2005,rank_weighted,Hip-Hop / Rap,0.29372937293729373,17800,104,12672
+2005,rank_weighted,Jazz / Blues,0,0,0,0
+2005,rank_weighted,K-Pop,0,0,0,0
+2005,rank_weighted,Latin,0.011056105610561057,670,9,634
+2005,rank_weighted,Metal,0.0055775577557755779,338,6,338
+2005,rank_weighted,Other,0.0019471947194719473,118,1,118
+2005,rank_weighted,Pop,0.15242574257425742,9237,42,9031
+2005,rank_weighted,R&B / Soul,0.21458745874587459,13004,67,10130
+2005,rank_weighted,Reggae / Dancehall,0.0065841584158415839,399,4,316
+2005,rank_weighted,Rock,0.1118976897689769,6781,45,5598
+2005,unique_song,Afrobeats / African Pop,0,0,0,0
+2005,unique_song,Alternative / Indie,0.047979797979797977,19,19,16
+2005,unique_song,Country,0.22979797979797981,91,91,80
+2005,unique_song,Electronic / Dance,0.012626262626262626,5,5,4
+2005,unique_song,Folk / Singer-Songwriter,0.0050505050505050509,2,2,2
+2005,unique_song,Gospel / Christian,0.0025252525252525255,1,1,0
+2005,unique_song,Hip-Hop / Rap,0.26262626262626265,104,104,67
+2005,unique_song,Jazz / Blues,0,0,0,0
+2005,unique_song,K-Pop,0,0,0,0
+2005,unique_song,Latin,0.022727272727272728,9,9,8
+2005,unique_song,Metal,0.015151515151515152,6,6,6
+2005,unique_song,Other,0.0025252525252525255,1,1,1
+2005,unique_song,Pop,0.10606060606060606,42,42,38
+2005,unique_song,R&B / Soul,0.1691919191919192,67,67,44
+2005,unique_song,Reggae / Dancehall,0.010101010101010102,4,4,2
+2005,unique_song,Rock,0.11363636363636363,45,45,40
+2006,song_month,Afrobeats / African Pop,0,0,0,0
+2006,song_month,Alternative / Indie,0.093333333333333338,112,33,96
+2006,song_month,Country,0.19666666666666666,236,78,218
+2006,song_month,Electronic / Dance,0.0074999999999999997,9,3,9
+2006,song_month,Folk / Singer-Songwriter,0.0058333333333333336,7,3,6
+2006,song_month,Gospel / Christian,0.0041666666666666666,5,2,0
+2006,song_month,Hip-Hop / Rap,0.22750000000000001,273,95,183
+2006,song_month,Jazz / Blues,0.00083333333333333339,1,1,1
+2006,song_month,K-Pop,0,0,0,0
+2006,song_month,Latin,0.015833333333333335,19,8,10
+2006,song_month,Metal,0.0066666666666666671,8,5,8
+2006,song_month,Other,0,0,0,0
+2006,song_month,Pop,0.16333333333333333,196,66,164
+2006,song_month,R&B / Soul,0.15916666666666668,191,56,140
+2006,song_month,Reggae / Dancehall,0.016666666666666666,20,6,14
+2006,song_month,Rock,0.10249999999999999,123,39,114
+2006,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2006,rank_weighted,Alternative / Indie,0.084801980198019808,5139,33,4477
+2006,rank_weighted,Country,0.14112211221122112,8552,78,7948
+2006,rank_weighted,Electronic / Dance,0.0093069306930693065,564,3,564
+2006,rank_weighted,Folk / Singer-Songwriter,0.0044554455445544551,270,3,233
+2006,rank_weighted,Gospel / Christian,0.0020957095709570957,127,2,0
+2006,rank_weighted,Hip-Hop / Rap,0.25833333333333336,15655,95,10740
+2006,rank_weighted,Jazz / Blues,3.3003300330033001e-05,2,1,2
+2006,rank_weighted,K-Pop,0,0,0,0
+2006,rank_weighted,Latin,0.015775577557755775,956,8,369
+2006,rank_weighted,Metal,0.0065016501650165016,394,5,394
+2006,rank_weighted,Other,0,0,0,0
+2006,rank_weighted,Pop,0.18645214521452144,11299,66,10231
+2006,rank_weighted,R&B / Soul,0.16952145214521452,10273,56,7680
+2006,rank_weighted,Reggae / Dancehall,0.022409240924092411,1358,6,972
+2006,rank_weighted,Rock,0.099191419141914192,6011,39,5473
+2006,unique_song,Afrobeats / African Pop,0,0,0,0
+2006,unique_song,Alternative / Indie,0.083544303797468356,33,33,28
+2006,unique_song,Country,0.19746835443037974,78,78,71
+2006,unique_song,Electronic / Dance,0.0075949367088607592,3,3,3
+2006,unique_song,Folk / Singer-Songwriter,0.0075949367088607592,3,3,2
+2006,unique_song,Gospel / Christian,0.0050632911392405064,2,2,0
+2006,unique_song,Hip-Hop / Rap,0.24050632911392406,95,95,63
+2006,unique_song,Jazz / Blues,0.0025316455696202532,1,1,1
+2006,unique_song,K-Pop,0,0,0,0
+2006,unique_song,Latin,0.020253164556962026,8,8,6
+2006,unique_song,Metal,0.012658227848101266,5,5,5
+2006,unique_song,Other,0,0,0,0
+2006,unique_song,Pop,0.16708860759493671,66,66,52
+2006,unique_song,R&B / Soul,0.14177215189873418,56,56,41
+2006,unique_song,Reggae / Dancehall,0.015189873417721518,6,6,4
+2006,unique_song,Rock,0.098734177215189872,39,39,37
+2007,song_month,Afrobeats / African Pop,0,0,0,0
+2007,song_month,Alternative / Indie,0.059999999999999998,72,32,68
+2007,song_month,Country,0.20166666666666666,242,78,204
+2007,song_month,Electronic / Dance,0.01,12,4,11
+2007,song_month,Folk / Singer-Songwriter,0.0091666666666666667,11,4,9
+2007,song_month,Gospel / Christian,0,0,0,0
+2007,song_month,Hip-Hop / Rap,0.21833333333333332,262,86,172
+2007,song_month,Jazz / Blues,0.0050000000000000001,6,2,6
+2007,song_month,K-Pop,0,0,0,0
+2007,song_month,Latin,0.0091666666666666667,11,5,5
+2007,song_month,Metal,0.014166666666666666,17,5,17
+2007,song_month,Other,0,0,0,0
+2007,song_month,Pop,0.17833333333333334,214,70,183
+2007,song_month,R&B / Soul,0.17166666666666666,206,58,157
+2007,song_month,Reggae / Dancehall,0.010833333333333334,13,3,13
+2007,song_month,Rock,0.11166666666666666,134,36,128
+2007,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2007,rank_weighted,Alternative / Indie,0.047508250825082511,2879,32,2781
+2007,rank_weighted,Country,0.1377062706270627,8345,78,7199
+2007,rank_weighted,Electronic / Dance,0.012392739273927393,751,4,718
+2007,rank_weighted,Folk / Singer-Songwriter,0.011749174917491749,712,4,648
+2007,rank_weighted,Gospel / Christian,0,0,0,0
+2007,rank_weighted,Hip-Hop / Rap,0.24625412541254124,14923,86,10170
+2007,rank_weighted,Jazz / Blues,0.0021947194719471948,133,2,133
+2007,rank_weighted,K-Pop,0,0,0,0
+2007,rank_weighted,Latin,0.0034653465346534654,210,5,42
+2007,rank_weighted,Metal,0.012458745874587458,755,5,755
+2007,rank_weighted,Other,0,0,0,0
+2007,rank_weighted,Pop,0.20684818481848186,12535,70,10810
+2007,rank_weighted,R&B / Soul,0.19033003300330034,11534,58,8861
+2007,rank_weighted,Reggae / Dancehall,0.011105610561056106,673,3,673
+2007,rank_weighted,Rock,0.11798679867986799,7150,36,6821
+2007,unique_song,Afrobeats / African Pop,0,0,0,0
+2007,unique_song,Alternative / Indie,0.083550913838120106,32,32,29
+2007,unique_song,Country,0.20365535248041775,78,78,65
+2007,unique_song,Electronic / Dance,0.010443864229765013,4,4,3
+2007,unique_song,Folk / Singer-Songwriter,0.010443864229765013,4,4,2
+2007,unique_song,Gospel / Christian,0,0,0,0
+2007,unique_song,Hip-Hop / Rap,0.22454308093994779,86,86,55
+2007,unique_song,Jazz / Blues,0.0052219321148825066,2,2,2
+2007,unique_song,K-Pop,0,0,0,0
+2007,unique_song,Latin,0.013054830287206266,5,5,3
+2007,unique_song,Metal,0.013054830287206266,5,5,5
+2007,unique_song,Other,0,0,0,0
+2007,unique_song,Pop,0.18276762402088773,70,70,58
+2007,unique_song,R&B / Soul,0.1514360313315927,58,58,44
+2007,unique_song,Reggae / Dancehall,0.007832898172323759,3,3,3
+2007,unique_song,Rock,0.093994778067885115,36,36,33
+2008,song_month,Afrobeats / African Pop,0,0,0,0
+2008,song_month,Alternative / Indie,0.040833333333333333,49,18,49
+2008,song_month,Country,0.22083333333333333,265,92,236
+2008,song_month,Electronic / Dance,0.014999999999999999,18,5,11
+2008,song_month,Folk / Singer-Songwriter,0.0033333333333333335,4,3,1
+2008,song_month,Gospel / Christian,0.0033333333333333335,4,2,3
+2008,song_month,Hip-Hop / Rap,0.19916666666666666,239,86,194
+2008,song_month,Jazz / Blues,0,0,0,0
+2008,song_month,K-Pop,0,0,0,0
+2008,song_month,Latin,0.0050000000000000001,6,2,6
+2008,song_month,Metal,0.010833333333333334,13,5,11
+2008,song_month,Other,0.0016666666666666668,2,1,2
+2008,song_month,Pop,0.22916666666666666,275,78,250
+2008,song_month,R&B / Soul,0.16833333333333333,202,64,154
+2008,song_month,Reggae / Dancehall,0.00083333333333333339,1,1,1
+2008,song_month,Rock,0.10166666666666667,122,45,110
+2008,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2008,rank_weighted,Alternative / Indie,0.027112211221122111,1643,18,1643
+2008,rank_weighted,Country,0.1605940594059406,9732,92,8845
+2008,rank_weighted,Electronic / Dance,0.014620462046204621,886,5,668
+2008,rank_weighted,Folk / Singer-Songwriter,0.00094059405940594056,57,3,19
+2008,rank_weighted,Gospel / Christian,0.0014521452145214522,88,2,30
+2008,rank_weighted,Hip-Hop / Rap,0.21435643564356435,12990,86,10993
+2008,rank_weighted,Jazz / Blues,0,0,0,0
+2008,rank_weighted,K-Pop,0,0,0,0
+2008,rank_weighted,Latin,0.00037953795379537953,23,2,23
+2008,rank_weighted,Metal,0.0049174917491749178,298,5,278
+2008,rank_weighted,Other,0.00080858085808580861,49,1,49
+2008,rank_weighted,Pop,0.29775577557755778,18044,78,16828
+2008,rank_weighted,R&B / Soul,0.18566006600660065,11251,64,8717
+2008,rank_weighted,Reggae / Dancehall,0.00034653465346534652,21,1,21
+2008,rank_weighted,Rock,0.091056105610561058,5518,45,5036
+2008,unique_song,Afrobeats / African Pop,0,0,0,0
+2008,unique_song,Alternative / Indie,0.044776119402985072,18,18,18
+2008,unique_song,Country,0.22885572139303484,92,92,82
+2008,unique_song,Electronic / Dance,0.012437810945273632,5,5,3
+2008,unique_song,Folk / Singer-Songwriter,0.007462686567164179,3,3,1
+2008,unique_song,Gospel / Christian,0.0049751243781094526,2,2,1
+2008,unique_song,Hip-Hop / Rap,0.21393034825870647,86,86,67
+2008,unique_song,Jazz / Blues,0,0,0,0
+2008,unique_song,K-Pop,0,0,0,0
+2008,unique_song,Latin,0.0049751243781094526,2,2,2
+2008,unique_song,Metal,0.012437810945273632,5,5,4
+2008,unique_song,Other,0.0024875621890547263,1,1,1
+2008,unique_song,Pop,0.19402985074626866,78,78,67
+2008,unique_song,R&B / Soul,0.15920398009950248,64,64,48
+2008,unique_song,Reggae / Dancehall,0.0024875621890547263,1,1,1
+2008,unique_song,Rock,0.11194029850746269,45,45,40
+2009,song_month,Afrobeats / African Pop,0,0,0,0
+2009,song_month,Alternative / Indie,0.057500000000000002,69,27,65
+2009,song_month,Country,0.23499999999999999,282,94,261
+2009,song_month,Electronic / Dance,0.040833333333333333,49,11,48
+2009,song_month,Folk / Singer-Songwriter,0.0016666666666666668,2,1,2
+2009,song_month,Gospel / Christian,0.0041666666666666666,5,1,5
+2009,song_month,Hip-Hop / Rap,0.18333333333333332,220,77,161
+2009,song_month,Jazz / Blues,0,0,0,0
+2009,song_month,K-Pop,0.00083333333333333339,1,1,1
+2009,song_month,Latin,0,0,0,0
+2009,song_month,Metal,0.00083333333333333339,1,1,0
+2009,song_month,Other,0.0016666666666666668,2,2,2
+2009,song_month,Pop,0.24916666666666668,299,106,269
+2009,song_month,R&B / Soul,0.14333333333333334,172,63,117
+2009,song_month,Reggae / Dancehall,0.0050000000000000001,6,2,4
+2009,song_month,Rock,0.076666666666666661,92,33,85
+2009,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2009,rank_weighted,Alternative / Indie,0.039686468646864689,2405,27,2345
+2009,rank_weighted,Country,0.19305280528052804,11699,94,10942
+2009,rank_weighted,Electronic / Dance,0.055891089108910892,3387,11,3358
+2009,rank_weighted,Folk / Singer-Songwriter,0.0018811881188118811,114,1,114
+2009,rank_weighted,Gospel / Christian,0.0014521452145214522,88,1,88
+2009,rank_weighted,Hip-Hop / Rap,0.19316831683168317,11706,77,9290
+2009,rank_weighted,Jazz / Blues,0,0,0,0
+2009,rank_weighted,K-Pop,0.00041254125412541255,25,1,25
+2009,rank_weighted,Latin,0,0,0,0
+2009,rank_weighted,Metal,0.00026402640264026401,16,1,0
+2009,rank_weighted,Other,0.0012706270627062706,77,2,77
+2009,rank_weighted,Pop,0.30237623762376237,18324,106,16871
+2009,rank_weighted,R&B / Soul,0.12995049504950495,7875,63,6029
+2009,rank_weighted,Reggae / Dancehall,0.0057425742574257425,348,2,268
+2009,rank_weighted,Rock,0.074851485148514849,4536,33,4323
+2009,unique_song,Afrobeats / African Pop,0,0,0,0
+2009,unique_song,Alternative / Indie,0.064439140811455853,27,27,26
+2009,unique_song,Country,0.22434367541766109,94,94,86
+2009,unique_song,Electronic / Dance,0.026252983293556086,11,11,10
+2009,unique_song,Folk / Singer-Songwriter,0.0023866348448687352,1,1,1
+2009,unique_song,Gospel / Christian,0.0023866348448687352,1,1,1
+2009,unique_song,Hip-Hop / Rap,0.18377088305489261,77,77,54
+2009,unique_song,Jazz / Blues,0,0,0,0
+2009,unique_song,K-Pop,0.0023866348448687352,1,1,1
+2009,unique_song,Latin,0,0,0,0
+2009,unique_song,Metal,0.0023866348448687352,1,1,0
+2009,unique_song,Other,0.0047732696897374704,2,2,2
+2009,unique_song,Pop,0.2529832935560859,106,106,91
+2009,unique_song,R&B / Soul,0.15035799522673032,63,63,40
+2009,unique_song,Reggae / Dancehall,0.0047732696897374704,2,2,1
+2009,unique_song,Rock,0.078758949880668255,33,33,29
+2010,song_month,Afrobeats / African Pop,0,0,0,0
+2010,song_month,Alternative / Indie,0.029166666666666667,35,11,35
+2010,song_month,Country,0.23583333333333334,283,87,255
+2010,song_month,Electronic / Dance,0.055,66,21,63
+2010,song_month,Folk / Singer-Songwriter,0.0041666666666666666,5,1,5
+2010,song_month,Gospel / Christian,0,0,0,0
+2010,song_month,Hip-Hop / Rap,0.20166666666666666,242,81,175
+2010,song_month,Jazz / Blues,0.0025000000000000001,3,3,3
+2010,song_month,K-Pop,0,0,0,0
+2010,song_month,Latin,0.01,12,3,9
+2010,song_month,Metal,0.00083333333333333339,1,1,1
+2010,song_month,Other,0,0,0,0
+2010,song_month,Pop,0.28416666666666668,341,118,276
+2010,song_month,R&B / Soul,0.12083333333333333,145,46,118
+2010,song_month,Reggae / Dancehall,0.01,12,5,4
+2010,song_month,Rock,0.04583333333333333,55,23,52
+2010,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2010,rank_weighted,Alternative / Indie,0.021155115511551154,1282,11,1282
+2010,rank_weighted,Country,0.18107260726072608,10973,87,9994
+2010,rank_weighted,Electronic / Dance,0.064356435643564358,3900,21,3774
+2010,rank_weighted,Folk / Singer-Songwriter,0.0018151815181518152,110,1,110
+2010,rank_weighted,Gospel / Christian,0,0,0,0
+2010,rank_weighted,Hip-Hop / Rap,0.21361386138613861,12945,81,9143
+2010,rank_weighted,Jazz / Blues,0.0011716171617161717,71,3,71
+2010,rank_weighted,K-Pop,0,0,0,0
+2010,rank_weighted,Latin,0.01094059405940594,663,3,617
+2010,rank_weighted,Metal,0.00016501650165016502,10,1,10
+2010,rank_weighted,Other,0,0,0,0
+2010,rank_weighted,Pop,0.34064356435643567,20643,118,17205
+2010,rank_weighted,R&B / Soul,0.1218976897689769,7387,46,5815
+2010,rank_weighted,Reggae / Dancehall,0.0057755775577557752,350,5,99
+2010,rank_weighted,Rock,0.037392739273927396,2266,23,2216
+2010,unique_song,Afrobeats / African Pop,0,0,0,0
+2010,unique_song,Alternative / Indie,0.0275,11,11,11
+2010,unique_song,Country,0.2175,87,87,78
+2010,unique_song,Electronic / Dance,0.052499999999999998,21,21,19
+2010,unique_song,Folk / Singer-Songwriter,0.0025000000000000001,1,1,1
+2010,unique_song,Gospel / Christian,0,0,0,0
+2010,unique_song,Hip-Hop / Rap,0.20250000000000001,81,81,59
+2010,unique_song,Jazz / Blues,0.0074999999999999997,3,3,3
+2010,unique_song,K-Pop,0,0,0,0
+2010,unique_song,Latin,0.0074999999999999997,3,3,2
+2010,unique_song,Metal,0.0025000000000000001,1,1,1
+2010,unique_song,Other,0,0,0,0
+2010,unique_song,Pop,0.29499999999999998,118,118,90
+2010,unique_song,R&B / Soul,0.115,46,46,37
+2010,unique_song,Reggae / Dancehall,0.012500000000000001,5,5,2
+2010,unique_song,Rock,0.057500000000000002,23,23,20
+2011,song_month,Afrobeats / African Pop,0,0,0,0
+2011,song_month,Alternative / Indie,0.044166666666666667,53,18,52
+2011,song_month,Country,0.26416666666666666,317,101,287
+2011,song_month,Electronic / Dance,0.074999999999999997,90,29,86
+2011,song_month,Folk / Singer-Songwriter,0.0041666666666666666,5,1,5
+2011,song_month,Gospel / Christian,0.0041666666666666666,5,2,4
+2011,song_month,Hip-Hop / Rap,0.20999999999999999,252,93,205
+2011,song_month,Jazz / Blues,0.00083333333333333339,1,1,1
+2011,song_month,K-Pop,0,0,0,0
+2011,song_month,Latin,0.0041666666666666666,5,4,2
+2011,song_month,Metal,0.00083333333333333339,1,1,1
+2011,song_month,Other,0,0,0,0
+2011,song_month,Pop,0.28499999999999998,342,117,294
+2011,song_month,R&B / Soul,0.077499999999999999,93,28,71
+2011,song_month,Reggae / Dancehall,0.0025000000000000001,3,1,3
+2011,song_month,Rock,0.0275,33,14,28
+2011,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2011,rank_weighted,Alternative / Indie,0.03523102310231023,2135,18,2106
+2011,rank_weighted,Country,0.21391089108910891,12963,101,11715
+2011,rank_weighted,Electronic / Dance,0.094356435643564357,5718,29,5459
+2011,rank_weighted,Folk / Singer-Songwriter,0.0024752475247524753,150,1,150
+2011,rank_weighted,Gospel / Christian,0.00042904290429042903,26,2,25
+2011,rank_weighted,Hip-Hop / Rap,0.21993399339933994,13328,93,11495
+2011,rank_weighted,Jazz / Blues,0.00070957095709570962,43,1,43
+2011,rank_weighted,K-Pop,0,0,0,0
+2011,rank_weighted,Latin,0.0015841584158415843,96,4,60
+2011,rank_weighted,Metal,0.0005445544554455446,33,1,33
+2011,rank_weighted,Other,0,0,0,0
+2011,rank_weighted,Pop,0.33886138613861388,20535,117,17640
+2011,rank_weighted,R&B / Soul,0.072178217821782173,4374,28,3422
+2011,rank_weighted,Reggae / Dancehall,0.0016501650165016502,100,1,100
+2011,rank_weighted,Rock,0.018135313531353135,1099,14,906
+2011,unique_song,Afrobeats / African Pop,0,0,0,0
+2011,unique_song,Alternative / Indie,0.043902439024390241,18,18,17
+2011,unique_song,Country,0.24634146341463414,101,101,93
+2011,unique_song,Electronic / Dance,0.070731707317073164,29,29,27
+2011,unique_song,Folk / Singer-Songwriter,0.0024390243902439024,1,1,1
+2011,unique_song,Gospel / Christian,0.0048780487804878049,2,2,1
+2011,unique_song,Hip-Hop / Rap,0.22682926829268293,93,93,72
+2011,unique_song,Jazz / Blues,0.0024390243902439024,1,1,1
+2011,unique_song,K-Pop,0,0,0,0
+2011,unique_song,Latin,0.0097560975609756097,4,4,2
+2011,unique_song,Metal,0.0024390243902439024,1,1,1
+2011,unique_song,Other,0,0,0,0
+2011,unique_song,Pop,0.28536585365853656,117,117,94
+2011,unique_song,R&B / Soul,0.068292682926829273,28,28,20
+2011,unique_song,Reggae / Dancehall,0.0024390243902439024,1,1,1
+2011,unique_song,Rock,0.034146341463414637,14,14,11
+2012,song_month,Afrobeats / African Pop,0,0,0,0
+2012,song_month,Alternative / Indie,0.060833333333333336,73,14,73
+2012,song_month,Country,0.23416666666666666,281,92,257
+2012,song_month,Electronic / Dance,0.10166666666666667,122,33,109
+2012,song_month,Folk / Singer-Songwriter,0.026666666666666668,32,10,32
+2012,song_month,Gospel / Christian,0,0,0,0
+2012,song_month,Hip-Hop / Rap,0.2225,267,85,211
+2012,song_month,Jazz / Blues,0,0,0,0
+2012,song_month,K-Pop,0.0033333333333333335,4,1,4
+2012,song_month,Latin,0.0025000000000000001,3,1,3
+2012,song_month,Metal,0,0,0,0
+2012,song_month,Other,0,0,0,0
+2012,song_month,Pop,0.25916666666666666,311,89,269
+2012,song_month,R&B / Soul,0.066666666666666666,80,29,67
+2012,song_month,Reggae / Dancehall,0,0,0,0
+2012,song_month,Rock,0.022499999999999999,27,13,22
+2012,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2012,rank_weighted,Alternative / Indie,0.062046204620462043,3760,14,3760
+2012,rank_weighted,Country,0.18275577557755776,11075,92,10153
+2012,rank_weighted,Electronic / Dance,0.12041254125412541,7297,33,6860
+2012,rank_weighted,Folk / Singer-Songwriter,0.026947194719471948,1633,10,1633
+2012,rank_weighted,Gospel / Christian,0,0,0,0
+2012,rank_weighted,Hip-Hop / Rap,0.20506600660066007,12427,85,10813
+2012,rank_weighted,Jazz / Blues,0,0,0,0
+2012,rank_weighted,K-Pop,0.0060726072607260725,368,1,368
+2012,rank_weighted,Latin,0.00019801980198019803,12,1,12
+2012,rank_weighted,Metal,0,0,0,0
+2012,rank_weighted,Other,0,0,0,0
+2012,rank_weighted,Pop,0.33712871287128715,20430,89,17876
+2012,rank_weighted,R&B / Soul,0.048333333333333332,2929,29,2388
+2012,rank_weighted,Reggae / Dancehall,0,0,0,0
+2012,rank_weighted,Rock,0.011039603960396039,669,13,481
+2012,unique_song,Afrobeats / African Pop,0,0,0,0
+2012,unique_song,Alternative / Indie,0.038147138964577658,14,14,14
+2012,unique_song,Country,0.25068119891008173,92,92,85
+2012,unique_song,Electronic / Dance,0.089918256130790186,33,33,28
+2012,unique_song,Folk / Singer-Songwriter,0.027247956403269755,10,10,10
+2012,unique_song,Gospel / Christian,0,0,0,0
+2012,unique_song,Hip-Hop / Rap,0.23160762942779292,85,85,67
+2012,unique_song,Jazz / Blues,0,0,0,0
+2012,unique_song,K-Pop,0.0027247956403269754,1,1,1
+2012,unique_song,Latin,0.0027247956403269754,1,1,1
+2012,unique_song,Metal,0,0,0,0
+2012,unique_song,Other,0,0,0,0
+2012,unique_song,Pop,0.24250681198910082,89,89,75
+2012,unique_song,R&B / Soul,0.07901907356948229,29,29,24
+2012,unique_song,Reggae / Dancehall,0,0,0,0
+2012,unique_song,Rock,0.035422343324250684,13,13,9
+2013,song_month,Afrobeats / African Pop,0,0,0,0
+2013,song_month,Alternative / Indie,0.07166666666666667,86,21,86
+2013,song_month,Country,0.25333333333333335,304,101,278
+2013,song_month,Electronic / Dance,0.080000000000000002,96,25,83
+2013,song_month,Folk / Singer-Songwriter,0.020833333333333332,25,7,25
+2013,song_month,Gospel / Christian,0.00083333333333333339,1,1,0
+2013,song_month,Hip-Hop / Rap,0.21166666666666667,254,84,196
+2013,song_month,Jazz / Blues,0,0,0,0
+2013,song_month,K-Pop,0.0058333333333333336,7,2,7
+2013,song_month,Latin,0.0083333333333333332,10,5,8
+2013,song_month,Metal,0,0,0,0
+2013,song_month,Other,0.0016666666666666668,2,2,2
+2013,song_month,Pop,0.26166666666666666,314,105,286
+2013,song_month,R&B / Soul,0.072499999999999995,87,29,71
+2013,song_month,Reggae / Dancehall,0,0,0,0
+2013,song_month,Rock,0.011666666666666667,14,7,14
+2013,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2013,rank_weighted,Alternative / Indie,0.078630363036303635,4765,21,4765
+2013,rank_weighted,Country,0.20646864686468647,12512,101,11566
+2013,rank_weighted,Electronic / Dance,0.10325082508250825,6257,25,5488
+2013,rank_weighted,Folk / Singer-Songwriter,0.027673267326732674,1677,7,1677
+2013,rank_weighted,Gospel / Christian,0.00016501650165016502,10,1,0
+2013,rank_weighted,Hip-Hop / Rap,0.18514851485148515,11220,84,9474
+2013,rank_weighted,Jazz / Blues,0,0,0,0
+2013,rank_weighted,K-Pop,0.0064026402640264025,388,2,388
+2013,rank_weighted,Latin,0.0016831683168316831,102,5,71
+2013,rank_weighted,Metal,0,0,0,0
+2013,rank_weighted,Other,0.0009075907590759076,55,2,55
+2013,rank_weighted,Pop,0.31120462046204622,18859,105,17474
+2013,rank_weighted,R&B / Soul,0.068300330033003301,4139,29,3338
+2013,rank_weighted,Reggae / Dancehall,0,0,0,0
+2013,rank_weighted,Rock,0.010165016501650165,616,7,616
+2013,unique_song,Afrobeats / African Pop,0,0,0,0
+2013,unique_song,Alternative / Indie,0.053984575835475578,21,21,21
+2013,unique_song,Country,0.25964010282776351,101,101,93
+2013,unique_song,Electronic / Dance,0.064267352185089971,25,25,21
+2013,unique_song,Folk / Singer-Songwriter,0.017994858611825194,7,7,7
+2013,unique_song,Gospel / Christian,0.0025706940874035988,1,1,0
+2013,unique_song,Hip-Hop / Rap,0.21593830334190231,84,84,64
+2013,unique_song,Jazz / Blues,0,0,0,0
+2013,unique_song,K-Pop,0.0051413881748071976,2,2,2
+2013,unique_song,Latin,0.012853470437017995,5,5,3
+2013,unique_song,Metal,0,0,0,0
+2013,unique_song,Other,0.0051413881748071976,2,2,2
+2013,unique_song,Pop,0.26992287917737789,105,105,93
+2013,unique_song,R&B / Soul,0.074550128534704371,29,29,23
+2013,unique_song,Reggae / Dancehall,0,0,0,0
+2013,unique_song,Rock,0.017994858611825194,7,7,7
+2014,song_month,Afrobeats / African Pop,0,0,0,0
+2014,song_month,Alternative / Indie,0.063333333333333339,76,22,75
+2014,song_month,Country,0.23833333333333334,286,95,242
+2014,song_month,Electronic / Dance,0.067500000000000004,81,23,72
+2014,song_month,Folk / Singer-Songwriter,0.0066666666666666671,8,4,8
+2014,song_month,Gospel / Christian,0.0033333333333333335,4,2,3
+2014,song_month,Hip-Hop / Rap,0.17333333333333334,208,73,151
+2014,song_month,Jazz / Blues,0,0,0,0
+2014,song_month,K-Pop,0,0,0,0
+2014,song_month,Latin,0.01,12,3,12
+2014,song_month,Metal,0,0,0,0
+2014,song_month,Other,0.013333333333333334,16,4,16
+2014,song_month,Pop,0.32416666666666666,389,111,358
+2014,song_month,R&B / Soul,0.08666666666666667,104,29,72
+2014,song_month,Reggae / Dancehall,0,0,0,0
+2014,song_month,Rock,0.013333333333333334,16,7,16
+2014,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2014,rank_weighted,Alternative / Indie,0.066006600660066,4000,22,3908
+2014,rank_weighted,Country,0.17376237623762375,10530,95,8754
+2014,rank_weighted,Electronic / Dance,0.080115511551155122,4855,23,4425
+2014,rank_weighted,Folk / Singer-Songwriter,0.0084158415841584164,510,4,510
+2014,rank_weighted,Gospel / Christian,0.0011551155115511551,70,2,28
+2014,rank_weighted,Hip-Hop / Rap,0.15042904290429043,9116,73,6673
+2014,rank_weighted,Jazz / Blues,0,0,0,0
+2014,rank_weighted,K-Pop,0,0,0,0
+2014,rank_weighted,Latin,0.0091584158415841579,555,3,555
+2014,rank_weighted,Metal,0,0,0,0
+2014,rank_weighted,Other,0.014306930693069307,867,4,867
+2014,rank_weighted,Pop,0.39282178217821784,23805,111,22239
+2014,rank_weighted,R&B / Soul,0.091188118811881186,5526,29,4209
+2014,rank_weighted,Reggae / Dancehall,0,0,0,0
+2014,rank_weighted,Rock,0.012640264026402641,766,7,766
+2014,unique_song,Afrobeats / African Pop,0,0,0,0
+2014,unique_song,Alternative / Indie,0.058981233243967826,22,22,21
+2014,unique_song,Country,0.2546916890080429,95,95,81
+2014,unique_song,Electronic / Dance,0.061662198391420911,23,23,19
+2014,unique_song,Folk / Singer-Songwriter,0.010723860589812333,4,4,4
+2014,unique_song,Gospel / Christian,0.0053619302949061663,2,2,1
+2014,unique_song,Hip-Hop / Rap,0.19571045576407506,73,73,57
+2014,unique_song,Jazz / Blues,0,0,0,0
+2014,unique_song,K-Pop,0,0,0,0
+2014,unique_song,Latin,0.0080428954423592495,3,3,3
+2014,unique_song,Metal,0,0,0,0
+2014,unique_song,Other,0.010723860589812333,4,4,4
+2014,unique_song,Pop,0.2975871313672922,111,111,101
+2014,unique_song,R&B / Soul,0.077747989276139406,29,29,18
+2014,unique_song,Reggae / Dancehall,0,0,0,0
+2014,unique_song,Rock,0.01876675603217158,7,7,7
+2015,song_month,Afrobeats / African Pop,0,0,0,0
+2015,song_month,Alternative / Indie,0.044166666666666667,53,14,53
+2015,song_month,Country,0.22500000000000001,270,80,230
+2015,song_month,Electronic / Dance,0.051666666666666666,62,17,42
+2015,song_month,Folk / Singer-Songwriter,0.010833333333333334,13,4,9
+2015,song_month,Gospel / Christian,0,0,0,0
+2015,song_month,Hip-Hop / Rap,0.26250000000000001,315,108,242
+2015,song_month,Jazz / Blues,0.00083333333333333339,1,1,1
+2015,song_month,K-Pop,0,0,0,0
+2015,song_month,Latin,0.010833333333333334,13,4,12
+2015,song_month,Metal,0,0,0,0
+2015,song_month,Other,0,0,0,0
+2015,song_month,Pop,0.28249999999999997,339,97,315
+2015,song_month,R&B / Soul,0.09166666666666666,110,40,83
+2015,song_month,Reggae / Dancehall,0.0016666666666666668,2,1,2
+2015,song_month,Rock,0.018333333333333333,22,7,21
+2015,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2015,rank_weighted,Alternative / Indie,0.038646864686468649,2342,14,2342
+2015,rank_weighted,Country,0.15227722772277227,9228,80,8032
+2015,rank_weighted,Electronic / Dance,0.057854785478547853,3506,17,2255
+2015,rank_weighted,Folk / Singer-Songwriter,0.011666666666666667,707,4,381
+2015,rank_weighted,Gospel / Christian,0,0,0,0
+2015,rank_weighted,Hip-Hop / Rap,0.24635313531353134,14929,108,12016
+2015,rank_weighted,Jazz / Blues,6.6006600660066002e-05,4,1,4
+2015,rank_weighted,K-Pop,0,0,0,0
+2015,rank_weighted,Latin,0.0048514851485148515,294,4,285
+2015,rank_weighted,Metal,0,0,0,0
+2015,rank_weighted,Other,0,0,0,0
+2015,rank_weighted,Pop,0.361996699669967,21937,97,20840
+2015,rank_weighted,R&B / Soul,0.10574257425742574,6408,40,4813
+2015,rank_weighted,Reggae / Dancehall,0.00074257425742574258,45,1,45
+2015,rank_weighted,Rock,0.019801980198019802,1200,7,1197
+2015,unique_song,Afrobeats / African Pop,0,0,0,0
+2015,unique_song,Alternative / Indie,0.037533512064343161,14,14,14
+2015,unique_song,Country,0.21447721179624665,80,80,69
+2015,unique_song,Electronic / Dance,0.045576407506702415,17,17,13
+2015,unique_song,Folk / Singer-Songwriter,0.010723860589812333,4,4,3
+2015,unique_song,Gospel / Christian,0,0,0,0
+2015,unique_song,Hip-Hop / Rap,0.289544235924933,108,108,78
+2015,unique_song,Jazz / Blues,0.0026809651474530832,1,1,1
+2015,unique_song,K-Pop,0,0,0,0
+2015,unique_song,Latin,0.010723860589812333,4,4,3
+2015,unique_song,Metal,0,0,0,0
+2015,unique_song,Other,0,0,0,0
+2015,unique_song,Pop,0.26005361930294907,97,97,88
+2015,unique_song,R&B / Soul,0.10723860589812333,40,40,29
+2015,unique_song,Reggae / Dancehall,0.0026809651474530832,1,1,1
+2015,unique_song,Rock,0.01876675603217158,7,7,6
+2016,song_month,Afrobeats / African Pop,0,0,0,0
+2016,song_month,Alternative / Indie,0.026666666666666668,32,6,32
+2016,song_month,Country,0.19166666666666668,230,76,174
+2016,song_month,Electronic / Dance,0.078333333333333338,94,26,92
+2016,song_month,Folk / Singer-Songwriter,0.0041666666666666666,5,1,5
+2016,song_month,Gospel / Christian,0,0,0,0
+2016,song_month,Hip-Hop / Rap,0.27833333333333332,334,122,248
+2016,song_month,Jazz / Blues,0,0,0,0
+2016,song_month,K-Pop,0,0,0,0
+2016,song_month,Latin,0.0074999999999999997,9,5,3
+2016,song_month,Metal,0.0033333333333333335,4,1,4
+2016,song_month,Other,0.00083333333333333339,1,1,1
+2016,song_month,Pop,0.27916666666666667,335,98,298
+2016,song_month,R&B / Soul,0.11749999999999999,141,45,124
+2016,song_month,Reggae / Dancehall,0.0050000000000000001,6,1,6
+2016,song_month,Rock,0.0074999999999999997,9,8,9
+2016,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2016,rank_weighted,Alternative / Indie,0.039455445544554456,2391,6,2391
+2016,rank_weighted,Country,0.13146864686468646,7967,76,6306
+2016,rank_weighted,Electronic / Dance,0.09699669966996699,5878,26,5754
+2016,rank_weighted,Folk / Singer-Songwriter,0.0012706270627062706,77,1,77
+2016,rank_weighted,Gospel / Christian,0,0,0,0
+2016,rank_weighted,Hip-Hop / Rap,0.25481848184818484,15442,122,12475
+2016,rank_weighted,Jazz / Blues,0,0,0,0
+2016,rank_weighted,K-Pop,0,0,0,0
+2016,rank_weighted,Latin,0.0023432343234323434,142,5,37
+2016,rank_weighted,Metal,0.0026402640264026403,160,1,160
+2016,rank_weighted,Other,6.6006600660066002e-05,4,1,4
+2016,rank_weighted,Pop,0.33127062706270627,20075,98,18194
+2016,rank_weighted,R&B / Soul,0.12650165016501649,7666,45,6782
+2016,rank_weighted,Reggae / Dancehall,0.007244224422442244,439,1,439
+2016,rank_weighted,Rock,0.0059240924092409239,359,8,359
+2016,unique_song,Afrobeats / African Pop,0,0,0,0
+2016,unique_song,Alternative / Indie,0.015384615384615385,6,6,6
+2016,unique_song,Country,0.19487179487179487,76,76,59
+2016,unique_song,Electronic / Dance,0.066666666666666666,26,26,25
+2016,unique_song,Folk / Singer-Songwriter,0.0025641025641025641,1,1,1
+2016,unique_song,Gospel / Christian,0,0,0,0
+2016,unique_song,Hip-Hop / Rap,0.31282051282051282,122,122,88
+2016,unique_song,Jazz / Blues,0,0,0,0
+2016,unique_song,K-Pop,0,0,0,0
+2016,unique_song,Latin,0.01282051282051282,5,5,3
+2016,unique_song,Metal,0.0025641025641025641,1,1,1
+2016,unique_song,Other,0.0025641025641025641,1,1,1
+2016,unique_song,Pop,0.25128205128205128,98,98,88
+2016,unique_song,R&B / Soul,0.11538461538461539,45,45,39
+2016,unique_song,Reggae / Dancehall,0.0025641025641025641,1,1,1
+2016,unique_song,Rock,0.020512820512820513,8,8,8
+2017,song_month,Afrobeats / African Pop,0,0,0,0
+2017,song_month,Alternative / Indie,0.025833333333333333,31,6,20
+2017,song_month,Country,0.19166666666666668,230,80,206
+2017,song_month,Electronic / Dance,0.0625,75,24,70
+2017,song_month,Folk / Singer-Songwriter,0,0,0,0
+2017,song_month,Gospel / Christian,0,0,0,0
+2017,song_month,Hip-Hop / Rap,0.32833333333333331,394,149,324
+2017,song_month,Jazz / Blues,0.00083333333333333339,1,1,1
+2017,song_month,K-Pop,0.0016666666666666668,2,2,1
+2017,song_month,Latin,0.029999999999999999,36,10,30
+2017,song_month,Metal,0,0,0,0
+2017,song_month,Other,0.0016666666666666668,2,1,2
+2017,song_month,Pop,0.24916666666666668,299,99,285
+2017,song_month,R&B / Soul,0.10416666666666667,125,33,115
+2017,song_month,Reggae / Dancehall,0,0,0,0
+2017,song_month,Rock,0.0041666666666666666,5,2,5
+2017,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2017,rank_weighted,Alternative / Indie,0.03311881188118812,2007,6,1150
+2017,rank_weighted,Country,0.1245049504950495,7545,80,6892
+2017,rank_weighted,Electronic / Dance,0.075247524752475245,4560,24,4493
+2017,rank_weighted,Folk / Singer-Songwriter,0,0,0,0
+2017,rank_weighted,Gospel / Christian,0,0,0,0
+2017,rank_weighted,Hip-Hop / Rap,0.32947194719471945,19966,149,17302
+2017,rank_weighted,Jazz / Blues,0.0010396039603960397,63,1,63
+2017,rank_weighted,K-Pop,0.00041254125412541255,25,2,3
+2017,rank_weighted,Latin,0.030660066006600661,1858,10,1735
+2017,rank_weighted,Metal,0,0,0,0
+2017,rank_weighted,Other,0.00046204620462046204,28,1,28
+2017,rank_weighted,Pop,0.29212871287128711,17703,99,17124
+2017,rank_weighted,R&B / Soul,0.10806930693069307,6549,33,6237
+2017,rank_weighted,Reggae / Dancehall,0,0,0,0
+2017,rank_weighted,Rock,0.0048844884488448842,296,2,296
+2017,unique_song,Afrobeats / African Pop,0,0,0,0
+2017,unique_song,Alternative / Indie,0.014742014742014743,6,6,5
+2017,unique_song,Country,0.19656019656019655,80,80,70
+2017,unique_song,Electronic / Dance,0.05896805896805897,24,24,21
+2017,unique_song,Folk / Singer-Songwriter,0,0,0,0
+2017,unique_song,Gospel / Christian,0,0,0,0
+2017,unique_song,Hip-Hop / Rap,0.36609336609336607,149,149,113
+2017,unique_song,Jazz / Blues,0.0024570024570024569,1,1,1
+2017,unique_song,K-Pop,0.0049140049140049139,2,2,1
+2017,unique_song,Latin,0.024570024570024569,10,10,8
+2017,unique_song,Metal,0,0,0,0
+2017,unique_song,Other,0.0024570024570024569,1,1,1
+2017,unique_song,Pop,0.24324324324324326,99,99,91
+2017,unique_song,R&B / Soul,0.081081081081081086,33,33,29
+2017,unique_song,Reggae / Dancehall,0,0,0,0
+2017,unique_song,Rock,0.0049140049140049139,2,2,2
+2018,song_month,Afrobeats / African Pop,0,0,0,0
+2018,song_month,Alternative / Indie,0.022499999999999999,27,10,25
+2018,song_month,Country,0.16250000000000001,195,63,183
+2018,song_month,Electronic / Dance,0.035833333333333335,43,15,32
+2018,song_month,Folk / Singer-Songwriter,0,0,0,0
+2018,song_month,Gospel / Christian,0.0050000000000000001,6,1,6
+2018,song_month,Hip-Hop / Rap,0.43583333333333335,523,235,410
+2018,song_month,Jazz / Blues,0.0016666666666666668,2,2,2
+2018,song_month,K-Pop,0.0025000000000000001,3,3,1
+2018,song_month,Latin,0.044166666666666667,53,21,41
+2018,song_month,Metal,0.0041666666666666666,5,1,5
+2018,song_month,Other,0.00083333333333333339,1,1,1
+2018,song_month,Pop,0.1925,231,79,200
+2018,song_month,R&B / Soul,0.079166666666666663,95,33,72
+2018,song_month,Reggae / Dancehall,0,0,0,0
+2018,song_month,Rock,0.013333333333333334,16,5,16
+2018,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2018,rank_weighted,Alternative / Indie,0.021633663366336632,1311,10,1214
+2018,rank_weighted,Country,0.12567656765676569,7616,63,7268
+2018,rank_weighted,Electronic / Dance,0.035825082508250825,2171,15,1792
+2018,rank_weighted,Folk / Singer-Songwriter,0,0,0,0
+2018,rank_weighted,Gospel / Christian,0.0035313531353135313,214,1,214
+2018,rank_weighted,Hip-Hop / Rap,0.44359735973597358,26882,235,21945
+2018,rank_weighted,Jazz / Blues,0.0015676567656765677,95,2,95
+2018,rank_weighted,K-Pop,0.0017161716171617161,104,3,36
+2018,rank_weighted,Latin,0.038762376237623762,2349,21,1953
+2018,rank_weighted,Metal,0.0016006600660066006,97,1,97
+2018,rank_weighted,Other,0.00019801980198019803,12,1,12
+2018,rank_weighted,Pop,0.22991749174917492,13933,79,11863
+2018,rank_weighted,R&B / Soul,0.078597359735973593,4763,33,3664
+2018,rank_weighted,Reggae / Dancehall,0,0,0,0
+2018,rank_weighted,Rock,0.017376237623762378,1053,5,1053
+2018,unique_song,Afrobeats / African Pop,0,0,0,0
+2018,unique_song,Alternative / Indie,0.021321961620469083,10,10,8
+2018,unique_song,Country,0.13432835820895522,63,63,58
+2018,unique_song,Electronic / Dance,0.031982942430703626,15,15,10
+2018,unique_song,Folk / Singer-Songwriter,0,0,0,0
+2018,unique_song,Gospel / Christian,0.0021321961620469083,1,1,1
+2018,unique_song,Hip-Hop / Rap,0.50106609808102343,235,235,176
+2018,unique_song,Jazz / Blues,0.0042643923240938165,2,2,2
+2018,unique_song,K-Pop,0.0063965884861407248,3,3,1
+2018,unique_song,Latin,0.044776119402985072,21,21,17
+2018,unique_song,Metal,0.0021321961620469083,1,1,1
+2018,unique_song,Other,0.0021321961620469083,1,1,1
+2018,unique_song,Pop,0.16844349680170576,79,79,68
+2018,unique_song,R&B / Soul,0.070362473347547971,33,33,26
+2018,unique_song,Reggae / Dancehall,0,0,0,0
+2018,unique_song,Rock,0.010660980810234541,5,5,5
+2019,song_month,Afrobeats / African Pop,0,0,0,0
+2019,song_month,Alternative / Indie,0.025000000000000001,30,13,30
+2019,song_month,Country,0.19916666666666666,239,75,220
+2019,song_month,Electronic / Dance,0.024166666666666666,29,12,22
+2019,song_month,Folk / Singer-Songwriter,0,0,0,0
+2019,song_month,Gospel / Christian,0.0033333333333333335,4,1,4
+2019,song_month,Hip-Hop / Rap,0.36416666666666669,437,165,370
+2019,song_month,Jazz / Blues,0.00083333333333333339,1,1,1
+2019,song_month,K-Pop,0.0033333333333333335,4,3,2
+2019,song_month,Latin,0.047500000000000001,57,21,41
+2019,song_month,Metal,0.00083333333333333339,1,1,0
+2019,song_month,Other,0,0,0,0
+2019,song_month,Pop,0.25666666666666665,308,100,278
+2019,song_month,R&B / Soul,0.07166666666666667,86,31,66
+2019,song_month,Reggae / Dancehall,0,0,0,0
+2019,song_month,Rock,0.0033333333333333335,4,4,4
+2019,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2019,rank_weighted,Alternative / Indie,0.015132013201320132,917,13,917
+2019,rank_weighted,Country,0.14590759075907592,8842,75,8397
+2019,rank_weighted,Electronic / Dance,0.023498349834983497,1424,12,1141
+2019,rank_weighted,Folk / Singer-Songwriter,0,0,0,0
+2019,rank_weighted,Gospel / Christian,0.0042904290429042905,260,1,260
+2019,rank_weighted,Hip-Hop / Rap,0.37707920792079208,22851,165,19794
+2019,rank_weighted,Jazz / Blues,0.0011716171617161717,71,1,71
+2019,rank_weighted,K-Pop,0.0027557755775577558,167,3,34
+2019,rank_weighted,Latin,0.029504950495049503,1788,21,1241
+2019,rank_weighted,Metal,0.00057755775577557756,35,1,0
+2019,rank_weighted,Other,0,0,0,0
+2019,rank_weighted,Pop,0.33042904290429043,20024,100,17873
+2019,rank_weighted,R&B / Soul,0.066485148514851489,4029,31,3398
+2019,rank_weighted,Reggae / Dancehall,0,0,0,0
+2019,rank_weighted,Rock,0.0031683168316831685,192,4,192
+2019,unique_song,Afrobeats / African Pop,0,0,0,0
+2019,unique_song,Alternative / Indie,0.030444964871194378,13,13,13
+2019,unique_song,Country,0.1756440281030445,75,75,68
+2019,unique_song,Electronic / Dance,0.028103044496487119,12,12,8
+2019,unique_song,Folk / Singer-Songwriter,0,0,0,0
+2019,unique_song,Gospel / Christian,0.00234192037470726,1,1,1
+2019,unique_song,Hip-Hop / Rap,0.38641686182669788,165,165,134
+2019,unique_song,Jazz / Blues,0.00234192037470726,1,1,1
+2019,unique_song,K-Pop,0.0070257611241217799,3,3,2
+2019,unique_song,Latin,0.049180327868852458,21,21,17
+2019,unique_song,Metal,0.00234192037470726,1,1,0
+2019,unique_song,Other,0,0,0,0
+2019,unique_song,Pop,0.23419203747072601,100,100,86
+2019,unique_song,R&B / Soul,0.072599531615925056,31,31,23
+2019,unique_song,Reggae / Dancehall,0,0,0,0
+2019,unique_song,Rock,0.0093676814988290398,4,4,4
+2020,song_month,Afrobeats / African Pop,0,0,0,0
+2020,song_month,Alternative / Indie,0.020833333333333332,25,19,22
+2020,song_month,Country,0.22,264,77,240
+2020,song_month,Electronic / Dance,0.0275,33,6,20
+2020,song_month,Folk / Singer-Songwriter,0.0025000000000000001,3,3,3
+2020,song_month,Gospel / Christian,0,0,0,0
+2020,song_month,Hip-Hop / Rap,0.39916666666666667,479,227,398
+2020,song_month,Jazz / Blues,0.0025000000000000001,3,3,3
+2020,song_month,K-Pop,0.0050000000000000001,6,2,6
+2020,song_month,Latin,0.035833333333333335,43,18,29
+2020,song_month,Metal,0,0,0,0
+2020,song_month,Other,0,0,0,0
+2020,song_month,Pop,0.22833333333333333,274,92,229
+2020,song_month,R&B / Soul,0.051666666666666666,62,28,42
+2020,song_month,Reggae / Dancehall,0,0,0,0
+2020,song_month,Rock,0.0066666666666666671,8,5,8
+2020,rank_weighted,Afrobeats / African Pop,0,0,0,0
+2020,rank_weighted,Alternative / Indie,0.017838283828382838,1081,19,956
+2020,rank_weighted,Country,0.18641914191419143,11297,77,10059
+2020,rank_weighted,Electronic / Dance,0.035148514851485152,2130,6,1269
+2020,rank_weighted,Folk / Singer-Songwriter,0.0024587458745874589,149,3,149
+2020,rank_weighted,Gospel / Christian,0,0,0,0
+2020,rank_weighted,Hip-Hop / Rap,0.3854950495049505,23361,227,20041
+2020,rank_weighted,Jazz / Blues,0.003283828382838284,199,3,199
+2020,rank_weighted,K-Pop,0.0070792079207920794,429,2,429
+2020,rank_weighted,Latin,0.023168316831683168,1404,18,1073
+2020,rank_weighted,Metal,0,0,0,0
+2020,rank_weighted,Other,0,0,0,0
+2020,rank_weighted,Pop,0.29590759075907591,17932,92,15028
+2020,rank_weighted,R&B / Soul,0.036716171617161716,2225,28,1595
+2020,rank_weighted,Reggae / Dancehall,0,0,0,0
+2020,rank_weighted,Rock,0.0064851485148514848,393,5,393
+2020,unique_song,Afrobeats / African Pop,0,0,0,0
+2020,unique_song,Alternative / Indie,0.039583333333333331,19,19,16
+2020,unique_song,Country,0.16041666666666668,77,77,71
+2020,unique_song,Electronic / Dance,0.012500000000000001,6,6,4
+2020,unique_song,Folk / Singer-Songwriter,0.0062500000000000003,3,3,3
+2020,unique_song,Gospel / Christian,0,0,0,0
+2020,unique_song,Hip-Hop / Rap,0.47291666666666665,227,227,181
+2020,unique_song,Jazz / Blues,0.0062500000000000003,3,3,3
+2020,unique_song,K-Pop,0.0041666666666666666,2,2,2
+2020,unique_song,Latin,0.037499999999999999,18,18,13
+2020,unique_song,Metal,0,0,0,0
+2020,unique_song,Other,0,0,0,0
+2020,unique_song,Pop,0.19166666666666668,92,92,79
+2020,unique_song,R&B / Soul,0.058333333333333334,28,28,21
+2020,unique_song,Reggae / Dancehall,0,0,0,0
+2020,unique_song,Rock,0.010416666666666666,5,5,5
+2021,song_month,Afrobeats / African Pop,0.0091666666666666667,11,4,11
+2021,song_month,Alternative / Indie,0.02,24,11,12
+2021,song_month,Country,0.245,294,102,263
+2021,song_month,Electronic / Dance,0.01,12,4,12
+2021,song_month,Folk / Singer-Songwriter,0.0058333333333333336,7,3,7
+2021,song_month,Gospel / Christian,0,0,0,0
+2021,song_month,Hip-Hop / Rap,0.32666666666666666,392,190,280
+2021,song_month,Jazz / Blues,0.0025000000000000001,3,3,3
+2021,song_month,K-Pop,0.0091666666666666667,11,5,11
+2021,song_month,Latin,0.035833333333333335,43,20,34
+2021,song_month,Metal,0,0,0,0
+2021,song_month,Other,0.00083333333333333339,1,1,1
+2021,song_month,Pop,0.22833333333333333,274,97,247
+2021,song_month,R&B / Soul,0.081666666666666665,98,36,81
+2021,song_month,Reggae / Dancehall,0.00083333333333333339,1,1,0
+2021,song_month,Rock,0.024166666666666666,29,10,27
+2021,rank_weighted,Afrobeats / African Pop,0.010874587458745874,659,4,659
+2021,rank_weighted,Alternative / Indie,0.01764026402640264,1069,11,415
+2021,rank_weighted,Country,0.18933993399339935,11474,102,10184
+2021,rank_weighted,Electronic / Dance,0.0070957095709570954,430,4,430
+2021,rank_weighted,Folk / Singer-Songwriter,0.0067986798679867989,412,3,412
+2021,rank_weighted,Gospel / Christian,0,0,0,0
+2021,rank_weighted,Hip-Hop / Rap,0.32018151815181517,19403,190,14418
+2021,rank_weighted,Jazz / Blues,0.0033333333333333335,202,3,202
+2021,rank_weighted,K-Pop,0.012145214521452145,736,5,736
+2021,rank_weighted,Latin,0.026105610561056106,1582,20,1387
+2021,rank_weighted,Metal,0,0,0,0
+2021,rank_weighted,Other,0.00094059405940594056,57,1,57
+2021,rank_weighted,Pop,0.29435643564356434,17838,97,15970
+2021,rank_weighted,R&B / Soul,0.078960396039603961,4785,36,4154
+2021,rank_weighted,Reggae / Dancehall,1.65016501650165e-05,1,1,0
+2021,rank_weighted,Rock,0.032211221122112214,1952,10,1929
+2021,unique_song,Afrobeats / African Pop,0.0082135523613963042,4,4,4
+2021,unique_song,Alternative / Indie,0.022587268993839837,11,11,6
+2021,unique_song,Country,0.20944558521560575,102,102,94
+2021,unique_song,Electronic / Dance,0.0082135523613963042,4,4,4
+2021,unique_song,Folk / Singer-Songwriter,0.0061601642710472282,3,3,3
+2021,unique_song,Gospel / Christian,0,0,0,0
+2021,unique_song,Hip-Hop / Rap,0.39014373716632444,190,190,129
+2021,unique_song,Jazz / Blues,0.0061601642710472282,3,3,3
+2021,unique_song,K-Pop,0.010266940451745379,5,5,5
+2021,unique_song,Latin,0.041067761806981518,20,20,15
+2021,unique_song,Metal,0,0,0,0
+2021,unique_song,Other,0.0020533880903490761,1,1,1
+2021,unique_song,Pop,0.19917864476386038,97,97,86
+2021,unique_song,R&B / Soul,0.073921971252566734,36,36,27
+2021,unique_song,Reggae / Dancehall,0.0020533880903490761,1,1,0
+2021,unique_song,Rock,0.020533880903490759,10,10,9
+2022,song_month,Afrobeats / African Pop,0.014166666666666666,17,5,13
+2022,song_month,Alternative / Indie,0.029166666666666667,35,11,19
+2022,song_month,Country,0.2175,261,76,239
+2022,song_month,Electronic / Dance,0.025833333333333333,31,11,29
+2022,song_month,Folk / Singer-Songwriter,0.0025000000000000001,3,2,3
+2022,song_month,Gospel / Christian,0,0,0,0
+2022,song_month,Hip-Hop / Rap,0.28499999999999998,342,191,255
+2022,song_month,Jazz / Blues,0.0050000000000000001,6,6,5
+2022,song_month,K-Pop,0.0033333333333333335,4,4,3
+2022,song_month,Latin,0.087499999999999994,105,35,87
+2022,song_month,Metal,0.00083333333333333339,1,1,1
+2022,song_month,Other,0.014166666666666666,17,6,17
+2022,song_month,Pop,0.23166666666666666,278,97,260
+2022,song_month,R&B / Soul,0.072499999999999995,87,48,64
+2022,song_month,Reggae / Dancehall,0,0,0,0
+2022,song_month,Rock,0.010833333333333334,13,9,13
+2022,rank_weighted,Afrobeats / African Pop,0.010313531353135313,625,5,567
+2022,rank_weighted,Alternative / Indie,0.034504950495049508,2091,11,812
+2022,rank_weighted,Country,0.18301980198019802,11091,76,10195
+2022,rank_weighted,Electronic / Dance,0.02698019801980198,1635,11,1589
+2022,rank_weighted,Folk / Singer-Songwriter,0.00077557755775577554,47,2,47
+2022,rank_weighted,Gospel / Christian,0,0,0,0
+2022,rank_weighted,Hip-Hop / Rap,0.28008250825082509,16973,191,12694
+2022,rank_weighted,Jazz / Blues,0.0072937293729372936,442,6,390
+2022,rank_weighted,K-Pop,0.0024587458745874589,149,4,121
+2022,rank_weighted,Latin,0.081072607260726071,4913,35,4327
+2022,rank_weighted,Metal,0.00084158415841584157,51,1,51
+2022,rank_weighted,Other,0.013679867986798679,829,6,829
+2022,rank_weighted,Pop,0.29069306930693067,17616,97,16310
+2022,rank_weighted,R&B / Soul,0.05562706270627063,3371,48,2637
+2022,rank_weighted,Reggae / Dancehall,0,0,0,0
+2022,rank_weighted,Rock,0.012656765676567656,767,9,767
+2022,unique_song,Afrobeats / African Pop,0.0099601593625498006,5,5,4
+2022,unique_song,Alternative / Indie,0.021912350597609563,11,11,7
+2022,unique_song,Country,0.15139442231075698,76,76,69
+2022,unique_song,Electronic / Dance,0.021912350597609563,11,11,10
+2022,unique_song,Folk / Singer-Songwriter,0.0039840637450199202,2,2,2
+2022,unique_song,Gospel / Christian,0,0,0,0
+2022,unique_song,Hip-Hop / Rap,0.38047808764940239,191,191,146
+2022,unique_song,Jazz / Blues,0.011952191235059761,6,6,5
+2022,unique_song,K-Pop,0.0079681274900398405,4,4,3
+2022,unique_song,Latin,0.069721115537848599,35,35,28
+2022,unique_song,Metal,0.0019920318725099601,1,1,1
+2022,unique_song,Other,0.011952191235059761,6,6,6
+2022,unique_song,Pop,0.19322709163346613,97,97,91
+2022,unique_song,R&B / Soul,0.095617529880478086,48,48,34
+2022,unique_song,Reggae / Dancehall,0,0,0,0
+2022,unique_song,Rock,0.017928286852589643,9,9,9
+2023,song_month,Afrobeats / African Pop,0.011666666666666667,14,3,5
+2023,song_month,Alternative / Indie,0.018333333333333333,22,11,20
+2023,song_month,Country,0.25916666666666666,311,103,290
+2023,song_month,Electronic / Dance,0.019166666666666665,23,7,19
+2023,song_month,Folk / Singer-Songwriter,0.012500000000000001,15,6,13
+2023,song_month,Gospel / Christian,0.0066666666666666671,8,1,8
+2023,song_month,Hip-Hop / Rap,0.22833333333333333,274,133,198
+2023,song_month,Jazz / Blues,0.0050000000000000001,6,6,5
+2023,song_month,K-Pop,0.013333333333333334,16,9,15
+2023,song_month,Latin,0.14000000000000001,168,77,144
+2023,song_month,Metal,0,0,0,0
+2023,song_month,Other,0.00083333333333333339,1,1,1
+2023,song_month,Pop,0.18583333333333332,223,99,210
+2023,song_month,R&B / Soul,0.090833333333333335,109,34,85
+2023,song_month,Reggae / Dancehall,0,0,0,0
+2023,song_month,Rock,0.0083333333333333332,10,9,10
+2023,rank_weighted,Afrobeats / African Pop,0.01735973597359736,1052,3,249
+2023,rank_weighted,Alternative / Indie,0.016171617161716171,980,11,818
+2023,rank_weighted,Country,0.24752475247524752,15000,103,14060
+2023,rank_weighted,Electronic / Dance,0.021204620462046204,1285,7,1164
+2023,rank_weighted,Folk / Singer-Songwriter,0.011419141914191419,692,6,572
+2023,rank_weighted,Gospel / Christian,0.0094719471947194711,574,1,574
+2023,rank_weighted,Hip-Hop / Rap,0.2015841584158416,12216,133,9185
+2023,rank_weighted,Jazz / Blues,0.008151815181518151,494,6,409
+2023,rank_weighted,K-Pop,0.010742574257425742,651,9,626
+2023,rank_weighted,Latin,0.11292079207920792,6843,77,6004
+2023,rank_weighted,Metal,0,0,0,0
+2023,rank_weighted,Other,0.0011056105610561056,67,1,67
+2023,rank_weighted,Pop,0.22354785478547856,13547,99,12947
+2023,rank_weighted,R&B / Soul,0.10825082508250825,6560,34,5533
+2023,rank_weighted,Reggae / Dancehall,0,0,0,0
+2023,rank_weighted,Rock,0.010544554455445545,639,9,639
+2023,unique_song,Afrobeats / African Pop,0.0060120240480961923,3,3,2
+2023,unique_song,Alternative / Indie,0.022044088176352707,11,11,10
+2023,unique_song,Country,0.20641282565130262,103,103,96
+2023,unique_song,Electronic / Dance,0.014028056112224449,7,7,6
+2023,unique_song,Folk / Singer-Songwriter,0.012024048096192385,6,6,5
+2023,unique_song,Gospel / Christian,0.002004008016032064,1,1,1
+2023,unique_song,Hip-Hop / Rap,0.26653306613226452,133,133,95
+2023,unique_song,Jazz / Blues,0.012024048096192385,6,6,5
+2023,unique_song,K-Pop,0.018036072144288578,9,9,8
+2023,unique_song,Latin,0.15430861723446893,77,77,67
+2023,unique_song,Metal,0,0,0,0
+2023,unique_song,Other,0.002004008016032064,1,1,1
+2023,unique_song,Pop,0.19839679358717435,99,99,90
+2023,unique_song,R&B / Soul,0.068136272545090179,34,34,24
+2023,unique_song,Reggae / Dancehall,0,0,0,0
+2023,unique_song,Rock,0.018036072144288578,9,9,9
+2024,song_month,Afrobeats / African Pop,0.0033333333333333335,4,1,4
+2024,song_month,Alternative / Indie,0.029166666666666667,35,14,35
+2024,song_month,Country,0.25833333333333336,310,108,280
+2024,song_month,Electronic / Dance,0.011666666666666667,14,6,13
+2024,song_month,Folk / Singer-Songwriter,0.017500000000000002,21,9,20
+2024,song_month,Gospel / Christian,0.0016666666666666668,2,1,2
+2024,song_month,Hip-Hop / Rap,0.29249999999999998,351,203,275
+2024,song_month,Jazz / Blues,0.0058333333333333336,7,7,5
+2024,song_month,K-Pop,0.0050000000000000001,6,5,4
+2024,song_month,Latin,0.057500000000000002,69,31,53
+2024,song_month,Metal,0.0016666666666666668,2,1,2
+2024,song_month,Other,0.0025000000000000001,3,3,2
+2024,song_month,Pop,0.23499999999999999,282,100,252
+2024,song_month,R&B / Soul,0.070000000000000007,84,21,61
+2024,song_month,Reggae / Dancehall,0.0025000000000000001,3,1,3
+2024,song_month,Rock,0.0058333333333333336,7,6,7
+2024,rank_weighted,Afrobeats / African Pop,0.0054950495049504947,333,1,333
+2024,rank_weighted,Alternative / Indie,0.020825082508250825,1262,14,1262
+2024,rank_weighted,Country,0.24533003300330034,14867,108,13483
+2024,rank_weighted,Electronic / Dance,0.008003300330033004,485,6,438
+2024,rank_weighted,Folk / Singer-Songwriter,0.018828382838283829,1141,9,1139
+2024,rank_weighted,Gospel / Christian,0.0019471947194719473,118,1,118
+2024,rank_weighted,Hip-Hop / Rap,0.26719471947194717,16192,203,12451
+2024,rank_weighted,Jazz / Blues,0.0077557755775577554,470,7,341
+2024,rank_weighted,K-Pop,0.0019801980198019802,120,5,105
+2024,rank_weighted,Latin,0.036633663366336632,2220,31,1662
+2024,rank_weighted,Metal,0.0014191419141914192,86,1,86
+2024,rank_weighted,Other,0.0021782178217821784,132,3,59
+2024,rank_weighted,Pop,0.29313531353135314,17764,100,16507
+2024,rank_weighted,R&B / Soul,0.080214521452145221,4861,21,3632
+2024,rank_weighted,Reggae / Dancehall,0.0016831683168316831,102,1,102
+2024,rank_weighted,Rock,0.0073762376237623759,447,6,447
+2024,unique_song,Afrobeats / African Pop,0.0019342359767891683,1,1,1
+2024,unique_song,Alternative / Indie,0.027079303675048357,14,14,14
+2024,unique_song,Country,0.20889748549323017,108,108,93
+2024,unique_song,Electronic / Dance,0.01160541586073501,6,6,5
+2024,unique_song,Folk / Singer-Songwriter,0.017408123791102514,9,9,8
+2024,unique_song,Gospel / Christian,0.0019342359767891683,1,1,1
+2024,unique_song,Hip-Hop / Rap,0.39264990328820115,203,203,159
+2024,unique_song,Jazz / Blues,0.013539651837524178,7,7,5
+2024,unique_song,K-Pop,0.0096711798839458421,5,5,3
+2024,unique_song,Latin,0.059961315280464215,31,31,25
+2024,unique_song,Metal,0.0019342359767891683,1,1,1
+2024,unique_song,Other,0.0058027079303675051,3,3,2
+2024,unique_song,Pop,0.19342359767891681,100,100,86
+2024,unique_song,R&B / Soul,0.040618955512572531,21,21,15
+2024,unique_song,Reggae / Dancehall,0.0019342359767891683,1,1,1
+2024,unique_song,Rock,0.01160541586073501,6,6,6
+2025,song_month,Afrobeats / African Pop,0.00083333333333333339,1,1,1
+2025,song_month,Alternative / Indie,0.043333333333333335,52,14,51
+2025,song_month,Country,0.25166666666666665,302,101,278
+2025,song_month,Electronic / Dance,0.010833333333333334,13,6,11
+2025,song_month,Folk / Singer-Songwriter,0.0033333333333333335,4,1,4
+2025,song_month,Gospel / Christian,0.010833333333333334,13,4,13
+2025,song_month,Hip-Hop / Rap,0.19083333333333333,229,127,180
+2025,song_month,Jazz / Blues,0.0083333333333333332,10,8,8
+2025,song_month,K-Pop,0.036666666666666667,44,13,33
+2025,song_month,Latin,0.065000000000000002,78,35,58
+2025,song_month,Metal,0.0016666666666666668,2,2,1
+2025,song_month,Other,0.0025000000000000001,3,3,2
+2025,song_month,Pop,0.25916666666666666,311,113,256
+2025,song_month,R&B / Soul,0.10333333333333333,124,45,108
+2025,song_month,Reggae / Dancehall,0.0050000000000000001,6,1,6
+2025,song_month,Rock,0.0066666666666666671,8,7,8
+2025,rank_weighted,Afrobeats / African Pop,8.2508250825082509e-05,5,1,5
+2025,rank_weighted,Alternative / Indie,0.036518151815181518,2213,14,2195
+2025,rank_weighted,Country,0.2376897689768977,14404,101,13229
+2025,rank_weighted,Electronic / Dance,0.0052145214521452142,316,6,279
+2025,rank_weighted,Folk / Singer-Songwriter,0.00400990099009901,243,1,243
+2025,rank_weighted,Gospel / Christian,0.0056270627062706274,341,4,341
+2025,rank_weighted,Hip-Hop / Rap,0.1676072607260726,10157,127,7990
+2025,rank_weighted,Jazz / Blues,0.012194719471947195,739,8,594
+2025,rank_weighted,K-Pop,0.048168316831683169,2919,13,2282
+2025,rank_weighted,Latin,0.045643564356435642,2766,35,2092
+2025,rank_weighted,Metal,0.0012706270627062706,77,2,33
+2025,rank_weighted,Other,0.0028547854785478549,173,3,92
+2025,rank_weighted,Pop,0.31231023102310229,18926,113,15736
+2025,rank_weighted,R&B / Soul,0.10981848184818482,6655,45,5824
+2025,rank_weighted,Reggae / Dancehall,0.0025907590759075907,157,1,157
+2025,rank_weighted,Rock,0.0083993399339933987,509,7,509
+2025,unique_song,Afrobeats / African Pop,0.0020790020790020791,1,1,1
+2025,unique_song,Alternative / Indie,0.029106029106029108,14,14,13
+2025,unique_song,Country,0.20997920997920999,101,101,91
+2025,unique_song,Electronic / Dance,0.012474012474012475,6,6,4
+2025,unique_song,Folk / Singer-Songwriter,0.0020790020790020791,1,1,1
+2025,unique_song,Gospel / Christian,0.0083160083160083165,4,4,4
+2025,unique_song,Hip-Hop / Rap,0.26403326403326405,127,127,97
+2025,unique_song,Jazz / Blues,0.016632016632016633,8,8,6
+2025,unique_song,K-Pop,0.027027027027027029,13,13,9
+2025,unique_song,Latin,0.072765072765072769,35,35,26
+2025,unique_song,Metal,0.0041580041580041582,2,2,1
+2025,unique_song,Other,0.0062370062370062374,3,3,2
+2025,unique_song,Pop,0.23492723492723494,113,113,93
+2025,unique_song,R&B / Soul,0.09355509355509356,45,45,38
+2025,unique_song,Reggae / Dancehall,0.0020790020790020791,1,1,1
+2025,unique_song,Rock,0.014553014553014554,7,7,7

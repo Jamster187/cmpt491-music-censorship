@@ -15,6 +15,7 @@ For presentation figures, go directly to the moving-average all-genres shortlist
 | [analysis/regression_search/meaningful/](../analysis/regression_search/meaningful/README.md) | Separate post-hoc meaningful/cross-domain results and local interactive demo instructions |
 | [analysis/relationship_discovery/full_phase1/](../analysis/relationship_discovery/full_phase1/README.md) | Approved exhaustive pairwise/nonlinear/genre campaign, findings, validation and classroom view |
 | [analysis/relationship_discovery/](../analysis/relationship_discovery/README.md) | Preserved bounded discovery pilot, frozen methodology and original search-space design |
+| [analysis/historical_decomposition/](../analysis/historical_decomposition/README.md) | Completed symmetric accounting, uncertainty, weighting/missingness sensitivity and fixed historical/2020 comparisons |
 | [reports/](../reports/README.md) | Final audits and required production evidence |
 | [archive/](../archive/README.md) | Superseded experiments, narratives and intermediate reports |
 

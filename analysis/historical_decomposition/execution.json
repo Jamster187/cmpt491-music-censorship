@@ -1,0 +1,263 @@
+{
+  "artists": 9558,
+  "breakpoint_groups": [
+    {
+      "matrix_condition": 2508.06074674851,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 1970
+    },
+    {
+      "matrix_condition": 616118.1056285698,
+      "model": "genre_adjusted",
+      "parameters": 28,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 1970
+    },
+    {
+      "matrix_condition": 2508.06074674849,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 1975
+    },
+    {
+      "matrix_condition": 1262987.8258796735,
+      "model": "genre_adjusted",
+      "parameters": 29,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 1975
+    },
+    {
+      "matrix_condition": 2508.0607467484733,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 4,
+      "year": 1980
+    },
+    {
+      "matrix_condition": 2508.060746748476,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 7,
+      "year": 1980
+    },
+    {
+      "matrix_condition": 49361.26404822961,
+      "model": "genre_adjusted",
+      "parameters": 28,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 4,
+      "year": 1980
+    },
+    {
+      "matrix_condition": 49361.23769000264,
+      "model": "genre_adjusted",
+      "parameters": 28,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 7,
+      "year": 1980
+    },
+    {
+      "matrix_condition": 2508.0607467484897,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 4,
+      "year": 1985
+    },
+    {
+      "matrix_condition": 2508.06074674848,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 7,
+      "year": 1985
+    },
+    {
+      "matrix_condition": 20079.856512674178,
+      "model": "genre_adjusted",
+      "parameters": 28,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 4,
+      "year": 1985
+    },
+    {
+      "matrix_condition": 20132.37958276993,
+      "model": "genre_adjusted",
+      "parameters": 28,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 7,
+      "year": 1985
+    },
+    {
+      "matrix_condition": 2508.060746748472,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 1990
+    },
+    {
+      "matrix_condition": 2752540.257653296,
+      "model": "genre_adjusted",
+      "parameters": 29,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 1990
+    },
+    {
+      "matrix_condition": 2508.060746748523,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 1995
+    },
+    {
+      "matrix_condition": 2752835.5987944575,
+      "model": "genre_adjusted",
+      "parameters": 29,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 1995
+    },
+    {
+      "matrix_condition": 2508.0607467484765,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 2000
+    },
+    {
+      "matrix_condition": 2752891.800557491,
+      "model": "genre_adjusted",
+      "parameters": 29,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 2000
+    },
+    {
+      "matrix_condition": 2508.060746748495,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 2005
+    },
+    {
+      "matrix_condition": 185856.56714833548,
+      "model": "genre_adjusted",
+      "parameters": 29,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 2005
+    },
+    {
+      "matrix_condition": 2508.0607467484774,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 2010
+    },
+    {
+      "matrix_condition": 17044.214495321718,
+      "model": "genre_adjusted",
+      "parameters": 29,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 2010
+    },
+    {
+      "matrix_condition": 2508.060746748432,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 2015
+    },
+    {
+      "matrix_condition": 18127.283021328192,
+      "model": "genre_adjusted",
+      "parameters": 29,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 2015
+    },
+    {
+      "matrix_condition": 2508.0607467484806,
+      "model": "unadjusted",
+      "parameters": 15,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 2020
+    },
+    {
+      "matrix_condition": 94541.44300353764,
+      "model": "genre_adjusted",
+      "parameters": 30,
+      "replicate_fits": 9999,
+      "reused": false,
+      "scores": 11,
+      "year": 2020
+    }
+  ],
+  "classifiers": 42,
+  "comparisons": 882,
+  "genre_contribution_rows": 14112,
+  "initial_preservation": {
+    "baseline_commit": "d5a062c27ac88c15a02615e6f284cd801c19ee38",
+    "files": 1693,
+    "status": "PASS"
+  },
+  "input_sha256": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+  "peak_rss_bytes": 1036009472,
+  "primary_by_pass": 23,
+  "primary_hypotheses": 715,
+  "rows": 79194,
+  "seconds": 311.67058720800003,
+  "six_largest_genres": [
+    "Pop",
+    "R&B / Soul",
+    "Rock",
+    "Hip-Hop / Rap",
+    "Country",
+    "Electronic / Dance"
+  ],
+  "songs": 27039,
+  "status": "PASS"
+}

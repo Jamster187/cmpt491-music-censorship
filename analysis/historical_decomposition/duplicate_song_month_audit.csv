@@ -1,0 +1,4 @@
+month,song_id,primary_genre,source_rows,source_ranks,analysis_rank_weight,analysis_song_month_count
+1990-10,song_179efe3f39a967af802acbebaff49539c6c78c6deb317f445353e1addee32161,Pop,2,15|22,82.5,1
+1990-11,song_179efe3f39a967af802acbebaff49539c6c78c6deb317f445353e1addee32161,Pop,2,31|44,63.5,1
+1990-12,song_179efe3f39a967af802acbebaff49539c6c78c6deb317f445353e1addee32161,Pop,2,40|97,32.5,1

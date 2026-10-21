@@ -9,3 +9,7 @@ Other modules preserve ingestion, metadata, acquisition, classifier and genre hi
 They remain here to preserve imports and frozen production implementations. Their
 presence is not a request to rerun acquisition/inference. Archived pilot guides and
 reports are linked from [archive/README.md](../archive/README.md).
+
+The completed [historical analysis](../analysis/historical_decomposition/README.md)
+uses `historical_decomposition.py`. Its preparation, verification and figure/report
+scripts live with the published analysis; no acquisition or classification is needed.

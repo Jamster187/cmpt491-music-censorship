@@ -1,0 +1,375 @@
+{
+  "cache_arrays_unchanged": [
+    {
+      "draws_sha256": "1d8234896669ad02f2a1362732011552f2d008e57aab948afe0917e80c691e07",
+      "name": "decomposition_1960s_vs_1970s"
+    },
+    {
+      "draws_sha256": "dcaa7339cdf6d6c01dcb0f0657433d4de170e945549313653363fb582af98bfa",
+      "name": "decomposition_1970s_vs_1980s"
+    },
+    {
+      "draws_sha256": "17c76518ad5209de2e3810472d2417e39608a93b57dd7c094c43e2f0b050c18c",
+      "name": "decomposition_1980s_vs_1990s"
+    },
+    {
+      "draws_sha256": "030b768b015d8b50fe169f8a08f7e8b2a92cbdcfe0a5a9bdfd3eb66b2ca13fad",
+      "name": "decomposition_1990s_vs_2000s"
+    },
+    {
+      "draws_sha256": "0dc2a59ce644feda9845bbc13223161456a3b16f2ee724448c9e1925c777f147",
+      "name": "decomposition_2000s_vs_2010s"
+    },
+    {
+      "draws_sha256": "bec3dcad48dc9acad6c322ca345ad2461af3b4c4428b60459d4fb09db046cbf2",
+      "name": "decomposition_2010s_vs_2020\u20132025"
+    },
+    {
+      "draws_sha256": "4fca047dd258a5e21e1366e18421b4aa2e5fe90316e2b62c22a89fe94186f404",
+      "name": "sensitivity_2010s_vs_2020\u20132025_12_crossed"
+    },
+    {
+      "draws_sha256": "335defae02105bf0b4b834502bb5b43057ae30d2aa7493bcbe67cd23e0e8bf40",
+      "name": "sensitivity_2010s_vs_2020\u20132025_36_crossed"
+    },
+    {
+      "draws_sha256": "f54f16fa6eb233c20d0838d6664b90e63910bd7f4ade730d0462755484de9030",
+      "name": "sensitivity_2010s_vs_2020\u20132025_24_artist_only"
+    },
+    {
+      "draws_sha256": "869aa808c3610b2dd4d04c151eb604af1b648a47759f518dfb994ee35f4589d3",
+      "name": "sensitivity_2010s_vs_2020\u20132025_24_calendar_only"
+    },
+    {
+      "draws_sha256": "72149d928738f51b02e0772d54821d3029846bd95297e5a9ec494131326f637b",
+      "name": "decomposition_1990s_vs_2015\u20132024"
+    },
+    {
+      "draws_sha256": "26f1232165b16440520d66a41c8db9e1e4480d683bc797266b4e56e05866be2b",
+      "name": "sensitivity_1990s_vs_2015\u20132024_12_crossed"
+    },
+    {
+      "draws_sha256": "6a893c8d704880f4d989f15f8aae1292cb62480580e1e2db0d4402e9242c0257",
+      "name": "sensitivity_1990s_vs_2015\u20132024_36_crossed"
+    },
+    {
+      "draws_sha256": "51381d90bce18408d3bab7561d1c41c176fa73d2b89e18922534ba70bf20f593",
+      "name": "sensitivity_1990s_vs_2015\u20132024_24_artist_only"
+    },
+    {
+      "draws_sha256": "7f480927d2137727bfa9d9836abc3472660e7ee1efda6d0ae0b0c883ef1ba8e9",
+      "name": "sensitivity_1990s_vs_2015\u20132024_24_calendar_only"
+    },
+    {
+      "draws_sha256": "f90899ef5155f06ef74ab62d04f0121f2aa39b08cae37e580a9ade1abf4e7030",
+      "name": "break_1970_unadjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "65a3acf63f7a84a5e73388904e2c662c720c336070642e55250069ad5f5bb2de",
+      "name": "break_1970_genre_adjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "22a316ebe9e4efce9008931f56566177b27f9a4c0aa49ecef1789c528d142849",
+      "name": "break_1975_unadjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "24cf95c4197adb711b65c321a628389862bf0b1046a6302de02ce7192c9307ea",
+      "name": "break_1975_genre_adjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "88b8cd3cf182cad5d33e2b8f566c5f02c97108ec5321bad2c35bb3525d7338cd",
+      "name": "break_1980_unadjusted_adef8199"
+    },
+    {
+      "draws_sha256": "bc44996090636f2bc5d24d39cde84e7e26c7425768217e3ac0eb3232317838be",
+      "name": "break_1980_unadjusted_45d6c389"
+    },
+    {
+      "draws_sha256": "b969f8e3cbcf038c8fb885bda9a5a69e24264c2f3dbbef4dd5106da1baa2d83e",
+      "name": "break_1980_genre_adjusted_adef8199"
+    },
+    {
+      "draws_sha256": "ed6c086b5db646de410628c803693bc7c0aba5befce81bcf05f0c25690284208",
+      "name": "break_1980_genre_adjusted_45d6c389"
+    },
+    {
+      "draws_sha256": "1f40377ade53ed5c4022e08f5a924c9292cd9b4005077539bb063e892680babc",
+      "name": "break_1985_unadjusted_adef8199"
+    },
+    {
+      "draws_sha256": "16f7b83cfffadc61dd61b34e5d1d48acc46b88e28e0eead91dcfd39b7f84cf4e",
+      "name": "break_1985_unadjusted_45d6c389"
+    },
+    {
+      "draws_sha256": "eabc38d60c9b74980670816e6ebb0d36836562d756ad6c64d4ce18e431c691bb",
+      "name": "break_1985_genre_adjusted_adef8199"
+    },
+    {
+      "draws_sha256": "81938f5550f25c8348b658fca9252e31d633577dc1a40a390aa70b869e31bdf5",
+      "name": "break_1985_genre_adjusted_45d6c389"
+    },
+    {
+      "draws_sha256": "faa2a71e0e5db8712c4cacd3564310045d03f1f5b2dc9a8a7786b9988210f9ba",
+      "name": "break_1990_unadjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "d47a4abc49b58617a4e8f79f16cf25cc848da69506d8dd54f2b59cd9b897ecd7",
+      "name": "break_1990_genre_adjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "a93408bcae3b39b0442e4e12efd1a4bf32f34a5ea5da627b3b7454d9ad95a790",
+      "name": "break_1995_unadjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "e193b6f53126c41cadfc6dd6ed5aa7f7fc3f0403b1128b9036c890012918462f",
+      "name": "break_1995_genre_adjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "dc0a08fc9dce7c02d9274218693a99d7c323ce133fddd653590970574ec9061d",
+      "name": "break_2000_unadjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "958f728927f3fa6d946faa7a74bf815176d5ca99b9b6ecae5b31891935b2a93e",
+      "name": "break_2000_genre_adjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "7e14694a69d4080481b96d87cdd99acaedac7d6f624cb2381324292609eeacc9",
+      "name": "break_2005_unadjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "1edc65fe5bb669f8df41bf5ce5542ba79957701f92ed6f82930f6a8073507bc8",
+      "name": "break_2005_genre_adjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "f0b37e380e1d9d569ecaeab3aeb551cacb5f3c112cf8cd97a4c5f144f3dc6e1c",
+      "name": "break_2010_unadjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "8fb81c4e1e7b7e3191e3a7a5beb1ae42686b7fa7d53527371bd1e0d18db6343b",
+      "name": "break_2010_genre_adjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "dceb1c554158af301955a715483cbeb377f87ea95eda161a6eb5e8a4bbceb045",
+      "name": "break_2015_unadjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "ce1026d97c4f52fb08c0c6ecc30b132e887e1dd3b83720bdcdd5bf81880c7eba",
+      "name": "break_2015_genre_adjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "94d47ed17294b3d33239c274e3b8eb9e3d3447681ef6b26b022e16e9a3f34d3a",
+      "name": "break_2020_unadjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "4dedfbf5c300328f4098b8de5df885171d301729a8f6e7c8d4abd1143c600517",
+      "name": "break_2020_unadjusted_8e7f288f_12_crossed"
+    },
+    {
+      "draws_sha256": "614e2ac01f8b5aa9dd61020a268763bdcb350976e8d6b334941523ef95e69149",
+      "name": "break_2020_unadjusted_8e7f288f_36_crossed"
+    },
+    {
+      "draws_sha256": "af4cd4c9f62665fa45d516c3e4897d75712c35d75ee4618fbd07922a88c7093d",
+      "name": "break_2020_unadjusted_8e7f288f_24_artist_only"
+    },
+    {
+      "draws_sha256": "1445e12daa92d51389b15577f4e598e5992a8f4cd21e1586837f423bfe376f45",
+      "name": "break_2020_unadjusted_8e7f288f_24_calendar_only"
+    },
+    {
+      "draws_sha256": "291e24557e7e1fae52d69fb8d557e1936396518a029a355c642fa744f64f4a33",
+      "name": "break_2020_genre_adjusted_8e7f288f"
+    },
+    {
+      "draws_sha256": "034559d5d3aa912c3f20bd44171e88781d457ceb72104bd6710d5810fbf79aa1",
+      "name": "break_2020_genre_adjusted_8e7f288f_12_crossed"
+    },
+    {
+      "draws_sha256": "a73860f1d142aaa4d9e76075489e2d3c4caffafaef1fa7f1c7ee57efde1cc1d6",
+      "name": "break_2020_genre_adjusted_8e7f288f_36_crossed"
+    },
+    {
+      "draws_sha256": "10846b3a32688ff332aa5f3564f5b787ed7596bbf39e301fce935353b622524d",
+      "name": "break_2020_genre_adjusted_8e7f288f_24_artist_only"
+    },
+    {
+      "draws_sha256": "8485384a3ae0d5ba06de80171cf07e1b9ded286473f065c936768aeb92df2de9",
+      "name": "break_2020_genre_adjusted_8e7f288f_24_calendar_only"
+    }
+  ],
+  "current_source_sha256": "70ac9aa92e8e33719c3e0d04b7fe0a5d842fa72a54f216438db2b165a4a5651c",
+  "only_identity_field_changed": "source_sha256",
+  "original_local_protocol_and_cache_files_preserved": true,
+  "original_protocol": {
+    "exploratory": true,
+    "identity": {
+      "block_months": 24,
+      "bootstraps": 9999,
+      "breaks": [
+        1970,
+        1975,
+        1980,
+        1985,
+        1990,
+        1995,
+        2000,
+        2005,
+        2010,
+        2015,
+        2020
+      ],
+      "comparisons": [
+        [
+          "1960s",
+          "1970s"
+        ],
+        [
+          "1970s",
+          "1980s"
+        ],
+        [
+          "1980s",
+          "1990s"
+        ],
+        [
+          "1990s",
+          "2000s"
+        ],
+        [
+          "2000s",
+          "2010s"
+        ],
+        [
+          "2010s",
+          "2020\u20132025"
+        ],
+        [
+          "1990s",
+          "2015\u20132024"
+        ]
+      ],
+      "descriptive_source_sha256": "272f1fc599680b0ac14ce291c3ce58a139a191b5bf33cbb7c596dea56b12cee1",
+      "features": [
+        "ll_sexual_content",
+        "ll_violence",
+        "ll_explicit_language",
+        "ll_substance_use",
+        "detox_toxicity",
+        "detox_severe_toxicity",
+        "detox_obscene",
+        "detox_threat",
+        "detox_insult",
+        "detox_identity_attack",
+        "detox_sexual_explicit",
+        "emotion_admiration",
+        "emotion_amusement",
+        "emotion_anger",
+        "emotion_annoyance",
+        "emotion_approval",
+        "emotion_caring",
+        "emotion_confusion",
+        "emotion_curiosity",
+        "emotion_desire",
+        "emotion_disappointment",
+        "emotion_disapproval",
+        "emotion_disgust",
+        "emotion_embarrassment",
+        "emotion_excitement",
+        "emotion_fear",
+        "emotion_gratitude",
+        "emotion_grief",
+        "emotion_joy",
+        "emotion_love",
+        "emotion_nervousness",
+        "emotion_optimism",
+        "emotion_pride",
+        "emotion_realization",
+        "emotion_relief",
+        "emotion_remorse",
+        "emotion_sadness",
+        "emotion_surprise",
+        "emotion_neutral",
+        "sentiment_negative",
+        "sentiment_neutral",
+        "sentiment_positive"
+      ],
+      "input_sha256": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "periods": {
+        "1960s": [
+          1960,
+          1969
+        ],
+        "1970s": [
+          1970,
+          1979
+        ],
+        "1980s": [
+          1980,
+          1989
+        ],
+        "1990s": [
+          1990,
+          1999
+        ],
+        "2000s": [
+          2000,
+          2009
+        ],
+        "2010s": [
+          2010,
+          2019
+        ],
+        "2015\u20132024": [
+          2015,
+          2024
+        ],
+        "2020\u20132025": [
+          2020,
+          2025
+        ]
+      },
+      "preliminary_claims_provenance": "User: group Milestone 2 report, Question 4; original source code unavailable; unverified",
+      "preparation_sha256": "e48b1c654256e8736671a80a753ee2ef87970e00227c1d85a3f25c7dcf23b1a7",
+      "primary": [
+        "ll_explicit_language",
+        "ll_violence",
+        "ll_sexual_content",
+        "ll_substance_use",
+        "detox_toxicity",
+        "sentiment_positive",
+        "sentiment_negative",
+        "emotion_joy",
+        "emotion_love",
+        "emotion_sadness",
+        "emotion_anger"
+      ],
+      "primary_hypotheses": 715,
+      "python": "3.9.6",
+      "scipy": "1.13.1",
+      "source_commit": "d5a062c27ac88c15a02615e6f284cd801c19ee38",
+      "source_sha256": "0e9417d1de505889afaab5b303e069e243aca0e49591366ff5a25c4340709fca",
+      "version": "historical-decomposition-v2-precision"
+    },
+    "original_claims_unverified": true
+  },
+  "reason": "Canonicalize tuples to JSON lists before saved protocol comparison; no statistical code, design, draws or results changed.",
+  "scientific_tables_identical": {
+    "annual_genre_shares.csv": "c037abe1b8a4ee344052db5356931d9e85d438f9d0c5ecef12e72579443f3e91",
+    "annual_trajectories.csv.gz": "1a974c417f21bc5cb94eb967ec0d5635b32ef34e4cac1f2b3bcff5df00de2ea9",
+    "breakpoint_coefficients.csv": "294eeeabf24752c2df41780e84ab587c82a106d56f8c64b08c157fba46523e03",
+    "breakpoint_results.csv": "31f70b5a5cf52bbf95bd4ca0660ba07d4b5e871bab142ef1c20ffa010fc256a5",
+    "decomposition_results.csv": "327151a3b165923c54bd2819055670c9d4305836743662c0dd6481ad18b30e74",
+    "duplicate_song_month_audit.csv": "d4ed92a6bbf84bffa46aa83b0b9558ea2e9345fa65539ae0e022562c457ba88c",
+    "genre_period_statistics.csv": "22e694cd7be9df5a1d840bb8680e0cf6259c766c4d7c486a960a2374be71ffbc",
+    "historical_comparisons.csv": "27bb12452e5e75917f647d79425371624f062f82d87b7a3d1dbc577498ecb312",
+    "precision_999_primary_tests.csv": "7bd86ada5d7ba0cef4173637850b09c22ba7b2a7c565d22a4f31a19d0e97e84b",
+    "preliminary_claims_audit.csv": "626cf566f9a48b5b4e62bd7f12ef110847427ea9c4c24fb72c940c731a9bb0a8",
+    "primary_tests.csv": "5626a22e1737885ec5c359b8b7a333bc9649b39f926734d761684712f2e12db9",
+    "reference_path_audit.csv": "fbf794fffeffc37ec6adeb926c4f06b87153629461d5307baa787e671a383009",
+    "sensitivity_results.csv": "d22a88ab605cd409a039bfa6e07333ed2148813df9b14413458fd385e5fe32f6"
+  },
+  "source_diff": "--- before_resume_fix\n+++ current\n@@ -271,7 +271,7 @@\n \n \n def source_identity():\n-    return dict(version='historical-decomposition-v2-precision',input_sha256=descriptive.sha(moving.INPUT),\n+    identity=dict(version='historical-decomposition-v2-precision',input_sha256=descriptive.sha(moving.INPUT),\n         source_sha256=descriptive.sha(Path(__file__)),preparation_sha256=descriptive.sha(Path(moving.__file__)),\n         descriptive_source_sha256=descriptive.sha(Path(descriptive.__file__)),\n         periods=PERIODS,comparisons=COMPARISONS,features=FEATURES,primary=PRIMARY,breaks=BREAKS,\n@@ -279,6 +279,9 @@\n         source_commit='d5a062c27ac88c15a02615e6f284cd801c19ee38',\n         python=platform.python_version(),numpy=np.__version__,pandas=pd.__version__,scipy=scipy.__version__,\n         preliminary_claims_provenance='User: group Milestone 2 report, Question 4; original source code unavailable; unverified')\n+    # JSON stores period/comparison tuples as lists. Canonicalize before comparing\n+    # a saved protocol so an unchanged analysis can actually resume.\n+    return json.loads(json.dumps(identity))\n \n \n def benchmark(data,genres):\n",
+  "status": "PASS"
+}

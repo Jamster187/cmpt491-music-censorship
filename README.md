@@ -2,8 +2,9 @@
 
 We study lyrical characteristics and genre differences in mainstream Billboard music
 from 1958–2026. The final datasets and exploratory descriptive analyses are complete.
-Formal COVID breakpoint/significance analysis has **not** been performed; descriptive
-changes do not establish causation.
+A bounded historical decomposition and exploratory 2020/placebo analysis is now
+[complete](analysis/historical_decomposition/README.md). It does not establish a
+distinctive genre-independent 2020 disruption or a causal COVID effect.
 
 ## Repository guide
 
@@ -16,6 +17,7 @@ changes do not establish causation.
 | Reproducible code and commands | [src/](src/README.md) |
 | Final audits and production evidence | [reports/](reports/README.md) |
 | Superseded experiments and historical reports | [archive/](archive/README.md) |
+| Historical change and genre decomposition | [analysis/historical_decomposition/](analysis/historical_decomposition/README.md) |
 | Regression tests | [tests/](tests/) |
 | Three-predictor OLS experiment and professor demo | [analysis/regression_search/](analysis/regression_search/README.md) |
 

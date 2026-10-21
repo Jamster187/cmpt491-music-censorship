@@ -1,0 +1,23 @@
+{
+  "identical_scientific_tables": 13,
+  "initial_execution_record_preserved": true,
+  "new_bootstrap_calculations": 0,
+  "seconds": 25.193355833,
+  "status": "PASS",
+  "table_sha256": {
+    "annual_genre_shares.csv": "c037abe1b8a4ee344052db5356931d9e85d438f9d0c5ecef12e72579443f3e91",
+    "annual_trajectories.csv.gz": "1a974c417f21bc5cb94eb967ec0d5635b32ef34e4cac1f2b3bcff5df00de2ea9",
+    "breakpoint_coefficients.csv": "294eeeabf24752c2df41780e84ab587c82a106d56f8c64b08c157fba46523e03",
+    "breakpoint_results.csv": "31f70b5a5cf52bbf95bd4ca0660ba07d4b5e871bab142ef1c20ffa010fc256a5",
+    "decomposition_results.csv": "327151a3b165923c54bd2819055670c9d4305836743662c0dd6481ad18b30e74",
+    "duplicate_song_month_audit.csv": "d4ed92a6bbf84bffa46aa83b0b9558ea2e9345fa65539ae0e022562c457ba88c",
+    "genre_period_statistics.csv": "22e694cd7be9df5a1d840bb8680e0cf6259c766c4d7c486a960a2374be71ffbc",
+    "historical_comparisons.csv": "27bb12452e5e75917f647d79425371624f062f82d87b7a3d1dbc577498ecb312",
+    "precision_999_primary_tests.csv": "7bd86ada5d7ba0cef4173637850b09c22ba7b2a7c565d22a4f31a19d0e97e84b",
+    "preliminary_claims_audit.csv": "626cf566f9a48b5b4e62bd7f12ef110847427ea9c4c24fb72c940c731a9bb0a8",
+    "primary_tests.csv": "5626a22e1737885ec5c359b8b7a333bc9649b39f926734d761684712f2e12db9",
+    "reference_path_audit.csv": "fbf794fffeffc37ec6adeb926c4f06b87153629461d5307baa787e671a383009",
+    "sensitivity_results.csv": "d22a88ab605cd409a039bfa6e07333ed2148813df9b14413458fd385e5fe32f6"
+  },
+  "verified_caches": 49
+}

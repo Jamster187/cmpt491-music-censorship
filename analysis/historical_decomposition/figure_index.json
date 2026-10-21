@@ -1,0 +1,50 @@
+[
+  {
+    "description": "Annual complete-case trajectories for all eleven named dimensions",
+    "name": "01_historical_trajectories",
+    "source": "annual_trajectories.csv.gz",
+    "svg": "figures/01_historical_trajectories.svg"
+  },
+  {
+    "description": "Four dimensions and six genres selected by overall population counts; sparse years remain gaps",
+    "name": "02_genre_trajectories",
+    "source": "annual_trajectories.csv.gz",
+    "svg": "figures/02_genre_trajectories.svg"
+  },
+  {
+    "description": "Exact symmetric components; total-change intervals use crossed artist/calendar resampling",
+    "name": "03_decomposition_legacy",
+    "source": "historical_comparisons.csv",
+    "svg": "figures/03_decomposition_legacy.svg"
+  },
+  {
+    "description": "Every original genre; common color scale; signed contributions can offset",
+    "name": "04_genre_contributions",
+    "source": "decomposition_results.csv",
+    "svg": "figures/04_genre_contributions.svg"
+  },
+  {
+    "description": "Changing representation and uneven score coverage; six individual series plus explicitly grouped remainder",
+    "name": "05_genre_shares_and_coverage",
+    "source": "annual_genre_shares.csv; genre_period_statistics.csv",
+    "svg": "figures/05_genre_shares_and_coverage.svg"
+  },
+  {
+    "description": "Percent shares are not invariant to weighting; bound intervals are assumptions, not confidence intervals",
+    "name": "06_weighting_missingness_sensitivity",
+    "source": "historical_comparisons.csv; sensitivity_results.csv",
+    "svg": "figures/06_weighting_missingness_sensitivity.svg"
+  },
+  {
+    "description": "Prespecified level and slope changes, with and without additive genre adjustment",
+    "name": "07_breakpoint_2020",
+    "source": "breakpoint_results.csv",
+    "svg": "figures/07_breakpoint_2020.svg"
+  },
+  {
+    "description": "Identical six-year-before/six-year-after windows at eleven fixed dates",
+    "name": "08_historical_placebo_comparison",
+    "source": "breakpoint_results.csv",
+    "svg": "figures/08_historical_placebo_comparison.svg"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "protected_files": 1692,
+  "published_comparisons": 882,
+  "unique_primary_tests": 715,
+  "previous_monthly_score_cells_checked": 33264,
+  "previous_equal_and_rank_means_match": true,
+  "resampling_replays": [
+    {
+      "kind": "decomposition",
+      "comparison": "1990s_vs_2015\u20132024",
+      "draws": 9999,
+      "scores": 11
+    },
+    {
+      "kind": "breakpoint",
+      "year": 1970,
+      "model": "genre_adjusted",
+      "draws": 9999,
+      "scores": 11
+    },
+    {
+      "kind": "breakpoint",
+      "year": 2020,
+      "model": "genre_adjusted",
+      "draws": 9999,
+      "scores": 11
+    }
+  ],
+  "private_cache_required": false,
+  "seconds": 32.16557541700001
+}

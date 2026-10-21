@@ -21,6 +21,9 @@ Run from the repository root. Public-data analysis uses the existing `requiremen
 | Approved full discovery Phase 1 | `python3 src/relationship_phase1_prepare.py` then `python3 src/relationship_phase1.py run` | Exactly 9,159 pairwise/nonlinear/genre candidates; verified checkpoints; [reproduction guide](../analysis/relationship_discovery/full_phase1/README.md) |
 | Full discovery validation | `python3 src/relationship_phase1.py verify` | Complete candidate coverage, checkpoints, global BY, split and dataset integrity |
 | Discovery classroom view | `.venv-regression-demo/bin/streamlit run src/relationship_demo.py --server.address 127.0.0.1 --server.port 8502` | Read-only full Phase 1 results and preserved pilot |
+| Historical result verification | `python3 analysis/historical_decomposition/verify.py` | Public-only accounting, original-data hashes and prior monthly-series agreement; `--replay` adds three fixed resampling replays |
+| Historical analysis reproduction | `python3 analysis/historical_decomposition/prepare.py` then `python3 src/historical_decomposition.py run` | Seven fixed comparisons and eleven fixed breakpoint dates; [frozen environment and reproduction](../analysis/historical_decomposition/README.md) |
+| Historical figures/report | `python3 analysis/historical_decomposition/render.py` | Completed historical tables → eight figures and measured findings |
 | Public dataset build | `python3 src/final_dataset.py build` | Offline frozen private inputs; replaces public exports only after validation |
 | Public dataset validation | `python3 src/final_dataset.py validate` | Offline reconstruction/comparison; no acquisition or inference |
 | Phase 1 foundation check | `python3 src/phase1.py validate` | Existing raw snapshot and immutable chart foundation |

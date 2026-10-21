@@ -1,0 +1,29 @@
+{
+  "cache_reproduction": "resume_validation.json",
+  "historical_figures_visually_reviewed": 8,
+  "historical_tests": 19,
+  "note": "Optional/private/UI dependencies account for existing skipped tests; no new historical test is skipped in this environment.",
+  "previous_figure_validation": {
+    "figures": 951,
+    "status": "PASS",
+    "unchanged_numerical_input_files": 32
+  },
+  "repository_layout": {
+    "frozen_release_hashes": "PASS",
+    "immutable_artifacts_checked": 1069,
+    "local_markdown_links_checked": 490,
+    "private_tracked_files": 0,
+    "stale_active_paths": 0
+  },
+  "resampling_replay": "replay_validation.json",
+  "root_suite": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "errors": 0,
+    "failures": 0,
+    "passed": 459,
+    "seconds": 81.092,
+    "skipped": 12,
+    "tests": 471
+  },
+  "status": "PASS"
+}
