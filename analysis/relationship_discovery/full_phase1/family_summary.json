@@ -1,0 +1,50 @@
+[
+  {
+    "candidate_seconds": 1495.9326161480053,
+    "candidates": 2775,
+    "candidates_per_second": 1.8550300795938028,
+    "cross_source_by_pass": 485,
+    "family": "pairwise",
+    "fit_calls": 0,
+    "global_by_pass": 1331,
+    "maximum_process_rss_bytes": 766361600,
+    "negative_r2": 0,
+    "nontrivial_by_pass": 1321,
+    "positive_stable_performance": 0,
+    "status_counts": {
+      "ok": 2775
+    }
+  },
+  {
+    "candidate_seconds": 765.7723109949997,
+    "candidates": 3192,
+    "candidates_per_second": 4.168340842531251,
+    "cross_source_by_pass": 346,
+    "family": "nonlinear",
+    "fit_calls": 254189,
+    "global_by_pass": 1342,
+    "maximum_process_rss_bytes": 766361600,
+    "negative_r2": 2071,
+    "nontrivial_by_pass": 1336,
+    "positive_stable_performance": 709,
+    "status_counts": {
+      "ok": 3192
+    }
+  },
+  {
+    "candidate_seconds": 1563.8088615539987,
+    "candidates": 3192,
+    "candidates_per_second": 2.0411701701370486,
+    "cross_source_by_pass": 142,
+    "family": "genre_interaction",
+    "fit_calls": 25536,
+    "global_by_pass": 256,
+    "maximum_process_rss_bytes": 766361600,
+    "negative_r2": 1408,
+    "nontrivial_by_pass": 255,
+    "positive_stable_performance": 159,
+    "status_counts": {
+      "ok": 3192
+    }
+  }
+]

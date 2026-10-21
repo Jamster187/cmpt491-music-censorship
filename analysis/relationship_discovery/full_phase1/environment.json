@@ -1,0 +1,35 @@
+{
+  "machine": "arm64",
+  "note": "Measured host; runtime is not a portable guarantee. Native library differences may prevent bitwise cross-platform reproduction.",
+  "numpy": "1.26.4",
+  "pandas": "2.2.2",
+  "platform": "macOS-13.6.6-arm64-arm-64bit",
+  "python": "3.9.6",
+  "scipy": "1.13.1",
+  "sklearn": "1.5.2",
+  "thread_libraries_during_candidate_execution": [
+    {
+      "architecture": "armv8",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.23.dev"
+    },
+    {
+      "architecture": "neoversen1",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.27"
+    },
+    {
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "user_api": "openmp",
+      "version": null
+    }
+  ],
+  "workers": 1
+}

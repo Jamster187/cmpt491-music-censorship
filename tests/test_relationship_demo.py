@@ -14,6 +14,7 @@ class DiscoveryDemoTests(unittest.TestCase):
     def app(self):
         from streamlit.testing.v1 import AppTest
         app=AppTest.from_file(str(ROOT/'src/relationship_demo.py'),default_timeout=30).run()
+        app.selectbox(key='collection').select('Preserved pilot').run()
         self.assertFalse(app.exception)
         return app
     def test_each_family_displays_actual_saved_effect(self):

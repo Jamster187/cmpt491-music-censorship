@@ -1,0 +1,32 @@
+[
+  {
+    "candidate_id": "cfaad9e0a36407488acb",
+    "description": "Highest presentation-ranked non-reconstruction nonlinear relationship; last outer fold; 100 saved curve points",
+    "file": "figures/nonlinear_curve.svg"
+  },
+  {
+    "candidate_id": "7e02554737b82c7c4df6",
+    "description": "Training-fitted slopes; only training-supported, adequately evaluated genres displayed; no slope confidence claims",
+    "file": "figures/genre_slopes.svg"
+  },
+  {
+    "candidate_id": "ee05f1faa5c56965d221",
+    "description": "All four approved outer periods; no breakpoint search",
+    "file": "figures/historical_stability.svg"
+  },
+  {
+    "candidate_id": "d1418f32d03c3f37147b",
+    "description": "Up to 1,200 actual outer-evaluation songs; published metrics use all eligible songs",
+    "file": "figures/actual_predicted.svg"
+  },
+  {
+    "candidate_id": "4645d00e593cc9541284",
+    "description": "Post-hoc descriptive sign/attenuation candidate; adequate genre cells retained; no subgroup significance claim",
+    "file": "figures/aggregate_within_genre.svg"
+  },
+  {
+    "candidate_id": "cfaad9e0a36407488acb",
+    "description": "No arbitrary combined score; shows two distinct measured quantities",
+    "file": "figures/improvement_vs_performance.svg"
+  }
+]

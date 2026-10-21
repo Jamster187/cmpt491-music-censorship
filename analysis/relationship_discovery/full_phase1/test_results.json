@@ -1,0 +1,55 @@
+{
+  "figure_audit": {
+    "figures": 951,
+    "status": "PASS",
+    "unchanged_numerical_inputs": 32
+  },
+  "figures_visually_reviewed": 6,
+  "planning": {
+    "command": "python3 -m unittest discover -s analysis/planning/regression_search -p 'test*.py' -v",
+    "environment": "Python 3.9.6",
+    "log_sha256": "f7339b4ffb240471037260736fa1d8662ee0a85bbdb8a77ba37af6525125fc7d",
+    "passed": 12,
+    "seconds": 0.25,
+    "skipped": 0,
+    "status": "PASS",
+    "total": 12
+  },
+  "preservation": {
+    "pilot_publication_files": 38,
+    "prior": {
+      "protected_files": 2663,
+      "snapshot_sha256": "ab3c357c375a910aaae78bab6efff42e94888fa6bce1533bef98fee6d91bc129",
+      "status": "PASS"
+    },
+    "status": "PASS"
+  },
+  "recorded_utc": "2026-10-21T00:49:27.522665+00:00",
+  "relationship_ui": {
+    "command": ".venv-regression-demo/bin/python -m unittest discover -s tests -p 'test_relationship*demo.py' -v",
+    "environment": "Python 3.11 / Streamlit 1.66.0",
+    "log_sha256": "336621bfe6768a57f5774b8037a1487a554b7a9bfa5d1bc69b6bb4353be00ce0",
+    "passed": 7,
+    "seconds": 11.309,
+    "skipped": 0,
+    "status": "PASS",
+    "total": 7
+  },
+  "repository_layout": {
+    "immutable_artifacts": 1069,
+    "private_tracked_files": 0,
+    "status": "PASS"
+  },
+  "scope": "Only the three approved complete families. No additional discovery family launched.",
+  "status": "PASS",
+  "unit": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "environment": "Python 3.9.6 frozen analysis environment",
+    "log_sha256": "895cc62f3cb69b1cf7ac263e0a58add5e5a9bfa99aeb12b20f9ccc8b66345b7e",
+    "passed": 440,
+    "seconds": 76.984,
+    "skipped": 12,
+    "status": "PASS",
+    "total": 452
+  }
+}

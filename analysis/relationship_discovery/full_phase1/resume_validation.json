@@ -1,0 +1,46 @@
+{
+  "candidate_seconds": 3825.5137886970037,
+  "candidates_per_second": 2.3941882073622374,
+  "checkpoint_count": 9159,
+  "completed": 9159,
+  "completed_by_family": {
+    "genre_interaction": 3192,
+    "nonlinear": 3192,
+    "pairwise": 2775
+  },
+  "estimated_remaining_seconds": 0.0,
+  "estimated_total_seconds": 3825.5137886970037,
+  "fit_count": 279725,
+  "fit_function_not_called": true,
+  "free_disk_bytes": 20965896192,
+  "maximum_process_rss_bytes": 766361600,
+  "new_model_fits": 0,
+  "newly_computed": 0,
+  "preservation": {
+    "pilot_publication_files": 38,
+    "prior": {
+      "protected_files": 2663,
+      "snapshot_sha256": "ab3c357c375a910aaae78bab6efff42e94888fa6bce1533bef98fee6d91bc129",
+      "status": "PASS"
+    },
+    "status": "PASS"
+  },
+  "primary_execution_preserved": true,
+  "protocol_sha256": "fdfd1fd8a132325c8db5baf645c7b7ece467adf5984b96c5f04cb273957e1b58",
+  "remaining": 0,
+  "remaining_by_family": {
+    "genre_interaction": 0,
+    "nonlinear": 0,
+    "pairwise": 0
+  },
+  "resumed": 9159,
+  "session_seconds": 0.13555333300000072,
+  "status": "complete",
+  "status_counts": {
+    "ok": 9159
+  },
+  "total": 9159,
+  "unknown_failed_fit_counts": 0,
+  "updated_utc": "2026-10-21T00:35:29.627105+00:00",
+  "validation_wall_seconds": 19.696867875
+}

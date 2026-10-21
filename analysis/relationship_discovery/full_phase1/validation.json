@@ -1,0 +1,134 @@
+{
+  "candidate_counts": {
+    "genre_interaction": 3192,
+    "nonlinear": 3192,
+    "pairwise": 2775
+  },
+  "candidates": 9159,
+  "checkpoints_verified": 9159,
+  "elapsed_seconds": 24.849769791,
+  "global_by_recomputed": true,
+  "logical_results_sha256": "a919848b30ce5fc35fadca0e9fedd1cb969ba81fd812b0284ae55194de0772d4",
+  "preservation": {
+    "pilot_publication_files": 38,
+    "prior": {
+      "protected_files": 2663,
+      "snapshot_sha256": "ab3c357c375a910aaae78bab6efff42e94888fa6bce1533bef98fee6d91bc129",
+      "status": "PASS"
+    },
+    "status": "PASS"
+  },
+  "primary_hypotheses": 9159,
+  "split_proofs": [
+    {
+      "disjoint": true,
+      "evaluation": 1976,
+      "period": [
+        1980,
+        1985
+      ],
+      "train": 11691
+    },
+    {
+      "disjoint": true,
+      "evaluation": 1798,
+      "period": [
+        1985,
+        1990
+      ],
+      "train": 13769
+    },
+    {
+      "disjoint": true,
+      "evaluation": 1646,
+      "period": [
+        1990,
+        1995
+      ],
+      "train": 15672
+    },
+    {
+      "disjoint": true,
+      "evaluation": 3225,
+      "period": [
+        1990,
+        2000
+      ],
+      "train": 15672
+    },
+    {
+      "disjoint": true,
+      "evaluation": 1481,
+      "period": [
+        1995,
+        2000
+      ],
+      "train": 17419
+    },
+    {
+      "disjoint": true,
+      "evaluation": 1369,
+      "period": [
+        2000,
+        2005
+      ],
+      "train": 18998
+    },
+    {
+      "disjoint": true,
+      "evaluation": 2937,
+      "period": [
+        2000,
+        2010
+      ],
+      "train": 18998
+    },
+    {
+      "disjoint": true,
+      "evaluation": 1471,
+      "period": [
+        2005,
+        2010
+      ],
+      "train": 20464
+    },
+    {
+      "disjoint": true,
+      "evaluation": 1473,
+      "period": [
+        2008,
+        2013
+      ],
+      "train": 21382
+    },
+    {
+      "disjoint": true,
+      "evaluation": 2326,
+      "period": [
+        2010,
+        2018
+      ],
+      "train": 22032
+    },
+    {
+      "disjoint": true,
+      "evaluation": 1407,
+      "period": [
+        2013,
+        2018
+      ],
+      "train": 22959
+    },
+    {
+      "disjoint": true,
+      "evaluation": 2952,
+      "period": [
+        2018,
+        2026
+      ],
+      "train": 24493
+    }
+  ],
+  "status": "PASS",
+  "unique_ids": true
+}

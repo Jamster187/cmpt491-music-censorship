@@ -1,0 +1,11 @@
+{
+  "hinge25": 1044,
+  "hinge50": 1036,
+  "hinge75": 1394,
+  "linear": 1171,
+  "quadratic": 669,
+  "spline4": 1488,
+  "spline6": 2754,
+  "tree2": 1314,
+  "tree3": 1898
+}

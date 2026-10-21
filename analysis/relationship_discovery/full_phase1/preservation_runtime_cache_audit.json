@@ -1,0 +1,27 @@
+{
+  "protocol_sha256": "fdfd1fd8a132325c8db5baf645c7b7ece467adf5984b96c5f04cb273957e1b58",
+  "status": "PASS",
+  "model_fits": 0,
+  "original_preservation": {
+    "status": "PASS",
+    "protected_files": 2663,
+    "snapshot_sha256": "ab3c357c375a910aaae78bab6efff42e94888fa6bce1533bef98fee6d91bc129"
+  },
+  "phase1_preservation": {
+    "status": "PASS",
+    "initialized": false,
+    "original_snapshot_sha256": "7fccb4819bf35a8abff54ec7910904700afa3fea16b604f228109a00a3bf77e6",
+    "current_snapshot_sha256": "607ba7341f28818ce246465f960187d24c9a77994291c90b15800d957b2c04e0",
+    "excluded_runtime_caches": [
+      {
+        "path": "analysis/relationship_discovery/__pycache__/render.cpython-39.pyc",
+        "recorded_cache_sha256": "729d433247408ccab227ffbf747d6de3e5aa44846ec1546cc19efa0ce7504e1d",
+        "current_cache_sha256": "2888fbec048d33493ad5bf335cab5e80922d75a1c6b097b556019000608a6ca6",
+        "unchanged_source": "analysis/relationship_discovery/render.py",
+        "source_sha256": "af96736611293a469678039379f6ecc8159f27eea028529e513280393d2c9933"
+      }
+    ],
+    "protected_files": 38,
+    "explanation": "Only verified CPython bytecode caches are excluded. Their source hashes and every other protected artifact must match; no statistical code, inputs, results or checkpoint identity changes."
+  }
+}
