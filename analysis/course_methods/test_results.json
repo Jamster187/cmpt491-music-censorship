@@ -1,0 +1,67 @@
+{
+  "completed": [
+    {
+      "log_sha256": "c1021907c7954faf78af5028ec70454c5aacd55d81fcbdfbd24f602ecb24b9e2",
+      "name": "initial_full_suite",
+      "seconds": 74.995,
+      "skipped": 11,
+      "status": "PASS",
+      "tests": 485
+    },
+    {
+      "log_sha256": "cd9d87b81d57ac82946438381f1c39ccb0a9fd812984757f66e32585a9453279",
+      "name": "course_unit_suite",
+      "seconds": 1.041,
+      "skipped": 2,
+      "status": "PASS",
+      "tests": 22
+    },
+    {
+      "log_sha256": "da0f9e45cffdfc201d007e5998f10fae8033abbb970edc8952c2c02c8345b7ca",
+      "name": "streamlit_interaction_suite",
+      "seconds": 2.828,
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 2
+    },
+    {
+      "log_sha256": "ce948de4d202e436ffb8496d3335fcffb37a4568472cc57aca3fde2b763855c7",
+      "name": "full_suite_before_rerun_guard_refinement",
+      "seconds": 75.712,
+      "skipped": 13,
+      "status": "PASS",
+      "tests": 493
+    },
+    {
+      "log_sha256": "6f1f9dd8f10d3c18ac2ac5230056bd7ecaf67d28a5ad69654700a1ea5c4de89e",
+      "name": "final_full_suite",
+      "passed": 482,
+      "seconds": 75.39,
+      "skipped": 13,
+      "status": "PASS",
+      "tests": 495
+    }
+  ],
+  "phase1_validation": "Phase 1 validate passed: 3,555 charts; 355,487 observations; 32,723 exact songs; 11,294 artist credits.\nRetained source anomalies: 13 non-100-entry charts; 13 duplicate song/week groups; 17 normalized collision groups; 769 inconsistent peaks.\nSource SHA-256: e1ac3678d7618d07537001447574869bb2350bc6522b9cd24c4588ad19237462\nQuality report: /Users/jamster187/Desktop/cmpt491-music-censorship/reports/phase1_data_quality.md",
+  "prior_figure_validation": "Validated 951 figures; 32 unchanged numerical/input files",
+  "repository_layout": {
+    "frozen_release_hashes": "PASS",
+    "immutable_artifacts_checked": 1069,
+    "local_markdown_links_checked": 547,
+    "private_tracked_files": 0,
+    "stale_active_paths": 0
+  },
+  "smoke_test_server_stopped": true,
+  "status": "PASS",
+  "streamlit_http_health": "PASS: GET /_stcore/health returned ok on 127.0.0.1:8503",
+  "svg_whitespace_normalization": {
+    "figures": 7,
+    "other_public_artifacts_unchanged": true,
+    "semantic_svg_identity": "PASS"
+  },
+  "visual_review": {
+    "correction": "Moved association legend out of the final data row; numerical results unchanged",
+    "figures_reviewed": 7,
+    "status": "PASS"
+  }
+}

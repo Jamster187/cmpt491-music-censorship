@@ -1,0 +1,58 @@
+{
+  "baseline_commit": "3ef4cc2d1c2c254882a642a84d1f7c9512a83485",
+  "bounded_scope": [
+    "Rare/negative supplement restricted to singleton pairs",
+    "Maximum published itemset size 4; closure/maximality check extensions beyond cap",
+    "Medoids/Ward use 1200 training songs",
+    "Alternating medoid heuristic, not full PAM swaps",
+    "Two additional resample fits per clustering configuration",
+    "No new acquisition, classification-production or breakpoint campaign"
+  ],
+  "canonical_repository": "/Users/jamster187/Desktop/cmpt491-music-censorship",
+  "classification_refit_tasks": 12,
+  "cluster_refit_configurations": 27,
+  "completed_families": [
+    "Apriori",
+    "FP-Growth",
+    "ECLAT",
+    "frequent closed itemsets",
+    "frequent maximal itemsets",
+    "association rules",
+    "rare/negative pair rules",
+    "decision-tree classification",
+    "Gaussian Naive Bayes classification",
+    "equivalent IF-THEN rule classification",
+    "K-means",
+    "sampled alternating K-medoids",
+    "sampled Ward agglomeration",
+    "PCA and family-balanced clustering sensitivity"
+  ],
+  "cpu_seconds_not_recorded": true,
+  "execution_note": "Independent stages sometimes overlapped; stage wall times should not be summed as elapsed campaign time. Development reruns and exact refits are included in elapsed wall time.",
+  "local_campaign_cache_bytes": 84109381,
+  "main_classification_fit_count": 120,
+  "main_cluster_fit_count": 297,
+  "method_checkpoints": [
+    "34da580b48ef3411ab3c4f1828dc618def908b13 Compare bounded clustering methods and historical score profiles",
+    "d2ca18757fa7450c1e7e153bc6d1f30d2aeb283b Evaluate chronological tree Bayes and interpretable rule classifiers",
+    "47d66703a00d41639538628408cedd239dded9d9 Complete audited frequent-itemset and association-rule campaign"
+  ],
+  "native_numerical_thread_limit": 1,
+  "partially_completed_major_families": [],
+  "peak_recorded_process_rss_bytes": 762118144,
+  "preservation_status": "PASS",
+  "protected_bytes": 33460842025,
+  "protected_files": 245085,
+  "public_bytes": 10109021,
+  "skipped_major_families": [],
+  "started_utc": "2026-10-25T23:55:25+00:00",
+  "status": "completed_and_validated",
+  "tests": {
+    "additional_streamlit_interaction_tests_passed": 2,
+    "full_suite": 495,
+    "optional_skips": 13,
+    "passed": 482
+  },
+  "validated_utc": "2026-10-26T00:23:08.764323+00:00",
+  "wall_seconds_to_final_validation": 1663.764323
+}

@@ -1,0 +1,39 @@
+{
+  "checkpoints": {
+    "expected_if_local_cache_present": 120,
+    "verified": 120
+  },
+  "classification": {
+    "folds": 12,
+    "independent_demo_inference": true,
+    "predictions_checked": 133725,
+    "training_only_scalers": true,
+    "tree_rules_equal": true
+  },
+  "clustering": {
+    "assignments_checked": 185355,
+    "configurations": 99,
+    "medoids_are_training_songs": true,
+    "selected_configurations": 9,
+    "train_only_pca": true
+  },
+  "operational_records_refreshed": [],
+  "patterns": {
+    "algorithm_equivalence": true,
+    "closure_checked_beyond_size_cap": true,
+    "global_by_hypotheses": 20928,
+    "itemsets_counted": 28152,
+    "rule_split_metrics_replayed": 62784,
+    "rules": 20928
+  },
+  "peak_rss_bytes": 762118144,
+  "preservation": {
+    "baseline_commit": "3ef4cc2d1c2c254882a642a84d1f7c9512a83485",
+    "bytes": 33460842025,
+    "files": 245085,
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "verification_source_sha256": "b4602c081910358af91aa202429b6c706c0a250afb3217d52d38f0a6629d4bb8",
+  "wall_seconds": 99.984206083
+}

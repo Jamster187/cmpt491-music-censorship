@@ -1,0 +1,37 @@
+{
+  "checkpoints": {
+    "expected_if_local_cache_present": 120,
+    "verified": 120
+  },
+  "classification": {
+    "folds": 12,
+    "independent_demo_inference": true,
+    "predictions_checked": 133725,
+    "training_only_scalers": true,
+    "tree_rules_equal": true
+  },
+  "clustering": {
+    "assignments_checked": 185355,
+    "configurations": 99,
+    "medoids_are_training_songs": true,
+    "selected_configurations": 9,
+    "train_only_pca": true
+  },
+  "patterns": {
+    "algorithm_equivalence": true,
+    "closure_checked_beyond_size_cap": true,
+    "global_by_hypotheses": 20928,
+    "itemsets_counted": 28152,
+    "rule_split_metrics_replayed": 62784,
+    "rules": 20928
+  },
+  "peak_rss_bytes": 623755264,
+  "refit_replay": {
+    "classification_folds_refit": 12,
+    "cluster_configurations_refit": 27,
+    "cluster_fits": 81,
+    "exact_logical_replay": true
+  },
+  "status": "PASS",
+  "wall_seconds": 60.935078
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "caption": "One measured run per algorithm/threshold; implementations and shared data preparation are described in methodology.",
+    "file": "figures/algorithm_comparison.svg"
+  },
+  {
+    "caption": "Chronological outer evaluations; inner validation selects tree settings. Chance-level binary balanced accuracy is 0.5.",
+    "file": "figures/classification_generalization.svg"
+  },
+  {
+    "caption": "2018\u20132025 counts and row-normalized percentages. Every class remains visible, including classes with zero recall.",
+    "file": "figures/latest_confusion_matrices.svg"
+  },
+  {
+    "caption": "All 99 configurations. High hierarchical silhouettes can reflect small outlier clusters; medoid solutions fail the predefined stability/size criteria.",
+    "file": "figures/clustering_comparison.svg"
+  },
+  {
+    "caption": "Up to four displayed features per classifier family, selected by absolute profile contrast. Profiles describe all eligible historical songs; scaling is training-only.",
+    "file": "figures/cluster_profiles.svg"
+  },
+  {
+    "caption": "Pre/post contrasts span unequal historical periods, not a breakpoint design. Genre-standardized values retain only 72.0% of the training genre mass; the bar difference is not a decomposition.",
+    "file": "figures/cluster_history.svg"
+  },
+  {
+    "caption": "Retrospective display examples. The multidimensional rule also adds only about 2.6 percentage points over its strongest immediate parent.",
+    "file": "figures/association_baselines.svg"
+  }
+]

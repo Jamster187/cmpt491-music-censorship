@@ -1,0 +1,141 @@
+{
+  "figures": 7,
+  "first_repository_verification_utc": "2026-10-25T23:55:25+00:00",
+  "local_cache_bytes": 84109381,
+  "matplotlib": "3.9.0",
+  "peak_rss_bytes": 346259456,
+  "public_bytes": 10105734,
+  "rendered_utc": "2026-10-26T00:24:00.215973+00:00",
+  "stage_execution": {
+    "classification": {
+      "folds": 12,
+      "native_and_exported_predictions_equal": true,
+      "peak_rss_bytes": 327499776,
+      "runtimes": [
+        {
+          "reused": false,
+          "seconds": 1.7971417920000001,
+          "start": 1990,
+          "target": "top10"
+        },
+        {
+          "reused": false,
+          "seconds": 2.284853292,
+          "start": 2000,
+          "target": "top10"
+        },
+        {
+          "reused": false,
+          "seconds": 2.3846493329999996,
+          "start": 2010,
+          "target": "top10"
+        },
+        {
+          "reused": false,
+          "seconds": 2.8295062919999996,
+          "start": 2018,
+          "target": "top10"
+        },
+        {
+          "reused": false,
+          "seconds": 1.771185291,
+          "start": 1990,
+          "target": "long_chart"
+        },
+        {
+          "reused": false,
+          "seconds": 2.3058179170000006,
+          "start": 2000,
+          "target": "long_chart"
+        },
+        {
+          "reused": false,
+          "seconds": 2.5130501669999994,
+          "start": 2010,
+          "target": "long_chart"
+        },
+        {
+          "reused": false,
+          "seconds": 2.729762667000003,
+          "start": 2018,
+          "target": "long_chart"
+        },
+        {
+          "reused": false,
+          "seconds": 1.926075959000002,
+          "start": 1990,
+          "target": "broad_genre"
+        },
+        {
+          "reused": false,
+          "seconds": 2.426658708999998,
+          "start": 2000,
+          "target": "broad_genre"
+        },
+        {
+          "reused": false,
+          "seconds": 2.9089560829999996,
+          "start": 2010,
+          "target": "broad_genre"
+        },
+        {
+          "reused": false,
+          "seconds": 3.2971840410000013,
+          "start": 2018,
+          "target": "broad_genre"
+        }
+      ],
+      "tree_and_rules_equal": true,
+      "tree_candidates": 96,
+      "wall_seconds": 30.012645708
+    },
+    "clustering": {
+      "configurations": 99,
+      "expensive_sample": 1200,
+      "fits": 297,
+      "maximum_distance_matrix_bytes": 11520000,
+      "pca_dimensions": 28,
+      "pca_explained_variance": 0.9056869304481739,
+      "peak_rss_bytes": 569737216,
+      "selected": 9,
+      "wall_seconds": 35.236534166
+    },
+    "frequent_patterns_and_rules": {
+      "by_below_05": 11510,
+      "conditional_cells": 44928,
+      "families": {
+        "negative": 5271,
+        "primary": 11783,
+        "rare_pair": 3874
+      },
+      "peak_rss_bytes": 617988096,
+      "presentation_shortlist": 28,
+      "reversal_cells": 69,
+      "rules": 20928,
+      "strict_cross_domain": 10980,
+      "wall_seconds": 149.701899041
+    },
+    "preparation": {
+      "complete_scores": 20979,
+      "excluded_boundary_or_2026": 611,
+      "peak_rss_bytes": 634519552,
+      "preservation": {
+        "baseline_commit": "3ef4cc2d1c2c254882a642a84d1f7c9512a83485",
+        "bytes": 33460842025,
+        "files": 245085,
+        "status": "PASS"
+      },
+      "rows": 28041,
+      "split_song_hashes": {
+        "test": "f73114fdbc3d2f302e0af6dd502b257d51d1838aada45212f5a8f3ca631077f0",
+        "train": "d35391bbaf4706a119841c9d0421d5644bae2c552bf44a021885cc2a335b0ea1",
+        "validation": "486b1764c63c722fd3fe289bbf996d69924a12674a3fae352723dfa05fd06c16"
+      },
+      "test": 2382,
+      "train": 16079,
+      "validation": 1907,
+      "wall_seconds": 181.400003
+    }
+  },
+  "wall_seconds": 2.9041788750000004
+}
