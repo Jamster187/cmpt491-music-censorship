@@ -1,0 +1,21 @@
+{
+  "complete_scores": 20979,
+  "excluded_boundary_or_2026": 611,
+  "peak_rss_bytes": 634519552,
+  "preservation": {
+    "baseline_commit": "3ef4cc2d1c2c254882a642a84d1f7c9512a83485",
+    "bytes": 33460842025,
+    "files": 245085,
+    "status": "PASS"
+  },
+  "rows": 28041,
+  "split_song_hashes": {
+    "test": "f73114fdbc3d2f302e0af6dd502b257d51d1838aada45212f5a8f3ca631077f0",
+    "train": "d35391bbaf4706a119841c9d0421d5644bae2c552bf44a021885cc2a335b0ea1",
+    "validation": "486b1764c63c722fd3fe289bbf996d69924a12674a3fae352723dfa05fd06c16"
+  },
+  "test": 2382,
+  "train": 16079,
+  "validation": 1907,
+  "wall_seconds": 181.400003
+}

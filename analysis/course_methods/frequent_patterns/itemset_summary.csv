@@ -1,0 +1,4 @@
+support_threshold,itemsets,closed,maximal,algorithms,identical
+0.05,22993,22982,7137,3,True
+0.08,4087,4087,1564,3,True
+0.12,1072,1072,362,3,True

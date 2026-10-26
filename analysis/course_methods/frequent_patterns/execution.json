@@ -1,0 +1,15 @@
+{
+  "by_below_05": 11510,
+  "conditional_cells": 44928,
+  "families": {
+    "negative": 5271,
+    "primary": 11783,
+    "rare_pair": 3874
+  },
+  "peak_rss_bytes": 617988096,
+  "presentation_shortlist": 28,
+  "reversal_cells": 69,
+  "rules": 20928,
+  "strict_cross_domain": 10980,
+  "wall_seconds": 149.701899041
+}

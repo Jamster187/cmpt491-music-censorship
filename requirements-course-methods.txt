@@ -1,0 +1,8 @@
+# Measured campaign environment: CPython 3.9.6, same numerical versions as discovery.
+# Install separately; do not replace the existing analysis or Streamlit environments.
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+scikit-learn==1.5.2
+matplotlib==3.9.0
+threadpoolctl==3.7.0

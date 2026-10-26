@@ -1,0 +1,155 @@
+{
+  "configuration": {
+    "association_discovery": "last chart before 2010; validation 2010\u20132017; test 2018\u20132025; whole-history purging",
+    "bins_training_end": 2010,
+    "bootstrap_repeats": 299,
+    "broad_genres": [
+      "Pop",
+      "R&B / Soul",
+      "Rock",
+      "Hip-Hop / Rap",
+      "Country",
+      "Electronic / Dance"
+    ],
+    "chart_prediction_scenario": "lyrics measured before hypothetical first chart entry; conditional on eventual Billboard inclusion; retrospective frozen classifiers",
+    "classification_inner_validation_years": 5,
+    "cluster_selection": "validation silhouette among min training cluster >=1% and mean resample ARI >=0.6; otherwise explicitly unsupported best silhouette",
+    "clustering_k": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "clustering_methods": [
+      "kmeans",
+      "kmedoids",
+      "hierarchical"
+    ],
+    "clustering_representations": [
+      "standardized42",
+      "pca90",
+      "family_balanced"
+    ],
+    "clustering_seeds": [
+      491202610,
+      491202611,
+      491202612
+    ],
+    "complete_case_scores": true,
+    "covid_causality": false,
+    "expensive_training_sample": 1200,
+    "frequent_supports": [
+      0.05,
+      0.08,
+      0.12
+    ],
+    "longevity": "strictly above inner-training chart_weeks 75th percentile; fixed within outer fold",
+    "maximum_itemset_size": 4,
+    "maximum_rss_gib": 3,
+    "minimum_group": 100,
+    "minimum_leaf": 50,
+    "naive_bayes": "GaussianNB; fixed var_smoothing=1e-9; all 42 eligible lyrical predictors",
+    "no_independent_confirmation": true,
+    "other_genres": "Other broad genre",
+    "outer_periods": [
+      [
+        1990,
+        2000
+      ],
+      [
+        2000,
+        2010
+      ],
+      [
+        2010,
+        2018
+      ],
+      [
+        2018,
+        2026
+      ]
+    ],
+    "primary_inference": "held-out debut-year-stratified CMH; global Benjamini\u2013Yekutieli; exploratory",
+    "primary_rule_consequents": 1,
+    "primary_rule_max_antecedents": 3,
+    "primary_support": 0.08,
+    "prior_outcomes_inspected": true,
+    "rare_pair_minimum_count": 20,
+    "rare_pair_minimum_support": 0.005,
+    "score_features": [
+      "ll_sexual_content",
+      "ll_violence",
+      "ll_explicit_language",
+      "ll_substance_use",
+      "detox_toxicity",
+      "detox_severe_toxicity",
+      "detox_obscene",
+      "detox_threat",
+      "detox_insult",
+      "detox_identity_attack",
+      "detox_sexual_explicit",
+      "emotion_admiration",
+      "emotion_amusement",
+      "emotion_anger",
+      "emotion_annoyance",
+      "emotion_approval",
+      "emotion_caring",
+      "emotion_confusion",
+      "emotion_curiosity",
+      "emotion_desire",
+      "emotion_disappointment",
+      "emotion_disapproval",
+      "emotion_disgust",
+      "emotion_embarrassment",
+      "emotion_excitement",
+      "emotion_fear",
+      "emotion_gratitude",
+      "emotion_grief",
+      "emotion_joy",
+      "emotion_love",
+      "emotion_nervousness",
+      "emotion_optimism",
+      "emotion_pride",
+      "emotion_realization",
+      "emotion_relief",
+      "emotion_remorse",
+      "emotion_sadness",
+      "emotion_surprise",
+      "emotion_neutral",
+      "sentiment_negative",
+      "sentiment_neutral",
+      "sentiment_positive"
+    ],
+    "seed": 491202610,
+    "silhouette_sample": 1200,
+    "transaction_bins": "<=training Q25: low; >training Q75: high; middle interval emits no tail item",
+    "tree_class_weights": [
+      null,
+      "balanced"
+    ],
+    "tree_depths": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "unit": "exact original title + artist song identity",
+    "version": "course-methods-v1"
+  },
+  "environment": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "platform": "macOS-13.6.6-arm64-arm-64bit",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2"
+  },
+  "input_sha256": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5"
+}
