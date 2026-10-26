@@ -1,0 +1,11 @@
+{
+  "configurations": 99,
+  "expensive_sample": 1200,
+  "fits": 297,
+  "maximum_distance_matrix_bytes": 11520000,
+  "pca_dimensions": 28,
+  "pca_explained_variance": 0.9056869304481739,
+  "peak_rss_bytes": 569737216,
+  "selected": 9,
+  "wall_seconds": 35.236534166
+}
