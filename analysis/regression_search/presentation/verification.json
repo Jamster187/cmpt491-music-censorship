@@ -1,0 +1,364 @@
+{
+  "all_evaluated_songs_plotted": true,
+  "artifact_recovery_needed": false,
+  "evaluated_population_identical": true,
+  "evaluation": "Exploratory, previously inspected held-out results",
+  "fit_or_selection_performed": false,
+  "image_pixels": [
+    4800,
+    2700
+  ],
+  "image_sha256": "a6a529f5a0deb54323a58b1877c68c6e59289b6acd0ce7382e637e25febde083",
+  "metric_absolute_tolerance": 1e-12,
+  "models": [
+    {
+      "candidate_id": 15894,
+      "chart_debut_max": "2026-09-19",
+      "chart_debut_min": "2018-01-06",
+      "definition": {
+        "kind": "Cross-classifier prediction + genre",
+        "label": "A",
+        "leaderboard": "analysis/regression_search/meaningful/cross_domain_leaderboard.csv",
+        "manifest": "analysis/regression_search/meaningful/model_manifest.json",
+        "metrics_file": "metrics.json",
+        "name": "Emotion + genre",
+        "prediction_file": "predictions.csv.gz",
+        "predictors": [
+          "emotion_anger",
+          "emotion_annoyance",
+          "primary_genre"
+        ],
+        "split_file": "split.csv.gz",
+        "view": "cross_domain"
+      },
+      "equation": {
+        "genre_offsets": {
+          "Afrobeats / African Pop": 0.18607522696672282,
+          "Alternative / Indie": 0.011243181770263311,
+          "Country": -0.012796903582813303,
+          "Electronic / Dance": 0.03266290167578928,
+          "Folk / Singer-Songwriter": -0.007817227900151161,
+          "Gospel / Christian": -0.041343988740245315,
+          "Hip-Hop / Rap": 0.37585831812133885,
+          "Jazz / Blues": -0.01291697255882916,
+          "K-Pop": -0.008928473418728025,
+          "Latin": 0.018173281125567965,
+          "Metal": 0.12427466077697673,
+          "Other": 0.011251486271213371,
+          "Pop": 0.0,
+          "R&B / Soul": 0.010371898467164534,
+          "Reggae / Dancehall": 0.025074371627236657,
+          "Rock": -0.0016934189171744093
+        },
+        "intercept": 0.04403654883433746,
+        "missing_genre_offset": 0.0,
+        "numeric": {
+          "emotion_anger": 0.679990667538938,
+          "emotion_annoyance": 0.9761715650536231
+        },
+        "numeric_missing_medians": {
+          "emotion_anger": 0.00493953892952625,
+          "emotion_annoyance": 0.01556200534105295
+        },
+        "reference_genre": "Pop"
+      },
+      "equation_max_absolute_error": 2.220446049250313e-16,
+      "metrics": {
+        "mae": 0.18816939080246659,
+        "r2": 0.5504118590177723,
+        "rmse": 0.26081551882075055
+      },
+      "missing_inputs": {
+        "emotion_anger": 0,
+        "emotion_annoyance": 0,
+        "primary_genre": 0
+      },
+      "model_path": "data/experiments/regression_search/meaningful_v1/models/songs__detox_toxicity/15894/model.json",
+      "n_refit": 18106,
+      "n_songs": 2729,
+      "predictions_above_one": 68,
+      "predictions_below_zero": 0,
+      "replay_max_absolute_error": 0.0,
+      "saved_parameterization": {
+        "coefficients": [
+          -1.087295442591099e-17,
+          0.031321319066708764,
+          0.06542409454937846,
+          -0.0007031727347204249,
+          0.09654618781039874,
+          0.004293683315163066,
+          -0.003984863390460401,
+          0.0013667902807711744,
+          0.006227436432174395,
+          0.0019565444823438525,
+          0.010166773133510564,
+          -0.001091268819265335,
+          -0.0017558928740024561,
+          0.0018019902555795491,
+          -0.0018670578674416128,
+          -0.0001326929868425569,
+          0.0023949802943284727,
+          0.0009091598045284051
+        ],
+        "encoder": {
+          "emotion_anger": {
+            "constant_values": [
+              0.0
+            ],
+            "keep": [
+              0
+            ],
+            "mean": [
+              0.0169246922959955
+            ],
+            "median": 0.00493953892952625,
+            "std": [
+              0.046061395489542106
+            ],
+            "train_absent_columns": [
+              1
+            ]
+          },
+          "emotion_annoyance": {
+            "constant_values": [
+              0.0
+            ],
+            "keep": [
+              0
+            ],
+            "mean": [
+              0.040912390594172544
+            ],
+            "median": 0.01556200534105295,
+            "std": [
+              0.06702110253107463
+            ],
+            "train_absent_columns": [
+              1
+            ]
+          },
+          "primary_genre": {
+            "constant_values": [
+              0.0
+            ],
+            "keep": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "mean": [
+              0.2214735446813211,
+              0.07102617916712692,
+              0.2195957141279134,
+              0.1088037114768585,
+              0.005688721970617475,
+              0.03777753230973158,
+              0.03126035568319894,
+              0.006738097868110019,
+              0.01988291174196399,
+              0.018833535844471446,
+              0.005191649177068375,
+              0.0020435214845907434,
+              0.00022092124157737766,
+              0.00016569093118303324,
+              0.006572406936926986
+            ],
+            "median": 0.0,
+            "std": [
+              0.4152385021738856,
+              0.2568685676373154,
+              0.41397274845642335,
+              0.3113927806576752,
+              0.07520877882906016,
+              0.19065778337723,
+              0.17402053282805113,
+              0.0818088986921948,
+              0.13959792821752495,
+              0.13593687421765463,
+              0.07186581910679526,
+              0.04515911319471142,
+              0.014861777665622562,
+              0.01287103250319713,
+              0.08080352965051972
+            ],
+            "train_absent_columns": [
+              15
+            ]
+          }
+        },
+        "predictors": [
+          "emotion_anger",
+          "emotion_annoyance",
+          "primary_genre"
+        ],
+        "target_center": 0.12496464418573079
+      }
+    },
+    {
+      "candidate_id": 6559,
+      "chart_debut_max": "2026-09-19",
+      "chart_debut_min": "2018-01-06",
+      "definition": {
+        "kind": "Same-classifier redundancy",
+        "label": "B",
+        "leaderboard": "analysis/regression_search/campaign/target_leaderboard.csv",
+        "manifest": "analysis/regression_search/campaign/selected_models.json",
+        "metrics_file": "test_metrics.json",
+        "name": "Detoxify components",
+        "prediction_file": "test_predictions.csv.gz",
+        "predictors": [
+          "detox_insult",
+          "detox_obscene",
+          "detox_severe_toxicity"
+        ],
+        "split_file": "refit_split.csv.gz",
+        "view": null
+      },
+      "equation": {
+        "genre_offsets": {},
+        "intercept": 0.03807517427631085,
+        "missing_genre_offset": null,
+        "numeric": {
+          "detox_insult": 1.014925494567715,
+          "detox_obscene": 0.7349385383292973,
+          "detox_severe_toxicity": -2.277818085892933
+        },
+        "numeric_missing_medians": {
+          "detox_insult": 0.0020853956229983997,
+          "detox_obscene": 0.00152925395368595,
+          "detox_severe_toxicity": 2.6629242711351253e-05
+        },
+        "reference_genre": null
+      },
+      "equation_max_absolute_error": 4.440892098500626e-16,
+      "metrics": {
+        "mae": 0.07851930591212232,
+        "r2": 0.9094045731925376,
+        "rmse": 0.11707903736645693
+      },
+      "missing_inputs": {
+        "detox_insult": 0,
+        "detox_obscene": 0,
+        "detox_severe_toxicity": 0
+      },
+      "model_path": "data/experiments/regression_search/campaign/songs__detox_toxicity/selected_model.json",
+      "n_refit": 18106,
+      "n_songs": 2729,
+      "predictions_above_one": 450,
+      "predictions_below_zero": 0,
+      "replay_max_absolute_error": 0.0,
+      "saved_parameterization": {
+        "coefficients": [
+          -2.0257921780654815e-17,
+          0.14280320388586942,
+          0.12940255294556488,
+          -0.0513649538803579
+        ],
+        "encoder": {
+          "detox_insult": {
+            "constant_values": [
+              0.0
+            ],
+            "keep": [
+              0
+            ],
+            "mean": [
+              0.051228408885105846
+            ],
+            "median": 0.0020853956229983997,
+            "std": [
+              0.14070313993510752
+            ],
+            "train_absent_columns": [
+              1
+            ]
+          },
+          "detox_obscene": {
+            "constant_values": [
+              0.0
+            ],
+            "keep": [
+              0
+            ],
+            "mean": [
+              0.05711755041177804
+            ],
+            "median": 0.00152925395368595,
+            "std": [
+              0.17607261858893652
+            ],
+            "train_absent_columns": [
+              1
+            ]
+          },
+          "detox_severe_toxicity": {
+            "constant_values": [
+              0.0
+            ],
+            "keep": [
+              0
+            ],
+            "mean": [
+              0.003108868689142642
+            ],
+            "median": 2.6629242711351253e-05,
+            "std": [
+              0.022550068505677968
+            ],
+            "train_absent_columns": [
+              1
+            ]
+          }
+        },
+        "predictors": [
+          "detox_insult",
+          "detox_obscene",
+          "detox_severe_toxicity"
+        ],
+        "target_center": 0.12496464418573079
+      }
+    }
+  ],
+  "renderer_sha256": "009ece1b9e3009d2838c10b5d223d9c653a102ed23e76024b1e941b2be458c57",
+  "runtime": {
+    "matplotlib": "3.9.0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "python": "3.9.6"
+  },
+  "source_sha256": {
+    "analysis/planning/regression_search/audit.py": "b8f615e4d7beb2e3fc17c555585aec9a937cd57e28c523348b4aa936e7b5af25",
+    "analysis/regression_search/campaign/selected_models.json": "cd6603be97c4d77301db903190d74ea92e569ded50921c546b35d11e0b6d1ace",
+    "analysis/regression_search/campaign/target_leaderboard.csv": "71b49dc56ebc04e0b8919d0038348998f7f5ede688dc2bcde39141da4d48de96",
+    "analysis/regression_search/meaningful/cross_domain_leaderboard.csv": "bb954c2005f204ea5c39b9ead79e077aa675b5c66ce479726acb1422254b2211",
+    "analysis/regression_search/meaningful/model_manifest.json": "f72e052ec8bbea30a625cb3e4bfa20b8bfb0379e0dd6627cfca2c2a8ff0a1749",
+    "data/experiments/regression_search/campaign/songs__detox_toxicity/refit_split.csv.gz": "4a3f75f2629a7b6d2349d1824201e8e314b4444799001743a300b9bf21772a71",
+    "data/experiments/regression_search/campaign/songs__detox_toxicity/selected_model.json": "e927dafe0b098cfd3c6369c9d5f7f8213dbf006408cc24a757218235a18b3613",
+    "data/experiments/regression_search/campaign/songs__detox_toxicity/test_metrics.json": "a563aaa904f25fd4834278eb9fba362bcd6d6ea253edc5bb40c9f33b19ce7c92",
+    "data/experiments/regression_search/campaign/songs__detox_toxicity/test_predictions.csv.gz": "c12456d8074601542a4674d03849a73eaae794cb52352c9b217835d592299d7c",
+    "data/experiments/regression_search/meaningful_v1/models/songs__detox_toxicity/15894/metrics.json": "12e911ec32ba4e0ca6c82add8cdffc9125d167a157f93c85597d034a4f0fbd8e",
+    "data/experiments/regression_search/meaningful_v1/models/songs__detox_toxicity/15894/model.json": "63df8fabb046af9dcc75b148a6eeac5c05447adb971350796609c40f12951327",
+    "data/experiments/regression_search/meaningful_v1/models/songs__detox_toxicity/15894/predictions.csv.gz": "c4a4c0cc217c0ef39bc7a29e97efb792ce9445e8e185f94f74ca71c859609370",
+    "data/experiments/regression_search/meaningful_v1/models/songs__detox_toxicity/15894/split.csv.gz": "8365c16f8e5cad577d608c75e48095cfcde2a6da2af500c6383c57fdc0cbcf51",
+    "data/public/songs.csv": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5",
+    "src/regression_core.py": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69",
+    "src/regression_pilot.py": "7d4488970ea0b1e647dd75c2ef899e5bad10e13237f91805ec7a9f6b30d0c4ab",
+    "src/regression_search.py": "5dc4097e73d0cc63eaea893d9d328ded8df4782fa8dfd424d8a23890bdaa7cc1",
+    "src/regression_spec.py": "b3e530f9824b029cd464f3c1cd413252affa6e153a9089fda833f4c469824408",
+    "src/regression_store.py": "5ce5b3d62cb30617ea3d8bae1b91fa6e39f452e1984bcabc75c09b10b6910a20"
+  },
+  "status": "PASS",
+  "target": "detox_toxicity"
+}

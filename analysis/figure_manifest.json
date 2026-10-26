@@ -964,7 +964,8 @@
     "analysis/moving_averages/figures/sentiment_positive/r_b_soul_full_scale.png": "c2d08a2f76a551cb60b5bab151f91182dd07fcf9486c2db68357bc1bfbdc517c",
     "analysis/moving_averages/figures/sentiment_positive/rank_sensitivity.png": "5117d6abd76f44c73e2192d75b8dac6c8b09c7cbab50434293cb8d133d455f4e",
     "analysis/moving_averages/figures/sentiment_positive/rock.png": "9ee3dd59a636e0f0836dfb8782533aa3ae97b9c4cbd0488c9656b934fdce2e12",
-    "analysis/moving_averages/figures/sentiment_positive/rock_full_scale.png": "668a707a9f5adb2b6e9b35cfb1f1355d47d665a1a5b20f1ca970e9b02389fa0d"
+    "analysis/moving_averages/figures/sentiment_positive/rock_full_scale.png": "668a707a9f5adb2b6e9b35cfb1f1355d47d665a1a5b20f1ca970e9b02389fa0d",
+    "analysis/regression_search/presentation/toxicity_regression_models_held_out_comparison.png": "a6a529f5a0deb54323a58b1877c68c6e59289b6acd0ce7382e637e25febde083"
   },
   "numerical_sha256": {
     "analysis/milestone2/tables/artist_summary.csv": "7d28d4a86349ad4aa38a12c821df794690a49044080f2c770e9f887088ee0063",

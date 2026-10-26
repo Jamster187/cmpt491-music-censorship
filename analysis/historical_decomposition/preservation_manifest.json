@@ -6,6 +6,14 @@
     "src/README.md"
   ],
   "approved_verification_revisions": {
+    "analysis/figure_manifest.json": {
+      "added_figures": {
+        "analysis/regression_search/presentation/toxicity_regression_models_held_out_comparison.png": "a6a529f5a0deb54323a58b1877c68c6e59289b6acd0ce7382e637e25febde083"
+      },
+      "current_sha256": "048b03780b3fb2fab3e7171a26ffb699777b239a23c5c3ccc58dc51c880b3d81",
+      "original_sha256": "ad8593407c900b53db9763ce70a6a334684cd74697460b3e054097a5f7bef043",
+      "reason": "Register the requested two-model toxicity presentation PNG only; every pre-existing image, numerical, code and audit hash is unchanged. Historical catalog bytes remain at baseline_commit; the presentation renderer verifies the addition is strictly additive."
+    },
     "tests/test_relationship_phase1_publication.py": {
       "current_sha256": "ceb38a42aac2fcaa94c87787d6735fe821241220513d64d75b210509ce0f3ea0",
       "original_sha256": "a94cd9b4da3265515ca8ecabda3a7a168f4e0cbe5ba52f7067aa531647e3c2a1",
@@ -20,7 +28,7 @@
     "analysis/figure_audit.csv": "ec7639c778ef774419bd06024de29277a21fddff83151ef79ba5cca3c9b3352f",
     "analysis/figure_audit.md": "adb0fa5a71e8c62eae533741b088462df2488dd5908cf8b44262478935410186",
     "analysis/figure_inventory_before.csv": "eac497c7ed86cb4a3f32005eba7f97503873c9303e1de45f40faf925cabe6933",
-    "analysis/figure_manifest.json": "ad8593407c900b53db9763ce70a6a334684cd74697460b3e054097a5f7bef043",
+    "analysis/figure_manifest.json": "048b03780b3fb2fab3e7171a26ffb699777b239a23c5c3ccc58dc51c880b3d81",
     "analysis/figure_visual_review.md": "92883aa60da2b330425e21e7c5abddb7e6d903a826e85504db4f44813519015e",
     "analysis/milestone2/README.md": "eeba15bff13714d2e3ff501296e4b56209e9c8f796fbea80de280cea3e267aef",
     "analysis/milestone2/descriptive_findings.md": "7d612c91365d0c5fce09f1a917846e4245167ffac623bb77480c2b5847cb968c",
