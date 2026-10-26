@@ -1,0 +1,98 @@
+{
+  "coefficients": [
+    -3.824775069831368e-15,
+    0.8761747564204295,
+    -2.3823808715561214,
+    -0.8978312077637897
+  ],
+  "encoder": {
+    "names": [
+      "credit_prior_song_observed_longevity_median",
+      "prior_year_unique_chart_song_count",
+      "same_credit_debut_cluster_size"
+    ],
+    "variables": {
+      "credit_prior_song_observed_longevity_median": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          11.797627222095064
+        ],
+        "median": [
+          11.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "credit_prior_song_observed_longevity_median"
+        ],
+        "std": [
+          4.840322091838864
+        ]
+      },
+      "prior_year_unique_chart_song_count": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          587.5985732814527
+        ],
+        "median": [
+          549.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "prior_year_unique_chart_song_count"
+        ],
+        "std": [
+          136.97644879217037
+        ]
+      },
+      "same_credit_debut_cluster_size": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          0.09231708247501336
+        ],
+        "median": [
+          0.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "same_credit_debut_cluster_size"
+        ],
+        "std": [
+          0.7338867667354084
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 26214,
+  "predictors": [
+    "credit_prior_song_observed_longevity_median",
+    "prior_year_unique_chart_song_count",
+    "same_credit_debut_cluster_size"
+  ],
+  "rank": 4,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "target_center": 11.004348821240558,
+  "task": {
+    "horizon": "26",
+    "target": "chart_weeks",
+    "task_id": "strict__26__chart_weeks",
+    "track": "strict"
+  },
+  "training_cutoff": "2018-01-01",
+  "training_ids_sha256": "9c2710ce3c67d222a50252b418f408790ec786ae4b4cb179d9a732a1cc4bb6ec",
+  "training_mean": 11.004348821240558,
+  "training_median": 10.0,
+  "version": "exhaustive-regression-expanded-v2"
+}

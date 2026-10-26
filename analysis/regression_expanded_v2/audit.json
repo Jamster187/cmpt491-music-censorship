@@ -1,0 +1,30 @@
+{
+  "all_candidate_evaluation_fits": 1311090,
+  "debut_report_anomalies": {
+    "nonmissing_prior_week_rank": 37,
+    "reported_peak_differs_from_observed_debut": 161,
+    "reported_weeks_above_one": 59
+  },
+  "full_search_started": false,
+  "post_burn_in_identities": 31798,
+  "predictors": {
+    "retrospective": {
+      "combined": 108,
+      "new": 57,
+      "original": 51
+    },
+    "strict": {
+      "combined": 37,
+      "new": 32,
+      "original": 5
+    }
+  },
+  "previous_results_modified": false,
+  "raw_weekly_identities": 32723,
+  "source_endpoint": "2026-09-19",
+  "status": "AUDITED",
+  "tasks": 12,
+  "total_candidate_fits": 5244360,
+  "unique_combinations": 1311090,
+  "validation_fits": 3933270
+}

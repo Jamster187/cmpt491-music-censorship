@@ -1,0 +1,98 @@
+{
+  "coefficients": [
+    -3.062307295665519e-14,
+    5.2136151860547475,
+    -3.094688949163774,
+    -1.9393027759323322
+  ],
+  "encoder": {
+    "names": [
+      "credit_previous_entry_best_rank_so_far",
+      "credited_entities_prior_top10_mean",
+      "debut_chart_same_genre_share"
+    ],
+    "variables": {
+      "credit_previous_entry_best_rank_so_far": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          37.26770461016538
+        ],
+        "median": [
+          34.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "credit_previous_entry_best_rank_so_far"
+        ],
+        "std": [
+          25.0361948120123
+        ]
+      },
+      "credited_entities_prior_top10_mean": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          1.742758627652915
+        ],
+        "median": [
+          1.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "credited_entities_prior_top10_mean"
+        ],
+        "std": [
+          3.0516763928777113
+        ]
+      },
+      "debut_chart_same_genre_share": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          0.2235460413688219
+        ],
+        "median": [
+          0.232323232323232
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "debut_chart_same_genre_share"
+        ],
+        "std": [
+          0.11317494199600335
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 16507,
+  "predictors": [
+    "credit_previous_entry_best_rank_so_far",
+    "credited_entities_prior_top10_mean",
+    "debut_chart_same_genre_share"
+  ],
+  "rank": 4,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "target_center": 39.201308535772704,
+  "task": {
+    "horizon": "observed_lifetime",
+    "target": "best_rank",
+    "task_id": "retrospective__observed_lifetime__best_rank",
+    "track": "retrospective"
+  },
+  "training_cutoff": "2018-01-01",
+  "training_ids_sha256": "514eb8e18bf7d82dbc166ddb9e525332939b88a2af0c2d7d8f1aee9255610012",
+  "training_mean": 39.201308535772704,
+  "training_median": 36.0,
+  "version": "exhaustive-regression-expanded-v2"
+}

@@ -1,0 +1,98 @@
+{
+  "coefficients": [
+    -3.171189630212765e-13,
+    -122.50666365610356,
+    184.1734825615498,
+    109.36289161847029
+  ],
+  "encoder": {
+    "names": [
+      "lyric_vocabulary_size",
+      "lyric_word_count",
+      "previous_chart_incumbent_age_median"
+    ],
+    "variables": {
+      "lyric_vocabulary_size": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          100.03362209971527
+        ],
+        "median": [
+          89.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "lyric_vocabulary_size"
+        ],
+        "std": [
+          49.47521556511947
+        ]
+      },
+      "lyric_word_count": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          293.08535772702487
+        ],
+        "median": [
+          255.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "lyric_word_count"
+        ],
+        "std": [
+          155.92011924250892
+        ]
+      },
+      "previous_chart_incumbent_age_median": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          7.1003816562670385
+        ],
+        "median": [
+          7.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "previous_chart_incumbent_age_median"
+        ],
+        "std": [
+          2.111490337601512
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 16507,
+  "predictors": [
+    "lyric_vocabulary_size",
+    "lyric_word_count",
+    "previous_chart_incumbent_age_median"
+  ],
+  "rank": 4,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "target_center": 677.5720603380385,
+  "task": {
+    "horizon": "observed_lifetime",
+    "target": "chart_points",
+    "task_id": "retrospective__observed_lifetime__chart_points",
+    "track": "retrospective"
+  },
+  "training_cutoff": "2018-01-01",
+  "training_ids_sha256": "514eb8e18bf7d82dbc166ddb9e525332939b88a2af0c2d7d8f1aee9255610012",
+  "training_mean": 677.5720603380385,
+  "training_median": 519.0,
+  "version": "exhaustive-regression-expanded-v2"
+}

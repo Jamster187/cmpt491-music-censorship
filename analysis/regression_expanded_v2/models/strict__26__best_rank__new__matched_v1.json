@@ -1,0 +1,98 @@
+{
+  "coefficients": [
+    7.78092452248496e-14,
+    1.1982846308985873,
+    6.171881434751241,
+    -4.46648260885148
+  ],
+  "encoder": {
+    "names": [
+      "credit_chart_career_days",
+      "credit_previous_entry_best_rank_so_far",
+      "credit_prior_top10_song_count"
+    ],
+    "variables": {
+      "credit_chart_career_days": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          1138.5270222999563
+        ],
+        "median": [
+          441.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "credit_chart_career_days"
+        ],
+        "std": [
+          1659.1273728907329
+        ]
+      },
+      "credit_previous_entry_best_rank_so_far": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          38.885964145168344
+        ],
+        "median": [
+          36.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "credit_previous_entry_best_rank_so_far"
+        ],
+        "std": [
+          24.862990193271283
+        ]
+      },
+      "credit_prior_top10_song_count": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          1.565282028858767
+        ],
+        "median": [
+          0.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "credit_prior_top10_song_count"
+        ],
+        "std": [
+          3.1597049914800297
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 22870,
+  "predictors": [
+    "credit_chart_career_days",
+    "credit_previous_entry_best_rank_so_far",
+    "credit_prior_top10_song_count"
+  ],
+  "rank": 4,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "target_center": 45.574682990817664,
+  "task": {
+    "horizon": "26",
+    "target": "best_rank",
+    "task_id": "strict__26__best_rank",
+    "track": "strict"
+  },
+  "training_cutoff": "2010-01-01",
+  "training_ids_sha256": "2b9a6a261495434e5f182a9c00b740be2cbc0e9eeb4640c79685b4002d3f1c40",
+  "training_mean": 45.574682990817664,
+  "training_median": 44.0,
+  "version": "exhaustive-regression-expanded-v2"
+}

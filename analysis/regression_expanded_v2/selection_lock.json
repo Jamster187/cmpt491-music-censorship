@@ -1,0 +1,2502 @@
+{
+  "provenance": {
+    "code_sha256": {
+      "analysis/planning/regression_search/audit.py": "b8f615e4d7beb2e3fc17c555585aec9a937cd57e28c523348b4aa936e7b5af25",
+      "src/feature_expansion_common.py": "f75b3392144b7e5ef4c899c2a709442ba4316f38e0646f108880d226464aaa36",
+      "src/regression_core.py": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69",
+      "src/regression_expanded_core.py": "aa42b422b1c8099d15ee901ce081117c6ea554699d35c162578d870748429702",
+      "src/regression_expanded_search.py": "2183fc310c7df5e1ce39e48574b97535c85a280e75f81cca705a48cf6090a758",
+      "src/regression_expanded_spec.py": "913dbe1272ee32b5b15a29041fc2d51256075c6d6b9bee44ef83617d5ff0560d",
+      "src/regression_expanded_store.py": "2da9c7d35650bbf50819e9bf90f526eb4aea6a4344d54304813b6ff80e94d968",
+      "src/regression_spec.py": "b3e530f9824b029cd464f3c1cd413252affa6e153a9089fda833f4c469824408"
+    },
+    "environment": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "platform": "macOS-13.6.6-arm64-arm-64bit",
+      "python": "3.9.6",
+      "scipy": "1.13.1",
+      "sqlite": "3.35.5"
+    },
+    "protocol_sha256": "e2d985144db2ce4c2968448bff450b739f2c25f07c4de04bea5da20c6ef774c7"
+  },
+  "rule": "Equal-period mean training-mean-relative MSE skill over three rolling validation folds; then fewer original variables; then lexicographic predictor tuple",
+  "selections": [
+    {
+      "candidate_id": 571,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank",
+        "debut_time_years"
+      ],
+      "selection_count": "best_any_k",
+      "target": "best_rank",
+      "task_id": "strict__26__best_rank",
+      "track": "strict",
+      "validation_mae": 25.805351955170327,
+      "validation_r2": 0.0023284171067531334,
+      "validation_rmse": 29.759941338292,
+      "validation_skill": 0.01935149665324302
+    },
+    {
+      "candidate_id": 21,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_last_week_rank"
+      ],
+      "selection_count": 1,
+      "target": "best_rank",
+      "task_id": "strict__26__best_rank",
+      "track": "strict",
+      "validation_mae": 26.19071848421765,
+      "validation_r2": -0.017778838573967004,
+      "validation_rmse": 30.052951759500992,
+      "validation_skill": 9.992007221626409e-16
+    },
+    {
+      "candidate_id": 571,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank",
+        "debut_time_years"
+      ],
+      "selection_count": 2,
+      "target": "best_rank",
+      "task_id": "strict__26__best_rank",
+      "track": "strict",
+      "validation_mae": 25.805351955170327,
+      "validation_r2": 0.0023284171067531334,
+      "validation_rmse": 29.759941338292,
+      "validation_skill": 0.01935149665324302
+    },
+    {
+      "candidate_id": 7796,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank",
+        "debut_reported_last_week_rank",
+        "debut_time_years"
+      ],
+      "selection_count": 3,
+      "target": "best_rank",
+      "task_id": "strict__26__best_rank",
+      "track": "strict",
+      "validation_mae": 25.805351955170327,
+      "validation_r2": 0.0023284171067531334,
+      "validation_rmse": 29.759941338292,
+      "validation_skill": 0.01935149665324302
+    },
+    {
+      "candidate_id": 2528,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_chart_career_days",
+        "credit_previous_entry_best_rank_so_far",
+        "credit_prior_top10_song_count"
+      ],
+      "selection_count": "best_any_k",
+      "target": "best_rank",
+      "task_id": "strict__26__best_rank",
+      "track": "strict",
+      "validation_mae": 25.412499483378753,
+      "validation_r2": 0.01672787326640938,
+      "validation_rmse": 29.53753406129778,
+      "validation_skill": 0.033919407235034615
+    },
+    {
+      "candidate_id": 5,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far"
+      ],
+      "selection_count": 1,
+      "target": "best_rank",
+      "task_id": "strict__26__best_rank",
+      "track": "strict",
+      "validation_mae": 25.585543443352265,
+      "validation_r2": 0.010066761240918579,
+      "validation_rmse": 29.63789285134327,
+      "validation_skill": 0.027497749348914653
+    },
+    {
+      "candidate_id": 214,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credit_prior_top10_song_count"
+      ],
+      "selection_count": 2,
+      "target": "best_rank",
+      "task_id": "strict__26__best_rank",
+      "track": "strict",
+      "validation_mae": 25.431058638068066,
+      "validation_r2": 0.01436984044084603,
+      "validation_rmse": 29.572860267419266,
+      "validation_skill": 0.031597099428453936
+    },
+    {
+      "candidate_id": 2528,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_chart_career_days",
+        "credit_previous_entry_best_rank_so_far",
+        "credit_prior_top10_song_count"
+      ],
+      "selection_count": 3,
+      "target": "best_rank",
+      "task_id": "strict__26__best_rank",
+      "track": "strict",
+      "validation_mae": 25.412499483378753,
+      "validation_r2": 0.01672787326640938,
+      "validation_rmse": 29.53753406129778,
+      "validation_skill": 0.033919407235034615
+    },
+    {
+      "candidate_id": 3846,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "debut_rank",
+        "debut_time_years"
+      ],
+      "selection_count": "best_any_k",
+      "target": "best_rank",
+      "task_id": "strict__26__best_rank",
+      "track": "strict",
+      "validation_mae": 25.14806441356474,
+      "validation_r2": 0.052010465187259936,
+      "validation_rmse": 29.00893969773337,
+      "validation_skill": 0.06806180987203773
+    },
+    {
+      "candidate_id": 5,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far"
+      ],
+      "selection_count": 1,
+      "target": "best_rank",
+      "task_id": "strict__26__best_rank",
+      "track": "strict",
+      "validation_mae": 25.585543443352265,
+      "validation_r2": 0.010066761240918579,
+      "validation_rmse": 29.63789285134327,
+      "validation_skill": 0.027497749348914653
+    },
+    {
+      "candidate_id": 214,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credit_prior_top10_song_count"
+      ],
+      "selection_count": 2,
+      "target": "best_rank",
+      "task_id": "strict__26__best_rank",
+      "track": "strict",
+      "validation_mae": 25.431058638068066,
+      "validation_r2": 0.01436984044084603,
+      "validation_rmse": 29.572860267419266,
+      "validation_skill": 0.031597099428453936
+    },
+    {
+      "candidate_id": 3846,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "debut_rank",
+        "debut_time_years"
+      ],
+      "selection_count": 3,
+      "target": "best_rank",
+      "task_id": "strict__26__best_rank",
+      "track": "strict",
+      "validation_mae": 25.14806441356474,
+      "validation_r2": 0.052010465187259936,
+      "validation_rmse": 29.00893969773337,
+      "validation_skill": 0.06806180987203773
+    },
+    {
+      "candidate_id": 22,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_weeks",
+      "task_id": "strict__26__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.53346376532875,
+      "validation_r2": -0.20565925346652195,
+      "validation_rmse": 8.849031238221242,
+      "validation_skill": 0.02838479424194092
+    },
+    {
+      "candidate_id": 22,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position"
+      ],
+      "selection_count": 1,
+      "target": "chart_weeks",
+      "task_id": "strict__26__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.53346376532875,
+      "validation_r2": -0.20565925346652195,
+      "validation_rmse": 8.849031238221242,
+      "validation_skill": 0.02838479424194092
+    },
+    {
+      "candidate_id": 583,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_last_week_rank",
+        "debut_reported_peak_position"
+      ],
+      "selection_count": 2,
+      "target": "chart_weeks",
+      "task_id": "strict__26__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.53346376532875,
+      "validation_r2": -0.20565925346652195,
+      "validation_rmse": 8.849031238221242,
+      "validation_skill": 0.02838479424194092
+    },
+    {
+      "candidate_id": 7913,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_last_week_rank",
+        "debut_reported_peak_position",
+        "debut_reported_weeks_on_chart"
+      ],
+      "selection_count": 3,
+      "target": "chart_weeks",
+      "task_id": "strict__26__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.53346376532875,
+      "validation_r2": -0.20565925346652195,
+      "validation_rmse": 8.849031238221242,
+      "validation_skill": 0.02838479424194092
+    },
+    {
+      "candidate_id": 6434,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_weeks",
+      "task_id": "strict__26__chart_weeks",
+      "track": "strict",
+      "validation_mae": 6.89228076407345,
+      "validation_r2": 0.03906203596852106,
+      "validation_rmse": 7.871601695186467,
+      "validation_skill": 0.22949827018181465
+    },
+    {
+      "candidate_id": 31,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 1,
+      "target": "chart_weeks",
+      "task_id": "strict__26__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.163534297830616,
+      "validation_r2": -0.005072815301521261,
+      "validation_rmse": 8.092260613021073,
+      "validation_skill": 0.18754400435463028
+    },
+    {
+      "candidate_id": 688,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": 2,
+      "target": "chart_weeks",
+      "task_id": "strict__26__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.003330932962837,
+      "validation_r2": 0.020071825926552916,
+      "validation_rmse": 7.9589156154698975,
+      "validation_skill": 0.21275854945384673
+    },
+    {
+      "candidate_id": 6434,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": 3,
+      "target": "chart_weeks",
+      "task_id": "strict__26__chart_weeks",
+      "track": "strict",
+      "validation_mae": 6.89228076407345,
+      "validation_r2": 0.03906203596852106,
+      "validation_rmse": 7.871601695186467,
+      "validation_skill": 0.22949827018181465
+    },
+    {
+      "candidate_id": 6434,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_weeks",
+      "task_id": "strict__26__chart_weeks",
+      "track": "strict",
+      "validation_mae": 6.89228076407345,
+      "validation_r2": 0.03906203596852106,
+      "validation_rmse": 7.871601695186467,
+      "validation_skill": 0.22949827018181465
+    },
+    {
+      "candidate_id": 31,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 1,
+      "target": "chart_weeks",
+      "task_id": "strict__26__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.163534297830616,
+      "validation_r2": -0.005072815301521261,
+      "validation_rmse": 8.092260613021073,
+      "validation_skill": 0.18754400435463028
+    },
+    {
+      "candidate_id": 688,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": 2,
+      "target": "chart_weeks",
+      "task_id": "strict__26__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.003330932962837,
+      "validation_r2": 0.020071825926552916,
+      "validation_rmse": 7.9589156154698975,
+      "validation_skill": 0.21275854945384673
+    },
+    {
+      "candidate_id": 6434,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": 3,
+      "target": "chart_weeks",
+      "task_id": "strict__26__chart_weeks",
+      "track": "strict",
+      "validation_mae": 6.89228076407345,
+      "validation_r2": 0.03906203596852106,
+      "validation_rmse": 7.871601695186467,
+      "validation_skill": 0.22949827018181465
+    },
+    {
+      "candidate_id": 22,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_points",
+      "task_id": "strict__26__chart_points",
+      "track": "strict",
+      "validation_mae": 509.1039583122299,
+      "validation_r2": 0.001943737136819242,
+      "validation_rmse": 649.9943939680963,
+      "validation_skill": 0.0673612710946121
+    },
+    {
+      "candidate_id": 22,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position"
+      ],
+      "selection_count": 1,
+      "target": "chart_points",
+      "task_id": "strict__26__chart_points",
+      "track": "strict",
+      "validation_mae": 509.1039583122299,
+      "validation_r2": 0.001943737136819242,
+      "validation_rmse": 649.9943939680963,
+      "validation_skill": 0.0673612710946121
+    },
+    {
+      "candidate_id": 583,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_last_week_rank",
+        "debut_reported_peak_position"
+      ],
+      "selection_count": 2,
+      "target": "chart_points",
+      "task_id": "strict__26__chart_points",
+      "track": "strict",
+      "validation_mae": 509.1039583122299,
+      "validation_r2": 0.001943737136819242,
+      "validation_rmse": 649.9943939680963,
+      "validation_skill": 0.0673612710946121
+    },
+    {
+      "candidate_id": 7913,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_last_week_rank",
+        "debut_reported_peak_position",
+        "debut_reported_weeks_on_chart"
+      ],
+      "selection_count": 3,
+      "target": "chart_points",
+      "task_id": "strict__26__chart_points",
+      "track": "strict",
+      "validation_mae": 509.1039583122299,
+      "validation_r2": 0.001943737136819242,
+      "validation_rmse": 649.9943939680963,
+      "validation_skill": 0.0673612710946121
+    },
+    {
+      "candidate_id": 3963,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_points",
+      "task_id": "strict__26__chart_points",
+      "track": "strict",
+      "validation_mae": 528.0289575241655,
+      "validation_r2": 0.022506914401929645,
+      "validation_rmse": 642.1358485459084,
+      "validation_skill": 0.09435383185123669
+    },
+    {
+      "candidate_id": 31,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 1,
+      "target": "chart_points",
+      "task_id": "strict__26__chart_points",
+      "track": "strict",
+      "validation_mae": 544.209604265427,
+      "validation_r2": -0.004895588105574482,
+      "validation_rmse": 651.0212171753325,
+      "validation_skill": 0.0679644686547507
+    },
+    {
+      "candidate_id": 232,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 2,
+      "target": "chart_points",
+      "task_id": "strict__26__chart_points",
+      "track": "strict",
+      "validation_mae": 536.0317506098245,
+      "validation_r2": 0.011893821764878076,
+      "validation_rmse": 645.5745226723183,
+      "validation_skill": 0.08347137356363477
+    },
+    {
+      "candidate_id": 3963,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": 3,
+      "target": "chart_points",
+      "task_id": "strict__26__chart_points",
+      "track": "strict",
+      "validation_mae": 528.0289575241655,
+      "validation_r2": 0.022506914401929645,
+      "validation_rmse": 642.1358485459084,
+      "validation_skill": 0.09435383185123669
+    },
+    {
+      "candidate_id": 7898,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_points",
+      "task_id": "strict__26__chart_points",
+      "track": "strict",
+      "validation_mae": 501.73251099928666,
+      "validation_r2": 0.0846693081471545,
+      "validation_rmse": 622.34682479706,
+      "validation_skill": 0.14681920138045756
+    },
+    {
+      "candidate_id": 31,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 1,
+      "target": "chart_points",
+      "task_id": "strict__26__chart_points",
+      "track": "strict",
+      "validation_mae": 544.209604265427,
+      "validation_r2": -0.004895588105574482,
+      "validation_rmse": 651.0212171753325,
+      "validation_skill": 0.0679644686547507
+    },
+    {
+      "candidate_id": 607,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": 2,
+      "target": "chart_points",
+      "task_id": "strict__26__chart_points",
+      "track": "strict",
+      "validation_mae": 492.3907591724042,
+      "validation_r2": 0.05049116831287981,
+      "validation_rmse": 633.9582897173992,
+      "validation_skill": 0.11528053421147015
+    },
+    {
+      "candidate_id": 7898,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": 3,
+      "target": "chart_points",
+      "task_id": "strict__26__chart_points",
+      "track": "strict",
+      "validation_mae": 501.73251099928666,
+      "validation_r2": 0.0846693081471545,
+      "validation_rmse": 622.34682479706,
+      "validation_skill": 0.14681920138045756
+    },
+    {
+      "candidate_id": 571,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_rank",
+        "debut_time_years"
+      ],
+      "selection_count": "best_any_k",
+      "target": "best_rank",
+      "task_id": "strict__observed_lifetime__best_rank",
+      "track": "strict",
+      "validation_mae": 24.283969658379686,
+      "validation_r2": 0.10192620230828509,
+      "validation_rmse": 28.254906827260307,
+      "validation_skill": 0.12329247538430473
+    },
+    {
+      "candidate_id": 20,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_rank"
+      ],
+      "selection_count": 1,
+      "target": "best_rank",
+      "task_id": "strict__observed_lifetime__best_rank",
+      "track": "strict",
+      "validation_mae": 24.838620817310044,
+      "validation_r2": 0.06020670826538536,
+      "validation_rmse": 28.913815914926353,
+      "validation_skill": 0.08328741570699998
+    },
+    {
+      "candidate_id": 571,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_rank",
+        "debut_time_years"
+      ],
+      "selection_count": 2,
+      "target": "best_rank",
+      "task_id": "strict__observed_lifetime__best_rank",
+      "track": "strict",
+      "validation_mae": 24.283969658379686,
+      "validation_r2": 0.10192620230828509,
+      "validation_rmse": 28.254906827260307,
+      "validation_skill": 0.12329247538430473
+    },
+    {
+      "candidate_id": 7796,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_rank",
+        "debut_reported_last_week_rank",
+        "debut_time_years"
+      ],
+      "selection_count": 3,
+      "target": "best_rank",
+      "task_id": "strict__observed_lifetime__best_rank",
+      "track": "strict",
+      "validation_mae": 24.283969658379686,
+      "validation_r2": 0.10192620230828509,
+      "validation_rmse": 28.254906827260307,
+      "validation_skill": 0.12329247538430473
+    },
+    {
+      "candidate_id": 3576,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credit_prior_chart_rank_volatility",
+        "credit_prior_top10_song_count"
+      ],
+      "selection_count": "best_any_k",
+      "target": "best_rank",
+      "task_id": "strict__observed_lifetime__best_rank",
+      "track": "strict",
+      "validation_mae": 25.48258710990298,
+      "validation_r2": 0.015270093527753251,
+      "validation_rmse": 29.570350145968504,
+      "validation_skill": 0.03702193250860297
+    },
+    {
+      "candidate_id": 5,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far"
+      ],
+      "selection_count": 1,
+      "target": "best_rank",
+      "task_id": "strict__observed_lifetime__best_rank",
+      "track": "strict",
+      "validation_mae": 25.757192151443572,
+      "validation_r2": 0.006007825437588006,
+      "validation_rmse": 29.71932335862001,
+      "validation_skill": 0.028183830215261312
+    },
+    {
+      "candidate_id": 213,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credit_prior_song_observed_longevity_median"
+      ],
+      "selection_count": 2,
+      "target": "best_rank",
+      "task_id": "strict__observed_lifetime__best_rank",
+      "track": "strict",
+      "validation_mae": 25.562899372086765,
+      "validation_r2": 0.012372687166239257,
+      "validation_rmse": 29.624719919349598,
+      "validation_skill": 0.034405039421626316
+    },
+    {
+      "candidate_id": 3576,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credit_prior_chart_rank_volatility",
+        "credit_prior_top10_song_count"
+      ],
+      "selection_count": 3,
+      "target": "best_rank",
+      "task_id": "strict__observed_lifetime__best_rank",
+      "track": "strict",
+      "validation_mae": 25.48258710990298,
+      "validation_r2": 0.015270093527753251,
+      "validation_rmse": 29.570350145968504,
+      "validation_skill": 0.03702193250860297
+    },
+    {
+      "candidate_id": 8048,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": "best_any_k",
+      "target": "best_rank",
+      "task_id": "strict__observed_lifetime__best_rank",
+      "track": "strict",
+      "validation_mae": 23.0718678190875,
+      "validation_r2": 0.17472403923750568,
+      "validation_rmse": 27.080267261287283,
+      "validation_skill": 0.19360012136274243
+    },
+    {
+      "candidate_id": 20,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_rank"
+      ],
+      "selection_count": 1,
+      "target": "best_rank",
+      "task_id": "strict__observed_lifetime__best_rank",
+      "track": "strict",
+      "validation_mae": 24.838620817310044,
+      "validation_r2": 0.06020670826538536,
+      "validation_rmse": 28.913815914926353,
+      "validation_skill": 0.08328741570699998
+    },
+    {
+      "candidate_id": 571,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_rank",
+        "debut_time_years"
+      ],
+      "selection_count": 2,
+      "target": "best_rank",
+      "task_id": "strict__observed_lifetime__best_rank",
+      "track": "strict",
+      "validation_mae": 24.283969658379686,
+      "validation_r2": 0.10192620230828509,
+      "validation_rmse": 28.254906827260307,
+      "validation_skill": 0.12329247538430473
+    },
+    {
+      "candidate_id": 8048,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 3,
+      "target": "best_rank",
+      "task_id": "strict__observed_lifetime__best_rank",
+      "track": "strict",
+      "validation_mae": 23.0718678190875,
+      "validation_r2": 0.17472403923750568,
+      "validation_rmse": 27.080267261287283,
+      "validation_skill": 0.19360012136274243
+    },
+    {
+      "candidate_id": 600,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_weeks",
+      "task_id": "strict__observed_lifetime__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.85282897896905,
+      "validation_r2": -0.11074438248218144,
+      "validation_rmse": 10.361245242112206,
+      "validation_skill": 0.12753730129124782
+    },
+    {
+      "candidate_id": 25,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_time_years"
+      ],
+      "selection_count": 1,
+      "target": "chart_weeks",
+      "task_id": "strict__observed_lifetime__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.985514522690335,
+      "validation_r2": -0.1350539942094595,
+      "validation_rmse": 10.349746524427392,
+      "validation_skill": 0.12093631622019729
+    },
+    {
+      "candidate_id": 600,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years"
+      ],
+      "selection_count": 2,
+      "target": "chart_weeks",
+      "task_id": "strict__observed_lifetime__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.85282897896905,
+      "validation_r2": -0.11074438248218144,
+      "validation_rmse": 10.361245242112206,
+      "validation_skill": 0.12753730129124782
+    },
+    {
+      "candidate_id": 7915,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_last_week_rank",
+        "debut_reported_peak_position",
+        "debut_time_years"
+      ],
+      "selection_count": 3,
+      "target": "chart_weeks",
+      "task_id": "strict__observed_lifetime__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.85282897896905,
+      "validation_r2": -0.11074438248218144,
+      "validation_rmse": 10.361245242112206,
+      "validation_skill": 0.12753730129124782
+    },
+    {
+      "candidate_id": 4029,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_best_rank",
+        "credit_prior_chart_rank_volatility",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_weeks",
+      "task_id": "strict__observed_lifetime__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.285884946477933,
+      "validation_r2": 0.0010480780089202613,
+      "validation_rmse": 9.280292476528427,
+      "validation_skill": 0.2680177242267569
+    },
+    {
+      "candidate_id": 31,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 1,
+      "target": "chart_weeks",
+      "task_id": "strict__observed_lifetime__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.656292531602754,
+      "validation_r2": -0.03908782211032528,
+      "validation_rmse": 9.538418264632586,
+      "validation_skill": 0.2316871911233067
+    },
+    {
+      "candidate_id": 421,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 2,
+      "target": "chart_weeks",
+      "task_id": "strict__observed_lifetime__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.499701067710599,
+      "validation_r2": -0.0159160843424286,
+      "validation_rmse": 9.399006944268852,
+      "validation_skill": 0.25167052731555645
+    },
+    {
+      "candidate_id": 4029,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_best_rank",
+        "credit_prior_chart_rank_volatility",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 3,
+      "target": "chart_weeks",
+      "task_id": "strict__observed_lifetime__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.285884946477933,
+      "validation_r2": 0.0010480780089202613,
+      "validation_rmse": 9.280292476528427,
+      "validation_skill": 0.2680177242267569
+    },
+    {
+      "candidate_id": 5100,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_chart_rank_volatility",
+        "debut_reported_peak_position",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_weeks",
+      "task_id": "strict__observed_lifetime__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.192639067651737,
+      "validation_r2": 0.03094559905758994,
+      "validation_rmse": 9.274128667786552,
+      "validation_skill": 0.277492450862999
+    },
+    {
+      "candidate_id": 31,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 1,
+      "target": "chart_weeks",
+      "task_id": "strict__observed_lifetime__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.656292531602754,
+      "validation_r2": -0.03908782211032528,
+      "validation_rmse": 9.538418264632586,
+      "validation_skill": 0.2316871911233067
+    },
+    {
+      "candidate_id": 421,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 2,
+      "target": "chart_weeks",
+      "task_id": "strict__observed_lifetime__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.499701067710599,
+      "validation_r2": -0.0159160843424286,
+      "validation_rmse": 9.399006944268852,
+      "validation_skill": 0.25167052731555645
+    },
+    {
+      "candidate_id": 5100,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_chart_rank_volatility",
+        "debut_reported_peak_position",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 3,
+      "target": "chart_weeks",
+      "task_id": "strict__observed_lifetime__chart_weeks",
+      "track": "strict",
+      "validation_mae": 7.192639067651737,
+      "validation_r2": 0.03094559905758994,
+      "validation_rmse": 9.274128667786552,
+      "validation_skill": 0.277492450862999
+    },
+    {
+      "candidate_id": 600,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_points",
+      "task_id": "strict__observed_lifetime__chart_points",
+      "track": "strict",
+      "validation_mae": 595.2420400773001,
+      "validation_r2": 0.002800903087766963,
+      "validation_rmse": 776.6881256515001,
+      "validation_skill": 0.0972658403381816
+    },
+    {
+      "candidate_id": 22,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position"
+      ],
+      "selection_count": 1,
+      "target": "chart_points",
+      "task_id": "strict__observed_lifetime__chart_points",
+      "track": "strict",
+      "validation_mae": 556.5439652097616,
+      "validation_r2": -0.010871884517842526,
+      "validation_rmse": 775.1146081157265,
+      "validation_skill": 0.0931312637232861
+    },
+    {
+      "candidate_id": 600,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years"
+      ],
+      "selection_count": 2,
+      "target": "chart_points",
+      "task_id": "strict__observed_lifetime__chart_points",
+      "track": "strict",
+      "validation_mae": 595.2420400773001,
+      "validation_r2": 0.002800903087766963,
+      "validation_rmse": 776.6881256515001,
+      "validation_skill": 0.0972658403381816
+    },
+    {
+      "candidate_id": 7915,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_last_week_rank",
+        "debut_reported_peak_position",
+        "debut_time_years"
+      ],
+      "selection_count": 3,
+      "target": "chart_points",
+      "task_id": "strict__observed_lifetime__chart_points",
+      "track": "strict",
+      "validation_mae": 595.2420400773001,
+      "validation_r2": 0.002800903087766963,
+      "validation_rmse": 776.6881256515001,
+      "validation_skill": 0.0972658403381816
+    },
+    {
+      "candidate_id": 4029,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_best_rank",
+        "credit_prior_chart_rank_volatility",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_points",
+      "task_id": "strict__observed_lifetime__chart_points",
+      "track": "strict",
+      "validation_mae": 561.2400795312027,
+      "validation_r2": 0.012786170563148272,
+      "validation_rmse": 758.3703081587785,
+      "validation_skill": 0.12331565621790315
+    },
+    {
+      "candidate_id": 31,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 1,
+      "target": "chart_points",
+      "task_id": "strict__observed_lifetime__chart_points",
+      "track": "strict",
+      "validation_mae": 584.7653384964625,
+      "validation_r2": -0.01322139891501443,
+      "validation_rmse": 769.5916723835948,
+      "validation_skill": 0.09869580330478078
+    },
+    {
+      "candidate_id": 421,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 2,
+      "target": "chart_points",
+      "task_id": "strict__observed_lifetime__chart_points",
+      "track": "strict",
+      "validation_mae": 574.8482214499719,
+      "validation_r2": 0.007049612931180856,
+      "validation_rmse": 761.0447241369304,
+      "validation_skill": 0.11760386756726064
+    },
+    {
+      "candidate_id": 4029,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_best_rank",
+        "credit_prior_chart_rank_volatility",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 3,
+      "target": "chart_points",
+      "task_id": "strict__observed_lifetime__chart_points",
+      "track": "strict",
+      "validation_mae": 561.2400795312027,
+      "validation_r2": 0.012786170563148272,
+      "validation_rmse": 758.3703081587785,
+      "validation_skill": 0.12331565621790315
+    },
+    {
+      "candidate_id": 8094,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_points",
+      "task_id": "strict__observed_lifetime__chart_points",
+      "track": "strict",
+      "validation_mae": 544.9307626174977,
+      "validation_r2": 0.08682670149162415,
+      "validation_rmse": 736.5759860188434,
+      "validation_skill": 0.18177587924354996
+    },
+    {
+      "candidate_id": 31,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 1,
+      "target": "chart_points",
+      "task_id": "strict__observed_lifetime__chart_points",
+      "track": "strict",
+      "validation_mae": 584.7653384964625,
+      "validation_r2": -0.01322139891501443,
+      "validation_rmse": 769.5916723835948,
+      "validation_skill": 0.09869580330478078
+    },
+    {
+      "candidate_id": 606,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 2,
+      "target": "chart_points",
+      "task_id": "strict__observed_lifetime__chart_points",
+      "track": "strict",
+      "validation_mae": 559.2284474750612,
+      "validation_r2": 0.05755486766231207,
+      "validation_rmse": 750.5950550092991,
+      "validation_skill": 0.15254649966168055
+    },
+    {
+      "candidate_id": 8094,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "selection_count": 3,
+      "target": "chart_points",
+      "task_id": "strict__observed_lifetime__chart_points",
+      "track": "strict",
+      "validation_mae": 544.9307626174977,
+      "validation_r2": 0.08682670149162415,
+      "validation_rmse": 736.5759860188434,
+      "validation_skill": 0.18177587924354996
+    },
+    {
+      "candidate_id": 118516,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": "best_any_k",
+      "target": "best_rank",
+      "task_id": "retrospective__26__best_rank",
+      "track": "retrospective",
+      "validation_mae": 22.372565131835625,
+      "validation_r2": 0.16323629238562098,
+      "validation_rmse": 26.179026820666024,
+      "validation_skill": 0.1700520582668007
+    },
+    {
+      "candidate_id": 25,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank"
+      ],
+      "selection_count": 1,
+      "target": "best_rank",
+      "task_id": "retrospective__26__best_rank",
+      "track": "retrospective",
+      "validation_mae": 24.22553672887884,
+      "validation_r2": 0.03764623078336615,
+      "validation_rmse": 28.101886148285153,
+      "validation_skill": 0.045814426952708244
+    },
+    {
+      "candidate_id": 2487,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank",
+        "debut_time_years"
+      ],
+      "selection_count": 2,
+      "target": "best_rank",
+      "task_id": "retrospective__26__best_rank",
+      "track": "retrospective",
+      "validation_mae": 23.412788080778427,
+      "validation_r2": 0.09330790749036595,
+      "validation_rmse": 27.256297477236593,
+      "validation_skill": 0.10074399335574691
+    },
+    {
+      "candidate_id": 118516,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": 3,
+      "target": "best_rank",
+      "task_id": "retrospective__26__best_rank",
+      "track": "retrospective",
+      "validation_mae": 22.372565131835625,
+      "validation_r2": 0.16323629238562098,
+      "validation_rmse": 26.179026820666024,
+      "validation_skill": 0.1700520582668007
+    },
+    {
+      "candidate_id": 34602,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credited_entities_prior_top10_mean",
+        "debut_chart_same_genre_share"
+      ],
+      "selection_count": "best_any_k",
+      "target": "best_rank",
+      "task_id": "retrospective__26__best_rank",
+      "track": "retrospective",
+      "validation_mae": 23.815145359440596,
+      "validation_r2": 0.04754459674081649,
+      "validation_rmse": 27.948345250316322,
+      "validation_skill": 0.05552770735099466
+    },
+    {
+      "candidate_id": 5,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far"
+      ],
+      "selection_count": 1,
+      "target": "best_rank",
+      "task_id": "retrospective__26__best_rank",
+      "track": "retrospective",
+      "validation_mae": 24.19663573833154,
+      "validation_r2": 0.023658974878225103,
+      "validation_rmse": 28.29983259123499,
+      "validation_skill": 0.03185448386087172
+    },
+    {
+      "candidate_id": 648,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credited_entities_prior_top10_mean"
+      ],
+      "selection_count": 2,
+      "target": "best_rank",
+      "task_id": "retrospective__26__best_rank",
+      "track": "retrospective",
+      "validation_mae": 23.877814451606,
+      "validation_r2": 0.038944970199274676,
+      "validation_rmse": 28.076262075874855,
+      "validation_skill": 0.046995689518831374
+    },
+    {
+      "candidate_id": 34602,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credited_entities_prior_top10_mean",
+        "debut_chart_same_genre_share"
+      ],
+      "selection_count": 3,
+      "target": "best_rank",
+      "task_id": "retrospective__26__best_rank",
+      "track": "retrospective",
+      "validation_mae": 23.815145359440596,
+      "validation_r2": 0.04754459674081649,
+      "validation_rmse": 27.948345250316322,
+      "validation_skill": 0.05552770735099466
+    },
+    {
+      "candidate_id": 118516,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": "best_any_k",
+      "target": "best_rank",
+      "task_id": "retrospective__26__best_rank",
+      "track": "retrospective",
+      "validation_mae": 22.372565131835625,
+      "validation_r2": 0.16323629238562098,
+      "validation_rmse": 26.179026820666024,
+      "validation_skill": 0.1700520582668007
+    },
+    {
+      "candidate_id": 25,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank"
+      ],
+      "selection_count": 1,
+      "target": "best_rank",
+      "task_id": "retrospective__26__best_rank",
+      "track": "retrospective",
+      "validation_mae": 24.22553672887884,
+      "validation_r2": 0.03764623078336615,
+      "validation_rmse": 28.101886148285153,
+      "validation_skill": 0.045814426952708244
+    },
+    {
+      "candidate_id": 2487,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank",
+        "debut_time_years"
+      ],
+      "selection_count": 2,
+      "target": "best_rank",
+      "task_id": "retrospective__26__best_rank",
+      "track": "retrospective",
+      "validation_mae": 23.412788080778427,
+      "validation_r2": 0.09330790749036595,
+      "validation_rmse": 27.256297477236593,
+      "validation_skill": 0.10074399335574691
+    },
+    {
+      "candidate_id": 118516,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "debut_rank",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": 3,
+      "target": "best_rank",
+      "task_id": "retrospective__26__best_rank",
+      "track": "retrospective",
+      "validation_mae": 22.372565131835625,
+      "validation_r2": 0.16323629238562098,
+      "validation_rmse": 26.179026820666024,
+      "validation_skill": 0.1700520582668007
+    },
+    {
+      "candidate_id": 136143,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_time_years",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_weeks",
+      "task_id": "retrospective__26__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 5.985147887234457,
+      "validation_r2": 0.0028326076930485686,
+      "validation_rmse": 7.431163188291444,
+      "validation_skill": 0.23538831749811484
+    },
+    {
+      "candidate_id": 30,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_time_years"
+      ],
+      "selection_count": 1,
+      "target": "chart_weeks",
+      "task_id": "retrospective__26__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.233820234682529,
+      "validation_r2": -0.08160041892521556,
+      "validation_rmse": 7.745242412175663,
+      "validation_skill": 0.16954569824762555
+    },
+    {
+      "candidate_id": 2920,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": 2,
+      "target": "chart_weeks",
+      "task_id": "retrospective__26__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.049911810396929,
+      "validation_r2": -0.025350959146447177,
+      "validation_rmse": 7.536452977509803,
+      "validation_skill": 0.21366674737309474
+    },
+    {
+      "candidate_id": 136143,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_time_years",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "selection_count": 3,
+      "target": "chart_weeks",
+      "task_id": "retrospective__26__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 5.985147887234457,
+      "validation_r2": 0.0028326076930485686,
+      "validation_rmse": 7.431163188291444,
+      "validation_skill": 0.23538831749811484
+    },
+    {
+      "candidate_id": 75852,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "lyric_word_count",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_weeks",
+      "task_id": "retrospective__26__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.379068344872194,
+      "validation_r2": 0.004169663507657499,
+      "validation_rmse": 7.364287061424777,
+      "validation_skill": 0.24484652327341774
+    },
+    {
+      "candidate_id": 98,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 1,
+      "target": "chart_weeks",
+      "task_id": "retrospective__26__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.546542069944586,
+      "validation_r2": -0.028640764963863807,
+      "validation_rmse": 7.493386923908509,
+      "validation_skill": 0.21895041525492817
+    },
+    {
+      "candidate_id": 5740,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "lyric_word_count",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 2,
+      "target": "chart_weeks",
+      "task_id": "retrospective__26__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.451322628655987,
+      "validation_r2": -0.00892981052313191,
+      "validation_rmse": 7.419323919162124,
+      "validation_skill": 0.2340120460924521
+    },
+    {
+      "candidate_id": 75852,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "lyric_word_count",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 3,
+      "target": "chart_weeks",
+      "task_id": "retrospective__26__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.379068344872194,
+      "validation_r2": 0.004169663507657499,
+      "validation_rmse": 7.364287061424777,
+      "validation_skill": 0.24484652327341774
+    },
+    {
+      "candidate_id": 200859,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "genre_confidence",
+        "prior_year_unique_chart_song_count",
+        "secondary_genres"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_weeks",
+      "task_id": "retrospective__26__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.174913135817843,
+      "validation_r2": 0.05641284725171584,
+      "validation_rmse": 7.180138825613923,
+      "validation_skill": 0.28302006080273806
+    },
+    {
+      "candidate_id": 98,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 1,
+      "target": "chart_weeks",
+      "task_id": "retrospective__26__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.546542069944586,
+      "validation_r2": -0.028640764963863807,
+      "validation_rmse": 7.493386923908509,
+      "validation_skill": 0.21895041525492817
+    },
+    {
+      "candidate_id": 5135,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "genre_confidence",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 2,
+      "target": "chart_weeks",
+      "task_id": "retrospective__26__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.279215261653319,
+      "validation_r2": 0.036080779018038335,
+      "validation_rmse": 7.252606422795072,
+      "validation_skill": 0.2682269602432628
+    },
+    {
+      "candidate_id": 200859,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "genre_confidence",
+        "prior_year_unique_chart_song_count",
+        "secondary_genres"
+      ],
+      "selection_count": 3,
+      "target": "chart_weeks",
+      "task_id": "retrospective__26__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.174913135817843,
+      "validation_r2": 0.05641284725171584,
+      "validation_rmse": 7.180138825613923,
+      "validation_skill": 0.28302006080273806
+    },
+    {
+      "candidate_id": 127133,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_points",
+      "task_id": "retrospective__26__chart_points",
+      "track": "retrospective",
+      "validation_mae": 489.00767372222623,
+      "validation_r2": 0.16007701933568805,
+      "validation_rmse": 610.93204028085,
+      "validation_skill": 0.21899058068541288
+    },
+    {
+      "candidate_id": 27,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position"
+      ],
+      "selection_count": 1,
+      "target": "chart_points",
+      "task_id": "retrospective__26__chart_points",
+      "track": "retrospective",
+      "validation_mae": 508.313472583538,
+      "validation_r2": 0.058974110951519575,
+      "validation_rmse": 646.3987896488849,
+      "validation_skill": 0.12583899884295438
+    },
+    {
+      "candidate_id": 2686,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence"
+      ],
+      "selection_count": 2,
+      "target": "chart_points",
+      "task_id": "retrospective__26__chart_points",
+      "track": "retrospective",
+      "validation_mae": 497.0888655535295,
+      "validation_r2": 0.11645996812844861,
+      "validation_rmse": 626.3649904441854,
+      "validation_skill": 0.17910576187447114
+    },
+    {
+      "candidate_id": 127133,
+      "configuration": "original",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "selection_count": 3,
+      "target": "chart_points",
+      "task_id": "retrospective__26__chart_points",
+      "track": "retrospective",
+      "validation_mae": 489.00767372222623,
+      "validation_r2": 0.16007701933568805,
+      "validation_rmse": 610.93204028085,
+      "validation_skill": 0.21899058068541288
+    },
+    {
+      "candidate_id": 209080,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "lyric_vocabulary_size",
+        "lyric_word_count",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_points",
+      "task_id": "retrospective__26__chart_points",
+      "track": "retrospective",
+      "validation_mae": 542.0720727820923,
+      "validation_r2": 0.03949163941210909,
+      "validation_rmse": 651.6339313272047,
+      "validation_skill": 0.1091196496395828
+    },
+    {
+      "candidate_id": 90,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "lyric_word_count"
+      ],
+      "selection_count": 1,
+      "target": "chart_points",
+      "task_id": "retrospective__26__chart_points",
+      "track": "retrospective",
+      "validation_mae": 543.3364758620386,
+      "validation_r2": -0.005231655764414089,
+      "validation_rmse": 666.4030173221897,
+      "validation_skill": 0.0680015967351298
+    },
+    {
+      "candidate_id": 5740,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "lyric_word_count",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 2,
+      "target": "chart_points",
+      "task_id": "retrospective__26__chart_points",
+      "track": "retrospective",
+      "validation_mae": 548.9740022552102,
+      "validation_r2": 0.017867049603502532,
+      "validation_rmse": 658.9872750378303,
+      "validation_skill": 0.08894143675565558
+    },
+    {
+      "candidate_id": 209080,
+      "configuration": "new",
+      "horizon": "26",
+      "predictors": [
+        "lyric_vocabulary_size",
+        "lyric_word_count",
+        "prior_year_unique_chart_song_count"
+      ],
+      "selection_count": 3,
+      "target": "chart_points",
+      "task_id": "retrospective__26__chart_points",
+      "track": "retrospective",
+      "validation_mae": 542.0720727820923,
+      "validation_r2": 0.03949163941210909,
+      "validation_rmse": 651.6339313272047,
+      "validation_skill": 0.1091196496395828
+    },
+    {
+      "candidate_id": 127133,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_points",
+      "task_id": "retrospective__26__chart_points",
+      "track": "retrospective",
+      "validation_mae": 489.00767372222623,
+      "validation_r2": 0.16007701933568805,
+      "validation_rmse": 610.93204028085,
+      "validation_skill": 0.21899058068541288
+    },
+    {
+      "candidate_id": 27,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position"
+      ],
+      "selection_count": 1,
+      "target": "chart_points",
+      "task_id": "retrospective__26__chart_points",
+      "track": "retrospective",
+      "validation_mae": 508.313472583538,
+      "validation_r2": 0.058974110951519575,
+      "validation_rmse": 646.3987896488849,
+      "validation_skill": 0.12583899884295438
+    },
+    {
+      "candidate_id": 2686,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence"
+      ],
+      "selection_count": 2,
+      "target": "chart_points",
+      "task_id": "retrospective__26__chart_points",
+      "track": "retrospective",
+      "validation_mae": 497.0888655535295,
+      "validation_r2": 0.11645996812844861,
+      "validation_rmse": 626.3649904441854,
+      "validation_skill": 0.17910576187447114
+    },
+    {
+      "candidate_id": 127133,
+      "configuration": "combined",
+      "horizon": "26",
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "selection_count": 3,
+      "target": "chart_points",
+      "task_id": "retrospective__26__chart_points",
+      "track": "retrospective",
+      "validation_mae": 489.00767372222623,
+      "validation_r2": 0.16007701933568805,
+      "validation_rmse": 610.93204028085,
+      "validation_skill": 0.21899058068541288
+    },
+    {
+      "candidate_id": 124916,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": "best_any_k",
+      "target": "best_rank",
+      "task_id": "retrospective__observed_lifetime__best_rank",
+      "track": "retrospective",
+      "validation_mae": 21.544015411492506,
+      "validation_r2": 0.21063975306604943,
+      "validation_rmse": 25.407347951121213,
+      "validation_skill": 0.21253533202814054
+    },
+    {
+      "candidate_id": 25,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_rank"
+      ],
+      "selection_count": 1,
+      "target": "best_rank",
+      "task_id": "retrospective__observed_lifetime__best_rank",
+      "track": "retrospective",
+      "validation_mae": 22.959025545902517,
+      "validation_r2": 0.1079755745466842,
+      "validation_rmse": 26.982814972109974,
+      "validation_skill": 0.11025645410063663
+    },
+    {
+      "candidate_id": 2648,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years"
+      ],
+      "selection_count": 2,
+      "target": "best_rank",
+      "task_id": "retrospective__observed_lifetime__best_rank",
+      "track": "retrospective",
+      "validation_mae": 22.329833850123887,
+      "validation_r2": 0.15917140590598688,
+      "validation_rmse": 26.222811107254483,
+      "validation_skill": 0.1612788295548665
+    },
+    {
+      "candidate_id": 124916,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": 3,
+      "target": "best_rank",
+      "task_id": "retrospective__observed_lifetime__best_rank",
+      "track": "retrospective",
+      "validation_mae": 21.544015411492506,
+      "validation_r2": 0.21063975306604943,
+      "validation_rmse": 25.407347951121213,
+      "validation_skill": 0.21253533202814054
+    },
+    {
+      "candidate_id": 34602,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credited_entities_prior_top10_mean",
+        "debut_chart_same_genre_share"
+      ],
+      "selection_count": "best_any_k",
+      "target": "best_rank",
+      "task_id": "retrospective__observed_lifetime__best_rank",
+      "track": "retrospective",
+      "validation_mae": 23.7562280081974,
+      "validation_r2": 0.05060377266727926,
+      "validation_rmse": 27.879675782101305,
+      "validation_skill": 0.052751451681158766
+    },
+    {
+      "candidate_id": 5,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far"
+      ],
+      "selection_count": 1,
+      "target": "best_rank",
+      "task_id": "retrospective__observed_lifetime__best_rank",
+      "track": "retrospective",
+      "validation_mae": 24.142531726964254,
+      "validation_r2": 0.026646740712024553,
+      "validation_rmse": 28.237996273483414,
+      "validation_skill": 0.028876621165858245
+    },
+    {
+      "candidate_id": 648,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credited_entities_prior_top10_mean"
+      ],
+      "selection_count": 2,
+      "target": "best_rank",
+      "task_id": "retrospective__observed_lifetime__best_rank",
+      "track": "retrospective",
+      "validation_mae": 23.788161147308827,
+      "validation_r2": 0.04328192911715423,
+      "validation_rmse": 27.98752435585144,
+      "validation_skill": 0.045446049926612574
+    },
+    {
+      "candidate_id": 34602,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credited_entities_prior_top10_mean",
+        "debut_chart_same_genre_share"
+      ],
+      "selection_count": 3,
+      "target": "best_rank",
+      "task_id": "retrospective__observed_lifetime__best_rank",
+      "track": "retrospective",
+      "validation_mae": 23.7562280081974,
+      "validation_r2": 0.05060377266727926,
+      "validation_rmse": 27.879675782101305,
+      "validation_skill": 0.052751451681158766
+    },
+    {
+      "candidate_id": 124916,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": "best_any_k",
+      "target": "best_rank",
+      "task_id": "retrospective__observed_lifetime__best_rank",
+      "track": "retrospective",
+      "validation_mae": 21.544015411492506,
+      "validation_r2": 0.21063975306604943,
+      "validation_rmse": 25.407347951121213,
+      "validation_skill": 0.21253533202814054
+    },
+    {
+      "candidate_id": 25,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_rank"
+      ],
+      "selection_count": 1,
+      "target": "best_rank",
+      "task_id": "retrospective__observed_lifetime__best_rank",
+      "track": "retrospective",
+      "validation_mae": 22.959025545902517,
+      "validation_r2": 0.1079755745466842,
+      "validation_rmse": 26.982814972109974,
+      "validation_skill": 0.11025645410063663
+    },
+    {
+      "candidate_id": 2648,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years"
+      ],
+      "selection_count": 2,
+      "target": "best_rank",
+      "task_id": "retrospective__observed_lifetime__best_rank",
+      "track": "retrospective",
+      "validation_mae": 22.329833850123887,
+      "validation_r2": 0.15917140590598688,
+      "validation_rmse": 26.222811107254483,
+      "validation_skill": 0.1612788295548665
+    },
+    {
+      "candidate_id": 124916,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": 3,
+      "target": "best_rank",
+      "task_id": "retrospective__observed_lifetime__best_rank",
+      "track": "retrospective",
+      "validation_mae": 21.544015411492506,
+      "validation_r2": 0.21063975306604943,
+      "validation_rmse": 25.407347951121213,
+      "validation_skill": 0.21253533202814054
+    },
+    {
+      "candidate_id": 136143,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_time_years",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_weeks",
+      "task_id": "retrospective__observed_lifetime__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.649228775182145,
+      "validation_r2": 0.03432931367111425,
+      "validation_rmse": 9.059411709584111,
+      "validation_skill": 0.31329638060428755
+    },
+    {
+      "candidate_id": 30,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_time_years"
+      ],
+      "selection_count": 1,
+      "target": "chart_weeks",
+      "task_id": "retrospective__observed_lifetime__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.828355744952792,
+      "validation_r2": -0.02183601470934508,
+      "validation_rmse": 9.370225135754367,
+      "validation_skill": 0.2705877435184997
+    },
+    {
+      "candidate_id": 2920,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": 2,
+      "target": "chart_weeks",
+      "task_id": "retrospective__observed_lifetime__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.613009525706917,
+      "validation_r2": 0.027062298204943696,
+      "validation_rmse": 9.132653395155014,
+      "validation_skill": 0.3065428237052534
+    },
+    {
+      "candidate_id": 136143,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_time_years",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "selection_count": 3,
+      "target": "chart_weeks",
+      "task_id": "retrospective__observed_lifetime__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.649228775182145,
+      "validation_r2": 0.03432931367111425,
+      "validation_rmse": 9.059411709584111,
+      "validation_skill": 0.31329638060428755
+    },
+    {
+      "candidate_id": 52616,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_chart_rank_volatility",
+        "lyric_compression_ratio",
+        "previous_chart_incumbent_age_median"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_weeks",
+      "task_id": "retrospective__observed_lifetime__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.902359456665967,
+      "validation_r2": -0.013855286304540434,
+      "validation_rmse": 9.228266952964583,
+      "validation_skill": 0.2821208926874512
+    },
+    {
+      "candidate_id": 92,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "previous_chart_incumbent_age_median"
+      ],
+      "selection_count": 1,
+      "target": "chart_weeks",
+      "task_id": "retrospective__observed_lifetime__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 7.049330940934951,
+      "validation_r2": -0.047397774438173425,
+      "validation_rmse": 9.411411482779068,
+      "validation_skill": 0.25668094759245197
+    },
+    {
+      "candidate_id": 1019,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_chart_rank_volatility",
+        "previous_chart_incumbent_age_median"
+      ],
+      "selection_count": 2,
+      "target": "chart_weeks",
+      "task_id": "retrospective__observed_lifetime__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.946703251152257,
+      "validation_r2": -0.02986283471494407,
+      "validation_rmse": 9.302228477976328,
+      "validation_skill": 0.2706077579235879
+    },
+    {
+      "candidate_id": 52616,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_chart_rank_volatility",
+        "lyric_compression_ratio",
+        "previous_chart_incumbent_age_median"
+      ],
+      "selection_count": 3,
+      "target": "chart_weeks",
+      "task_id": "retrospective__observed_lifetime__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.902359456665967,
+      "validation_r2": -0.013855286304540434,
+      "validation_rmse": 9.228266952964583,
+      "validation_skill": 0.2821208926874512
+    },
+    {
+      "candidate_id": 68661,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_song_count",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_weeks",
+      "task_id": "retrospective__observed_lifetime__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.527035747815766,
+      "validation_r2": 0.048602108340071504,
+      "validation_rmse": 8.991062431628,
+      "validation_skill": 0.32392653324336923
+    },
+    {
+      "candidate_id": 30,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_time_years"
+      ],
+      "selection_count": 1,
+      "target": "chart_weeks",
+      "task_id": "retrospective__observed_lifetime__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.828355744952792,
+      "validation_r2": -0.02183601470934508,
+      "validation_rmse": 9.370225135754367,
+      "validation_skill": 0.2705877435184997
+    },
+    {
+      "candidate_id": 2920,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": 2,
+      "target": "chart_weeks",
+      "task_id": "retrospective__observed_lifetime__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.613009525706917,
+      "validation_r2": 0.027062298204943696,
+      "validation_rmse": 9.132653395155014,
+      "validation_skill": 0.3065428237052534
+    },
+    {
+      "candidate_id": 68661,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "credit_prior_song_count",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "selection_count": 3,
+      "target": "chart_weeks",
+      "task_id": "retrospective__observed_lifetime__chart_weeks",
+      "track": "retrospective",
+      "validation_mae": 6.527035747815766,
+      "validation_r2": 0.048602108340071504,
+      "validation_rmse": 8.991062431628,
+      "validation_skill": 0.32392653324336923
+    },
+    {
+      "candidate_id": 127133,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_points",
+      "task_id": "retrospective__observed_lifetime__chart_points",
+      "track": "retrospective",
+      "validation_mae": 546.9819762077128,
+      "validation_r2": 0.11681371509093963,
+      "validation_rmse": 760.2521165414144,
+      "validation_skill": 0.21529823138305396
+    },
+    {
+      "candidate_id": 27,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position"
+      ],
+      "selection_count": 1,
+      "target": "chart_points",
+      "task_id": "retrospective__observed_lifetime__chart_points",
+      "track": "retrospective",
+      "validation_mae": 570.5350412301151,
+      "validation_r2": 0.01388609037595434,
+      "validation_rmse": 804.5732763537336,
+      "validation_skill": 0.1233442516836352
+    },
+    {
+      "candidate_id": 2686,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence"
+      ],
+      "selection_count": 2,
+      "target": "chart_points",
+      "task_id": "retrospective__observed_lifetime__chart_points",
+      "track": "retrospective",
+      "validation_mae": 555.7660237754653,
+      "validation_r2": 0.0727381341633756,
+      "validation_rmse": 779.9166539132906,
+      "validation_skill": 0.17599840259059518
+    },
+    {
+      "candidate_id": 127133,
+      "configuration": "original",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "selection_count": 3,
+      "target": "chart_points",
+      "task_id": "retrospective__observed_lifetime__chart_points",
+      "track": "retrospective",
+      "validation_mae": 546.9819762077128,
+      "validation_r2": 0.11681371509093963,
+      "validation_rmse": 760.2521165414144,
+      "validation_skill": 0.21529823138305396
+    },
+    {
+      "candidate_id": 209074,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "lyric_vocabulary_size",
+        "lyric_word_count",
+        "previous_chart_incumbent_age_median"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_points",
+      "task_id": "retrospective__observed_lifetime__chart_points",
+      "track": "retrospective",
+      "validation_mae": 612.5259722948971,
+      "validation_r2": 0.015466383250952917,
+      "validation_rmse": 798.8880295986273,
+      "validation_skill": 0.1257415777552601
+    },
+    {
+      "candidate_id": 92,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "previous_chart_incumbent_age_median"
+      ],
+      "selection_count": 1,
+      "target": "chart_points",
+      "task_id": "retrospective__observed_lifetime__chart_points",
+      "track": "retrospective",
+      "validation_mae": 621.9444645350512,
+      "validation_r2": -0.01544558524462388,
+      "validation_rmse": 811.3389919019197,
+      "validation_skill": 0.09841078684401967
+    },
+    {
+      "candidate_id": 5309,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "lyric_compression_ratio",
+        "previous_chart_incumbent_age_median"
+      ],
+      "selection_count": 2,
+      "target": "chart_points",
+      "task_id": "retrospective__observed_lifetime__chart_points",
+      "track": "retrospective",
+      "validation_mae": 615.5453822642357,
+      "validation_r2": 0.002739950972255841,
+      "validation_rmse": 803.8542230577747,
+      "validation_skill": 0.11471659033157038
+    },
+    {
+      "candidate_id": 209074,
+      "configuration": "new",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "lyric_vocabulary_size",
+        "lyric_word_count",
+        "previous_chart_incumbent_age_median"
+      ],
+      "selection_count": 3,
+      "target": "chart_points",
+      "task_id": "retrospective__observed_lifetime__chart_points",
+      "track": "retrospective",
+      "validation_mae": 612.5259722948971,
+      "validation_r2": 0.015466383250952917,
+      "validation_rmse": 798.8880295986273,
+      "validation_skill": 0.1257415777552601
+    },
+    {
+      "candidate_id": 127133,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "selection_count": "best_any_k",
+      "target": "chart_points",
+      "task_id": "retrospective__observed_lifetime__chart_points",
+      "track": "retrospective",
+      "validation_mae": 546.9819762077128,
+      "validation_r2": 0.11681371509093963,
+      "validation_rmse": 760.2521165414144,
+      "validation_skill": 0.21529823138305396
+    },
+    {
+      "candidate_id": 27,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position"
+      ],
+      "selection_count": 1,
+      "target": "chart_points",
+      "task_id": "retrospective__observed_lifetime__chart_points",
+      "track": "retrospective",
+      "validation_mae": 570.5350412301151,
+      "validation_r2": 0.01388609037595434,
+      "validation_rmse": 804.5732763537336,
+      "validation_skill": 0.1233442516836352
+    },
+    {
+      "candidate_id": 2686,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence"
+      ],
+      "selection_count": 2,
+      "target": "chart_points",
+      "task_id": "retrospective__observed_lifetime__chart_points",
+      "track": "retrospective",
+      "validation_mae": 555.7660237754653,
+      "validation_r2": 0.0727381341633756,
+      "validation_rmse": 779.9166539132906,
+      "validation_skill": 0.17599840259059518
+    },
+    {
+      "candidate_id": 127133,
+      "configuration": "combined",
+      "horizon": "observed_lifetime",
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "selection_count": 3,
+      "target": "chart_points",
+      "task_id": "retrospective__observed_lifetime__chart_points",
+      "track": "retrospective",
+      "validation_mae": 546.9819762077128,
+      "validation_r2": 0.11681371509093963,
+      "validation_rmse": 760.2521165414144,
+      "validation_skill": 0.21529823138305396
+    }
+  ]
+}

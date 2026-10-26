@@ -1,0 +1,52 @@
+{
+  "coefficients": [
+    -4.218847493575595e-15,
+    -1.8866416756811366
+  ],
+  "encoder": {
+    "names": [
+      "debut_reported_peak_position"
+    ],
+    "variables": {
+      "debut_reported_peak_position": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          81.75822079804685
+        ],
+        "median": [
+          86.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "debut_reported_peak_position"
+        ],
+        "std": [
+          17.348937759724205
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 26214,
+  "predictors": [
+    "debut_reported_peak_position"
+  ],
+  "rank": 2,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "target_center": 11.004348821240558,
+  "task": {
+    "horizon": "26",
+    "target": "chart_weeks",
+    "task_id": "strict__26__chart_weeks",
+    "track": "strict"
+  },
+  "training_cutoff": "2018-01-01",
+  "training_ids_sha256": "9c2710ce3c67d222a50252b418f408790ec786ae4b4cb179d9a732a1cc4bb6ec",
+  "training_mean": 11.004348821240558,
+  "training_median": 10.0,
+  "version": "exhaustive-regression-expanded-v2"
+}

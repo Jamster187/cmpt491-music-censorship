@@ -1,0 +1,98 @@
+{
+  "coefficients": [
+    -4.760841679439126e-15,
+    -1.1104681395369824,
+    -1.7454538586133423,
+    -2.5477058239842565
+  ],
+  "encoder": {
+    "names": [
+      "credit_prior_chart_rank_volatility",
+      "debut_reported_peak_position",
+      "prior_year_unique_chart_song_count"
+    ],
+    "variables": {
+      "credit_prior_chart_rank_volatility": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          10.240048788560662
+        ],
+        "median": [
+          10.2271717166729
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "credit_prior_chart_rank_volatility"
+        ],
+        "std": [
+          3.66534640266397
+        ]
+      },
+      "debut_reported_peak_position": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          82.27592706412621
+        ],
+        "median": [
+          86.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "debut_reported_peak_position"
+        ],
+        "std": [
+          16.455364380284625
+        ]
+      },
+      "prior_year_unique_chart_song_count": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          594.4574472444172
+        ],
+        "median": [
+          567.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "prior_year_unique_chart_song_count"
+        ],
+        "std": [
+          139.31951062992573
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 24405,
+  "predictors": [
+    "credit_prior_chart_rank_volatility",
+    "debut_reported_peak_position",
+    "prior_year_unique_chart_song_count"
+  ],
+  "rank": 4,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "target_center": 11.341528375332924,
+  "task": {
+    "horizon": "observed_lifetime",
+    "target": "chart_weeks",
+    "task_id": "strict__observed_lifetime__chart_weeks",
+    "track": "strict"
+  },
+  "training_cutoff": "2018-01-01",
+  "training_ids_sha256": "7435f18a56373da21886dd953222f4cfe40dfd7849b2a70b46404fb38a2f6e64",
+  "training_mean": 11.341528375332924,
+  "training_median": 10.0,
+  "version": "exhaustive-regression-expanded-v2"
+}

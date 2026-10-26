@@ -1,0 +1,276 @@
+source,column,canonical_predictor,status,reason,availability
+data/public/songs.csv,song_id,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/songs.csv,title,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/songs.csv,artist,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/songs.csv,first_chart_date,debut_time_years,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/songs.csv,last_chart_date,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/songs.csv,best_chart_rank,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/songs.csv,weekly_observation_count,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/songs.csv,chart_weeks,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/songs.csv,total_chart_points,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/songs.csv,first_snapshot_month,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/songs.csv,last_snapshot_month,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/songs.csv,snapshot_months_selected,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/songs.csv,musicbrainz_match_status,,excluded,Acquisition/provenance or future-selected population indicator,E_or_operational
+data/public/songs.csv,mb_recording_count,,excluded,Modern accumulated catalog/version coverage; not a debut-time intrinsic measurement,E_or_operational
+data/public/songs.csv,mb_release_count,,excluded,Modern accumulated catalog/version coverage; not a debut-time intrinsic measurement,E_or_operational
+data/public/songs.csv,mb_earliest_release_date,,excluded,Matched manifestations do not establish original release timing,E_or_operational
+data/public/songs.csv,mb_release_date_precision,,excluded,Matched manifestations do not establish original release timing,E_or_operational
+data/public/songs.csv,mb_release_title,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/songs.csv,mb_duration_median_seconds,duration_seconds,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,mb_duration_min_seconds,duration_seconds,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,mb_duration_max_seconds,duration_seconds,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,mb_distinct_duration_count,,excluded,Modern accumulated catalog/version coverage; not a debut-time intrinsic measurement,E_or_operational
+data/public/songs.csv,lyrics_status,,excluded,Acquisition/provenance or future-selected population indicator,E_or_operational
+data/public/songs.csv,lyrics_available,,excluded,Acquisition/provenance or future-selected population indicator,E_or_operational
+data/public/songs.csv,in_final_study_population,,excluded,Acquisition/provenance or future-selected population indicator,E_or_operational
+data/public/songs.csv,primary_genre,primary_genre,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,genre_confidence,genre_confidence,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,secondary_genres,secondary_genres,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,ll_sexual_content,ll_sexual_content,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,ll_violence,ll_violence,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,ll_explicit_language,ll_explicit_language,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,ll_substance_use,ll_substance_use,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,detox_toxicity,detox_toxicity,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,detox_severe_toxicity,detox_severe_toxicity,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,detox_obscene,detox_obscene,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,detox_threat,detox_threat,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,detox_insult,detox_insult,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,detox_identity_attack,detox_identity_attack,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,detox_sexual_explicit,detox_sexual_explicit,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_admiration,emotion_admiration,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_amusement,emotion_amusement,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_anger,emotion_anger,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_annoyance,emotion_annoyance,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_approval,emotion_approval,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_caring,emotion_caring,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_confusion,emotion_confusion,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_curiosity,emotion_curiosity,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_desire,emotion_desire,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_disappointment,emotion_disappointment,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_disapproval,emotion_disapproval,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_disgust,emotion_disgust,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_embarrassment,emotion_embarrassment,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_excitement,emotion_excitement,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_fear,emotion_fear,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_gratitude,emotion_gratitude,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_grief,emotion_grief,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_joy,emotion_joy,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_love,emotion_love,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_nervousness,emotion_nervousness,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_optimism,emotion_optimism,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_pride,emotion_pride,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_realization,emotion_realization,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_relief,emotion_relief,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_remorse,emotion_remorse,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_sadness,emotion_sadness,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_surprise,emotion_surprise,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,emotion_neutral,emotion_neutral,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,sentiment_negative,sentiment_negative,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,sentiment_neutral,sentiment_neutral,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/songs.csv,sentiment_positive,sentiment_positive,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,chart_date,debut_time_years,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/master_weekly.csv.xz,weekly_rank,debut_rank,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/master_weekly.csv.xz,reported_last_week_rank,debut_reported_last_week_rank,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/master_weekly.csv.xz,reported_peak_position,debut_reported_peak_position,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/master_weekly.csv.xz,reported_weeks_on_chart,debut_reported_weeks_on_chart,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/master_weekly.csv.xz,source_chart_index,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/master_weekly.csv.xz,source_row_index,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/master_weekly.csv.xz,song_id,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/master_weekly.csv.xz,title,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/master_weekly.csv.xz,artist,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/master_weekly.csv.xz,first_chart_date,debut_time_years,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/master_weekly.csv.xz,last_chart_date,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/master_weekly.csv.xz,best_chart_rank,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/master_weekly.csv.xz,weekly_observation_count,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/master_weekly.csv.xz,chart_weeks,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/master_weekly.csv.xz,total_chart_points,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/master_weekly.csv.xz,first_snapshot_month,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/master_weekly.csv.xz,last_snapshot_month,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/master_weekly.csv.xz,snapshot_months_selected,,excluded,"Whole-history outcome, observation count or later monthly-selection information",E_or_operational
+data/public/master_weekly.csv.xz,musicbrainz_match_status,,excluded,Acquisition/provenance or future-selected population indicator,E_or_operational
+data/public/master_weekly.csv.xz,mb_recording_count,,excluded,Modern accumulated catalog/version coverage; not a debut-time intrinsic measurement,E_or_operational
+data/public/master_weekly.csv.xz,mb_release_count,,excluded,Modern accumulated catalog/version coverage; not a debut-time intrinsic measurement,E_or_operational
+data/public/master_weekly.csv.xz,mb_earliest_release_date,,excluded,Matched manifestations do not establish original release timing,E_or_operational
+data/public/master_weekly.csv.xz,mb_release_date_precision,,excluded,Matched manifestations do not establish original release timing,E_or_operational
+data/public/master_weekly.csv.xz,mb_release_title,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/master_weekly.csv.xz,mb_duration_median_seconds,duration_seconds,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,mb_duration_min_seconds,duration_seconds,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,mb_duration_max_seconds,duration_seconds,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,mb_distinct_duration_count,,excluded,Modern accumulated catalog/version coverage; not a debut-time intrinsic measurement,E_or_operational
+data/public/master_weekly.csv.xz,lyrics_status,,excluded,Acquisition/provenance or future-selected population indicator,E_or_operational
+data/public/master_weekly.csv.xz,lyrics_available,,excluded,Acquisition/provenance or future-selected population indicator,E_or_operational
+data/public/master_weekly.csv.xz,in_final_study_population,,excluded,Acquisition/provenance or future-selected population indicator,E_or_operational
+data/public/master_weekly.csv.xz,primary_genre,primary_genre,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,genre_confidence,genre_confidence,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,secondary_genres,secondary_genres,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,ll_sexual_content,ll_sexual_content,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,ll_violence,ll_violence,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,ll_explicit_language,ll_explicit_language,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,ll_substance_use,ll_substance_use,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,detox_toxicity,detox_toxicity,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,detox_severe_toxicity,detox_severe_toxicity,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,detox_obscene,detox_obscene,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,detox_threat,detox_threat,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,detox_insult,detox_insult,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,detox_identity_attack,detox_identity_attack,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,detox_sexual_explicit,detox_sexual_explicit,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_admiration,emotion_admiration,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_amusement,emotion_amusement,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_anger,emotion_anger,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_annoyance,emotion_annoyance,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_approval,emotion_approval,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_caring,emotion_caring,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_confusion,emotion_confusion,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_curiosity,emotion_curiosity,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_desire,emotion_desire,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_disappointment,emotion_disappointment,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_disapproval,emotion_disapproval,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_disgust,emotion_disgust,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_embarrassment,emotion_embarrassment,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_excitement,emotion_excitement,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_fear,emotion_fear,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_gratitude,emotion_gratitude,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_grief,emotion_grief,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_joy,emotion_joy,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_love,emotion_love,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_nervousness,emotion_nervousness,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_optimism,emotion_optimism,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_pride,emotion_pride,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_realization,emotion_realization,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_relief,emotion_relief,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_remorse,emotion_remorse,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_sadness,emotion_sadness,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_surprise,emotion_surprise,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,emotion_neutral,emotion_neutral,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,sentiment_negative,sentiment_negative,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,sentiment_neutral,sentiment_neutral,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/master_weekly.csv.xz,sentiment_positive,sentiment_positive,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,song_id,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/feature_expansion_v1/song_features.csv.xz,title,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/feature_expansion_v1/song_features.csv.xz,artist,,excluded,Identifier or asset label; no identity memorization,E_or_operational
+data/public/feature_expansion_v1/song_features.csv.xz,first_chart_date,debut_time_years,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,debut_rank,debut_rank,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_prior_song_count,credit_prior_song_count,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_prior_top10_song_count,credit_prior_top10_song_count,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_prior_top40_song_count,credit_prior_top40_song_count,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_prior_chart_points,credit_prior_chart_points,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_prior_chart_weeks,credit_prior_chart_weeks,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_prior_best_rank,credit_prior_best_rank,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_chart_career_days,credit_chart_career_days,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_days_since_last_entry,credit_days_since_last_entry,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_recent_chart_presence,credit_recent_chart_presence,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_recent_points_slope,credit_recent_points_slope,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_prior_song_observed_longevity_median,credit_prior_song_observed_longevity_median,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_previous_entry_best_rank_so_far,credit_previous_entry_best_rank_so_far,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_simultaneous_other_songs,credit_simultaneous_other_songs,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_prior_reentry_song_share,credit_prior_reentry_song_share,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,credit_prior_chart_rank_volatility,credit_prior_chart_rank_volatility,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,previous_chart_new_entry_count,previous_chart_new_entry_count,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,previous_chart_credit_concentration,previous_chart_credit_concentration,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,previous_chart_incumbent_age_median,previous_chart_incumbent_age_median,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,previous_chart_turnover_share,previous_chart_turnover_share,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,debut_chart_established_credit_share,debut_chart_established_credit_share,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,prior_year_unique_chart_song_count,prior_year_unique_chart_song_count,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,previous_chart_leader_tenure,previous_chart_leader_tenure,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,same_credit_debut_cluster_size,same_credit_debut_cluster_size,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,debut_competing_new_entry_count,debut_competing_new_entry_count,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,debut_season_sin,debut_season_phase,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,debut_season_cos,debut_season_phase,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,christmas_proximity_days,christmas_proximity_days,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,chart_weekday,chart_weekday,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,song_title_token_count,song_title_token_count,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,song_title_has_number,song_title_has_number,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,song_title_question_form,song_title_question_form,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,song_title_prior_usage_count,song_title_prior_usage_count,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,artist_credit_feature_marker,artist_credit_feature_marker,eligible_strict_and_retrospective,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,C
+data/public/feature_expansion_v1/song_features.csv.xz,prior_year_primary_genre_share,prior_year_primary_genre_share,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_content_distance_prior_hits,lyric_content_distance_prior_hits,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_content_distance_recent_chart,lyric_content_distance_recent_chart,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,credit_prior_genre_diversity,credit_prior_genre_diversity,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,debut_chart_same_genre_share,debut_chart_same_genre_share,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,credited_artist_entity_count,credited_artist_entity_count,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,first_credited_entity_prior_song_count,first_credited_entity_prior_song_count,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,credited_entities_prior_top10_mean,credited_entities_prior_top10_mean,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,credit_team_prior_song_count,credit_team_prior_song_count,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_word_count,lyric_word_count,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_vocabulary_size,lyric_vocabulary_size,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_mattr,lyric_mattr,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_hapax_share,lyric_hapax_share,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_compression_ratio,lyric_compression_ratio,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_repeated_line_share,lyric_repeated_line_share,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_repeated_bigram_share,lyric_repeated_bigram_share,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_line_length_dispersion,lyric_line_length_dispersion,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_mean_line_length,lyric_mean_line_length,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_question_line_share,lyric_question_line_share,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_first_person_singular_share,lyric_first_person_singular_share,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_second_person_share,lyric_second_person_share,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_first_person_plural_share,lyric_first_person_plural_share,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_negation_token_share,lyric_negation_token_share,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_temporal_deixis_share,lyric_temporal_deixis_share,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,lyric_title_phrase_repetition,lyric_title_phrase_repetition,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,primary_genre,primary_genre,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,ll_sexual_content,ll_sexual_content,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,ll_violence,ll_violence,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,ll_explicit_language,ll_explicit_language,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,ll_substance_use,ll_substance_use,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,detox_toxicity,detox_toxicity,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,detox_severe_toxicity,detox_severe_toxicity,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,detox_obscene,detox_obscene,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,detox_threat,detox_threat,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,detox_insult,detox_insult,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,detox_identity_attack,detox_identity_attack,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,detox_sexual_explicit,detox_sexual_explicit,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_admiration,emotion_admiration,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_amusement,emotion_amusement,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_anger,emotion_anger,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_annoyance,emotion_annoyance,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_approval,emotion_approval,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_caring,emotion_caring,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_confusion,emotion_confusion,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_curiosity,emotion_curiosity,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_desire,emotion_desire,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_disappointment,emotion_disappointment,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_disapproval,emotion_disapproval,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_disgust,emotion_disgust,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_embarrassment,emotion_embarrassment,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_excitement,emotion_excitement,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_fear,emotion_fear,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_gratitude,emotion_gratitude,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_grief,emotion_grief,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_joy,emotion_joy,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_love,emotion_love,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_nervousness,emotion_nervousness,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_optimism,emotion_optimism,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_pride,emotion_pride,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_realization,emotion_realization,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_relief,emotion_relief,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_remorse,emotion_remorse,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_sadness,emotion_sadness,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_surprise,emotion_surprise,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,emotion_neutral,emotion_neutral,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,sentiment_negative,sentiment_negative,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,sentiment_neutral,sentiment_neutral,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,sentiment_positive,sentiment_positive,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_features.csv.xz,duration_seconds,duration_seconds,retrospective_only,Complete registered variable; aliases counted once; date-specific chart fields use first publication only,F
+data/public/feature_expansion_v1/song_outcomes.csv.xz,song_id,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,observed_last_chart_date,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,observed_lifetime_best_rank,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,observed_lifetime_chart_weeks,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,observed_lifetime_chart_points,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,near_endpoint,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,observed_return_after_26weeks,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,window_end_12,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,eligible_12,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,top10_12,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,long_chart_12,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,best_rank_12,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,chart_weeks_12,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,chart_points_12,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,window_end_26,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,eligible_26,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,top10_26,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,long_chart_26,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,best_rank_26,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,chart_weeks_26,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational
+data/public/feature_expansion_v1/song_outcomes.csv.xz,chart_points_26,,excluded,"Outcome, censoring or post-debut audit field",E_or_operational

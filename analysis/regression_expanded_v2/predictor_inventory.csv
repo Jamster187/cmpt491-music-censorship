@@ -1,0 +1,109 @@
+name,source_columns,origin,family,availability,kind,definition
+artist_credit_feature_marker,"[""artist_credit_feature_marker""]",new,calendar_title,C,numeric,Original full credit contains case-insensitive featuring/feat./ft. as word marker
+chart_weekday,"[""chart_weekday""]",new,calendar_title,C,categorical,"Python calendar weekday (Monday=0); observed calendar, not official methodology"
+christmas_proximity_days,"[""christmas_proximity_days""]",new,calendar_title,C,numeric,Signed nearest December 25 date minus debut date
+credit_chart_career_days,"[""credit_chart_career_days""]",new,artist_history,C,numeric,Days since first observed credit appearance; zero without earlier history
+credit_days_since_last_entry,"[""credit_days_since_last_entry""]",new,artist_history,C,numeric,Days since most recent earlier distinct entry date; same-date tie handled jointly
+credit_previous_entry_best_rank_so_far,"[""credit_previous_entry_best_rank_so_far""]",new,artist_history,C,numeric,Best rank so far among identities tied at most recent earlier entry date
+credit_prior_best_rank,"[""credit_prior_best_rank""]",new,artist_history,C,numeric,Minimum observed rank of credit before debut; null if new credit
+credit_prior_chart_points,"[""credit_prior_chart_points""]",new,artist_history,C,numeric,Source-row sum of 101-rank strictly before debut
+credit_prior_chart_rank_volatility,"[""credit_prior_chart_rank_volatility""]",new,artist_history,C,numeric,"Population SD of rank differences on consecutive <=8-day observed charts, prior credit songs"
+credit_prior_chart_weeks,"[""credit_prior_chart_weeks""]",new,artist_history,C,numeric,Sum of distinct song/date appearances before debut
+credit_prior_genre_diversity,"[""credit_prior_genre_diversity""]",new,relative_content,F,numeric,Natural-log entropy of labelled prior exact-credit entries
+credit_prior_reentry_song_share,"[""credit_prior_reentry_song_share""]",new,artist_history,C,numeric,Share of prior identities returning after absence on consecutive <=8-day source charts
+credit_prior_song_count,"[""credit_prior_song_count""]",new,artist_history,C,numeric,Other identities entered under exact full credit before debut
+credit_prior_song_observed_longevity_median,"[""credit_prior_song_observed_longevity_median""]",new,artist_history,C,numeric,Median prior-song distinct chart dates attained before cutoff; ongoing songs truncated
+credit_prior_top10_song_count,"[""credit_prior_top10_song_count""]",new,artist_history,C,numeric,Prior distinct identities already at rank <=10 before debut
+credit_prior_top40_song_count,"[""credit_prior_top40_song_count""]",new,artist_history,C,numeric,Prior distinct identities already at rank <=40 before debut
+credit_recent_chart_presence,"[""credit_recent_chart_presence""]",new,artist_history,C,numeric,Number of distinct chart dates with this credit in preceding 365 days
+credit_recent_points_slope,"[""credit_recent_points_slope""]",new,artist_history,C,numeric,"OLS slope per observed chart of credit points over prior 13 charts, including absent zeroes"
+credit_simultaneous_other_songs,"[""credit_simultaneous_other_songs""]",new,artist_history,C,numeric,Distinct identities of credit on preceding chart
+credit_team_prior_song_count,"[""credit_team_prior_song_count""]",new,entity_credit,F,numeric,Prior distinct identities with identical unordered set of >=2 consensus MBIDs; null for solo
+credited_artist_entity_count,"[""credited_artist_entity_count""]",new,entity_credit,F,numeric,Number of distinct MBIDs in unanimous ordered recording-credit consensus
+credited_entities_prior_top10_mean,"[""credited_entities_prior_top10_mean""]",new,entity_credit,F,numeric,Mean count of previously attained distinct Top10 songs per unique credited MBID
+debut_chart_established_credit_share,"[""debut_chart_established_credit_share""]",new,chart_competition,C,numeric,Share of other distinct credits on debut chart with earlier observed entry
+debut_chart_same_genre_share,"[""debut_chart_same_genre_share""]",new,relative_content,F,numeric,Share of other labelled distinct songs on published debut chart with focal primary genre
+debut_competing_new_entry_count,"[""debut_competing_new_entry_count""]",new,chart_competition,C,numeric,Other first-observed identities on published debut chart
+debut_rank,"[""debut_rank""]",original,debut_chart,C,numeric,Minimum rank on published first chart
+debut_reported_last_week_rank,"[""debut_reported_last_week_rank""]",original,debut_chart,C,numeric,Minimum nonmissing source-reported last-week rank on first observed chart; does not merge identities
+debut_reported_peak_position,"[""debut_reported_peak_position""]",original,debut_chart,C,numeric,"Minimum source-reported peak on first observed chart; known then, distinct from a future attained peak"
+debut_reported_weeks_on_chart,"[""debut_reported_weeks_on_chart""]",original,debut_chart,C,numeric,Maximum source-reported weeks on first observed chart; source identity/history anomalies retained
+debut_season_phase,"[""debut_season_sin"", ""debut_season_cos""]",new,calendar_title,C,numeric_block,Joint circular phase; both frozen sine/cosine components form ONE variable
+debut_time_years,"[""debut_time_years""]",original,historical_time,C,numeric,Source first-chart date as days since 1970-01-01 / 365.2425; deterministic known-date representation
+detox_identity_attack,"[""detox_identity_attack""]",original,lyrical_scores,F,numeric,Existing frozen detox_identity_attack content-classifier score
+detox_insult,"[""detox_insult""]",original,lyrical_scores,F,numeric,Existing frozen detox_insult content-classifier score
+detox_obscene,"[""detox_obscene""]",original,lyrical_scores,F,numeric,Existing frozen detox_obscene content-classifier score
+detox_severe_toxicity,"[""detox_severe_toxicity""]",original,lyrical_scores,F,numeric,Existing frozen detox_severe_toxicity content-classifier score
+detox_sexual_explicit,"[""detox_sexual_explicit""]",original,lyrical_scores,F,numeric,Existing frozen detox_sexual_explicit content-classifier score
+detox_threat,"[""detox_threat""]",original,lyrical_scores,F,numeric,Existing frozen detox_threat content-classifier score
+detox_toxicity,"[""detox_toxicity""]",original,lyrical_scores,F,numeric,Existing frozen detox_toxicity content-classifier score
+duration_seconds,"[""duration_seconds""]",original,recording_metadata,F,numeric,V1 accepted consistent duration; all retained durations agree; other duration summaries are aliases on this mask
+emotion_admiration,"[""emotion_admiration""]",original,lyrical_scores,F,numeric,Existing frozen emotion_admiration content-classifier score
+emotion_amusement,"[""emotion_amusement""]",original,lyrical_scores,F,numeric,Existing frozen emotion_amusement content-classifier score
+emotion_anger,"[""emotion_anger""]",original,lyrical_scores,F,numeric,Existing frozen emotion_anger content-classifier score
+emotion_annoyance,"[""emotion_annoyance""]",original,lyrical_scores,F,numeric,Existing frozen emotion_annoyance content-classifier score
+emotion_approval,"[""emotion_approval""]",original,lyrical_scores,F,numeric,Existing frozen emotion_approval content-classifier score
+emotion_caring,"[""emotion_caring""]",original,lyrical_scores,F,numeric,Existing frozen emotion_caring content-classifier score
+emotion_confusion,"[""emotion_confusion""]",original,lyrical_scores,F,numeric,Existing frozen emotion_confusion content-classifier score
+emotion_curiosity,"[""emotion_curiosity""]",original,lyrical_scores,F,numeric,Existing frozen emotion_curiosity content-classifier score
+emotion_desire,"[""emotion_desire""]",original,lyrical_scores,F,numeric,Existing frozen emotion_desire content-classifier score
+emotion_disappointment,"[""emotion_disappointment""]",original,lyrical_scores,F,numeric,Existing frozen emotion_disappointment content-classifier score
+emotion_disapproval,"[""emotion_disapproval""]",original,lyrical_scores,F,numeric,Existing frozen emotion_disapproval content-classifier score
+emotion_disgust,"[""emotion_disgust""]",original,lyrical_scores,F,numeric,Existing frozen emotion_disgust content-classifier score
+emotion_embarrassment,"[""emotion_embarrassment""]",original,lyrical_scores,F,numeric,Existing frozen emotion_embarrassment content-classifier score
+emotion_excitement,"[""emotion_excitement""]",original,lyrical_scores,F,numeric,Existing frozen emotion_excitement content-classifier score
+emotion_fear,"[""emotion_fear""]",original,lyrical_scores,F,numeric,Existing frozen emotion_fear content-classifier score
+emotion_gratitude,"[""emotion_gratitude""]",original,lyrical_scores,F,numeric,Existing frozen emotion_gratitude content-classifier score
+emotion_grief,"[""emotion_grief""]",original,lyrical_scores,F,numeric,Existing frozen emotion_grief content-classifier score
+emotion_joy,"[""emotion_joy""]",original,lyrical_scores,F,numeric,Existing frozen emotion_joy content-classifier score
+emotion_love,"[""emotion_love""]",original,lyrical_scores,F,numeric,Existing frozen emotion_love content-classifier score
+emotion_nervousness,"[""emotion_nervousness""]",original,lyrical_scores,F,numeric,Existing frozen emotion_nervousness content-classifier score
+emotion_neutral,"[""emotion_neutral""]",original,lyrical_scores,F,numeric,Existing frozen emotion_neutral content-classifier score
+emotion_optimism,"[""emotion_optimism""]",original,lyrical_scores,F,numeric,Existing frozen emotion_optimism content-classifier score
+emotion_pride,"[""emotion_pride""]",original,lyrical_scores,F,numeric,Existing frozen emotion_pride content-classifier score
+emotion_realization,"[""emotion_realization""]",original,lyrical_scores,F,numeric,Existing frozen emotion_realization content-classifier score
+emotion_relief,"[""emotion_relief""]",original,lyrical_scores,F,numeric,Existing frozen emotion_relief content-classifier score
+emotion_remorse,"[""emotion_remorse""]",original,lyrical_scores,F,numeric,Existing frozen emotion_remorse content-classifier score
+emotion_sadness,"[""emotion_sadness""]",original,lyrical_scores,F,numeric,Existing frozen emotion_sadness content-classifier score
+emotion_surprise,"[""emotion_surprise""]",original,lyrical_scores,F,numeric,Existing frozen emotion_surprise content-classifier score
+first_credited_entity_prior_song_count,"[""first_credited_entity_prior_song_count""]",new,entity_credit,F,numeric,Distinct earlier identities containing first listed MBID; first-listed is not assumed lead vocalist
+genre_confidence,"[""genre_confidence""]",original,genre_information,F,categorical,"Existing modern genre annotation confidence; measurement-process proxy, not intrinsic certainty"
+ll_explicit_language,"[""ll_explicit_language""]",original,lyrical_scores,F,numeric,Existing frozen ll_explicit_language content-classifier score
+ll_sexual_content,"[""ll_sexual_content""]",original,lyrical_scores,F,numeric,Existing frozen ll_sexual_content content-classifier score
+ll_substance_use,"[""ll_substance_use""]",original,lyrical_scores,F,numeric,Existing frozen ll_substance_use content-classifier score
+ll_violence,"[""ll_violence""]",original,lyrical_scores,F,numeric,Existing frozen ll_violence content-classifier score
+lyric_compression_ratio,"[""lyric_compression_ratio""]",new,lyric_structure,F,numeric,zlib level 9 byte length / original UTF-8 bytes of normalized token lines
+lyric_content_distance_prior_hits,"[""lyric_content_distance_prior_hits""]",new,relative_content,F,numeric,"RMSE across 42 raw [0,1] scores against centroid of distinct prior attained Top10 songs; equal dimensions, no estimated scaling"
+lyric_content_distance_recent_chart,"[""lyric_content_distance_recent_chart""]",new,relative_content,F,numeric,RMSE against complete-profile distinct songs on preceding chart
+lyric_first_person_plural_share,"[""lyric_first_person_plural_share""]",new,lyric_structure,F,numeric,English we/us/our/ours/ourselves/we're/we've/we'll/we'd divided by all tokens
+lyric_first_person_singular_share,"[""lyric_first_person_singular_share""]",new,lyric_structure,F,numeric,English tokens i/me/my/mine/myself/i'm/i've/i'll/i'd divided by all tokens
+lyric_hapax_share,"[""lyric_hapax_share""]",new,lyric_structure,F,numeric,Types occurring once divided by all distinct types
+lyric_line_length_dispersion,"[""lyric_line_length_dispersion""]",new,lyric_structure,F,numeric,Population SD of lexical tokens per nonempty token line
+lyric_mattr,"[""lyric_mattr""]",new,lyric_structure,F,numeric,Mean type/token ratio over all sliding 50-token windows; null below 50 tokens
+lyric_mean_line_length,"[""lyric_mean_line_length""]",new,lyric_structure,F,numeric,Mean lexical tokens per nonempty token line
+lyric_negation_token_share,"[""lyric_negation_token_share""]",new,lyric_structure,F,numeric,English no/not/never/none/nobody/nothing/neither/nor/without or suffix n't divided by all tokens
+lyric_question_line_share,"[""lyric_question_line_share""]",new,lyric_structure,F,numeric,Share of retained nonempty lines ending in ?
+lyric_repeated_bigram_share,"[""lyric_repeated_bigram_share""]",new,lyric_structure,F,numeric,(Adjacent bigram occurrences - distinct bigrams) / bigram occurrences
+lyric_repeated_line_share,"[""lyric_repeated_line_share""]",new,lyric_structure,F,numeric,(Nonempty token lines - distinct token lines) / nonempty token lines
+lyric_second_person_share,"[""lyric_second_person_share""]",new,lyric_structure,F,numeric,English you/your/yours/yourself/yourselves/you're/you've/you'll/you'd divided by all tokens
+lyric_temporal_deixis_share,"[""lyric_temporal_deixis_share""]",new,lyric_structure,F,numeric,English yesterday/today/tomorrow/tonight/now/then/always/forever/ago divided by all tokens
+lyric_title_phrase_repetition,"[""lyric_title_phrase_repetition""]",new,lyric_structure,F,numeric,Contiguous exact normalized full title token matches per 100 approved lyric tokens; title-equal opening lyric retained
+lyric_vocabulary_size,"[""lyric_vocabulary_size""]",new,lyric_structure,F,numeric,Distinct normalized lexical token types
+lyric_word_count,"[""lyric_word_count""]",new,lyric_structure,F,numeric,Unicode lexical tokens; NFC/casefold; apostrophe contractions kept
+previous_chart_credit_concentration,"[""previous_chart_credit_concentration""]",new,chart_competition,C,numeric,HHI of exact-credit shares among distinct songs on preceding chart
+previous_chart_incumbent_age_median,"[""previous_chart_incumbent_age_median""]",new,chart_competition,C,numeric,Median distinct chart-date count attained by songs on preceding chart
+previous_chart_leader_tenure,"[""previous_chart_leader_tenure""]",new,chart_competition,C,numeric,Consecutive <=8-day source charts with same rank-one identity through preceding chart
+previous_chart_new_entry_count,"[""previous_chart_new_entry_count""]",new,chart_competition,C,numeric,Distinct first-observed entrants on preceding chart
+previous_chart_turnover_share,"[""previous_chart_turnover_share""]",new,chart_competition,C,numeric,Share of preceding-chart songs absent from chart immediately before it; null over gap >8 days
+primary_genre,"[""primary_genre""]",original,genre_information,F,categorical,Existing modern primary genre label
+prior_year_primary_genre_share,"[""prior_year_primary_genre_share""]",new,relative_content,F,numeric,Share of labelled distinct earlier entries in preceding 365 days with focal genre
+prior_year_unique_chart_song_count,"[""prior_year_unique_chart_song_count""]",new,chart_competition,C,numeric,Distinct identities appearing in preceding 365 days
+same_credit_debut_cluster_size,"[""same_credit_debut_cluster_size""]",new,chart_competition,C,numeric,Other first-observed identities with exact credit on current chart
+secondary_genres,"[""secondary_genres""]",original,genre_information,F,multilabel,"Existing modern secondary genre label set, one original variable"
+sentiment_negative,"[""sentiment_negative""]",original,lyrical_scores,F,numeric,Existing frozen sentiment_negative content-classifier score
+sentiment_neutral,"[""sentiment_neutral""]",original,lyrical_scores,F,numeric,Existing frozen sentiment_neutral content-classifier score
+sentiment_positive,"[""sentiment_positive""]",original,lyrical_scores,F,numeric,Existing frozen sentiment_positive content-classifier score
+song_title_has_number,"[""song_title_has_number""]",new,calendar_title,C,numeric,Contains Unicode digit or English zero through twelve
+song_title_prior_usage_count,"[""song_title_prior_usage_count""]",new,calendar_title,C,numeric,Earlier distinct identities with exact original title
+song_title_question_form,"[""song_title_question_form""]",new,calendar_title,C,numeric,Contains ? or starts who/what/when/where/why/how/is/are/can/do/does/did
+song_title_token_count,"[""song_title_token_count""]",new,calendar_title,C,numeric,Unicode lexical token count in original title

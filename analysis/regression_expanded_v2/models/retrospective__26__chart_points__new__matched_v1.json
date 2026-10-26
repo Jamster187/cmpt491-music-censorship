@@ -1,0 +1,98 @@
+{
+  "coefficients": [
+    1.7804511253614282e-13,
+    -99.92800016517457,
+    155.07938306216417,
+    -94.67607560053021
+  ],
+  "encoder": {
+    "names": [
+      "lyric_vocabulary_size",
+      "lyric_word_count",
+      "prior_year_unique_chart_song_count"
+    ],
+    "variables": {
+      "lyric_vocabulary_size": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          98.21577666794724
+        ],
+        "median": [
+          88.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "lyric_vocabulary_size"
+        ],
+        "std": [
+          48.350759351481095
+        ]
+      },
+      "lyric_word_count": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          286.28627224996796
+        ],
+        "median": [
+          250.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "lyric_word_count"
+        ],
+        "std": [
+          151.9158584107457
+        ]
+      },
+      "prior_year_unique_chart_song_count": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          586.371686515559
+        ],
+        "median": [
+          542.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "prior_year_unique_chart_song_count"
+        ],
+        "std": [
+          141.16575307033227
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 15618,
+  "predictors": [
+    "lyric_vocabulary_size",
+    "lyric_word_count",
+    "prior_year_unique_chart_song_count"
+  ],
+  "rank": 4,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "target_center": 642.7909463439621,
+  "task": {
+    "horizon": "26",
+    "target": "chart_points",
+    "task_id": "retrospective__26__chart_points",
+    "track": "retrospective"
+  },
+  "training_cutoff": "2010-01-01",
+  "training_ids_sha256": "92d22c1452e89f6cf89a778a7135bc6ada22753c95e1da3381797d36accda386",
+  "training_mean": 642.7909463439621,
+  "training_median": 508.0,
+  "version": "exhaustive-regression-expanded-v2"
+}

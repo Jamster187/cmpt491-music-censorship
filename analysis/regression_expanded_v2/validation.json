@@ -1,0 +1,2251 @@
+{
+  "coverage": [
+    {
+      "candidates": 8473,
+      "fits": 33892,
+      "sqlite_integrity": "ok",
+      "task": "strict__26__best_rank"
+    },
+    {
+      "candidates": 8473,
+      "fits": 33892,
+      "sqlite_integrity": "ok",
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "candidates": 8473,
+      "fits": 33892,
+      "sqlite_integrity": "ok",
+      "task": "strict__26__chart_points"
+    },
+    {
+      "candidates": 8473,
+      "fits": 33892,
+      "sqlite_integrity": "ok",
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "candidates": 8473,
+      "fits": 33892,
+      "sqlite_integrity": "ok",
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "candidates": 8473,
+      "fits": 33892,
+      "sqlite_integrity": "ok",
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "candidates": 210042,
+      "fits": 840168,
+      "sqlite_integrity": "ok",
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "candidates": 210042,
+      "fits": 840168,
+      "sqlite_integrity": "ok",
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "candidates": 210042,
+      "fits": 840168,
+      "sqlite_integrity": "ok",
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "candidates": 210042,
+      "fits": 840168,
+      "sqlite_integrity": "ok",
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "candidates": 210042,
+      "fits": 840168,
+      "sqlite_integrity": "ok",
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "candidates": 210042,
+      "fits": 840168,
+      "sqlite_integrity": "ok",
+      "task": "retrospective__observed_lifetime__chart_points"
+    }
+  ],
+  "elapsed_seconds": 132.476440959,
+  "fixed_horizon_rows_rebuilt": 32723,
+  "full_test_suite": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "log_sha256": "7028673e5671070d387fb232d3a941723241451f008cc8b95e8f00fe2f0110a9",
+    "passed": 514,
+    "skipped": 16,
+    "tests": 530
+  },
+  "independent_full_row_svd_checks": [
+    {
+      "max_metric_abs_error": 2.4783730623312294e-11,
+      "max_prediction_abs_error": 4.575895218295045e-11,
+      "max_prediction_scaled_error": 6.225992265161333e-13,
+      "predictors": [
+        "chart_weekday",
+        "credit_simultaneous_other_songs",
+        "previous_chart_credit_concentration"
+      ],
+      "rank": 4,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 5.718447937397286e-11,
+      "max_prediction_abs_error": 4.106937012693379e-12,
+      "max_prediction_scaled_error": 5.994760812112463e-14,
+      "predictors": [
+        "chart_weekday",
+        "debut_rank",
+        "song_title_question_form"
+      ],
+      "rank": 4,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 2.7284841053187847e-12,
+      "max_prediction_abs_error": 4.716227408607665e-13,
+      "max_prediction_scaled_error": 6.8069847869010135e-15,
+      "predictors": [
+        "christmas_proximity_days",
+        "credit_days_since_last_entry",
+        "debut_reported_peak_position"
+      ],
+      "rank": 4,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 5.684341886080801e-13,
+      "max_prediction_abs_error": 9.521272659185342e-13,
+      "max_prediction_scaled_error": 2.5243037799286987e-14,
+      "predictors": [
+        "credit_days_since_last_entry",
+        "credit_recent_points_slope",
+        "previous_chart_incumbent_age_median"
+      ],
+      "rank": 4,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-13,
+      "max_prediction_abs_error": 3.4212632726848824e-12,
+      "max_prediction_scaled_error": 1.554263809242514e-13,
+      "predictors": [
+        "credit_prior_best_rank",
+        "credit_recent_chart_presence",
+        "debut_reported_last_week_rank"
+      ],
+      "rank": 3,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-13,
+      "max_prediction_abs_error": 3.730349362740526e-12,
+      "max_prediction_scaled_error": 1.361880910334998e-13,
+      "predictors": [
+        "credit_prior_best_rank",
+        "previous_chart_leader_tenure",
+        "previous_chart_new_entry_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 3.296918293926865e-12,
+      "max_prediction_abs_error": 4.710898338089464e-12,
+      "max_prediction_scaled_error": 1.0565731079251446e-13,
+      "predictors": [
+        "credit_prior_song_count",
+        "credit_prior_song_observed_longevity_median",
+        "debut_reported_last_week_rank"
+      ],
+      "rank": 3,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 6.821210263296962e-13,
+      "max_prediction_abs_error": 6.865619184281968e-13,
+      "max_prediction_scaled_error": 1.2590013275208073e-13,
+      "predictors": [
+        "credit_prior_song_count",
+        "debut_reported_last_week_rank",
+        "song_title_has_number"
+      ],
+      "rank": 3,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.48929757415317e-11,
+      "max_prediction_abs_error": 4.362732397567015e-12,
+      "max_prediction_scaled_error": 1.0107653262081492e-13,
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "debut_reported_weeks_on_chart",
+        "same_credit_debut_cluster_size"
+      ],
+      "rank": 3,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.9326762412674725e-12,
+      "max_prediction_abs_error": 2.9629632081196178e-12,
+      "max_prediction_scaled_error": 6.755168653012654e-14,
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "previous_chart_leader_tenure",
+        "song_title_question_form"
+      ],
+      "rank": 4,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 3.5356606531422585e-11,
+      "max_prediction_abs_error": 1.8559376258053817e-11,
+      "max_prediction_scaled_error": 2.4154132366514204e-13,
+      "predictors": [
+        "credit_prior_top10_song_count",
+        "credit_simultaneous_other_songs",
+        "song_title_question_form"
+      ],
+      "rank": 4,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 3.979039320256561e-12,
+      "max_prediction_abs_error": 8.029132914089132e-13,
+      "max_prediction_scaled_error": 2.3296476094956335e-14,
+      "predictors": [
+        "debut_competing_new_entry_count",
+        "same_credit_debut_cluster_size",
+        "song_title_prior_usage_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 5.0818016461562365e-11,
+      "max_prediction_abs_error": 4.519051799434237e-12,
+      "max_prediction_scaled_error": 6.886695655326557e-14,
+      "predictors": [
+        "debut_rank",
+        "debut_time_years"
+      ],
+      "rank": 3,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 5.002220859751105e-12,
+      "max_prediction_abs_error": 4.482636484226532e-12,
+      "max_prediction_scaled_error": 5.919026054749502e-14,
+      "predictors": [
+        "credit_chart_career_days",
+        "credit_previous_entry_best_rank_so_far",
+        "credit_prior_top10_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.77351466845721e-11,
+      "max_prediction_abs_error": 1.7621459846850485e-12,
+      "max_prediction_scaled_error": 2.5607451437866124e-14,
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "debut_rank",
+        "debut_time_years"
+      ],
+      "rank": 4,
+      "task": "strict__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 2.842170943040401e-14,
+      "max_prediction_abs_error": 6.217248937900877e-14,
+      "max_prediction_scaled_error": 1.174320753486761e-14,
+      "predictors": [
+        "debut_season_phase",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.4495071809506044e-12,
+      "max_prediction_abs_error": 2.3723245590190345e-12,
+      "max_prediction_scaled_error": 2.1577520961016994e-13,
+      "predictors": [
+        "artist_credit_feature_marker",
+        "credit_prior_song_count",
+        "credit_prior_top40_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 3.0269120543380268e-12,
+      "max_prediction_abs_error": 8.206768598029157e-13,
+      "max_prediction_scaled_error": 1.1670169284109372e-13,
+      "predictors": [
+        "artist_credit_feature_marker",
+        "previous_chart_incumbent_age_median",
+        "song_title_token_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 4.263256414560601e-14,
+      "max_prediction_abs_error": 4.823919041996305e-14,
+      "max_prediction_scaled_error": 9.618704225054174e-15,
+      "predictors": [
+        "chart_weekday",
+        "prior_year_unique_chart_song_count",
+        "song_title_token_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 4.263256414560601e-13,
+      "max_prediction_abs_error": 4.04121180963557e-13,
+      "max_prediction_scaled_error": 8.063104345906044e-14,
+      "predictors": [
+        "credit_prior_best_rank",
+        "credit_prior_chart_weeks",
+        "debut_time_years"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.2789769243681803e-12,
+      "max_prediction_abs_error": 3.2152058793144533e-13,
+      "max_prediction_scaled_error": 4.3167100584758234e-14,
+      "predictors": [
+        "credit_prior_chart_points",
+        "previous_chart_incumbent_age_median",
+        "song_title_token_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 7.105427357601002e-14,
+      "max_prediction_abs_error": 1.887379141862766e-13,
+      "max_prediction_scaled_error": 3.1238135163613566e-14,
+      "predictors": [
+        "credit_prior_chart_rank_volatility",
+        "song_title_has_number",
+        "song_title_prior_usage_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 3.126388037344441e-13,
+      "max_prediction_abs_error": 2.2293278334473143e-12,
+      "max_prediction_scaled_error": 1.4852542556163502e-13,
+      "predictors": [
+        "credit_prior_song_count",
+        "debut_chart_established_credit_share",
+        "song_title_has_number"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 2.5579538487363607e-13,
+      "max_prediction_abs_error": 1.3109513474773848e-12,
+      "max_prediction_scaled_error": 5.768243954676324e-14,
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "debut_reported_weeks_on_chart",
+        "song_title_prior_usage_count"
+      ],
+      "rank": 3,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.3358203432289883e-12,
+      "max_prediction_abs_error": 4.355626970209414e-12,
+      "max_prediction_scaled_error": 1.5140732284469999e-13,
+      "predictors": [
+        "credit_prior_top10_song_count",
+        "previous_chart_credit_concentration",
+        "previous_chart_incumbent_age_median"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 2.5579538487363607e-13,
+      "max_prediction_abs_error": 1.1599610161283636e-12,
+      "max_prediction_scaled_error": 2.2040773568565425e-13,
+      "predictors": [
+        "credit_prior_top10_song_count",
+        "previous_chart_leader_tenure",
+        "song_title_token_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.4068746168049984e-12,
+      "max_prediction_abs_error": 9.032774528350274e-13,
+      "max_prediction_scaled_error": 4.584363294995298e-14,
+      "predictors": [
+        "debut_competing_new_entry_count",
+        "debut_rank",
+        "previous_chart_turnover_share"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 4.121147867408581e-13,
+      "max_prediction_abs_error": 7.815970093361102e-14,
+      "max_prediction_scaled_error": 8.899786982165138e-15,
+      "predictors": [
+        "debut_reported_peak_position"
+      ],
+      "rank": 2,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.3926637620897964e-12,
+      "max_prediction_abs_error": 4.5297099404706387e-13,
+      "max_prediction_scaled_error": 1.1336281684890994e-14,
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.3926637620897964e-12,
+      "max_prediction_abs_error": 4.5297099404706387e-13,
+      "max_prediction_scaled_error": 1.1336281684890994e-14,
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.6880221664905548e-09,
+      "max_prediction_abs_error": 2.2168933355715126e-12,
+      "max_prediction_scaled_error": 1.03205937750618e-14,
+      "predictors": [
+        "chart_weekday",
+        "debut_time_years"
+      ],
+      "rank": 3,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 5.704350769519806e-09,
+      "max_prediction_abs_error": 1.1391421139705926e-10,
+      "max_prediction_scaled_error": 1.00780137126808e-13,
+      "predictors": [
+        "artist_credit_feature_marker",
+        "credit_prior_reentry_song_share",
+        "credit_prior_song_observed_longevity_median"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.1641532182693481e-09,
+      "max_prediction_abs_error": 2.3806023818906397e-10,
+      "max_prediction_scaled_error": 3.5213471494120505e-13,
+      "predictors": [
+        "artist_credit_feature_marker",
+        "credit_simultaneous_other_songs",
+        "song_title_token_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 9.89530235528946e-10,
+      "max_prediction_abs_error": 5.411493475548923e-11,
+      "max_prediction_scaled_error": 9.090024735462959e-14,
+      "predictors": [
+        "chart_weekday",
+        "credit_prior_top40_song_count",
+        "credit_simultaneous_other_songs"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 7.566995918750763e-10,
+      "max_prediction_abs_error": 4.780531526193954e-11,
+      "max_prediction_scaled_error": 1.0839167152335729e-13,
+      "predictors": [
+        "chart_weekday",
+        "debut_competing_new_entry_count",
+        "debut_reported_weeks_on_chart"
+      ],
+      "rank": 3,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 5.820766091346741e-11,
+      "max_prediction_abs_error": 2.2737367544323206e-12,
+      "max_prediction_scaled_error": 7.652667507565531e-15,
+      "predictors": [
+        "christmas_proximity_days",
+        "credit_prior_reentry_song_share",
+        "credit_recent_points_slope"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.1641532182693481e-10,
+      "max_prediction_abs_error": 2.7995383788947947e-11,
+      "max_prediction_scaled_error": 7.391642748764688e-14,
+      "predictors": [
+        "credit_chart_career_days",
+        "credit_prior_chart_rank_volatility",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 3.550667315721512e-09,
+      "max_prediction_abs_error": 1.4642864698544145e-10,
+      "max_prediction_scaled_error": 1.171764637698309e-13,
+      "predictors": [
+        "credit_chart_career_days",
+        "credit_prior_song_observed_longevity_median",
+        "credit_prior_top10_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 3.6670826375484467e-09,
+      "max_prediction_abs_error": 9.873701856122352e-11,
+      "max_prediction_scaled_error": 1.3987341947932626e-13,
+      "predictors": [
+        "credit_prior_song_count",
+        "credit_simultaneous_other_songs",
+        "previous_chart_incumbent_age_median"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.3969838619232178e-09,
+      "max_prediction_abs_error": 8.472511581203435e-11,
+      "max_prediction_scaled_error": 6.304164313753945e-14,
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "credit_recent_points_slope",
+        "song_title_token_count"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 5.820766091346741e-11,
+      "max_prediction_abs_error": 4.6213699533836916e-11,
+      "max_prediction_scaled_error": 1.3855501855137863e-13,
+      "predictors": [
+        "credit_recent_points_slope",
+        "debut_reported_weeks_on_chart",
+        "previous_chart_incumbent_age_median"
+      ],
+      "rank": 3,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 2.3283064365386963e-10,
+      "max_prediction_abs_error": 3.126388037344441e-13,
+      "max_prediction_scaled_error": 1.3619884244991902e-15,
+      "predictors": [
+        "debut_season_phase",
+        "debut_time_years",
+        "song_title_question_form"
+      ],
+      "rank": 5,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 5.820766091346741e-09,
+      "max_prediction_abs_error": 1.5120349416974932e-11,
+      "max_prediction_scaled_error": 1.5214649034923467e-14,
+      "predictors": [
+        "debut_reported_peak_position"
+      ],
+      "rank": 2,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.9208528101444244e-09,
+      "max_prediction_abs_error": 1.2732925824820995e-11,
+      "max_prediction_scaled_error": 6.138947092085591e-15,
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 6.752088665962219e-09,
+      "max_prediction_abs_error": 6.355094228638336e-11,
+      "max_prediction_scaled_error": 2.141060918459094e-14,
+      "predictors": [
+        "debut_rank",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "rank": 4,
+      "task": "strict__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 2.5011104298755527e-12,
+      "max_prediction_abs_error": 1.2292389328649733e-12,
+      "max_prediction_scaled_error": 5.754742294733206e-14,
+      "predictors": [
+        "artist_credit_feature_marker",
+        "credit_prior_best_rank"
+      ],
+      "rank": 3,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.921307557495311e-11,
+      "max_prediction_abs_error": 1.3642420526593924e-12,
+      "max_prediction_scaled_error": 1.7826017235674318e-14,
+      "predictors": [
+        "artist_credit_feature_marker",
+        "credit_prior_song_observed_longevity_median",
+        "debut_rank"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.0231815394945443e-12,
+      "max_prediction_abs_error": 1.3500311979441904e-13,
+      "max_prediction_scaled_error": 3.757052387797091e-15,
+      "predictors": [
+        "chart_weekday",
+        "christmas_proximity_days",
+        "credit_prior_chart_points"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 9.094947017729282e-13,
+      "max_prediction_abs_error": 2.2870594307278225e-13,
+      "max_prediction_scaled_error": 5.4652242293089184e-14,
+      "predictors": [
+        "chart_weekday",
+        "credit_prior_song_count",
+        "debut_chart_established_credit_share"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-13,
+      "max_prediction_abs_error": 5.968558980384842e-13,
+      "max_prediction_scaled_error": 9.212500791371498e-15,
+      "predictors": [
+        "credit_days_since_last_entry",
+        "previous_chart_credit_concentration",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-12,
+      "max_prediction_abs_error": 4.583000645652646e-13,
+      "max_prediction_scaled_error": 1.3308221302553087e-14,
+      "predictors": [
+        "credit_prior_chart_rank_volatility",
+        "credit_prior_top10_song_count",
+        "previous_chart_leader_tenure"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 2.000888343900442e-11,
+      "max_prediction_abs_error": 1.716671249596402e-11,
+      "max_prediction_scaled_error": 1.5960486700164195e-13,
+      "predictors": [
+        "credit_prior_song_count",
+        "credit_simultaneous_other_songs",
+        "debut_time_years"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 6.502887117676437e-11,
+      "max_prediction_abs_error": 4.845901457883883e-12,
+      "max_prediction_scaled_error": 6.349210250860723e-14,
+      "predictors": [
+        "credit_prior_song_count",
+        "debut_reported_peak_position",
+        "debut_season_phase"
+      ],
+      "rank": 5,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 6.821210263296962e-13,
+      "max_prediction_abs_error": 1.9273471707492718e-13,
+      "max_prediction_scaled_error": 2.4995010781299446e-14,
+      "predictors": [
+        "credit_prior_song_count",
+        "previous_chart_credit_concentration",
+        "previous_chart_incumbent_age_median"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 7.912603905424476e-11,
+      "max_prediction_abs_error": 5.329070518200751e-12,
+      "max_prediction_scaled_error": 6.342545748149527e-14,
+      "predictors": [
+        "credit_simultaneous_other_songs",
+        "debut_reported_peak_position",
+        "previous_chart_turnover_share"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.77351466845721e-11,
+      "max_prediction_abs_error": 1.3784529073745944e-12,
+      "max_prediction_scaled_error": 1.8531545597125735e-14,
+      "predictors": [
+        "debut_rank",
+        "previous_chart_credit_concentration",
+        "song_title_has_number"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 9.094947017729282e-13,
+      "max_prediction_abs_error": 4.796163466380676e-14,
+      "max_prediction_scaled_error": 1.7594139899552186e-14,
+      "predictors": [
+        "debut_reported_weeks_on_chart",
+        "debut_time_years",
+        "song_title_prior_usage_count"
+      ],
+      "rank": 3,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.659827830735594e-11,
+      "max_prediction_abs_error": 1.3642420526593924e-12,
+      "max_prediction_scaled_error": 1.9218998178318943e-14,
+      "predictors": [
+        "debut_rank",
+        "debut_time_years"
+      ],
+      "rank": 3,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 2.3874235921539366e-12,
+      "max_prediction_abs_error": 1.8900436771218665e-12,
+      "max_prediction_scaled_error": 5.028690409999698e-14,
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credit_prior_chart_rank_volatility",
+        "credit_prior_top10_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 6.770051186322235e-11,
+      "max_prediction_abs_error": 1.0800249583553523e-11,
+      "max_prediction_scaled_error": 1.7304727681119894e-13,
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 2.842170943040401e-14,
+      "max_prediction_abs_error": 2.4424906541753444e-13,
+      "max_prediction_scaled_error": 2.7436086558231666e-14,
+      "predictors": [
+        "credit_days_since_last_entry",
+        "credit_prior_top40_song_count"
+      ],
+      "rank": 3,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 8.526512829121202e-14,
+      "max_prediction_abs_error": 4.509725926027386e-13,
+      "max_prediction_scaled_error": 4.1769555996910106e-13,
+      "predictors": [
+        "credit_prior_reentry_song_share",
+        "credit_prior_top10_song_count"
+      ],
+      "rank": 3,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.9539925233402755e-14,
+      "max_prediction_abs_error": 2.1405099914773018e-13,
+      "max_prediction_scaled_error": 2.884648074723488e-14,
+      "predictors": [
+        "chart_weekday",
+        "christmas_proximity_days",
+        "debut_competing_new_entry_count"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 2.5579538487363607e-13,
+      "max_prediction_abs_error": 3.419486915845482e-13,
+      "max_prediction_scaled_error": 4.9318566400237066e-14,
+      "predictors": [
+        "christmas_proximity_days",
+        "credit_prior_best_rank",
+        "previous_chart_leader_tenure"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 2.842170943040401e-14,
+      "max_prediction_abs_error": 6.679101716144942e-13,
+      "max_prediction_scaled_error": 3.5533746583792615e-14,
+      "predictors": [
+        "credit_chart_career_days",
+        "credit_prior_song_observed_longevity_median",
+        "song_title_has_number"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.4210854715202004e-13,
+      "max_prediction_abs_error": 3.1796787425264483e-13,
+      "max_prediction_scaled_error": 7.118479881163378e-14,
+      "predictors": [
+        "credit_chart_career_days",
+        "credit_recent_points_slope",
+        "song_title_question_form"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 7.105427357601002e-13,
+      "max_prediction_abs_error": 1.8562928971732617e-13,
+      "max_prediction_scaled_error": 2.672064078669664e-14,
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credit_prior_reentry_song_share",
+        "previous_chart_incumbent_age_median"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 9.663381206337363e-13,
+      "max_prediction_abs_error": 9.339196083146817e-13,
+      "max_prediction_scaled_error": 1.214874594858952e-13,
+      "predictors": [
+        "credit_prior_best_rank",
+        "credit_prior_chart_rank_volatility",
+        "previous_chart_incumbent_age_median"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 5.115907697472721e-13,
+      "max_prediction_abs_error": 4.0745185003743245e-13,
+      "max_prediction_scaled_error": 3.37348969597798e-14,
+      "predictors": [
+        "credit_prior_best_rank",
+        "debut_reported_last_week_rank",
+        "previous_chart_new_entry_count"
+      ],
+      "rank": 3,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.120383785746526e-10,
+      "max_prediction_abs_error": 4.082302496044576e-09,
+      "max_prediction_scaled_error": 1.3773296711658168e-10,
+      "predictors": [
+        "credit_prior_song_count",
+        "debut_rank",
+        "debut_reported_peak_position"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.4210854715202004e-13,
+      "max_prediction_abs_error": 4.929390229335695e-13,
+      "max_prediction_scaled_error": 3.832722295182308e-14,
+      "predictors": [
+        "debut_chart_established_credit_share",
+        "debut_rank",
+        "previous_chart_incumbent_age_median"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 3.893774191965349e-12,
+      "max_prediction_abs_error": 1.4095391520640987e-12,
+      "max_prediction_scaled_error": 1.0669923741271958e-13,
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_season_phase",
+        "previous_chart_new_entry_count"
+      ],
+      "rank": 5,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 6.650680006714538e-12,
+      "max_prediction_abs_error": 1.071143174158351e-12,
+      "max_prediction_scaled_error": 7.890500399956168e-14,
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years"
+      ],
+      "rank": 3,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.4210854715202004e-13,
+      "max_prediction_abs_error": 9.023892744153272e-13,
+      "max_prediction_scaled_error": 9.037634929284787e-14,
+      "predictors": [
+        "credit_prior_best_rank",
+        "credit_prior_chart_rank_volatility",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 5.684341886080802e-14,
+      "max_prediction_abs_error": 6.803446694902959e-13,
+      "max_prediction_scaled_error": 7.129574258897508e-14,
+      "predictors": [
+        "credit_prior_chart_rank_volatility",
+        "debut_reported_peak_position",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 5.820766091346741e-10,
+      "max_prediction_abs_error": 3.410605131648481e-12,
+      "max_prediction_scaled_error": 1.011636642187698e-14,
+      "predictors": [
+        "chart_weekday",
+        "credit_recent_points_slope",
+        "debut_reported_last_week_rank"
+      ],
+      "rank": 3,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 2.2118911147117615e-09,
+      "max_prediction_abs_error": 8.412825991399586e-12,
+      "max_prediction_scaled_error": 7.0442972344228104e-15,
+      "predictors": [
+        "christmas_proximity_days",
+        "credit_prior_chart_weeks",
+        "debut_rank"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 0.0,
+      "max_prediction_abs_error": 4.092726157978177e-12,
+      "max_prediction_scaled_error": 3.603874812520052e-15,
+      "predictors": [
+        "credit_days_since_last_entry",
+        "credit_prior_reentry_song_share",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-13,
+      "max_prediction_abs_error": 7.695177828281885e-12,
+      "max_prediction_scaled_error": 1.9474308500806757e-14,
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credit_prior_top40_song_count",
+        "previous_chart_leader_tenure"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 2.3283064365386963e-10,
+      "max_prediction_abs_error": 2.5693225325085223e-11,
+      "max_prediction_scaled_error": 4.3853234744491255e-14,
+      "predictors": [
+        "credit_prior_chart_points",
+        "previous_chart_new_entry_count",
+        "song_title_has_number"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 8.149072527885437e-09,
+      "max_prediction_abs_error": 2.1009327610954642e-10,
+      "max_prediction_scaled_error": 1.4516063640275534e-13,
+      "predictors": [
+        "credit_prior_chart_rank_volatility",
+        "credit_simultaneous_other_songs",
+        "debut_time_years"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.6298145055770874e-09,
+      "max_prediction_abs_error": 2.1088908397359774e-11,
+      "max_prediction_scaled_error": 5.4381522840613053e-14,
+      "predictors": [
+        "credit_prior_chart_weeks",
+        "debut_competing_new_entry_count",
+        "previous_chart_incumbent_age_median"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.3969838619232178e-09,
+      "max_prediction_abs_error": 4.241940132487798e-11,
+      "max_prediction_scaled_error": 1.0128160919973728e-13,
+      "predictors": [
+        "credit_prior_reentry_song_share",
+        "credit_recent_chart_presence",
+        "previous_chart_credit_concentration"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.4784745872020721e-08,
+      "max_prediction_abs_error": 8.685674401931465e-11,
+      "max_prediction_scaled_error": 6.892830779091319e-14,
+      "predictors": [
+        "credit_prior_reentry_song_share",
+        "debut_reported_peak_position",
+        "previous_chart_leader_tenure"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.1175870895385742e-08,
+      "max_prediction_abs_error": 6.502887117676437e-11,
+      "max_prediction_scaled_error": 5.2312536579784465e-14,
+      "predictors": [
+        "credit_prior_top40_song_count",
+        "debut_rank",
+        "song_title_token_count"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 4.656612873077393e-10,
+      "max_prediction_abs_error": 2.3987922759260982e-11,
+      "max_prediction_scaled_error": 8.740493859788929e-14,
+      "predictors": [
+        "credit_recent_points_slope",
+        "previous_chart_new_entry_count",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 2.3283064365386963e-10,
+      "max_prediction_abs_error": 1.4836132322670892e-11,
+      "max_prediction_scaled_error": 7.198080648397401e-14,
+      "predictors": [
+        "debut_chart_established_credit_share",
+        "song_title_has_number",
+        "song_title_prior_usage_count"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 6.088521331548691e-08,
+      "max_prediction_abs_error": 1.5074874681886286e-10,
+      "max_prediction_scaled_error": 1.2107082708027922e-13,
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years"
+      ],
+      "rank": 3,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.1641532182693481e-09,
+      "max_prediction_abs_error": 8.64872617967194e-11,
+      "max_prediction_scaled_error": 1.3815031409179996e-13,
+      "predictors": [
+        "credit_prior_best_rank",
+        "credit_prior_chart_rank_volatility",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 7.799826562404633e-09,
+      "max_prediction_abs_error": 1.77351466845721e-10,
+      "max_prediction_scaled_error": 4.5776836750310765e-14,
+      "predictors": [
+        "debut_reported_peak_position",
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size"
+      ],
+      "rank": 4,
+      "task": "strict__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 3.410605131648481e-12,
+      "max_prediction_abs_error": 4.952482868247898e-12,
+      "max_prediction_scaled_error": 1.4773319976725695e-13,
+      "predictors": [
+        "credit_prior_reentry_song_share",
+        "detox_insult",
+        "genre_confidence"
+      ],
+      "rank": 5,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 4.547473508864641e-13,
+      "max_prediction_abs_error": 5.790923296444817e-13,
+      "max_prediction_scaled_error": 5.745529265356184e-14,
+      "predictors": [
+        "credit_prior_reentry_song_share",
+        "lyric_hapax_share",
+        "lyric_second_person_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 3.552713678800501e-15,
+      "max_prediction_abs_error": 2.9203306439740118e-12,
+      "max_prediction_scaled_error": 1.7247406028829925e-13,
+      "predictors": [
+        "credit_team_prior_song_count",
+        "emotion_pride",
+        "ll_substance_use"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.3642420526593924e-12,
+      "max_prediction_abs_error": 2.4158453015843406e-12,
+      "max_prediction_scaled_error": 1.1247225904359496e-13,
+      "predictors": [
+        "credited_artist_entity_count",
+        "debut_chart_same_genre_share",
+        "emotion_remorse"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 7.673861546209082e-11,
+      "max_prediction_abs_error": 5.236699962551938e-12,
+      "max_prediction_scaled_error": 8.783120082944476e-14,
+      "predictors": [
+        "debut_rank",
+        "emotion_surprise",
+        "lyric_title_phrase_repetition"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.1823431123048067e-11,
+      "max_prediction_abs_error": 7.887024366937112e-13,
+      "max_prediction_scaled_error": 1.362288741806238e-14,
+      "predictors": [
+        "debut_reported_last_week_rank",
+        "debut_reported_peak_position",
+        "emotion_approval"
+      ],
+      "rank": 3,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 0.0,
+      "max_prediction_abs_error": 5.3290705182007514e-14,
+      "max_prediction_scaled_error": 3.800055962902426e-15,
+      "predictors": [
+        "detox_identity_attack",
+        "detox_threat",
+        "ll_explicit_language"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 0.0,
+      "max_prediction_abs_error": 1.687538997430238e-14,
+      "max_prediction_scaled_error": 1.957859854109139e-15,
+      "predictors": [
+        "emotion_anger",
+        "emotion_love",
+        "lyric_hapax_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 3.552713678800501e-15,
+      "max_prediction_abs_error": 5.240252676230739e-14,
+      "max_prediction_scaled_error": 7.717446190350585e-15,
+      "predictors": [
+        "emotion_embarrassment",
+        "lyric_content_distance_recent_chart",
+        "previous_chart_incumbent_age_median"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 3.410605131648481e-13,
+      "max_prediction_abs_error": 1.580957587066223e-13,
+      "max_prediction_scaled_error": 1.0237341411494353e-14,
+      "predictors": [
+        "emotion_excitement",
+        "lyric_second_person_share",
+        "same_credit_debut_cluster_size"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-13,
+      "max_prediction_abs_error": 9.059419880941277e-14,
+      "max_prediction_scaled_error": 9.456887312688616e-15,
+      "predictors": [
+        "emotion_sadness",
+        "lyric_mattr",
+        "previous_chart_leader_tenure"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-13,
+      "max_prediction_abs_error": 1.1013412404281553e-13,
+      "max_prediction_scaled_error": 1.165430560571999e-14,
+      "predictors": [
+        "lyric_first_person_plural_share",
+        "lyric_title_phrase_repetition",
+        "sentiment_positive"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 4.5417891669785604e-11,
+      "max_prediction_abs_error": 1.0164313835048233e-11,
+      "max_prediction_scaled_error": 1.9878577761072213e-13,
+      "predictors": [
+        "debut_rank",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "rank": 5,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 3.410605131648481e-13,
+      "max_prediction_abs_error": 2.1742607714259066e-12,
+      "max_prediction_scaled_error": 2.8502531751045675e-14,
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credited_entities_prior_top10_mean",
+        "debut_chart_same_genre_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 4.5417891669785604e-11,
+      "max_prediction_abs_error": 1.0164313835048233e-11,
+      "max_prediction_scaled_error": 1.9878577761072213e-13,
+      "predictors": [
+        "debut_rank",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "rank": 5,
+      "task": "retrospective__26__best_rank"
+    },
+    {
+      "max_metric_abs_error": 9.947598300641403e-14,
+      "max_prediction_abs_error": 2.9753977059954195e-14,
+      "max_prediction_scaled_error": 1.8758199676568726e-14,
+      "predictors": [
+        "chart_weekday",
+        "emotion_love",
+        "lyric_hapax_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 7.105427357601002e-14,
+      "max_prediction_abs_error": 2.3936408410918375e-13,
+      "max_prediction_scaled_error": 8.288464149589733e-14,
+      "predictors": [
+        "credit_chart_career_days",
+        "emotion_annoyance",
+        "lyric_hapax_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 8.526512829121202e-14,
+      "max_prediction_abs_error": 6.039613253960852e-14,
+      "max_prediction_scaled_error": 3.742222753226423e-15,
+      "predictors": [
+        "credit_prior_best_rank",
+        "emotion_surprise",
+        "lyric_word_count"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 2.7000623958883807e-13,
+      "max_prediction_abs_error": 3.304023721284466e-13,
+      "max_prediction_scaled_error": 7.306074954365926e-14,
+      "predictors": [
+        "credit_prior_chart_weeks",
+        "credit_recent_chart_presence",
+        "emotion_admiration"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 8.810729923425242e-13,
+      "max_prediction_abs_error": 5.613287612504791e-13,
+      "max_prediction_scaled_error": 7.401246988676715e-14,
+      "predictors": [
+        "credited_artist_entity_count",
+        "debut_time_years",
+        "emotion_desire"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 4.263256414560601e-14,
+      "max_prediction_abs_error": 6.394884621840902e-14,
+      "max_prediction_scaled_error": 6.871460110165635e-15,
+      "predictors": [
+        "debut_competing_new_entry_count",
+        "emotion_disappointment",
+        "emotion_surprise"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 2.9132252166164108e-12,
+      "max_prediction_abs_error": 6.128431095930864e-13,
+      "max_prediction_scaled_error": 4.9202385504644684e-14,
+      "predictors": [
+        "debut_rank",
+        "detox_severe_toxicity",
+        "emotion_embarrassment"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 5.684341886080802e-14,
+      "max_prediction_abs_error": 2.6068036618198676e-13,
+      "max_prediction_scaled_error": 6.509302817330378e-14,
+      "predictors": [
+        "duration_seconds",
+        "emotion_curiosity",
+        "ll_substance_use"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 0.0,
+      "max_prediction_abs_error": 2.1316282072803006e-14,
+      "max_prediction_scaled_error": 4.1489906003265855e-15,
+      "predictors": [
+        "emotion_embarrassment",
+        "emotion_joy",
+        "lyric_line_length_dispersion"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 5.684341886080802e-14,
+      "max_prediction_abs_error": 3.446132268436486e-13,
+      "max_prediction_scaled_error": 3.725866381951478e-14,
+      "predictors": [
+        "emotion_realization",
+        "lyric_line_length_dispersion",
+        "secondary_genres"
+      ],
+      "rank": 18,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 7.105427357601002e-14,
+      "max_prediction_abs_error": 4.898859096158503e-13,
+      "max_prediction_scaled_error": 6.99858456071648e-14,
+      "predictors": [
+        "lyric_first_person_singular_share",
+        "previous_chart_incumbent_age_median",
+        "previous_chart_turnover_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 5.258016244624741e-13,
+      "max_prediction_abs_error": 6.856737400084967e-13,
+      "max_prediction_scaled_error": 3.954710024691808e-14,
+      "predictors": [
+        "lyric_vocabulary_size",
+        "previous_chart_leader_tenure",
+        "previous_chart_turnover_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.1510792319313623e-12,
+      "max_prediction_abs_error": 1.3415935029570392e-12,
+      "max_prediction_scaled_error": 1.3286069906845127e-13,
+      "predictors": [
+        "debut_time_years",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "rank": 19,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 4.689582056016661e-13,
+      "max_prediction_abs_error": 1.6653345369377348e-12,
+      "max_prediction_scaled_error": 2.2362989792056712e-13,
+      "predictors": [
+        "credit_prior_song_observed_longevity_median",
+        "lyric_word_count",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-13,
+      "max_prediction_abs_error": 2.8617108682738035e-12,
+      "max_prediction_scaled_error": 3.51272822517871e-13,
+      "predictors": [
+        "genre_confidence",
+        "prior_year_unique_chart_song_count",
+        "secondary_genres"
+      ],
+      "rank": 19,
+      "task": "retrospective__26__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 5.820766091346741e-11,
+      "max_prediction_abs_error": 1.0743406164692715e-11,
+      "max_prediction_scaled_error": 2.078433174146287e-14,
+      "predictors": [
+        "chart_weekday",
+        "debut_competing_new_entry_count",
+        "lyric_repeated_bigram_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 0.0,
+      "max_prediction_abs_error": 3.836930773104541e-13,
+      "max_prediction_scaled_error": 1.1052208834708603e-15,
+      "predictors": [
+        "christmas_proximity_days",
+        "credit_days_since_last_entry",
+        "credit_prior_chart_weeks"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 2.7939677238464355e-09,
+      "max_prediction_abs_error": 7.266294232977089e-10,
+      "max_prediction_scaled_error": 9.664533733152467e-13,
+      "predictors": [
+        "credit_prior_song_count",
+        "debut_chart_established_credit_share",
+        "primary_genre"
+      ],
+      "rank": 18,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 5.684341886080801e-13,
+      "max_prediction_abs_error": 2.5556801119819283e-10,
+      "max_prediction_scaled_error": 7.998010116434837e-13,
+      "predictors": [
+        "credit_recent_chart_presence",
+        "emotion_admiration",
+        "primary_genre"
+      ],
+      "rank": 18,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-13,
+      "max_prediction_abs_error": 3.893774191965349e-12,
+      "max_prediction_scaled_error": 4.1242806630215394e-14,
+      "predictors": [
+        "credit_recent_chart_presence",
+        "emotion_grief",
+        "lyric_title_phrase_repetition"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.1641532182693481e-10,
+      "max_prediction_abs_error": 6.252776074688882e-13,
+      "max_prediction_scaled_error": 2.781851479888011e-15,
+      "predictors": [
+        "debut_season_phase",
+        "emotion_nervousness",
+        "lyric_repeated_line_share"
+      ],
+      "rank": 5,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 5.820766091346741e-11,
+      "max_prediction_abs_error": 1.1084466677857563e-12,
+      "max_prediction_scaled_error": 6.653591029673907e-15,
+      "predictors": [
+        "detox_insult",
+        "emotion_caring",
+        "lyric_mattr"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 0.0,
+      "max_prediction_abs_error": 6.821210263296962e-13,
+      "max_prediction_scaled_error": 1.996019861455349e-15,
+      "predictors": [
+        "detox_severe_toxicity",
+        "emotion_remorse",
+        "previous_chart_leader_tenure"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 5.820766091346741e-11,
+      "max_prediction_abs_error": 7.958078640513122e-12,
+      "max_prediction_scaled_error": 9.545245221202824e-15,
+      "predictors": [
+        "emotion_disappointment",
+        "lyric_line_length_dispersion",
+        "secondary_genres"
+      ],
+      "rank": 18,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.7462298274040222e-09,
+      "max_prediction_abs_error": 4.989715307601728e-10,
+      "max_prediction_scaled_error": 1.5465711620718066e-12,
+      "predictors": [
+        "emotion_realization",
+        "emotion_sadness",
+        "primary_genre"
+      ],
+      "rank": 18,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.1641532182693481e-10,
+      "max_prediction_abs_error": 7.958078640513122e-13,
+      "max_prediction_scaled_error": 2.266470710750237e-15,
+      "predictors": [
+        "ll_substance_use",
+        "lyric_hapax_share",
+        "lyric_line_length_dispersion"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.7053025658242404e-13,
+      "max_prediction_abs_error": 5.115907697472721e-13,
+      "max_prediction_scaled_error": 1.5844083273838173e-15,
+      "predictors": [
+        "lyric_repeated_line_share",
+        "prior_year_unique_chart_song_count",
+        "song_title_question_form"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 3.6088749766349792e-09,
+      "max_prediction_abs_error": 3.581135388230905e-11,
+      "max_prediction_scaled_error": 2.6754520243018046e-14,
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "rank": 19,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 2.9103830456733704e-10,
+      "max_prediction_abs_error": 8.242295734817162e-12,
+      "max_prediction_scaled_error": 1.2019959311210415e-14,
+      "predictors": [
+        "lyric_vocabulary_size",
+        "lyric_word_count",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 3.6088749766349792e-09,
+      "max_prediction_abs_error": 3.581135388230905e-11,
+      "max_prediction_scaled_error": 2.6754520243018046e-14,
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "rank": 19,
+      "task": "retrospective__26__chart_points"
+    },
+    {
+      "max_metric_abs_error": 4.320099833421409e-12,
+      "max_prediction_abs_error": 5.471179065352771e-13,
+      "max_prediction_scaled_error": 8.470519901279577e-15,
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "debut_reported_peak_position",
+        "emotion_love"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 5.684341886080801e-13,
+      "max_prediction_abs_error": 2.206235194535111e-12,
+      "max_prediction_scaled_error": 9.474219113594179e-14,
+      "predictors": [
+        "credit_prior_best_rank",
+        "credit_recent_points_slope",
+        "detox_insult"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.4779288903810084e-12,
+      "max_prediction_abs_error": 1.2079226507921703e-12,
+      "max_prediction_scaled_error": 4.4151385711666943e-14,
+      "predictors": [
+        "credit_prior_chart_points",
+        "emotion_disgust",
+        "lyric_question_line_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 0.0,
+      "max_prediction_abs_error": 1.7408297026122455e-13,
+      "max_prediction_scaled_error": 2.3741242824379284e-14,
+      "predictors": [
+        "credit_prior_chart_rank_volatility",
+        "emotion_realization",
+        "emotion_surprise"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 2.2737367544323206e-13,
+      "max_prediction_abs_error": 1.8243184740640572e-12,
+      "max_prediction_scaled_error": 1.219515821717587e-13,
+      "predictors": [
+        "credit_prior_chart_weeks",
+        "genre_confidence",
+        "sentiment_positive"
+      ],
+      "rank": 5,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 4.774847184307873e-12,
+      "max_prediction_abs_error": 5.282885240376345e-12,
+      "max_prediction_scaled_error": 1.8935356832892439e-13,
+      "predictors": [
+        "credit_prior_top10_song_count",
+        "ll_explicit_language",
+        "lyric_negation_token_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.9326762412674725e-12,
+      "max_prediction_abs_error": 3.1441516057384433e-12,
+      "max_prediction_scaled_error": 1.4379169329668415e-13,
+      "predictors": [
+        "credit_prior_top40_song_count",
+        "debut_reported_last_week_rank",
+        "emotion_amusement"
+      ],
+      "rank": 3,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.4779288903810084e-12,
+      "max_prediction_abs_error": 3.1370461783808423e-12,
+      "max_prediction_scaled_error": 1.3522033096473484e-13,
+      "predictors": [
+        "credit_recent_points_slope",
+        "debut_chart_same_genre_share",
+        "detox_sexual_explicit"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.9326762412674725e-12,
+      "max_prediction_abs_error": 1.836752971939859e-12,
+      "max_prediction_scaled_error": 1.065102913500959e-13,
+      "predictors": [
+        "credited_artist_entity_count",
+        "lyric_word_count",
+        "sentiment_negative"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.5916157281026244e-12,
+      "max_prediction_abs_error": 1.4139800441625994e-12,
+      "max_prediction_scaled_error": 2.657111351030844e-14,
+      "predictors": [
+        "credited_entities_prior_top10_mean",
+        "emotion_excitement",
+        "ll_violence"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 3.552713678800501e-15,
+      "max_prediction_abs_error": 4.440892098500626e-14,
+      "max_prediction_scaled_error": 1.1978723314923862e-14,
+      "predictors": [
+        "detox_toxicity",
+        "emotion_optimism",
+        "ll_substance_use"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 1.3642420526593924e-12,
+      "max_prediction_abs_error": 1.4566126083082054e-12,
+      "max_prediction_scaled_error": 5.814248570671637e-14,
+      "predictors": [
+        "lyric_first_person_plural_share",
+        "secondary_genres",
+        "song_title_prior_usage_count"
+      ],
+      "rank": 18,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 4.547473508864641e-13,
+      "max_prediction_abs_error": 7.105427357601002e-13,
+      "max_prediction_scaled_error": 1.3091470309232476e-14,
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "rank": 5,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 2.5011104298755527e-12,
+      "max_prediction_abs_error": 3.197442310920451e-12,
+      "max_prediction_scaled_error": 6.190200401959249e-14,
+      "predictors": [
+        "credit_previous_entry_best_rank_so_far",
+        "credited_entities_prior_top10_mean",
+        "debut_chart_same_genre_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 4.547473508864641e-13,
+      "max_prediction_abs_error": 7.105427357601002e-13,
+      "max_prediction_scaled_error": 1.3091470309232476e-14,
+      "predictors": [
+        "debut_reported_peak_position",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "rank": 5,
+      "task": "retrospective__observed_lifetime__best_rank"
+    },
+    {
+      "max_metric_abs_error": 2.842170943040401e-14,
+      "max_prediction_abs_error": 1.6608936448392342e-13,
+      "max_prediction_scaled_error": 3.094003662225483e-14,
+      "predictors": [
+        "credit_prior_genre_diversity",
+        "detox_identity_attack",
+        "emotion_disapproval"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-13,
+      "max_prediction_abs_error": 2.1005419625907962e-13,
+      "max_prediction_scaled_error": 1.6602803642480305e-14,
+      "predictors": [
+        "credit_prior_reentry_song_share",
+        "lyric_vocabulary_size",
+        "sentiment_negative"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 2.842170943040401e-14,
+      "max_prediction_abs_error": 2.4424906541753444e-14,
+      "max_prediction_scaled_error": 7.40235419100812e-15,
+      "predictors": [
+        "debut_chart_established_credit_share",
+        "lyric_content_distance_prior_hits",
+        "song_title_has_number"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 2.842170943040401e-14,
+      "max_prediction_abs_error": 2.6645352591003757e-14,
+      "max_prediction_scaled_error": 1.97439261791369e-15,
+      "predictors": [
+        "debut_reported_peak_position",
+        "detox_severe_toxicity",
+        "emotion_gratitude"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-13,
+      "max_prediction_abs_error": 3.9612757518625585e-13,
+      "max_prediction_scaled_error": 3.487223087861017e-14,
+      "predictors": [
+        "debut_reported_weeks_on_chart",
+        "emotion_desire",
+        "secondary_genres"
+      ],
+      "rank": 17,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 5.684341886080802e-14,
+      "max_prediction_abs_error": 3.197442310920451e-14,
+      "max_prediction_scaled_error": 1.8661896356599126e-15,
+      "predictors": [
+        "debut_season_phase",
+        "emotion_nervousness",
+        "lyric_word_count"
+      ],
+      "rank": 5,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.7763568394002505e-15,
+      "max_prediction_abs_error": 5.800915303666443e-15,
+      "max_prediction_scaled_error": 4.279783270612146e-15,
+      "predictors": [
+        "detox_insult",
+        "emotion_amusement",
+        "emotion_embarrassment"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.4210854715202004e-13,
+      "max_prediction_abs_error": 1.887379141862766e-13,
+      "max_prediction_scaled_error": 5.256361136305732e-14,
+      "predictors": [
+        "detox_threat",
+        "emotion_anger",
+        "genre_confidence"
+      ],
+      "rank": 5,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 7.958078640513122e-13,
+      "max_prediction_abs_error": 3.907985046680551e-13,
+      "max_prediction_scaled_error": 3.300780241691465e-14,
+      "predictors": [
+        "emotion_pride",
+        "lyric_compression_ratio",
+        "previous_chart_new_entry_count"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 5.684341886080801e-13,
+      "max_prediction_abs_error": 5.222489107836736e-13,
+      "max_prediction_scaled_error": 9.974008048201297e-14,
+      "predictors": [
+        "genre_confidence",
+        "lyric_repeated_line_share",
+        "sentiment_positive"
+      ],
+      "rank": 5,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.7763568394002505e-15,
+      "max_prediction_abs_error": 2.1316282072803006e-14,
+      "max_prediction_scaled_error": 3.748782973752278e-15,
+      "predictors": [
+        "lyric_content_distance_recent_chart",
+        "lyric_repeated_line_share",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 6.252776074688882e-13,
+      "max_prediction_abs_error": 3.339550858072471e-13,
+      "max_prediction_scaled_error": 1.1399801955057881e-14,
+      "predictors": [
+        "lyric_vocabulary_size",
+        "previous_chart_credit_concentration",
+        "sentiment_positive"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 6.252776074688882e-13,
+      "max_prediction_abs_error": 5.861977570020827e-13,
+      "max_prediction_scaled_error": 4.5628190534938666e-14,
+      "predictors": [
+        "debut_time_years",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "rank": 19,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 2.842170943040401e-14,
+      "max_prediction_abs_error": 2.1094237467877974e-13,
+      "max_prediction_scaled_error": 2.5625287015837273e-14,
+      "predictors": [
+        "credit_prior_chart_rank_volatility",
+        "lyric_compression_ratio",
+        "previous_chart_incumbent_age_median"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-13,
+      "max_prediction_abs_error": 6.907807659217724e-13,
+      "max_prediction_scaled_error": 8.258110385477058e-14,
+      "predictors": [
+        "credit_prior_song_count",
+        "debut_time_years",
+        "genre_confidence"
+      ],
+      "rank": 5,
+      "task": "retrospective__observed_lifetime__chart_weeks"
+    },
+    {
+      "max_metric_abs_error": 2.3283064365386963e-10,
+      "max_prediction_abs_error": 1.7337242752546445e-12,
+      "max_prediction_scaled_error": 3.3600635515875693e-15,
+      "predictors": [
+        "chart_weekday",
+        "detox_obscene",
+        "previous_chart_new_entry_count"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 2.3283064365386963e-10,
+      "max_prediction_abs_error": 8.213874025386758e-12,
+      "max_prediction_scaled_error": 3.149166077544055e-14,
+      "predictors": [
+        "credit_prior_chart_points",
+        "ll_explicit_language",
+        "prior_year_unique_chart_song_count"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.1368683772161603e-13,
+      "max_prediction_abs_error": 5.208278253121534e-12,
+      "max_prediction_scaled_error": 1.6060740095741356e-14,
+      "predictors": [
+        "credit_prior_chart_weeks",
+        "emotion_disgust",
+        "previous_chart_leader_tenure"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 2.3283064365386963e-10,
+      "max_prediction_abs_error": 8.15703060652595e-12,
+      "max_prediction_scaled_error": 3.285941787717271e-14,
+      "predictors": [
+        "credit_prior_reentry_song_share",
+        "lyric_repeated_bigram_share",
+        "sentiment_negative"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 4.889443516731262e-09,
+      "max_prediction_abs_error": 1.326299070569803e-09,
+      "max_prediction_scaled_error": 8.668242750943059e-13,
+      "predictors": [
+        "credit_simultaneous_other_songs",
+        "credited_artist_entity_count",
+        "primary_genre"
+      ],
+      "rank": 18,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 4.656612873077393e-10,
+      "max_prediction_abs_error": 2.3305801732931286e-11,
+      "max_prediction_scaled_error": 3.856869069624974e-14,
+      "predictors": [
+        "credited_entities_prior_top10_mean",
+        "emotion_grief",
+        "lyric_repeated_line_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 0.0,
+      "max_prediction_abs_error": 2.7711166694643907e-13,
+      "max_prediction_scaled_error": 1.3449747540423353e-15,
+      "predictors": [
+        "debut_chart_established_credit_share",
+        "detox_severe_toxicity",
+        "ll_violence"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 2.8405338525772095e-08,
+      "max_prediction_abs_error": 8.731149137020111e-11,
+      "max_prediction_scaled_error": 7.518360678488681e-14,
+      "predictors": [
+        "debut_rank",
+        "emotion_confusion",
+        "lyric_first_person_singular_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 1.3969838619232178e-09,
+      "max_prediction_abs_error": 3.524291969370097e-12,
+      "max_prediction_scaled_error": 6.492396299456699e-15,
+      "predictors": [
+        "debut_time_years",
+        "emotion_confusion",
+        "emotion_excitement"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 6.984919309616089e-10,
+      "max_prediction_abs_error": 7.958078640513122e-12,
+      "max_prediction_scaled_error": 4.548028281830619e-15,
+      "predictors": [
+        "emotion_approval",
+        "emotion_sadness",
+        "same_credit_debut_cluster_size"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 0.0,
+      "max_prediction_abs_error": 4.973799150320701e-13,
+      "max_prediction_scaled_error": 2.5603837021718857e-15,
+      "predictors": [
+        "emotion_approval",
+        "ll_explicit_language",
+        "prior_year_primary_genre_share"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 6.984919309616089e-10,
+      "max_prediction_abs_error": 7.048583938740194e-12,
+      "max_prediction_scaled_error": 6.0966908099223216e-15,
+      "predictors": [
+        "ll_substance_use",
+        "lyric_hapax_share",
+        "lyric_word_count"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 0.0,
+      "max_prediction_abs_error": 1.0686562745831907e-11,
+      "max_prediction_scaled_error": 6.853498018739665e-15,
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "rank": 19,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 4.656612873077393e-10,
+      "max_prediction_abs_error": 1.1027623258996755e-11,
+      "max_prediction_scaled_error": 1.3218377388896172e-14,
+      "predictors": [
+        "lyric_vocabulary_size",
+        "lyric_word_count",
+        "previous_chart_incumbent_age_median"
+      ],
+      "rank": 4,
+      "task": "retrospective__observed_lifetime__chart_points"
+    },
+    {
+      "max_metric_abs_error": 0.0,
+      "max_prediction_abs_error": 1.0686562745831907e-11,
+      "max_prediction_scaled_error": 6.853498018739665e-15,
+      "predictors": [
+        "debut_reported_peak_position",
+        "genre_confidence",
+        "secondary_genres"
+      ],
+      "rank": 19,
+      "task": "retrospective__observed_lifetime__chart_points"
+    }
+  ],
+  "limitations": [
+    "Observed lifetime remains right-censored despite maturity/inactivity proxy",
+    "Retrospective measurements are not historically available forecasts",
+    "Previously inspected evaluation is exploratory"
+  ],
+  "max_scaled_prediction_error": 1.3773296711658168e-10,
+  "preservation": {
+    "baseline_commit": "1414f21052bf1cecc18c22c6f7f8cea8dab16dcb",
+    "bytes": 33779083438,
+    "files": 246564,
+    "status": "PASS"
+  },
+  "selected_prediction_rows_replayed": 98676,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "status": "PASS",
+  "total_candidates": 1311090,
+  "total_fits": 5244360
+}

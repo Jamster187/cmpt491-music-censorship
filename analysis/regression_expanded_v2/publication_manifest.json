@@ -1,0 +1,404 @@
+{
+  "files": {
+    "analysis/regression_expanded_v2/README.md": {
+      "bytes": 9312,
+      "sha256": "4a61ec61d6e6f74c8c2b18019c36cc8e5667c8229ac9494787c1894aa985a384"
+    },
+    "analysis/regression_expanded_v2/audit.json": {
+      "bytes": 716,
+      "sha256": "99f244d431106cc3110e7ee095896f4892e0ad714062c05eac58f99cabae516c"
+    },
+    "analysis/regression_expanded_v2/baselines.csv": {
+      "bytes": 8894,
+      "sha256": "9988f5728ad7dd8a4254b01502496fa4b611b820732a276738b0f1f28c428999"
+    },
+    "analysis/regression_expanded_v2/benchmark.json": {
+      "bytes": 19676,
+      "sha256": "6595b4f93b40c732b4db48ad614a5c36e022a7e909485246af3875f561012993"
+    },
+    "analysis/regression_expanded_v2/cohorts.csv": {
+      "bytes": 11783,
+      "sha256": "1c1bafc56cfcc4c9cd7e679ff37b329a70d4f22834644840715ea3943bd1c566"
+    },
+    "analysis/regression_expanded_v2/coverage.json": {
+      "bytes": 8253,
+      "sha256": "e236dd0b20a51c659bf30aa83b4903f4dc7883e0be600ff192b01c86d736ad35"
+    },
+    "analysis/regression_expanded_v2/determinism.json": {
+      "bytes": 301,
+      "sha256": "45efe6353a14297447fb73cf6c5f75a2b3df90317e88afef844e85d1846c8e9d"
+    },
+    "analysis/regression_expanded_v2/execution.json": {
+      "bytes": 1447,
+      "sha256": "250fcef33bd9f51d895256050a655792f3e5e2cf84ba9ede3486a9f3a2046108"
+    },
+    "analysis/regression_expanded_v2/feature_family_comparison.csv": {
+      "bytes": 2130,
+      "sha256": "554005d1b9525dbdbd3ad524e80ba0b4e94a7e70c7b1358836a2ca70db361733"
+    },
+    "analysis/regression_expanded_v2/feature_family_winners.csv": {
+      "bytes": 10189,
+      "sha256": "abc83c8097262cbab4a2e5412470c41b3b163140046f2aa761fa8d5649d13390"
+    },
+    "analysis/regression_expanded_v2/figures/family_frequency.svg": {
+      "bytes": 46839,
+      "sha256": "7047c55e6a458f82fe8b7eea56aced3709e098bf32f0c419f1c0da8e2200e073"
+    },
+    "analysis/regression_expanded_v2/figures/historical_stability.svg": {
+      "bytes": 47134,
+      "sha256": "688ae87f6060de057d3afd7322e3602c40393763dddf2d9fa0a3b8ac7c4d7a49"
+    },
+    "analysis/regression_expanded_v2/figures/incremental_26_week.svg": {
+      "bytes": 47095,
+      "sha256": "f5301ca38f14e23134a3c19df0fc4ff5e61034ea6f323c47885b4b2b62230dbd"
+    },
+    "analysis/regression_expanded_v2/figures/manifest.json": {
+      "bytes": 1101,
+      "sha256": "452fc7a29cdc17ea830e5e312885f0132901969e7fb245a592f05f429c9234ea"
+    },
+    "analysis/regression_expanded_v2/figures/target_predictability.svg": {
+      "bytes": 52496,
+      "sha256": "371be98cfde12aaa3b38c2c446a97953f5d55c1930421dcab6af32394bce4b6b"
+    },
+    "analysis/regression_expanded_v2/figures/v1_matched_comparison.svg": {
+      "bytes": 47711,
+      "sha256": "a149c7ecad352d3ed1632c6fe1228b1cbeec31b66900a7ff55a44530b93b05a8"
+    },
+    "analysis/regression_expanded_v2/findings.md": {
+      "bytes": 15264,
+      "sha256": "37b8d4af6052390901c4524d4dd103b246a7d13fcc3066bbd84a95df64561861"
+    },
+    "analysis/regression_expanded_v2/focused_predictor_comparison.csv": {
+      "bytes": 72845,
+      "sha256": "3e352b4f0faa89422ed47d0e4546fb3fa88f7512011b0a1d9ddca30d237fce0d"
+    },
+    "analysis/regression_expanded_v2/focused_predictor_summary.csv": {
+      "bytes": 2833,
+      "sha256": "d64e24322a9411e9233440bb0676e1bb986bc3d929507ca33cc2b29cbeec6f4c"
+    },
+    "analysis/regression_expanded_v2/fold_metadata.json": {
+      "bytes": 52626,
+      "sha256": "17d1ceea3a3a9f339592bfca203081af94fa56dd0625a87bb0159153731450b7"
+    },
+    "analysis/regression_expanded_v2/historical_stability.csv": {
+      "bytes": 20020,
+      "sha256": "345abfdf012d7338a8be3eb6020af0131997b74b07df781c85caa67e4408da55"
+    },
+    "analysis/regression_expanded_v2/incremental_information.csv": {
+      "bytes": 6707,
+      "sha256": "4735da7f97b244b66cec7b148652a7f6f39458d012326c6fcadb038c145d7303"
+    },
+    "analysis/regression_expanded_v2/lifetime_censoring_audit.csv": {
+      "bytes": 227,
+      "sha256": "feb4d7b23ec8cce3ae650cabbf446c1380fc4692515d7c0239881acd13c83a26"
+    },
+    "analysis/regression_expanded_v2/lifetime_return_audit.csv": {
+      "bytes": 667,
+      "sha256": "717eef2b9050047bb560aa07877108404f11f69deb8dabcabbc9e71db7d76276"
+    },
+    "analysis/regression_expanded_v2/local_artifacts.json": {
+      "bytes": 3099,
+      "sha256": "5a49f16f0221eaeb452ec79e9d78622af155e73c766621634a6582bdc339487f"
+    },
+    "analysis/regression_expanded_v2/methodology.md": {
+      "bytes": 15023,
+      "sha256": "890cc55c4343dd73bd442bc0ea4ccf5e351d7faaf5ed917bebf8c66b41ec422f"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__best_rank__combined.json": {
+      "bytes": 2199,
+      "sha256": "12889802c4e4767ab0fe1b72b9955bd401020df4ed2c7186a7451c3932b5d7a8"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__best_rank__combined__matched_v1.json": {
+      "bytes": 2201,
+      "sha256": "002785842a1aaad2d194df11aaa227c124376c163adc5d5b66672a775c3071e3"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__best_rank__new.json": {
+      "bytes": 2291,
+      "sha256": "1574324a37065a011422766cbf8a7625b200939ed5c817baee5d322d98d29934"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__best_rank__new__matched_v1.json": {
+      "bytes": 2290,
+      "sha256": "88d22023b9561e2710c2eca989481f137b67cd6cc8f122cdde01cb95428ebfb2"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__best_rank__original.json": {
+      "bytes": 2199,
+      "sha256": "12889802c4e4767ab0fe1b72b9955bd401020df4ed2c7186a7451c3932b5d7a8"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__best_rank__original__matched_v1.json": {
+      "bytes": 2201,
+      "sha256": "002785842a1aaad2d194df11aaa227c124376c163adc5d5b66672a775c3071e3"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__chart_points__combined.json": {
+      "bytes": 4048,
+      "sha256": "be36dac6c3b81f0038674bb94163494f03535e07e0715aec0ae6bc2e94a1f9f4"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__chart_points__combined__matched_v1.json": {
+      "bytes": 4042,
+      "sha256": "d991d9692d90436ed74f307314c946a1acdcd0595f34d495cb1e4756d1013749"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__chart_points__new.json": {
+      "bytes": 2171,
+      "sha256": "1800f58a8d7672ca0fee70e57b5e1d5902045d7fd1e1ae42fcc010d460f76d50"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__chart_points__new__matched_v1.json": {
+      "bytes": 2167,
+      "sha256": "56d65a7697bf6f945cf9087dbcee332d8da663e017646c765110108106984414"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__chart_points__original.json": {
+      "bytes": 4048,
+      "sha256": "be36dac6c3b81f0038674bb94163494f03535e07e0715aec0ae6bc2e94a1f9f4"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__chart_points__original__matched_v1.json": {
+      "bytes": 4042,
+      "sha256": "d991d9692d90436ed74f307314c946a1acdcd0595f34d495cb1e4756d1013749"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__chart_weeks__combined.json": {
+      "bytes": 4096,
+      "sha256": "ba48e528b0c56d762240fe40fdf7de29a1942ae113068cd38ca3916dd515161a"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__chart_weeks__combined__matched_v1.json": {
+      "bytes": 4089,
+      "sha256": "4672d0550e736edc040bfb1fe66351f64a32d842fa33e87e2941b2e7dbe5a1c0"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__chart_weeks__new.json": {
+      "bytes": 2255,
+      "sha256": "189a88eade2140cf17b6e1c90402bf7f7f003388523cb45691c764003e908c2d"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__chart_weeks__new__matched_v1.json": {
+      "bytes": 2255,
+      "sha256": "da2e01d5b47ec426837317efcad8e8fd8a0c3d455c3da767c28f23a267848cd7"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__chart_weeks__original.json": {
+      "bytes": 4033,
+      "sha256": "c4261bf315e2fd4e59ca907d1e84aba0e3c1a393e6ea667454aa5fc35bef6e01"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__26__chart_weeks__original__matched_v1.json": {
+      "bytes": 4029,
+      "sha256": "97b938917ecaa441b0aa39473b0734fcf643f4bf312f98d2eca4019ae858da7a"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__observed_lifetime__best_rank__combined.json": {
+      "bytes": 2301,
+      "sha256": "e991c510ebbe17fd2c62109d044e9d3e6f10f08e99f02b8e7783f4536d3a9381"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__observed_lifetime__best_rank__new.json": {
+      "bytes": 2320,
+      "sha256": "0a546ea156bae4edf4179e87adb73dd8f02265a681946e2e8df8000d35503a41"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__observed_lifetime__best_rank__original.json": {
+      "bytes": 2301,
+      "sha256": "e991c510ebbe17fd2c62109d044e9d3e6f10f08e99f02b8e7783f4536d3a9381"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__observed_lifetime__chart_points__combined.json": {
+      "bytes": 4074,
+      "sha256": "fa56e241d1eea27975b8aadfb0db356507af2bab68256ae24ca7fb8ea7873621"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__observed_lifetime__chart_points__new.json": {
+      "bytes": 2201,
+      "sha256": "5d412e4b50f42db139ff77430d5f543ce33a8eaf5320dfab9bd64e17a2995136"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__observed_lifetime__chart_points__original.json": {
+      "bytes": 4074,
+      "sha256": "fa56e241d1eea27975b8aadfb0db356507af2bab68256ae24ca7fb8ea7873621"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__observed_lifetime__chart_weeks__combined.json": {
+      "bytes": 2292,
+      "sha256": "6ae19260d0764d4ed37b745d5d4b422e6340075f2c4e3672a35ca30ad98f2232"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__observed_lifetime__chart_weeks__new.json": {
+      "bytes": 2305,
+      "sha256": "1fda1a46cb4b5f0de9b386b85d53da72e28228d70717d6aaaf590d581dd6828a"
+    },
+    "analysis/regression_expanded_v2/models/retrospective__observed_lifetime__chart_weeks__original.json": {
+      "bytes": 4065,
+      "sha256": "cbc0f27e8e594d65e12b00bdef2feceea751b597b9ce17662e63e30960d84159"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__best_rank__combined.json": {
+      "bytes": 2127,
+      "sha256": "d7b88d43e489f6041d402a06e7d40584c3071dc95eb35823403cf54d41d59412"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__best_rank__combined__matched_v1.json": {
+      "bytes": 2133,
+      "sha256": "981ee3cdec4f46eda0e6ac85c70b0a288fa9af4e352ff6ca89b0827b7d559d30"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__best_rank__new.json": {
+      "bytes": 2226,
+      "sha256": "da92c2a8ba59b5f672e63d956796f6b85d218aa17cfac77fb2b8f4a8b2ae2d63"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__best_rank__new__matched_v1.json": {
+      "bytes": 2225,
+      "sha256": "0aa5b45c3e9c0de629ed3fe36fe95ed1bedd1050f567092fb05092d999dbb273"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__best_rank__original.json": {
+      "bytes": 1588,
+      "sha256": "110b3f014899263fc529f429bdf7488090c47070b905d2aefa11e3cbdd6ffcd7"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__best_rank__original__matched_v1.json": {
+      "bytes": 1590,
+      "sha256": "fadb408970de53450e74d20d8ccf44f74ffbc4e3c586b3e9aea679751ec9ae4c"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__chart_points__combined.json": {
+      "bytes": 2165,
+      "sha256": "68c1a0214ce12e9835a09f6f6c2690ea5b20283ebf55b99675f815221e9b2f7f"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__chart_points__combined__matched_v1.json": {
+      "bytes": 2166,
+      "sha256": "41aaa2856bc04d48273ac9a87d494a5f008132357ae13dd957e581803b1c66e3"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__chart_points__new.json": {
+      "bytes": 2279,
+      "sha256": "ac30ca050d3f5b46cfdcd4ca004749707f87854f5e767a06cb5c9f2bf9e41592"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__chart_points__new__matched_v1.json": {
+      "bytes": 2279,
+      "sha256": "5d83ea1d88368f171d7b11a39e0a8a6063c5a62f13dc7aad81486f93bd954399"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__chart_points__original.json": {
+      "bytes": 1203,
+      "sha256": "048f49c7b66ec69b99713704b92fb50be04a9f2c180341f1b9b1b568ecb394f9"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__chart_points__original__matched_v1.json": {
+      "bytes": 1204,
+      "sha256": "78bde0ec2f710ada5ad75cc1020b06bb8e163b3d61323299be3d44149b88fdd7"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__chart_weeks__combined.json": {
+      "bytes": 2299,
+      "sha256": "8197f5d9165cd8b5b5e55c1bfecec83c2297686750c7b2fc72572ad81489fc68"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__chart_weeks__combined__matched_v1.json": {
+      "bytes": 2295,
+      "sha256": "57093accc07d4368b5e4a7db2c2e87cf0854a5c5c20735d8bcc60c27362f3aca"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__chart_weeks__new.json": {
+      "bytes": 2299,
+      "sha256": "8197f5d9165cd8b5b5e55c1bfecec83c2297686750c7b2fc72572ad81489fc68"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__chart_weeks__new__matched_v1.json": {
+      "bytes": 2295,
+      "sha256": "57093accc07d4368b5e4a7db2c2e87cf0854a5c5c20735d8bcc60c27362f3aca"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__chart_weeks__original.json": {
+      "bytes": 1202,
+      "sha256": "0e9a5b7e202f08473328d9d3ed533d0c76bb521317ece785bfcc80e32ada1c67"
+    },
+    "analysis/regression_expanded_v2/models/strict__26__chart_weeks__original__matched_v1.json": {
+      "bytes": 1200,
+      "sha256": "b75a57066f411e984e14b4e71bf136c79c8143f991c7ae6ef496c0ad57a0e51b"
+    },
+    "analysis/regression_expanded_v2/models/strict__observed_lifetime__best_rank__combined.json": {
+      "bytes": 2216,
+      "sha256": "767c251c60b918afb3d953cb10b22c2f3825522f0c447fe4221745a50b28aea9"
+    },
+    "analysis/regression_expanded_v2/models/strict__observed_lifetime__best_rank__new.json": {
+      "bytes": 2304,
+      "sha256": "fb502768b00b77e67e7712a9ccbb395f3d33e4c54a08d1f53b8b05841bec61ab"
+    },
+    "analysis/regression_expanded_v2/models/strict__observed_lifetime__best_rank__original.json": {
+      "bytes": 1621,
+      "sha256": "04097296c5737ce299ce0158759efde597f6e08de4d4f1cb6833ca7e57936beb"
+    },
+    "analysis/regression_expanded_v2/models/strict__observed_lifetime__chart_points__combined.json": {
+      "bytes": 2270,
+      "sha256": "75164ae9f3795cddd42257437801909643f14831bb77983f3591cee1c9234497"
+    },
+    "analysis/regression_expanded_v2/models/strict__observed_lifetime__chart_points__new.json": {
+      "bytes": 2269,
+      "sha256": "e6d4ed9ae647b2ed15232158e171cb27059e87bbff616494e05018676de89bce"
+    },
+    "analysis/regression_expanded_v2/models/strict__observed_lifetime__chart_points__original.json": {
+      "bytes": 1700,
+      "sha256": "14253f463a18e0c3b5edd53dba5c11cd5a345a797e157363511662dbbf0609c2"
+    },
+    "analysis/regression_expanded_v2/models/strict__observed_lifetime__chart_weeks__combined.json": {
+      "bytes": 2296,
+      "sha256": "9095f69f7be61a8a0a523e41d139673ad492bf900df1f634337041bc3783eb68"
+    },
+    "analysis/regression_expanded_v2/models/strict__observed_lifetime__chart_weeks__new.json": {
+      "bytes": 2270,
+      "sha256": "017403eaafcd13ffaba972919f99ce0b1667bbf05d16f1684eef57e3321efb80"
+    },
+    "analysis/regression_expanded_v2/models/strict__observed_lifetime__chart_weeks__original.json": {
+      "bytes": 1699,
+      "sha256": "31ea00e34d0643c2c9f869a09cc666bc36d0480bfc1f1aa2c446b33826892131"
+    },
+    "analysis/regression_expanded_v2/predictor_hierarchy_top20_by_count.csv": {
+      "bytes": 1524423,
+      "sha256": "9081eb14a6f226ff6d8cf63e55a7c6a9a8965b040053d60f0d9f182c0d771f53"
+    },
+    "analysis/regression_expanded_v2/predictor_inventory.csv": {
+      "bytes": 16763,
+      "sha256": "a92e9521af28a88948caa4646c4e9ea5b0eeba78bd56eb0942334c7a55efaeb1"
+    },
+    "analysis/regression_expanded_v2/protocol.json": {
+      "bytes": 42420,
+      "sha256": "9b98556e8fcd5bded42e2c8475ee1319bae40021077ad2860622c19bb4fa2a0c"
+    },
+    "analysis/regression_expanded_v2/report_execution.json": {
+      "bytes": 158,
+      "sha256": "a350846a016ac33eff821abaedbe42b242c88d1bf2198e349988ca071c88de07"
+    },
+    "analysis/regression_expanded_v2/search_space.csv": {
+      "bytes": 6866,
+      "sha256": "60a442d3a7adaf5641eb30b2d451def84e3bc321efd113c4425d4ed393d5e070"
+    },
+    "analysis/regression_expanded_v2/selected_uncertainty.csv": {
+      "bytes": 60440,
+      "sha256": "eb049fe6cf30c4b5a2a2ce3e96a8bc4e2bda72730ce20cbeb9299c531aa262d0"
+    },
+    "analysis/regression_expanded_v2/selection_lock.json": {
+      "bytes": 79013,
+      "sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c"
+    },
+    "analysis/regression_expanded_v2/source_column_eligibility.csv": {
+      "bytes": 53668,
+      "sha256": "df2f143e1c05274b4444445468d69f1df6ce09acf3b13350ae3c2fa785b3885c"
+    },
+    "analysis/regression_expanded_v2/target_leaderboard.csv": {
+      "bytes": 30685,
+      "sha256": "e1703dd78a3a8ac88b42adb94f0f3cf721b057c7715e0a1bbf0940bae3023eec"
+    },
+    "analysis/regression_expanded_v2/v1_comparison.csv": {
+      "bytes": 12428,
+      "sha256": "37606c2338fc2ca27f7288e999208a14aa163fd456ae9f44bc0183c8316948b9"
+    },
+    "analysis/regression_expanded_v2/validation.json": {
+      "bytes": 72488,
+      "sha256": "0ca5521b0865882a975393546f6818a64b2a4064919958d1f4c4dc1f6595a20b"
+    },
+    "docs/regression_expanded_v2.md": {
+      "bytes": 1010,
+      "sha256": "c11e54bfd6d03b0f9a9da424a49b1906af82a87374160e07bf8a5da33646488e"
+    },
+    "src/regression_expanded_core.py": {
+      "bytes": 5766,
+      "sha256": "aa42b422b1c8099d15ee901ce081117c6ea554699d35c162578d870748429702"
+    },
+    "src/regression_expanded_report.py": {
+      "bytes": 30531,
+      "sha256": "0a85e7e923240bc83ebc156e44613489097720727d8ea2f3b37465e2c5fea67f"
+    },
+    "src/regression_expanded_search.py": {
+      "bytes": 8435,
+      "sha256": "2183fc310c7df5e1ce39e48574b97535c85a280e75f81cca705a48cf6090a758"
+    },
+    "src/regression_expanded_spec.py": {
+      "bytes": 19999,
+      "sha256": "913dbe1272ee32b5b15a29041fc2d51256075c6d6b9bee44ef83617d5ff0560d"
+    },
+    "src/regression_expanded_store.py": {
+      "bytes": 4977,
+      "sha256": "2da9c7d35650bbf50819e9bf90f526eb4aea6a4344d54304813b6ff80e94d968"
+    },
+    "src/regression_expanded_validate.py": {
+      "bytes": 11354,
+      "sha256": "3febd331d92b0aa0e10c02c7761cff5f4d783222dbd14d7bb3bf77bcccae7ac0"
+    },
+    "tests/test_regression_expanded_v2.py": {
+      "bytes": 7574,
+      "sha256": "ee52a1542cc234331e4a6caa15e48e2c6f6b2edb486991674fc03e083fb7d45b"
+    }
+  },
+  "parent_commit": "1414f21052bf1cecc18c22c6f7f8cea8dab16dcb",
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "status": "VALIDATED",
+  "version": "exhaustive-regression-expanded-v2"
+}

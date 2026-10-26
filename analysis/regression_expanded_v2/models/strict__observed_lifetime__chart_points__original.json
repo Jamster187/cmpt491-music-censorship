@@ -1,0 +1,75 @@
+{
+  "coefficients": [
+    -2.5939748702802475e-14,
+    -213.12409208742787,
+    77.72954290656187
+  ],
+  "encoder": {
+    "names": [
+      "debut_reported_peak_position",
+      "debut_time_years"
+    ],
+    "variables": {
+      "debut_reported_peak_position": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          82.27592706412621
+        ],
+        "median": [
+          86.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "debut_reported_peak_position"
+        ],
+        "std": [
+          16.455364380284625
+        ]
+      },
+      "debut_time_years": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          12.81556740829211
+        ],
+        "median": [
+          10.124780111843501
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "debut_time_years"
+        ],
+        "std": [
+          15.708962563405715
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 24405,
+  "predictors": [
+    "debut_reported_peak_position",
+    "debut_time_years"
+  ],
+  "rank": 3,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "target_center": 572.7107150174145,
+  "task": {
+    "horizon": "observed_lifetime",
+    "target": "chart_points",
+    "task_id": "strict__observed_lifetime__chart_points",
+    "track": "strict"
+  },
+  "training_cutoff": "2018-01-01",
+  "training_ids_sha256": "7435f18a56373da21886dd953222f4cfe40dfd7849b2a70b46404fb38a2f6e64",
+  "training_mean": 572.7107150174145,
+  "training_median": 380.0,
+  "version": "exhaustive-regression-expanded-v2"
+}

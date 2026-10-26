@@ -1,0 +1,104 @@
+{
+  "coefficients": [
+    -3.541003520148262e-15,
+    13.063760677523451,
+    4.7593325218013245,
+    4.348973892873833,
+    5.480044241799825
+  ],
+  "encoder": {
+    "names": [
+      "debut_rank",
+      "debut_time_years",
+      "genre_confidence"
+    ],
+    "variables": {
+      "debut_rank": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          81.51440645409143
+        ],
+        "median": [
+          85.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "debut_rank"
+        ],
+        "std": [
+          15.541700436624172
+        ]
+      },
+      "debut_time_years": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          11.761880384925709
+        ],
+        "median": [
+          10.105614762794582
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "debut_time_years"
+        ],
+        "std": [
+          14.065880105034823
+        ]
+      },
+      "genre_confidence": {
+        "dropped": [],
+        "keep": [
+          0,
+          1
+        ],
+        "kind": "categorical",
+        "levels": [
+          "high",
+          "low",
+          "medium"
+        ],
+        "mean": [
+          0.03764886669227814,
+          0.24868741196055832
+        ],
+        "raw_width": 2,
+        "source_columns": [
+          "genre_confidence"
+        ],
+        "std": [
+          0.1903455529532151,
+          0.4322522216170992
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 15618,
+  "predictors": [
+    "debut_rank",
+    "debut_time_years",
+    "genre_confidence"
+  ],
+  "rank": 5,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "target_center": 39.257779485209376,
+  "task": {
+    "horizon": "26",
+    "target": "best_rank",
+    "task_id": "retrospective__26__best_rank",
+    "track": "retrospective"
+  },
+  "training_cutoff": "2010-01-01",
+  "training_ids_sha256": "92d22c1452e89f6cf89a778a7135bc6ada22753c95e1da3381797d36accda386",
+  "training_mean": 39.257779485209376,
+  "training_median": 36.0,
+  "version": "exhaustive-regression-expanded-v2"
+}

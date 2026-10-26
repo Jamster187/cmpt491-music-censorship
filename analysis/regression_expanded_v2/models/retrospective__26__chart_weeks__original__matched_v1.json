@@ -1,0 +1,174 @@
+{
+  "coefficients": [
+    2.7404926137846785e-15,
+    2.153800121699423,
+    -0.7429136434577954,
+    -1.2985203563020282,
+    -0.07961293046693338,
+    0.14469955085500422,
+    0.1436190856846145,
+    0.36907343907637913,
+    -0.09216846886896307,
+    -0.014055716644154032,
+    0.5445226730914815,
+    -0.06488628292416224,
+    0.06476064807344246,
+    0.0325325208318028,
+    0.01909765286995732,
+    0.6453933151672058,
+    0.47535758408457657,
+    -0.02192810130127712,
+    0.43155159932739084
+  ],
+  "encoder": {
+    "names": [
+      "debut_time_years",
+      "genre_confidence",
+      "secondary_genres"
+    ],
+    "variables": {
+      "debut_time_years": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          11.761880384925709
+        ],
+        "median": [
+          10.105614762794582
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "debut_time_years"
+        ],
+        "std": [
+          14.065880105034823
+        ]
+      },
+      "genre_confidence": {
+        "dropped": [],
+        "keep": [
+          0,
+          1
+        ],
+        "kind": "categorical",
+        "levels": [
+          "high",
+          "low",
+          "medium"
+        ],
+        "mean": [
+          0.03764886669227814,
+          0.24868741196055832
+        ],
+        "raw_width": 2,
+        "source_columns": [
+          "genre_confidence"
+        ],
+        "std": [
+          0.1903455529532151,
+          0.4322522216170992
+        ]
+      },
+      "secondary_genres": {
+        "dropped": [],
+        "keep": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "kind": "multilabel",
+        "levels": [
+          "Afrobeats / African Pop",
+          "Alternative / Indie",
+          "Country",
+          "Electronic / Dance",
+          "Folk / Singer-Songwriter",
+          "Gospel / Christian",
+          "Hip-Hop / Rap",
+          "Jazz / Blues",
+          "Latin",
+          "Metal",
+          "Other",
+          "Pop",
+          "R&B / Soul",
+          "Reggae / Dancehall",
+          "Rock"
+        ],
+        "mean": [
+          0.0001920860545524395,
+          0.04674093994109361,
+          0.02734024843129722,
+          0.10276603918555513,
+          0.0466769112562428,
+          0.00525035215776668,
+          0.028876936867716738,
+          0.0549366116019977,
+          0.006658983224484569,
+          0.02080932257651428,
+          0.0012165450121654502,
+          0.36368292995261875,
+          0.07888333973620182,
+          0.004353950569855295,
+          0.21289537712895376
+        ],
+        "raw_width": 15,
+        "source_columns": [
+          "secondary_genres"
+        ],
+        "std": [
+          0.013858180165522666,
+          0.21108345381511243,
+          0.16307286483965433,
+          0.3036530592232986,
+          0.21094591063071033,
+          0.07226884501627318,
+          0.16746062040030377,
+          0.2278564905981152,
+          0.08133044428072801,
+          0.14274555919684806,
+          0.03485778292431727,
+          0.48105889079581243,
+          0.26955659600214715,
+          0.06584066892347427,
+          0.4093542909584243
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 15618,
+  "predictors": [
+    "debut_time_years",
+    "genre_confidence",
+    "secondary_genres"
+  ],
+  "rank": 19,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "target_center": 12.284287360737611,
+  "task": {
+    "horizon": "26",
+    "target": "chart_weeks",
+    "task_id": "retrospective__26__chart_weeks",
+    "track": "retrospective"
+  },
+  "training_cutoff": "2010-01-01",
+  "training_ids_sha256": "92d22c1452e89f6cf89a778a7135bc6ada22753c95e1da3381797d36accda386",
+  "training_mean": 12.284287360737611,
+  "training_median": 11.0,
+  "version": "exhaustive-regression-expanded-v2"
+}

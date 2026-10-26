@@ -1,0 +1,5 @@
+cutoff,eligible_mature_inactive,later_returned_by_source_endpoint,return_fraction,note
+1990-01-01,14300,35,0.00244755244755245,"Future returns are used ONLY in this retrospective limitation audit, not historical cohort eligibility"
+2000-01-01,18054,43,0.00238174365791514,"Future returns are used ONLY in this retrospective limitation audit, not historical cohort eligibility"
+2010-01-01,21205,60,0.00282952133930677,"Future returns are used ONLY in this retrospective limitation audit, not historical cohort eligibility"
+2018-01-01,24405,44,0.00180290923990985,"Future returns are used ONLY in this retrospective limitation audit, not historical cohort eligibility"

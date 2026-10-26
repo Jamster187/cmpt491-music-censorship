@@ -1,0 +1,27 @@
+[
+  {
+    "file": "target_predictability.svg",
+    "sha256": "371be98cfde12aaa3b38c2c446a97953f5d55c1930421dcab6af32394bce4b6b",
+    "title": "Exploratory target predictability; observed lifetime is a selected cohort"
+  },
+  {
+    "file": "incremental_26_week.svg",
+    "sha256": "f5301ca38f14e23134a3c19df0fc4ff5e61034ea6f323c47885b4b2b62230dbd",
+    "title": "Original, new and combined predictors on identical populations"
+  },
+  {
+    "file": "historical_stability.svg",
+    "sha256": "688ae87f6060de057d3afd7322e3602c40393763dddf2d9fa0a3b8ac7c4d7a49",
+    "title": "Historical stability of selected combined 26-week models"
+  },
+  {
+    "file": "v1_matched_comparison.svg",
+    "sha256": "a149c7ecad352d3ed1632c6fe1228b1cbeec31b66900a7ff55a44530b93b05a8",
+    "title": "Identical 26-week outcomes, training identities and evaluation identities; selection methods differ"
+  },
+  {
+    "file": "family_frequency.svg",
+    "sha256": "7047c55e6a458f82fe8b7eea56aced3709e098bf32f0c419f1c0da8e2200e073",
+    "title": "Selection frequencies across correlated outcomes are descriptive, not causal"
+  }
+]

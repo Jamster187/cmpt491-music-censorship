@@ -1,0 +1,98 @@
+{
+  "coefficients": [
+    -3.923825160327677e-15,
+    -0.7598676865594504,
+    -0.9721908105298244,
+    2.6695020860103034
+  ],
+  "encoder": {
+    "names": [
+      "credit_prior_chart_rank_volatility",
+      "lyric_compression_ratio",
+      "previous_chart_incumbent_age_median"
+    ],
+    "variables": {
+      "credit_prior_chart_rank_volatility": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          10.0873226873337
+        ],
+        "median": [
+          10.2431829882888
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "credit_prior_chart_rank_volatility"
+        ],
+        "std": [
+          2.9655246074354347
+        ]
+      },
+      "lyric_compression_ratio": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          0.337572103936048
+        ],
+        "median": [
+          0.333773959021811
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "lyric_compression_ratio"
+        ],
+        "std": [
+          0.07780073494995608
+        ]
+      },
+      "previous_chart_incumbent_age_median": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          7.1003816562670385
+        ],
+        "median": [
+          7.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "previous_chart_incumbent_age_median"
+        ],
+        "std": [
+          2.111490337601512
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 16507,
+  "predictors": [
+    "credit_prior_chart_rank_volatility",
+    "lyric_compression_ratio",
+    "previous_chart_incumbent_age_median"
+  ],
+  "rank": 4,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "target_center": 12.887199369964257,
+  "task": {
+    "horizon": "observed_lifetime",
+    "target": "chart_weeks",
+    "task_id": "retrospective__observed_lifetime__chart_weeks",
+    "track": "retrospective"
+  },
+  "training_cutoff": "2018-01-01",
+  "training_ids_sha256": "514eb8e18bf7d82dbc166ddb9e525332939b88a2af0c2d7d8f1aee9255610012",
+  "training_mean": 12.887199369964257,
+  "training_median": 12.0,
+  "version": "exhaustive-regression-expanded-v2"
+}

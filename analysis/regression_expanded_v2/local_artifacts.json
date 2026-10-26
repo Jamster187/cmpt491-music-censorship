@@ -1,0 +1,80 @@
+[
+  {
+    "bytes": 1987943,
+    "path": "data/experiments/regression_expanded_v2/hierarchies/strict__26__best_rank.csv.gz",
+    "rows": 8473,
+    "sha256": "ad3db949ff968615ca3d70f687e893234407379330e5bfa87add1fa0d744e37f"
+  },
+  {
+    "bytes": 1974093,
+    "path": "data/experiments/regression_expanded_v2/hierarchies/strict__26__chart_weeks.csv.gz",
+    "rows": 8473,
+    "sha256": "9da03469ba5b90f0dfc20f51216e3154e49bbd58973eff12b59d82e472606b28"
+  },
+  {
+    "bytes": 2004600,
+    "path": "data/experiments/regression_expanded_v2/hierarchies/strict__26__chart_points.csv.gz",
+    "rows": 8473,
+    "sha256": "3cd146f82ef4efcff8f55bede7edc24f5899605f6ad6d6cd494cc05aff45ef60"
+  },
+  {
+    "bytes": 1980246,
+    "path": "data/experiments/regression_expanded_v2/hierarchies/strict__observed_lifetime__best_rank.csv.gz",
+    "rows": 8473,
+    "sha256": "0b086ea9e72e4c57b7c5b55d44524c055cd3e2e4b4f834f03c03cecca97d3c89"
+  },
+  {
+    "bytes": 1967673,
+    "path": "data/experiments/regression_expanded_v2/hierarchies/strict__observed_lifetime__chart_weeks.csv.gz",
+    "rows": 8473,
+    "sha256": "a3855b58479f2ffc879de79237257757610019624031977c3c2ed35da9788377"
+  },
+  {
+    "bytes": 2009053,
+    "path": "data/experiments/regression_expanded_v2/hierarchies/strict__observed_lifetime__chart_points.csv.gz",
+    "rows": 8473,
+    "sha256": "1e56b9aca5ad9310e4267b1539c2599d71241e3e8a5566f145944bd39d507c97"
+  },
+  {
+    "bytes": 54738040,
+    "path": "data/experiments/regression_expanded_v2/hierarchies/retrospective__26__best_rank.csv.gz",
+    "rows": 210042,
+    "sha256": "4defb415a39a12d327201537fb632fa42863635c66726227e8d06d7f44ca4d51"
+  },
+  {
+    "bytes": 54384807,
+    "path": "data/experiments/regression_expanded_v2/hierarchies/retrospective__26__chart_weeks.csv.gz",
+    "rows": 210042,
+    "sha256": "472d31fd120f054bdef0b6a686590edfce8527251fd24fd4c464febf34f9e106"
+  },
+  {
+    "bytes": 54910148,
+    "path": "data/experiments/regression_expanded_v2/hierarchies/retrospective__26__chart_points.csv.gz",
+    "rows": 210042,
+    "sha256": "97c1c6c18c13976fa137c825b32364650f3292ab2c44eca5bc5e77e8c1dab0f0"
+  },
+  {
+    "bytes": 54803040,
+    "path": "data/experiments/regression_expanded_v2/hierarchies/retrospective__observed_lifetime__best_rank.csv.gz",
+    "rows": 210042,
+    "sha256": "9e5889356878fc664d7274694faabae67d20725c71ab463ebfd6338daa6d126b"
+  },
+  {
+    "bytes": 54335639,
+    "path": "data/experiments/regression_expanded_v2/hierarchies/retrospective__observed_lifetime__chart_weeks.csv.gz",
+    "rows": 210042,
+    "sha256": "ee98bf45f7fe064e6da105d5712c7e8ccd7cbf8fa9fb8b25be214096bf7987c8"
+  },
+  {
+    "bytes": 55339084,
+    "path": "data/experiments/regression_expanded_v2/hierarchies/retrospective__observed_lifetime__chart_points.csv.gz",
+    "rows": 210042,
+    "sha256": "5e30fc5d1de315bf32370b3082842320a96c8db256bc1cacd419ad4a98c484d4"
+  },
+  {
+    "bytes": 4797940,
+    "path": "data/experiments/regression_expanded_v2/selected_predictions.csv.gz",
+    "rows": 98676,
+    "sha256": "460c813a27d46c83167fd71e7db3f314de2d3a9163bb79127940b1420199ff1a"
+  }
+]

@@ -1,0 +1,104 @@
+{
+  "coefficients": [
+    -3.528286376876146e-14,
+    12.90616806418601,
+    5.137152990956373,
+    4.3854718065663185,
+    5.6727633046243895
+  ],
+  "encoder": {
+    "names": [
+      "debut_reported_peak_position",
+      "debut_time_years",
+      "genre_confidence"
+    ],
+    "variables": {
+      "debut_reported_peak_position": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          81.01750772399588
+        ],
+        "median": [
+          85.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "debut_reported_peak_position"
+        ],
+        "std": [
+          16.675417315153
+        ]
+      },
+      "debut_time_years": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          13.375185759068373
+        ],
+        "median": [
+          11.466354545267869
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "debut_time_years"
+        ],
+        "std": [
+          15.235063505904224
+        ]
+      },
+      "genre_confidence": {
+        "dropped": [],
+        "keep": [
+          0,
+          1
+        ],
+        "kind": "categorical",
+        "levels": [
+          "high",
+          "low",
+          "medium"
+        ],
+        "mean": [
+          0.03568183195008178,
+          0.2422002786696553
+        ],
+        "raw_width": 2,
+        "source_columns": [
+          "genre_confidence"
+        ],
+        "std": [
+          0.18549565714260782,
+          0.42841487332023925
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 16507,
+  "predictors": [
+    "debut_reported_peak_position",
+    "debut_time_years",
+    "genre_confidence"
+  ],
+  "rank": 5,
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "target_center": 39.201308535772704,
+  "task": {
+    "horizon": "observed_lifetime",
+    "target": "best_rank",
+    "task_id": "retrospective__observed_lifetime__best_rank",
+    "track": "retrospective"
+  },
+  "training_cutoff": "2018-01-01",
+  "training_ids_sha256": "514eb8e18bf7d82dbc166ddb9e525332939b88a2af0c2d7d8f1aee9255610012",
+  "training_mean": 39.201308535772704,
+  "training_median": 36.0,
+  "version": "exhaustive-regression-expanded-v2"
+}

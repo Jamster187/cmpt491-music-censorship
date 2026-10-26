@@ -1,0 +1,28 @@
+{
+  "elapsed_seconds_this_invocation": 225.351202958,
+  "free_disk_bytes": 12275113984,
+  "peak_rss_bytes": 717389824,
+  "provenance": {
+    "code_sha256": {
+      "analysis/planning/regression_search/audit.py": "b8f615e4d7beb2e3fc17c555585aec9a937cd57e28c523348b4aa936e7b5af25",
+      "src/feature_expansion_common.py": "f75b3392144b7e5ef4c899c2a709442ba4316f38e0646f108880d226464aaa36",
+      "src/regression_core.py": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69",
+      "src/regression_expanded_core.py": "aa42b422b1c8099d15ee901ce081117c6ea554699d35c162578d870748429702",
+      "src/regression_expanded_search.py": "2183fc310c7df5e1ce39e48574b97535c85a280e75f81cca705a48cf6090a758",
+      "src/regression_expanded_spec.py": "913dbe1272ee32b5b15a29041fc2d51256075c6d6b9bee44ef83617d5ff0560d",
+      "src/regression_expanded_store.py": "2da9c7d35650bbf50819e9bf90f526eb4aea6a4344d54304813b6ff80e94d968",
+      "src/regression_spec.py": "b3e530f9824b029cd464f3c1cd413252affa6e153a9089fda833f4c469824408"
+    },
+    "environment": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "platform": "macOS-13.6.6-arm64-arm-64bit",
+      "python": "3.9.6",
+      "scipy": "1.13.1",
+      "sqlite": "3.35.5"
+    },
+    "protocol_sha256": "e2d985144db2ce4c2968448bff450b739f2c25f07c4de04bea5da20c6ef774c7"
+  },
+  "selection_sha256": "8bdd7075bad19184bbfcdc950e29e4ff72e8f4de525aa9f7a86eed4bdd93635c",
+  "status": "COMPLETE"
+}

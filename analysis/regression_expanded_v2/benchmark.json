@@ -1,0 +1,665 @@
+{
+  "budget_seconds": 7200,
+  "conservative_total_seconds": 641.8229342656425,
+  "elapsed_seconds": 13.136299875,
+  "free_disk_bytes": 12786073600,
+  "independent_svd_checks": [
+    {
+      "fold": 0,
+      "horizon": "26",
+      "max_metric_abs_error": 0.0,
+      "max_prediction_abs_error": 6.0609295360336546e-12,
+      "max_prediction_scaled_error": 1.3862974612068473e-13,
+      "predictors": [
+        "artist_credit_feature_marker"
+      ],
+      "rank": 2,
+      "track": "strict"
+    },
+    {
+      "fold": 0,
+      "horizon": "26",
+      "max_metric_abs_error": 1.1641532182693481e-10,
+      "max_prediction_abs_error": 2.9558577807620168e-12,
+      "max_prediction_scaled_error": 9.792274014603448e-15,
+      "predictors": [
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size",
+        "song_title_has_number"
+      ],
+      "rank": 4,
+      "track": "strict"
+    },
+    {
+      "fold": 0,
+      "horizon": "26",
+      "max_metric_abs_error": 9.19681042432785e-09,
+      "max_prediction_abs_error": 1.8599166651256382e-10,
+      "max_prediction_scaled_error": 1.2102190294676695e-13,
+      "predictors": [
+        "debut_rank",
+        "debut_reported_peak_position"
+      ],
+      "rank": 3,
+      "track": "strict"
+    },
+    {
+      "fold": 1,
+      "horizon": "26",
+      "max_metric_abs_error": 2.9103830456733704e-09,
+      "max_prediction_abs_error": 3.795719294430455e-11,
+      "max_prediction_scaled_error": 2.9965665749228053e-13,
+      "predictors": [
+        "artist_credit_feature_marker"
+      ],
+      "rank": 2,
+      "track": "strict"
+    },
+    {
+      "fold": 1,
+      "horizon": "26",
+      "max_metric_abs_error": 1.1641532182693481e-10,
+      "max_prediction_abs_error": 1.2164491636212915e-11,
+      "max_prediction_scaled_error": 1.2837746817574468e-14,
+      "predictors": [
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size",
+        "song_title_has_number"
+      ],
+      "rank": 4,
+      "track": "strict"
+    },
+    {
+      "fold": 1,
+      "horizon": "26",
+      "max_metric_abs_error": 3.6088749766349792e-09,
+      "max_prediction_abs_error": 1.864464138634503e-11,
+      "max_prediction_scaled_error": 1.286415183171447e-14,
+      "predictors": [
+        "debut_rank",
+        "debut_reported_peak_position"
+      ],
+      "rank": 3,
+      "track": "strict"
+    },
+    {
+      "fold": 2,
+      "horizon": "26",
+      "max_metric_abs_error": 4.423782229423523e-09,
+      "max_prediction_abs_error": 5.4001247917767614e-11,
+      "max_prediction_scaled_error": 2.4227267344530724e-13,
+      "predictors": [
+        "artist_credit_feature_marker"
+      ],
+      "rank": 2,
+      "track": "strict"
+    },
+    {
+      "fold": 2,
+      "horizon": "26",
+      "max_metric_abs_error": 1.7462298274040222e-10,
+      "max_prediction_abs_error": 4.433786671143025e-12,
+      "max_prediction_scaled_error": 7.052528370163669e-15,
+      "predictors": [
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size",
+        "song_title_has_number"
+      ],
+      "rank": 4,
+      "track": "strict"
+    },
+    {
+      "fold": 2,
+      "horizon": "26",
+      "max_metric_abs_error": 1.1641532182693481e-10,
+      "max_prediction_abs_error": 2.3874235921539366e-12,
+      "max_prediction_scaled_error": 1.86927905163543e-15,
+      "predictors": [
+        "debut_rank",
+        "debut_reported_peak_position"
+      ],
+      "rank": 3,
+      "track": "strict"
+    },
+    {
+      "fold": 0,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 4.0745362639427185e-10,
+      "max_prediction_abs_error": 6.30961949354969e-12,
+      "max_prediction_scaled_error": 1.4553802509293847e-13,
+      "predictors": [
+        "artist_credit_feature_marker"
+      ],
+      "rank": 2,
+      "track": "strict"
+    },
+    {
+      "fold": 0,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 7.566995918750763e-10,
+      "max_prediction_abs_error": 4.376943252282217e-12,
+      "max_prediction_scaled_error": 1.9979706894033946e-14,
+      "predictors": [
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size",
+        "song_title_has_number"
+      ],
+      "rank": 4,
+      "track": "strict"
+    },
+    {
+      "fold": 0,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 5.820766091346741e-10,
+      "max_prediction_abs_error": 1.4142642612569034e-10,
+      "max_prediction_scaled_error": 1.0989864577681947e-13,
+      "predictors": [
+        "debut_rank",
+        "debut_reported_peak_position"
+      ],
+      "rank": 3,
+      "track": "strict"
+    },
+    {
+      "fold": 1,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 9.313225746154785e-10,
+      "max_prediction_abs_error": 5.229594535194337e-12,
+      "max_prediction_scaled_error": 1.2447999438692457e-13,
+      "predictors": [
+        "artist_credit_feature_marker"
+      ],
+      "rank": 2,
+      "track": "strict"
+    },
+    {
+      "fold": 1,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 2.3283064365386963e-10,
+      "max_prediction_abs_error": 1.9042545318370685e-12,
+      "max_prediction_scaled_error": 7.243234369137235e-15,
+      "predictors": [
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size",
+        "song_title_has_number"
+      ],
+      "rank": 4,
+      "track": "strict"
+    },
+    {
+      "fold": 1,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 1.2456439435482025e-08,
+      "max_prediction_abs_error": 2.9672264645341784e-11,
+      "max_prediction_scaled_error": 1.8773612594925477e-14,
+      "predictors": [
+        "debut_rank",
+        "debut_reported_peak_position"
+      ],
+      "rank": 3,
+      "track": "strict"
+    },
+    {
+      "fold": 2,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 3.4924596548080444e-10,
+      "max_prediction_abs_error": 1.014655026665423e-11,
+      "max_prediction_scaled_error": 4.642436393422014e-14,
+      "predictors": [
+        "artist_credit_feature_marker"
+      ],
+      "rank": 2,
+      "track": "strict"
+    },
+    {
+      "fold": 2,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 2.561137080192566e-09,
+      "max_prediction_abs_error": 2.5579538487363607e-11,
+      "max_prediction_scaled_error": 3.0188387728060854e-14,
+      "predictors": [
+        "prior_year_unique_chart_song_count",
+        "same_credit_debut_cluster_size",
+        "song_title_has_number"
+      ],
+      "rank": 4,
+      "track": "strict"
+    },
+    {
+      "fold": 2,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 6.6356733441352844e-09,
+      "max_prediction_abs_error": 5.519495971384458e-11,
+      "max_prediction_scaled_error": 3.633910402450077e-14,
+      "predictors": [
+        "debut_rank",
+        "debut_reported_peak_position"
+      ],
+      "rank": 3,
+      "track": "strict"
+    },
+    {
+      "fold": 0,
+      "horizon": "26",
+      "max_metric_abs_error": 1.1641532182693481e-10,
+      "max_prediction_abs_error": 4.064304448547773e-12,
+      "max_prediction_scaled_error": 3.138211296919155e-14,
+      "predictors": [
+        "artist_credit_feature_marker"
+      ],
+      "rank": 2,
+      "track": "retrospective"
+    },
+    {
+      "fold": 0,
+      "horizon": "26",
+      "max_metric_abs_error": 5.238689482212067e-10,
+      "max_prediction_abs_error": 4.348521542851813e-11,
+      "max_prediction_scaled_error": 6.496760103244444e-14,
+      "predictors": [
+        "secondary_genres",
+        "sentiment_positive",
+        "song_title_prior_usage_count"
+      ],
+      "rank": 18,
+      "track": "retrospective"
+    },
+    {
+      "fold": 0,
+      "horizon": "26",
+      "max_metric_abs_error": 3.2014213502407074e-09,
+      "max_prediction_abs_error": 6.697007393086096e-10,
+      "max_prediction_scaled_error": 4.928992771604657e-13,
+      "predictors": [
+        "debut_rank",
+        "debut_reported_peak_position",
+        "primary_genre"
+      ],
+      "rank": 17,
+      "track": "retrospective"
+    },
+    {
+      "fold": 1,
+      "horizon": "26",
+      "max_metric_abs_error": 1.1641532182693481e-10,
+      "max_prediction_abs_error": 9.663381206337363e-13,
+      "max_prediction_scaled_error": 3.603193769113905e-15,
+      "predictors": [
+        "artist_credit_feature_marker"
+      ],
+      "rank": 2,
+      "track": "retrospective"
+    },
+    {
+      "fold": 1,
+      "horizon": "26",
+      "max_metric_abs_error": 1.280568540096283e-09,
+      "max_prediction_abs_error": 1.5199930203380063e-10,
+      "max_prediction_scaled_error": 1.5646801215653882e-13,
+      "predictors": [
+        "secondary_genres",
+        "sentiment_positive",
+        "song_title_prior_usage_count"
+      ],
+      "rank": 18,
+      "track": "retrospective"
+    },
+    {
+      "fold": 1,
+      "horizon": "26",
+      "max_metric_abs_error": 1.2922100722789764e-08,
+      "max_prediction_abs_error": 2.0122570276726037e-10,
+      "max_prediction_scaled_error": 1.4774059119147642e-13,
+      "predictors": [
+        "debut_rank",
+        "debut_reported_peak_position",
+        "primary_genre"
+      ],
+      "rank": 17,
+      "track": "retrospective"
+    },
+    {
+      "fold": 2,
+      "horizon": "26",
+      "max_metric_abs_error": 6.693881005048752e-09,
+      "max_prediction_abs_error": 9.532641342957504e-11,
+      "max_prediction_scaled_error": 2.7250136480691225e-13,
+      "predictors": [
+        "artist_credit_feature_marker"
+      ],
+      "rank": 2,
+      "track": "retrospective"
+    },
+    {
+      "fold": 2,
+      "horizon": "26",
+      "max_metric_abs_error": 1.3969838619232178e-09,
+      "max_prediction_abs_error": 1.0106759873451665e-10,
+      "max_prediction_scaled_error": 1.1630809383776874e-13,
+      "predictors": [
+        "secondary_genres",
+        "sentiment_positive",
+        "song_title_prior_usage_count"
+      ],
+      "rank": 18,
+      "track": "retrospective"
+    },
+    {
+      "fold": 2,
+      "horizon": "26",
+      "max_metric_abs_error": 2.735760062932968e-09,
+      "max_prediction_abs_error": 4.90899765281938e-10,
+      "max_prediction_scaled_error": 3.853553412244775e-13,
+      "predictors": [
+        "debut_rank",
+        "debut_reported_peak_position",
+        "primary_genre"
+      ],
+      "rank": 17,
+      "track": "retrospective"
+    },
+    {
+      "fold": 0,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 1.7462298274040222e-10,
+      "max_prediction_abs_error": 2.262368070660159e-11,
+      "max_prediction_scaled_error": 1.3855620011685556e-13,
+      "predictors": [
+        "artist_credit_feature_marker"
+      ],
+      "rank": 2,
+      "track": "retrospective"
+    },
+    {
+      "fold": 0,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 3.4924596548080444e-10,
+      "max_prediction_abs_error": 5.354650056688115e-11,
+      "max_prediction_scaled_error": 1.1399214528249752e-13,
+      "predictors": [
+        "secondary_genres",
+        "sentiment_positive",
+        "song_title_prior_usage_count"
+      ],
+      "rank": 17,
+      "track": "retrospective"
+    },
+    {
+      "fold": 0,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 1.461012288928032e-08,
+      "max_prediction_abs_error": 2.321399961147108e-09,
+      "max_prediction_scaled_error": 2.0970741928597144e-12,
+      "predictors": [
+        "debut_rank",
+        "debut_reported_peak_position",
+        "primary_genre"
+      ],
+      "rank": 17,
+      "track": "retrospective"
+    },
+    {
+      "fold": 1,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 1.862645149230957e-09,
+      "max_prediction_abs_error": 1.7962520360015333e-11,
+      "max_prediction_scaled_error": 1.3714365787168348e-13,
+      "predictors": [
+        "artist_credit_feature_marker"
+      ],
+      "rank": 2,
+      "track": "retrospective"
+    },
+    {
+      "fold": 1,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 2.7939677238464355e-09,
+      "max_prediction_abs_error": 6.798472895752639e-11,
+      "max_prediction_scaled_error": 8.387153524180047e-14,
+      "predictors": [
+        "secondary_genres",
+        "sentiment_positive",
+        "song_title_prior_usage_count"
+      ],
+      "rank": 18,
+      "track": "retrospective"
+    },
+    {
+      "fold": 1,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 7.683411240577698e-09,
+      "max_prediction_abs_error": 1.4279066817834973e-10,
+      "max_prediction_scaled_error": 1.0194347036192585e-13,
+      "predictors": [
+        "debut_rank",
+        "debut_reported_peak_position",
+        "primary_genre"
+      ],
+      "rank": 17,
+      "track": "retrospective"
+    },
+    {
+      "fold": 2,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 1.0477378964424133e-09,
+      "max_prediction_abs_error": 5.701394911739044e-11,
+      "max_prediction_scaled_error": 1.5347703287089469e-13,
+      "predictors": [
+        "artist_credit_feature_marker"
+      ],
+      "rank": 2,
+      "track": "retrospective"
+    },
+    {
+      "fold": 2,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 8.381903171539307e-09,
+      "max_prediction_abs_error": 1.5779733075760305e-10,
+      "max_prediction_scaled_error": 1.7607918694224455e-13,
+      "predictors": [
+        "secondary_genres",
+        "sentiment_positive",
+        "song_title_prior_usage_count"
+      ],
+      "rank": 18,
+      "track": "retrospective"
+    },
+    {
+      "fold": 2,
+      "horizon": "observed_lifetime",
+      "max_metric_abs_error": 1.1292286217212677e-08,
+      "max_prediction_abs_error": 4.804974196304101e-10,
+      "max_prediction_scaled_error": 3.320414828243411e-13,
+      "predictors": [
+        "debut_rank",
+        "debut_reported_peak_position",
+        "primary_genre"
+      ],
+      "rank": 17,
+      "track": "retrospective"
+    }
+  ],
+  "peak_rss_bytes": 679428096,
+  "projected_validation_seconds": 123.59445637969276,
+  "projection": "3 targets per measured track/horizon; evaluation allowance 2/3 validation runtime; 2x compute contingency plus loading/cache and 180s reporting allowance",
+  "provenance": {
+    "code_sha256": {
+      "analysis/planning/regression_search/audit.py": "b8f615e4d7beb2e3fc17c555585aec9a937cd57e28c523348b4aa936e7b5af25",
+      "src/feature_expansion_common.py": "f75b3392144b7e5ef4c899c2a709442ba4316f38e0646f108880d226464aaa36",
+      "src/regression_core.py": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69",
+      "src/regression_expanded_core.py": "aa42b422b1c8099d15ee901ce081117c6ea554699d35c162578d870748429702",
+      "src/regression_expanded_search.py": "2183fc310c7df5e1ce39e48574b97535c85a280e75f81cca705a48cf6090a758",
+      "src/regression_expanded_spec.py": "913dbe1272ee32b5b15a29041fc2d51256075c6d6b9bee44ef83617d5ff0560d",
+      "src/regression_expanded_store.py": "2da9c7d35650bbf50819e9bf90f526eb4aea6a4344d54304813b6ff80e94d968",
+      "src/regression_spec.py": "b3e530f9824b029cd464f3c1cd413252affa6e153a9089fda833f4c469824408"
+    },
+    "environment": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "platform": "macOS-13.6.6-arm64-arm-64bit",
+      "python": "3.9.6",
+      "scipy": "1.13.1",
+      "sqlite": "3.35.5"
+    },
+    "protocol_sha256": "e2d985144db2ce4c2968448bff450b739f2c25f07c4de04bea5da20c6ef774c7"
+  },
+  "rows": [
+    {
+      "catalog": 8473,
+      "encoded_width": 37,
+      "fold": 0,
+      "horizon": "26",
+      "n_train": 16070,
+      "n_validation": 3276,
+      "prepare_seconds": 5.867966249999999,
+      "projected_validation_seconds": 0.30848263038889945,
+      "sampled": 396,
+      "seconds": 0.014417458000000494,
+      "track": "strict"
+    },
+    {
+      "catalog": 8473,
+      "encoded_width": 37,
+      "fold": 1,
+      "horizon": "26",
+      "n_train": 19537,
+      "n_validation": 3185,
+      "prepare_seconds": 0.14103620800000005,
+      "projected_validation_seconds": 0.28618753562375,
+      "sampled": 396,
+      "seconds": 0.013375459000000589,
+      "track": "strict"
+    },
+    {
+      "catalog": 8473,
+      "encoded_width": 37,
+      "fold": 2,
+      "horizon": "26",
+      "n_train": 22870,
+      "n_validation": 3111,
+      "prepare_seconds": 0.15248833299999998,
+      "projected_validation_seconds": 0.24121929195959368,
+      "sampled": 396,
+      "seconds": 0.011273791999999894,
+      "track": "strict"
+    },
+    {
+      "catalog": 8473,
+      "encoded_width": 37,
+      "fold": 0,
+      "horizon": "observed_lifetime",
+      "n_train": 14300,
+      "n_validation": 1794,
+      "prepare_seconds": 1.6132374580000004,
+      "projected_validation_seconds": 0.17888601993181935,
+      "sampled": 396,
+      "seconds": 0.008360541000000055,
+      "track": "strict"
+    },
+    {
+      "catalog": 8473,
+      "encoded_width": 37,
+      "fold": 1,
+      "horizon": "observed_lifetime",
+      "n_train": 18054,
+      "n_validation": 1520,
+      "prepare_seconds": 1.1759544999999996,
+      "projected_validation_seconds": 0.1703916234671448,
+      "sampled": 396,
+      "seconds": 0.007963540999998742,
+      "track": "strict"
+    },
+    {
+      "catalog": 8473,
+      "encoded_width": 37,
+      "fold": 2,
+      "horizon": "observed_lifetime",
+      "n_train": 21205,
+      "n_validation": 1321,
+      "prepare_seconds": 1.249904749999999,
+      "projected_validation_seconds": 0.151704507553018,
+      "sampled": 396,
+      "seconds": 0.0070901669999994255,
+      "track": "strict"
+    },
+    {
+      "catalog": 210042,
+      "encoded_width": 136,
+      "fold": 0,
+      "horizon": "26",
+      "n_train": 10793,
+      "n_validation": 2293,
+      "prepare_seconds": 0.3564866250000005,
+      "projected_validation_seconds": 10.262356328894857,
+      "sampled": 485,
+      "seconds": 0.023696417000000025,
+      "track": "retrospective"
+    },
+    {
+      "catalog": 210042,
+      "encoded_width": 136,
+      "fold": 1,
+      "horizon": "26",
+      "n_train": 13239,
+      "n_validation": 2273,
+      "prepare_seconds": 0.3950020840000015,
+      "projected_validation_seconds": 7.375289195875563,
+      "sampled": 485,
+      "seconds": 0.017029999999998324,
+      "track": "retrospective"
+    },
+    {
+      "catalog": 210042,
+      "encoded_width": 136,
+      "fold": 2,
+      "horizon": "26",
+      "n_train": 15618,
+      "n_validation": 1888,
+      "prepare_seconds": 0.4292531250000007,
+      "projected_validation_seconds": 6.874526547909658,
+      "sampled": 485,
+      "seconds": 0.015873708000000875,
+      "track": "retrospective"
+    },
+    {
+      "catalog": 210042,
+      "encoded_width": 135,
+      "fold": 0,
+      "horizon": "observed_lifetime",
+      "n_train": 9412,
+      "n_validation": 1299,
+      "prepare_seconds": 0.3022085420000007,
+      "projected_validation_seconds": 5.623676201059554,
+      "sampled": 485,
+      "seconds": 0.012985416999999444,
+      "track": "retrospective"
+    },
+    {
+      "catalog": 210042,
+      "encoded_width": 136,
+      "fold": 1,
+      "horizon": "observed_lifetime",
+      "n_train": 12244,
+      "n_validation": 1154,
+      "prepare_seconds": 0.36854741700000027,
+      "projected_validation_seconds": 5.054776361368886,
+      "sampled": 485,
+      "seconds": 0.01167179199999957,
+      "track": "retrospective"
+    },
+    {
+      "catalog": 210042,
+      "encoded_width": 136,
+      "fold": 2,
+      "horizon": "observed_lifetime",
+      "n_train": 14499,
+      "n_validation": 758,
+      "prepare_seconds": 0.4082679579999997,
+      "projected_validation_seconds": 4.670655882531511,
+      "sampled": 485,
+      "seconds": 0.010784833999998966,
+      "track": "retrospective"
+    }
+  ],
+  "status": "WITHIN_BUDGET"
+}
