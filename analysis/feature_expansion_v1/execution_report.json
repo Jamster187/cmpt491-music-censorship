@@ -1,0 +1,62 @@
+{
+  "demo_health": "HTTP 200 /_stcore/health on 127.0.0.1:8503; test server stopped",
+  "documentation_preservation": "All pre-existing tracked files are unchanged, including hash-pinned root navigation. New navigation: docs/feature_expansion_v1.md.",
+  "elapsed_minutes_through_validation": 38.40944026666667,
+  "external_acquisition": false,
+  "feature_rebuild": {
+    "changed_hash_seed": 173,
+    "files": {
+      "coverage_report.csv": "25a91f31238946fa2237379969fd264246a61b30bc5a23c84cc308d85a1cf0e1",
+      "feature_dictionary.csv": "8f172be99747e7064a245951a79395fb877c40de9c7441b210b7abcc99e3420c",
+      "manifest.json": "c2afe31c747b879cebd74511d703a455f239f06cd00182d7208bc9e1f21df930",
+      "song_features.csv.xz": "bab5692a7b6eb0d187e461f63287376dbab07666d1defb87154bdcf64e240a5e",
+      "song_outcomes.csv.xz": "27ac1b93ae009858bd42f66294a76ed10b32eb667e74139979a6f4fc9f50ea1b"
+    },
+    "status": "PASS"
+  },
+  "group_ablation_fits": 70,
+  "historical_and_horizon_fits": 90,
+  "independent_confirmation": false,
+  "model_prediction_replay": {
+    "maximum_absolute_error": 0,
+    "rows": 764106
+  },
+  "model_refits": "All three prespecified strict combined Top-10 family refits were bitwise identical",
+  "new_content_classifier_inference": false,
+  "optional_new_demo_tests": {
+    "passed": 3,
+    "run": 3,
+    "seconds": 5.212
+  },
+  "preservation": {
+    "baseline_commit": "ae0bfc0335ad3136ddcf7bc25a4dab8348e36ba2",
+    "bytes": 33557070455,
+    "files": 245461,
+    "status": "PASS"
+  },
+  "previous_figures": {
+    "unchanged_numerical_and_input_files": 32,
+    "validated": 952
+  },
+  "primary_candidate_fits": 180,
+  "publication": "Validated additive artifacts are ready for the authorized main-branch commit and push; use Git history for the publication commit ID.",
+  "repeat_fit_checks": 3,
+  "repository_layout": {
+    "frozen_release_hashes": "PASS",
+    "immutable_artifacts_checked": 1070,
+    "local_markdown_links_checked": 625,
+    "private_tracked_files": 0
+  },
+  "skipped_explanation": "Default Python lacks optional Streamlit; the three new UI tests passed separately in the existing demo environment. Thirteen legacy optional UI tests remain skipped.",
+  "started_at": "2026-10-26T18:57:14+00:00",
+  "status": "PASS",
+  "unit_tests": {
+    "errors": 0,
+    "failures": 0,
+    "passed": 506,
+    "run": 522,
+    "seconds": 77.565,
+    "skipped": 16
+  },
+  "validated_at": "2026-10-26T19:35:38.566416+00:00"
+}

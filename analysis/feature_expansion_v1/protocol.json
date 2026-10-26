@@ -1,0 +1,112 @@
+{
+  "configuration": {
+    "ablation": "Validation-selected combined method/parameters held fixed; remove predefined source groups; same populations and preprocessing fit on train only",
+    "artist_history_cutoff": "chart_date strictly less than focal debut; process entire date as one batch",
+    "bootstrap": "Paired fixed-model resampling by exact full artist credit and by debut year; percentile 95% intervals; no model-selection uncertainty",
+    "bootstrap_repeats": 199,
+    "burn_in_end": "1960-01-01",
+    "complete_followup": "global last observed chart date >= exclusive horizon end",
+    "configurations": [
+      "baseline",
+      "new_only",
+      "combined"
+    ],
+    "covid_analysis": false,
+    "duplicate_policy": "Preserve every source row; points sum source rows; weeks count distinct dates; minimum rank resolves song/date only for rank changes",
+    "external_acquisition": false,
+    "hgb_early_stopping": false,
+    "hgb_l2": 1.0,
+    "hgb_leaf_nodes": [
+      15,
+      31
+    ],
+    "hgb_learning_rate": 0.06,
+    "hgb_max_iter": 120,
+    "hgb_min_leaf": 30,
+    "historical_backtest_method": "Prespecified HGB leaf_nodes=15,120 iterations; threshold selected in preceding five-year validation interval; no later model choice reused",
+    "historical_backtests": [
+      {
+        "test_end": 2010,
+        "test_start": 2000
+      },
+      {
+        "test_end": 2018,
+        "test_start": 2010
+      }
+    ],
+    "independent_confirmation": false,
+    "logistic_C": [
+      0.1,
+      1.0
+    ],
+    "longevity": "at least ceil(horizon/2) distinct chart dates within horizon",
+    "methods": [
+      "regularized",
+      "tree",
+      "hist_gradient_boosting"
+    ],
+    "new_content_classifier_inference": false,
+    "numerical_targets": "best observed rank, distinct chart-date count, and source-row sum(101-rank) within fixed horizon; includes known debut contribution",
+    "partitions": "Debut in assigned period AND entire target window ends by next boundary; horizon-crossing identities purged",
+    "permutation_population": "Validation only; rankings not chosen from test",
+    "permutation_repeats": 3,
+    "permutation_sample_max": 3000,
+    "prediction_moment": "Immediately after publication of first observed Billboard chart; all rows of that chart available",
+    "preprocessing": "Training-only median imputation without availability indicators, standardization, and observed-category one-hot encoding; unknown category all zero",
+    "primary_horizon_weeks": 26,
+    "prior_test_inspected": true,
+    "probability_calibration": "No fitted recalibration; report raw probabilities, Brier, log loss, ECE and reliability bins",
+    "retrospective_baseline": "42 frozen scores, primary genre, consistent single-valued matched duration and debut rank; no acquisition, final-success, release-date or catalog-count predictors",
+    "retrospective_track": "Final enriched identities with all 42 existing scores and usable structural text; same rows across A/B/C; modern content and credit proxies remain F",
+    "ridge_alpha": [
+      1.0,
+      100.0
+    ],
+    "seed": 4911026,
+    "sensitivity_horizon_weeks": 12,
+    "strict_track": "All weekly entrants with eligible complete follow-up; A=known debut rank; B=new A-C features only; C=union",
+    "thresholds": [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9
+    ],
+    "top10_eligibility": "debut best observed rank > 10; songs already Top 10 are resolved and excluded",
+    "train_end": "2010-01-01",
+    "tree_depth": [
+      3,
+      6
+    ],
+    "tree_min_leaf": 50,
+    "tuning": "Train before 2010; validation 2010-2017 only. Select classification by balanced accuracy, then Brier; regression by MAE. Final selected estimator remains training-only, no validation refit.",
+    "unit": "Exact original title + full artist credit; no automatic identity merge",
+    "validation_end": "2018-01-01",
+    "version": "feature-expansion-v1",
+    "window": "[debut, debut + 7*horizon days)"
+  },
+  "environment": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "platform": "macOS-13.6.6-arm64-arm-64bit",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2"
+  },
+  "input_sha256": {
+    "data/public/master_weekly.csv.xz": "60f1a27be135c6e862c3d8bb5e6193999f0a9b3f19e6ea89de1f77454cdfc477",
+    "data/public/songs.csv": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5"
+  }
+}

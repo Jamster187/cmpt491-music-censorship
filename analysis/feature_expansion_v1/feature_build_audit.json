@@ -1,0 +1,58 @@
+{
+  "availability_counts": {
+    "C": 33,
+    "F": 25
+  },
+  "credit_consensus": {
+    "ambiguous_or_incomplete": 0,
+    "high_confidence": 22290,
+    "unanimous": 22290,
+    "with_recording_variants": 22290
+  },
+  "duplicate_song_dates": 13,
+  "exact_credit_count": 11294,
+  "files": {
+    "song_features.csv.xz": {
+      "bytes": 11279444,
+      "sha256": "bab5692a7b6eb0d187e461f63287376dbab07666d1defb87154bdcf64e240a5e"
+    },
+    "song_outcomes.csv.xz": {
+      "bytes": 1621684,
+      "sha256": "27ac1b93ae009858bd42f66294a76ed10b32eb667e74139979a6f4fc9f50ea1b"
+    }
+  },
+  "incomplete_12": 111,
+  "incomplete_26": 305,
+  "input_sha256": {
+    "data/public/master_weekly.csv.xz": "60f1a27be135c6e862c3d8bb5e6193999f0a9b3f19e6ea89de1f77454cdfc477",
+    "data/public/songs.csv": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5"
+  },
+  "later_returns": 1910,
+  "local_candidates_implemented": 48,
+  "local_candidates_total": 59,
+  "lyrics_used": 20981,
+  "near_endpoint": 156,
+  "new_columns": 58,
+  "new_constructs": 57,
+  "new_credit_debuts": 11487,
+  "pipeline_sha256": {
+    "src/feature_expansion_common.py": "f75b3392144b7e5ef4c899c2a709442ba4316f38e0646f108880d226464aaa36",
+    "src/feature_expansion_features.py": "9250eb0249c1ab37e07092ce95fbe3d58e639dcefa210046dcb399315112684d"
+  },
+  "private_provenance_sha256": {
+    "credit_consensus.json": "b56ceb519a8913f8e220db3c360df7a8b58c73cd88de7f54a46dfac845ba5b8b",
+    "lyric_input_provenance.json": "400ed961104358617e717c33231d1d290bd3dd62fcdd428837107b090d9d2be0"
+  },
+  "protocol_sha256": "3cbb6aa569299d70620044036d5a8d535e4945f5f58c4fd057eec64c2db859b2",
+  "song_count": 32723,
+  "source_date_max": "2026-09-19",
+  "source_date_min": "1958-08-04",
+  "source_gap_days": {
+    "12.0": 1,
+    "7.0": 3553
+  },
+  "source_rows": 355487,
+  "study_count": 28041,
+  "version": "feature-expansion-v1",
+  "zlib_version": "1.2.11"
+}

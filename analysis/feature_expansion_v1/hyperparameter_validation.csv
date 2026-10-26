@@ -1,0 +1,181 @@
+track,target,configuration,method,parameter,threshold,validation_key
+strict,top10,baseline,regularized,0.1,0.25,"[0.6050489809371488, -0.14401387893413484]"
+strict,top10,baseline,regularized,1,0.25,"[0.6050489809371488, -0.14426197352142622]"
+strict,top10,baseline,tree,3,0.3,"[0.6004791378490533, -0.1274105242361148]"
+strict,top10,baseline,tree,6,0.25,"[0.6044059879398288, -0.12642665705767347]"
+strict,top10,baseline,hist_gradient_boosting,15,0.25,"[0.6044059879398288, -0.12597187132125204]"
+strict,top10,baseline,hist_gradient_boosting,31,0.25,"[0.6044059879398288, -0.12639022122357607]"
+strict,top10,new_only,regularized,0.1,0.15,"[0.6247798154231866, -0.08211781622931319]"
+strict,top10,new_only,regularized,1,0.1,"[0.6265244067173856, -0.08197972701664068]"
+strict,top10,new_only,tree,3,0.15,"[0.6384049180859341, -0.08739355611886236]"
+strict,top10,new_only,tree,6,0.15,"[0.6045275622460449, -0.09521937724253958]"
+strict,top10,new_only,hist_gradient_boosting,15,0.15,"[0.6447078704504193, -0.08446543727120796]"
+strict,top10,new_only,hist_gradient_boosting,31,0.15,"[0.6495438261865653, -0.08557828334973432]"
+strict,top10,combined,regularized,0.1,0.1,"[0.666791167761736, -0.11000594968346322]"
+strict,top10,combined,regularized,1,0.1,"[0.6663859200743494, -0.10974955845879888]"
+strict,top10,combined,tree,3,0.25,"[0.6004791378490533, -0.16272481361547098]"
+strict,top10,combined,tree,6,0.3,"[0.6019319508083341, -0.12115431851701303]"
+strict,top10,combined,hist_gradient_boosting,15,0.2,"[0.6575407138843261, -0.10010891168050522]"
+strict,top10,combined,hist_gradient_boosting,31,0.2,"[0.6514755068297744, -0.09706276254929146]"
+strict,long_chart,baseline,regularized,0.1,0.9,"[0.5376634429983128, -0.29541615379677355]"
+strict,long_chart,baseline,regularized,1,0.9,"[0.5372284737286093, -0.2955990729664723]"
+strict,long_chart,baseline,tree,3,0.7,"[0.5283778219651322, -0.2928097035834162]"
+strict,long_chart,baseline,tree,6,0.8,"[0.5230646691973969, -0.2926897224821644]"
+strict,long_chart,baseline,hist_gradient_boosting,15,0.75,"[0.5200079587450791, -0.29332968483122646]"
+strict,long_chart,baseline,hist_gradient_boosting,31,0.75,"[0.5200079587450791, -0.2934157098133576]"
+strict,long_chart,new_only,regularized,0.1,0.4,"[0.6250464469350043, -0.22525465178566273]"
+strict,long_chart,new_only,regularized,1,0.4,"[0.6221548114003375, -0.224817330880015]"
+strict,long_chart,new_only,tree,3,0.4,"[0.5274432343134892, -0.25098569975660334]"
+strict,long_chart,new_only,tree,6,0.5,"[0.5510489475375593, -0.25174096380770244]"
+strict,long_chart,new_only,hist_gradient_boosting,15,0.35,"[0.6172847874989957, -0.22591814169289798]"
+strict,long_chart,new_only,hist_gradient_boosting,31,0.4,"[0.6118159747328674, -0.22824797252818924]"
+strict,long_chart,combined,regularized,0.1,0.3,"[0.6066496947055515, -0.24122584246973938]"
+strict,long_chart,combined,regularized,1,0.25,"[0.605914075680887, -0.24067608346934724]"
+strict,long_chart,combined,tree,3,0.3,"[0.5524605577649233, -0.2666083416178479]"
+strict,long_chart,combined,tree,6,0.35,"[0.5744613410862055, -0.25871553055732804]"
+strict,long_chart,combined,hist_gradient_boosting,15,0.3,"[0.6028197055515385, -0.23822990021294044]"
+strict,long_chart,combined,hist_gradient_boosting,31,0.3,"[0.6101928426528481, -0.23190799948887217]"
+strict,best_rank,baseline,regularized,1,,[-28.48463481110015]
+strict,best_rank,baseline,regularized,100,,[-28.432600509526885]
+strict,best_rank,baseline,tree,3,,[-25.688927862570175]
+strict,best_rank,baseline,tree,6,,[-25.489027305008875]
+strict,best_rank,baseline,hist_gradient_boosting,15,,[-25.455745225694695]
+strict,best_rank,baseline,hist_gradient_boosting,31,,[-25.447574185934922]
+strict,best_rank,new_only,regularized,1,,[-26.455293475171178]
+strict,best_rank,new_only,regularized,100,,[-26.39446249509298]
+strict,best_rank,new_only,tree,3,,[-25.85071216217538]
+strict,best_rank,new_only,tree,6,,[-26.318277530947242]
+strict,best_rank,new_only,hist_gradient_boosting,15,,[-25.670270365935444]
+strict,best_rank,new_only,hist_gradient_boosting,31,,[-25.552255992534842]
+strict,best_rank,combined,regularized,1,,[-24.971822510267206]
+strict,best_rank,combined,regularized,100,,[-24.750688767661686]
+strict,best_rank,combined,tree,3,,[-26.26305025316504]
+strict,best_rank,combined,tree,6,,[-25.66036824480714]
+strict,best_rank,combined,hist_gradient_boosting,15,,[-23.030020241316738]
+strict,best_rank,combined,hist_gradient_boosting,31,,[-22.568926652821286]
+strict,chart_weeks,baseline,regularized,1,,[-8.779486529408434]
+strict,chart_weeks,baseline,regularized,100,,[-8.775901871827402]
+strict,chart_weeks,baseline,tree,3,,[-8.815567569375244]
+strict,chart_weeks,baseline,tree,6,,[-8.797539798229103]
+strict,chart_weeks,baseline,hist_gradient_boosting,15,,[-8.803060832116412]
+strict,chart_weeks,baseline,hist_gradient_boosting,31,,[-8.802162508169216]
+strict,chart_weeks,new_only,regularized,1,,[-7.961848010927099]
+strict,chart_weeks,new_only,regularized,100,,[-7.936125121001452]
+strict,chart_weeks,new_only,tree,3,,[-8.51882250875457]
+strict,chart_weeks,new_only,tree,6,,[-8.52439724206877]
+strict,chart_weeks,new_only,hist_gradient_boosting,15,,[-7.988273471317183]
+strict,chart_weeks,new_only,hist_gradient_boosting,31,,[-7.938648489841164]
+strict,chart_weeks,combined,regularized,1,,[-7.853933336326484]
+strict,chart_weeks,combined,regularized,100,,[-7.82210825559051]
+strict,chart_weeks,combined,tree,3,,[-8.360460392632769]
+strict,chart_weeks,combined,tree,6,,[-8.294963426660834]
+strict,chart_weeks,combined,hist_gradient_boosting,15,,[-7.837572009807867]
+strict,chart_weeks,combined,hist_gradient_boosting,31,,[-7.714447136544185]
+strict,chart_points,baseline,regularized,1,,[-573.787606312608]
+strict,chart_points,baseline,regularized,100,,[-573.3648616380437]
+strict,chart_points,baseline,tree,3,,[-571.7487202761488]
+strict,chart_points,baseline,tree,6,,[-568.9863583351643]
+strict,chart_points,baseline,hist_gradient_boosting,15,,[-568.5293052674942]
+strict,chart_points,baseline,hist_gradient_boosting,31,,[-568.4514736896082]
+strict,chart_points,new_only,regularized,1,,[-534.092331766632]
+strict,chart_points,new_only,regularized,100,,[-540.5790789970887]
+strict,chart_points,new_only,tree,3,,[-540.3128159850925]
+strict,chart_points,new_only,tree,6,,[-543.4675197379964]
+strict,chart_points,new_only,hist_gradient_boosting,15,,[-519.2594537293412]
+strict,chart_points,new_only,hist_gradient_boosting,31,,[-512.753684889424]
+strict,chart_points,combined,regularized,1,,[-525.5575245687879]
+strict,chart_points,combined,regularized,100,,[-526.1798832367589]
+strict,chart_points,combined,tree,3,,[-586.8845921435701]
+strict,chart_points,combined,tree,6,,[-566.9987685846388]
+strict,chart_points,combined,hist_gradient_boosting,15,,[-510.8212848407076]
+strict,chart_points,combined,hist_gradient_boosting,31,,[-500.3120990420784]
+retrospective,top10,baseline,regularized,0.1,0.15,"[0.6638758599124452, -0.1534262169367228]"
+retrospective,top10,baseline,regularized,1,0.15,"[0.6654784240150093, -0.153744017974208]"
+retrospective,top10,baseline,tree,3,0.25,"[0.6463492808005002, -0.13937156003217002]"
+retrospective,top10,baseline,tree,6,0.2,"[0.6519230769230768, -0.1340814247622878]"
+retrospective,top10,baseline,hist_gradient_boosting,15,0.2,"[0.6732020012507818, -0.12112937701665201]"
+retrospective,top10,baseline,hist_gradient_boosting,31,0.2,"[0.6786507191994997, -0.12153732709917546]"
+retrospective,top10,new_only,regularized,0.1,0.2,"[0.6584974984365228, -0.11765762694869546]"
+retrospective,top10,new_only,regularized,1,0.2,"[0.663203564727955, -0.11746315269723628]"
+retrospective,top10,new_only,tree,3,0.25,"[0.6494058786741714, -0.12222570528450087]"
+retrospective,top10,new_only,tree,6,0.2,"[0.589047842401501, -0.13124874805212966]"
+retrospective,top10,new_only,hist_gradient_boosting,15,0.3,"[0.6492417135709818, -0.13200663906080898]"
+retrospective,top10,new_only,hist_gradient_boosting,31,0.3,"[0.6569262038774234, -0.13114377732761384]"
+retrospective,top10,combined,regularized,0.1,0.15,"[0.6979362101313321, -0.13585708251912484]"
+retrospective,top10,combined,regularized,1,0.15,"[0.6981472795497186, -0.13596706481523302]"
+retrospective,top10,combined,tree,3,0.25,"[0.6296669793621013, -0.1759482222912226]"
+retrospective,top10,combined,tree,6,0.25,"[0.6037210756722952, -0.15331240375947947]"
+retrospective,top10,combined,hist_gradient_boosting,15,0.3,"[0.689563789868668, -0.1373208545425681]"
+retrospective,top10,combined,hist_gradient_boosting,31,0.25,"[0.695583176985616, -0.13435180677042496]"
+retrospective,long_chart,baseline,regularized,0.1,0.8,"[0.5368327273602851, -0.2677474911293953]"
+retrospective,long_chart,baseline,regularized,1,0.8,"[0.5368327273602851, -0.26802152640102994]"
+retrospective,long_chart,baseline,tree,3,0.75,"[0.5224374563579013, -0.2833088826380058]"
+retrospective,long_chart,baseline,tree,6,0.7,"[0.5217632611783969, -0.2790416841315349]"
+retrospective,long_chart,baseline,hist_gradient_boosting,15,0.75,"[0.5370325780742096, -0.25795109115551795]"
+retrospective,long_chart,baseline,hist_gradient_boosting,31,0.75,"[0.5331547518720955, -0.25837940552878796]"
+retrospective,long_chart,new_only,regularized,0.1,0.5,"[0.5850208278153668, -0.22279378998725044]"
+retrospective,long_chart,new_only,regularized,1,0.5,"[0.587045821193807, -0.22284411708161173]"
+retrospective,long_chart,new_only,tree,3,0.65,"[0.5186414967132985, -0.2527481912285965]"
+retrospective,long_chart,new_only,tree,6,0.55,"[0.5295875370205388, -0.25260029337664586]"
+retrospective,long_chart,new_only,hist_gradient_boosting,15,0.55,"[0.5728491969853844, -0.2259339369862587]"
+retrospective,long_chart,new_only,hist_gradient_boosting,31,0.55,"[0.5823059882978979, -0.2252663841951096]"
+retrospective,long_chart,combined,regularized,0.1,0.45,"[0.590007464303773, -0.2324971466172813]"
+retrospective,long_chart,combined,regularized,1,0.55,"[0.5901290602200766, -0.23296951335718022]"
+retrospective,long_chart,combined,tree,3,0.75,"[0.5216452770219836, -0.281838494322845]"
+retrospective,long_chart,combined,tree,6,0.35,"[0.517081216440731, -0.2770823925239763]"
+retrospective,long_chart,combined,hist_gradient_boosting,15,0.8,"[0.5615805061279526, -0.24151089379427113]"
+retrospective,long_chart,combined,hist_gradient_boosting,31,0.8,"[0.5654101755315306, -0.24476809114575068]"
+retrospective,best_rank,baseline,regularized,1,,[-24.079389533163024]
+retrospective,best_rank,baseline,regularized,100,,[-24.009910291973465]
+retrospective,best_rank,baseline,tree,3,,[-22.34581630377146]
+retrospective,best_rank,baseline,tree,6,,[-21.820395910913877]
+retrospective,best_rank,baseline,hist_gradient_boosting,15,,[-21.046340002610986]
+retrospective,best_rank,baseline,hist_gradient_boosting,31,,[-21.07848087018668]
+retrospective,best_rank,new_only,regularized,1,,[-23.342845583231075]
+retrospective,best_rank,new_only,regularized,100,,[-23.301746068624393]
+retrospective,best_rank,new_only,tree,3,,[-23.535274767879613]
+retrospective,best_rank,new_only,tree,6,,[-23.715864288325427]
+retrospective,best_rank,new_only,hist_gradient_boosting,15,,[-23.257551139435638]
+retrospective,best_rank,new_only,hist_gradient_boosting,31,,[-23.253102089966482]
+retrospective,best_rank,combined,regularized,1,,[-23.2840149783056]
+retrospective,best_rank,combined,regularized,100,,[-23.15962196675659]
+retrospective,best_rank,combined,tree,3,,[-22.27835512043076]
+retrospective,best_rank,combined,tree,6,,[-22.057581294892987]
+retrospective,best_rank,combined,hist_gradient_boosting,15,,[-21.396204494733972]
+retrospective,best_rank,combined,hist_gradient_boosting,31,,[-21.210675163732148]
+retrospective,chart_weeks,baseline,regularized,1,,[-7.456723909482085]
+retrospective,chart_weeks,baseline,regularized,100,,[-7.460731449729047]
+retrospective,chart_weeks,baseline,tree,3,,[-7.693147975293889]
+retrospective,chart_weeks,baseline,tree,6,,[-7.755672638978367]
+retrospective,chart_weeks,baseline,hist_gradient_boosting,15,,[-7.373296462534857]
+retrospective,chart_weeks,baseline,hist_gradient_boosting,31,,[-7.359763976123496]
+retrospective,chart_weeks,new_only,regularized,1,,[-6.91725776530803]
+retrospective,chart_weeks,new_only,regularized,100,,[-6.898362912176806]
+retrospective,chart_weeks,new_only,tree,3,,[-7.5572184086599785]
+retrospective,chart_weeks,new_only,tree,6,,[-7.5850595012201785]
+retrospective,chart_weeks,new_only,hist_gradient_boosting,15,,[-7.232117151734885]
+retrospective,chart_weeks,new_only,hist_gradient_boosting,31,,[-7.230805393216266]
+retrospective,chart_weeks,combined,regularized,1,,[-6.78165719476365]
+retrospective,chart_weeks,combined,regularized,100,,[-6.755245856505373]
+retrospective,chart_weeks,combined,tree,3,,[-7.776355117963591]
+retrospective,chart_weeks,combined,tree,6,,[-7.669667575957498]
+retrospective,chart_weeks,combined,hist_gradient_boosting,15,,[-7.216656789813053]
+retrospective,chart_weeks,combined,hist_gradient_boosting,31,,[-7.207798852838435]
+retrospective,chart_points,baseline,regularized,1,,[-560.1370502640856]
+retrospective,chart_points,baseline,regularized,100,,[-559.677083948518]
+retrospective,chart_points,baseline,tree,3,,[-557.1297696310104]
+retrospective,chart_points,baseline,tree,6,,[-571.4541554169163]
+retrospective,chart_points,baseline,hist_gradient_boosting,15,,[-548.4563449123016]
+retrospective,chart_points,baseline,hist_gradient_boosting,31,,[-547.4675993442445]
+retrospective,chart_points,new_only,regularized,1,,[-549.4554438238591]
+retrospective,chart_points,new_only,regularized,100,,[-550.2614014887308]
+retrospective,chart_points,new_only,tree,3,,[-562.4471505117397]
+retrospective,chart_points,new_only,tree,6,,[-560.0795170182959]
+retrospective,chart_points,new_only,hist_gradient_boosting,15,,[-561.5465382652538]
+retrospective,chart_points,new_only,hist_gradient_boosting,31,,[-557.4765612159724]
+retrospective,chart_points,combined,regularized,1,,[-525.6956909836483]
+retrospective,chart_points,combined,regularized,100,,[-525.1542958655745]
+retrospective,chart_points,combined,tree,3,,[-568.0558229381701]
+retrospective,chart_points,combined,tree,6,,[-569.5342944189304]
+retrospective,chart_points,combined,hist_gradient_boosting,15,,[-547.104334167363]
+retrospective,chart_points,combined,hist_gradient_boosting,31,,[-543.8563761344507]

@@ -1,0 +1,11 @@
+{
+  "figures": {
+    "calibration.svg": "8505a71ed90fa8f8e8d0ceae087186e58bee3bf765f0ed3e7728a26a99fcea64",
+    "classification_comparison.svg": "03b46e93a6049fbb79958da7054fe348f6df99307790b85a340cb15c92d31214",
+    "evaluation_period_stability.svg": "b2342b125c564d438b83e32213f2fcb72ead1e3f881bb4b21e54671c7249a1be",
+    "regression_comparison.svg": "a50d9618d853151f5ef386d5d529d7ecc8df6ad0731593edc403a8bb6f32b618",
+    "regression_diagnostics.svg": "ef784e29623ad0be21c247d6f951214573f05891ab0751389899b3d5e52137cc",
+    "top10_new_feature_importance.svg": "714d23d32c1215aff5693b7269d6d75278dee5fae25f56c91f177143ff2ec25f"
+  },
+  "renderer_sha256": "2761d6b57aef0751167c1f7b530198ea8702136c295761558088fa68857dea56"
+}

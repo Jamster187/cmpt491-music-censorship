@@ -1,0 +1,11 @@
+{
+  "changed_hash_seed": 173,
+  "files": {
+    "coverage_report.csv": "25a91f31238946fa2237379969fd264246a61b30bc5a23c84cc308d85a1cf0e1",
+    "feature_dictionary.csv": "8f172be99747e7064a245951a79395fb877c40de9c7441b210b7abcc99e3420c",
+    "manifest.json": "c2afe31c747b879cebd74511d703a455f239f06cd00182d7208bc9e1f21df930",
+    "song_features.csv.xz": "bab5692a7b6eb0d187e461f63287376dbab07666d1defb87154bdcf64e240a5e",
+    "song_outcomes.csv.xz": "27ac1b93ae009858bd42f66294a76ed10b32eb667e74139979a6f4fc9f50ea1b"
+  },
+  "status": "PASS"
+}

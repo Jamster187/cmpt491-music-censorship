@@ -1,0 +1,201 @@
+{
+  "identities": 32723,
+  "independent_history_assertions": 1536,
+  "independent_history_identities": 256,
+  "prefix_invariance": {
+    "cutoff": "1990-01-01",
+    "features": 33,
+    "identities": 17186,
+    "status": "PASS"
+  },
+  "protected_artifacts": {
+    "baseline_commit": "ae0bfc0335ad3136ddcf7bc25a4dab8348e36ba2",
+    "bytes": 33557070455,
+    "files": 245461,
+    "status": "PASS"
+  },
+  "source_rows": 355487,
+  "split_audit": [
+    {
+      "n": 22773,
+      "partition": "train",
+      "target": "top10",
+      "track": "strict"
+    },
+    {
+      "n": 3021,
+      "partition": "validation",
+      "target": "top10",
+      "track": "strict"
+    },
+    {
+      "n": 4733,
+      "partition": "test",
+      "target": "top10",
+      "track": "strict"
+    },
+    {
+      "n": 22870,
+      "partition": "train",
+      "target": "long_chart",
+      "track": "strict"
+    },
+    {
+      "n": 3111,
+      "partition": "validation",
+      "target": "long_chart",
+      "track": "strict"
+    },
+    {
+      "n": 5072,
+      "partition": "test",
+      "target": "long_chart",
+      "track": "strict"
+    },
+    {
+      "n": 22870,
+      "partition": "train",
+      "target": "best_rank",
+      "track": "strict"
+    },
+    {
+      "n": 3111,
+      "partition": "validation",
+      "target": "best_rank",
+      "track": "strict"
+    },
+    {
+      "n": 5072,
+      "partition": "test",
+      "target": "best_rank",
+      "track": "strict"
+    },
+    {
+      "n": 22870,
+      "partition": "train",
+      "target": "chart_weeks",
+      "track": "strict"
+    },
+    {
+      "n": 3111,
+      "partition": "validation",
+      "target": "chart_weeks",
+      "track": "strict"
+    },
+    {
+      "n": 5072,
+      "partition": "test",
+      "target": "chart_weeks",
+      "track": "strict"
+    },
+    {
+      "n": 22870,
+      "partition": "train",
+      "target": "chart_points",
+      "track": "strict"
+    },
+    {
+      "n": 3111,
+      "partition": "validation",
+      "target": "chart_points",
+      "track": "strict"
+    },
+    {
+      "n": 5072,
+      "partition": "test",
+      "target": "chart_points",
+      "track": "strict"
+    },
+    {
+      "n": 15547,
+      "partition": "train",
+      "target": "top10",
+      "track": "retrospective"
+    },
+    {
+      "n": 1806,
+      "partition": "validation",
+      "target": "top10",
+      "track": "retrospective"
+    },
+    {
+      "n": 2294,
+      "partition": "test",
+      "target": "top10",
+      "track": "retrospective"
+    },
+    {
+      "n": 15618,
+      "partition": "train",
+      "target": "long_chart",
+      "track": "retrospective"
+    },
+    {
+      "n": 1888,
+      "partition": "validation",
+      "target": "long_chart",
+      "track": "retrospective"
+    },
+    {
+      "n": 2573,
+      "partition": "test",
+      "target": "long_chart",
+      "track": "retrospective"
+    },
+    {
+      "n": 15618,
+      "partition": "train",
+      "target": "best_rank",
+      "track": "retrospective"
+    },
+    {
+      "n": 1888,
+      "partition": "validation",
+      "target": "best_rank",
+      "track": "retrospective"
+    },
+    {
+      "n": 2573,
+      "partition": "test",
+      "target": "best_rank",
+      "track": "retrospective"
+    },
+    {
+      "n": 15618,
+      "partition": "train",
+      "target": "chart_weeks",
+      "track": "retrospective"
+    },
+    {
+      "n": 1888,
+      "partition": "validation",
+      "target": "chart_weeks",
+      "track": "retrospective"
+    },
+    {
+      "n": 2573,
+      "partition": "test",
+      "target": "chart_weeks",
+      "track": "retrospective"
+    },
+    {
+      "n": 15618,
+      "partition": "train",
+      "target": "chart_points",
+      "track": "retrospective"
+    },
+    {
+      "n": 1888,
+      "partition": "validation",
+      "target": "chart_points",
+      "track": "retrospective"
+    },
+    {
+      "n": 2573,
+      "partition": "test",
+      "target": "chart_points",
+      "track": "retrospective"
+    }
+  ],
+  "status": "PASS"
+}

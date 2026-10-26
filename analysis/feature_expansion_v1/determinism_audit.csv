@@ -1,0 +1,4 @@
+method,parameter,n,bitwise_equal,max_absolute_difference
+regularized,0.1,4733,True,0
+tree,3,4733,True,0
+hist_gradient_boosting,15,4733,True,0
