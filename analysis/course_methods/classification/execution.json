@@ -1,0 +1,82 @@
+{
+  "folds": 12,
+  "native_and_exported_predictions_equal": true,
+  "peak_rss_bytes": 327499776,
+  "runtimes": [
+    {
+      "reused": false,
+      "seconds": 1.7971417920000001,
+      "start": 1990,
+      "target": "top10"
+    },
+    {
+      "reused": false,
+      "seconds": 2.284853292,
+      "start": 2000,
+      "target": "top10"
+    },
+    {
+      "reused": false,
+      "seconds": 2.3846493329999996,
+      "start": 2010,
+      "target": "top10"
+    },
+    {
+      "reused": false,
+      "seconds": 2.8295062919999996,
+      "start": 2018,
+      "target": "top10"
+    },
+    {
+      "reused": false,
+      "seconds": 1.771185291,
+      "start": 1990,
+      "target": "long_chart"
+    },
+    {
+      "reused": false,
+      "seconds": 2.3058179170000006,
+      "start": 2000,
+      "target": "long_chart"
+    },
+    {
+      "reused": false,
+      "seconds": 2.5130501669999994,
+      "start": 2010,
+      "target": "long_chart"
+    },
+    {
+      "reused": false,
+      "seconds": 2.729762667000003,
+      "start": 2018,
+      "target": "long_chart"
+    },
+    {
+      "reused": false,
+      "seconds": 1.926075959000002,
+      "start": 1990,
+      "target": "broad_genre"
+    },
+    {
+      "reused": false,
+      "seconds": 2.426658708999998,
+      "start": 2000,
+      "target": "broad_genre"
+    },
+    {
+      "reused": false,
+      "seconds": 2.9089560829999996,
+      "start": 2010,
+      "target": "broad_genre"
+    },
+    {
+      "reused": false,
+      "seconds": 3.2971840410000013,
+      "start": 2018,
+      "target": "broad_genre"
+    }
+  ],
+  "tree_and_rules_equal": true,
+  "tree_candidates": 96,
+  "wall_seconds": 30.012645708
+}
