@@ -1,0 +1,35 @@
+{
+  "candidate_fits": 163539124,
+  "candidates": 40884781,
+  "elapsed_seconds_this_invocation": 2454.70576425,
+  "peak_rss_bytes": 1253163008,
+  "provenance": {
+    "code_sha256": {
+      "analysis/planning/regression_search/audit.py": "b8f615e4d7beb2e3fc17c555585aec9a937cd57e28c523348b4aa936e7b5af25",
+      "docs/genre/llm/prompt.txt": "2a00aa21109c1991bb09e6f543b22c41ac0acc73ca2428b99d7f1187108bfb80",
+      "src/feature_expansion_common.py": "f75b3392144b7e5ef4c899c2a709442ba4316f38e0646f108880d226464aaa36",
+      "src/feature_expansion_features.py": "9250eb0249c1ab37e07092ce95fbe3d58e639dcefa210046dcb399315112684d",
+      "src/genre_llm.py": "f62fbbc8af8cf032a9d94614877e95c028ac8ff270e09c27a616568e71ec67b7",
+      "src/regression_core.py": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69",
+      "src/regression_cross_domain_core.py": "12f5ad5368991c9e378ed7f88e910b0f56d08de9b6eeef214a86b0a3c270558d",
+      "src/regression_cross_domain_search.py": "0383630b856d5d821b201aa6e301dd2b85ea417ceaf2807544a46897e617e353",
+      "src/regression_cross_domain_spec.py": "22e527db45ef5102edd9d126385466298421630426d0ce90a36ca9dc4c418a67",
+      "src/regression_cross_domain_store.py": "3a70653c3667a7ed844360881b44241d9a0d818d921b80bef1734c3cee920900",
+      "src/regression_expanded_core.py": "aa42b422b1c8099d15ee901ce081117c6ea554699d35c162578d870748429702",
+      "src/regression_expanded_spec.py": "913dbe1272ee32b5b15a29041fc2d51256075c6d6b9bee44ef83617d5ff0560d",
+      "src/regression_spec.py": "b3e530f9824b029cd464f3c1cd413252affa6e153a9089fda833f4c469824408"
+    },
+    "environment": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "platform": "macOS-13.6.6-arm64-arm-64bit",
+      "python": "3.9.6",
+      "scipy": "1.13.1",
+      "sqlite": "3.35.5"
+    },
+    "protocol_sha256": "2c99c329189e15b442c2320350ff9f7ae5cf27ff497abd939f6be2e96106acf0"
+  },
+  "selection_sha256": "2a26759ef995747849ba0a11b07b9f63fe01683381c3a78d5c11e354e89fac32",
+  "status": "COMPLETE",
+  "targets": 123
+}

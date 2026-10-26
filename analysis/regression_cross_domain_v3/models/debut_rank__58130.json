@@ -1,0 +1,95 @@
+{
+  "coefficients": [
+    2.991459389965441e-14,
+    0.0005979176525574559,
+    17.680724178528184,
+    0.0016461577639816927
+  ],
+  "encoder": {
+    "names": [
+      "chart_weeks_12",
+      "debut_reported_peak_position",
+      "ll_explicit_language"
+    ],
+    "variables": {
+      "chart_weeks_12": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          9.377286887567262
+        ],
+        "median": [
+          11.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "chart_weeks_12"
+        ],
+        "std": [
+          3.254449426128517
+        ]
+      },
+      "debut_reported_peak_position": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          80.5166808269612
+        ],
+        "median": [
+          85.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "debut_reported_peak_position"
+        ],
+        "std": [
+          17.681250299380192
+        ]
+      },
+      "ll_explicit_language": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          0.21444163120539492
+        ],
+        "median": [
+          0.0114400023594498
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "ll_explicit_language"
+        ],
+        "std": [
+          0.3702136322922971
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 17655,
+  "predictors": [
+    "chart_weeks_12",
+    "debut_reported_peak_position",
+    "ll_explicit_language"
+  ],
+  "rank": 4,
+  "selection_sha256": "2a26759ef995747849ba0a11b07b9f63fe01683381c3a78d5c11e354e89fac32",
+  "target_center": 80.512036250354,
+  "task": {
+    "target": "debut_rank"
+  },
+  "training_cutoff": "2018-01-01",
+  "training_ids_sha256": "cbbf6ae69ce8c9017de1af9acf77ae3a0a905c6adb0dee2557ab845625a0cc3d",
+  "training_mean": 80.512036250354,
+  "training_median": 85.0,
+  "version": "exhaustive-cross-domain-regression-v3"
+}

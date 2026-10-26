@@ -1,0 +1,6 @@
+{
+  "files": 1672,
+  "method": "Full report regeneration: all selected numerical summaries, models, predictions, seeded cluster intervals, findings and SVG figures are byte-identical; all complete numerical arrays remain identical",
+  "snapshot_sha256": "9a351a00f0fd6077609f72b9f586b92c3c15f9f255fe823d76854e5cf3426d1b",
+  "status": "PASS"
+}

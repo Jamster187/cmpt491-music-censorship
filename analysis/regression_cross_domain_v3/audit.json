@@ -1,0 +1,27 @@
+{
+  "audit_combinations_per_target": 357889,
+  "benchmark_required": true,
+  "eligible_targets": 123,
+  "enriched_post_burnin_identities": 20508,
+  "evaluation_fits": 40884781,
+  "full_search_started": false,
+  "meaningful_numerical_targets": 125,
+  "minimum_numeric_store_bytes": 2943704232,
+  "new_constructs": 57,
+  "predictors": 129,
+  "source_identities": 32723,
+  "status": "AUDITED_NOT_EXECUTED",
+  "total_fits": 163539124,
+  "unsupported_targets": [
+    {
+      "name": "debut_reported_last_week_rank",
+      "reason": "fold0:insufficient_observed_support(0,0);fold1:insufficient_observed_support(0,0);fold2:insufficient_observed_support(0,0)"
+    },
+    {
+      "name": "debut_reported_weeks_on_chart",
+      "reason": "fold0:constant_training_or_validation_target;fold1:constant_training_or_validation_target;fold2:constant_training_or_validation_target"
+    }
+  ],
+  "valid_task_candidate_pairs": 40884781,
+  "validation_fits": 122654343
+}

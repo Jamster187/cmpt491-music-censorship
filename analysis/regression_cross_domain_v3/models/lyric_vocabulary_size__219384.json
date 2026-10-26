@@ -1,0 +1,166 @@
+{
+  "coefficients": [
+    -1.8730011959744886e-14,
+    -2.2852132384039567,
+    -4.346128346006559,
+    -1.7848944753020541,
+    -5.631574233250125,
+    -0.47706054881460425,
+    -1.0078737586564068,
+    28.498368106249714,
+    -2.555262518002273,
+    -0.4508504378795394,
+    -1.2053296446999828,
+    -1.676899212189194,
+    1.057083183693373,
+    -7.094217135894705,
+    -2.7939222856746633,
+    0.504832161417482,
+    -7.390785740147416,
+    -11.222693309768701
+  ],
+  "encoder": {
+    "names": [
+      "debut_reported_peak_position",
+      "primary_genre",
+      "prior_year_unique_chart_song_count"
+    ],
+    "variables": {
+      "debut_reported_peak_position": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          80.5166808269612
+        ],
+        "median": [
+          85.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "debut_reported_peak_position"
+        ],
+        "std": [
+          17.681250299380192
+        ]
+      },
+      "primary_genre": {
+        "dropped": [],
+        "keep": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "kind": "categorical",
+        "levels": [
+          "Afrobeats / African Pop",
+          "Alternative / Indie",
+          "Country",
+          "Electronic / Dance",
+          "Folk / Singer-Songwriter",
+          "Gospel / Christian",
+          "Hip-Hop / Rap",
+          "Jazz / Blues",
+          "K-Pop",
+          "Latin",
+          "Metal",
+          "Other",
+          "Pop",
+          "R&B / Soul",
+          "Reggae / Dancehall",
+          "Rock"
+        ],
+        "mean": [
+          0.03217218918153498,
+          0.1091475502690456,
+          0.038742565845369586,
+          0.02022090059473237,
+          0.0020390824129141887,
+          0.07204757858963466,
+          0.017672047578589634,
+          0.0001699235344095157,
+          0.005777400169923535,
+          0.006966864910790144,
+          0.006117247238742566,
+          0.24151798357405835,
+          0.21982441234777683,
+          0.005324270744831492,
+          0.22209005947323704
+        ],
+        "raw_width": 15,
+        "source_columns": [
+          "primary_genre"
+        ],
+        "std": [
+          0.17645718864586535,
+          0.31182424944078957,
+          0.19298077478621228,
+          0.14075516251232253,
+          0.04511013806039095,
+          0.25856667420416934,
+          0.13175639002708636,
+          0.013034364595252408,
+          0.07578932521932163,
+          0.08317648528343179,
+          0.07797324236533108,
+          0.4280035597800317,
+          0.41412756498901565,
+          0.07277309177070343,
+          0.41565137429871574
+        ]
+      },
+      "prior_year_unique_chart_song_count": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          579.0263947890116
+        ],
+        "median": [
+          535.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "prior_year_unique_chart_song_count"
+        ],
+        "std": [
+          135.2132108465266
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 17655,
+  "predictors": [
+    "debut_reported_peak_position",
+    "primary_genre",
+    "prior_year_unique_chart_song_count"
+  ],
+  "rank": 18,
+  "selection_sha256": "2a26759ef995747849ba0a11b07b9f63fe01683381c3a78d5c11e354e89fac32",
+  "target_center": 102.08853016142736,
+  "task": {
+    "target": "lyric_vocabulary_size"
+  },
+  "training_cutoff": "2018-01-01",
+  "training_ids_sha256": "cbbf6ae69ce8c9017de1af9acf77ae3a0a905c6adb0dee2557ab845625a0cc3d",
+  "training_mean": 102.08853016142736,
+  "training_median": 91.0,
+  "version": "exhaustive-cross-domain-regression-v3"
+}

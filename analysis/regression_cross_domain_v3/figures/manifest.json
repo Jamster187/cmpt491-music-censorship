@@ -1,0 +1,56 @@
+[
+  {
+    "file": "01_primary_target_hierarchy.svg",
+    "selection": "Fixed validation winners; never selected by evaluation score",
+    "sha256": "5e6feae693f3c2afa1c78ec1c99ac28b89a8a80c7d41382ef9551cc920a3780c",
+    "title": "Most predictable targets with separate recorded measurement sources"
+  },
+  {
+    "file": "02_separation_cost.svg",
+    "selection": "Fixed validation winners; never selected by evaluation score",
+    "sha256": "2c447d16e0d26fcc1a269177612870a9f489a406f2e2c27f94449668d79081ab",
+    "title": "Predictability changes as measurement separation becomes stricter"
+  },
+  {
+    "file": "03_new_information.svg",
+    "selection": "Fixed validation winners; never selected by evaluation score",
+    "sha256": "c33c262d5f9fb46117e8124e380e5c818881e0c6b8bbd7c2ec5a57c2927b52fb",
+    "title": "Do new constructs improve provenance-separated prediction?"
+  },
+  {
+    "file": "04_family_contributions.svg",
+    "selection": "Fixed validation winners; never selected by evaluation score",
+    "sha256": "6a1509665e3c57081d2254a161d9c65533fbe092b6db69f3ef62deb6d8a555c1",
+    "title": "Predictor families in the primary winners (correlated targets, descriptive counts)"
+  },
+  {
+    "file": "05_historical_stability.svg",
+    "selection": "Fixed validation winners; never selected by evaluation score",
+    "sha256": "7a56aa32d4d907486ac6d9dba64df1c38ca7e0e592e053cc5094cc18fc703802",
+    "title": "Primary leading targets across all historical periods"
+  },
+  {
+    "file": "06_observed_predictions.svg",
+    "selection": "Fixed validation winners; never selected by evaluation score",
+    "sha256": "985600f0babf43d922fb77279a6237dba4817e7d73b02cce55cef0411155ebbd",
+    "title": "Evaluation predictions for the first four primary validation targets"
+  },
+  {
+    "file": "07_incremental_uncertainty.svg",
+    "selection": "Fixed validation winners; never selected by evaluation score",
+    "sha256": "ecbd14f2ff45233ccf38835fd06b9aa087d01af8a8a19511973d756c3944708d",
+    "title": "Combined versus original: paired fixed-prediction 95% intervals"
+  },
+  {
+    "file": "08_era_diagnostic.svg",
+    "selection": "Fixed validation winners; never selected by evaluation score",
+    "sha256": "691f3956cddde6a52e625dc361083cd4e7df9ef15868ceef4fd32678da3a9781",
+    "title": "How much leading prediction persists within the same debut year?"
+  },
+  {
+    "file": "09_lyrical_targets.svg",
+    "selection": "Fixed validation winners; never selected by evaluation score",
+    "sha256": "20d1fb14eeb9c222c7b45c0e2060057a2a16faf188032fcc3f6b21764da9f0df",
+    "title": "Lyrical measurements predicted from separate recorded domains"
+  }
+]

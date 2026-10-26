@@ -1,0 +1,11 @@
+population,complete_pairs,exactly_equal,unequal,equal_fraction,maximum_absolute_difference,interpretation
+all_expanded_source,32723,32557,166,0.994927115484522,77,"Distinct source fields with observed disagreements; near-duplicate B relationship, not an independent or interesting discovery"
+enriched_post_burnin_base,20508,20402,106,0.994831285352058,58,"Distinct source fields with observed disagreements; near-duplicate B relationship, not an independent or interesting discovery"
+fold_0_training,10793,10709,84,0.992217177800426,1,"Distinct source fields with observed disagreements; near-duplicate B relationship, not an independent or interesting discovery"
+fold_0_heldout,2293,2293,0,1,0,"Distinct source fields with observed disagreements; near-duplicate B relationship, not an independent or interesting discovery"
+fold_1_training,13239,13155,84,0.993655109902561,1,"Distinct source fields with observed disagreements; near-duplicate B relationship, not an independent or interesting discovery"
+fold_1_heldout,2273,2273,0,1,0,"Distinct source fields with observed disagreements; near-duplicate B relationship, not an independent or interesting discovery"
+fold_2_training,15618,15534,84,0.994621590472532,1,"Distinct source fields with observed disagreements; near-duplicate B relationship, not an independent or interesting discovery"
+fold_2_heldout,1888,1888,0,1,0,"Distinct source fields with observed disagreements; near-duplicate B relationship, not an independent or interesting discovery"
+fold_3_training,17655,17571,84,0.995242141036534,1,"Distinct source fields with observed disagreements; near-duplicate B relationship, not an independent or interesting discovery"
+fold_3_heldout,2573,2552,21,0.99183832102604,58,"Distinct source fields with observed disagreements; near-duplicate B relationship, not an independent or interesting discovery"

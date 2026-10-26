@@ -1,0 +1,29 @@
+{
+  "files": {
+    "docs/genre/llm/prompt.txt": {
+      "evidence": "Existing genre prompt consumes identity/date and linked tags; forbids lyrics, classifier outputs and chart performance",
+      "sha256": "2a00aa21109c1991bb09e6f543b22c41ac0acc73ca2428b99d7f1187108bfb80"
+    },
+    "src/classifier_production.py": {
+      "evidence": "Production process reads approved stored lyric text and passes it alone to model tokenization; identity is used to locate/check the asset",
+      "sha256": "e9d0ee78ee91f5ae2fdefaad57706eba0a896100b21a0bd8932df822a2454443"
+    },
+    "src/classifier_production_engine.py": {
+      "evidence": "Four classifier adapters tokenize lyric text only; no chart dates, ranks, artist histories or genre annotations enter model inference",
+      "sha256": "e289330af45ccd691a1784b3177f633bb6e7b9a9ce652d91350d0388aeaa5818"
+    },
+    "src/feature_expansion_features.py": {
+      "evidence": "Existing scalar definitions and strict-prefix history/context calculations; content distances reuse the focal score vector",
+      "sha256": "9250eb0249c1ab37e07092ce95fbe3d58e639dcefa210046dcb399315112684d"
+    },
+    "src/genre_llm.py": {
+      "evidence": "Existing genre payload construction",
+      "sha256": "f62fbbc8af8cf032a9d94614877e95c028ac8ff270e09c27a616568e71ec67b7"
+    },
+    "src/lyrics_lrclib_r.py": {
+      "evidence": "Acquisition matching and conservative explicit title/artist/writer-header cleanup use asset identity; this shared linkage/formatting is not independent acquisition",
+      "sha256": "7cad9e09d990dd1dea707f2dfa215c6253e1bbfcd83ec6ddc25e30b07425487e"
+    }
+  },
+  "scope": "Recorded numerical measurement inputs; common asset matching, approved-text cleanup and enrichment selection remain shared and are not claimed independent"
+}

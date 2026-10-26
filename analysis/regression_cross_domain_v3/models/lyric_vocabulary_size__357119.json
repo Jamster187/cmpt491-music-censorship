@@ -1,0 +1,166 @@
+{
+  "coefficients": [
+    -1.8012541149586033e-14,
+    5.415518547170318,
+    -3.9485110471480134,
+    -1.4575331285857809,
+    -5.14381892956404,
+    0.001984879161801345,
+    -0.9087509358851638,
+    28.792792175847858,
+    -2.136767367650994,
+    -0.3957213046863577,
+    -1.0939426701177097,
+    -1.444581503280825,
+    1.2765205362444563,
+    -5.62177441607835,
+    -1.4364302860626066,
+    0.6635022452716588,
+    -5.646448184799143,
+    -7.460901396605599
+  ],
+  "encoder": {
+    "names": [
+      "previous_chart_incumbent_age_median",
+      "primary_genre",
+      "prior_year_unique_chart_song_count"
+    ],
+    "variables": {
+      "previous_chart_incumbent_age_median": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          7.311979609175871
+        ],
+        "median": [
+          7.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "previous_chart_incumbent_age_median"
+        ],
+        "std": [
+          2.2123288886263137
+        ]
+      },
+      "primary_genre": {
+        "dropped": [],
+        "keep": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "kind": "categorical",
+        "levels": [
+          "Afrobeats / African Pop",
+          "Alternative / Indie",
+          "Country",
+          "Electronic / Dance",
+          "Folk / Singer-Songwriter",
+          "Gospel / Christian",
+          "Hip-Hop / Rap",
+          "Jazz / Blues",
+          "K-Pop",
+          "Latin",
+          "Metal",
+          "Other",
+          "Pop",
+          "R&B / Soul",
+          "Reggae / Dancehall",
+          "Rock"
+        ],
+        "mean": [
+          0.03217218918153498,
+          0.1091475502690456,
+          0.038742565845369586,
+          0.02022090059473237,
+          0.0020390824129141887,
+          0.07204757858963466,
+          0.017672047578589634,
+          0.0001699235344095157,
+          0.005777400169923535,
+          0.006966864910790144,
+          0.006117247238742566,
+          0.24151798357405835,
+          0.21982441234777683,
+          0.005324270744831492,
+          0.22209005947323704
+        ],
+        "raw_width": 15,
+        "source_columns": [
+          "primary_genre"
+        ],
+        "std": [
+          0.17645718864586535,
+          0.31182424944078957,
+          0.19298077478621228,
+          0.14075516251232253,
+          0.04511013806039095,
+          0.25856667420416934,
+          0.13175639002708636,
+          0.013034364595252408,
+          0.07578932521932163,
+          0.08317648528343179,
+          0.07797324236533108,
+          0.4280035597800317,
+          0.41412756498901565,
+          0.07277309177070343,
+          0.41565137429871574
+        ]
+      },
+      "prior_year_unique_chart_song_count": {
+        "dropped": [],
+        "keep": [
+          0
+        ],
+        "kind": "numeric",
+        "mean": [
+          579.0263947890116
+        ],
+        "median": [
+          535.0
+        ],
+        "raw_width": 1,
+        "source_columns": [
+          "prior_year_unique_chart_song_count"
+        ],
+        "std": [
+          135.2132108465266
+        ]
+      }
+    }
+  },
+  "fallback": false,
+  "n_train": 17655,
+  "predictors": [
+    "previous_chart_incumbent_age_median",
+    "primary_genre",
+    "prior_year_unique_chart_song_count"
+  ],
+  "rank": 18,
+  "selection_sha256": "2a26759ef995747849ba0a11b07b9f63fe01683381c3a78d5c11e354e89fac32",
+  "target_center": 102.08853016142736,
+  "task": {
+    "target": "lyric_vocabulary_size"
+  },
+  "training_cutoff": "2018-01-01",
+  "training_ids_sha256": "cbbf6ae69ce8c9017de1af9acf77ae3a0a905c6adb0dee2557ab845625a0cc3d",
+  "training_mean": 102.08853016142736,
+  "training_median": 91.0,
+  "version": "exhaustive-cross-domain-regression-v3"
+}

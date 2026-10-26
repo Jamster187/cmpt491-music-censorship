@@ -1,0 +1,2373 @@
+{
+  "configuration": {
+    "batch_size": 256,
+    "binary_targets": "Existing meaningful 0/1 indicators retained; OLS is an unclipped linear-probability diagnostic, not calibrated classification. Top10 outcomes exclude already Top10 debuts, as in V1.",
+    "blas_threads": 1,
+    "bootstrap_repeats": 499,
+    "burn_in_end": "1960-01-01",
+    "categories": {
+      "1": "A: direct reconstruction or target dependency",
+      "2": "B: same measurement family",
+      "3": "C: different families with conceptual overlap",
+      "4": "D: distinct domains with shared recorded provenance",
+      "5": "E: distinct domains and disjoint recorded measurement provenance"
+    },
+    "checkpoint_rows": 8192,
+    "commercial_windows": "Existing 12/26-week columns only; all populations use complete 26-week windows to equalize maximum fixed-window predictor availability",
+    "configurations": [
+      "original",
+      "new",
+      "combined",
+      "classifier_only"
+    ],
+    "counts": "One categorical/multilabel variable; season sine/cosine jointly one construct, not two targets",
+    "cross_domain": "D/E only: all predictors in different substantive families and no prespecified conceptual-overlap proxy. The broader C/D/E different-family audit is also retained.",
+    "estimator": "Additive OLS with intercept, all unordered 1/2/3-variable combinations, no screening, no interactions/regularization/clipping",
+    "exclusion_rules": {
+      "1": "self_target",
+      "128": "career_endpoint_or_postwindow_presence_proxy",
+      "16": "focal_classifier_score_reused_in_content_distance",
+      "2": "same_calendar_encoding_or_career_endpoint",
+      "256": "sentiment_two_component_complement",
+      "32": "explicit_scalar_reused_in_lyric_formula",
+      "4": "same_physical_duration_measurement",
+      "512": "focal_chart_date_used_in_genre_annotation_input",
+      "64": "focal_genre_reused_in_genre_context",
+      "8": "same_commercial_measurement_across_windows_or_threshold"
+    },
+    "external_acquisition": false,
+    "final_refit": "All eligible labels available before 2018; retrospective modern content/metadata remain explicitly retrospective",
+    "folds": [
+      [
+        "1990-01-01",
+        "2000-01-01"
+      ],
+      [
+        "2000-01-01",
+        "2010-01-01"
+      ],
+      [
+        "2010-01-01",
+        "2018-01-01"
+      ]
+    ],
+    "genre_provenance": "Frozen genre prompt uses Billboard identity and first chart date, MB/Wikidata tags and learned genre knowledge; explicitly forbids lyrics/content scores/chart performance. Genre is not provenance-separated from Billboard or MB.",
+    "independent_confirmation": false,
+    "leaderboard": "Top relationships ranked by validation R2 only; preserve global top combinations and one-winner-per-target views separately. No evaluation performance used to select figures or winners.",
+    "lifetime": "Existing V2 prefix-at-cutoff definition; age >=5 calendar years and inactivity >=2 years. Other rows have missing lifetime predictors; lifetime targets require observed eligible labels. Not verified completed careers.",
+    "minimum_disk_headroom_bytes": 2147483648,
+    "minimum_training": 100,
+    "minimum_validation": 30,
+    "new_classification": false,
+    "new_feature_engineering": false,
+    "new_features": "None created; reuse all 57 existing constructs, V2 debut/date encodings, and the original campaign release-year/last-date encodings",
+    "objective": "Cross-domain variable prediction; not a commercial-forecast-only campaign",
+    "parent_commit": "23908fa31eec4454584d675d96bf391a3732c2b6",
+    "population": "Existing V2 retrospective cohort: complete 42 scores and nonempty existing lyric structure; post-1960 debut; complete 26-week window; observed target only. Same target cohort across every configuration/view/candidate.",
+    "population_reason": "Prevents absent content acquisition/final monthly-selection status from becoming a predictor of chart success; still a selected enriched cohort, not all entrants.",
+    "preprocessing": "Training medians, numeric/dummy standardization, observed training categorical/multilabel vocabulary; constant encoded columns removed but conceptual candidates retained; no missingness flags; unseen categories raw all zero",
+    "prior_test_inspected": true,
+    "provenance": "E requires disjoint recorded measurement-source sets and no overlap/dependency rule. Common identity joins and selection are not proof of statistical independence. Unknown pretrained knowledge remains a limitation.",
+    "registry": "All original raw MB duration summaries retained with distinct populations and uncertainty; their relationships to each other/consistent duration are A, not independent measurements. Catalog counts measure retained linked catalog coverage, not artist merit.",
+    "relationship_precedence": "Worst pair category determines combination; any compound reconstruction overrides to A. Mixed same-family/cross-domain models remain B.",
+    "runtime_limit_seconds": 14400,
+    "seed": 4913003,
+    "selection": "Equal-period mean validation R2; then fewer original variables; then lexicographic tuple. Baseline MSE skill is reported separately. All selections locked before any evaluation.",
+    "storage": "Float64 dense disk arrays for all period MAE/MSE; uint16 rank/fallback, global candidate catalog, full relationship audit, validation order. Metrics derived losslessly from fold constants. No duplicate giant CSV or millions of fitted models.",
+    "support": "At least 100 training and 30 validation identities and nonconstant target in all three validation folds; no evaluation-score screening",
+    "target_missingness": "Never impute targets. All predictor combinations share the target-specific observed-label cohort.",
+    "temporary_storage_limit_bytes": 15000000000,
+    "test_start": "2018-01-01",
+    "uncertainty": "Paired fixed-prediction bootstrap by exact artist credit and debut year; excludes refitting/search uncertainty. Artist aliases and collaboration overlap remain.",
+    "version": "exhaustive-cross-domain-regression-v3",
+    "views": {
+      "cross_domain": 4,
+      "different_family_audit": 3,
+      "provenance_separated": 5,
+      "unrestricted_valid": 2
+    }
+  },
+  "environment": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "platform": "macOS-13.6.6-arm64-arm-64bit",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "sqlite": "3.35.5"
+  },
+  "input_sha256": {
+    "analysis/feature_expansion_v1/feature_dictionary.csv": "8f172be99747e7064a245951a79395fb877c40de9c7441b210b7abcc99e3420c",
+    "data/public/feature_expansion_v1/song_features.csv.xz": "bab5692a7b6eb0d187e461f63287376dbab07666d1defb87154bdcf64e240a5e",
+    "data/public/feature_expansion_v1/song_outcomes.csv.xz": "27ac1b93ae009858bd42f66294a76ed10b32eb667e74139979a6f4fc9f50ea1b",
+    "data/public/master_weekly.csv.xz": "60f1a27be135c6e862c3d8bb5e6193999f0a9b3f19e6ea89de1f77454cdfc477",
+    "data/public/songs.csv": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5",
+    "docs/genre/llm/prompt.txt": "2a00aa21109c1991bb09e6f543b22c41ac0acc73ca2428b99d7f1187108bfb80"
+  },
+  "registry": {
+    "artist_credit_feature_marker": {
+      "availability": "C",
+      "definition": "Original full credit contains case-insensitive featuring/feat./ft. as word marker",
+      "engineering_family": "calendar_title",
+      "family": "credit_syntax",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "artist_credit_feature_marker",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "artist_credit_feature_marker"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "best_rank_12": {
+      "availability": "P",
+      "definition": "Existing fixed-window best_rank_12; rank=min, weeks=distinct dates, points=sum(101-rank), Top10=min<=10, long_chart=weeks>=ceil(horizon/2)",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "best_rank_12",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "best_rank_12"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "best_rank_26": {
+      "availability": "P",
+      "definition": "Existing fixed-window best_rank_26; rank=min, weeks=distinct dates, points=sum(101-rank), Top10=min<=10, long_chart=weeks>=ceil(horizon/2)",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "best_rank_26",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "best_rank_26"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "chart_points_12": {
+      "availability": "P",
+      "definition": "Existing fixed-window chart_points_12; rank=min, weeks=distinct dates, points=sum(101-rank), Top10=min<=10, long_chart=weeks>=ceil(horizon/2)",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "chart_points_12",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "chart_points_12"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "chart_points_26": {
+      "availability": "P",
+      "definition": "Existing fixed-window chart_points_26; rank=min, weeks=distinct dates, points=sum(101-rank), Top10=min<=10, long_chart=weeks>=ceil(horizon/2)",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "chart_points_26",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "chart_points_26"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "chart_weekday": {
+      "availability": "C",
+      "definition": "Python calendar weekday (Monday=0); observed calendar, not official methodology",
+      "engineering_family": "calendar_title",
+      "family": "calendar",
+      "kind": "categorical",
+      "meaningful_numerical": false,
+      "name": "chart_weekday",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "chart_weekday"
+      ],
+      "target_encoding_caveat": "Existing calendar/categorical/circular encoding; not a scalar numerical target"
+    },
+    "chart_weeks_12": {
+      "availability": "P",
+      "definition": "Existing fixed-window chart_weeks_12; rank=min, weeks=distinct dates, points=sum(101-rank), Top10=min<=10, long_chart=weeks>=ceil(horizon/2)",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "chart_weeks_12",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "chart_weeks_12"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "chart_weeks_26": {
+      "availability": "P",
+      "definition": "Existing fixed-window chart_weeks_26; rank=min, weeks=distinct dates, points=sum(101-rank), Top10=min<=10, long_chart=weeks>=ceil(horizon/2)",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "chart_weeks_26",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "chart_weeks_26"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "christmas_proximity_days": {
+      "availability": "C",
+      "definition": "Signed nearest December 25 date minus debut date",
+      "engineering_family": "calendar_title",
+      "family": "calendar",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "christmas_proximity_days",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "christmas_proximity_days"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_chart_career_days": {
+      "availability": "C",
+      "definition": "Days since first observed credit appearance; zero without earlier history",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_chart_career_days",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_chart_career_days"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_days_since_last_entry": {
+      "availability": "C",
+      "definition": "Days since most recent earlier distinct entry date; same-date tie handled jointly",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_days_since_last_entry",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_days_since_last_entry"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_previous_entry_best_rank_so_far": {
+      "availability": "C",
+      "definition": "Best rank so far among identities tied at most recent earlier entry date",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_previous_entry_best_rank_so_far",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_previous_entry_best_rank_so_far"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_prior_best_rank": {
+      "availability": "C",
+      "definition": "Minimum observed rank of credit before debut; null if new credit",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_prior_best_rank",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_prior_best_rank"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_prior_chart_points": {
+      "availability": "C",
+      "definition": "Source-row sum of 101-rank strictly before debut",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_prior_chart_points",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_prior_chart_points"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_prior_chart_rank_volatility": {
+      "availability": "C",
+      "definition": "Population SD of rank differences on consecutive <=8-day observed charts, prior credit songs",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_prior_chart_rank_volatility",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_prior_chart_rank_volatility"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_prior_chart_weeks": {
+      "availability": "C",
+      "definition": "Sum of distinct song/date appearances before debut",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_prior_chart_weeks",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_prior_chart_weeks"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_prior_genre_diversity": {
+      "availability": "F",
+      "definition": "Natural-log entropy of labelled prior exact-credit entries",
+      "engineering_family": "relative_content",
+      "family": "artist_genre_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_prior_genre_diversity",
+      "origin": "new",
+      "provenance": [
+        "billboard",
+        "genre_model",
+        "musicbrainz",
+        "wikidata"
+      ],
+      "source_columns": [
+        "credit_prior_genre_diversity"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_prior_reentry_song_share": {
+      "availability": "C",
+      "definition": "Share of prior identities returning after absence on consecutive <=8-day source charts",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_prior_reentry_song_share",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_prior_reentry_song_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_prior_song_count": {
+      "availability": "C",
+      "definition": "Other identities entered under exact full credit before debut",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_prior_song_count",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_prior_song_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_prior_song_observed_longevity_median": {
+      "availability": "C",
+      "definition": "Median prior-song distinct chart dates attained before cutoff; ongoing songs truncated",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_prior_song_observed_longevity_median",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_prior_song_observed_longevity_median"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_prior_top10_song_count": {
+      "availability": "C",
+      "definition": "Prior distinct identities already at rank <=10 before debut",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_prior_top10_song_count",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_prior_top10_song_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_prior_top40_song_count": {
+      "availability": "C",
+      "definition": "Prior distinct identities already at rank <=40 before debut",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_prior_top40_song_count",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_prior_top40_song_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_recent_chart_presence": {
+      "availability": "C",
+      "definition": "Number of distinct chart dates with this credit in preceding 365 days",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_recent_chart_presence",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_recent_chart_presence"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_recent_points_slope": {
+      "availability": "C",
+      "definition": "OLS slope per observed chart of credit points over prior 13 charts, including absent zeroes",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_recent_points_slope",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_recent_points_slope"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_simultaneous_other_songs": {
+      "availability": "C",
+      "definition": "Distinct identities of credit on preceding chart",
+      "engineering_family": "artist_history",
+      "family": "artist_chart_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_simultaneous_other_songs",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "credit_simultaneous_other_songs"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credit_team_prior_song_count": {
+      "availability": "F",
+      "definition": "Prior distinct identities with identical unordered set of >=2 consensus MBIDs; null for solo",
+      "engineering_family": "entity_credit",
+      "family": "entity_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credit_team_prior_song_count",
+      "origin": "new",
+      "provenance": [
+        "billboard",
+        "musicbrainz"
+      ],
+      "source_columns": [
+        "credit_team_prior_song_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credited_artist_entity_count": {
+      "availability": "F",
+      "definition": "Number of distinct MBIDs in unanimous ordered recording-credit consensus",
+      "engineering_family": "entity_credit",
+      "family": "collaboration_entities",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credited_artist_entity_count",
+      "origin": "new",
+      "provenance": [
+        "musicbrainz"
+      ],
+      "source_columns": [
+        "credited_artist_entity_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "credited_entities_prior_top10_mean": {
+      "availability": "F",
+      "definition": "Mean count of previously attained distinct Top10 songs per unique credited MBID",
+      "engineering_family": "entity_credit",
+      "family": "entity_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "credited_entities_prior_top10_mean",
+      "origin": "new",
+      "provenance": [
+        "billboard",
+        "musicbrainz"
+      ],
+      "source_columns": [
+        "credited_entities_prior_top10_mean"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "debut_chart_established_credit_share": {
+      "availability": "C",
+      "definition": "Share of other distinct credits on debut chart with earlier observed entry",
+      "engineering_family": "chart_competition",
+      "family": "chart_context",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "debut_chart_established_credit_share",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "debut_chart_established_credit_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "debut_chart_same_genre_share": {
+      "availability": "F",
+      "definition": "Share of other labelled distinct songs on published debut chart with focal primary genre",
+      "engineering_family": "relative_content",
+      "family": "genre_context",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "debut_chart_same_genre_share",
+      "origin": "new",
+      "provenance": [
+        "billboard",
+        "genre_model",
+        "musicbrainz",
+        "wikidata"
+      ],
+      "source_columns": [
+        "debut_chart_same_genre_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "debut_competing_new_entry_count": {
+      "availability": "C",
+      "definition": "Other first-observed identities on published debut chart",
+      "engineering_family": "chart_competition",
+      "family": "chart_context",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "debut_competing_new_entry_count",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "debut_competing_new_entry_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "debut_rank": {
+      "availability": "C",
+      "definition": "Minimum rank on published first chart",
+      "engineering_family": "debut_chart",
+      "family": "debut_chart",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "debut_rank",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "debut_rank"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "debut_reported_last_week_rank": {
+      "availability": "C",
+      "definition": "Minimum nonmissing source-reported last-week rank on first observed chart; does not merge identities",
+      "engineering_family": "debut_chart",
+      "family": "debut_chart",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "debut_reported_last_week_rank",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "debut_reported_last_week_rank"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "debut_reported_peak_position": {
+      "availability": "C",
+      "definition": "Minimum source-reported peak on first observed chart; known then, distinct from a future attained peak",
+      "engineering_family": "debut_chart",
+      "family": "debut_chart",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "debut_reported_peak_position",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "debut_reported_peak_position"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "debut_reported_weeks_on_chart": {
+      "availability": "C",
+      "definition": "Maximum source-reported weeks on first observed chart; source identity/history anomalies retained",
+      "engineering_family": "debut_chart",
+      "family": "debut_chart",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "debut_reported_weeks_on_chart",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "debut_reported_weeks_on_chart"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "debut_season_phase": {
+      "availability": "C",
+      "definition": "Joint circular phase; both frozen sine/cosine components form ONE variable",
+      "engineering_family": "calendar_title",
+      "family": "calendar",
+      "kind": "numeric_block",
+      "meaningful_numerical": false,
+      "name": "debut_season_phase",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "debut_season_sin",
+        "debut_season_cos"
+      ],
+      "target_encoding_caveat": "Existing calendar/categorical/circular encoding; not a scalar numerical target"
+    },
+    "debut_time_years": {
+      "availability": "C",
+      "definition": "Source first-chart date as days since 1970-01-01 / 365.2425; deterministic known-date representation",
+      "engineering_family": "historical_time",
+      "family": "calendar",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "debut_time_years",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "debut_time_years"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "detox_identity_attack": {
+      "availability": "F",
+      "definition": "Existing frozen detox_identity_attack content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_content",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "detox_identity_attack",
+      "origin": "original",
+      "provenance": [
+        "detoxify",
+        "lyrics"
+      ],
+      "source_columns": [
+        "detox_identity_attack"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "detox_insult": {
+      "availability": "F",
+      "definition": "Existing frozen detox_insult content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_content",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "detox_insult",
+      "origin": "original",
+      "provenance": [
+        "detoxify",
+        "lyrics"
+      ],
+      "source_columns": [
+        "detox_insult"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "detox_obscene": {
+      "availability": "F",
+      "definition": "Existing frozen detox_obscene content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_content",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "detox_obscene",
+      "origin": "original",
+      "provenance": [
+        "detoxify",
+        "lyrics"
+      ],
+      "source_columns": [
+        "detox_obscene"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "detox_severe_toxicity": {
+      "availability": "F",
+      "definition": "Existing frozen detox_severe_toxicity content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_content",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "detox_severe_toxicity",
+      "origin": "original",
+      "provenance": [
+        "detoxify",
+        "lyrics"
+      ],
+      "source_columns": [
+        "detox_severe_toxicity"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "detox_sexual_explicit": {
+      "availability": "F",
+      "definition": "Existing frozen detox_sexual_explicit content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_content",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "detox_sexual_explicit",
+      "origin": "original",
+      "provenance": [
+        "detoxify",
+        "lyrics"
+      ],
+      "source_columns": [
+        "detox_sexual_explicit"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "detox_threat": {
+      "availability": "F",
+      "definition": "Existing frozen detox_threat content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_content",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "detox_threat",
+      "origin": "original",
+      "provenance": [
+        "detoxify",
+        "lyrics"
+      ],
+      "source_columns": [
+        "detox_threat"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "detox_toxicity": {
+      "availability": "F",
+      "definition": "Existing frozen detox_toxicity content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_content",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "detox_toxicity",
+      "origin": "original",
+      "provenance": [
+        "detoxify",
+        "lyrics"
+      ],
+      "source_columns": [
+        "detox_toxicity"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "duration_seconds": {
+      "availability": "F",
+      "definition": "V1 accepted consistent duration; all retained durations agree; other duration summaries are aliases on this mask",
+      "engineering_family": "recording_metadata",
+      "family": "recording_duration",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "duration_seconds",
+      "origin": "original",
+      "provenance": [
+        "musicbrainz"
+      ],
+      "source_columns": [
+        "duration_seconds"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_admiration": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_admiration content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_admiration",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_admiration"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_amusement": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_amusement content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_amusement",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_amusement"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_anger": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_anger content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_anger",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_anger"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_annoyance": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_annoyance content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_annoyance",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_annoyance"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_approval": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_approval content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_approval",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_approval"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_caring": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_caring content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_caring",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_caring"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_confusion": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_confusion content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_confusion",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_confusion"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_curiosity": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_curiosity content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_curiosity",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_curiosity"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_desire": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_desire content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_desire",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_desire"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_disappointment": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_disappointment content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_disappointment",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_disappointment"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_disapproval": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_disapproval content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_disapproval",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_disapproval"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_disgust": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_disgust content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_disgust",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_disgust"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_embarrassment": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_embarrassment content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_embarrassment",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_embarrassment"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_excitement": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_excitement content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_excitement",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_excitement"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_fear": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_fear content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_fear",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_fear"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_gratitude": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_gratitude content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_gratitude",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_gratitude"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_grief": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_grief content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_grief",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_grief"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_joy": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_joy content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_joy",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_joy"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_love": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_love content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_love",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_love"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_nervousness": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_nervousness content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_nervousness",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_nervousness"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_neutral": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_neutral content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_neutral",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_neutral"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_optimism": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_optimism content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_optimism",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_optimism"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_pride": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_pride content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_pride",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_pride"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_realization": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_realization content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_realization",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_realization"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_relief": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_relief content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_relief",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_relief"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_remorse": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_remorse content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_remorse",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_remorse"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_sadness": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_sadness content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_sadness",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_sadness"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "emotion_surprise": {
+      "availability": "F",
+      "definition": "Existing frozen emotion_surprise content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "emotion_surprise",
+      "origin": "original",
+      "provenance": [
+        "goemotions",
+        "lyrics"
+      ],
+      "source_columns": [
+        "emotion_surprise"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "first_credited_entity_prior_song_count": {
+      "availability": "F",
+      "definition": "Distinct earlier identities containing first listed MBID; first-listed is not assumed lead vocalist",
+      "engineering_family": "entity_credit",
+      "family": "entity_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "first_credited_entity_prior_song_count",
+      "origin": "new",
+      "provenance": [
+        "billboard",
+        "musicbrainz"
+      ],
+      "source_columns": [
+        "first_credited_entity_prior_song_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "last_chart_date": {
+      "availability": "P",
+      "definition": "Existing original-campaign days-since-1970 encoding of last observed chart date; recomputed from each cutoff prefix, mature/inactive mask",
+      "engineering_family": "historical_time",
+      "family": "calendar",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "last_chart_date",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "last_chart_date"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "ll_explicit_language": {
+      "availability": "F",
+      "definition": "Existing frozen ll_explicit_language content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_content",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "ll_explicit_language",
+      "origin": "original",
+      "provenance": [
+        "lyriclens",
+        "lyrics"
+      ],
+      "source_columns": [
+        "ll_explicit_language"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "ll_sexual_content": {
+      "availability": "F",
+      "definition": "Existing frozen ll_sexual_content content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_content",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "ll_sexual_content",
+      "origin": "original",
+      "provenance": [
+        "lyriclens",
+        "lyrics"
+      ],
+      "source_columns": [
+        "ll_sexual_content"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "ll_substance_use": {
+      "availability": "F",
+      "definition": "Existing frozen ll_substance_use content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_content",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "ll_substance_use",
+      "origin": "original",
+      "provenance": [
+        "lyriclens",
+        "lyrics"
+      ],
+      "source_columns": [
+        "ll_substance_use"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "ll_violence": {
+      "availability": "F",
+      "definition": "Existing frozen ll_violence content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_content",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "ll_violence",
+      "origin": "original",
+      "provenance": [
+        "lyriclens",
+        "lyrics"
+      ],
+      "source_columns": [
+        "ll_violence"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "long_chart_12": {
+      "availability": "P",
+      "definition": "Existing fixed-window long_chart_12; rank=min, weeks=distinct dates, points=sum(101-rank), Top10=min<=10, long_chart=weeks>=ceil(horizon/2)",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "long_chart_12",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "long_chart_12"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "long_chart_26": {
+      "availability": "P",
+      "definition": "Existing fixed-window long_chart_26; rank=min, weeks=distinct dates, points=sum(101-rank), Top10=min<=10, long_chart=weeks>=ceil(horizon/2)",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "long_chart_26",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "long_chart_26"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_compression_ratio": {
+      "availability": "F",
+      "definition": "zlib level 9 byte length / original UTF-8 bytes of normalized token lines",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_compression_ratio",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_compression_ratio"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_content_distance_prior_hits": {
+      "availability": "F",
+      "definition": "RMSE across 42 raw [0,1] scores against centroid of distinct prior attained Top10 songs; equal dimensions, no estimated scaling",
+      "engineering_family": "relative_content",
+      "family": "content_reference",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_content_distance_prior_hits",
+      "origin": "new",
+      "provenance": [
+        "billboard",
+        "detoxify",
+        "goemotions",
+        "lyriclens",
+        "lyrics",
+        "sentiment_model"
+      ],
+      "source_columns": [
+        "lyric_content_distance_prior_hits"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_content_distance_recent_chart": {
+      "availability": "F",
+      "definition": "RMSE against complete-profile distinct songs on preceding chart",
+      "engineering_family": "relative_content",
+      "family": "content_reference",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_content_distance_recent_chart",
+      "origin": "new",
+      "provenance": [
+        "billboard",
+        "detoxify",
+        "goemotions",
+        "lyriclens",
+        "lyrics",
+        "sentiment_model"
+      ],
+      "source_columns": [
+        "lyric_content_distance_recent_chart"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_first_person_plural_share": {
+      "availability": "F",
+      "definition": "English we/us/our/ours/ourselves/we're/we've/we'll/we'd divided by all tokens",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_first_person_plural_share",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_first_person_plural_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_first_person_singular_share": {
+      "availability": "F",
+      "definition": "English tokens i/me/my/mine/myself/i'm/i've/i'll/i'd divided by all tokens",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_first_person_singular_share",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_first_person_singular_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_hapax_share": {
+      "availability": "F",
+      "definition": "Types occurring once divided by all distinct types",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_hapax_share",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_hapax_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_line_length_dispersion": {
+      "availability": "F",
+      "definition": "Population SD of lexical tokens per nonempty token line",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_line_length_dispersion",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_line_length_dispersion"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_mattr": {
+      "availability": "F",
+      "definition": "Mean type/token ratio over all sliding 50-token windows; null below 50 tokens",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_mattr",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_mattr"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_mean_line_length": {
+      "availability": "F",
+      "definition": "Mean lexical tokens per nonempty token line",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_mean_line_length",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_mean_line_length"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_negation_token_share": {
+      "availability": "F",
+      "definition": "English no/not/never/none/nobody/nothing/neither/nor/without or suffix n't divided by all tokens",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_negation_token_share",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_negation_token_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_question_line_share": {
+      "availability": "F",
+      "definition": "Share of retained nonempty lines ending in ?",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_question_line_share",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_question_line_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_repeated_bigram_share": {
+      "availability": "F",
+      "definition": "(Adjacent bigram occurrences - distinct bigrams) / bigram occurrences",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_repeated_bigram_share",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_repeated_bigram_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_repeated_line_share": {
+      "availability": "F",
+      "definition": "(Nonempty token lines - distinct token lines) / nonempty token lines",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_repeated_line_share",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_repeated_line_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_second_person_share": {
+      "availability": "F",
+      "definition": "English you/your/yours/yourself/yourselves/you're/you've/you'll/you'd divided by all tokens",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_second_person_share",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_second_person_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_temporal_deixis_share": {
+      "availability": "F",
+      "definition": "English yesterday/today/tomorrow/tonight/now/then/always/forever/ago divided by all tokens",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_temporal_deixis_share",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_temporal_deixis_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_title_phrase_repetition": {
+      "availability": "F",
+      "definition": "Contiguous exact normalized full title token matches per 100 approved lyric tokens; title-equal opening lyric retained",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_title_phrase_repetition",
+      "origin": "new",
+      "provenance": [
+        "billboard",
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_title_phrase_repetition"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_vocabulary_size": {
+      "availability": "F",
+      "definition": "Distinct normalized lexical token types",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_vocabulary_size",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_vocabulary_size"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "lyric_word_count": {
+      "availability": "F",
+      "definition": "Unicode lexical tokens; NFC/casefold; apostrophe contractions kept",
+      "engineering_family": "lyric_structure",
+      "family": "lyric_structure",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "lyric_word_count",
+      "origin": "new",
+      "provenance": [
+        "lyrics"
+      ],
+      "source_columns": [
+        "lyric_word_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "mb_distinct_duration_count": {
+      "availability": "F",
+      "definition": "Count of retained linked catalog entities/durations; capped and incomplete provider coverage, not total true versions",
+      "engineering_family": "recording_metadata",
+      "family": "catalog_coverage",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "mb_distinct_duration_count",
+      "origin": "original",
+      "provenance": [
+        "musicbrainz"
+      ],
+      "source_columns": [
+        "mb_distinct_duration_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "mb_duration_max_seconds": {
+      "availability": "F",
+      "definition": "Summary of retained positive recording lengths; different manifestations can disagree",
+      "engineering_family": "recording_metadata",
+      "family": "recording_duration",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "mb_duration_max_seconds",
+      "origin": "original",
+      "provenance": [
+        "musicbrainz"
+      ],
+      "source_columns": [
+        "mb_duration_max_seconds"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "mb_duration_median_seconds": {
+      "availability": "F",
+      "definition": "Summary of retained positive recording lengths; different manifestations can disagree",
+      "engineering_family": "recording_metadata",
+      "family": "recording_duration",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "mb_duration_median_seconds",
+      "origin": "original",
+      "provenance": [
+        "musicbrainz"
+      ],
+      "source_columns": [
+        "mb_duration_median_seconds"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "mb_duration_min_seconds": {
+      "availability": "F",
+      "definition": "Summary of retained positive recording lengths; different manifestations can disagree",
+      "engineering_family": "recording_metadata",
+      "family": "recording_duration",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "mb_duration_min_seconds",
+      "origin": "original",
+      "provenance": [
+        "musicbrainz"
+      ],
+      "source_columns": [
+        "mb_duration_min_seconds"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "mb_recording_count": {
+      "availability": "F",
+      "definition": "Count of retained linked catalog entities/durations; capped and incomplete provider coverage, not total true versions",
+      "engineering_family": "recording_metadata",
+      "family": "catalog_coverage",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "mb_recording_count",
+      "origin": "original",
+      "provenance": [
+        "musicbrainz"
+      ],
+      "source_columns": [
+        "mb_recording_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "mb_release_count": {
+      "availability": "F",
+      "definition": "Count of retained linked catalog entities/durations; capped and incomplete provider coverage, not total true versions",
+      "engineering_family": "recording_metadata",
+      "family": "catalog_coverage",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "mb_release_count",
+      "origin": "original",
+      "provenance": [
+        "musicbrainz"
+      ],
+      "source_columns": [
+        "mb_release_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "mb_release_year": {
+      "availability": "F",
+      "definition": "First four characters of retained earliest matched release date; existing original-campaign encoding; NOT verified original release year",
+      "engineering_family": "recording_metadata",
+      "family": "release_calendar",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "mb_release_year",
+      "origin": "original",
+      "provenance": [
+        "musicbrainz"
+      ],
+      "source_columns": [
+        "mb_release_year"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "observed_lifetime_best_rank": {
+      "availability": "P",
+      "definition": "Existing observed chart-history observed_lifetime_best_rank",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "observed_lifetime_best_rank",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "observed_lifetime_best_rank"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "observed_lifetime_chart_points": {
+      "availability": "P",
+      "definition": "Existing observed chart-history observed_lifetime_chart_points",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "observed_lifetime_chart_points",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "observed_lifetime_chart_points"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "observed_lifetime_chart_weeks": {
+      "availability": "P",
+      "definition": "Existing observed chart-history observed_lifetime_chart_weeks",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "observed_lifetime_chart_weeks",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "observed_lifetime_chart_weeks"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "observed_return_after_26weeks": {
+      "availability": "P",
+      "definition": "Any observed chart appearance at or after debut +182 days; does not require an absence/re-entry",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "observed_return_after_26weeks",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "observed_return_after_26weeks"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "previous_chart_credit_concentration": {
+      "availability": "C",
+      "definition": "HHI of exact-credit shares among distinct songs on preceding chart",
+      "engineering_family": "chart_competition",
+      "family": "chart_context",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "previous_chart_credit_concentration",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "previous_chart_credit_concentration"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "previous_chart_incumbent_age_median": {
+      "availability": "C",
+      "definition": "Median distinct chart-date count attained by songs on preceding chart",
+      "engineering_family": "chart_competition",
+      "family": "chart_context",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "previous_chart_incumbent_age_median",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "previous_chart_incumbent_age_median"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "previous_chart_leader_tenure": {
+      "availability": "C",
+      "definition": "Consecutive <=8-day source charts with same rank-one identity through preceding chart",
+      "engineering_family": "chart_competition",
+      "family": "chart_context",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "previous_chart_leader_tenure",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "previous_chart_leader_tenure"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "previous_chart_new_entry_count": {
+      "availability": "C",
+      "definition": "Distinct first-observed entrants on preceding chart",
+      "engineering_family": "chart_competition",
+      "family": "chart_context",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "previous_chart_new_entry_count",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "previous_chart_new_entry_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "previous_chart_turnover_share": {
+      "availability": "C",
+      "definition": "Share of preceding-chart songs absent from chart immediately before it; null over gap >8 days",
+      "engineering_family": "chart_competition",
+      "family": "chart_context",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "previous_chart_turnover_share",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "previous_chart_turnover_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "primary_genre": {
+      "availability": "F",
+      "definition": "Existing modern primary genre label",
+      "engineering_family": "genre_information",
+      "family": "genre_annotation",
+      "kind": "categorical",
+      "meaningful_numerical": false,
+      "name": "primary_genre",
+      "origin": "original",
+      "provenance": [
+        "billboard",
+        "genre_model",
+        "musicbrainz",
+        "wikidata"
+      ],
+      "source_columns": [
+        "primary_genre"
+      ],
+      "target_encoding_caveat": "Existing calendar/categorical/circular encoding; not a scalar numerical target"
+    },
+    "prior_year_primary_genre_share": {
+      "availability": "F",
+      "definition": "Share of labelled distinct earlier entries in preceding 365 days with focal genre",
+      "engineering_family": "relative_content",
+      "family": "genre_context",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "prior_year_primary_genre_share",
+      "origin": "new",
+      "provenance": [
+        "billboard",
+        "genre_model",
+        "musicbrainz",
+        "wikidata"
+      ],
+      "source_columns": [
+        "prior_year_primary_genre_share"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "prior_year_unique_chart_song_count": {
+      "availability": "C",
+      "definition": "Distinct identities appearing in preceding 365 days",
+      "engineering_family": "chart_competition",
+      "family": "chart_context",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "prior_year_unique_chart_song_count",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "prior_year_unique_chart_song_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "same_credit_debut_cluster_size": {
+      "availability": "C",
+      "definition": "Other first-observed identities with exact credit on current chart",
+      "engineering_family": "chart_competition",
+      "family": "chart_context",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "same_credit_debut_cluster_size",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "same_credit_debut_cluster_size"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "secondary_genres": {
+      "availability": "F",
+      "definition": "Existing modern secondary genre label set, one original variable",
+      "engineering_family": "genre_information",
+      "family": "genre_annotation",
+      "kind": "multilabel",
+      "meaningful_numerical": false,
+      "name": "secondary_genres",
+      "origin": "original",
+      "provenance": [
+        "billboard",
+        "genre_model",
+        "musicbrainz",
+        "wikidata"
+      ],
+      "source_columns": [
+        "secondary_genres"
+      ],
+      "target_encoding_caveat": "Existing calendar/categorical/circular encoding; not a scalar numerical target"
+    },
+    "sentiment_negative": {
+      "availability": "F",
+      "definition": "Existing frozen sentiment_negative content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "sentiment_negative",
+      "origin": "original",
+      "provenance": [
+        "lyrics",
+        "sentiment_model"
+      ],
+      "source_columns": [
+        "sentiment_negative"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "sentiment_neutral": {
+      "availability": "F",
+      "definition": "Existing frozen sentiment_neutral content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "sentiment_neutral",
+      "origin": "original",
+      "provenance": [
+        "lyrics",
+        "sentiment_model"
+      ],
+      "source_columns": [
+        "sentiment_neutral"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "sentiment_positive": {
+      "availability": "F",
+      "definition": "Existing frozen sentiment_positive content-classifier score",
+      "engineering_family": "lyrical_scores",
+      "family": "lyrical_affect",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "sentiment_positive",
+      "origin": "original",
+      "provenance": [
+        "lyrics",
+        "sentiment_model"
+      ],
+      "source_columns": [
+        "sentiment_positive"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "song_title_has_number": {
+      "availability": "C",
+      "definition": "Contains Unicode digit or English zero through twelve",
+      "engineering_family": "calendar_title",
+      "family": "title_form",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "song_title_has_number",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "song_title_has_number"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "song_title_prior_usage_count": {
+      "availability": "C",
+      "definition": "Earlier distinct identities with exact original title",
+      "engineering_family": "calendar_title",
+      "family": "title_history",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "song_title_prior_usage_count",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "song_title_prior_usage_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "song_title_question_form": {
+      "availability": "C",
+      "definition": "Contains ? or starts who/what/when/where/why/how/is/are/can/do/does/did",
+      "engineering_family": "calendar_title",
+      "family": "title_form",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "song_title_question_form",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "song_title_question_form"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "song_title_token_count": {
+      "availability": "C",
+      "definition": "Unicode lexical token count in original title",
+      "engineering_family": "calendar_title",
+      "family": "title_form",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "song_title_token_count",
+      "origin": "new",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "song_title_token_count"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "top10_12": {
+      "availability": "P",
+      "definition": "Existing fixed-window top10_12; rank=min, weeks=distinct dates, points=sum(101-rank), Top10=min<=10, long_chart=weeks>=ceil(horizon/2)",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "top10_12",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "top10_12"
+      ],
+      "target_encoding_caveat": ""
+    },
+    "top10_26": {
+      "availability": "P",
+      "definition": "Existing fixed-window top10_26; rank=min, weeks=distinct dates, points=sum(101-rank), Top10=min<=10, long_chart=weeks>=ceil(horizon/2)",
+      "engineering_family": "commercial_performance",
+      "family": "commercial_performance",
+      "kind": "numeric",
+      "meaningful_numerical": true,
+      "name": "top10_26",
+      "origin": "original",
+      "provenance": [
+        "billboard"
+      ],
+      "source_columns": [
+        "top10_26"
+      ],
+      "target_encoding_caveat": ""
+    }
+  }
+}

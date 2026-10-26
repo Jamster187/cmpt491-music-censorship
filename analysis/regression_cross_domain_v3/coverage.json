@@ -1,0 +1,2093 @@
+[
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.10152816017401223,
+    "minimum_evaluation_r2": -1.1367319238410802,
+    "negative_evaluation_r2": 294174,
+    "negative_evaluation_skill": 129229,
+    "negative_validation_r2": 341195,
+    "target": "artist_credit_feature_marker",
+    "timing": {
+      "fit_seconds": 4.830263262995933,
+      "fits": 1398528,
+      "metrics_seconds": 10.65630755799408,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 310247,
+    "fallback_fits": 4,
+    "fits": 1240988,
+    "maximum_evaluation_r2": 0.6065161832250058,
+    "minimum_evaluation_r2": -1.3086550752323727,
+    "negative_evaluation_r2": 206621,
+    "negative_evaluation_skill": 139301,
+    "negative_validation_r2": 205002,
+    "target": "best_rank_12",
+    "timing": {
+      "fit_seconds": 4.41369130900279,
+      "fits": 1240988,
+      "metrics_seconds": 9.672077412000483,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 310247,
+    "fallback_fits": 4,
+    "fits": 1240988,
+    "maximum_evaluation_r2": 0.6025390710173515,
+    "minimum_evaluation_r2": -1.1973013960953072,
+    "negative_evaluation_r2": 192363,
+    "negative_evaluation_skill": 149884,
+    "negative_validation_r2": 167599,
+    "target": "best_rank_26",
+    "timing": {
+      "fit_seconds": 4.346253070998827,
+      "fits": 1240988,
+      "metrics_seconds": 9.860433215005159,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 325625,
+    "fallback_fits": 4,
+    "fits": 1302500,
+    "maximum_evaluation_r2": 0.7544982727019497,
+    "minimum_evaluation_r2": -1.5748627815360887,
+    "negative_evaluation_r2": 267124,
+    "negative_evaluation_skill": 102700,
+    "negative_validation_r2": 234977,
+    "target": "chart_points_12",
+    "timing": {
+      "fit_seconds": 4.504648819995992,
+      "fits": 1302500,
+      "metrics_seconds": 9.507240705004797,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 325625,
+    "fallback_fits": 4,
+    "fits": 1302500,
+    "maximum_evaluation_r2": 0.8433675230417403,
+    "minimum_evaluation_r2": -0.9215918966333176,
+    "negative_evaluation_r2": 227413,
+    "negative_evaluation_skill": 157652,
+    "negative_validation_r2": 221976,
+    "target": "chart_points_26",
+    "timing": {
+      "fit_seconds": 4.660559595001374,
+      "fits": 1302500,
+      "metrics_seconds": 10.185334926999587,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 310247,
+    "fallback_fits": 4,
+    "fits": 1240988,
+    "maximum_evaluation_r2": 0.6570877780809572,
+    "minimum_evaluation_r2": -0.8706583775610115,
+    "negative_evaluation_r2": 283356,
+    "negative_evaluation_skill": 126010,
+    "negative_validation_r2": 278294,
+    "target": "chart_weeks_12",
+    "timing": {
+      "fit_seconds": 4.292126205994961,
+      "fits": 1240988,
+      "metrics_seconds": 8.915059807001128,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 310247,
+    "fallback_fits": 4,
+    "fits": 1240988,
+    "maximum_evaluation_r2": 0.7953745600159434,
+    "minimum_evaluation_r2": -1.0426969722058819,
+    "negative_evaluation_r2": 228054,
+    "negative_evaluation_skill": 168221,
+    "negative_validation_r2": 275890,
+    "target": "chart_weeks_26",
+    "timing": {
+      "fit_seconds": 4.285602922998834,
+      "fits": 1240988,
+      "metrics_seconds": 8.76450375900437,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 325625,
+    "fallback_fits": 4,
+    "fits": 1302500,
+    "maximum_evaluation_r2": 0.007384127801257523,
+    "minimum_evaluation_r2": -0.9103568207166655,
+    "negative_evaluation_r2": 225505,
+    "negative_evaluation_skill": 165122,
+    "negative_validation_r2": 317743,
+    "target": "christmas_proximity_days",
+    "timing": {
+      "fit_seconds": 4.398020062994192,
+      "fits": 1302500,
+      "metrics_seconds": 8.95570471500423,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.47931232624061326,
+    "minimum_evaluation_r2": -2.1789655567704735,
+    "negative_evaluation_r2": 277015,
+    "negative_evaluation_skill": 169276,
+    "negative_validation_r2": 159824,
+    "target": "credit_chart_career_days",
+    "timing": {
+      "fit_seconds": 4.750463730997751,
+      "fits": 1398528,
+      "metrics_seconds": 9.668834193000961,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.3290791917003556,
+    "minimum_evaluation_r2": -0.5205607720450278,
+    "negative_evaluation_r2": 314328,
+    "negative_evaluation_skill": 209490,
+    "negative_validation_r2": 320801,
+    "target": "credit_days_since_last_entry",
+    "timing": {
+      "fit_seconds": 4.615597577996965,
+      "fits": 1398528,
+      "metrics_seconds": 5.348913506999764,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.2604195951332935,
+    "minimum_evaluation_r2": -2.1671818837337065,
+    "negative_evaluation_r2": 232755,
+    "negative_evaluation_skill": 209622,
+    "negative_validation_r2": 281615,
+    "target": "credit_previous_entry_best_rank_so_far",
+    "timing": {
+      "fit_seconds": 4.634347597995799,
+      "fits": 1398528,
+      "metrics_seconds": 5.4333957800051,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.3124200625026792,
+    "minimum_evaluation_r2": -2.3188333726139865,
+    "negative_evaluation_r2": 227332,
+    "negative_evaluation_skill": 198713,
+    "negative_validation_r2": 268087,
+    "target": "credit_prior_best_rank",
+    "timing": {
+      "fit_seconds": 4.620431226999841,
+      "fits": 1398528,
+      "metrics_seconds": 5.836135287001753,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.9922394145376611,
+    "minimum_evaluation_r2": -0.22037138339143603,
+    "negative_evaluation_r2": 263405,
+    "negative_evaluation_skill": 119695,
+    "negative_validation_r2": 184513,
+    "target": "credit_prior_chart_points",
+    "timing": {
+      "fit_seconds": 4.772712788003332,
+      "fits": 1398528,
+      "metrics_seconds": 10.047271426997526,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.23781310792098886,
+    "minimum_evaluation_r2": -6.53952817449045,
+    "negative_evaluation_r2": 274618,
+    "negative_evaluation_skill": 231415,
+    "negative_validation_r2": 349630,
+    "target": "credit_prior_chart_rank_volatility",
+    "timing": {
+      "fit_seconds": 4.619570685000525,
+      "fits": 1398528,
+      "metrics_seconds": 5.582566783998601,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.989861724453691,
+    "minimum_evaluation_r2": -0.19503861047518,
+    "negative_evaluation_r2": 265636,
+    "negative_evaluation_skill": 127613,
+    "negative_validation_r2": 225143,
+    "target": "credit_prior_chart_weeks",
+    "timing": {
+      "fit_seconds": 4.763034311007374,
+      "fits": 1398528,
+      "metrics_seconds": 10.432334310000584,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.6275550881545926,
+    "minimum_evaluation_r2": -0.37936722733703143,
+    "negative_evaluation_r2": 95967,
+    "negative_evaluation_skill": 57796,
+    "negative_validation_r2": 291463,
+    "target": "credit_prior_genre_diversity",
+    "timing": {
+      "fit_seconds": 4.634843376004682,
+      "fits": 1398528,
+      "metrics_seconds": 5.6477051690037285,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.012422873826549496,
+    "minimum_evaluation_r2": -1.2516674585449281,
+    "negative_evaluation_r2": 349629,
+    "negative_evaluation_skill": 81759,
+    "negative_validation_r2": 349632,
+    "target": "credit_prior_reentry_song_share",
+    "timing": {
+      "fit_seconds": 4.624401486005553,
+      "fits": 1398528,
+      "metrics_seconds": 5.472826059998852,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.9458915449799057,
+    "minimum_evaluation_r2": -0.12198432747676358,
+    "negative_evaluation_r2": 279193,
+    "negative_evaluation_skill": 130234,
+    "negative_validation_r2": 268670,
+    "target": "credit_prior_song_count",
+    "timing": {
+      "fit_seconds": 4.769004876003066,
+      "fits": 1398528,
+      "metrics_seconds": 10.786969037000006,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.240360025581426,
+    "minimum_evaluation_r2": -2.448940292550877,
+    "negative_evaluation_r2": 320966,
+    "negative_evaluation_skill": 220179,
+    "negative_validation_r2": 348981,
+    "target": "credit_prior_song_observed_longevity_median",
+    "timing": {
+      "fit_seconds": 4.615929378997464,
+      "fits": 1398528,
+      "metrics_seconds": 5.232630910005753,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.9398822804717628,
+    "minimum_evaluation_r2": -0.310455521321102,
+    "negative_evaluation_r2": 236057,
+    "negative_evaluation_skill": 131671,
+    "negative_validation_r2": 271078,
+    "target": "credit_prior_top10_song_count",
+    "timing": {
+      "fit_seconds": 4.780878833998656,
+      "fits": 1398528,
+      "metrics_seconds": 10.366513859998804,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.9775813861828501,
+    "minimum_evaluation_r2": -0.10006639181585864,
+    "negative_evaluation_r2": 254452,
+    "negative_evaluation_skill": 128884,
+    "negative_validation_r2": 255063,
+    "target": "credit_prior_top40_song_count",
+    "timing": {
+      "fit_seconds": 4.778221349005378,
+      "fits": 1398528,
+      "metrics_seconds": 10.190941158994406,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.21116753306160485,
+    "minimum_evaluation_r2": -2.0665171445643042,
+    "negative_evaluation_r2": 296718,
+    "negative_evaluation_skill": 156267,
+    "negative_validation_r2": 266892,
+    "target": "credit_recent_chart_presence",
+    "timing": {
+      "fit_seconds": 4.758159453998758,
+      "fits": 1398528,
+      "metrics_seconds": 10.17205472599619,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.5332050054205069,
+    "minimum_evaluation_r2": -0.8887251818920219,
+    "negative_evaluation_r2": 340785,
+    "negative_evaluation_skill": 184583,
+    "negative_validation_r2": 340728,
+    "target": "credit_recent_points_slope",
+    "timing": {
+      "fit_seconds": 4.75677506899018,
+      "fits": 1398528,
+      "metrics_seconds": 10.136530030004963,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.4420598777168041,
+    "minimum_evaluation_r2": -0.8458917191470459,
+    "negative_evaluation_r2": 291042,
+    "negative_evaluation_skill": 162562,
+    "negative_validation_r2": 216885,
+    "target": "credit_simultaneous_other_songs",
+    "timing": {
+      "fit_seconds": 4.783359848992518,
+      "fits": 1398528,
+      "metrics_seconds": 9.985376858998393,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.3822674601499284,
+    "minimum_evaluation_r2": -35.45415005763359,
+    "negative_evaluation_r2": 265134,
+    "negative_evaluation_skill": 263769,
+    "negative_validation_r2": 348001,
+    "target": "credit_team_prior_song_count",
+    "timing": {
+      "fit_seconds": 4.401872263001735,
+      "fits": 1398528,
+      "metrics_seconds": 2.244536090997485,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.3049617768867646,
+    "minimum_evaluation_r2": -0.6053019253800398,
+    "negative_evaluation_r2": 311732,
+    "negative_evaluation_skill": 55213,
+    "negative_validation_r2": 340631,
+    "target": "credited_artist_entity_count",
+    "timing": {
+      "fit_seconds": 4.7278736670066905,
+      "fits": 1398528,
+      "metrics_seconds": 8.271997919998682,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.8634901550165285,
+    "minimum_evaluation_r2": -0.21476557168495924,
+    "negative_evaluation_r2": 273490,
+    "negative_evaluation_skill": 66233,
+    "negative_validation_r2": 241645,
+    "target": "credited_entities_prior_top10_mean",
+    "timing": {
+      "fit_seconds": 4.758888497996168,
+      "fits": 1398528,
+      "metrics_seconds": 8.248274968003898,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.3754802780273401,
+    "minimum_evaluation_r2": -0.8669063692735077,
+    "negative_evaluation_r2": 341838,
+    "negative_evaluation_skill": 84633,
+    "negative_validation_r2": 341503,
+    "target": "debut_chart_established_credit_share",
+    "timing": {
+      "fit_seconds": 4.7395719300009205,
+      "fits": 1398528,
+      "metrics_seconds": 10.18216653700216,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.45857188758031864,
+    "minimum_evaluation_r2": -0.49762016805917386,
+    "negative_evaluation_r2": 293134,
+    "negative_evaluation_skill": 198287,
+    "negative_validation_r2": 325625,
+    "target": "debut_chart_same_genre_share",
+    "timing": {
+      "fit_seconds": 3.8949075340011063,
+      "fits": 1334004,
+      "metrics_seconds": 9.035677053999848,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.6024647640193661,
+    "minimum_evaluation_r2": -1.586292312074924,
+    "negative_evaluation_r2": 334208,
+    "negative_evaluation_skill": 217144,
+    "negative_validation_r2": 341520,
+    "target": "debut_competing_new_entry_count",
+    "timing": {
+      "fit_seconds": 4.751687008007025,
+      "fits": 1398528,
+      "metrics_seconds": 10.109404196998867,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.9964934129682267,
+    "minimum_evaluation_r2": -1.004773124846607,
+    "negative_evaluation_r2": 340280,
+    "negative_evaluation_skill": 74321,
+    "negative_validation_r2": 285001,
+    "target": "debut_rank",
+    "timing": {
+      "fit_seconds": 4.752428936006368,
+      "fits": 1398528,
+      "metrics_seconds": 9.766949078992809,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.996500566322427,
+    "minimum_evaluation_r2": -1.012098132873795,
+    "negative_evaluation_r2": 340338,
+    "negative_evaluation_skill": 74539,
+    "negative_validation_r2": 285149,
+    "target": "debut_reported_peak_position",
+    "timing": {
+      "fit_seconds": 4.7598421099923485,
+      "fits": 1398528,
+      "metrics_seconds": 9.931403314999045,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 288100,
+    "fallback_fits": 4,
+    "fits": 1152400,
+    "maximum_evaluation_r2": -33.20344727590907,
+    "minimum_evaluation_r2": -553.0147261563342,
+    "negative_evaluation_r2": 288100,
+    "negative_evaluation_skill": 85593,
+    "negative_validation_r2": 288100,
+    "target": "debut_time_years",
+    "timing": {
+      "fit_seconds": 2.5897755769993864,
+      "fits": 1152400,
+      "metrics_seconds": 7.981412436000483,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.6052735752518319,
+    "minimum_evaluation_r2": -0.2891040944144785,
+    "negative_evaluation_r2": 253699,
+    "negative_evaluation_skill": 48906,
+    "negative_validation_r2": 253558,
+    "target": "detox_identity_attack",
+    "timing": {
+      "fit_seconds": 4.570321280001735,
+      "fits": 1334004,
+      "metrics_seconds": 9.20385449900914,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.8793436040307311,
+    "minimum_evaluation_r2": -0.4021017357624386,
+    "negative_evaluation_r2": 258521,
+    "negative_evaluation_skill": 38413,
+    "negative_validation_r2": 238884,
+    "target": "detox_insult",
+    "timing": {
+      "fit_seconds": 4.577405092002778,
+      "fits": 1334004,
+      "metrics_seconds": 10.23604891100058,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.826337193327896,
+    "minimum_evaluation_r2": -0.832671982652434,
+    "negative_evaluation_r2": 280974,
+    "negative_evaluation_skill": 59223,
+    "negative_validation_r2": 264091,
+    "target": "detox_obscene",
+    "timing": {
+      "fit_seconds": 4.561874894001619,
+      "fits": 1334004,
+      "metrics_seconds": 10.054585611005962,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.6809290669629184,
+    "minimum_evaluation_r2": -0.1799214460506695,
+    "negative_evaluation_r2": 259631,
+    "negative_evaluation_skill": 43646,
+    "negative_validation_r2": 253015,
+    "target": "detox_severe_toxicity",
+    "timing": {
+      "fit_seconds": 4.536227710001299,
+      "fits": 1334004,
+      "metrics_seconds": 9.823916141002712,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.48295934332527246,
+    "minimum_evaluation_r2": -0.24208594258389327,
+    "negative_evaluation_r2": 249874,
+    "negative_evaluation_skill": 78094,
+    "negative_validation_r2": 267982,
+    "target": "detox_sexual_explicit",
+    "timing": {
+      "fit_seconds": 4.62489746399342,
+      "fits": 1334004,
+      "metrics_seconds": 10.566766209998491,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.19901933598927912,
+    "minimum_evaluation_r2": -0.21151829853415904,
+    "negative_evaluation_r2": 302317,
+    "negative_evaluation_skill": 103515,
+    "negative_validation_r2": 320759,
+    "target": "detox_threat",
+    "timing": {
+      "fit_seconds": 4.5472445219999145,
+      "fits": 1334004,
+      "metrics_seconds": 10.06867634299806,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.9404580476703975,
+    "minimum_evaluation_r2": -0.8686512529827703,
+    "negative_evaluation_r2": 272488,
+    "negative_evaluation_skill": 59037,
+    "negative_validation_r2": 251025,
+    "target": "detox_toxicity",
+    "timing": {
+      "fit_seconds": 4.569251487001566,
+      "fits": 1334004,
+      "metrics_seconds": 9.73486073000015,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 325625,
+    "fallback_fits": 4,
+    "fits": 1302500,
+    "maximum_evaluation_r2": 0.17044946358009383,
+    "minimum_evaluation_r2": -2.179782602310995,
+    "negative_evaluation_r2": 325389,
+    "negative_evaluation_skill": 217581,
+    "negative_validation_r2": 325625,
+    "target": "duration_seconds",
+    "timing": {
+      "fit_seconds": 4.327730207998911,
+      "fits": 1302500,
+      "metrics_seconds": 3.0448071200002005,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.16397811101734572,
+    "minimum_evaluation_r2": -1.2164260144523524,
+    "negative_evaluation_r2": 271899,
+    "negative_evaluation_skill": 131325,
+    "negative_validation_r2": 172575,
+    "target": "emotion_admiration",
+    "timing": {
+      "fit_seconds": 4.5466164469982004,
+      "fits": 1334004,
+      "metrics_seconds": 9.708191259003456,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.07326211472231092,
+    "minimum_evaluation_r2": -0.05982038918220489,
+    "negative_evaluation_r2": 142028,
+    "negative_evaluation_skill": 93240,
+    "negative_validation_r2": 176137,
+    "target": "emotion_amusement",
+    "timing": {
+      "fit_seconds": 4.616246872002307,
+      "fits": 1334004,
+      "metrics_seconds": 9.841267679002954,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.6422709066774794,
+    "minimum_evaluation_r2": -0.1942591875177173,
+    "negative_evaluation_r2": 267225,
+    "negative_evaluation_skill": 50964,
+    "negative_validation_r2": 233001,
+    "target": "emotion_anger",
+    "timing": {
+      "fit_seconds": 4.578340655004467,
+      "fits": 1334004,
+      "metrics_seconds": 9.75074603000644,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.6408020699678254,
+    "minimum_evaluation_r2": -0.4042418191491497,
+    "negative_evaluation_r2": 270825,
+    "negative_evaluation_skill": 46784,
+    "negative_validation_r2": 214952,
+    "target": "emotion_annoyance",
+    "timing": {
+      "fit_seconds": 4.621147781996115,
+      "fits": 1334004,
+      "metrics_seconds": 10.033050614006243,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.18602265843269117,
+    "minimum_evaluation_r2": -0.15783362866094186,
+    "negative_evaluation_r2": 222977,
+    "negative_evaluation_skill": 89814,
+    "negative_validation_r2": 102484,
+    "target": "emotion_approval",
+    "timing": {
+      "fit_seconds": 4.609085822000111,
+      "fits": 1334004,
+      "metrics_seconds": 10.531923172987035,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.12456833587044203,
+    "minimum_evaluation_r2": -0.2814607698480627,
+    "negative_evaluation_r2": 323806,
+    "negative_evaluation_skill": 118998,
+    "negative_validation_r2": 226976,
+    "target": "emotion_caring",
+    "timing": {
+      "fit_seconds": 4.54233284900306,
+      "fits": 1334004,
+      "metrics_seconds": 9.699348706997398,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.2085011125061056,
+    "minimum_evaluation_r2": -0.05657467683226547,
+    "negative_evaluation_r2": 115319,
+    "negative_evaluation_skill": 109529,
+    "negative_validation_r2": 167165,
+    "target": "emotion_confusion",
+    "timing": {
+      "fit_seconds": 4.6609361559994795,
+      "fits": 1334004,
+      "metrics_seconds": 9.92471151899997,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.5759078977495531,
+    "minimum_evaluation_r2": -0.050825605464832835,
+    "negative_evaluation_r2": 92553,
+    "negative_evaluation_skill": 64881,
+    "negative_validation_r2": 156617,
+    "target": "emotion_curiosity",
+    "timing": {
+      "fit_seconds": 4.511357749004787,
+      "fits": 1334004,
+      "metrics_seconds": 9.77937843900554,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.14212485036862055,
+    "minimum_evaluation_r2": -0.3107961519368114,
+    "negative_evaluation_r2": 245976,
+    "negative_evaluation_skill": 102755,
+    "negative_validation_r2": 137320,
+    "target": "emotion_desire",
+    "timing": {
+      "fit_seconds": 4.511123287993087,
+      "fits": 1334004,
+      "metrics_seconds": 9.500383814006227,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.48310433557803834,
+    "minimum_evaluation_r2": -0.27675186011120667,
+    "negative_evaluation_r2": 102087,
+    "negative_evaluation_skill": 98731,
+    "negative_validation_r2": 161734,
+    "target": "emotion_disappointment",
+    "timing": {
+      "fit_seconds": 4.510843089998502,
+      "fits": 1334004,
+      "metrics_seconds": 9.573370179995777,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.22482749118858325,
+    "minimum_evaluation_r2": -0.24216296653048297,
+    "negative_evaluation_r2": 260816,
+    "negative_evaluation_skill": 127772,
+    "negative_validation_r2": 194741,
+    "target": "emotion_disapproval",
+    "timing": {
+      "fit_seconds": 4.554467390001037,
+      "fits": 1334004,
+      "metrics_seconds": 9.566372420000675,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.1986944545913737,
+    "minimum_evaluation_r2": -0.07563020066155812,
+    "negative_evaluation_r2": 267890,
+    "negative_evaluation_skill": 47024,
+    "negative_validation_r2": 205176,
+    "target": "emotion_disgust",
+    "timing": {
+      "fit_seconds": 4.531344887999353,
+      "fits": 1334004,
+      "metrics_seconds": 10.195337887004825,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.08463262880230071,
+    "minimum_evaluation_r2": -0.01765111911387862,
+    "negative_evaluation_r2": 241119,
+    "negative_evaluation_skill": 55714,
+    "negative_validation_r2": 162048,
+    "target": "emotion_embarrassment",
+    "timing": {
+      "fit_seconds": 4.537944084015976,
+      "fits": 1334004,
+      "metrics_seconds": 9.613369916983515,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.21262678386560097,
+    "minimum_evaluation_r2": -0.19129463602630414,
+    "negative_evaluation_r2": 283325,
+    "negative_evaluation_skill": 81628,
+    "negative_validation_r2": 164368,
+    "target": "emotion_excitement",
+    "timing": {
+      "fit_seconds": 4.528046218008399,
+      "fits": 1334004,
+      "metrics_seconds": 10.542321303995891,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.4853758954111784,
+    "minimum_evaluation_r2": -0.32225846880925313,
+    "negative_evaluation_r2": 184651,
+    "negative_evaluation_skill": 68765,
+    "negative_validation_r2": 207110,
+    "target": "emotion_fear",
+    "timing": {
+      "fit_seconds": 4.513969856013091,
+      "fits": 1334004,
+      "metrics_seconds": 10.167807457983145,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.021614983885775874,
+    "minimum_evaluation_r2": -0.08375786977724742,
+    "negative_evaluation_r2": 289788,
+    "negative_evaluation_skill": 174049,
+    "negative_validation_r2": 330802,
+    "target": "emotion_gratitude",
+    "timing": {
+      "fit_seconds": 4.530527470009588,
+      "fits": 1334004,
+      "metrics_seconds": 10.086308495000821,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.8358320556685619,
+    "minimum_evaluation_r2": -0.7753059155220301,
+    "negative_evaluation_r2": 271778,
+    "negative_evaluation_skill": 122525,
+    "negative_validation_r2": 268694,
+    "target": "emotion_grief",
+    "timing": {
+      "fit_seconds": 4.596982044005927,
+      "fits": 1334004,
+      "metrics_seconds": 10.543350003001365,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.34987648513600034,
+    "minimum_evaluation_r2": -0.30803840446981057,
+    "negative_evaluation_r2": 287271,
+    "negative_evaluation_skill": 95613,
+    "negative_validation_r2": 196401,
+    "target": "emotion_joy",
+    "timing": {
+      "fit_seconds": 4.533263474997511,
+      "fits": 1334004,
+      "metrics_seconds": 10.431659990005983,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.27631054685143386,
+    "minimum_evaluation_r2": -0.8557291640603013,
+    "negative_evaluation_r2": 325552,
+    "negative_evaluation_skill": 83926,
+    "negative_validation_r2": 281146,
+    "target": "emotion_love",
+    "timing": {
+      "fit_seconds": 4.517856975005657,
+      "fits": 1334004,
+      "metrics_seconds": 10.104832990998148,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.527925087643413,
+    "minimum_evaluation_r2": -0.03432144347208932,
+    "negative_evaluation_r2": 83802,
+    "negative_evaluation_skill": 65867,
+    "negative_validation_r2": 117803,
+    "target": "emotion_nervousness",
+    "timing": {
+      "fit_seconds": 4.518371541999841,
+      "fits": 1334004,
+      "metrics_seconds": 9.216204291001418,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.45601079212727824,
+    "minimum_evaluation_r2": -0.21981991400005918,
+    "negative_evaluation_r2": 245507,
+    "negative_evaluation_skill": 72078,
+    "negative_validation_r2": 144316,
+    "target": "emotion_neutral",
+    "timing": {
+      "fit_seconds": 4.527197220993344,
+      "fits": 1334004,
+      "metrics_seconds": 9.896635439013721,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.11779580583655425,
+    "minimum_evaluation_r2": -0.02248016559328314,
+    "negative_evaluation_r2": 177026,
+    "negative_evaluation_skill": 100373,
+    "negative_validation_r2": 90848,
+    "target": "emotion_optimism",
+    "timing": {
+      "fit_seconds": 4.57526559200187,
+      "fits": 1334004,
+      "metrics_seconds": 9.925691542010213,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.33068744658627613,
+    "minimum_evaluation_r2": -1.4299159059204936,
+    "negative_evaluation_r2": 263557,
+    "negative_evaluation_skill": 118338,
+    "negative_validation_r2": 223575,
+    "target": "emotion_pride",
+    "timing": {
+      "fit_seconds": 4.560707718993854,
+      "fits": 1334004,
+      "metrics_seconds": 10.021378550004442,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.14744822288433246,
+    "minimum_evaluation_r2": -0.14879869603432527,
+    "negative_evaluation_r2": 198566,
+    "negative_evaluation_skill": 105090,
+    "negative_validation_r2": 147185,
+    "target": "emotion_realization",
+    "timing": {
+      "fit_seconds": 4.539238486997533,
+      "fits": 1334004,
+      "metrics_seconds": 9.442187729000807,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.4027222283346873,
+    "minimum_evaluation_r2": -0.18303276861763784,
+    "negative_evaluation_r2": 230812,
+    "negative_evaluation_skill": 97247,
+    "negative_validation_r2": 160677,
+    "target": "emotion_relief",
+    "timing": {
+      "fit_seconds": 4.50676839000414,
+      "fits": 1334004,
+      "metrics_seconds": 9.88802370598421,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.07229733914972647,
+    "minimum_evaluation_r2": -0.032592834636947066,
+    "negative_evaluation_r2": 115722,
+    "negative_evaluation_skill": 84923,
+    "negative_validation_r2": 209798,
+    "target": "emotion_remorse",
+    "timing": {
+      "fit_seconds": 4.5665655969957015,
+      "fits": 1334004,
+      "metrics_seconds": 9.907316361998483,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.8596686563869178,
+    "minimum_evaluation_r2": -0.6118985817405682,
+    "negative_evaluation_r2": 281341,
+    "negative_evaluation_skill": 142181,
+    "negative_validation_r2": 274353,
+    "target": "emotion_sadness",
+    "timing": {
+      "fit_seconds": 4.517731056997832,
+      "fits": 1334004,
+      "metrics_seconds": 9.802948630012907,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.13153190020793015,
+    "minimum_evaluation_r2": -0.679031571087781,
+    "negative_evaluation_r2": 269508,
+    "negative_evaluation_skill": 88783,
+    "negative_validation_r2": 207722,
+    "target": "emotion_surprise",
+    "timing": {
+      "fit_seconds": 4.5032897969985015,
+      "fits": 1334004,
+      "metrics_seconds": 9.746589031016583,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.7750663776989543,
+    "minimum_evaluation_r2": -0.29046509034948875,
+    "negative_evaluation_r2": 295335,
+    "negative_evaluation_skill": 24223,
+    "negative_validation_r2": 287593,
+    "target": "first_credited_entity_prior_song_count",
+    "timing": {
+      "fit_seconds": 4.694090857990659,
+      "fits": 1398528,
+      "metrics_seconds": 9.376784538007655,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 240577,
+    "fallback_fits": 4,
+    "fits": 962308,
+    "maximum_evaluation_r2": -105.9541783207298,
+    "minimum_evaluation_r2": -2065.0781167076975,
+    "negative_evaluation_r2": 240577,
+    "negative_evaluation_skill": 54857,
+    "negative_validation_r2": 240577,
+    "target": "last_chart_date",
+    "timing": {
+      "fit_seconds": 3.280387383002221,
+      "fits": 962308,
+      "metrics_seconds": 3.1939641509950434,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.5285033301293189,
+    "minimum_evaluation_r2": -1.5441880823151735,
+    "negative_evaluation_r2": 298081,
+    "negative_evaluation_skill": 73032,
+    "negative_validation_r2": 291245,
+    "target": "ll_explicit_language",
+    "timing": {
+      "fit_seconds": 4.509508396993169,
+      "fits": 1334004,
+      "metrics_seconds": 9.554613719010149,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.3473972070121417,
+    "minimum_evaluation_r2": -0.5810478391368987,
+    "negative_evaluation_r2": 260470,
+    "negative_evaluation_skill": 107488,
+    "negative_validation_r2": 256001,
+    "target": "ll_sexual_content",
+    "timing": {
+      "fit_seconds": 4.49132610100412,
+      "fits": 1334004,
+      "metrics_seconds": 9.46780240000794,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.19219080978018588,
+    "minimum_evaluation_r2": -0.9899300230809434,
+    "negative_evaluation_r2": 323590,
+    "negative_evaluation_skill": 67470,
+    "negative_validation_r2": 294337,
+    "target": "ll_substance_use",
+    "timing": {
+      "fit_seconds": 4.510495124001409,
+      "fits": 1334004,
+      "metrics_seconds": 9.862386444996446,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.3011941295127165,
+    "minimum_evaluation_r2": -0.44105109018122013,
+    "negative_evaluation_r2": 264572,
+    "negative_evaluation_skill": 68254,
+    "negative_validation_r2": 252281,
+    "target": "ll_violence",
+    "timing": {
+      "fit_seconds": 4.669706466998605,
+      "fits": 1334004,
+      "metrics_seconds": 10.401083960987762,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 310247,
+    "fallback_fits": 4,
+    "fits": 1240988,
+    "maximum_evaluation_r2": 0.4416069836595835,
+    "minimum_evaluation_r2": -0.6646598522945633,
+    "negative_evaluation_r2": 294682,
+    "negative_evaluation_skill": 82268,
+    "negative_validation_r2": 280581,
+    "target": "long_chart_12",
+    "timing": {
+      "fit_seconds": 4.339669327992169,
+      "fits": 1240988,
+      "metrics_seconds": 8.936906005996661,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 310247,
+    "fallback_fits": 4,
+    "fits": 1240988,
+    "maximum_evaluation_r2": 0.5887186144812447,
+    "minimum_evaluation_r2": -1.4058600274475448,
+    "negative_evaluation_r2": 223718,
+    "negative_evaluation_skill": 200005,
+    "negative_validation_r2": 286037,
+    "target": "long_chart_26",
+    "timing": {
+      "fit_seconds": 4.219615250992547,
+      "fits": 1240988,
+      "metrics_seconds": 8.908903670015661,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.9424262813990668,
+    "minimum_evaluation_r2": -1.2476611822386086,
+    "negative_evaluation_r2": 177008,
+    "negative_evaluation_skill": 166152,
+    "negative_validation_r2": 313646,
+    "target": "lyric_compression_ratio",
+    "timing": {
+      "fit_seconds": 4.6939965570140885,
+      "fits": 1398528,
+      "metrics_seconds": 9.79051654899149,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 106081,
+    "fallback_fits": 0,
+    "fits": 424324,
+    "maximum_evaluation_r2": 0.6112367286818872,
+    "minimum_evaluation_r2": -1.3396227519431712,
+    "negative_evaluation_r2": 94632,
+    "negative_evaluation_skill": 31345,
+    "negative_validation_r2": 91869,
+    "target": "lyric_content_distance_prior_hits",
+    "timing": {
+      "fit_seconds": 1.6427831209955457,
+      "fits": 424324,
+      "metrics_seconds": 3.1202093449928725,
+      "qr_svd_fallbacks": 0
+    }
+  },
+  {
+    "candidates": 106081,
+    "fallback_fits": 0,
+    "fits": 424324,
+    "maximum_evaluation_r2": 0.04390019783093757,
+    "minimum_evaluation_r2": -2.684783706425199,
+    "negative_evaluation_r2": 105745,
+    "negative_evaluation_skill": 34823,
+    "negative_validation_r2": 99826,
+    "target": "lyric_content_distance_recent_chart",
+    "timing": {
+      "fit_seconds": 1.643827150001016,
+      "fits": 424324,
+      "metrics_seconds": 3.0951228080020883,
+      "qr_svd_fallbacks": 0
+    }
+  },
+  {
+    "candidates": 341503,
+    "fallback_fits": 4,
+    "fits": 1366012,
+    "maximum_evaluation_r2": 0.08968606979975224,
+    "minimum_evaluation_r2": -0.23350685088374967,
+    "negative_evaluation_r2": 287105,
+    "negative_evaluation_skill": 170197,
+    "negative_validation_r2": 325662,
+    "target": "lyric_first_person_plural_share",
+    "timing": {
+      "fit_seconds": 4.593866072977562,
+      "fits": 1366012,
+      "metrics_seconds": 10.010332653011574,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 341503,
+    "fallback_fits": 4,
+    "fits": 1366012,
+    "maximum_evaluation_r2": 0.2316287872558499,
+    "minimum_evaluation_r2": -0.22048223122552457,
+    "negative_evaluation_r2": 168618,
+    "negative_evaluation_skill": 125072,
+    "negative_validation_r2": 240534,
+    "target": "lyric_first_person_singular_share",
+    "timing": {
+      "fit_seconds": 4.586054474997582,
+      "fits": 1366012,
+      "metrics_seconds": 9.75811961800855,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 341503,
+    "fallback_fits": 4,
+    "fits": 1366012,
+    "maximum_evaluation_r2": 0.49964314001860266,
+    "minimum_evaluation_r2": -0.6661823470112593,
+    "negative_evaluation_r2": 90151,
+    "negative_evaluation_skill": 86242,
+    "negative_validation_r2": 204515,
+    "target": "lyric_hapax_share",
+    "timing": {
+      "fit_seconds": 4.6058828530076426,
+      "fits": 1366012,
+      "metrics_seconds": 10.109764025998174,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.14850182335229611,
+    "minimum_evaluation_r2": -0.8916363261928493,
+    "negative_evaluation_r2": 334928,
+    "negative_evaluation_skill": 111033,
+    "negative_validation_r2": 321287,
+    "target": "lyric_line_length_dispersion",
+    "timing": {
+      "fit_seconds": 4.819334997994019,
+      "fits": 1398528,
+      "metrics_seconds": 11.00456156700443,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 341503,
+    "fallback_fits": 4,
+    "fits": 1366012,
+    "maximum_evaluation_r2": 0.4113974979394498,
+    "minimum_evaluation_r2": -0.7609653410133705,
+    "negative_evaluation_r2": 314467,
+    "negative_evaluation_skill": 61667,
+    "negative_validation_r2": 276530,
+    "target": "lyric_mattr",
+    "timing": {
+      "fit_seconds": 4.628356335995477,
+      "fits": 1366012,
+      "metrics_seconds": 10.304065343003685,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 341503,
+    "fallback_fits": 4,
+    "fits": 1366012,
+    "maximum_evaluation_r2": 0.2122578380146154,
+    "minimum_evaluation_r2": -0.9636645360334646,
+    "negative_evaluation_r2": 339014,
+    "negative_evaluation_skill": 91702,
+    "negative_validation_r2": 317183,
+    "target": "lyric_mean_line_length",
+    "timing": {
+      "fit_seconds": 4.599351058005595,
+      "fits": 1366012,
+      "metrics_seconds": 9.934485622994544,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 341503,
+    "fallback_fits": 4,
+    "fits": 1366012,
+    "maximum_evaluation_r2": 0.28233718906714633,
+    "minimum_evaluation_r2": -0.32488145322305906,
+    "negative_evaluation_r2": 276053,
+    "negative_evaluation_skill": 208051,
+    "negative_validation_r2": 165227,
+    "target": "lyric_negation_token_share",
+    "timing": {
+      "fit_seconds": 4.588895960990385,
+      "fits": 1366012,
+      "metrics_seconds": 10.324880540994627,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.5584567382392248,
+    "minimum_evaluation_r2": -0.20662378843718443,
+    "negative_evaluation_r2": 260980,
+    "negative_evaluation_skill": 126681,
+    "negative_validation_r2": 258497,
+    "target": "lyric_question_line_share",
+    "timing": {
+      "fit_seconds": 4.692432380998298,
+      "fits": 1398528,
+      "metrics_seconds": 10.383575600000086,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 341503,
+    "fallback_fits": 4,
+    "fits": 1366012,
+    "maximum_evaluation_r2": 0.9510190853368762,
+    "minimum_evaluation_r2": -0.7883452500228101,
+    "negative_evaluation_r2": 159803,
+    "negative_evaluation_skill": 89116,
+    "negative_validation_r2": 288989,
+    "target": "lyric_repeated_bigram_share",
+    "timing": {
+      "fit_seconds": 4.589987180999287,
+      "fits": 1366012,
+      "metrics_seconds": 9.879826632008644,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.7750313813778031,
+    "minimum_evaluation_r2": -0.9642974632949188,
+    "negative_evaluation_r2": 223915,
+    "negative_evaluation_skill": 102514,
+    "negative_validation_r2": 300737,
+    "target": "lyric_repeated_line_share",
+    "timing": {
+      "fit_seconds": 4.670197359011354,
+      "fits": 1398528,
+      "metrics_seconds": 9.775902573993335,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 341503,
+    "fallback_fits": 4,
+    "fits": 1366012,
+    "maximum_evaluation_r2": 0.19646104797492558,
+    "minimum_evaluation_r2": -0.30468649426106986,
+    "negative_evaluation_r2": 307286,
+    "negative_evaluation_skill": 92823,
+    "negative_validation_r2": 215007,
+    "target": "lyric_second_person_share",
+    "timing": {
+      "fit_seconds": 4.622877357995094,
+      "fits": 1366012,
+      "metrics_seconds": 9.883174310995855,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 341503,
+    "fallback_fits": 4,
+    "fits": 1366012,
+    "maximum_evaluation_r2": 0.033034028104031554,
+    "minimum_evaluation_r2": -0.35046705517389576,
+    "negative_evaluation_r2": 334044,
+    "negative_evaluation_skill": 83723,
+    "negative_validation_r2": 292487,
+    "target": "lyric_temporal_deixis_share",
+    "timing": {
+      "fit_seconds": 4.607338685004606,
+      "fits": 1366012,
+      "metrics_seconds": 9.819008682000685,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 341503,
+    "fallback_fits": 4,
+    "fits": 1366012,
+    "maximum_evaluation_r2": 0.11734758115642119,
+    "minimum_evaluation_r2": -0.8157219602199954,
+    "negative_evaluation_r2": 336599,
+    "negative_evaluation_skill": 83196,
+    "negative_validation_r2": 327148,
+    "target": "lyric_title_phrase_repetition",
+    "timing": {
+      "fit_seconds": 4.6043943369993485,
+      "fits": 1366012,
+      "metrics_seconds": 10.357078482007182,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 341503,
+    "fallback_fits": 4,
+    "fits": 1366012,
+    "maximum_evaluation_r2": 0.9288225272882351,
+    "minimum_evaluation_r2": -1.3162559461166867,
+    "negative_evaluation_r2": 281061,
+    "negative_evaluation_skill": 74924,
+    "negative_validation_r2": 294558,
+    "target": "lyric_vocabulary_size",
+    "timing": {
+      "fit_seconds": 4.601490873999865,
+      "fits": 1366012,
+      "metrics_seconds": 10.852293496997845,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 280959,
+    "fallback_fits": 4,
+    "fits": 1123836,
+    "maximum_evaluation_r2": 0.9223368297514729,
+    "minimum_evaluation_r2": -1.8735934727497123,
+    "negative_evaluation_r2": 239022,
+    "negative_evaluation_skill": 87138,
+    "negative_validation_r2": 260353,
+    "target": "lyric_word_count",
+    "timing": {
+      "fit_seconds": 3.858270951990562,
+      "fits": 1123836,
+      "metrics_seconds": 8.282944808005595,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.9418121240422342,
+    "minimum_evaluation_r2": -25.09426357880314,
+    "negative_evaluation_r2": 341422,
+    "negative_evaluation_skill": 101736,
+    "negative_validation_r2": 341297,
+    "target": "mb_distinct_duration_count",
+    "timing": {
+      "fit_seconds": 4.688923940002951,
+      "fits": 1398528,
+      "metrics_seconds": 9.107784993020005,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 325625,
+    "fallback_fits": 4,
+    "fits": 1302500,
+    "maximum_evaluation_r2": -0.03945547216815526,
+    "minimum_evaluation_r2": -5.356189994672117,
+    "negative_evaluation_r2": 325625,
+    "negative_evaluation_skill": 154677,
+    "negative_validation_r2": 322653,
+    "target": "mb_duration_max_seconds",
+    "timing": {
+      "fit_seconds": 4.39733026198428,
+      "fits": 1302500,
+      "metrics_seconds": 8.07091021401311,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 325625,
+    "fallback_fits": 4,
+    "fits": 1302500,
+    "maximum_evaluation_r2": 0.124885260365452,
+    "minimum_evaluation_r2": -3.2347377484904856,
+    "negative_evaluation_r2": 325399,
+    "negative_evaluation_skill": 275879,
+    "negative_validation_r2": 325625,
+    "target": "mb_duration_median_seconds",
+    "timing": {
+      "fit_seconds": 4.379982513012692,
+      "fits": 1302500,
+      "metrics_seconds": 8.151945817997102,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 325625,
+    "fallback_fits": 4,
+    "fits": 1302500,
+    "maximum_evaluation_r2": 0.2662685288756702,
+    "minimum_evaluation_r2": -2.0619163383460686,
+    "negative_evaluation_r2": 273503,
+    "negative_evaluation_skill": 273467,
+    "negative_validation_r2": 325622,
+    "target": "mb_duration_min_seconds",
+    "timing": {
+      "fit_seconds": 4.390471551001838,
+      "fits": 1302500,
+      "metrics_seconds": 8.180686782997782,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.9447864224495603,
+    "minimum_evaluation_r2": -20.63889312813828,
+    "negative_evaluation_r2": 341502,
+    "negative_evaluation_skill": 106417,
+    "negative_validation_r2": 341314,
+    "target": "mb_recording_count",
+    "timing": {
+      "fit_seconds": 4.681982103006931,
+      "fits": 1398528,
+      "metrics_seconds": 8.958171081989576,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.39469184920516,
+    "minimum_evaluation_r2": -6.272220183068524,
+    "negative_evaluation_r2": 334484,
+    "negative_evaluation_skill": 114186,
+    "negative_validation_r2": 332970,
+    "target": "mb_release_count",
+    "timing": {
+      "fit_seconds": 4.6841754290051085,
+      "fits": 1398528,
+      "metrics_seconds": 8.784946428998637,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.24708470033963736,
+    "minimum_evaluation_r2": -73.63533549189037,
+    "negative_evaluation_r2": 341503,
+    "negative_evaluation_skill": 100712,
+    "negative_validation_r2": 341503,
+    "target": "mb_release_year",
+    "timing": {
+      "fit_seconds": 4.677416322992713,
+      "fits": 1398528,
+      "metrics_seconds": 9.097052249999706,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 310247,
+    "fallback_fits": 4,
+    "fits": 1240988,
+    "maximum_evaluation_r2": 0.577613818947637,
+    "minimum_evaluation_r2": -1.159845611955058,
+    "negative_evaluation_r2": 186472,
+    "negative_evaluation_skill": 176883,
+    "negative_validation_r2": 138827,
+    "target": "observed_lifetime_best_rank",
+    "timing": {
+      "fit_seconds": 4.087045733002242,
+      "fits": 1240988,
+      "metrics_seconds": 3.749027413989552,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 325625,
+    "fallback_fits": 4,
+    "fits": 1302500,
+    "maximum_evaluation_r2": 0.9212166247326725,
+    "minimum_evaluation_r2": -0.27012679656009375,
+    "negative_evaluation_r2": 209727,
+    "negative_evaluation_skill": 164707,
+    "negative_validation_r2": 235186,
+    "target": "observed_lifetime_chart_points",
+    "timing": {
+      "fit_seconds": 4.289582984993331,
+      "fits": 1302500,
+      "metrics_seconds": 4.322297142995012,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 310247,
+    "fallback_fits": 4,
+    "fits": 1240988,
+    "maximum_evaluation_r2": 0.8929744052596076,
+    "minimum_evaluation_r2": -0.4218641979675988,
+    "negative_evaluation_r2": 211266,
+    "negative_evaluation_skill": 169698,
+    "negative_validation_r2": 264815,
+    "target": "observed_lifetime_chart_weeks",
+    "timing": {
+      "fit_seconds": 4.107411868998042,
+      "fits": 1240988,
+      "metrics_seconds": 3.8938325410208563,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 341503,
+    "fallback_fits": 4,
+    "fits": 1366012,
+    "maximum_evaluation_r2": 0.6164583636755863,
+    "minimum_evaluation_r2": -0.45070097949368737,
+    "negative_evaluation_r2": 303714,
+    "negative_evaluation_skill": 74682,
+    "negative_validation_r2": 309384,
+    "target": "observed_return_after_26weeks",
+    "timing": {
+      "fit_seconds": 4.477070285006903,
+      "fits": 1366012,
+      "metrics_seconds": 4.394029121021276,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": -0.36333928054776643,
+    "minimum_evaluation_r2": -0.6999578784784917,
+    "negative_evaluation_r2": 349632,
+    "negative_evaluation_skill": 60197,
+    "negative_validation_r2": 349632,
+    "target": "previous_chart_credit_concentration",
+    "timing": {
+      "fit_seconds": 4.6967641649923735,
+      "fits": 1398528,
+      "metrics_seconds": 10.04058252999107,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.17099598998159005,
+    "minimum_evaluation_r2": -10.086856308229292,
+    "negative_evaluation_r2": 349629,
+    "negative_evaluation_skill": 157026,
+    "negative_validation_r2": 349392,
+    "target": "previous_chart_incumbent_age_median",
+    "timing": {
+      "fit_seconds": 4.6871802100067725,
+      "fits": 1398528,
+      "metrics_seconds": 10.45884831001058,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.03482022238817828,
+    "minimum_evaluation_r2": -0.4015310148611275,
+    "negative_evaluation_r2": 336763,
+    "negative_evaluation_skill": 149544,
+    "negative_validation_r2": 349632,
+    "target": "previous_chart_leader_tenure",
+    "timing": {
+      "fit_seconds": 4.705235919984034,
+      "fits": 1398528,
+      "metrics_seconds": 10.265454925005315,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.5892298222366819,
+    "minimum_evaluation_r2": -1.3778580142161951,
+    "negative_evaluation_r2": 333254,
+    "negative_evaluation_skill": 245416,
+    "negative_validation_r2": 333613,
+    "target": "previous_chart_new_entry_count",
+    "timing": {
+      "fit_seconds": 4.690286094001976,
+      "fits": 1398528,
+      "metrics_seconds": 10.392202103010959,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.5937350859220087,
+    "minimum_evaluation_r2": -2.1324892656654044,
+    "negative_evaluation_r2": 341135,
+    "negative_evaluation_skill": 215225,
+    "negative_validation_r2": 340928,
+    "target": "previous_chart_turnover_share",
+    "timing": {
+      "fit_seconds": 4.7089490159899015,
+      "fits": 1398528,
+      "metrics_seconds": 9.973787086004222,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333501,
+    "fallback_fits": 4,
+    "fits": 1334004,
+    "maximum_evaluation_r2": 0.6185859272494549,
+    "minimum_evaluation_r2": -0.3539480027571096,
+    "negative_evaluation_r2": 293973,
+    "negative_evaluation_skill": 226358,
+    "negative_validation_r2": 325625,
+    "target": "prior_year_primary_genre_share",
+    "timing": {
+      "fit_seconds": 3.8350267079993046,
+      "fits": 1334004,
+      "metrics_seconds": 9.43694582100511,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": -3.0283919275532627,
+    "minimum_evaluation_r2": -38.198114934612384,
+    "negative_evaluation_r2": 349632,
+    "negative_evaluation_skill": 286008,
+    "negative_validation_r2": 349632,
+    "target": "prior_year_unique_chart_song_count",
+    "timing": {
+      "fit_seconds": 4.697723926987237,
+      "fits": 1398528,
+      "metrics_seconds": 10.026042332016686,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": -0.041596482371630605,
+    "minimum_evaluation_r2": -0.24408244243550303,
+    "negative_evaluation_r2": 349632,
+    "negative_evaluation_skill": 6432,
+    "negative_validation_r2": 349399,
+    "target": "same_credit_debut_cluster_size",
+    "timing": {
+      "fit_seconds": 4.6963227059898145,
+      "fits": 1398528,
+      "metrics_seconds": 9.720167889006689,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 333376,
+    "fallback_fits": 0,
+    "fits": 1333504,
+    "maximum_evaluation_r2": 0.7370853638796876,
+    "minimum_evaluation_r2": -1.2593565660854535,
+    "negative_evaluation_r2": 275272,
+    "negative_evaluation_skill": 68493,
+    "negative_validation_r2": 190467,
+    "target": "sentiment_negative",
+    "timing": {
+      "fit_seconds": 4.527332347992342,
+      "fits": 1333504,
+      "metrics_seconds": 9.559027001012055,
+      "qr_svd_fallbacks": 0
+    }
+  },
+  {
+    "candidates": 333376,
+    "fallback_fits": 0,
+    "fits": 1333504,
+    "maximum_evaluation_r2": 0.3434182948311131,
+    "minimum_evaluation_r2": -0.23416141689337389,
+    "negative_evaluation_r2": 204224,
+    "negative_evaluation_skill": 139381,
+    "negative_validation_r2": 255911,
+    "target": "sentiment_neutral",
+    "timing": {
+      "fit_seconds": 4.4912288670027465,
+      "fits": 1333504,
+      "metrics_seconds": 8.795996474990034,
+      "qr_svd_fallbacks": 0
+    }
+  },
+  {
+    "candidates": 333376,
+    "fallback_fits": 0,
+    "fits": 1333504,
+    "maximum_evaluation_r2": 0.7434655534570531,
+    "minimum_evaluation_r2": -1.3441334697380762,
+    "negative_evaluation_r2": 281044,
+    "negative_evaluation_skill": 75279,
+    "negative_validation_r2": 245038,
+    "target": "sentiment_positive",
+    "timing": {
+      "fit_seconds": 4.5063055000002805,
+      "fits": 1333504,
+      "metrics_seconds": 9.466826424004694,
+      "qr_svd_fallbacks": 0
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.00812035099477526,
+    "minimum_evaluation_r2": -0.043877357169791686,
+    "negative_evaluation_r2": 339351,
+    "negative_evaluation_skill": 127235,
+    "negative_validation_r2": 328360,
+    "target": "song_title_has_number",
+    "timing": {
+      "fit_seconds": 4.696935581999696,
+      "fits": 1398528,
+      "metrics_seconds": 9.589567851987113,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.04517862954224938,
+    "minimum_evaluation_r2": -0.07551788366479628,
+    "negative_evaluation_r2": 325351,
+    "negative_evaluation_skill": 167607,
+    "negative_validation_r2": 335806,
+    "target": "song_title_prior_usage_count",
+    "timing": {
+      "fit_seconds": 4.714391248998709,
+      "fits": 1398528,
+      "metrics_seconds": 9.526512678987956,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.06724539771628946,
+    "minimum_evaluation_r2": -0.06576901189630746,
+    "negative_evaluation_r2": 317963,
+    "negative_evaluation_skill": 195097,
+    "negative_validation_r2": 308058,
+    "target": "song_title_question_form",
+    "timing": {
+      "fit_seconds": 4.711205496993443,
+      "fits": 1398528,
+      "metrics_seconds": 9.748662309990095,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 349632,
+    "fallback_fits": 4,
+    "fits": 1398528,
+    "maximum_evaluation_r2": 0.053908197080492215,
+    "minimum_evaluation_r2": -1.1178334256606912,
+    "negative_evaluation_r2": 347527,
+    "negative_evaluation_skill": 127707,
+    "negative_validation_r2": 348772,
+    "target": "song_title_token_count",
+    "timing": {
+      "fit_seconds": 4.705545575003953,
+      "fits": 1398528,
+      "metrics_seconds": 9.255817054998943,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 310247,
+    "fallback_fits": 4,
+    "fits": 1240988,
+    "maximum_evaluation_r2": 0.15076176178193135,
+    "minimum_evaluation_r2": -4.689167469912111,
+    "negative_evaluation_r2": 310004,
+    "negative_evaluation_skill": 123243,
+    "negative_validation_r2": 272368,
+    "target": "top10_12",
+    "timing": {
+      "fit_seconds": 4.221543842992105,
+      "fits": 1240988,
+      "metrics_seconds": 7.333483706010611,
+      "qr_svd_fallbacks": 4
+    }
+  },
+  {
+    "candidates": 310247,
+    "fallback_fits": 4,
+    "fits": 1240988,
+    "maximum_evaluation_r2": 0.2373232698217428,
+    "minimum_evaluation_r2": -3.556257249114572,
+    "negative_evaluation_r2": 309370,
+    "negative_evaluation_skill": 106280,
+    "negative_validation_r2": 244562,
+    "target": "top10_26",
+    "timing": {
+      "fit_seconds": 4.246484142003283,
+      "fits": 1240988,
+      "metrics_seconds": 8.268987395010072,
+      "qr_svd_fallbacks": 4
+    }
+  }
+]
