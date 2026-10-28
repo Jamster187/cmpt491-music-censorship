@@ -1,0 +1,10 @@
+{
+  "failures": 0,
+  "native_local_sha256": "1cfb27e8750e12da4d12435fee92a7db69ff64d2cea77fa7773167f933b70f46",
+  "native_public_sha256": "dabe46a9af8db86b2acbf4f83e0a8d162712496e662ec9ba172cd23e0ebf1aec",
+  "parser_sha256": "e793184db8cdc6a0470dac7b6906ff4482c3a16aaf9e4028220f0734ed72ab39",
+  "research_metadata_sha256": "94f4362f1321564d19286dd559d107d98319ee88a48f4788a85aaf4c8872ed6c",
+  "rows": 176476,
+  "series": 70,
+  "source_manifest_sha256": "1ed1a511cd17c4553ae929107173ee300d9fe95af20889a885e756854b315cd1"
+}

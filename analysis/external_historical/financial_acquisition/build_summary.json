@@ -1,0 +1,35 @@
+{
+  "derived_columns": 47,
+  "end": "2026-09",
+  "full_monthly_columns": 29,
+  "monthly_columns": 102,
+  "monthly_missing_cells": 11181,
+  "monthly_raw_columns": 55,
+  "monthly_rows": 825,
+  "monthly_total_cells": 84150,
+  "music_join": {
+    "calendar": "Chart snapshot month; calendar-month retrospective finance may include dates after snapshot chart day; not a forecasting dataset",
+    "distinct_songs": 28041,
+    "first_month": "1958-08",
+    "joined_rows": 7991,
+    "last_month": "2026-09",
+    "months": 818,
+    "music_sha256": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+    "sample_rows": 54,
+    "source_duplicate_song_month_rows": 3,
+    "source_rows": 81797,
+    "summary_rows": 7991,
+    "weighting": "Equal retained source rows; available-case mean per score; count and distinct song count separate"
+  },
+  "native_observations": 176476,
+  "native_series": 70,
+  "point_in_time_series": [
+    "US_IP_GROWTH_INIT",
+    "US_IP_GROWTH_REV1",
+    "US_NBER_ANNOUNCEMENT_EVENT"
+  ],
+  "public_monthly_columns": 69,
+  "quarterly_series": 10,
+  "start": "1958-01",
+  "version": "financial_acquisition_v1"
+}

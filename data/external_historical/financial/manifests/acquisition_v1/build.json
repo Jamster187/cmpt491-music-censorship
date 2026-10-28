@@ -1,0 +1,66 @@
+{
+  "artifacts": {
+    "analysis/external_historical/financial_acquisition/coverage_report.csv": "1e423e36af7b18d798731bc0d30553a2d0b0144094b67c16d33ca84d84638992",
+    "analysis/external_historical/financial_acquisition/derived_feature_dictionary.csv": "d9157c4206eff3d5d0b96b6f074eebfe0b3d72957f17b052c8690e841b3f8ef1",
+    "analysis/external_historical/financial_acquisition/missingness_report.csv": "566eed7d3aaa31639de232a704fc070bf4c875638954381e12ec98f1a6ae9fbf",
+    "analysis/external_historical/financial_acquisition/native_coverage_report.csv": "660953f1d1490c4c7275a85bb8ad237f92c83d4ae4e3d35de5b9975a686e9d00",
+    "analysis/external_historical/financial_acquisition/source_manifest.csv": "673fc6940b8a700b0eb847c6e153a86a01fe2b0072a5d9d3f5af1057a9e6fdb3",
+    "data/external_historical/financial/processed/acquisition_v1/aggregation_metadata_local.csv.xz": "8ce8c748f782ba2bacd1e2ea73ceb01e34b85c03406b8e0e90e739fceafc1e09",
+    "data/external_historical/financial/processed/acquisition_v1/aggregation_metadata_public.csv.xz": "273bdd5c491713e7951b7ed0e2e3d00868a9def3dbc31da659f8d8c6f89bef75",
+    "data/external_historical/financial/processed/acquisition_v1/missingness_local.csv.xz": "f8fafc57545ad2fb0018fff177132a2965439ca0daa49fec58f0f0f81a4bff4f",
+    "data/external_historical/financial/processed/acquisition_v1/missingness_public.csv.xz": "d4dfb9fc7a132ba714da14db414a370c49b13c85f57f0a9b970c7c7c93ca4ba9",
+    "data/external_historical/financial/processed/acquisition_v1/monthly_local.csv.xz": "8e992f43c03678ef9ba9a5c0b62cc4a956e32ec91a52541b9f1323a855b9479f",
+    "data/external_historical/financial/processed/acquisition_v1/monthly_public.csv.xz": "3e6e95008f488ae10eb40fa5d742a7b89c8e688e8c9bc542a115461667632a8d",
+    "data/external_historical/financial/processed/acquisition_v1/music_join_sample.csv": "f741117962222a0e0818d01f4a9a0efda4119966b7ac64d62134f5d35bed1b79",
+    "data/external_historical/financial/processed/acquisition_v1/point_in_time_local.csv.xz": "c93f5593ae8549726642cdf239a8b913c43b7339219331f035972c6712bee489",
+    "data/external_historical/financial/processed/acquisition_v1/point_in_time_public.csv.xz": "f7cd358749140e4d0e280e2f6978f43fcdc4901f5e02b8ab78b4b6c0dcd2bfc6",
+    "data/external_historical/financial/processed/acquisition_v1/quarterly_alignment_local.csv.xz": "f0c9a6943bccee6472faf4a669debc07ae4e98da53bb9d3e31d63f985d5fce92",
+    "data/external_historical/financial/processed/acquisition_v1/quarterly_alignment_public.csv.xz": "0b427e76e69991fd34da3e14544c38f3f1c7b014ebe359bb7a934ac3eddb39d3"
+  },
+  "code": {
+    "src/financial_acquisition.py": "ee1ad4c15c2d56d4d5234798a54095427510cb79636a57b3c6577f0be302e23c",
+    "src/financial_acquisition_common.py": "28c791175bb96c16ea5009a7ce437a05d515ba28a7728b820a3347a6b16026af",
+    "src/financial_acquisition_sources.py": "e793184db8cdc6a0470dac7b6906ff4482c3a16aaf9e4028220f0734ed72ab39"
+  },
+  "inputs": {
+    "music": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+    "native_local": "1cfb27e8750e12da4d12435fee92a7db69ff64d2cea77fa7773167f933b70f46",
+    "native_public": "dabe46a9af8db86b2acbf4f83e0a8d162712496e662ec9ba172cd23e0ebf1aec",
+    "series_dictionary": "2e29e7da848fb5335f293a7d96dc77eed86766217fe78d9e614397cd389f773b"
+  },
+  "summary": {
+    "derived_columns": 47,
+    "end": "2026-09",
+    "full_monthly_columns": 29,
+    "monthly_columns": 102,
+    "monthly_missing_cells": 11181,
+    "monthly_raw_columns": 55,
+    "monthly_rows": 825,
+    "monthly_total_cells": 84150,
+    "music_join": {
+      "calendar": "Chart snapshot month; calendar-month retrospective finance may include dates after snapshot chart day; not a forecasting dataset",
+      "distinct_songs": 28041,
+      "first_month": "1958-08",
+      "joined_rows": 7991,
+      "last_month": "2026-09",
+      "months": 818,
+      "music_sha256": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+      "sample_rows": 54,
+      "source_duplicate_song_month_rows": 3,
+      "source_rows": 81797,
+      "summary_rows": 7991,
+      "weighting": "Equal retained source rows; available-case mean per score; count and distinct song count separate"
+    },
+    "native_observations": 176476,
+    "native_series": 70,
+    "point_in_time_series": [
+      "US_IP_GROWTH_INIT",
+      "US_IP_GROWTH_REV1",
+      "US_NBER_ANNOUNCEMENT_EVENT"
+    ],
+    "public_monthly_columns": 69,
+    "quarterly_series": 10,
+    "start": "1958-01",
+    "version": "financial_acquisition_v1"
+  }
+}

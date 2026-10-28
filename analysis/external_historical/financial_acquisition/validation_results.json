@@ -1,0 +1,39 @@
+{
+  "commit_scope": "Only this financial release; concurrent enrichment files remain separate",
+  "elapsed_seconds": 2060.352,
+  "existing_figure_catalog": 952,
+  "financial_research_protected_baselines": 9,
+  "focused_financial_suite": {
+    "seconds": 1.374,
+    "tests": 21
+  },
+  "frozen_artifacts_checked": 1070,
+  "full_suite": {
+    "seconds": 81.929,
+    "skipped": 16,
+    "tests": 576
+  },
+  "initial_shared_suite": "Two failures caused by concurrent documentation edits outside publication; those edits subsequently removed by their owner; final shared suite passes",
+  "isolated_baseline_suite": {
+    "seconds": 93.571,
+    "skipped": 18,
+    "tests": 558
+  },
+  "phase1": {
+    "charts": 3555,
+    "exact_songs": 32723,
+    "observations": 355487
+  },
+  "private_replay_tables": 16,
+  "protected_files": 1731,
+  "public_replay_tables": 6,
+  "runtime": {
+    "machine": "arm64",
+    "python": "3.9.6",
+    "system": "Darwin"
+  },
+  "scope": "Acquisition and dataset validation only; no cross-domain modelling",
+  "source_snapshots": 32,
+  "status": "PASS",
+  "validated_at": "2026-10-28T19:40:24.083444+00:00"
+}

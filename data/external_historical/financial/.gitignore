@@ -1,0 +1,6 @@
+# Content-addressed source bytes stay local; hashes and retrieval recipes are tracked.
+/raw/
+/processed/acquisition_v1/*_local.csv.xz
+/processed/acquisition_v1/*_local.json
+/processed/acquisition_v1/figures_local/
+/manifests/acquisition_v1/preservation_local.json

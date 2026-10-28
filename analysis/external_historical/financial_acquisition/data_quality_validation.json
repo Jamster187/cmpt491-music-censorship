@@ -1,0 +1,11 @@
+{
+  "crosschecks": 14,
+  "drawdown_and_regime_bounds": "PASS",
+  "duplicate_native_keys": "PASS",
+  "invalid_domain_values": 0,
+  "native_series": 70,
+  "native_valid_values_checked": 176169,
+  "source_anomalies": "Retained; see source_anomalies.json and missingness reports; latest revised snapshots are not original releases",
+  "source_hashes_verified": 32,
+  "status": "PASS"
+}
