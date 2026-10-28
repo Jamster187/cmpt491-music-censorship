@@ -1,0 +1,38 @@
+{
+  "baseline_commit": "57da4c4533919b929ad5fa0062c235f9a509fb18",
+  "files": {
+    "README.md": "82b37d1ba0b70cbdc92d9b19bccf3d947f3ad3991fcd85a8a16dbbd30227d9e9",
+    "academic_literature.md": "975e92ef4754d089fecd8f0596c05019b35d082792f759dab42b6d2b16c3fbf2",
+    "counts.json": "57c6736f9470f1162dcc91cb69b380cb380b77541ac60a2ab31d3bcade43220c",
+    "derived_indicators.csv": "197a24f2794ec366bf0557ec747f7758e46eb4b2aa5fa990efec5409cb6cba04",
+    "existing_local_series.csv": "139705fbb432b0009eff99bc4d6e924c394fab33488987ad584c444a063bcb43",
+    "feasibility_matrix.csv": "6a816b4738e6ab118da5c12d417cabf8ef90950ec6ae1f2ae6774127d9e41961",
+    "historical_coverage.csv": "6e61d291acdcb59deda9d933382e0c34127b6dfda5032b6ac9701b21447c6615",
+    "indicator_inventory.csv": "94f4362f1321564d19286dd559d107d98319ee88a48f4788a85aaf4c8872ed6c",
+    "recommended_acquisition_plan.md": "ce37c5228c2e5015288897a276915ad29731084a7f22cdacf7fba2d66b428fb8",
+    "rejected_sources.md": "6b5fde53dbf1a1681a305b966b52b93fbc4c2a77e11e7708be11a53a18a63f2b",
+    "research_findings.md": "4f0d43f82d18f1797c2a7d40f86ea9009594a3e2da7977e09ed57e76c9dca59b",
+    "search_log.csv": "72d44aa4fca5474207a4ac3899ab7a329dcd9e59ee40b6acac40e339e05ed98f",
+    "source_checks.csv": "8e0d5085eb2951567aef7d50e390ee3cada2e79468a2d0bff970b1098d1b5098",
+    "source_inventory.csv": "c22af14cbc2598b5a6c41694ed1bc01485f9e7ab8bc062b601f10e483056be87",
+    "temporal_alignment.md": "ec0e795bd6cdbf449d504c49fae1aee4323a1858ce25ab0233a60a8c6bb01a1e",
+    "validation_report.md": "a8fa7484fa97c5f500e469709ea025eb05a836846c16cf542c3dfdc5f2186caf",
+    "verify.py": "841b309a09932a510d66d22bb6694b1bd7f5ad48f4ee8cf609b059e572bccde4"
+  },
+  "protected_baseline_sha256": {
+    "AGENTS.md": "9a29556ad556399ae60525ae21fda8600cfb852640c8f77cebdb66f210664629",
+    "README.md": "475fcb24bc159ccc56b193cb17d36f5b04cb0e93e9302b8eb9a130012ee8abb1",
+    "data/processed/music.db": "b40d522da1b5aa971e987e4e852b2b01b979f2e71cc034ab0152b85ca1405503",
+    "data/public/manifest.json": "9062f244998c6105f1a4ed0fe8449e44fd06d89048598747049319d63717e060",
+    "data/public/master_monthly.csv": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+    "data/public/master_weekly.csv.xz": "60f1a27be135c6e862c3d8bb5e6193999f0a9b3f19e6ea89de1f77454cdfc477",
+    "data/public/songs.csv": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5",
+    "docs/commands.md": "03fbd23d43b93d0d318f611767e3ff4d71fab97173514872caff4baa7ab8db90",
+    "docs/repository_structure.md": "2ffc23c4d93e98a204b2f153bebbbed73830b5976af42e85a44005d0a2e0c155"
+  },
+  "publication_validation_utc": "2026-10-28T19:00:55.549978+00:00",
+  "research_elapsed_seconds": 2250.55,
+  "research_started_utc": "2026-10-28T18:23:25Z",
+  "scope": "research-only; no observations acquired and no models fitted",
+  "version": "financial-research-2026-10-28-v1"
+}

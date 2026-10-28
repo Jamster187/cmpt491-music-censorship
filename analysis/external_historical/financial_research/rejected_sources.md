@@ -1,0 +1,26 @@
+# Excluded and deferred routes
+
+“Deferred” means potentially useful but not ready for unrestricted acquisition. Paid or restricted sources remain documented as candidates where the underlying construct is credible; none was downloaded through an unauthorized route.
+
+| Route or claim | Decision and evidence |
+|---|---|
+| Free complete S&P 500/Dow history from FRED | Reject the complete-history claim. Current mirror windows are limited. Keep licensed index histories and distinctly named French/Shiller alternatives. [FRED SP500](https://fred.stlouisfed.org/series/SP500) |
+| Nasdaq, Nasdaq-100, Russell, VIX or DXY in 1958 | Reject silent backfilling. Respect starts/back-calculation and launch dates. No unrelated proxy inherits the original name. [Nasdaq](https://indexes.nasdaq.com/Index/Overview/COMP), [Cboe](https://www.cboe.com/tradable-products/vix/vix-historical-data) |
+| Current index constituents used for old breadth or concentration | Reject survivor-biased reconstruction. Historical constituents, shares, splits and delistings need a licensed/auditable route. [CRSP](https://www.crsp.org/research/crsp-us-stock-databases/) |
+| MOVE, CDX, long OIS histories, full CRSP/WRDS extracts | Defer behind explicit product/entitlement checks. Public methodological descriptions do not grant historical files or redistribution. [MOVE catalog](https://developer.ice.com/fixed-income-data-services/catalog/ice-data-indices-move-index), [CDX](https://www.spglobal.com/spdji/en/landing/topic/cdx-tradable-cds-indices/) |
+| AAII full history assumed freely downloadable | Defer membership/permission check; current official page describes historical access as a membership benefit. [AAII](https://www.aaii.com/sentimentsurvey) |
+| Conference Board, ISM, proprietary confidence/default/advertising datasets | Document constructs; do not scrape paid history or infer entitlement from a press release. [Conference Board](https://www.conference-board.org/data/consumerconfdetail.cfm), [ISM](https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/) |
+| CNN/crypto fear-and-greed indexes as full-history psychology | Excluded from the full-history recommendation: recently constructed measures, opaque/variable access and no 1958 observation history. No synthetic prehistory is invented. Transparent component measures are cataloged separately. |
+| Search interest/social-media sentiment as pre-internet mood | Reject long-run substitution. Modern platform coverage, changing samples and retrospective retrieval are unsuitable for a continuous 1958 series without a separate design. |
+| Annual advertising expenditures from archival collections | Archival research lead only; exact consistent time-series extract, licensing and machine-readable access remain unknown. The Duke archive source is not counted as a verified production dataset. [Archive](https://repository.duke.edu/dc/jwt) |
+| Unlimited full-history gold downloads from any mirror | Reject access/continuity assumption. Inspect benchmark licensing and fixed/dual/floating regimes. Pink Sheet is a separately documented monthly route. [Goldhub](https://www.gold.org/goldhub/data/gold-prices), [World Bank](https://www.worldbank.org/en/research/commodity-markets) |
+| LIBOR, SOFR and OIS spliced into one funding rate | Reject. Different collateral, credit and tenor conventions; legacy rates terminate. Keep overlapping alternatives and explicit transitions. |
+| Household debt service as one unchanged 1980–2026 series | Reject. Current-method series starts 2005 and old-method series ends 2024. [Federal Reserve methods](https://www.federalreserve.gov/releases/dsr/about.htm) |
+| NBER recession labels known at the start of recession | Reject for forecasts; keep retrospective dates and announcement times separate. [NBER chronology](https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions) |
+| Current uncertainty history automatically suitable for COVID comparisons | Defer. Current macro/financial uncertainty release explicitly purges certain COVID spikes; retain vintages and obtain a separate design decision. [Author documentation](https://www.sydneyludvigson.com/macro-and-financial-uncertainty-indexes) |
+| Monthly GDP, poverty, homelessness or wealth created by forward fill | Reject as new observations. Keep native frequency and distinguish a display join from independent measurements. |
+| Every horizon, sector, language, survey response or return encoding counted as a new discovery | Reject count inflation. Store families/panels and redundancy groups; direct aliases are flagged. |
+| Financial observations copied from unlicensed mirrors or arbitrary GitHub/Kaggle reposts | Prefer originating agencies, publishers, author sites or documented authorized distributors; a public repost is not provenance or permission. |
+| Private credit-bureau or restricted-geography microdata | Exclude acquisition. Public aggregated CCP, SCF, SHED, Census and other appropriate summaries are alternatives with their own limits. |
+
+Incomplete direct page access is recorded as a failed check rather than a source withdrawal. Six sources have primary indexed/alternate documentary support despite failed direct access. API availability, exact historical endpoints and redistribution remain independent checks for the later sprint.
