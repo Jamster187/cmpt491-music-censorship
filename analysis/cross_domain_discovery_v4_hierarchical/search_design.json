@@ -1,0 +1,84 @@
+{
+  "cohort_catalog_sha256": "15a47fac0cf4289603b0a3abb537f30c5b908a5b9c82bfed1e41b6818f33befc",
+  "conservative_stability_attempt_cap": 338934584,
+  "domains": [
+    "artist_history",
+    "audio",
+    "chart",
+    "cultural",
+    "financial",
+    "genre",
+    "lyric_semantics",
+    "lyric_structure",
+    "lyrical_affect",
+    "lyrical_content",
+    "macroeconomic",
+    "measurement_quality",
+    "metadata",
+    "political",
+    "social"
+  ],
+  "exhaustive_screening_attempts": 11201536192,
+  "full_campaign_started": false,
+  "independent_audit_triples": 131072,
+  "lower_retained_per_target_cap": 348,
+  "one_predictor_models": 10593262,
+  "result_record_bytes": 42,
+  "selected_plus_audit_triple_cap": 41488384,
+  "selected_triple_cap": 41357312,
+  "shared_cohorts": 1481,
+  "status": "DESIGN_AUDITED",
+  "summary": [
+    {
+      "full_three_predictor": 790121329393,
+      "one_predictor": 4335295,
+      "population": "genre_month",
+      "target_tasks": 4185,
+      "track": "adjusted",
+      "two_predictor": 2260314082
+    },
+    {
+      "full_three_predictor": 797949409119,
+      "one_predictor": 4351419,
+      "population": "genre_month",
+      "target_tasks": 4188,
+      "track": "raw",
+      "two_predictor": 2275663372
+    },
+    {
+      "full_three_predictor": 95211273943,
+      "one_predictor": 481599,
+      "population": "monthly",
+      "target_tasks": 442,
+      "track": "adjusted",
+      "two_predictor": 262295157
+    },
+    {
+      "full_three_predictor": 100164015611,
+      "one_predictor": 489838,
+      "population": "monthly",
+      "target_tasks": 442,
+      "track": "raw",
+      "two_predictor": 271330694
+    },
+    {
+      "full_three_predictor": 96128995097,
+      "one_predictor": 466764,
+      "population": "song",
+      "target_tasks": 420,
+      "track": "adjusted",
+      "two_predictor": 259406377
+    },
+    {
+      "full_three_predictor": 97105689519,
+      "one_predictor": 468347,
+      "population": "song",
+      "target_tasks": 420,
+      "track": "raw",
+      "two_predictor": 261165152
+    }
+  ],
+  "target_tasks": 10097,
+  "triple_payload_byte_cap": 1742512128,
+  "two_predictor_models": 5590174834
+}

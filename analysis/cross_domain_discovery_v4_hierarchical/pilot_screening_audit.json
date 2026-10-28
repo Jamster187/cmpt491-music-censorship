@@ -1,0 +1,20 @@
+{
+  "confidence": 0.95,
+  "false_negative_fraction_estimate": 0.9999587050409935,
+  "false_negative_fraction_simultaneous_interval": [
+    0.15020425264480988,
+    0.9999994125140647
+  ],
+  "interpretation": "Sampling uncertainty conditional on fixed historical data and the prespecified qualifying rule; not uncertainty about causality or an IID regression test. Zero sampled misses do not imply perfect recall.",
+  "missed_qualifying_estimate": 196456545.04047617,
+  "missed_qualifying_simultaneous_interval": [
+    1434,
+    13809684192
+  ],
+  "population_scope": "Pilot target tasks only",
+  "qualifying_sample_total": 186,
+  "retained_qualifying": 8113,
+  "sampled_triples": 16384,
+  "scope": "pilot",
+  "target_tasks": 74
+}

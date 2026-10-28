@@ -1,0 +1,10 @@
+{
+  "audit_hash": "0f24c40464575ad7803a1cf2648b77470000cead2c5b48648c041708ee4694fc",
+  "draws": 16384,
+  "full_estimate_and_confidence_bounds_identical": true,
+  "replay_seconds": 25.579712917,
+  "selection_hash": "8cf67f1deeff5f7814400abcda20d265f8905582676ef2dc779b7b384e4c7221",
+  "status": "PASS",
+  "strata": 3984,
+  "target_tasks": 74
+}

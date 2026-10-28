@@ -1,0 +1,81 @@
+{
+  "checks": {
+    "focused_hierarchical_suite": {
+      "log_sha256": "a1e54945c29c223af67708eee09fbcae9fb25db5b5d6036e24f7cffe00e7a92f",
+      "passed": 22,
+      "run": 22,
+      "seconds": 0.061,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "full_unittest_suite": {
+      "log_sha256": "1b4fe42fa3548f27ce6b4da83575e6ee70430dbb652f803bb42fd2d4ef76bf40",
+      "passed": 599,
+      "run": 615,
+      "seconds": 94.13,
+      "skipped": 16,
+      "status": "PASS"
+    },
+    "independent_audit_replay": {
+      "audit_hash": "0f24c40464575ad7803a1cf2648b77470000cead2c5b48648c041708ee4694fc",
+      "draws": 16384,
+      "full_estimate_and_confidence_bounds_identical": true,
+      "replay_seconds": 25.579712917,
+      "selection_hash": "8cf67f1deeff5f7814400abcda20d265f8905582676ef2dc779b7b384e4c7221",
+      "status": "PASS",
+      "strata": 3984,
+      "target_tasks": 74
+    },
+    "launch_gate": {
+      "attempted_action": "full",
+      "outcome": "denied_before_full_checkpoint_creation",
+      "reason": "Measured four-hour/15 GB gate does not pass",
+      "returncode": 1,
+      "status": "PASS"
+    },
+    "prior_artifact_preservation": {
+      "baseline_commit": "51eb89878f072bc713cb43b7d1a5b69be4a4d95c",
+      "bytes": 41051283297,
+      "files": 279382,
+      "status": "PASS"
+    },
+    "prior_figure_catalog": {
+      "figures": 952,
+      "status": "PASS",
+      "unchanged_numerical_inputs": 32
+    },
+    "prior_v4_publication_and_private_validation": {
+      "evaluation_models_fitted": 0,
+      "full_campaign_started": false,
+      "private": true,
+      "publication_files": 31,
+      "status": "PASS",
+      "structurally_eligible_models": 1982281480778,
+      "target_tasks": 10097
+    },
+    "public_verification_without_data_directory": {
+      "full_campaign_started": false,
+      "gate": "BUDGET_NOT_MET",
+      "publication_files": 33,
+      "status": "PASS"
+    },
+    "repository_layout": {
+      "frozen_release_hashes": "PASS",
+      "immutable_artifacts_checked": 1070,
+      "local_markdown_links_checked": 921,
+      "private_tracked_files": 0,
+      "stale_active_paths": 0
+    }
+  },
+  "commands": [
+    "python3 -m unittest discover -s tests -v",
+    "python3 -m unittest discover -s tests -p test_hierarchical_v4.py -v",
+    "python3 src/cross_domain_v4_report.py verify --private",
+    "python3 src/cross_domain_v4_common.py verify",
+    "python3 src/repository_layout.py",
+    "python3 src/figure_audit.py --validate",
+    "python3 src/hierarchical_v4_report.py verify --private"
+  ],
+  "recorded_utc": "2026-10-28T21:47:35.197364+00:00",
+  "status": "PASS"
+}

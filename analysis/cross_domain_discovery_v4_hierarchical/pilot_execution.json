@@ -1,0 +1,18 @@
+{
+  "audit_triples": 16384,
+  "elapsed_seconds": 425.43894929100003,
+  "exhaustive_screening_attempts": 88750976,
+  "full_campaign_started": false,
+  "independent_audit_hash": "0f24c40464575ad7803a1cf2648b77470000cead2c5b48648c041708ee4694fc",
+  "local_checkpoint_bytes": 15036416,
+  "max_scaled_reference_mse_error": 7.02923377764262e-12,
+  "native_support_complete_tasks": 74,
+  "peak_rss_bytes": 4364779520,
+  "reference_checks": 1072,
+  "scope": "pilot",
+  "screening_models": 44375488,
+  "selected_triples": 303104,
+  "selection_hash": "8cf67f1deeff5f7814400abcda20d265f8905582676ef2dc779b7b384e4c7221",
+  "status": "COMPLETE",
+  "target_tasks": 74
+}

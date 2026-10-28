@@ -1,0 +1,16 @@
+{
+  "audit_qualifying": 186,
+  "audit_strata": 3984,
+  "audit_triples": 16384,
+  "checkpoint_read_only": true,
+  "frozen_code_files": 10,
+  "frozen_input_files": 10,
+  "lower_fold_attempts": 88750976,
+  "lower_relationships": 44375488,
+  "reference_checks": 1072,
+  "scope": "pilot",
+  "selected_qualifying": 8113,
+  "selected_triples": 303104,
+  "status": "PASS",
+  "tasks": 74
+}

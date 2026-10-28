@@ -1,0 +1,22 @@
+{
+  "benchmark_seconds": 448.16505275000003,
+  "conservative_total_seconds": 84256.65277302255,
+  "estimated_component_seconds": {
+    "prepare": 34609.833721789786,
+    "screen": 7877.329956622314,
+    "stability": 12785.161468436267
+  },
+  "free_disk_bytes": 7814643712,
+  "full_campaign_started": false,
+  "limits": {
+    "disk_headroom_bytes": 2147483648,
+    "runtime_limit_seconds": 14400,
+    "temporary_disk_limit_bytes": 15000000000
+  },
+  "projected_seconds": 55272.325146848365,
+  "projected_temporary_storage_bytes": 5431228192,
+  "projection": "Maximum matching population/track latency and rates; preparation once per cohort, row scaling only beyond maximum measured support, conservative variable/target-width scaling; actual batches of at most eight targets for fitting and per-model selection; 1.5x compute plus 900 seconds and pilot wall time; no unmeasured parallel speedup",
+  "projection_code_sha256": "68c7518c38e9de812ae668006079ce7bae480fa51e03c4bfd8a91c17128b76b7",
+  "protocol_sha256": "918e07bd6d9be403464612ffc020d395ddf31b913e3f1dcf676cb661e76f8777",
+  "status": "BUDGET_NOT_MET"
+}

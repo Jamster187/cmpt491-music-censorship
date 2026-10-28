@@ -1,0 +1,137 @@
+{
+  "files": {
+    "analysis/cross_domain_discovery_v4_hierarchical/README.md": {
+      "bytes": 5046,
+      "sha256": "a0cc3bd9491af4b44d678fdf650d24c66b3b271b4bfb75b4d014d5c504884115"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/audit_replay_validation.json": {
+      "bytes": 344,
+      "sha256": "32dbba3146f8dc8277f05748531381ee32ca04b347b6d808f68ebf007ce94d4c"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/benchmark_gate.json": {
+      "bytes": 1111,
+      "sha256": "7eaf4c369a482ddb6e3bc91ec108219e12494320e1c33c75b7f1db460e207b90"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/cohort_catalog.csv": {
+      "bytes": 1000643,
+      "sha256": "acacc699e74ef4ef0beb73a9ae85a0e8823c0977a2432582db1c6f13be78c686"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/engineering_validation.json": {
+      "bytes": 2618,
+      "sha256": "62a38556a370e863a921122241ba482da8ce5b4c70b693117f6b251970497a9c"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/frozen_protocol.json": {
+      "bytes": 8721,
+      "sha256": "9d65ea7135f94a7549ebfca2409ba3e258f6a00ee445e40241d8e50c96d9bde6"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/launch_gate_validation.json": {
+      "bytes": 186,
+      "sha256": "1603734bdb32dffa556dd6d07adfe7e0fe877e51364f651ddae97b1cc6addbbf"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/methodology.md": {
+      "bytes": 10510,
+      "sha256": "584b61266e9aa289f62f11fc7549243ee3ffb91c40450c12f16a81a8feb35fe6"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/pilot_audit_strata.csv": {
+      "bytes": 593711,
+      "sha256": "f9540db4f16d5e727a1e28a94b76d30dbb33a958a7d08ab4b5a11dfe4733d622"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/pilot_coefficient_sign_stability.csv": {
+      "bytes": 3215,
+      "sha256": "e4b68a95b065f619f5f8533d7d247c00540a451fc825a3e9d31ac5109bae404b"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/pilot_domain_coverage.csv": {
+      "bytes": 527219,
+      "sha256": "ee45f81eb40d31d7414ebac0bc45485fd074c78652a63015b2cef3094631712b"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/pilot_execution.json": {
+      "bytes": 656,
+      "sha256": "94abed6314d445d32ca4b50f9782a5e10aa78a52e6edcb5bd2f3198b9ac4ec67"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/pilot_screening_audit.json": {
+      "bytes": 730,
+      "sha256": "51dc3bb6276781aac7ab05dab12957ce58960d835bd01652edafb4c1a5c9c0e6"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/pilot_target_ledger.csv": {
+      "bytes": 24709,
+      "sha256": "0a724f5f9e4a92402bd606ac807c65bfe19cef17fdab5f6f59267d02887e857e"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/pilot_timings.json": {
+      "bytes": 52894,
+      "sha256": "6ba589366e3d85143e9fea1b5c44d786d656d304ff81e71a9a2d7c5ae2fdf34b"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/protocol.json": {
+      "bytes": 2743,
+      "sha256": "e8e5dcb9290ef96918f54f65b82c7a0fdef442e3e760c90ca7623967447b0666"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/resource_projection_by_cohort.csv": {
+      "bytes": 270103,
+      "sha256": "16d53a88267ab9b4d23b0e71b61290e0540091315069e6d5f9a79530b8ff47e3"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/search_budget.svg": {
+      "bytes": 80547,
+      "sha256": "b8b65b3590abffeec2bd88b12719e854f8e42d1d280d2bf977f3e82fba58cb34"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/search_design.json": {
+      "bytes": 2160,
+      "sha256": "eee5328b40deedce6e6b7c68ce2f7a1f7e929119c6f3a4d13fc8b6798fcac970"
+    },
+    "analysis/cross_domain_discovery_v4_hierarchical/validation.json": {
+      "bytes": 381,
+      "sha256": "1e89e7b86e7e5d0c85329499e0f5bb779b85ad155ebb05ddd52c3cd44bbdc1d1"
+    },
+    "src/cross_domain_v4_audit.py": {
+      "bytes": 12957,
+      "sha256": "d37ea30c69846a333606b5688ca38e77b26906ced30bededf86966660064dfb7"
+    },
+    "src/cross_domain_v4_common.py": {
+      "bytes": 5364,
+      "sha256": "b1ad2aa101914863857db518462551da4cea868f4b1d38fa528231754fe7d780"
+    },
+    "src/cross_domain_v4_data.py": {
+      "bytes": 26370,
+      "sha256": "3c1de3ad8d4f6be888c92d7cfbb6e11432241d74b5c903e662a43aaa55739f41"
+    },
+    "src/cross_domain_v4_pilot.py": {
+      "bytes": 16961,
+      "sha256": "eb7362300f30dbb4a0db05819f2bb71a5b2e98199e4021301d94b9bd116ec569"
+    },
+    "src/hierarchical_v4_benchmark_report.py": {
+      "bytes": 5603,
+      "sha256": "68c7518c38e9de812ae668006079ce7bae480fa51e03c4bfd8a91c17128b76b7"
+    },
+    "src/hierarchical_v4_common.py": {
+      "bytes": 6136,
+      "sha256": "cf85c1e77e8da216a69d439a377ed5203fc7e98648469318206835695b9f5303"
+    },
+    "src/hierarchical_v4_engine.py": {
+      "bytes": 17383,
+      "sha256": "575e2d6ed07dfc2a08fe499aea1c4d1ba1b15054ed07d9ce1234f850ff256b9a"
+    },
+    "src/hierarchical_v4_report.py": {
+      "bytes": 32783,
+      "sha256": "efae20ec2d2b29e6c55f29dab69586fbfde0216dbeb99e13679f812870dffd2a"
+    },
+    "src/hierarchical_v4_run.py": {
+      "bytes": 25278,
+      "sha256": "4d689961a845f2a09031cd8e4718adf45da01df4e5bd1060108de44594e2f422"
+    },
+    "src/hierarchical_v4_sampling.py": {
+      "bytes": 7784,
+      "sha256": "0c10e5d205f78d1fd0be788d8879d851eaf236862e52c1a4940575f1969af50f"
+    },
+    "src/hierarchical_v4_screen.py": {
+      "bytes": 8771,
+      "sha256": "54a9b37f7270ce0312bf71cef92f02e7a96856ac2ba673a1f639609f0035cb8a"
+    },
+    "src/regression_core.py": {
+      "bytes": 11536,
+      "sha256": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69"
+    },
+    "tests/test_hierarchical_v4.py": {
+      "bytes": 14774,
+      "sha256": "fb92b344c6865b8f4f3207b463c6a2e0ffdaad28f6734c5ca8792736a774375d"
+    }
+  },
+  "version": "hierarchical-v4-1"
+}

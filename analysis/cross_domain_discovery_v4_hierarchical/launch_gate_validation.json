@@ -1,0 +1,7 @@
+{
+  "attempted_action": "full",
+  "outcome": "denied_before_full_checkpoint_creation",
+  "reason": "Measured four-hour/15 GB gate does not pass",
+  "returncode": 1,
+  "status": "PASS"
+}
