@@ -1,0 +1,82 @@
+{
+  "checks": {
+    "figures": {
+      "command": "python3 src/figure_audit.py --validate",
+      "figures": 952,
+      "status": "PASS",
+      "unchanged_numeric_files": 32
+    },
+    "offline_deterministic_replay": {
+      "artifacts_compared": 38,
+      "changed_artifacts": [],
+      "replay_code_sha256": "becc25b41847b8118f3002326ecb58f49c3f2435f7ff4c1d7651691d0c4b36ff",
+      "scope": "Offline original-snapshot parsers, chart/song/month views, native-frequency joins, CSV inventories and SVG coverage figures; no network or model training",
+      "seconds": 297.508388875,
+      "status": "PASS"
+    },
+    "phase1": {
+      "charts": 3555,
+      "command": "python3 src/phase1.py validate",
+      "exact_foundation_songs": 32723,
+      "observations": 355487,
+      "status": "PASS"
+    },
+    "protected_original_artifacts": {
+      "baseline_commit": "57da4c4533919b929ad5fa0062c235f9a509fb18",
+      "bytes": 38203701082,
+      "files": 248030,
+      "status": "PASS"
+    },
+    "public_and_private": {
+      "private": {
+        "all_external_rows": 184845,
+        "all_external_series": 137,
+        "asof_values_replayed": 1468,
+        "joined_months": 818,
+        "quarterly_annual_monthly_inflation": 0,
+        "release_candidate_month_links": 5738,
+        "same_day_and_future_release_leaks": 0,
+        "source_raw_files_checked": 41,
+        "status": "PASS"
+      },
+      "public": {
+        "chart_source_rows_preserved": 355487,
+        "exact_song_identities": 28041,
+        "missingness_fields_checked": 181,
+        "monthly_units": 818,
+        "permitted_external_rows": 56469,
+        "permitted_external_series": 108,
+        "source_columns_preserved": 70,
+        "status": "PASS"
+      }
+    },
+    "repository_layout": {
+      "frozen_release_hashes": "PASS",
+      "immutable_artifacts_checked": 1070,
+      "local_markdown_links_checked": 814,
+      "private_tracked_files": 0,
+      "stale_active_paths": 0
+    },
+    "semantic_replay": {
+      "code_sha256": "a04f67eb2670f60c20b583587b2b230b107e029f69ede08064599815dfe2b29a",
+      "embedding_tolerance_absolute": 1e-12,
+      "protocol_key": "8708382a8978cae4adeb2e95d30613ee3e1ce8be5fae32a8a50e7d0e15c45d49",
+      "saved_songs_replayed": 8,
+      "simultaneous_and_future_reference_leaks": 0,
+      "status": "PASS"
+    },
+    "unittest": {
+      "command": "python3 -m unittest discover -s tests -v",
+      "log_sha256": "a57e0754c0f663046247a211c5d64fa61f3e63d9f3b89513d39736baf14ee8fc",
+      "passed": 559,
+      "seconds": 89.588,
+      "skipped": 16,
+      "status": "PASS",
+      "tests_run": 575
+    }
+  },
+  "elapsed_to_validation_seconds": 5178.792025,
+  "scope": "Additive music enrichment and historical-data infrastructure only; no new statistical model search",
+  "started_at": "2026-10-28T18:07:34+00:00",
+  "validation_completed_at": "2026-10-28T19:33:52.792025+00:00"
+}

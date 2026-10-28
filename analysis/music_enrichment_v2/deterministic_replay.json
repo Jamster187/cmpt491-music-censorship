@@ -1,0 +1,8 @@
+{
+  "artifacts_compared": 38,
+  "changed_artifacts": [],
+  "replay_code_sha256": "becc25b41847b8118f3002326ecb58f49c3f2435f7ff4c1d7651691d0c4b36ff",
+  "scope": "Offline original-snapshot parsers, chart/song/month views, native-frequency joins, CSV inventories and SVG coverage figures; no network or model training",
+  "seconds": 297.508388875,
+  "status": "PASS"
+}

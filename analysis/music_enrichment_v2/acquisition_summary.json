@@ -1,0 +1,41 @@
+{
+  "cached_before": 1048,
+  "cached_successes": 1049,
+  "errors_this_run": [
+    {
+      "entity_id": "06d8457e-3f7c-4c77-b7c3-21e810319fbe",
+      "error_type": "HTTPError",
+      "kind": "recording",
+      "message": "HTTP Error 503: Service Temporarily Unavailable",
+      "retrieved_at": "2026-10-28T19:16:58.181412+00:00",
+      "url": "https://musicbrainz.org/ws/2/recording/06d8457e-3f7c-4c77-b7c3-21e810319fbe?fmt=json&inc=artist-credits%2Bisrcs%2Breleases%2Brelease-groups%2Bartist-rels%2Bwork-rels%2Bwork-level-rels%2Brecording-rels"
+    },
+    {
+      "entity_id": "00a971c5-fb39-4246-b727-7b060dc1057b",
+      "error_type": "HTTPError",
+      "kind": "recording",
+      "message": "HTTP Error 503: Service Temporarily Unavailable",
+      "retrieved_at": "2026-10-28T19:17:00.270664+00:00",
+      "url": "https://musicbrainz.org/ws/2/recording/00a971c5-fb39-4246-b727-7b060dc1057b?fmt=json&inc=artist-credits%2Bisrcs%2Breleases%2Brelease-groups%2Bartist-rels%2Bwork-rels%2Bwork-level-rels%2Brecording-rels"
+    },
+    {
+      "entity_id": "edc7b398-8e98-47fa-8322-57d2d4dd33b0",
+      "error_type": "HTTPError",
+      "kind": "recording",
+      "message": "HTTP Error 503: Service Temporarily Unavailable",
+      "retrieved_at": "2026-10-28T19:17:04.229075+00:00",
+      "url": "https://musicbrainz.org/ws/2/recording/edc7b398-8e98-47fa-8322-57d2d4dd33b0?fmt=json&inc=artist-credits%2Bisrcs%2Breleases%2Brelease-groups%2Bartist-rels%2Bwork-rels%2Bwork-level-rels%2Brecording-rels"
+    }
+  ],
+  "license": "CC0 core data",
+  "license_url": "https://musicbrainz.org/doc/MusicBrainz_Database",
+  "limit": 400,
+  "maximum_inflight": 2,
+  "minimum_observed_start_interval_seconds": 1.1015544170000005,
+  "planned_entities": 3818,
+  "rate_limit": "at least 1.1 seconds between starts",
+  "requests_this_run": 4,
+  "seconds": 13.728891209,
+  "selection": "All retained high-confidence single-observed-candidate recording IDs; unresolved editions excluded",
+  "stopped_on_errors": true
+}

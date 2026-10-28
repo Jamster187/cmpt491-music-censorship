@@ -1,0 +1,12 @@
+{
+  "all_rows": 184845,
+  "code_sha256": "5b7425c3f33bdec0a40d8afd00d440b7006801bfad024465f3ac7227704a8d39",
+  "daily_monthly_comparison_months": 1203,
+  "daily_monthly_disagreement_note": "Daily and monthly RF and historical FIZ/CIZ construction differ; preserve both, never silently replace published monthly returns",
+  "daily_monthly_max_absolute_difference_pp": 0.40037495299548453,
+  "derived_rows": 26836,
+  "derived_series": 36,
+  "permitted_rows": 56469,
+  "source_rows": 158009,
+  "source_series": 101
+}

@@ -1,0 +1,10 @@
+{
+  "maximum_seconds": 5400,
+  "peak_rss_bytes": 775536640,
+  "projected_full_inference_seconds": 1278.463029543309,
+  "protocol_key": "8708382a8978cae4adeb2e95d30613ee3e1ce8be5fae32a8a50e7d0e15c45d49",
+  "sample_songs": 64,
+  "seconds": 3.8997966679744422,
+  "songs": 20981,
+  "status": "PASS"
+}

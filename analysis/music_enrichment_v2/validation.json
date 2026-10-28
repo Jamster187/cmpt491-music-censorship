@@ -1,0 +1,23 @@
+{
+  "private": {
+    "all_external_rows": 184845,
+    "all_external_series": 137,
+    "asof_values_replayed": 1468,
+    "joined_months": 818,
+    "quarterly_annual_monthly_inflation": 0,
+    "release_candidate_month_links": 5738,
+    "same_day_and_future_release_leaks": 0,
+    "source_raw_files_checked": 41,
+    "status": "PASS"
+  },
+  "public": {
+    "chart_source_rows_preserved": 355487,
+    "exact_song_identities": 28041,
+    "missingness_fields_checked": 181,
+    "monthly_units": 818,
+    "permitted_external_rows": 56469,
+    "permitted_external_series": 108,
+    "source_columns_preserved": 70,
+    "status": "PASS"
+  }
+}

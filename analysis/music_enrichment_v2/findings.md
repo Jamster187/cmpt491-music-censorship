@@ -1,0 +1,10 @@
+# Measured enrichment findings
+
+- 181 new columns, with identifiers, quality fields and missingness distinguished from analytical quantities. The grouped inventory counts 91 new constructs and 148 total engineered groups; the 42 original classifiers remain separate.
+- All 20,981 approved lyric texts have completed local linguistic diagnostics and complete 384-dimensional semantic vectors. Dense vectors and lyric text stay private. Modern English-trained models and lexicons are imperfect for historical lyrics, dialects, multilingual songs and sung pronunciation.
+- Audio acquisition queried every one of 3,802 retained unique recording IDs. The strict mapping gate accepted 1,405 songs (5.01% of the study). Coverage is selective, not a random audio sample. Submission offset 0 was chosen without inspecting feature values. No recordings were downloaded.
+- MusicBrainz retained 1,049 successful entity responses from a planned 3,818. The latest bounded retry stopped after repeated provider failures; remaining entities stay missing and restartable. 1,048 study assets passed the new exact-credit gate. Sparse relationship counts are documented credits, not complete writer/producer censuses.
+- Existing cache metadata covers many more assets but often has unresolved recording editions. First-release dates, source countries, associated label/media tags and cover evidence retain their precise source meanings. They do not establish original issue, artist nationality, definitive lyric language, or absence of a cover relationship.
+- Original-label verification, comprehensive writer/producer histories, historic streaming/radio/social metrics, paywalled consumption data and standardized modern audio platform scores remain unavailable. Acoustic mood probabilities are not a valence scale; dynamic complexity is not standardized dynamic range. Every researched candidate has a final status and qualification in the audit.
+
+The 1950s and 2020s bins are partial decades. Coverage figures use the frozen study-song denominator by first chart date. Monthly feature means are compositional summaries and require their own missingness sensitivity before inference.

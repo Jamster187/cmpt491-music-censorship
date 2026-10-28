@@ -1,0 +1,11 @@
+{
+  "availability_codes": {
+    "C": "Known at published chart (title only); no original release-date inference",
+    "F": "Retrospective metadata, text, corpus or modern-model measurement"
+  },
+  "licenses": "Original lyric rights unchanged; no lyric text or dense embeddings distributed. Source-specific metadata/model terms documented in provenance.md",
+  "measurement_run_utc": "2026-10-28T19:02:06.017589+00:00",
+  "population": "28,041 frozen exact original title + artist identities",
+  "source_chart_authority": "Billboard; reported local upstream mhollingshead/billboard-hot-100, not independently verified",
+  "version": "music-enrichment-v2.1"
+}

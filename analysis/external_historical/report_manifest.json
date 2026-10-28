@@ -1,0 +1,19 @@
+{
+  "artifacts": {
+    "README.md": "292d31d252b9c7a3743ebfae4a84c93c075282ededa3805e468a52ae826d1ad6",
+    "acquisition_failures.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "coverage_by_period.csv": "2df75b984137b16aee5d8ee2c243a1f7287754207398b52eb6e4a4381b9e0bb4",
+    "coverage_report.csv": "969814384203ecb80b131c4bf08fb57a7403d4a03ec49a6dc7c0f7e8bad134ed",
+    "derived_series_dictionary.csv": "58689cac2cf0e73f24462fa3b95bd1ea5ca083ca413ef7f14391b3618f2f8de3",
+    "figures/history_coverage.svg": "1782a6e05cd54756d99c052ef087991a723b76287d55e793668e622925626f32",
+    "join_validation.json": "ea07dbc4dc88d578a5ca4c12c2eefa05ea868c4daea8e7e0e3f30bd764a03abe",
+    "join_validation.md": "faa8503ef4a56c67f01f7d8b438199bf55b9992a66f52556cd718182693d4eac",
+    "research_opportunities.md": "ad40b93853ea4c9194127d6b78b10a25c2289da4d5e47e2dbf650cbb3a246505",
+    "series_dictionary.csv": "16404be4e8161ff128934313deb9f439ae3b1c15bccc23ccd37904cabf0d1067",
+    "source_anomalies.json": "d17172eeb7f4df87a49b5c8ed201e72df9f6aa6f82504be597c751d0b515c4fb",
+    "source_inventory.csv": "65cfdda3a011e33b9ed2f527a3dbe65339f93db90d55f198f0e787cd22c76919",
+    "temporal_alignment.md": "be10b024067fe068ed9478a09c245807a2e172ccac140bc9ac9914b6bcf61859",
+    "transformation_summary.json": "94e4461480056424fb5da83cfef397088450af7ec7e6763e3478de36e835797e"
+  },
+  "report_code_sha256": "1330d3de1caa1f8a33c31377597bd2c9eef0995d7ecb391902b531d80eebe027"
+}

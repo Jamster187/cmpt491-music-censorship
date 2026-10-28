@@ -1,0 +1,11 @@
+{
+  "collection_ended": "2022",
+  "errors": [],
+  "license": "CC0",
+  "license_url": "https://acousticbrainz.org/",
+  "maximum_batch_ids": 25,
+  "no_audio_downloaded": true,
+  "planned_recording_ids": 3802,
+  "seconds": 1545.14669425,
+  "selection": "all retained single-observed-candidate MBIDs; first submission offset 0; no feature-based selection"
+}

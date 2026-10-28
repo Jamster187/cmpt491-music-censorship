@@ -1,0 +1,86 @@
+{
+  "results": [
+    {
+      "error": "HTTPError: HTTP Error 404: NOT FOUND",
+      "recording_id": "000ef01e-bece-4b8e-9ca7-d83b9a80cee5",
+      "status": "unavailable",
+      "url": "https://acousticbrainz.org/api/v1/000ef01e-bece-4b8e-9ca7-d83b9a80cee5/low-level"
+    },
+    {
+      "has_rhythm": true,
+      "provenance": {
+        "bytes": 60439,
+        "content_type": "application/json",
+        "last_modified": null,
+        "resolved_url": "https://acousticbrainz.org/api/v1/0021f09f-eeff-421b-92f4-50a7500c50e7/low-level",
+        "retrieval_date": "2026-10-28T18:34:04.798693+00:00",
+        "seconds": 0.9744597910000001,
+        "sha256": "8669450a0cf91b55529785edff7fcf5ebe88529fd6f206c9f3b429608940a670",
+        "url": "https://acousticbrainz.org/api/v1/0021f09f-eeff-421b-92f4-50a7500c50e7/low-level"
+      },
+      "recording_id": "0021f09f-eeff-421b-92f4-50a7500c50e7",
+      "status": "response"
+    },
+    {
+      "has_rhythm": true,
+      "provenance": {
+        "bytes": 51137,
+        "content_type": "application/json",
+        "last_modified": null,
+        "resolved_url": "https://acousticbrainz.org/api/v1/002c7bc0-a1dc-45c7-b0cf-64b22fff7c71/low-level",
+        "retrieval_date": "2026-10-28T18:34:07.075806+00:00",
+        "seconds": 1.170639833,
+        "sha256": "ca5c29ff47ebbcf640cee1759ae57c14d244fd4d235cf48508c4ddcd3a6c07b8",
+        "url": "https://acousticbrainz.org/api/v1/002c7bc0-a1dc-45c7-b0cf-64b22fff7c71/low-level"
+      },
+      "recording_id": "002c7bc0-a1dc-45c7-b0cf-64b22fff7c71",
+      "status": "response"
+    },
+    {
+      "has_rhythm": true,
+      "provenance": {
+        "bytes": 54774,
+        "content_type": "application/json",
+        "last_modified": null,
+        "resolved_url": "https://acousticbrainz.org/api/v1/003bf58c-d159-482a-8aa2-051a738d05b6/low-level",
+        "retrieval_date": "2026-10-28T18:34:09.197829+00:00",
+        "seconds": 1.015506416,
+        "sha256": "64feffc0b3c0d7126ceb3aab8ce84ea4709b3d5a4932c71ab3ceebaa13f88ca8",
+        "url": "https://acousticbrainz.org/api/v1/003bf58c-d159-482a-8aa2-051a738d05b6/low-level"
+      },
+      "recording_id": "003bf58c-d159-482a-8aa2-051a738d05b6",
+      "status": "response"
+    },
+    {
+      "has_rhythm": true,
+      "provenance": {
+        "bytes": 53072,
+        "content_type": "application/json",
+        "last_modified": null,
+        "resolved_url": "https://acousticbrainz.org/api/v1/003fb4fd-e5d0-4c03-a2cd-aa2c7545043a/low-level",
+        "retrieval_date": "2026-10-28T18:34:11.284202+00:00",
+        "seconds": 0.980191125000001,
+        "sha256": "ee0d6f2ede6d20e4fc055987b83f104211cab6b5be6059848b8eda0e18e9ba9d",
+        "url": "https://acousticbrainz.org/api/v1/003fb4fd-e5d0-4c03-a2cd-aa2c7545043a/low-level"
+      },
+      "recording_id": "003fb4fd-e5d0-4c03-a2cd-aa2c7545043a",
+      "status": "response"
+    },
+    {
+      "has_rhythm": true,
+      "provenance": {
+        "bytes": 53833,
+        "content_type": "application/json",
+        "last_modified": null,
+        "resolved_url": "https://acousticbrainz.org/api/v1/0042178d-1f88-44a1-9bf6-e6cf5da37fc5/low-level",
+        "retrieval_date": "2026-10-28T18:34:13.503997+00:00",
+        "seconds": 1.1136062080000002,
+        "sha256": "93bf07e22c2d91e867de7b54c500f4e22c51ecf6bb11828569730791ef381a14",
+        "url": "https://acousticbrainz.org/api/v1/0042178d-1f88-44a1-9bf6-e6cf5da37fc5/low-level"
+      },
+      "recording_id": "0042178d-1f88-44a1-9bf6-e6cf5da37fc5",
+      "status": "response"
+    }
+  ],
+  "selection": "first six sorted retained single-candidate recording MBIDs; endpoint feasibility only, not a representative coverage estimate"
+}

@@ -1,0 +1,17 @@
+{
+  "availability": "At current chart publication only; never use later rows for debut predictions",
+  "code_sha256": "c4bee8ac41fc96353172992ed7646941ed9d6e0b47e431737a472465e44b9027",
+  "columns": [
+    "chart_rank_improvement_per_elapsed_week",
+    "chart_prior_absent_chart_count",
+    "chart_first4w_points_after_window"
+  ],
+  "definitions": {
+    "chart_first4w_points_after_window": "Sum 101-rank over all source rows in [debut,debut+28 days); visible only on chart dates >=debut+28 days",
+    "chart_prior_absent_chart_count": "Number of intervening source chart dates with no appearance; first appearance null",
+    "chart_rank_improvement_per_elapsed_week": "(previous best observed rank - current best rank) / elapsed days*7; positive means improvement; first appearance null"
+  },
+  "duplicate_rule": "Rank minimum per song/date, points include every source row; final output retains every source location",
+  "input_sha256": "60f1a27be135c6e862c3d8bb5e6193999f0a9b3f19e6ea89de1f77454cdfc477",
+  "rows": 355487
+}

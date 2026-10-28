@@ -1,0 +1,23 @@
+{
+  "exact_consistent_songs": 1048,
+  "field_counts": {
+    "mb_v2_external_artist_country_set": 1005,
+    "mb_v2_external_artist_type_set": 1037,
+    "mb_v2_external_cover_evidence": 65,
+    "mb_v2_external_isrc_set": 757,
+    "mb_v2_external_producer_count": 319,
+    "mb_v2_external_release_list_truncated": 1048,
+    "mb_v2_external_remix_relationships": 69,
+    "mb_v2_external_retrieved_at": 1048,
+    "mb_v2_external_status": 28041,
+    "mb_v2_external_work_ids": 562,
+    "mb_v2_known_composer_count": 178,
+    "mb_v2_known_lyricist_count": 171,
+    "mb_v2_known_writer_count": 539,
+    "mb_v2_recording_first_release_candidate": 1048,
+    "mb_v2_recording_video": 1048,
+    "mb_v2_work_language_set": 539,
+    "song_id": 28041
+  },
+  "songs": 28041
+}

@@ -1,0 +1,15 @@
+# Original downloads, revision snapshots and request caches stay local.
+*/raw/
+# Financial file includes copyrighted research returns; publish only cleared subset.
+financial/observations.csv.xz
+macroeconomic/observations.csv.xz
+political/observations.csv.xz
+macroeconomic/nber_turning_points.csv
+derived/all_observations.csv.xz
+derived/daily_monthly_return_comparison.csv.xz
+joins/
+
+# Normalized source tables are published once through the versioned public release.
+social/observations.csv.xz
+cultural/observations.csv.xz
+derived/permitted_observations.csv.xz

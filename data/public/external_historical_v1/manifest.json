@@ -1,0 +1,30 @@
+{
+  "artifacts": {
+    "asof_monthly_releases.csv.xz": "70731de36e265c1d5c9477c2a277f83dea7772aaa0a021a78fad6146772d583c",
+    "chart_context_keys.csv.xz": "3f3fd42af976a7b7cfb276593fd17e3db1354175187e1da4b83b3e933c0733f4",
+    "month_genre.csv.xz": "67f3f90d8b6f029509cd3dde17de262982b8d57a7406be08b91f1012cd571a86",
+    "month_overall.csv.xz": "c5403e4cc52cbafe7398bb5959fe62dcbbf3b6092a1eb50dbf6a03e70469538a",
+    "observations.csv.xz": "14d3973625d47311da2004f492c8ebb3757f5051b523c8bf2ae1a210c30c968a",
+    "quarter_genre.csv.xz": "151d12abf316aa141c95a810d1cbae84b854d9d584ffde94c716763be5d9105b",
+    "quarter_overall.csv.xz": "76acf4618c532ea110489c4dc62efc9bbfbfd764e9540011bd7457088be9b708",
+    "release_context_keys.csv.xz": "e1073772a66cf62e29042dc101862731bb35d30c36f0ee42af0d0e3c7068f7a9",
+    "year_genre.csv.xz": "6209e40f7437737ac56f74a111028ff1ee8cf4a86401069d5ed1844a0d747f66",
+    "year_overall.csv.xz": "e56bfdf9a4155b1e5697f13a47dd18f212cdd43926d10983000d07929ba30ea2"
+  },
+  "code_sha256": {
+    "external_historical_features.py": "5b7425c3f33bdec0a40d8afd00d440b7006801bfad024465f3ac7227704a8d39",
+    "external_historical_joins.py": "72e4e81cf2738541b8900633d9144dd8d2a4483c3e1f209ea8e19cceee6c871d",
+    "external_historical_political.py": "8daaa8bff52ab67ae2535c585f3761d596ab82d6f7d5c811655be6297caeeb01",
+    "external_historical_sources.py": "0774c4d91194da9f0788c14cec650c5c84b1fa13f4f4b004116efaa136848ef7"
+  },
+  "inputs": {
+    "data/external_historical/derived/permitted_observations.csv.xz": "14d3973625d47311da2004f492c8ebb3757f5051b523c8bf2ae1a210c30c968a",
+    "data/public/master_monthly.csv": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+    "data/public/music_enrichment_v2/songs.csv.xz": "1222eaf830aa1967e0f42c5d69526b8e7b022d192ea03fefcbf536e46cb0d8cb"
+  },
+  "license_selection": "Only observations explicitly marked redistribution_permitted=True; restricted sources have coverage/provenance only in public reports",
+  "music_months": 818,
+  "restricted_values_excluded": true,
+  "source_observations_and_derived_features_independent": true,
+  "version": "external-historical-v1.1"
+}

@@ -1,0 +1,8 @@
+{
+  "code_sha256": "a04f67eb2670f60c20b583587b2b230b107e029f69ede08064599815dfe2b29a",
+  "embedding_tolerance_absolute": 1e-12,
+  "protocol_key": "8708382a8978cae4adeb2e95d30613ee3e1ce8be5fae32a8a50e7d0e15c45d49",
+  "saved_songs_replayed": 8,
+  "simultaneous_and_future_reference_leaks": 0,
+  "status": "PASS"
+}

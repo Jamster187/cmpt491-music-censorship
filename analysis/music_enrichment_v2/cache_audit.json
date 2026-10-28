@@ -1,0 +1,10 @@
+{
+  "census": {
+    "lookups_artist": 106,
+    "lookups_recording": 90,
+    "lookups_release-group": 110,
+    "requests": 34611
+  },
+  "lookup_entities": 153,
+  "work_relation_recordings": 21
+}

@@ -1,0 +1,38 @@
+{
+  "artifacts": {
+    "chart_period_features.csv.xz": "bdd1faba6d950fb5c3eb60c07bf937cefb58454f309b04722307e7e9b860fc20",
+    "monthly_by_genre.csv.xz": "5d9906661c92f99cf8214eaa6f4d35cbfab467ce68087aa72088522051cb3693",
+    "monthly_overall.csv.xz": "01383bf68484dc6b02fb261395cb8be3d420944eca5c9326cbdd14fdececd38e",
+    "song_missingness.csv.xz": "8c81851c0f96b11cff3cc93799cf9df352762ae03e02b12dcfbefeb8e6cac64f",
+    "songs.csv.xz": "1222eaf830aa1967e0f42c5d69526b8e7b022d192ea03fefcbf536e46cb0d8cb"
+  },
+  "code_sha256": {
+    "music_enrichment_acquire.py": "baf08426cabbd56ee5e905be543671e6dde13d211ec2806d1360e9919116a879",
+    "music_enrichment_assets.py": "d20f32d198a1c418d5bd614b71e648c452224047bf0562a9309986daad6ce08e",
+    "music_enrichment_audio.py": "312ef870853f85b3b2f59d19e60ddc86ae6bde79afe96391695341a67b8a417c",
+    "music_enrichment_features.py": "86e79ac8e01cf2fae29f833e0a7b63f8a0e32187a8b89cc323d4c88873e6615b",
+    "music_enrichment_metadata.py": "9447427215e8afc502b987f5fa8fd85a5a801be07303a944aae695e1db1c4e9f",
+    "music_enrichment_nlp.py": "761a1cbeb92a36cd8732da9f9d608160ea3bbc93a1c863e1d3409658cf452544",
+    "music_enrichment_validate.py": "57955dde8cd4254f2425e403fc19979c68961b5379b1feb4d85a3949122cdc8c",
+    "music_enrichment_views.py": "c4bee8ac41fc96353172992ed7646941ed9d6e0b47e431737a472465e44b9027"
+  },
+  "feature_count_note": "Column counts are not counts of independent constructs: POS, MFCC/GFCC, keys/modes and model families are grouped in the construct inventory.",
+  "frozen_v1_constructs": 57,
+  "genre_month_rows": 7173,
+  "inputs": {
+    "data/experiments/music_enrichment_v2/audio_features.csv.xz": "f16236f6938d658bc88b32387c702bbfa18c3d1d9c54bb65b91efb81e16b4155",
+    "data/experiments/music_enrichment_v2/external_metadata_features.csv.xz": "c9ba3b2125d3602549961273247eed38a8ba2123a73ee5d723a833140166bf21",
+    "data/experiments/music_enrichment_v2/local_features.csv.xz": "25cefdaecc76d236d607f55cea3e5003576b98a143f41ef7817db2b929350c8a",
+    "data/experiments/music_enrichment_v2/metadata_features.csv.xz": "cedaba653795df345b47029fa896fcf6e27995a4c4c6fb6fd4dcd159905f7808",
+    "data/experiments/music_enrichment_v2/nlp_features.csv.xz": "18c78bc10b7c1821f3c20be902ec96d046df03225709d4276cc816c3f5b8a5d8",
+    "data/public/songs.csv": "cb9a9ddc6a40d54f36baced31227581a277f4d7a37a9410074ad0d0a0810e1c5"
+  },
+  "monthly_rows": 818,
+  "new_analytical_columns": 149,
+  "new_columns": 181,
+  "original_columns_preserved": 70,
+  "protocol_sha256": "3d821b0877d4e3e2d6328e68f54b1bd3f6d6687040500bfc63567e5f82458a6a",
+  "reused_v1_columns": 60,
+  "songs": 28041,
+  "version": "music-enrichment-v2.1"
+}
