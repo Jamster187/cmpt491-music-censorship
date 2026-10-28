@@ -1,0 +1,10 @@
+source,variable,reason
+platform,FF_HML_DAILY,Daily observations retained as source; corresponding published monthly factors/explicit monthly aggregate represent this family in the three monthly-keyed populations
+platform,FF_MKT_EXCESS_DAILY,Daily observations retained as source; corresponding published monthly factors/explicit monthly aggregate represent this family in the three monthly-keyed populations
+platform,FF_RF_DAILY,Daily observations retained as source; corresponding published monthly factors/explicit monthly aggregate represent this family in the three monthly-keyed populations
+platform,FF_SMB_DAILY,Daily observations retained as source; corresponding published monthly factors/explicit monthly aggregate represent this family in the three monthly-keyed populations
+platform,US_NBER_LAST_ANNOUNCED_TURNING_POINT,Daily observations retained as source; corresponding published monthly factors/explicit monthly aggregate represent this family in the three monthly-keyed populations
+platform,US_OXCGRT_CONTAINMENT_HEALTH_DAILY,Daily observations retained as source; corresponding published monthly factors/explicit monthly aggregate represent this family in the three monthly-keyed populations
+platform,US_OXCGRT_ECONOMIC_SUPPORT_DAILY,Daily observations retained as source; corresponding published monthly factors/explicit monthly aggregate represent this family in the three monthly-keyed populations
+platform,US_OXCGRT_GOVERNMENT_RESPONSE_DAILY,Daily observations retained as source; corresponding published monthly factors/explicit monthly aggregate represent this family in the three monthly-keyed populations
+platform,US_OXCGRT_STRINGENCY_DAILY,Daily observations retained as source; corresponding published monthly factors/explicit monthly aggregate represent this family in the three monthly-keyed populations

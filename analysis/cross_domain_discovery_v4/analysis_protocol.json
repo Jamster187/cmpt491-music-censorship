@@ -1,0 +1,57 @@
+{
+  "adjusted": "Native-frequency change/growth of external levels; unchanged rates-of-change/events; training-only time/season residualization; genre fixed effects for pooled genre-month; composition controls for monthly music",
+  "analysis_mode": "Retrospective association and chronological transfer; no deployable historical forecast claims from revised/current measurements",
+  "disk_headroom_bytes": 2147483648,
+  "embargo_months": 84,
+  "estimator": "Additive OLS; intercept; numeric training median plus missing indicator; categorical training vocabulary; no interaction or screening",
+  "evaluation_folds": 1,
+  "inference": "Predictive rankings are not formal discoveries. No IID p-values. No significance/CI claims from pilot. Exhaustive inferential family must include every attempted model if later executed.",
+  "lag_direction": "X at t-L predicts Y at t; lagged reference periods do not establish publication-time availability",
+  "lags": [
+    0,
+    1,
+    3,
+    6,
+    12,
+    24
+  ],
+  "minimum_predictor_observed_training_months": 6,
+  "minimum_predictor_observed_training_rows": 20,
+  "minimum_training_months": 24,
+  "minimum_training_rows": 30,
+  "minimum_validation_months": 6,
+  "minimum_validation_rows": 12,
+  "new_acquisition": false,
+  "parent_commit": "51eb89878f072bc713cb43b7d1a5b69be4a4d95c",
+  "populations": [
+    "song",
+    "monthly",
+    "genre_month"
+  ],
+  "predictor_counts": [
+    1,
+    2,
+    3
+  ],
+  "previous_evaluation_inspected": true,
+  "release_sensitivity": "No verified original-edition release dates in source release; do not substitute unverified candidates",
+  "runtime_limit_seconds": 14400,
+  "seed": 4914004,
+  "selection": "Mean validation baseline-relative MSE skill, then worst-period skill, then fewer original variables, then lexicographic IDs; evaluation never used for selection",
+  "target_missingness": "Never imputed; fixed target-specific cohort for all candidates; row eligibility never uses correlation or evaluation performance",
+  "temporary_disk_limit_bytes": 15000000000,
+  "tracks": [
+    "raw",
+    "adjusted"
+  ],
+  "validation_folds": 3,
+  "validation_fraction_boundaries": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    1.0
+  ],
+  "version": "cross-domain-discovery-v4-pilot-1",
+  "weights": "One vote per song; one per monthly row; pooled genre-month one total vote per calendar month"
+}

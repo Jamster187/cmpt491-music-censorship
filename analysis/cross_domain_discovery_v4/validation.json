@@ -1,0 +1,16 @@
+{
+  "discoveries_reported": 0,
+  "evaluation_models_fitted": 0,
+  "full_campaign_started": false,
+  "max_prediction_scaled_error": 6.218011289720826e-11,
+  "native_support_rows": 40388,
+  "original_release_preservation": {
+    "baseline_commit": "51eb89878f072bc713cb43b7d1a5b69be4a4d95c",
+    "bytes": 41051283297,
+    "files": 279382,
+    "status": "PASS"
+  },
+  "phase": "bounded_audit_and_pilot",
+  "reference_checks": 540,
+  "status": "PASS"
+}

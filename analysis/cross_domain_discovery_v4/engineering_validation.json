@@ -1,0 +1,78 @@
+{
+  "enrichment_and_history": {
+    "private": {
+      "all_external_rows": 184845,
+      "all_external_series": 137,
+      "asof_values_replayed": 1468,
+      "joined_months": 818,
+      "quarterly_annual_monthly_inflation": 0,
+      "release_candidate_month_links": 5738,
+      "same_day_and_future_release_leaks": 0,
+      "source_raw_files_checked": 41,
+      "status": "PASS"
+    },
+    "public": {
+      "chart_source_rows_preserved": 355487,
+      "exact_song_identities": 28041,
+      "missingness_fields_checked": 181,
+      "monthly_units": 818,
+      "permitted_external_rows": 56469,
+      "permitted_external_series": 108,
+      "source_columns_preserved": 70,
+      "status": "PASS"
+    }
+  },
+  "existing_figures": {
+    "figures": 952,
+    "status": "PASS",
+    "unchanged_numerical_and_input_files": 32
+  },
+  "financial_private_replay": {
+    "artifacts": 16,
+    "offline_replay_tables": 16,
+    "private": true,
+    "rows": 825,
+    "status": "PASS"
+  },
+  "preservation": {
+    "baseline_commit": "51eb89878f072bc713cb43b7d1a5b69be4a4d95c",
+    "bytes": 41051283297,
+    "files": 279382,
+    "status": "PASS"
+  },
+  "repository_layout": {
+    "frozen_release_hashes": "PASS",
+    "immutable_artifacts_checked": 1070,
+    "local_markdown_links_checked": 908,
+    "private_tracked_files": 0,
+    "stale_active_paths": 0
+  },
+  "unittest": {
+    "new_focused_tests": 17,
+    "skipped": 16,
+    "status": "PASS",
+    "tests": 593
+  },
+  "view_replay": {
+    "files": [
+      "external_adjusted.pkl",
+      "external_period_end.pkl",
+      "external_raw.pkl",
+      "external_registry.json",
+      "genre_month.pkl",
+      "monthly.pkl",
+      "music_registry.json",
+      "song.pkl",
+      "analysis_protocol.json",
+      "daily_market_endpoints.csv",
+      "input_manifest.json",
+      "music_source_exclusions.csv",
+      "series_crosswalk.csv",
+      "source_exclusions.csv",
+      "view_validation.json"
+    ],
+    "raw_inputs_untouched": true,
+    "replayed_artifacts": 15,
+    "status": "PASS"
+  }
+}

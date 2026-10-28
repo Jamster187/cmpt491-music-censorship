@@ -1,0 +1,41 @@
+variable,reason
+song_id,Identity/date/provenance key; not an intrinsic numerical target or predictor
+title,Identity/date/provenance key; not an intrinsic numerical target or predictor
+artist,Identity/date/provenance key; not an intrinsic numerical target or predictor
+first_chart_date,Identity/date/provenance key; not an intrinsic numerical target or predictor
+last_chart_date,Identity/date/provenance key; not an intrinsic numerical target or predictor
+first_snapshot_month,Identity/date/provenance key; not an intrinsic numerical target or predictor
+last_snapshot_month,Identity/date/provenance key; not an intrinsic numerical target or predictor
+musicbrainz_match_status,Retrieval/status/quality text or unsupported empty field; no meaningful numerical/categorical measurement
+mb_earliest_release_date,Identity/date/provenance key; not an intrinsic numerical target or predictor
+mb_release_date_precision,Identity/date/provenance key; not an intrinsic numerical target or predictor
+mb_release_title,Identity/date/provenance key; not an intrinsic numerical target or predictor
+lyrics_status,Retrieval/status/quality text or unsupported empty field; no meaningful numerical/categorical measurement
+genre_confidence,Retrieval/status/quality text or unsupported empty field; no meaningful numerical/categorical measurement
+mb_v2_recording_ids,Identity/date/provenance key; not an intrinsic numerical target or predictor
+mb_v2_artist_ids,Identity/date/provenance key; not an intrinsic numerical target or predictor
+mb_v2_isrc_set,Identity/date/provenance key; not an intrinsic numerical target or predictor
+mb_v2_release_group_primary_types,Retrieval/status/quality text or unsupported empty field; no meaningful numerical/categorical measurement
+mb_v2_release_group_secondary_types,Retrieval/status/quality text or unsupported empty field; no meaningful numerical/categorical measurement
+mb_v2_cached_label_ids,Identity/date/provenance key; not an intrinsic numerical target or predictor
+mb_v2_work_ids,Identity/date/provenance key; not an intrinsic numerical target or predictor
+mb_v2_known_producer_count,Retrieval/status/quality text or unsupported empty field; no meaningful numerical/categorical measurement
+mb_v2_remix_relationships,Retrieval/status/quality text or unsupported empty field; no meaningful numerical/categorical measurement
+mb_v2_recording_mapping_status,Retrieval/status/quality text or unsupported empty field; no meaningful numerical/categorical measurement
+mb_v2_mapping_review_flags,Identity/date/provenance key; not an intrinsic numerical target or predictor
+mb_v2_mapping_processed_at,Identity/date/provenance key; not an intrinsic numerical target or predictor
+mb_v2_external_status,Retrieval/status/quality text or unsupported empty field; no meaningful numerical/categorical measurement
+mb_v2_external_retrieved_at,Identity/date/provenance key; not an intrinsic numerical target or predictor
+mb_v2_external_isrc_set,Identity/date/provenance key; not an intrinsic numerical target or predictor
+mb_v2_external_work_ids,Identity/date/provenance key; not an intrinsic numerical target or predictor
+mb_v2_external_remix_relationships,Retrieval/status/quality text or unsupported empty field; no meaningful numerical/categorical measurement
+mb_v2_recording_first_release_candidate,Identity/date/provenance key; not an intrinsic numerical target or predictor
+lyric_semantic_status,Retrieval/status/quality text or unsupported empty field; no meaningful numerical/categorical measurement
+audio_mapping_status,Retrieval/status/quality text or unsupported empty field; no meaningful numerical/categorical measurement
+audio_recording_id,Identity/date/provenance key; not an intrinsic numerical target or predictor
+audio_source_retrieved_at,Identity/date/provenance key; not an intrinsic numerical target or predictor
+audio_tag_release_ids,Identity/date/provenance key; not an intrinsic numerical target or predictor
+audio_tag_releasegroup_ids,Identity/date/provenance key; not an intrinsic numerical target or predictor
+audio_extractor_version,Identity/date/provenance key; not an intrinsic numerical target or predictor
+window_end_26,Identity/date/provenance key; not an intrinsic numerical target or predictor
+label_available_date,Identity/date/provenance key; not an intrinsic numerical target or predictor

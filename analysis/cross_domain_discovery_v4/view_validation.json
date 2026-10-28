@@ -1,0 +1,32 @@
+{
+  "canonical_external_series": 189,
+  "exact_study_songs": 28041,
+  "genre_month": {
+    "first_month": "1958-08",
+    "last_month": "2026-09",
+    "months": 818,
+    "rows": 7173
+  },
+  "monthly": {
+    "first_month": "1958-08",
+    "last_month": "2026-09",
+    "months": 818,
+    "rows": 818
+  },
+  "original_columns_preserved": 70,
+  "platform_rows": 184845,
+  "platform_series": 137,
+  "private_embeddings": 20981,
+  "release_original_dates_verified": 0,
+  "seconds": 37.3708758354187,
+  "song": {
+    "first_month": "1958-08",
+    "last_month": "2026-09",
+    "months": 818,
+    "rows": 28041
+  },
+  "source_repeated_song_month_rows": 3,
+  "source_song_month_rows": 81797,
+  "status": "PASS",
+  "verified_aliases": 59
+}

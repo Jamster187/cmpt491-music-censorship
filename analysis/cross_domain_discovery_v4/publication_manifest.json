@@ -1,0 +1,129 @@
+{
+  "files": {
+    "analysis/cross_domain_discovery_v4/README.md": {
+      "bytes": 6519,
+      "sha256": "d5e5fb957c2ac6bca644c08b8293b47d1a5cdc509c3f99cc2ea790d13ff8d4e9"
+    },
+    "analysis/cross_domain_discovery_v4/analysis_protocol.json": {
+      "bytes": 2366,
+      "sha256": "3bbfc601dbc7bb178be8faa90d931eed3bb548dfd261f14c55b7b53e66d7aa1d"
+    },
+    "analysis/cross_domain_discovery_v4/audit.json": {
+      "bytes": 6913,
+      "sha256": "c564fc6b336c6f049cf13ea04e0431ff3b807b4b5a70790283282121daabc53e"
+    },
+    "analysis/cross_domain_discovery_v4/benchmark.json": {
+      "bytes": 1414,
+      "sha256": "8c0156dc7036bf3e344b8d2eaebfed7c3f18ace6b3c89857528b7ad6492c2f05"
+    },
+    "analysis/cross_domain_discovery_v4/benchmark_strata.csv": {
+      "bytes": 99526,
+      "sha256": "94ebe025fcd096ff817746c0637154bb442316e7fcdc20fd5ef60c5612a5e676"
+    },
+    "analysis/cross_domain_discovery_v4/daily_market_endpoints.csv": {
+      "bytes": 26513,
+      "sha256": "7d31f4af8eb800fc2d57859eae0031ecd974d0d6b4cd9859aefcad6ef1daeea5"
+    },
+    "analysis/cross_domain_discovery_v4/engineering_validation.json": {
+      "bytes": 2023,
+      "sha256": "c942ac77983ea787dadba39a9384137ddb44d909fff4142114f05d028af4e6ab"
+    },
+    "analysis/cross_domain_discovery_v4/findings.md": {
+      "bytes": 2449,
+      "sha256": "5a734d467bb533afac48686c35eb08fa9b5d7634a643ed7e392330ebe16a504e"
+    },
+    "analysis/cross_domain_discovery_v4/input_manifest.json": {
+      "bytes": 3158,
+      "sha256": "a1343b321df2ba1798868897b39eadee497b29133da87aab8b95e210148f20b6"
+    },
+    "analysis/cross_domain_discovery_v4/methodology.md": {
+      "bytes": 10598,
+      "sha256": "7e19d7f8e9c0df3fe6934ba69b8389c3b8e18730ecc548c026c74ca6cedf9d1a"
+    },
+    "analysis/cross_domain_discovery_v4/music_source_exclusions.csv": {
+      "bytes": 4330,
+      "sha256": "d6542aaab9d64f98fb5e3ef587290c15212bdfc218cd8132793caec7a38f8f96"
+    },
+    "analysis/cross_domain_discovery_v4/native_frequency_support.csv.xz": {
+      "bytes": 170916,
+      "sha256": "8fd680de762951b0fa2ca78fb7a295fb6cb0a6499fc91051c027e8380e245ef1"
+    },
+    "analysis/cross_domain_discovery_v4/ols_reference_checks.csv": {
+      "bytes": 27631,
+      "sha256": "379d8d6c5e8db65a3bbff42f7e757c9276a6a94427c4e96688f95c25f87b66d7"
+    },
+    "analysis/cross_domain_discovery_v4/runtime_environment.json": {
+      "bytes": 831,
+      "sha256": "576ce6ecbf1a1454bb5c106c97182086cc07a5c628b84be5c1d2bc06b4c74241"
+    },
+    "analysis/cross_domain_discovery_v4/search_budget.svg": {
+      "bytes": 65748,
+      "sha256": "d087345ac6c294c6996a09f08ba26582a09012a59ab26d2af217e3f33e12c93c"
+    },
+    "analysis/cross_domain_discovery_v4/search_space.csv": {
+      "bytes": 39601,
+      "sha256": "fa0380b9e4cf1288a68ec8340d2c161abd1827200780f173b14c01e219255ee8"
+    },
+    "analysis/cross_domain_discovery_v4/search_space_by_target.csv.xz": {
+      "bytes": 781044,
+      "sha256": "b9e49295c2a66af6eb051cded3060d2285d2f5f1edb7a4be7a2c24f2205d34e1"
+    },
+    "analysis/cross_domain_discovery_v4/series_crosswalk.csv": {
+      "bytes": 17670,
+      "sha256": "3e1db84d0f6680f4fefed658936f56e49ed115cb6ccb049c1a5ef4764bfe0434"
+    },
+    "analysis/cross_domain_discovery_v4/source_exclusions.csv": {
+      "bytes": 1833,
+      "sha256": "834b273281689da0837665d9982201a209d3591a08f8591a3eb693533ab573e6"
+    },
+    "analysis/cross_domain_discovery_v4/target_coverage.csv": {
+      "bytes": 2805105,
+      "sha256": "babc248ff4b2a81c02bda0eaf795cf0a10796f62a259dbc3ccbba8fead698581"
+    },
+    "analysis/cross_domain_discovery_v4/validation.json": {
+      "bytes": 449,
+      "sha256": "c166ad423c085d8b78c0f094d0f03e219396471b527bbd89f299f3621ba89354"
+    },
+    "analysis/cross_domain_discovery_v4/variable_inventory.csv": {
+      "bytes": 3748943,
+      "sha256": "72802630a62c5a3f08f0ea96abf51ad243f7da3de51aa01a198e2f012b05733d"
+    },
+    "analysis/cross_domain_discovery_v4/view_replay_validation.json": {
+      "bytes": 510,
+      "sha256": "4ee53663461f8012af9d13ae58bcc643161988f27adecff66bfb42888024c911"
+    },
+    "analysis/cross_domain_discovery_v4/view_validation.json": {
+      "bytes": 727,
+      "sha256": "493298a4e994cd4a3324ba74c2214e1e952f6128a7dc8fb86bf905bee238b187"
+    },
+    "src/cross_domain_v4_audit.py": {
+      "bytes": 12957,
+      "sha256": "d37ea30c69846a333606b5688ca38e77b26906ced30bededf86966660064dfb7"
+    },
+    "src/cross_domain_v4_common.py": {
+      "bytes": 5364,
+      "sha256": "b1ad2aa101914863857db518462551da4cea868f4b1d38fa528231754fe7d780"
+    },
+    "src/cross_domain_v4_data.py": {
+      "bytes": 26370,
+      "sha256": "3c1de3ad8d4f6be888c92d7cfbb6e11432241d74b5c903e662a43aaa55739f41"
+    },
+    "src/cross_domain_v4_pilot.py": {
+      "bytes": 16961,
+      "sha256": "eb7362300f30dbb4a0db05819f2bb71a5b2e98199e4021301d94b9bd116ec569"
+    },
+    "src/cross_domain_v4_report.py": {
+      "bytes": 31575,
+      "sha256": "260ea89e3e332364013508b16b9c8d18c636c8a2794fb562f80608c075075fee"
+    },
+    "src/regression_core.py": {
+      "bytes": 11536,
+      "sha256": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69"
+    },
+    "tests/test_cross_domain_v4.py": {
+      "bytes": 7814,
+      "sha256": "fce78db109169f56a84217e1ded8b7d0ba09bcb6a305f4c0ad2817f54ea1d0bf"
+    }
+  },
+  "version": "cross-domain-discovery-v4-pilot-1"
+}

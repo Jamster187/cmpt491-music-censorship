@@ -1,0 +1,248 @@
+{
+  "core_metric_payload_bytes": 142724266616016,
+  "dependency_policy": "Explicit algebraic identities only; conceptual overlap retained and labelled. Unsupported or rank-deficient numerical fits remain attempted statuses, never successful discoveries.",
+  "folds": 4,
+  "planned_fits": 7929125923112,
+  "seconds": 167.57776403427124,
+  "status": "AUDITED",
+  "storage_definition": "Per model/fold float64 MSE + float64 MAE + uint16 rank/status = 18 bytes; other metrics losslessly derived from fixed fold constants. Catalog/rankings/checkpoints extra.",
+  "structurally_eligible_combinations": 1982281480778,
+  "summary": {
+    "genre_month": {
+      "adjusted::Afrobeats / African Pop": {
+        "combinations": 0,
+        "planned_fits": 0,
+        "predictors": 0,
+        "targets": 0
+      },
+      "adjusted::Alternative / Indie": {
+        "combinations": 59332335041,
+        "planned_fits": 237329340164,
+        "predictors": 1238,
+        "targets": 339
+      },
+      "adjusted::Country": {
+        "combinations": 81147006602,
+        "planned_fits": 324588026408,
+        "predictors": 1260,
+        "targets": 419
+      },
+      "adjusted::Electronic / Dance": {
+        "combinations": 59312643093,
+        "planned_fits": 237250572372,
+        "predictors": 1161,
+        "targets": 332
+      },
+      "adjusted::Folk / Singer-Songwriter": {
+        "combinations": 59079788561,
+        "planned_fits": 236319154244,
+        "predictors": 1145,
+        "targets": 317
+      },
+      "adjusted::Gospel / Christian": {
+        "combinations": 24009708439,
+        "planned_fits": 96038833756,
+        "predictors": 828,
+        "targets": 259
+      },
+      "adjusted::Hip-Hop / Rap": {
+        "combinations": 97466444187,
+        "planned_fits": 389865776748,
+        "predictors": 1245,
+        "targets": 420
+      },
+      "adjusted::Jazz / Blues": {
+        "combinations": 0,
+        "planned_fits": 0,
+        "predictors": 0,
+        "targets": 0
+      },
+      "adjusted::K-Pop": {
+        "combinations": 0,
+        "planned_fits": 0,
+        "predictors": 0,
+        "targets": 0
+      },
+      "adjusted::Latin": {
+        "combinations": 22996149422,
+        "planned_fits": 91984597688,
+        "predictors": 1123,
+        "targets": 204
+      },
+      "adjusted::Metal": {
+        "combinations": 823242260,
+        "planned_fits": 3292969040,
+        "predictors": 954,
+        "targets": 6
+      },
+      "adjusted::Other": {
+        "combinations": 708708884,
+        "planned_fits": 2834835536,
+        "predictors": 942,
+        "targets": 6
+      },
+      "adjusted::Pop": {
+        "combinations": 75843116107,
+        "planned_fits": 303372464428,
+        "predictors": 1262,
+        "targets": 352
+      },
+      "adjusted::R&B / Soul": {
+        "combinations": 87120284970,
+        "planned_fits": 348481139880,
+        "predictors": 1262,
+        "targets": 422
+      },
+      "adjusted::Reggae / Dancehall": {
+        "combinations": 39653941364,
+        "planned_fits": 158615765456,
+        "predictors": 985,
+        "targets": 266
+      },
+      "adjusted::Rock": {
+        "combinations": 86860539353,
+        "planned_fits": 347442157412,
+        "predictors": 1221,
+        "targets": 413
+      },
+      "adjusted::pooled": {
+        "combinations": 98032070487,
+        "planned_fits": 392128281948,
+        "predictors": 1309,
+        "targets": 430
+      },
+      "raw::Afrobeats / African Pop": {
+        "combinations": 0,
+        "planned_fits": 0,
+        "predictors": 0,
+        "targets": 0
+      },
+      "raw::Alternative / Indie": {
+        "combinations": 60155142852,
+        "planned_fits": 240620571408,
+        "predictors": 1239,
+        "targets": 339
+      },
+      "raw::Country": {
+        "combinations": 81518887645,
+        "planned_fits": 326075550580,
+        "predictors": 1261,
+        "targets": 419
+      },
+      "raw::Electronic / Dance": {
+        "combinations": 60207415460,
+        "planned_fits": 240829661840,
+        "predictors": 1161,
+        "targets": 332
+      },
+      "raw::Folk / Singer-Songwriter": {
+        "combinations": 60227627076,
+        "planned_fits": 240910508304,
+        "predictors": 1146,
+        "targets": 321
+      },
+      "raw::Gospel / Christian": {
+        "combinations": 24120146604,
+        "planned_fits": 96480586416,
+        "predictors": 830,
+        "targets": 259
+      },
+      "raw::Hip-Hop / Rap": {
+        "combinations": 98604584420,
+        "planned_fits": 394418337680,
+        "predictors": 1246,
+        "targets": 420
+      },
+      "raw::Jazz / Blues": {
+        "combinations": 0,
+        "planned_fits": 0,
+        "predictors": 0,
+        "targets": 0
+      },
+      "raw::K-Pop": {
+        "combinations": 0,
+        "planned_fits": 0,
+        "predictors": 0,
+        "targets": 0
+      },
+      "raw::Latin": {
+        "combinations": 22774134851,
+        "planned_fits": 91096539404,
+        "predictors": 1126,
+        "targets": 202
+      },
+      "raw::Metal": {
+        "combinations": 828062827,
+        "planned_fits": 3312251308,
+        "predictors": 955,
+        "targets": 6
+      },
+      "raw::Other": {
+        "combinations": 710646667,
+        "planned_fits": 2842586668,
+        "predictors": 942,
+        "targets": 6
+      },
+      "raw::Pop": {
+        "combinations": 76552316990,
+        "planned_fits": 306209267960,
+        "predictors": 1263,
+        "targets": 352
+      },
+      "raw::R&B / Soul": {
+        "combinations": 87783329705,
+        "planned_fits": 351133318820,
+        "predictors": 1263,
+        "targets": 422
+      },
+      "raw::Reggae / Dancehall": {
+        "combinations": 40145006452,
+        "planned_fits": 160580025808,
+        "predictors": 986,
+        "targets": 267
+      },
+      "raw::Rock": {
+        "combinations": 87414528614,
+        "planned_fits": 349658114456,
+        "predictors": 1224,
+        "targets": 413
+      },
+      "raw::pooled": {
+        "combinations": 99187593747,
+        "planned_fits": 396750374988,
+        "predictors": 1311,
+        "targets": 430
+      }
+    },
+    "monthly": {
+      "adjusted::pooled": {
+        "combinations": 95474050699,
+        "planned_fits": 381896202796,
+        "predictors": 1279,
+        "targets": 442
+      },
+      "raw::pooled": {
+        "combinations": 100435836143,
+        "planned_fits": 401743344572,
+        "predictors": 1281,
+        "targets": 442
+      }
+    },
+    "song": {
+      "adjusted::pooled": {
+        "combinations": 96388868238,
+        "planned_fits": 385555472952,
+        "predictors": 1309,
+        "targets": 420
+      },
+      "raw::pooled": {
+        "combinations": 97367323018,
+        "planned_fits": 389469292072,
+        "predictors": 1311,
+        "targets": 420
+      }
+    }
+  },
+  "target_tasks": 10097,
+  "task_catalog_sha256": "cf93180074ba019607a242dc5514037d1767f32bbd64b460bc9e7f3facd50086"
+}

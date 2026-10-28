@@ -1,0 +1,22 @@
+{
+  "files": [
+    "external_adjusted.pkl",
+    "external_period_end.pkl",
+    "external_raw.pkl",
+    "external_registry.json",
+    "genre_month.pkl",
+    "monthly.pkl",
+    "music_registry.json",
+    "song.pkl",
+    "analysis_protocol.json",
+    "daily_market_endpoints.csv",
+    "input_manifest.json",
+    "music_source_exclusions.csv",
+    "series_crosswalk.csv",
+    "source_exclusions.csv",
+    "view_validation.json"
+  ],
+  "raw_inputs_untouched": true,
+  "replayed_artifacts": 15,
+  "status": "PASS"
+}

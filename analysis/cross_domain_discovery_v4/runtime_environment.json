@@ -1,0 +1,34 @@
+{
+  "machine": "arm64",
+  "numerical_libraries": [
+    {
+      "architecture": "armv8",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libopenblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.23.dev"
+    },
+    {
+      "architecture": "neoversen1",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libopenblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.27"
+    }
+  ],
+  "os_release": "22.6.0",
+  "packages": {
+    "matplotlib": "3.9.0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "threadpoolctl": "3.5.0"
+  },
+  "pilot_blas_threads": 1,
+  "python": "3.9.6 (v3.9.6:db3ff76da1, Jun 28 2021, 11:14:58) \n[Clang 12.0.5 (clang-1205.0.22.9)]",
+  "system": "Darwin"
+}

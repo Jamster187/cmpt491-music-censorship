@@ -1,0 +1,577 @@
+population,track,scope,category,k,target_tasks,combinations,planned_fits
+genre_month,adjusted,Alternative / Indie,cross_domain,1,339,287522,1150088
+genre_month,adjusted,Alternative / Indie,cross_domain,2,339,125727215,502908860
+genre_month,adjusted,Alternative / Indie,cross_domain,3,339,37599905681,150399622724
+genre_month,adjusted,Alternative / Indie,music_external,1,339,173435,693740
+genre_month,adjusted,Alternative / Indie,music_external,2,339,112567432,450269728
+genre_month,adjusted,Alternative / Indie,music_external,3,339,42200603601,168802414404
+genre_month,adjusted,Alternative / Indie,provenance_separated,1,339,273877,1095508
+genre_month,adjusted,Alternative / Indie,provenance_separated,2,339,114136312,456545248
+genre_month,adjusted,Alternative / Indie,provenance_separated,3,339,32545978903,130183915612
+genre_month,adjusted,Alternative / Indie,unrestricted,1,339,344047,1376188
+genre_month,adjusted,Alternative / Indie,unrestricted,2,339,174670844,698683376
+genre_month,adjusted,Alternative / Indie,unrestricted,3,339,59157320150,236629280600
+genre_month,adjusted,Alternative / Indie,within_external,1,339,140509,562036
+genre_month,adjusted,Alternative / Indie,within_external,2,339,59499418,237997672
+genre_month,adjusted,Alternative / Indie,within_external,3,339,16807416332,67229665328
+genre_month,adjusted,Alternative / Indie,within_music,1,339,30103,120412
+genre_month,adjusted,Alternative / Indie,within_music,2,339,2603994,10415976
+genre_month,adjusted,Alternative / Indie,within_music,3,339,149300217,597200868
+genre_month,adjusted,Country,cross_domain,1,419,377187,1508748
+genre_month,adjusted,Country,cross_domain,2,419,173752898,695011592
+genre_month,adjusted,Country,cross_domain,3,419,54477547520,217910190080
+genre_month,adjusted,Country,music_external,1,419,235837,943348
+genre_month,adjusted,Country,music_external,2,419,164315243,657260972
+genre_month,adjusted,Country,music_external,3,419,64101384368,256405537472
+genre_month,adjusted,Country,provenance_separated,1,419,362849,1451396
+genre_month,adjusted,Country,provenance_separated,2,419,160608017,642432068
+genre_month,adjusted,Country,provenance_separated,3,419,48309073577,193236294308
+genre_month,adjusted,Country,unrestricted,1,419,438400,1753600
+genre_month,adjusted,Country,unrestricted,2,419,230264625,921058500
+genre_month,adjusted,Country,unrestricted,3,419,80916303577,323665214308
+genre_month,adjusted,Country,within_external,1,419,138542,554168
+genre_month,adjusted,Country,within_external,2,419,57877849,231511396
+genre_month,adjusted,Country,within_external,3,419,16138964246,64555856984
+genre_month,adjusted,Country,within_music,1,419,64021,256084
+genre_month,adjusted,Country,within_music,2,419,8071533,32286132
+genre_month,adjusted,Country,within_music,3,419,675954963,2703819852
+genre_month,adjusted,Electronic / Dance,cross_domain,1,332,285867,1143468
+genre_month,adjusted,Electronic / Dance,cross_domain,2,332,126850014,507400056
+genre_month,adjusted,Electronic / Dance,cross_domain,3,332,38459361579,153837446316
+genre_month,adjusted,Electronic / Dance,music_external,1,332,177915,711660
+genre_month,adjusted,Electronic / Dance,music_external,2,332,116763115,467052460
+genre_month,adjusted,Electronic / Dance,music_external,3,332,43970084814,175880339256
+genre_month,adjusted,Electronic / Dance,provenance_separated,1,332,272864,1091456
+genre_month,adjusted,Electronic / Dance,provenance_separated,2,332,115477459,461909836
+genre_month,adjusted,Electronic / Dance,provenance_separated,3,332,33364864542,133459458168
+genre_month,adjusted,Electronic / Dance,unrestricted,1,332,339509,1358036
+genre_month,adjusted,Electronic / Dance,unrestricted,2,332,173557807,694231228
+genre_month,adjusted,Electronic / Dance,unrestricted,3,332,59138745777,236554983108
+genre_month,adjusted,Electronic / Dance,within_external,1,332,128664,514656
+genre_month,adjusted,Electronic / Dance,within_external,2,332,53765135,215060540
+genre_month,adjusted,Electronic / Dance,within_external,3,332,14983858527,59935434108
+genre_month,adjusted,Electronic / Dance,within_music,1,332,32930,131720
+genre_month,adjusted,Electronic / Dance,within_music,2,332,3029557,12118228
+genre_month,adjusted,Electronic / Dance,within_music,3,332,184802436,739209744
+genre_month,adjusted,Folk / Singer-Songwriter,cross_domain,1,317,280726,1122904
+genre_month,adjusted,Folk / Singer-Songwriter,cross_domain,2,317,127835853,511343412
+genre_month,adjusted,Folk / Singer-Songwriter,cross_domain,3,317,39708296740,158833186960
+genre_month,adjusted,Folk / Singer-Songwriter,music_external,1,317,174083,696332
+genre_month,adjusted,Folk / Singer-Songwriter,music_external,2,317,121337777,485351108
+genre_month,adjusted,Folk / Singer-Songwriter,music_external,3,317,46944607069,187778428276
+genre_month,adjusted,Folk / Singer-Songwriter,provenance_separated,1,317,269023,1076092
+genre_month,adjusted,Folk / Singer-Songwriter,provenance_separated,2,317,117198460,468793840
+genre_month,adjusted,Folk / Singer-Songwriter,provenance_separated,3,317,34776687801,139106751204
+genre_month,adjusted,Folk / Singer-Songwriter,unrestricted,1,317,328915,1315660
+genre_month,adjusted,Folk / Singer-Songwriter,unrestricted,2,317,170535329,682141316
+genre_month,adjusted,Folk / Singer-Songwriter,unrestricted,3,317,58908924317,235635697268
+genre_month,adjusted,Folk / Singer-Songwriter,within_external,1,317,110166,440664
+genre_month,adjusted,Folk / Singer-Songwriter,within_external,2,317,43615805,174463220
+genre_month,adjusted,Folk / Singer-Songwriter,within_external,3,317,11501157420,46004629680
+genre_month,adjusted,Folk / Singer-Songwriter,within_music,1,317,44666,178664
+genre_month,adjusted,Folk / Singer-Songwriter,within_music,2,317,5581747,22326988
+genre_month,adjusted,Folk / Singer-Songwriter,within_music,3,317,463159828,1852639312
+genre_month,adjusted,Gospel / Christian,cross_domain,1,259,180256,721024
+genre_month,adjusted,Gospel / Christian,cross_domain,2,259,64388437,257553748
+genre_month,adjusted,Gospel / Christian,cross_domain,3,259,15664310616,62657242464
+genre_month,adjusted,Gospel / Christian,music_external,1,259,118220,472880
+genre_month,adjusted,Gospel / Christian,music_external,2,259,62689669,250758676
+genre_month,adjusted,Gospel / Christian,music_external,3,259,18858418195,75433672780
+genre_month,adjusted,Gospel / Christian,provenance_separated,1,259,170746,682984
+genre_month,adjusted,Gospel / Christian,provenance_separated,2,259,57613915,230455660
+genre_month,adjusted,Gospel / Christian,provenance_separated,3,259,13216833429,52867333716
+genre_month,adjusted,Gospel / Christian,unrestricted,1,259,212992,851968
+genre_month,adjusted,Gospel / Christian,unrestricted,2,259,87474867,349899468
+genre_month,adjusted,Gospel / Christian,unrestricted,3,259,23922020580,95688082320
+genre_month,adjusted,Gospel / Christian,within_external,1,259,69009,276036
+genre_month,adjusted,Gospel / Christian,within_external,2,259,22643092,90572368
+genre_month,adjusted,Gospel / Christian,within_external,3,259,4945576616,19782306464
+genre_month,adjusted,Gospel / Christian,within_music,1,259,25763,103052
+genre_month,adjusted,Gospel / Christian,within_music,2,259,2142106,8568424
+genre_month,adjusted,Gospel / Christian,within_music,3,259,118025769,472103076
+genre_month,adjusted,Hip-Hop / Rap,cross_domain,1,420,405808,1623232
+genre_month,adjusted,Hip-Hop / Rap,cross_domain,2,420,200351379,801405516
+genre_month,adjusted,Hip-Hop / Rap,cross_domain,3,420,67142248243,268568992972
+genre_month,adjusted,Hip-Hop / Rap,music_external,1,420,258990,1035960
+genre_month,adjusted,Hip-Hop / Rap,music_external,2,420,189597753,758391012
+genre_month,adjusted,Hip-Hop / Rap,music_external,3,420,77913813977,311655255908
+genre_month,adjusted,Hip-Hop / Rap,provenance_separated,1,420,391216,1564864
+genre_month,adjusted,Hip-Hop / Rap,provenance_separated,2,420,186385938,745543752
+genre_month,adjusted,Hip-Hop / Rap,provenance_separated,3,420,60284769760,241139079040
+genre_month,adjusted,Hip-Hop / Rap,unrestricted,1,420,468664,1874656
+genre_month,adjusted,Hip-Hop / Rap,unrestricted,2,420,261435915,1045743660
+genre_month,adjusted,Hip-Hop / Rap,unrestricted,3,420,97204539608,388818158432
+genre_month,adjusted,Hip-Hop / Rap,within_external,1,420,145562,582248
+genre_month,adjusted,Hip-Hop / Rap,within_external,2,420,63778887,255115548
+genre_month,adjusted,Hip-Hop / Rap,within_external,3,420,18618003831,74472015324
+genre_month,adjusted,Hip-Hop / Rap,within_music,1,420,64112,256448
+genre_month,adjusted,Hip-Hop / Rap,within_music,2,420,8059275,32237100
+genre_month,adjusted,Hip-Hop / Rap,within_music,3,420,672721800,2690887200
+genre_month,adjusted,Latin,cross_domain,1,204,134206,536824
+genre_month,adjusted,Latin,cross_domain,2,204,46016471,184065884
+genre_month,adjusted,Latin,cross_domain,3,204,10968344783,43873379132
+genre_month,adjusted,Latin,music_external,1,204,55586,222344
+genre_month,adjusted,Latin,music_external,2,204,35642938,142571752
+genre_month,adjusted,Latin,music_external,3,204,12728172968,50912691872
+genre_month,adjusted,Latin,provenance_separated,1,204,128836,515344
+genre_month,adjusted,Latin,provenance_separated,2,204,42555370,170221480
+genre_month,adjusted,Latin,provenance_separated,3,204,9809275542,39237102168
+genre_month,adjusted,Latin,unrestricted,1,204,176903,707612
+genre_month,adjusted,Latin,unrestricted,2,204,77525131,310100524
+genre_month,adjusted,Latin,unrestricted,3,204,22918447388,91673789552
+genre_month,adjusted,Latin,within_external,1,204,113881,455524
+genre_month,adjusted,Latin,within_external,2,204,41257569,165030276
+genre_month,adjusted,Latin,within_external,3,204,10155503728,40622014912
+genre_month,adjusted,Latin,within_music,1,204,7436,29744
+genre_month,adjusted,Latin,within_music,2,204,624624,2498496
+genre_month,adjusted,Latin,within_music,3,204,34770692,139082768
+genre_month,adjusted,Metal,cross_domain,1,6,3681,14724
+genre_month,adjusted,Metal,cross_domain,2,6,1127940,4511760
+genre_month,adjusted,Metal,cross_domain,3,6,230165258,920661032
+genre_month,adjusted,Metal,music_external,1,6,1014,4056
+genre_month,adjusted,Metal,music_external,2,6,864097,3456388
+genre_month,adjusted,Metal,music_external,3,6,368977356,1475909424
+genre_month,adjusted,Metal,provenance_separated,1,6,3501,14004
+genre_month,adjusted,Metal,provenance_separated,2,6,1019670,4078680
+genre_month,adjusted,Metal,provenance_separated,3,6,197647478,790589912
+genre_month,adjusted,Metal,unrestricted,1,6,5623,22492
+genre_month,adjusted,Metal,unrestricted,2,6,2632183,10528732
+genre_month,adjusted,Metal,unrestricted,3,6,820604454,3282417816
+genre_month,adjusted,Metal,within_external,1,6,4609,18436
+genre_month,adjusted,Metal,within_external,2,6,1768086,7072344
+genre_month,adjusted,Metal,within_external,3,6,451627098,1806508392
+genre_month,adjusted,Metal,within_music,1,6,0,0
+genre_month,adjusted,Metal,within_music,2,6,0,0
+genre_month,adjusted,Metal,within_music,3,6,0,0
+genre_month,adjusted,Other,cross_domain,1,6,3567,14268
+genre_month,adjusted,Other,cross_domain,2,6,1058511,4234044
+genre_month,adjusted,Other,cross_domain,3,6,209057393,836229572
+genre_month,adjusted,Other,music_external,1,6,1098,4392
+genre_month,adjusted,Other,music_external,2,6,877302,3509208
+genre_month,adjusted,Other,music_external,3,6,351850068,1407400272
+genre_month,adjusted,Other,provenance_separated,1,6,3387,13548
+genre_month,adjusted,Other,provenance_separated,2,6,954741,3818964
+genre_month,adjusted,Other,provenance_separated,3,6,179187863,716751452
+genre_month,adjusted,Other,unrestricted,1,6,5346,21384
+genre_month,adjusted,Other,unrestricted,2,6,2380470,9521880
+genre_month,adjusted,Other,unrestricted,3,6,706323068,2825292272
+genre_month,adjusted,Other,within_external,1,6,4248,16992
+genre_month,adjusted,Other,within_external,2,6,1503168,6012672
+genre_month,adjusted,Other,within_external,3,6,354473000,1417892000
+genre_month,adjusted,Other,within_music,1,6,0,0
+genre_month,adjusted,Other,within_music,2,6,0,0
+genre_month,adjusted,Other,within_music,3,6,0,0
+genre_month,adjusted,Pop,cross_domain,1,352,326335,1305340
+genre_month,adjusted,Pop,cross_domain,2,352,154932837,619731348
+genre_month,adjusted,Pop,cross_domain,3,352,50042467273,200169869092
+genre_month,adjusted,Pop,music_external,1,352,195251,781004
+genre_month,adjusted,Pop,music_external,2,352,143616723,574466892
+genre_month,adjusted,Pop,music_external,3,352,58649131277,234596525108
+genre_month,adjusted,Pop,provenance_separated,1,352,311660,1246640
+genre_month,adjusted,Pop,provenance_separated,2,352,141294977,565179908
+genre_month,adjusted,Pop,provenance_separated,3,352,43566881676,174267526704
+genre_month,adjusted,Pop,unrestricted,1,352,383187,1532748
+genre_month,adjusted,Pop,unrestricted,2,352,208522195,834088780
+genre_month,adjusted,Pop,unrestricted,3,352,75634210725,302536842900
+genre_month,adjusted,Pop,within_external,1,352,139399,557596
+genre_month,adjusted,Pop,within_external,2,352,58596826,234387304
+genre_month,adjusted,Pop,within_external,3,352,16440533170,65762132680
+genre_month,adjusted,Pop,within_music,1,352,48537,194148
+genre_month,adjusted,Pop,within_music,2,352,6308646,25234584
+genre_month,adjusted,Pop,within_music,3,352,544546278,2178185112
+genre_month,adjusted,R&B / Soul,cross_domain,1,422,390952,1563808
+genre_month,adjusted,R&B / Soul,cross_domain,2,422,184779519,739118076
+genre_month,adjusted,R&B / Soul,cross_domain,3,422,59225411698,236901646792
+genre_month,adjusted,R&B / Soul,music_external,1,422,246505,986020
+genre_month,adjusted,R&B / Soul,music_external,2,422,175569882,702279528
+genre_month,adjusted,R&B / Soul,music_external,3,422,69689226520,278756906080
+genre_month,adjusted,R&B / Soul,provenance_separated,1,422,376268,1505072
+genre_month,adjusted,R&B / Soul,provenance_separated,2,422,171221950,684887800
+genre_month,adjusted,R&B / Soul,provenance_separated,3,422,52817999408,211271997632
+genre_month,adjusted,R&B / Soul,unrestricted,1,422,452641,1810564
+genre_month,adjusted,R&B / Soul,unrestricted,2,422,242832257,971329028
+genre_month,adjusted,R&B / Soul,unrestricted,3,422,86877000072,347508000288
+genre_month,adjusted,R&B / Soul,within_external,1,422,139399,557596
+genre_month,adjusted,R&B / Soul,within_external,2,422,58596826,234387304
+genre_month,adjusted,R&B / Soul,within_external,3,422,16440533170,65762132680
+genre_month,adjusted,R&B / Soul,within_music,1,422,66737,266948
+genre_month,adjusted,R&B / Soul,within_music,2,422,8665549,34662196
+genre_month,adjusted,R&B / Soul,within_music,3,422,747240382,2988961528
+genre_month,adjusted,Reggae / Dancehall,cross_domain,1,266,215397,861588
+genre_month,adjusted,Reggae / Dancehall,cross_domain,2,266,89895081,359580324
+genre_month,adjusted,Reggae / Dancehall,cross_domain,3,266,25637053098,102548212392
+genre_month,adjusted,Reggae / Dancehall,music_external,1,266,140172,560688
+genre_month,adjusted,Reggae / Dancehall,music_external,2,266,85353913,341415652
+genre_month,adjusted,Reggae / Dancehall,music_external,3,266,29941412637,119765650548
+genre_month,adjusted,Reggae / Dancehall,provenance_separated,1,266,205373,821492
+genre_month,adjusted,Reggae / Dancehall,provenance_separated,2,266,81537318,326149272
+genre_month,adjusted,Reggae / Dancehall,provenance_separated,3,266,22083262984,88333051936
+genre_month,adjusted,Reggae / Dancehall,unrestricted,1,266,256253,1025012
+genre_month,adjusted,Reggae / Dancehall,unrestricted,2,266,123321820,493287280
+genre_month,adjusted,Reggae / Dancehall,unrestricted,3,266,39530363291,158121453164
+genre_month,adjusted,Reggae / Dancehall,within_external,1,266,89920,359680
+genre_month,adjusted,Reggae / Dancehall,within_external,2,266,35744394,142977576
+genre_month,adjusted,Reggae / Dancehall,within_external,3,266,9463702707,37854810828
+genre_month,adjusted,Reggae / Dancehall,within_music,1,266,26161,104644
+genre_month,adjusted,Reggae / Dancehall,within_music,2,266,2223513,8894052
+genre_month,adjusted,Reggae / Dancehall,within_music,3,266,125247947,500991788
+genre_month,adjusted,Rock,cross_domain,1,413,386445,1545780
+genre_month,adjusted,Rock,cross_domain,2,413,184402179,737608716
+genre_month,adjusted,Rock,cross_domain,3,413,59626622271,238506489084
+genre_month,adjusted,Rock,music_external,1,413,248033,992132
+genre_month,adjusted,Rock,music_external,2,413,177322939,709291756
+genre_month,adjusted,Rock,music_external,3,413,70607255700,282429022800
+genre_month,adjusted,Rock,provenance_separated,1,413,372874,1491496
+genre_month,adjusted,Rock,provenance_separated,2,413,171736919,686947676
+genre_month,adjusted,Rock,provenance_separated,3,413,53600243712,214400974848
+genre_month,adjusted,Rock,unrestricted,1,413,446072,1784288
+genre_month,adjusted,Rock,unrestricted,2,413,240793540,963174160
+genre_month,adjusted,Rock,unrestricted,3,413,86619299741,346477198964
+genre_month,adjusted,Rock,within_external,1,413,131050,524200
+genre_month,adjusted,Rock,within_external,2,413,54739341,218957364
+genre_month,adjusted,Rock,within_external,3,413,15256269184,61025076736
+genre_month,adjusted,Rock,within_music,1,413,66989,267956
+genre_month,adjusted,Rock,within_music,2,413,8731260,34925040
+genre_month,adjusted,Rock,within_music,3,413,755774857,3023099428
+genre_month,adjusted,pooled,cross_domain,1,430,414064,1656256
+genre_month,adjusted,pooled,cross_domain,2,430,203147694,812590776
+genre_month,adjusted,pooled,cross_domain,3,430,67502384391,270009537564
+genre_month,adjusted,pooled,music_external,1,430,262268,1049072
+genre_month,adjusted,pooled,music_external,2,430,192148496,768593984
+genre_month,adjusted,pooled,music_external,3,430,78652788461,314611153844
+genre_month,adjusted,pooled,provenance_separated,1,430,398869,1595476
+genre_month,adjusted,pooled,provenance_separated,2,430,188590338,754361352
+genre_month,adjusted,pooled,provenance_separated,3,430,60387623811,241550495244
+genre_month,adjusted,pooled,unrestricted,1,430,476743,1906972
+genre_month,adjusted,pooled,unrestricted,2,430,264367099,1057468396
+genre_month,adjusted,pooled,unrestricted,3,430,97767226645,391068906580
+genre_month,adjusted,pooled,within_external,1,430,145547,582188
+genre_month,adjusted,pooled,within_external,2,430,63182815,252731260
+genre_month,adjusted,pooled,within_external,3,430,18327575323,73310301292
+genre_month,adjusted,pooled,within_music,1,430,68928,275712
+genre_month,adjusted,pooled,within_music,2,430,9035788,36143152
+genre_month,adjusted,pooled,within_music,3,430,786862861,3147451444
+genre_month,raw,Alternative / Indie,cross_domain,1,339,289113,1156452
+genre_month,raw,Alternative / Indie,cross_domain,2,339,127081526,508326104
+genre_month,raw,Alternative / Indie,cross_domain,3,339,38193450241,152773800964
+genre_month,raw,Alternative / Indie,music_external,1,339,174451,697804
+genre_month,raw,Alternative / Indie,music_external,2,339,113694226,454776904
+genre_month,raw,Alternative / Indie,music_external,3,339,42810209336,171240837344
+genre_month,raw,Alternative / Indie,provenance_separated,1,339,275445,1101780
+genre_month,raw,Alternative / Indie,provenance_separated,2,339,115412659,461650636
+genre_month,raw,Alternative / Indie,provenance_separated,3,339,33079641875,132318567500
+genre_month,raw,Alternative / Indie,unrestricted,1,339,345675,1382700
+genre_month,raw,Alternative / Indie,unrestricted,2,339,176306696,705226784
+genre_month,raw,Alternative / Indie,unrestricted,3,339,59978490481,239913961924
+genre_month,raw,Alternative / Indie,within_external,1,339,141121,564484
+genre_month,raw,Alternative / Indie,within_external,2,339,60008476,240033904
+genre_month,raw,Alternative / Indie,within_external,3,339,17018980928,68075923712
+genre_month,raw,Alternative / Indie,within_music,1,339,30103,120412
+genre_month,raw,Alternative / Indie,within_music,2,339,2603994,10415976
+genre_month,raw,Alternative / Indie,within_music,3,339,149300217,597200868
+genre_month,raw,Country,cross_domain,1,419,377806,1511224
+genre_month,raw,Country,cross_domain,2,419,174294250,697177000
+genre_month,raw,Country,cross_domain,3,419,54722681013,218890724052
+genre_month,raw,Country,music_external,1,419,236160,944640
+genre_month,raw,Country,music_external,2,419,164742006,658968024
+genre_month,raw,Country,music_external,3,419,64362834867,257451339468
+genre_month,raw,Country,provenance_separated,1,419,363463,1453852
+genre_month,raw,Country,provenance_separated,2,419,161127875,644511500
+genre_month,raw,Country,provenance_separated,3,419,48536791438,194147165752
+genre_month,raw,Country,unrestricted,1,419,439050,1756200
+genre_month,raw,Country,unrestricted,2,419,230959143,923836572
+genre_month,raw,Country,unrestricted,3,419,81287489452,325149957808
+genre_month,raw,Country,within_external,1,419,138869,555476
+genre_month,raw,Country,within_external,2,419,58145604,232582416
+genre_month,raw,Country,within_external,3,419,16248699622,64994798488
+genre_month,raw,Country,within_music,1,419,64021,256084
+genre_month,raw,Country,within_music,2,419,8071533,32286132
+genre_month,raw,Country,within_music,3,419,675954963,2703819852
+genre_month,raw,Electronic / Dance,cross_domain,1,332,287542,1150168
+genre_month,raw,Electronic / Dance,cross_domain,2,332,128357338,513429352
+genre_month,raw,Electronic / Dance,cross_domain,3,332,39153582971,156614331884
+genre_month,raw,Electronic / Dance,music_external,1,332,179127,716508
+genre_month,raw,Electronic / Dance,music_external,2,332,118099812,472399248
+genre_month,raw,Electronic / Dance,music_external,3,332,44693000853,178772003412
+genre_month,raw,Electronic / Dance,provenance_separated,1,332,274535,1098140
+genre_month,raw,Electronic / Dance,provenance_separated,2,332,116905940,467623760
+genre_month,raw,Electronic / Dance,provenance_separated,3,332,33988390185,135953560740
+genre_month,raw,Electronic / Dance,unrestricted,1,332,341221,1364884
+genre_month,raw,Electronic / Dance,unrestricted,2,332,175307113,701228452
+genre_month,raw,Electronic / Dance,unrestricted,3,332,60031767126,240127068504
+genre_month,raw,Electronic / Dance,within_external,1,332,129164,516656
+genre_month,raw,Electronic / Dance,within_external,2,332,54177744,216710976
+genre_month,raw,Electronic / Dance,within_external,3,332,15153963837,60615855348
+genre_month,raw,Electronic / Dance,within_music,1,332,32930,131720
+genre_month,raw,Electronic / Dance,within_music,2,332,3029557,12118228
+genre_month,raw,Electronic / Dance,within_music,3,332,184802436,739209744
+genre_month,raw,Folk / Singer-Songwriter,cross_domain,1,321,285325,1141300
+genre_month,raw,Folk / Singer-Songwriter,cross_domain,2,321,130361486,521445944
+genre_month,raw,Folk / Singer-Songwriter,cross_domain,3,321,40612721046,162450884184
+genre_month,raw,Folk / Singer-Songwriter,music_external,1,321,175318,701272
+genre_month,raw,Folk / Singer-Songwriter,music_external,2,321,122619158,490476632
+genre_month,raw,Folk / Singer-Songwriter,music_external,3,321,47605146112,190420584448
+genre_month,raw,Folk / Singer-Songwriter,provenance_separated,1,321,273609,1094436
+genre_month,raw,Folk / Singer-Songwriter,provenance_separated,2,321,119683897,478735588
+genre_month,raw,Folk / Singer-Songwriter,provenance_separated,3,321,35648929412,142595717648
+genre_month,raw,Folk / Singer-Songwriter,unrestricted,1,321,333800,1335200
+genre_month,raw,Folk / Singer-Songwriter,unrestricted,2,321,173455704,693822816
+genre_month,raw,Folk / Singer-Songwriter,unrestricted,3,321,60053837572,240215350288
+genre_month,raw,Folk / Singer-Songwriter,within_external,1,321,113816,455264
+genre_month,raw,Folk / Singer-Songwriter,within_external,2,321,45254799,181019196
+genre_month,raw,Folk / Singer-Songwriter,within_external,3,321,11985531632,47942126528
+genre_month,raw,Folk / Singer-Songwriter,within_music,1,321,44666,178664
+genre_month,raw,Folk / Singer-Songwriter,within_music,2,321,5581747,22326988
+genre_month,raw,Folk / Singer-Songwriter,within_music,3,321,463159828,1852639312
+genre_month,raw,Gospel / Christian,cross_domain,1,259,180568,722272
+genre_month,raw,Gospel / Christian,cross_domain,2,259,64600370,258401480
+genre_month,raw,Gospel / Christian,cross_domain,3,259,15738429971,62953719884
+genre_month,raw,Gospel / Christian,music_external,1,259,118408,473632
+genre_month,raw,Gospel / Christian,music_external,2,259,62867224,251468896
+genre_month,raw,Gospel / Christian,music_external,3,259,18938930292,75755721168
+genre_month,raw,Gospel / Christian,provenance_separated,1,259,171049,684196
+genre_month,raw,Gospel / Christian,provenance_separated,2,259,57811081,231244324
+genre_month,raw,Gospel / Christian,provenance_separated,3,259,13282677608,53130710432
+genre_month,raw,Gospel / Christian,unrestricted,1,259,213317,853268
+genre_month,raw,Gospel / Christian,unrestricted,2,259,87742647,350970588
+genre_month,raw,Gospel / Christian,unrestricted,3,259,24032190640,96128762560
+genre_month,raw,Gospel / Christian,within_external,1,259,69146,276584
+genre_month,raw,Gospel / Christian,within_external,2,259,22733317,90933268
+genre_month,raw,Gospel / Christian,within_external,3,259,4975234579,19900938316
+genre_month,raw,Gospel / Christian,within_music,1,259,25763,103052
+genre_month,raw,Gospel / Christian,within_music,2,259,2142106,8568424
+genre_month,raw,Gospel / Christian,within_music,3,259,118025769,472103076
+genre_month,raw,Hip-Hop / Rap,cross_domain,1,420,407449,1629796
+genre_month,raw,Hip-Hop / Rap,cross_domain,2,420,201951751,807807004
+genre_month,raw,Hip-Hop / Rap,cross_domain,3,420,67941510153,271766040612
+genre_month,raw,Hip-Hop / Rap,music_external,1,420,260038,1040152
+genre_month,raw,Hip-Hop / Rap,music_external,2,420,190965702,763862808
+genre_month,raw,Hip-Hop / Rap,music_external,3,420,78765529201,315062116804
+genre_month,raw,Hip-Hop / Rap,provenance_separated,1,420,392820,1571280
+genre_month,raw,Hip-Hop / Rap,provenance_separated,2,420,187890932,751563728
+genre_month,raw,Hip-Hop / Rap,provenance_separated,3,420,61006394060,244025576240
+genre_month,raw,Hip-Hop / Rap,unrestricted,1,420,470458,1881832
+genre_month,raw,Hip-Hop / Rap,unrestricted,2,420,263455590,1053822360
+genre_month,raw,Hip-Hop / Rap,unrestricted,3,420,98340658372,393362633488
+genre_month,raw,Hip-Hop / Rap,within_external,1,420,146308,585232
+genre_month,raw,Hip-Hop / Rap,within_external,2,420,64430613,257722452
+genre_month,raw,Hip-Hop / Rap,within_external,3,420,18902407371,75609629484
+genre_month,raw,Hip-Hop / Rap,within_music,1,420,64112,256448
+genre_month,raw,Hip-Hop / Rap,within_music,2,420,8059275,32237100
+genre_month,raw,Hip-Hop / Rap,within_music,3,420,672721800,2690887200
+genre_month,raw,Latin,cross_domain,1,202,132484,529936
+genre_month,raw,Latin,cross_domain,2,202,45219031,180876124
+genre_month,raw,Latin,cross_domain,3,202,10711388495,42845553980
+genre_month,raw,Latin,music_external,1,202,55299,221196
+genre_month,raw,Latin,music_external,2,202,35411048,141644192
+genre_month,raw,Latin,music_external,3,202,12635442154,50541768616
+genre_month,raw,Latin,provenance_separated,1,202,127193,508772
+genre_month,raw,Latin,provenance_separated,2,202,41818356,167273424
+genre_month,raw,Latin,provenance_separated,3,202,9579701560,38318806240
+genre_month,raw,Latin,unrestricted,1,202,175144,700576
+genre_month,raw,Latin,unrestricted,2,202,76756415,307025660
+genre_month,raw,Latin,unrestricted,3,202,22697203292,90788813168
+genre_month,raw,Latin,within_external,1,202,112409,449636
+genre_month,raw,Latin,within_external,2,202,40720743,162882972
+genre_month,raw,Latin,within_external,3,202,10026990446,40107961784
+genre_month,raw,Latin,within_music,1,202,7436,29744
+genre_month,raw,Latin,within_music,2,202,624624,2498496
+genre_month,raw,Latin,within_music,3,202,34770692,139082768
+genre_month,raw,Metal,cross_domain,1,6,3687,14748
+genre_month,raw,Metal,cross_domain,2,6,1131621,4526484
+genre_month,raw,Metal,cross_domain,3,6,231292962,925171848
+genre_month,raw,Metal,music_external,1,6,1014,4056
+genre_month,raw,Metal,music_external,2,6,865956,3463824
+genre_month,raw,Metal,music_external,3,6,370558858,1482235432
+genre_month,raw,Metal,provenance_separated,1,6,3507,14028
+genre_month,raw,Metal,provenance_separated,2,6,1023171,4092684
+genre_month,raw,Metal,provenance_separated,3,6,198666927,794667708
+genre_month,raw,Metal,unrestricted,1,6,5634,22536
+genre_month,raw,Metal,unrestricted,2,6,2642476,10569904
+genre_month,raw,Metal,unrestricted,3,6,825414717,3301658868
+genre_month,raw,Metal,within_external,1,6,4620,18480
+genre_month,raw,Metal,within_external,2,6,1776520,7106080
+genre_month,raw,Metal,within_external,3,6,454855859,1819423436
+genre_month,raw,Metal,within_music,1,6,0,0
+genre_month,raw,Metal,within_music,2,6,0,0
+genre_month,raw,Metal,within_music,3,6,0,0
+genre_month,raw,Other,cross_domain,1,6,3567,14268
+genre_month,raw,Other,cross_domain,2,6,1058511,4234044
+genre_month,raw,Other,cross_domain,3,6,209057163,836228652
+genre_month,raw,Other,music_external,1,6,1098,4392
+genre_month,raw,Other,music_external,2,6,878217,3512868
+genre_month,raw,Other,music_external,3,6,352571088,1410284352
+genre_month,raw,Other,provenance_separated,1,6,3387,13548
+genre_month,raw,Other,provenance_separated,2,6,954741,3818964
+genre_month,raw,Other,provenance_separated,3,6,179187648,716750592
+genre_month,raw,Other,unrestricted,1,6,5351,21404
+genre_month,raw,Other,unrestricted,2,6,2384870,9539480
+genre_month,raw,Other,unrestricted,3,6,708256446,2833025784
+genre_month,raw,Other,within_external,1,6,4253,17012
+genre_month,raw,Other,within_external,2,6,1506653,6026612
+genre_month,raw,Other,within_external,3,6,355685358,1422741432
+genre_month,raw,Other,within_music,1,6,0,0
+genre_month,raw,Other,within_music,2,6,0,0
+genre_month,raw,Other,within_music,3,6,0,0
+genre_month,raw,Pop,cross_domain,1,352,327476,1309904
+genre_month,raw,Pop,cross_domain,2,352,156003572,624014288
+genre_month,raw,Pop,cross_domain,3,352,50556477389,202225909556
+genre_month,raw,Pop,music_external,1,352,196057,784228
+genre_month,raw,Pop,music_external,2,352,144594657,578378628
+genre_month,raw,Pop,music_external,3,352,59221680721,236886722884
+genre_month,raw,Pop,provenance_separated,1,352,312792,1251168
+genre_month,raw,Pop,provenance_separated,2,352,142314716,569258864
+genre_month,raw,Pop,provenance_separated,3,352,44035803714,176143214856
+genre_month,raw,Pop,unrestricted,1,352,384392,1537568
+genre_month,raw,Pop,unrestricted,2,352,209828653,839314612
+genre_month,raw,Pop,unrestricted,3,352,76342103945,305368415780
+genre_month,raw,Pop,within_external,1,352,139798,559192
+genre_month,raw,Pop,within_external,2,352,58925350,235701400
+genre_month,raw,Pop,within_external,3,352,16575876946,66303507784
+genre_month,raw,Pop,within_music,1,352,48537,194148
+genre_month,raw,Pop,within_music,2,352,6308646,25234584
+genre_month,raw,Pop,within_music,3,352,544546278,2178185112
+genre_month,raw,R&B / Soul,cross_domain,1,422,392025,1568100
+genre_month,raw,R&B / Soul,cross_domain,2,422,185775852,743103408
+genre_month,raw,R&B / Soul,cross_domain,3,422,59699184723,238796738892
+genre_month,raw,R&B / Soul,music_external,1,422,247243,988972
+genre_month,raw,R&B / Soul,music_external,2,422,176468572,705874288
+genre_month,raw,R&B / Soul,music_external,3,422,70215699128,280862796512
+genre_month,raw,R&B / Soul,provenance_separated,1,422,377332,1509328
+genre_month,raw,R&B / Soul,provenance_separated,2,422,172170578,688682312
+genre_month,raw,R&B / Soul,provenance_separated,3,422,53250051119,213000204476
+genre_month,raw,R&B / Soul,unrestricted,1,422,453778,1815112
+genre_month,raw,R&B / Soul,unrestricted,2,422,244059471,976237884
+genre_month,raw,R&B / Soul,unrestricted,3,422,87538816456,350155265824
+genre_month,raw,R&B / Soul,within_external,1,422,139798,559192
+genre_month,raw,R&B / Soul,within_external,2,422,58925350,235701400
+genre_month,raw,R&B / Soul,within_external,3,422,16575876946,66303507784
+genre_month,raw,R&B / Soul,within_music,1,422,66737,266948
+genre_month,raw,R&B / Soul,within_music,2,422,8665549,34662196
+genre_month,raw,R&B / Soul,within_music,3,422,747240382,2988961528
+genre_month,raw,Reggae / Dancehall,cross_domain,1,267,217034,868136
+genre_month,raw,Reggae / Dancehall,cross_domain,2,267,90901039,363604156
+genre_month,raw,Reggae / Dancehall,cross_domain,3,267,26010692945,104042771780
+genre_month,raw,Reggae / Dancehall,music_external,1,267,140795,563180
+genre_month,raw,Reggae / Dancehall,music_external,2,267,85986767,343947068
+genre_month,raw,Reggae / Dancehall,music_external,3,267,30258820743,121035282972
+genre_month,raw,Reggae / Dancehall,provenance_separated,1,267,206954,827816
+genre_month,raw,Reggae / Dancehall,provenance_separated,2,267,82469448,329877792
+genre_month,raw,Reggae / Dancehall,provenance_separated,3,267,22414251713,89657006852
+genre_month,raw,Reggae / Dancehall,unrestricted,1,267,257949,1031796
+genre_month,raw,Reggae / Dancehall,unrestricted,2,267,124492964,497971856
+genre_month,raw,Reggae / Dancehall,unrestricted,3,267,40020255539,160081022156
+genre_month,raw,Reggae / Dancehall,within_external,1,267,90993,363972
+genre_month,raw,Reggae / Dancehall,within_external,2,267,36282684,145130736
+genre_month,raw,Reggae / Dancehall,within_external,3,267,9636186849,38544747396
+genre_month,raw,Reggae / Dancehall,within_music,1,267,26161,104644
+genre_month,raw,Reggae / Dancehall,within_music,2,267,2223513,8894052
+genre_month,raw,Reggae / Dancehall,within_music,3,267,125247947,500991788
+genre_month,raw,Rock,cross_domain,1,413,387357,1549428
+genre_month,raw,Rock,cross_domain,2,413,185245570,740982280
+genre_month,raw,Rock,cross_domain,3,413,60025482670,240101930680
+genre_month,raw,Rock,music_external,1,413,248670,994680
+genre_month,raw,Rock,music_external,2,413,178089882,712359528
+genre_month,raw,Rock,music_external,3,413,71053602712,284214410848
+genre_month,raw,Rock,provenance_separated,1,413,373775,1495100
+genre_month,raw,Rock,provenance_separated,2,413,172541860,690167440
+genre_month,raw,Rock,provenance_separated,3,413,53967280390,215869121560
+genre_month,raw,Rock,unrestricted,1,413,447021,1788084
+genre_month,raw,Rock,unrestricted,2,413,241818347,967273388
+genre_month,raw,Rock,unrestricted,3,413,87172263246,348689052984
+genre_month,raw,Rock,within_external,1,413,131362,525448
+genre_month,raw,Rock,within_external,2,413,54997205,219988820
+genre_month,raw,Rock,within_external,3,413,15362885677,61451542708
+genre_month,raw,Rock,within_music,1,413,66989,267956
+genre_month,raw,Rock,within_music,2,413,8731260,34925040
+genre_month,raw,Rock,within_music,3,413,755774857,3023099428
+genre_month,raw,pooled,cross_domain,1,430,415928,1663712
+genre_month,raw,pooled,cross_domain,2,430,204953548,819814192
+genre_month,raw,pooled,cross_domain,3,430,68392150881,273568603524
+genre_month,raw,pooled,music_external,1,430,263479,1053916
+genre_month,raw,pooled,music_external,2,430,193812725,775250900
+genre_month,raw,pooled,music_external,3,430,79646290873,318585163492
+genre_month,raw,pooled,provenance_separated,1,430,400651,1602604
+genre_month,raw,pooled,provenance_separated,2,430,190252366,761009464
+genre_month,raw,pooled,provenance_separated,3,430,61176453817,244705815268
+genre_month,raw,pooled,unrestricted,1,430,478629,1914516
+genre_month,raw,pooled,unrestricted,2,430,266453283,1065813132
+genre_month,raw,pooled,unrestricted,3,430,98920661835,395682647340
+genre_month,raw,pooled,within_external,1,430,145960,583840
+genre_month,raw,pooled,within_external,2,430,63535842,254143368
+genre_month,raw,pooled,within_external,3,430,18478472313,73913889252
+genre_month,raw,pooled,within_music,1,430,69190,276760
+genre_month,raw,pooled,within_music,2,430,9104716,36418864
+genre_month,raw,pooled,within_music,3,430,795898649,3183594596
+monthly,adjusted,pooled,cross_domain,1,442,419352,1677408
+monthly,adjusted,pooled,cross_domain,2,442,202873511,811494044
+monthly,adjusted,pooled,cross_domain,3,442,66491075464,265964301856
+monthly,adjusted,pooled,music_external,1,442,269120,1076480
+monthly,adjusted,pooled,music_external,2,442,194058106,776232424
+monthly,adjusted,pooled,music_external,3,442,77926022672,311704090688
+monthly,adjusted,pooled,provenance_separated,1,442,403392,1613568
+monthly,adjusted,pooled,provenance_separated,2,442,187848794,751395176
+monthly,adjusted,pooled,provenance_separated,3,442,59274926090,237099704360
+monthly,adjusted,pooled,unrestricted,1,442,481599,1926396
+monthly,adjusted,pooled,unrestricted,2,442,262295157,1049180628
+monthly,adjusted,pooled,unrestricted,3,442,95211273943,380845095772
+monthly,adjusted,pooled,within_external,1,442,139399,557596
+monthly,adjusted,pooled,within_external,2,442,58596826,234387304
+monthly,adjusted,pooled,within_external,3,442,16440533170,65762132680
+monthly,adjusted,pooled,within_music,1,442,73080,292320
+monthly,adjusted,pooled,within_music,2,442,9640225,38560900
+monthly,adjusted,pooled,within_music,3,442,844718101,3378872404
+monthly,raw,pooled,cross_domain,1,442,427467,1709868
+monthly,raw,pooled,cross_domain,2,442,210639916,842559664
+monthly,raw,pooled,cross_domain,3,442,70276967609,281107870436
+monthly,raw,pooled,music_external,1,442,273046,1092184
+monthly,raw,pooled,music_external,2,442,201704565,806818260
+monthly,raw,pooled,music_external,3,442,82600228134,330400912536
+monthly,raw,pooled,provenance_separated,1,442,410359,1641436
+monthly,raw,pooled,provenance_separated,2,442,194177738,776710952
+monthly,raw,pooled,provenance_separated,3,442,62210945448,248843781792
+monthly,raw,pooled,unrestricted,1,442,489838,1959352
+monthly,raw,pooled,unrestricted,2,442,271330694,1085322776
+monthly,raw,pooled,unrestricted,3,442,100164015611,400656062444
+monthly,raw,pooled,within_external,1,442,139798,559192
+monthly,raw,pooled,within_external,2,442,58925350,235701400
+monthly,raw,pooled,within_external,3,442,16575876946,66303507784
+monthly,raw,pooled,within_music,1,442,76994,307976
+monthly,raw,pooled,within_music,2,442,10700779,42803116
+monthly,raw,pooled,within_music,3,442,987910531,3951642124
+song,adjusted,pooled,cross_domain,1,420,404381,1617524
+song,adjusted,pooled,cross_domain,2,420,198334044,793336176
+song,adjusted,pooled,cross_domain,3,420,65880086394,263520345576
+song,adjusted,pooled,music_external,1,420,255968,1023872
+song,adjusted,pooled,music_external,2,420,188650119,754600476
+song,adjusted,pooled,music_external,3,420,77531742889,310126971556
+song,adjusted,pooled,provenance_separated,1,420,389725,1558900
+song,adjusted,pooled,provenance_separated,2,420,184304016,737216064
+song,adjusted,pooled,provenance_separated,3,420,59026421440,236105685760
+song,adjusted,pooled,unrestricted,1,420,466764,1867056
+song,adjusted,pooled,unrestricted,2,420,259406377,1037625508
+song,adjusted,pooled,unrestricted,3,420,96128995097,384515980388
+song,adjusted,pooled,within_external,1,420,143047,572188
+song,adjusted,pooled,within_external,2,420,61742872,246971488
+song,adjusted,pooled,within_external,3,420,17800055039,71200220156
+song,adjusted,pooled,within_music,1,420,67749,270996
+song,adjusted,pooled,within_music,2,420,9013386,36053544
+song,adjusted,pooled,within_music,3,420,797197169,3188788676
+song,raw,pooled,cross_domain,1,420,405938,1623752
+song,raw,pooled,cross_domain,2,420,199831571,799326284
+song,raw,pooled,cross_domain,3,420,66614452739,266457810956
+song,raw,pooled,music_external,1,420,256905,1027620
+song,raw,pooled,music_external,2,420,190008236,760032944
+song,raw,pooled,music_external,3,420,78358083208,313432332832
+song,raw,pooled,provenance_separated,1,420,391197,1564788
+song,raw,pooled,provenance_separated,2,420,185659012,742636048
+song,raw,pooled,provenance_separated,3,420,59662195971,238648783884
+song,raw,pooled,unrestricted,1,420,468347,1873388
+song,raw,pooled,unrestricted,2,420,261165152,1044660608
+song,raw,pooled,unrestricted,3,420,97105689519,388422758076
+song,raw,pooled,within_external,1,420,143439,573756
+song,raw,pooled,within_external,2,420,62075781,248303124
+song,raw,pooled,within_external,3,420,17941395756,71765583024
+song,raw,pooled,within_music,1,420,68003,272012
+song,raw,pooled,within_music,2,420,9081135,36324540
+song,raw,pooled,within_music,3,420,806210555,3224842220

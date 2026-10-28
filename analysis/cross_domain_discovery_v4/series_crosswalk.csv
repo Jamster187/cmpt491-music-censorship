@@ -1,0 +1,113 @@
+financial_id,canonical_id,status,common_months,additional_months,rule
+FF_HML,FF_HML,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+FF_MKT_EXCESS,FF_MKT_EXCESS,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+FF_RF,FF_RF,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+FF_SMB,FF_SMB,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_ANFCI,US_ANFCI,distinct_definition,0,668,Retained distinct source/formula; no name-only merge
+US_BAA_AAA_SPREAD,US_BAA_AAA_SPREAD,distinct_definition,0,705,Retained distinct source/formula; no name-only merge
+US_BAA_AAA_SPREAD_TRAILING_Z,US_BAA_AAA_SPREAD_TRAILING_Z,distinct_definition,0,705,Retained distinct source/formula; no name-only merge
+US_BAA_TREASURY_SPREAD,US_BAA_TREASURY_SPREAD,distinct_definition,0,705,Retained distinct source/formula; no name-only merge
+US_BREAKEVEN_10Y,US_TREASURY_TIPS_10Y_SPREAD,verified_alias,285,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_BUSINESS_LOAN_DELINQUENCY,US_BUSINESS_LOAN_DELINQUENCY,distinct_definition,0,474,Retained distinct source/formula; no name-only merge
+US_CONSUMER_DEBT_SERVICE,US_CONSUMER_DEBT_SERVICE,distinct_definition,0,258,Retained distinct source/formula; no name-only merge
+US_CONSUMER_SENTIMENT,US_CONSUMER_SENTIMENT,verified_alias,585,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_CONSUMER_SENTIMENT_CHANGE_12M,US_CONSUMER_SENTIMENT_CHANGE_12M,distinct_definition,0,573,Retained distinct source/formula; no name-only merge
+US_CONSUMER_SENTIMENT_CHANGE_1M,US_CONSUMER_SENTIMENT_CHANGE_1M,distinct_definition,0,584,Retained distinct source/formula; no name-only merge
+US_CONSUMER_SENTIMENT_QUARTERLY,US_CONSUMER_SENTIMENT_QUARTERLY,verified_alias,798,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_CONTINUED_CLAIMS,US_CONTINUED_CLAIMS,distinct_definition,0,717,Retained distinct source/formula; no name-only merge
+US_CORPORATE_AAA,US_CORPORATE_AAA,distinct_definition,0,705,Retained distinct source/formula; no name-only merge
+US_CORPORATE_BAA,US_CORPORATE_BAA,distinct_definition,0,705,Retained distinct source/formula; no name-only merge
+US_CPI_INFLATION_ACCELERATION,US_CPI_INFLATION_ACCELERATION,distinct_definition,0,823,Retained distinct source/formula; no name-only merge
+US_CPI_INFLATION_MOM,US_CPI_MOM,verified_alias,822,1,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_CPI_INFLATION_YOY,US_CPI_YOY,verified_alias,812,12,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_CPI_NSA,US_CPI_NSA,verified_alias,824,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_CPI_NSA_INFLATION_ACCELERATION,US_CPI_NSA_INFLATION_ACCELERATION,distinct_definition,0,823,Retained distinct source/formula; no name-only merge
+US_CPI_NSA_INFLATION_MOM,US_CPI_NSA_INFLATION_MOM,distinct_definition,0,823,Retained distinct source/formula; no name-only merge
+US_CPI_NSA_INFLATION_YOY,US_CPI_NSA_INFLATION_YOY,distinct_definition,0,824,Retained distinct source/formula; no name-only merge
+US_CPI_SA,US_CPI_SA,verified_alias,824,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_CREDIT_CARD_DELINQUENCY,US_CREDIT_CARD_DELINQUENCY,distinct_definition,0,426,Retained distinct source/formula; no name-only merge
+US_DISPOSABLE_INCOME,US_DISPOSABLE_INCOME,verified_alias,812,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_ECONOMIC_NEWS_SENTIMENT,US_ECONOMIC_NEWS_SENTIMENT,distinct_definition,0,561,Retained distinct source/formula; no name-only merge
+US_EMPLOYMENT_POPULATION,US_EMPLOYMENT_POPULATION,verified_alias,824,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_EXCESS_BOND_PREMIUM,US_EXCESS_BOND_PREMIUM,distinct_definition,0,645,Retained distinct source/formula; no name-only merge
+US_EXCESS_BOND_PREMIUM_TRAILING_Z,US_EXCESS_BOND_PREMIUM_TRAILING_Z,distinct_definition,0,585,Retained distinct source/formula; no name-only merge
+US_FCI_G,US_FCI_G,distinct_definition,0,440,Retained distinct source/formula; no name-only merge
+US_FCI_G_TRAILING_Z,US_FCI_G_TRAILING_Z,distinct_definition,0,380,Retained distinct source/formula; no name-only merge
+US_FED_FUNDS,US_FED_FUNDS,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_FINANCIAL_CP_3M,US_AA_FINANCIAL_CP_3M,verified_alias,356,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_GDP_DEFLATOR,US_GDP_DEFLATOR,verified_alias,954,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_GOLD_GROWTH_YOY,US_GOLD_GROWTH_YOY,distinct_definition,0,789,Retained distinct source/formula; no name-only merge
+US_HOURLY_EARNINGS_PRODUCTION,US_HOURLY_EARNINGS_PRODUCTION,verified_alias,753,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_HOUSEHOLD_DEBT_SERVICE,US_HOUSEHOLD_DEBT_SERVICE,distinct_definition,0,258,Retained distinct source/formula; no name-only merge
+US_INITIAL_CLAIMS,US_INITIAL_CLAIMS,distinct_definition,0,717,Retained distinct source/formula; no name-only merge
+US_IP_GROWTH_INIT,US_IP_TOTAL_GROWTH_INIT,verified_alias,115,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_IP_GROWTH_REV1,US_IP_TOTAL_GROWTH_REV1,verified_alias,115,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_IP_GROWTH_YOY,US_IP_TOTAL_YOY,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_IP_MANUFACTURING,US_IP_MANUFACTURING,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_IP_MINING,US_IP_MINING,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_IP_TOTAL,US_IP_TOTAL,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_IP_UTILITIES,US_IP_UTILITIES,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_LABOR_PARTICIPATION,US_LABOR_PARTICIPATION,verified_alias,824,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_MARKET_DAILY_COMPOUND_RETURN,US_EQUITY_DAILY_RETURN,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_MARKET_DAILY_COUNT,US_EQUITY_DAILY_OBSERVED_TRADING_DAYS,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_MARKET_DOWNSIDE_VOL,US_MARKET_DOWNSIDE_VOL,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_MARKET_DRAWDOWN,US_EQUITY_DRAWDOWN,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_MARKET_MAX_DRAWDOWN_12M,US_MARKET_MAX_DRAWDOWN_12M,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_MARKET_MAX_DRAWDOWN_TO_DATE,US_MARKET_MAX_DRAWDOWN_TO_DATE,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_MARKET_MONTHLY_DAILY_DIFFERENCE,US_MARKET_MONTHLY_DAILY_DIFFERENCE,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_MARKET_ONLINE_BEAR,US_MARKET_ONLINE_BEAR,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_MARKET_REALIZED_VOL,US_MARKET_REALIZED_VOL,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_MARKET_RETURN_12M,US_EQUITY_RETURN_12M,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_MARKET_RETURN_3M,US_EQUITY_RETURN_3M,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_MARKET_RETURN_6M,US_MARKET_RETURN_6M,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_MARKET_TOTAL_RETURN,US_EQUITY_TOTAL_RETURN,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_MARKET_TREND_REGIME,US_MARKET_TREND_REGIME,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_MARKET_VOLATILITY_12M,US_MARKET_VOLATILITY_12M,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_MARKET_VOLATILITY_60M,US_MARKET_VOLATILITY_60M,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_MISERY_INDEX,US_MISERY_INDEX,distinct_definition,0,824,Retained distinct source/formula; no name-only merge
+US_MORTGAGE_DEBT_SERVICE,US_MORTGAGE_DEBT_SERVICE,distinct_definition,0,258,Retained distinct source/formula; no name-only merge
+US_MORTGAGE_DELINQUENCY,US_MORTGAGE_DELINQUENCY,distinct_definition,0,426,Retained distinct source/formula; no name-only merge
+US_NBER_RECESSION_CLOSED_CYCLES,US_NBER_DATED_RECESSION,verified_alias,748,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_NFCI,US_NFCI,distinct_definition,0,668,Retained distinct source/formula; no name-only merge
+US_NFCI_TRAILING_Z,US_NFCI_TRAILING_Z,distinct_definition,0,608,Retained distinct source/formula; no name-only merge
+US_NOMINAL_GDP,US_NOMINAL_GDP,distinct_definition,0,954,Retained distinct source/formula; no name-only merge
+US_NONFARM_EMPLOYMENT,US_NONFARM_EMPLOYMENT,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_NONFARM_EMPLOYMENT_GROWTH_YOY,US_NONFARM_EMPLOYMENT_YOY,verified_alias,813,12,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_PCE_INFLATION_ACCELERATION,US_PCE_INFLATION_ACCELERATION,distinct_definition,0,799,Retained distinct source/formula; no name-only merge
+US_PCE_INFLATION_MOM,US_PCE_PRICE_MOM,verified_alias,811,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_PCE_INFLATION_YOY,US_PCE_PRICE_YOY,verified_alias,800,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_PCE_NOMINAL,US_PCE_NOMINAL,verified_alias,812,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_PCE_PRICE_INDEX,US_PCE_PRICE_INDEX,verified_alias,812,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_PCE_REAL,US_PCE_REAL,verified_alias,236,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_PERSONAL_INCOME,US_PERSONAL_INCOME,verified_alias,812,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_PERSONAL_SAVING_RATE,US_PERSONAL_SAVING_RATE,verified_alias,812,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_POLICY_UNCERTAINTY_NEWS,US_POLICY_UNCERTAINTY_NEWS,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_POLICY_UNCERTAINTY_NEWS_TRAILING_Z,US_POLICY_UNCERTAINTY_NEWS_TRAILING_Z,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_PRIME_RATE,US_PRIME_RATE,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_REAL_DISPOSABLE_INCOME,US_REAL_DISPOSABLE_INCOME,verified_alias,812,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_REAL_DISPOSABLE_INCOME_GROWTH_YOY,US_REAL_DISPOSABLE_INCOME_GROWTH_YOY,distinct_definition,0,800,Retained distinct source/formula; no name-only merge
+US_REAL_DISPOSABLE_INCOME_PC,US_REAL_DISPOSABLE_INCOME_PC,verified_alias,812,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_REAL_DISPOSABLE_INCOME_PC_GROWTH_YOY,US_REAL_DISPOSABLE_INCOME_PC_YOY,verified_alias,800,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_REAL_GDP,US_REAL_GDP,verified_alias,954,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_REAL_HOURLY_EARNINGS,US_REAL_HOURLY_EARNINGS,distinct_definition,0,752,Retained distinct source/formula; no name-only merge
+US_REAL_WAGE_GROWTH_YOY,US_REAL_WAGE_GROWTH_YOY,distinct_definition,0,740,Retained distinct source/formula; no name-only merge
+US_RECREATION_GOODS_REAL,US_RECREATION_GOODS_REAL,verified_alias,236,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_RECREATION_SERVICES_REAL,US_RECREATION_SERVICES_REAL,verified_alias,236,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_SLOPE_10Y_2Y,US_YIELD_SLOPE_10Y_2Y,verified_alias,604,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_SLOPE_10Y_3M,US_YIELD_SLOPE_10Y_3M,verified_alias,541,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_SLOPE_10Y_TBILL_DISCOUNT,US_SLOPE_10Y_TBILL_DISCOUNT,distinct_definition,0,825,Retained distinct source/formula; no name-only merge
+US_TBILL_3M_DISCOUNT,US_TBILL_3M_DISCOUNT,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_TIPS_10Y,US_TIPS_10Y,verified_alias,285,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_TREASURY_10Y,US_TREASURY_10Y,verified_alias,825,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_TREASURY_2Y,US_TREASURY_2Y,verified_alias,604,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_TREASURY_3M,US_TREASURY_3M,verified_alias,541,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_UNEMPLOYMENT,US_UNEMPLOYMENT,verified_alias,824,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_UNEMPLOYMENT_BENEFITS,US_UNEMPLOYMENT_BENEFITS,verified_alias,812,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_WEEKLY_HOURS_ALL_PRIVATE,US_WEEKLY_HOURS_ALL_PRIVATE,verified_alias,247,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+US_WTI_GROWTH_YOY,US_WTI_GROWTH_YOY,distinct_definition,0,525,Retained distinct source/formula; no name-only merge
+US_YOUTH_UNEMPLOYMENT,US_YOUTH_UNEMPLOYMENT,verified_alias,824,0,"Declared same source or formula; overlap equality verified; platform value preferred, explicit finance gap/warmup extension"
+WB_COPPER,WB_COPPER,distinct_definition,0,801,Retained distinct source/formula; no name-only merge
+WB_GOLD,WB_GOLD,distinct_definition,0,801,Retained distinct source/formula; no name-only merge
+WB_NATURAL_GAS_US,WB_NATURAL_GAS_US,distinct_definition,0,801,Retained distinct source/formula; no name-only merge
+WB_WHEAT_HRW,WB_WHEAT_HRW,distinct_definition,0,801,Retained distinct source/formula; no name-only merge
+WB_WTI,WB_WTI,distinct_definition,0,537,Retained distinct source/formula; no name-only merge

@@ -1,0 +1,30 @@
+{
+  "actual_local_bytes": 438432582,
+  "checkpoint_rows": 7599,
+  "conservative_total_seconds": 3277222064.7452908,
+  "designed_core_storage_bytes": 142724266616016,
+  "elapsed_seconds": 242.062235875,
+  "evaluation_models_fitted": 0,
+  "free_disk_bytes": 10792353792,
+  "full_campaign_started": false,
+  "independent_svd_checks": 540,
+  "limits": {
+    "headroom_bytes": 2147483648,
+    "runtime_seconds": 14400,
+    "temporary_storage_bytes": 15000000000
+  },
+  "numerical_fit_calls_including_reference_checks": 8679,
+  "optimistic_measured_rate_seconds": 398423936.43417823,
+  "peak_rss_bytes": 3070787584,
+  "projected_compute_seconds": 1638610132.3726454,
+  "projected_temporary_storage_bytes": 164133906608418,
+  "projection_rule": "For every task/encoding/k/fold, maximum measured matching-stratum fit time plus residual time scaled upward for row count; 2x contingency plus 1800 seconds. Sampled-union cache estimates are approximate. Storage alone independently exceeds gate when blocked.",
+  "protocol": "be7226bd6eac83f6777f18317e5a74554eaf6e76d99f45a35bddc4b5a05b9ba5",
+  "representative_target_tasks": 20,
+  "restart_rows_verified": 7599,
+  "resumed_rows": 0,
+  "status": "APPROVAL_REQUIRED",
+  "uncertainty": "No formal p-values or confidence intervals; computational pilot only, no discoveries or evaluation-based selection",
+  "unique_pilot_relationships": 2533,
+  "unique_validation_fits": 7599
+}
