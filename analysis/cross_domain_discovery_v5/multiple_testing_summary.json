@@ -1,0 +1,10 @@
+{
+  "global_hypotheses": 18046656,
+  "inferential_p_below_05": 203758,
+  "invalid_slots_set_to_one": 15010520,
+  "method_rejections": 754,
+  "peak_process_bytes": 2565799936,
+  "result_rows": 9116352,
+  "result_sha256": "321c8fb92f41f76d11f5c64d4de6b1caccf69f31e9608ba0a720238c061684cb",
+  "status": "COMPLETE"
+}

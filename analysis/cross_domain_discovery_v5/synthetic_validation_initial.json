@@ -1,0 +1,56 @@
+{
+  "differenced_example": {
+    "adf_rows": 586,
+    "longest_run": 599,
+    "n_observed": 599,
+    "p_value": 1.1045872753950234e-10,
+    "statistic": -7.334661933242387,
+    "status": "ok",
+    "used_lags": 12
+  },
+  "interpretation": "Finite AR simulations validate this implementation and error behavior in these scenarios; not a proof of universal FDR control.",
+  "null_settings": [
+    {
+      "BY_world_rejection_rate": 0.0125,
+      "ar": 0.0,
+      "hypotheses_per_world": 80,
+      "passes": true,
+      "unadjusted_rejection_rate": 0.05296875,
+      "worlds": 160,
+      "worlds_with_any_BY_rejection": 2
+    },
+    {
+      "BY_world_rejection_rate": 0.0125,
+      "ar": 0.5,
+      "hypotheses_per_world": 80,
+      "passes": true,
+      "unadjusted_rejection_rate": 0.05875,
+      "worlds": 160,
+      "worlds_with_any_BY_rejection": 2
+    },
+    {
+      "BY_world_rejection_rate": 0.04375,
+      "ar": 0.85,
+      "hypotheses_per_world": 80,
+      "passes": false,
+      "unadjusted_rejection_rate": 0.084296875,
+      "worlds": 160,
+      "worlds_with_any_BY_rejection": 7
+    }
+  ],
+  "redundant_controls_preserve_signal": true,
+  "signal_p": 7.572267672177923e-24,
+  "signal_slope": 1.4506817933050296,
+  "signal_truth": 1.5,
+  "status": "FAIL",
+  "training_only_basis_unchanged": true,
+  "unit_root_example": {
+    "adf_rows": 587,
+    "longest_run": 600,
+    "n_observed": 600,
+    "p_value": 0.29710142093038383,
+    "statistic": -1.9762081617054776,
+    "status": "ok",
+    "used_lags": 12
+  }
+}

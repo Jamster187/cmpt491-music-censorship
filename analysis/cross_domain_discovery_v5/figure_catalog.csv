@@ -1,0 +1,8 @@
+file,description,sha256
+figures/coverage_and_inference.svg,"Complete attempt denominator, valid support and global BY result counts; log scale.",68ded19b9a11da9de860179b8f7116e7f52b04c9efc05e04978a159bb2b43551
+figures/strongest_adjusted.svg,"First twelve estimable numeric adjusted rows; sample-standardized OLS slopes and HAC intervals, not Fisher correlation intervals.",ac391564c692f7acd6e1f20b0abea7ed7673374a2cfc696d35adef2be4b0e1e5
+figures/raw_vs_adjusted.svg,Exact pair/population/lag matches for the first twenty numeric raw leaders; unsupported adjusted matches are labeled.,f37cfb8a7e66200d6cfdc3432d4a54af537e58b0677d1d65da7bc2ba5bc72bcc
+figures/historical_stability.svg,Baseline-relative MSE skill in the three embargoed chronological transfer folds; unsupported folds are explicit.,f99e7ceabd09f21cb2acc240efca30c29687c7d6a9b89df7a4f16ccc6f699116
+figures/lag_profile.svg,All six predefined lags for the exact first adjusted numeric leader; no manual hypothesis selection.,08eb05256f6657ef25df384166bc4b4fe601a250cbb69b45677def12787d504c
+figures/domain_results.svg,Domain support and global BY rejection counts for both tracks; no raw restricted source values plotted.,331a873a407a85afa3c5599a6d5272a727f60f3663b6d89b4265fb1e9797982b
+figures/genre_adjusted.svg,First estimable adjusted numeric pair per genre in the complete within-genre ranking; omitted estimates are explicitly unsupported. Variable names are in genre_best_adjusted.csv.,dd7e9cde33e2de0793953d09abff988cd7c57d06cef4319ab1839756c1de2763

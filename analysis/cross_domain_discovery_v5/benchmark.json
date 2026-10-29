@@ -1,0 +1,45 @@
+{
+  "benchmark_chunks": 680,
+  "benchmark_strata": 170,
+  "compute_code_hashes": {
+    "pairwise_v5_common.py": "7dac297d597c13c7abd9fbc3f9bc64e2850b42db71cba72711a0207657cdbe3a",
+    "pairwise_v5_data.py": "4192d0edce5edd4b72b65bb79032af9a6c5c40dbb9d7a88023163a4d63dfda98",
+    "pairwise_v5_diagnostics.py": "f265e940c62811e81cbe41c3fb266e92e2c007f0130d1cf03a76c3d3d3a73459",
+    "pairwise_v5_runner.py": "8fe1389309518fb241c448c948494bae166041467d7e991988501ed7713fbdf7",
+    "pairwise_v5_stats.py": "889dc6d09b431565a870851b9e07b04ba4006fad3bbf0b750e18e683ccbc83a6"
+  },
+  "conservative_fit_seconds": 3302.4749885549977,
+  "counts": {
+    "chunks": 39984,
+    "eligible_view_pairs": 759696,
+    "external_domains": [
+      "cultural",
+      "financial",
+      "macroeconomic",
+      "political",
+      "social"
+    ],
+    "external_variables": 196,
+    "lag_count": 6,
+    "lagged_pairs": 4558176,
+    "method_hypotheses": 18046656,
+    "music_variables": 544,
+    "music_view_variables": 3876,
+    "pair_track_rows": 9116352,
+    "tracks": 2,
+    "views": 17
+  },
+  "cumulative_seconds_at_gate": 45.412898500000004,
+  "full_campaign_started": false,
+  "measured_peak_process_bytes": 339902464,
+  "postprocessing_reserve_seconds": 1800,
+  "projected_fit_seconds": 1882.8627954765007,
+  "projected_peak_process_bytes": 1500000000,
+  "projected_storage_bytes": 5514268672,
+  "projected_total_seconds": 5147.887887054998,
+  "protocol_hash": "628dec827d5e0adee5354b4ebc434774ced549e41d83d2965a053537d987e289",
+  "result_array_bytes": 1531547136,
+  "runtime_estimator": "Sum by stratum: 1.5 times maximum of four deterministic cold-cache chunks; add 1800 seconds for remaining work. No outcome-based subsampling.",
+  "status": "WITHIN_BUDGET",
+  "storage_estimator": "Two complete result copies, forty bytes per method for BY work arrays, ten full 8-byte index rankings, plus one GB reserve."
+}

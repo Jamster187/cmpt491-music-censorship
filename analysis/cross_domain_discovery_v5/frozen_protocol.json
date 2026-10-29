@@ -1,0 +1,128 @@
+{
+  "code": {
+    "src/pairwise_v5_common.py": "7dac297d597c13c7abd9fbc3f9bc64e2850b42db71cba72711a0207657cdbe3a",
+    "src/pairwise_v5_data.py": "4192d0edce5edd4b72b65bb79032af9a6c5c40dbb9d7a88023163a4d63dfda98",
+    "src/pairwise_v5_diagnostics.py": "f265e940c62811e81cbe41c3fb266e92e2c007f0130d1cf03a76c3d3d3a73459",
+    "src/pairwise_v5_runner.py": "8fe1389309518fb241c448c948494bae166041467d7e991988501ed7713fbdf7",
+    "src/pairwise_v5_stats.py": "889dc6d09b431565a870851b9e07b04ba4006fad3bbf0b750e18e683ccbc83a6"
+  },
+  "config": {
+    "confidence": 0.95,
+    "control_rank_tolerance": 1e-10,
+    "external_adjustment": "Source-type-specific native-period changes/log growth; existing returns, growth, event indicators and categorical labels retain their declared meaning.",
+    "false_discovery_rate": 0.05,
+    "family": "One global BY family across all structurally eligible pairs, populations, tracks, lags and methods. Numerical/underpowered/nonstationary tests contribute p=1; raw nominal diagnostics are retained separately.",
+    "fixed_composition_minimum_months": 60,
+    "fixed_composition_training_end": "1983-01",
+    "free_reserve_bytes": 2147483648,
+    "full_pairwise_execution_authorized": true,
+    "hac_lags": {
+      "A": 6,
+      "M": 48,
+      "Q": 16,
+      "event": 6,
+      "term": 3
+    },
+    "inference": "Retrospective exploratory association and chronological transfer; no causality or untouched historical confirmation.",
+    "lags": [
+      0,
+      1,
+      3,
+      6,
+      12,
+      24
+    ],
+    "maximum_bytes": 15000000000,
+    "maximum_seconds": 14400,
+    "minimum_binary_periods": 10,
+    "minimum_category_periods": 5,
+    "minimum_feature_songs": 5,
+    "minimum_hac_blocks": 6,
+    "minimum_native": {
+      "A": 30,
+      "M": 120,
+      "Q": 40,
+      "event": 30,
+      "term": 24
+    },
+    "minimum_residual_df": 12,
+    "minimum_training_periods": {
+      "A": 20,
+      "M": 120,
+      "Q": 40,
+      "event": 20,
+      "term": 20
+    },
+    "minimum_validation_periods": {
+      "A": 8,
+      "M": 24,
+      "Q": 8,
+      "event": 8,
+      "term": 4
+    },
+    "months": [
+      "1958-08",
+      "2026-09"
+    ],
+    "music_adjustment": "First difference on the aligned native-period grid, with fixed time/season controls; overall lyrical means additionally use differenced genre shares. No differencing across missing periods.",
+    "native_aggregation_minimum_fraction": 0.75,
+    "nonlinear_or_multivariate_search_authorized": false,
+    "parent_commit": "bf1e299f9842ee9297082d020bb24041936af44b",
+    "seed": 4919001,
+    "stationarity_threshold": 0.05,
+    "temporal_embargo_months": 84,
+    "tracks": [
+      "raw",
+      "adjusted"
+    ],
+    "uncertainty_revision": "Before any discovery rankings: double the original monthly/quarterly/annual HAC horizon after its strong-AR null validation failed; retain the original failed simulation. Use block-count t degrees of freedom and six-block minimum. Independently seeded validation is required.",
+    "validation_periods": [
+      [
+        "1990-01",
+        "2002-01"
+      ],
+      [
+        "2002-01",
+        "2014-01"
+      ],
+      [
+        "2014-01",
+        "2026-10"
+      ]
+    ],
+    "version": "pairwise-v5-1"
+  },
+  "inputs": {
+    "analysis/cross_domain_discovery_v4/series_crosswalk.csv": "3e1db84d0f6680f4fefed658936f56e49ed115cb6ccb049c1a5ef4764bfe0434",
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/publication_manifest.json": "900527a2640409e75bf0d7964c90ffe5681ab052b84e30a1bc578f5f40db51ee",
+    "analysis/external_historical/derived_series_dictionary.csv": "58689cac2cf0e73f24462fa3b95bd1ea5ca083ca413ef7f14391b3618f2f8de3",
+    "analysis/external_historical/financial_acquisition/derived_feature_dictionary.csv": "d9157c4206eff3d5d0b96b6f074eebfe0b3d72957f17b052c8690e841b3f8ef1",
+    "analysis/external_historical/financial_acquisition/series_dictionary.csv": "2e29e7da848fb5335f293a7d96dc77eed86766217fe78d9e614397cd389f773b",
+    "analysis/external_historical/series_dictionary.csv": "16404be4e8161ff128934313deb9f439ae3b1c15bccc23ccd37904cabf0d1067",
+    "analysis/music_enrichment_v2/feature_dictionary.csv": "4bfb7c2f319e784888a1b3b51152c3c93bd62b5722665c1eb08b5e2f8359f9bc",
+    "data/experiments/cross_domain_discovery_v4/external_period_end.pkl": "168c9f6d008bebe2ad3ce03f8613bc62bf06463e7d14ea7506d3c214b3ae4d21",
+    "data/experiments/cross_domain_discovery_v4/external_raw.pkl": "139f64513d79777b7caf2f857c1d429763ec39cc3f6e91ce9005ec3a56c4fde7",
+    "data/experiments/cross_domain_discovery_v4/external_registry.json": "5ee02d658160f2d01f65f0bbef64d4b655602d14b825b2aaa9dc484e0de06dee",
+    "data/experiments/cross_domain_discovery_v4/genre_month.pkl": "4dc6d49ca2de5e9ed8beca074be2efcae1317d23bcc6c587a6e84c18d4ec30de",
+    "data/experiments/cross_domain_discovery_v4/monthly.pkl": "0a590c84bdbc2f5bcd5bdf6e25f5f82048bdaa0d1ad38d1dfd735845221971f9",
+    "data/experiments/cross_domain_discovery_v4/music_registry.json": "db90188b3cf103ce3c6e60ebc24aa6615c3df81689d92e2632409422163cc98e",
+    "data/external_historical/derived/all_observations.csv.xz": "0caa05be5abe4d77d149769e5fccfb0efb1702041d5f127ba633a955e42b056e",
+    "data/external_historical/financial/processed/acquisition_v1/aggregation_metadata_local.csv.xz": "8ce8c748f782ba2bacd1e2ea73ceb01e34b85c03406b8e0e90e739fceafc1e09",
+    "data/external_historical/financial/processed/acquisition_v1/native_local.csv.xz": "1cfb27e8750e12da4d12435fee92a7db69ff64d2cea77fa7773167f933b70f46",
+    "data/public/master_monthly.csv": "507dd443d2f3f35a6b5546d11ece7758a44851898af71da95fd65d92830d1f7c",
+    "data/public/music_enrichment_v2/monthly_by_genre.csv.xz": "5d9906661c92f99cf8214eaa6f4d35cbfab467ce68087aa72088522051cb3693",
+    "data/public/music_enrichment_v2/monthly_overall.csv.xz": "01383bf68484dc6b02fb261395cb8be3d420944eca5c9326cbdd14fdececd38e"
+  },
+  "runtime": {
+    "packages": {
+      "matplotlib": "3.9.0",
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "scipy": "1.13.1",
+      "statsmodels": "0.14.4",
+      "threadpoolctl": "3.5.0"
+    },
+    "platform": "macOS-13.6.6-arm64-arm-64bit",
+    "python": "3.9.6"
+  }
+}

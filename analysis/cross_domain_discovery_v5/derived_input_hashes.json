@@ -1,0 +1,22 @@
+{
+  "external.pkl": {
+    "bytes": 7431913,
+    "sha256": "91c5d1194857d26367bf28360da9e4eeebbb5caae156622ce41f2467ae404b0d"
+  },
+  "plan.pkl": {
+    "bytes": 3017155,
+    "sha256": "a33abc3d1a0df2a503571de7473d47d6f4d7d23def2b232f378c44b0cbd55659"
+  },
+  "shares.pkl": {
+    "bytes": 113957,
+    "sha256": "0243a9395e35ec2fead785ae19fdb0d8e215b7d402982f9fbd6cfe31895c1de5"
+  },
+  "stationarity.pkl": {
+    "bytes": 714022,
+    "sha256": "b1482ed2e88dbf69e4740ba8371b9ac9730d7a47628902188548ac94d4663de8"
+  },
+  "views.pkl": {
+    "bytes": 26653189,
+    "sha256": "ba85ab7946f6dccb801d3945d05b18267633631a117fe24455012182186e090a"
+  }
+}

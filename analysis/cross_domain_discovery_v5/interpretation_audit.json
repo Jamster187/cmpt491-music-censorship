@@ -1,0 +1,10 @@
+{
+  "adjusted_lyrical_rows_with_two_positive_folds_and_broad_variation": 0,
+  "concentration_rule": "Kish effective block count (sum energy)^2/sum(energy^2), separately for residual exposure energy and OLS score energy; six-block flag matches the original count floor but is an additional post-fit diagnostic.",
+  "corrected_adjusted_lyrical_rows": 178,
+  "corrected_rows": 712,
+  "diagnostic_status": "Post-fit sensitivity/interpretation audit; original estimates, global family and q values unchanged",
+  "numeric_corrected_rows": 712,
+  "numeric_rows_with_concentrated_variation": 603,
+  "source_role_policy": "Propagate the published feature dictionary role through fixed/matched composition; retain the original pipeline role and every tested row."
+}

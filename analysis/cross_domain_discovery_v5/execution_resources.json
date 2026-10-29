@@ -1,0 +1,15 @@
+{
+  "cumulative_recorded_compute_seconds": 1549.4242992910004,
+  "free_filesystem_bytes": 12945555456,
+  "local_bytes": 3522000127,
+  "maximum_compute_seconds": 14400,
+  "maximum_temporary_bytes": 15000000000,
+  "memory_note": "Observed peak exceeded the planning estimate; no RAM ceiling was specified. Compute and storage remain within the authorized limits.",
+  "original_peak_memory_projection_bytes": 1500000000,
+  "peak_measured_process_bytes": 3163111424,
+  "public_bytes": 17910778,
+  "status": "COMPLETE",
+  "storage_note": "Retained complete results, atomic checkpoints, ten ranking indexes, all public reports and task-specific temporary previews/logs. No duplicate original datasets.",
+  "task_temporary_preview_and_log_bytes": 1306044,
+  "total_retained_task_bytes": 3541216949
+}

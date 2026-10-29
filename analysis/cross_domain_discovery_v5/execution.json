@@ -1,0 +1,9 @@
+{
+  "completed_chunks": 39984,
+  "fingerprint": "768e126d98df984c1ccb9d1f7fa901211c35d0bf5c0e05a92cfbe5d1797b808d",
+  "new_chunks": 39884,
+  "peak_process_bytes": 563101696,
+  "seconds": 916.558688292,
+  "status": "COMPLETE",
+  "total_chunks": 39984
+}

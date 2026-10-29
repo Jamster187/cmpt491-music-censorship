@@ -1,0 +1,11 @@
+music_role,track,corrected_pair_track_rows,positive_all_three_folds,concentrated_numeric_rows
+analytical_construct,adjusted,67,3,67
+analytical_construct,raw,8,1,5
+genre_composition,adjusted,9,2,9
+measurement,adjusted,305,24,301
+measurement,raw,82,31,15
+provenance_or_quality,adjusted,9,1,9
+provenance_or_quality,raw,36,18,18
+quality_diagnostic,adjusted,8,0,8
+sample_size,adjusted,171,6,171
+sample_size,raw,17,0,0

@@ -1,0 +1,19 @@
+{
+  "BY_rejected_pair_track_rows": 712,
+  "dropping_below_absolute_r_point_one": 107882,
+  "estimable_pair_track_rows": 2840275,
+  "inferential_pair_track_rows": 1520058,
+  "pair_track_rows": 9116352,
+  "raw_absolute_r_at_least_half": 133839,
+  "status_counts": {
+    "constant_or_control_collinear": 4336,
+    "insufficient_native_periods": 4691437,
+    "insufficient_residual_df": 224,
+    "insufficient_time_blocks": 1547869,
+    "numerical_failure": 0,
+    "ok": 2840275,
+    "singular_covariance": 33,
+    "sparse_category": 32178
+  },
+  "with_estimable_adjusted_match": 119399
+}

@@ -1,0 +1,12 @@
+{
+  "adjusted": {
+    "all_three_estimable_pairs": 0,
+    "estimable_fixed_and_matched_pairs": 0,
+    "planned_numeric_comparators": 129024
+  },
+  "raw": {
+    "all_three_estimable_pairs": 57310,
+    "estimable_fixed_and_matched_pairs": 57310,
+    "planned_numeric_comparators": 129024
+  }
+}

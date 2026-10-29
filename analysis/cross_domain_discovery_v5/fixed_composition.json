@@ -1,0 +1,2016 @@
+[
+  {
+    "base_variable": "detox_identity_attack",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "detox_insult",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "detox_obscene",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "detox_severe_toxicity",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "detox_sexual_explicit",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "detox_threat",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "detox_toxicity",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_admiration",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_amusement",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_anger",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_annoyance",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_approval",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_caring",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_confusion",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_curiosity",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_desire",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_disappointment",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_disapproval",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_disgust",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_embarrassment",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_excitement",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_fear",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_gratitude",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_grief",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_joy",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_love",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_nervousness",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_neutral",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_optimism",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_pride",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_realization",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_relief",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_remorse",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_sadness",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "emotion_surprise",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "ll_explicit_language",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "ll_sexual_content",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "ll_substance_use",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "ll_violence",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_adjacent_end_rhyme_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_cmu_endword_coverage",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_cmu_token_coverage",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_compression_ratio",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_content_distance_prior_hits",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 312,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_content_distance_recent_chart",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 312,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_dependency_depth_mean",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_first_person_plural_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_first_person_singular_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_future_deixis_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_geographic_entity_token_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_hapax_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_hdd42",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_known_syllable_count",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_line_length_dispersion",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_longest_identical_line_run",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_mattr",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_mean_line_length",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_mean_token_characters",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_modern_wordfreq_coverage",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_modern_wordfreq_mean",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_mtld",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_multisyllabic_adjacent_rhyme_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_named_entity_token_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_negation_token_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_nlp_token_count",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_parser_sentence_length_mean",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_past_deixis_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_polysyllabic_covered_word_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_adj_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_adp_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_adv_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_aux_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_cconj_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_det_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_intj_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_noun_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_num_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_other_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_part_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_pron_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_propn_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_sconj_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_sym_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_verb_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_pos_x_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_question_line_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_repeated_bigram_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_repeated_line_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_rhyme_pair_coverage",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_second_person_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_semantic_chunks",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_semantic_drift_from_credit",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 185,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_semantic_novelty_prior_hits",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 312,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_semantic_prior_credit_reference_n",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_semantic_prior_hit_reference_n",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_semantic_wordpieces",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_syllable_count_complete",
+    "genres": [
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 252,
+    "training_end": "1982-12",
+    "weights": [
+      0.32856036554304036,
+      0.33624659747557123,
+      0.3351930369813884
+    ]
+  },
+  {
+    "base_variable": "lyric_syllables_per_covered_word",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_temporal_deixis_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_terminal_repetition_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_third_person_feminine_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_third_person_masculine_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_third_person_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_title_phrase_repetition",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_token_entropy",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_verb_past_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_verb_present_share",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_vocabulary_size",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "lyric_word_count",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "sentiment_negative",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "sentiment_neutral",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  },
+  {
+    "base_variable": "sentiment_positive",
+    "genres": [
+      "Country",
+      "Pop",
+      "R&B / Soul",
+      "Rock"
+    ],
+    "missing_genres_not_renormalized": true,
+    "observed_complete_months": 313,
+    "training_end": "1982-12",
+    "weights": [
+      0.08017032743382377,
+      0.30221957345567796,
+      0.30928959765744557,
+      0.3083205014530527
+    ]
+  }
+]

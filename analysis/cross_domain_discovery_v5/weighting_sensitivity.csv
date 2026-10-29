@@ -1,0 +1,5 @@
+track,population,comparable_pairs,median_absolute_correlation_change,p95_absolute_correlation_change,maximum_absolute_correlation_change,sign_changes,sign_changes_with_both_absolute_r_above_point01,interpretation
+raw,overall,375756,6.0387246776372194e-06,9.4492454081773758e-05,0.084465350955724716,35,0,Equal native-period weighting versus distinct chart-song population count weighting; descriptive only
+raw,within_genre,1140941,0.029375523328781128,0.13922813534736633,0.61283974349498749,107990,55661,Equal native-period weighting versus distinct chart-song population count weighting; descriptive only
+adjusted,overall,217009,1.0173767805099487e-05,7.4904784560203466e-05,0.0011420100927352905,64,0,Equal native-period weighting versus distinct chart-song population count weighting; descriptive only
+adjusted,within_genre,1097911,0.009697824832983315,0.042688046582043171,0.36902555823326111,147646,22157,Equal native-period weighting versus distinct chart-song population count weighting; descriptive only

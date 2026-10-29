@@ -1,0 +1,180 @@
+{
+  "segments": [
+    {
+      "action": "inventory",
+      "id": 1,
+      "seconds": 11.469053500000001,
+      "start_epoch": 1793253183.215656,
+      "stop_epoch": 1793253194.685024
+    },
+    {
+      "action": "inventory",
+      "id": 2,
+      "seconds": 6.046327000000001,
+      "start_epoch": 1793253805.507561,
+      "stop_epoch": 1793253811.5543911
+    },
+    {
+      "action": "fix",
+      "id": 3,
+      "seconds": 2.218921667,
+      "start_epoch": 1793253965.189355,
+      "stop_epoch": 1793253967.408764
+    },
+    {
+      "action": "fix",
+      "id": 4,
+      "seconds": 2.6367402920000003,
+      "start_epoch": 1793254143.7052941,
+      "stop_epoch": 1793254146.342456
+    },
+    {
+      "action": "initial_timing",
+      "id": 5,
+      "seconds": 0.56762225,
+      "start_epoch": 1793254167.194473,
+      "stop_epoch": 1793254167.762859
+    },
+    {
+      "action": "inventory",
+      "id": 6,
+      "seconds": 6.01957375,
+      "start_epoch": 1793254192.67991,
+      "stop_epoch": 1793254198.700585
+    },
+    {
+      "action": "benchmark",
+      "id": 7,
+      "seconds": 16.4723635,
+      "start_epoch": 1793254259.5645728,
+      "stop_epoch": 1793254276.037481
+    },
+    {
+      "action": "stationarity",
+      "id": 8,
+      "seconds": 8.46717825,
+      "start_epoch": 1793254363.5989,
+      "stop_epoch": 1793254372.066963
+    },
+    {
+      "action": "run",
+      "id": 9,
+      "seconds": 11.52526025,
+      "start_epoch": 1793254412.829055,
+      "stop_epoch": 1793254424.3566358
+    },
+    {
+      "action": "run",
+      "id": 10,
+      "seconds": 916.7575875829999,
+      "start_epoch": 1793254449.9474418,
+      "stop_epoch": 1793255366.714962
+    },
+    {
+      "action": "finalize",
+      "id": 11,
+      "seconds": 21.133986999999998,
+      "start_epoch": 1793255376.36043,
+      "stop_epoch": 1793255397.4723241
+    },
+    {
+      "action": "rankings_and_report",
+      "id": 12,
+      "seconds": 16.084518791,
+      "start_epoch": 1793255428.478911,
+      "stop_epoch": 1793255444.562696
+    },
+    {
+      "action": "rankings_and_report",
+      "id": 13,
+      "seconds": 17.029743832999998,
+      "start_epoch": 1793255460.964341,
+      "stop_epoch": 1793255477.994377
+    },
+    {
+      "action": "numerical_validation",
+      "id": 14,
+      "seconds": 26.074452458000003,
+      "start_epoch": 1793255549.774627,
+      "stop_epoch": 1793255575.84955
+    },
+    {
+      "action": "rankings_and_report",
+      "id": 15,
+      "seconds": 28.183179333,
+      "start_epoch": 1793255794.169546,
+      "stop_epoch": 1793255822.353183
+    },
+    {
+      "action": "rankings_and_report",
+      "id": 16,
+      "seconds": 27.863082000000002,
+      "start_epoch": 1793256133.73047,
+      "stop_epoch": 1793256161.593986
+    },
+    {
+      "action": "rankings_and_report",
+      "id": 17,
+      "seconds": 27.225724417,
+      "start_epoch": 1793256216.658126,
+      "stop_epoch": 1793256243.884284
+    },
+    {
+      "action": "numerical_validation",
+      "id": 18,
+      "seconds": 32.284559334,
+      "start_epoch": 1793256365.224203,
+      "stop_epoch": 1793256397.508148
+    },
+    {
+      "action": "presentation_final",
+      "id": 19,
+      "seconds": 3.0870397499999997,
+      "start_epoch": 1793256470.856368,
+      "stop_epoch": 1793256473.943809
+    },
+    {
+      "action": "integrity_and_tests",
+      "id": 20,
+      "seconds": 334.727948916,
+      "start_epoch": 1793256549.7871318,
+      "stop_epoch": 1793256884.515985
+    },
+    {
+      "action": "saved_estimate_sensitivities",
+      "id": 21,
+      "seconds": 7.1452743750000005,
+      "start_epoch": 1793256914.3009229,
+      "stop_epoch": 1793256921.446568
+    },
+    {
+      "action": "publication_validation",
+      "id": 22,
+      "seconds": 3.372338917,
+      "start_epoch": 1793257164.9032729,
+      "stop_epoch": 1793257168.276017
+    },
+    {
+      "action": "publication_validation",
+      "id": 23,
+      "seconds": 9.194899958,
+      "start_epoch": 1793257304.909853,
+      "stop_epoch": 1793257314.105202
+    },
+    {
+      "action": "svg_publication_format",
+      "id": 24,
+      "seconds": 4.9446710419999995,
+      "start_epoch": 1793257526.35023,
+      "stop_epoch": 1793257531.2953758
+    },
+    {
+      "action": "publication_validation",
+      "id": 25,
+      "seconds": 8.892251125,
+      "start_epoch": 1793257661.435406,
+      "stop_epoch": 1793257670.3282151
+    }
+  ],
+  "total_seconds": 1549.4242992910004
+}

@@ -1,0 +1,24 @@
+{
+  "chart_dates_are_not_release_dates": true,
+  "distinct_row_ids_unchanged": true,
+  "first_month": "1958-08",
+  "last_month": "2026-09",
+  "latest_observed_chart": "2026-09-19",
+  "month_snapshot_rule": "Last supplied Billboard chart in each calendar month; September 2026 ends at September 19 and is incomplete",
+  "original_genre_month_rows": 7173,
+  "original_monthly_rows": 818,
+  "published_view_agreement": [
+    {
+      "population": "monthly",
+      "published_measurements_reproduced": 340,
+      "rows": 818
+    },
+    {
+      "population": "genre_month",
+      "published_measurements_reproduced": 340,
+      "rows": 7173
+    }
+  ],
+  "source_rows": 81797,
+  "status": "PASS"
+}

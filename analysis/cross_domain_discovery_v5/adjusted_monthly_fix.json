@@ -1,0 +1,18 @@
+{
+  "correct_residual_df": 274,
+  "correction": "Weighted, column-scaled SVD retains the entire nuisance column space. Inference uses its numerical rank. No outcome-based control removal; external effects still require identifiable residual variation.",
+  "future_control_policy": "A validation row outside the training control row space is marked unsupported, not assigned an invented coefficient.",
+  "nominal_residual_df": 273,
+  "null_relation_max_abs_residual": 1.3491207005816207e-17,
+  "null_space_relation": {
+    "genre_share__K-Pop": -1.0
+  },
+  "original_columns": 19,
+  "original_failure": "V4 rejected every rank-deficient full design, including harmless linear dependencies among nuisance controls.",
+  "original_rank": 18,
+  "original_v4_code_and_results_changed": false,
+  "reference_prediction_max_abs_error": 5.134781488891349e-16,
+  "retained_span_rank": 18,
+  "status": "PASS",
+  "training_rows": 293
+}

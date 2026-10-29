@@ -1,0 +1,25 @@
+{
+  "complete_chunks": 39984,
+  "complete_ranking_rows": {
+    "adjusted": 4558176,
+    "between_genre": 37632,
+    "financial": 3069792,
+    "historically_stable": 9116352,
+    "lagged": 7596960,
+    "macroeconomic": 3720960,
+    "multiple_testing": 712,
+    "political_social": 1953504,
+    "raw": 4558176,
+    "within_genre": 7836864
+  },
+  "independent_global_BY_max_error": 2.220446049250313e-16,
+  "method_hypotheses": 18046656,
+  "pair_track_rows": 9116352,
+  "peak_process_bytes": 2756558848,
+  "replay_float_atol": 1e-12,
+  "replay_float_rtol": 1e-09,
+  "replay_maximum_scaled_error": 1.5543122344752192e-15,
+  "replayed_chunks": 170,
+  "resumed_initial_chunks_unchanged": 100,
+  "status": "PASS"
+}

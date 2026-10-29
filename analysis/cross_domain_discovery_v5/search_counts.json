@@ -1,0 +1,20 @@
+{
+  "chunks": 39984,
+  "eligible_view_pairs": 759696,
+  "external_domains": [
+    "cultural",
+    "financial",
+    "macroeconomic",
+    "political",
+    "social"
+  ],
+  "external_variables": 196,
+  "lag_count": 6,
+  "lagged_pairs": 4558176,
+  "method_hypotheses": 18046656,
+  "music_variables": 544,
+  "music_view_variables": 3876,
+  "pair_track_rows": 9116352,
+  "tracks": 2,
+  "views": 17
+}

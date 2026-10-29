@@ -1,0 +1,111 @@
+{
+  "completed_checks": {
+    "all_original_data_and_analyses": {
+      "baseline_commit": "51eb89878f072bc713cb43b7d1a5b69be4a4d95c",
+      "bytes": 41051283297,
+      "files": 279382,
+      "status": "PASS",
+      "verification_seconds": 93.73165245800001
+    },
+    "final_public_dataset": {
+      "command": [
+        "python3",
+        "src/final_dataset.py",
+        "validate"
+      ],
+      "returncode": 0,
+      "seconds": 142.54768275
+    },
+    "original_figure_catalog": {
+      "command": [
+        "python3",
+        "src/figure_audit.py",
+        "--validate"
+      ],
+      "returncode": 0,
+      "seconds": 1.670684625000007
+    },
+    "phase1_foundation": {
+      "command": [
+        "python3",
+        "src/phase1.py",
+        "validate"
+      ],
+      "returncode": 0,
+      "seconds": 8.100016874999994
+    },
+    "pre_campaign_tracked_and_v4_files": {
+      "baseline_commit": "bf1e299f9842ee9297082d020bb24041936af44b",
+      "files": 2424,
+      "status": "PASS",
+      "verification_seconds": 4.480013291000006
+    },
+    "prior_v4_publication": {
+      "full_campaign_started": false,
+      "publication_files": 56,
+      "status": "PASS",
+      "verification_seconds": 0.025482417000006308
+    },
+    "repository_layout": {
+      "command": [
+        "python3",
+        "src/repository_layout.py"
+      ],
+      "returncode": 0,
+      "seconds": 3.542248667000024
+    },
+    "unit_tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "returncode": 0,
+      "seconds": 80.616242833,
+      "skipped": 16,
+      "test_seconds": 79.236,
+      "tests_run": 668
+    }
+  },
+  "final_publication_checks": {
+    "complete_ranking_export": {
+      "public_summary_agrees": true,
+      "rows": 10,
+      "status": "PASS"
+    },
+    "deterministic_figures": {
+      "byte_identical": true,
+      "status": "PASS",
+      "svg_files": 7
+    },
+    "final_navigation": {
+      "command": [
+        "python3",
+        "src/repository_layout.py"
+      ],
+      "seconds": 3.529266667,
+      "status": "PASS"
+    },
+    "focused_tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_pairwise_v5.py",
+        "-v"
+      ],
+      "seconds": 0.8073734159999999,
+      "status": "PASS"
+    }
+  },
+  "original_data_and_previous_analyses_unchanged": true,
+  "status": "PASS"
+}
