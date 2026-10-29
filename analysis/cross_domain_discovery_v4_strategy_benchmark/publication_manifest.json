@@ -1,0 +1,228 @@
+{
+  "files": {
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/README.md": {
+      "bytes": 6328,
+      "sha256": "dbff27c9f15be11eab8dd15a0dcae3a3043a202ad8b97b8e5892f6891e5dad81"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/benchmark_design.md": {
+      "bytes": 10786,
+      "sha256": "ea3e38deb9c4784b4e531d51d1777aeb3257367b63083a8761651a8e069c5982"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/benchmark_execution.json": {
+      "bytes": 576,
+      "sha256": "0f1c7f3192fb2fbebc3b7a9a60854d6b9098c4c539e87473d33b14e9b6c74c6e"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/calibration_worlds.csv": {
+      "bytes": 6626,
+      "sha256": "12bebcae963648158438df945753edc50f6d666014b16f8cd52f6a29a5b45de5"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/candidate_distribution.csv": {
+      "bytes": 5735744,
+      "sha256": "60094c908e1de73755be96fecdf3a39bf3e2ed6ee8ff9a861c018a2f28a9e85c"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/development_execution.json": {
+      "bytes": 580,
+      "sha256": "299d548012da0b9eb143a6e512a66b373560135611ab93f29ef83390b918a236"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/discovery_recall.csv": {
+      "bytes": 17641,
+      "sha256": "e24e71cad9f6e05a899c2c6813c856c4ce2aa49633a00d4858824db7bdca4775"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/domain_coverage.csv": {
+      "bytes": 101014,
+      "sha256": "22ec57f6d2d855bfaa657cd7bbeb646d81e7f5cdbed0b95eb38877b8914dd943"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/engineering_validation.json": {
+      "bytes": 3987,
+      "sha256": "ae23b429681b7e07719b6a1bab0752883c6a382c4daf9d2f40429614a0895c33"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/estimator_fit_status.csv": {
+      "bytes": 42939,
+      "sha256": "af9dea77bfa53cb3896826f16fb25f15d0774a7d96aa0dbe31d51aca18b0cb56"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/estimator_limitations.json": {
+      "bytes": 4120,
+      "sha256": "97615f9ed92ad8633fd879afc79fa29f3822146a6008afbec73881ac597865fd"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/figures/domain_coverage.svg": {
+      "bytes": 43948,
+      "sha256": "2f97900df2817e518f890970ee31379be2d346868730274191b498c5f58d823f"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/figures/false_discovery_behavior.svg": {
+      "bytes": 38654,
+      "sha256": "394da5d3764f2718eb981c60055adddc3e2a0c134c8cc5981fdd0cc46ab015be"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/figures/recall_by_family.svg": {
+      "bytes": 55248,
+      "sha256": "96415a1bb7408c3a37a1b824608f8fdd8a96ba5e9e493eaaba382557c6be8da9"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/figures/recall_vs_runtime.svg": {
+      "bytes": 65802,
+      "sha256": "889fea84fc20dc3462ac09966dbe84a390ae9744595e866155961fa50f681e5c"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/figures/strategy_stability.svg": {
+      "bytes": 32926,
+      "sha256": "373a1b3b421e1fd411e2d33fbfa273e93cd3cb2a78ee4e45f7fcdca943fc8b4f"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/findings.md": {
+      "bytes": 7860,
+      "sha256": "2f16e8978610275d9ee5772d5efb9effd674fad50d474d305e12ae22fe2387a1"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/frozen_protocol.json": {
+      "bytes": 5509,
+      "sha256": "0b04d029af9ac37f64e95b4c303842284fe8b1a6f7ede63e3e1eceac7420f023"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/known_reference_models.csv": {
+      "bytes": 1116,
+      "sha256": "9c3b2495cee130881316d00e3c58094dad6039b85aaa7dc39ca0b1e14af3bff3"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/known_reference_results.csv": {
+      "bytes": 25637,
+      "sha256": "33ddf266ec9196e8db4294f337bec8752bcd1e83509ca8d22cd2afec25081311"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/known_reference_summary.csv": {
+      "bytes": 310,
+      "sha256": "57fbafb61209d311caebd71eb7d6da5ab730f6b0c583d971ee386659d6da8a05"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/methodology.md": {
+      "bytes": 6104,
+      "sha256": "6b154525248892b4e2809fc8acd1d19d59a80b9c83e6d1df0511cf91dbe85805"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/null_calibration.csv": {
+      "bytes": 1668,
+      "sha256": "8b9fb6bbfa6dc37d7f3cde67ca0ad444f959bd531986d34bee7da2a2f1094bcc"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/null_thresholds.json": {
+      "bytes": 332,
+      "sha256": "f1f870be71948cf5be280346b1af6b6bf8ec76cf808e77ad47f02d1902072308"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/oracle_diagnostics.csv": {
+      "bytes": 98626,
+      "sha256": "41536717e01682b702930530fd6e63148f17db9104fdc0e2ed1577e7f29d5b38"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/preserved_storage_stops.json": {
+      "bytes": 1712,
+      "sha256": "41711602f356d2fa88cfe010c97b08f0fa9263fbd26b926a68df4cac7d9660c5"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/production_projection.csv": {
+      "bytes": 999,
+      "sha256": "0043f6df9ac95368e95cb2de90c768d136f3b2df9ba00c6b3bbf1d438cdeae4f"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/protocol.json": {
+      "bytes": 2232,
+      "sha256": "58d0cc06fa29697dd79388f227f2c3511b9f3a28d6cd5f872cca6600842c5c0d"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/recommendation.json": {
+      "bytes": 6279,
+      "sha256": "5dbed91532fc9ca8e74e0a2c0eab69ac327d9a4e9ad9a92db2e6bfad98f2e629"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/regime_reversal_results.csv": {
+      "bytes": 217,
+      "sha256": "836830dbf2a4bdbe3544a13feb3be74a801598956e030dd1558d63992efcaec6"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/relationship_family_coverage.csv": {
+      "bytes": 495641,
+      "sha256": "5dfb83941458dafc47e395008e8de98aa3b62e44acfbed7d0702d8037a82fed5"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/resource_segments.csv": {
+      "bytes": 652,
+      "sha256": "0465b770b1209705229d9bfeb58316a72acf1837e72029eaa5cd59aa580ce5e4"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/runtime_benchmarks.csv": {
+      "bytes": 341168,
+      "sha256": "2c53b9ebf417ed8d0c5e6144ab21ff5d7954a6d423b3d1c57f3455613f0ff4ac"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/search_space_accounting.json": {
+      "bytes": 1582,
+      "sha256": "79885a295213e0a225a2be2c3edbc165d4458991e650b1be0358f2ea0b88baea"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/seed_stability.csv": {
+      "bytes": 266261,
+      "sha256": "a8db3bd7e7401be071b768b730dd82a5725c94159ae1aac6cfe7ffa73e009280"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/selected_diagnostics.csv": {
+      "bytes": 2984516,
+      "sha256": "61faff0c857f5cedf21966430e63c2758df6a3cd6ec77b708c39fea653fbf2d3"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/strategy_comparison.csv": {
+      "bytes": 1255,
+      "sha256": "7fb39e03fe33c9d419463c0fc49c2ed23c1fa7f8ac926b4d4e4e8266a9054c5b"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/synthetic_signal_results.csv": {
+      "bytes": 425238,
+      "sha256": "626c8a244a0faebf5979d43aca48be04cfc22f88d86f16663a1eb89431270b6b"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/synthetic_world_diagnostics.csv": {
+      "bytes": 15747,
+      "sha256": "83e345a46530a1ed5ff8bdaed1cbcf2ca39c9c5e74d4c08331e9750cca2f0bc4"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/task_universe.csv": {
+      "bytes": 2445325,
+      "sha256": "cbfbe836858c65b3c00a6fee8bf04b6818d74b60a7fe79da3396f6323c846871"
+    },
+    "analysis/cross_domain_discovery_v4_strategy_benchmark/validation.json": {
+      "bytes": 2584,
+      "sha256": "12cc8fb02d0168cd42e14cfa40517e547f585b11f78fcd665187cacd3e3e7a8e"
+    },
+    "src/cross_domain_v4_audit.py": {
+      "bytes": 12957,
+      "sha256": "d37ea30c69846a333606b5688ca38e77b26906ced30bededf86966660064dfb7"
+    },
+    "src/cross_domain_v4_common.py": {
+      "bytes": 5364,
+      "sha256": "b1ad2aa101914863857db518462551da4cea868f4b1d38fa528231754fe7d780"
+    },
+    "src/cross_domain_v4_data.py": {
+      "bytes": 26370,
+      "sha256": "3c1de3ad8d4f6be888c92d7cfbb6e11432241d74b5c903e662a43aaa55739f41"
+    },
+    "src/cross_domain_v4_pilot.py": {
+      "bytes": 16961,
+      "sha256": "eb7362300f30dbb4a0db05819f2bb71a5b2e98199e4021301d94b9bd116ec569"
+    },
+    "src/hierarchical_v4_common.py": {
+      "bytes": 6136,
+      "sha256": "cf85c1e77e8da216a69d439a377ed5203fc7e98648469318206835695b9f5303"
+    },
+    "src/hierarchical_v4_engine.py": {
+      "bytes": 17383,
+      "sha256": "575e2d6ed07dfc2a08fe499aea1c4d1ba1b15054ed07d9ce1234f850ff256b9a"
+    },
+    "src/hierarchical_v4_screen.py": {
+      "bytes": 8771,
+      "sha256": "54a9b37f7270ce0312bf71cef92f02e7a96856ac2ba673a1f639609f0035cb8a"
+    },
+    "src/regression_core.py": {
+      "bytes": 11536,
+      "sha256": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69"
+    },
+    "src/strategy_v4_common.py": {
+      "bytes": 12054,
+      "sha256": "76f1690e082bbdacbb3d2b8737ceed536ad1a7d7239b9c48ee4e27232dd0c10b"
+    },
+    "src/strategy_v4_data.py": {
+      "bytes": 13885,
+      "sha256": "cc8d01ba1c0afc8416681af1ae0ecd7b0f7caedc520babdc97226066ab1f41b1"
+    },
+    "src/strategy_v4_engine.py": {
+      "bytes": 12580,
+      "sha256": "16216f99c89d0971bcc525f3190f695ee92a0e64d0601f51c9df1b490a05aa21"
+    },
+    "src/strategy_v4_report.py": {
+      "bytes": 89240,
+      "sha256": "5904159c32f133bf842dc4c1f49f2db03bf310f3225fca8fe72fe80864ef0de6"
+    },
+    "src/strategy_v4_run.py": {
+      "bytes": 13466,
+      "sha256": "233b1173041064da72714483988729db341273a821420932717fa112e315b85b"
+    },
+    "src/strategy_v4_search.py": {
+      "bytes": 13768,
+      "sha256": "0bffd6420476d35f219fc2d9e0161d8af24caffaabdd16b50c365bbd5590dd5f"
+    },
+    "tests/test_strategy_v4.py": {
+      "bytes": 20040,
+      "sha256": "641831bdd82384a4dad9e3e74196dee5601cc74e3bdb3b8d690cf00e510d2eb4"
+    }
+  }
+}

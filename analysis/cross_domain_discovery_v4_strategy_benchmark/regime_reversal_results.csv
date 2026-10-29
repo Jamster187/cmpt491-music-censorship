@@ -1,0 +1,7 @@
+strategy,track,worlds,worlds_incorrectly_accepted_as_stable,acceptance_rate
+A,adjusted,3,0,0
+A,raw,3,0,0
+B,adjusted,3,1,0.33333333333333331
+B,raw,3,1,0.33333333333333331
+C,adjusted,3,1,0.33333333333333331
+C,raw,3,0,0

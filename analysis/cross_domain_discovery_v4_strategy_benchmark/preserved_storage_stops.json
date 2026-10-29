@@ -1,0 +1,48 @@
+[
+  {
+    "execution": {
+      "checkpoint": "data/experiments/cross_domain_discovery_v4_strategy_benchmark/benchmark.sqlite",
+      "completed_assessments": 873,
+      "completed_cases": 97,
+      "completed_searches": 880,
+      "full_campaign_started": false,
+      "local_bytes": 1382802898,
+      "mode": "benchmark",
+      "peak_process_rss_bytes": 4840177664,
+      "reason": "Benchmark storage/headroom cap reached",
+      "status": "BUDGET_STOP_PARTIAL",
+      "strategy_charged_seconds": {
+        "A": 1367.950965321996,
+        "B": 1175.938304996,
+        "C": 1183.4018036990017
+      },
+      "this_run_seconds": 3560.733553209,
+      "total_charged_benchmark_seconds": 3899.2539046138695
+    },
+    "sha256": "78a1242c2807bec895407395b6762166a20e2839dd5f78d7803474aa5a940d20",
+    "source": "storage_stop_20261028_execution.json"
+  },
+  {
+    "execution": {
+      "checkpoint": "data/experiments/cross_domain_discovery_v4_strategy_benchmark/benchmark.sqlite",
+      "completed_assessments": 873,
+      "completed_cases": 97,
+      "completed_searches": 880,
+      "full_campaign_started": false,
+      "local_bytes": 1382825907,
+      "mode": "benchmark",
+      "peak_process_rss_bytes": 4829282304,
+      "reason": "Benchmark storage/headroom cap reached",
+      "status": "BUDGET_STOP_PARTIAL",
+      "strategy_charged_seconds": {
+        "A": 1367.9509653219955,
+        "B": 1175.9383049960002,
+        "C": 1183.4018036990008
+      },
+      "this_run_seconds": 37.412212625,
+      "total_charged_benchmark_seconds": 3936.6661172388694
+    },
+    "sha256": "c8f1d58b6824f150769b1f4cd18ef95e3a753b5b41add01443bab9640a5f1b29",
+    "source": "storage_stop_20261028_resume1_execution.json"
+  }
+]

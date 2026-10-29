@@ -1,0 +1,4 @@
+strategy,reference_tasks,seeded_runs,sampled_family_recovery,selected_family_recovery,calibrated_family_recovery,calibrated_exact_recovery,oracle_transfer_pass_fraction
+A,5,15,0,0,0,0,0.40000000000000002
+B,5,15,0.13333333333333333,0,0,0,0.40000000000000002
+C,5,15,0.13333333333333333,0,0,0,0.40000000000000002

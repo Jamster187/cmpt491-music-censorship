@@ -1,0 +1,19 @@
+{
+  "checkpoint": "data/experiments/cross_domain_discovery_v4_strategy_benchmark/benchmark.sqlite",
+  "completed_assessments": 1773,
+  "completed_cases": 197,
+  "completed_searches": 1773,
+  "full_campaign_started": false,
+  "local_bytes": 2021831815,
+  "mode": "benchmark",
+  "peak_process_rss_bytes": 5025972224,
+  "reason": null,
+  "status": "COMPLETE",
+  "strategy_charged_seconds": {
+    "A": 2888.100340183007,
+    "B": 2442.014038711991,
+    "C": 2443.1324191259973
+  },
+  "this_run_seconds": 4189.178065749999,
+  "total_charged_benchmark_seconds": 8125.844182988869
+}

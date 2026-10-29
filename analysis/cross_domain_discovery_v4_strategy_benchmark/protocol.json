@@ -1,0 +1,78 @@
+{
+  "a_global_seeds": 16,
+  "a_per_domain_seeds": 2,
+  "a_random_fraction": 0.25,
+  "assessment_folds": [
+    2,
+    3
+  ],
+  "block_months": 24,
+  "bootstrap_replicates": 128,
+  "c_elite": 8,
+  "c_fixed_exploration_fraction": 0.5,
+  "c_initial_random": 32,
+  "calibration_seed": 4917000,
+  "calibration_worlds_per_population_track": 4,
+  "combinations_per_cell": 4096,
+  "confirm_per_model_family": 3,
+  "development_seed": 4916000,
+  "diversity_signature_cap": 4,
+  "embargo_months": 84,
+  "final_seed": 4918000,
+  "final_worlds_per_signal_population_track": 2,
+  "free_reserve_bytes": 2147483648,
+  "full_campaign_authorized": false,
+  "inference": "Exploratory transfer and simulation recovery; no causal or post-selection p-value/FDR claims",
+  "minimum_native_test_periods": 3,
+  "minimum_native_train_periods": 12,
+  "minimum_residual_df": 8,
+  "minimum_skill": 0.01,
+  "minimum_test_months": 6,
+  "minimum_train_months": 24,
+  "minimum_uncertainty_blocks": 6,
+  "minimum_worst_skill": 0.0,
+  "model_families": [
+    "additive",
+    "polynomial"
+  ],
+  "multiplicity": "Independent development-null calibration of the maximum reported score from the complete search-and-selection procedure; no selected-only adjusted p-values",
+  "nominal_error": 0.05,
+  "parent_commit": "9cee34f2077da8e93a9c4f67c654ff5bf3809951",
+  "polynomial_max_columns": 64,
+  "polynomial_terms": "Additive original-variable encodings plus numeric squares, all numeric pair products and the numeric triple product",
+  "production_maximum_null_world_acceptance": 0.1,
+  "production_minimum_family_recall": 0.5,
+  "rank": "Mean early validation skill plus 0.5 times worst early skill; exact IDs break ties",
+  "search_folds": [
+    0,
+    1
+  ],
+  "search_seconds_per_cell": 3.0,
+  "search_seeds": [
+    4915101,
+    4915102,
+    4915103
+  ],
+  "signal_types": [
+    "linear",
+    "nonlinear",
+    "interaction",
+    "conditional",
+    "temporal",
+    "spurious_trend",
+    "null"
+  ],
+  "strategy_seconds": 3600,
+  "synthetic_ar_levels": [
+    0.65,
+    0.85
+  ],
+  "synthetic_family_loading": 0.8,
+  "synthetic_noise_levels": [
+    0.65,
+    1.0
+  ],
+  "temporary_bytes": 15000000000,
+  "total_seconds": 14400,
+  "version": "strategy-benchmark-v4-2"
+}

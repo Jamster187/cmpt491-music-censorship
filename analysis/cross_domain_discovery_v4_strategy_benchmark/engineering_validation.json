@@ -1,0 +1,131 @@
+{
+  "checks": {
+    "estimator_coverage_limit": {
+      "control_matrices_independently_diagnosed": 8,
+      "frozen_core_unchanged": true,
+      "groups_without_selected_models": [
+        {
+          "cases": 4,
+          "phase": "calibration",
+          "population": "monthly",
+          "searches": 36,
+          "selected_models": 0,
+          "strategies": [
+            "A",
+            "B",
+            "C"
+          ],
+          "track": "adjusted"
+        },
+        {
+          "cases": 14,
+          "phase": "final",
+          "population": "monthly",
+          "searches": 126,
+          "selected_models": 0,
+          "strategies": [
+            "A",
+            "B",
+            "C"
+          ],
+          "track": "adjusted"
+        },
+        {
+          "cases": 14,
+          "phase": "real",
+          "population": "monthly",
+          "searches": 126,
+          "selected_models": 0,
+          "strategies": [
+            "A",
+            "B",
+            "C"
+          ],
+          "track": "adjusted"
+        }
+      ],
+      "source": "estimator_limitations.json",
+      "status": "LIMITATION_DOCUMENTED"
+    },
+    "focused_benchmark_tests": {
+      "elapsed_seconds": 0.76,
+      "log_sha256": "009945763b3c161c063f7e5dffec79d902aba8eea09d6bfe8d5ddc641ade58c8",
+      "skipped": 0,
+      "status": "PASS",
+      "tests_run": 30
+    },
+    "full_test_suite": {
+      "elapsed_seconds": 80.186,
+      "log_sha256": "d3ae74ed6459af08a3cf7fdcbd80c735418c1fc1b1743a7090cf96a0982cc559",
+      "skipped": 16,
+      "status": "PASS",
+      "tests_run": 645
+    },
+    "new_figure_visual_review": {
+      "figures": [
+        "recall_vs_runtime",
+        "recall_by_family",
+        "domain_coverage",
+        "false_discovery_behavior",
+        "strategy_stability"
+      ],
+      "observations": "PNG previews inspected; axes, labels, legends and error bars visible; final SVGs use the same figures.",
+      "status": "PASS"
+    },
+    "original_preservation": {
+      "log_sha256": "d212d279df781fc325cd14b33282e87f28327ecf6e92be486efc9cdcea4bc5d0",
+      "result": {
+        "baseline_commit": "51eb89878f072bc713cb43b7d1a5b69be4a4d95c",
+        "bytes": 41051283297,
+        "files": 279382,
+        "status": "PASS"
+      }
+    },
+    "previous_figure_catalog": {
+      "figures": 952,
+      "log_sha256": "2c3c920aeaffd1698b011b25caba9ab96f57404999e17d18290b2f0905432610",
+      "status": "PASS",
+      "unchanged_numerical_inputs": 32
+    },
+    "previous_hierarchical_publication": {
+      "log_sha256": "0c26c80ba45e430bef13f68345e6b942e550892f93ddd3dfeef9e9ab8955e2bd",
+      "result": {
+        "full_campaign_started": false,
+        "gate": "BUDGET_NOT_MET",
+        "publication_files": 33,
+        "status": "PASS"
+      }
+    },
+    "public_only_release": {
+      "description": "Isolated copy of exactly the manifest-listed publication/source files; public verification passes without any data directory.",
+      "private_inputs_present": false,
+      "publication_files": 56,
+      "status": "PASS"
+    },
+    "public_summary_cross_checks": {
+      "all_public_counts_cross_checked": true,
+      "candidate_combinations": 1627673,
+      "completed_cases": 197,
+      "csv_reading": "Preserve the literal family label null with keep_default_na=False.",
+      "null_world_acceptance_recomputed": true,
+      "predictor_domains_per_population_track": 15,
+      "seeded_searches": 1773,
+      "status": "PASS",
+      "structural_combinations": 1982281480778,
+      "target_domains_per_population_track": 14,
+      "task_universe": 10097
+    },
+    "repository_layout": {
+      "log_sha256": "c58c243ec62929a9bbda0c230d5c0fad66bc0bba2856bce87c4586f8c12e7fe2",
+      "result": {
+        "frozen_release_hashes": "PASS",
+        "immutable_artifacts_checked": 1070,
+        "local_markdown_links_checked": 951,
+        "private_tracked_files": 0,
+        "stale_active_paths": 0
+      }
+    }
+  },
+  "full_campaign_started": false,
+  "status": "PASS"
+}

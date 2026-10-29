@@ -1,0 +1,145 @@
+{
+  "control_diagnostics": [
+    {
+      "case_key": "03c295e51e09f90b0f7a",
+      "control_columns": 19,
+      "control_rank_svd": 18,
+      "diagnostic": "Training-only weighted control matrix; relative SVD tolerance 1e-8",
+      "fold": 0,
+      "phase": "final",
+      "population": "monthly",
+      "track": "adjusted",
+      "zero_control_indices": [
+        11
+      ]
+    },
+    {
+      "case_key": "03c295e51e09f90b0f7a",
+      "control_columns": 19,
+      "control_rank_svd": 18,
+      "diagnostic": "Training-only weighted control matrix; relative SVD tolerance 1e-8",
+      "fold": 1,
+      "phase": "final",
+      "population": "monthly",
+      "track": "adjusted",
+      "zero_control_indices": [
+        11
+      ]
+    },
+    {
+      "case_key": "03c295e51e09f90b0f7a",
+      "control_columns": 19,
+      "control_rank_svd": 18,
+      "diagnostic": "Training-only weighted control matrix; relative SVD tolerance 1e-8",
+      "fold": 2,
+      "phase": "final",
+      "population": "monthly",
+      "track": "adjusted",
+      "zero_control_indices": [
+        11
+      ]
+    },
+    {
+      "case_key": "03c295e51e09f90b0f7a",
+      "control_columns": 19,
+      "control_rank_svd": 18,
+      "diagnostic": "Training-only weighted control matrix; relative SVD tolerance 1e-8",
+      "fold": 3,
+      "phase": "final",
+      "population": "monthly",
+      "track": "adjusted",
+      "zero_control_indices": [
+        11
+      ]
+    },
+    {
+      "case_key": "1234470694f96a510a89",
+      "control_columns": 19,
+      "control_rank_svd": 18,
+      "diagnostic": "Training-only weighted control matrix; relative SVD tolerance 1e-8",
+      "fold": 0,
+      "phase": "real",
+      "population": "monthly",
+      "track": "adjusted",
+      "zero_control_indices": []
+    },
+    {
+      "case_key": "1234470694f96a510a89",
+      "control_columns": 19,
+      "control_rank_svd": 18,
+      "diagnostic": "Training-only weighted control matrix; relative SVD tolerance 1e-8",
+      "fold": 1,
+      "phase": "real",
+      "population": "monthly",
+      "track": "adjusted",
+      "zero_control_indices": []
+    },
+    {
+      "case_key": "1234470694f96a510a89",
+      "control_columns": 19,
+      "control_rank_svd": 18,
+      "diagnostic": "Training-only weighted control matrix; relative SVD tolerance 1e-8",
+      "fold": 2,
+      "phase": "real",
+      "population": "monthly",
+      "track": "adjusted",
+      "zero_control_indices": []
+    },
+    {
+      "case_key": "1234470694f96a510a89",
+      "control_columns": 19,
+      "control_rank_svd": 18,
+      "diagnostic": "Training-only weighted control matrix; relative SVD tolerance 1e-8",
+      "fold": 3,
+      "phase": "real",
+      "population": "monthly",
+      "track": "adjusted",
+      "zero_control_indices": []
+    }
+  ],
+  "full_campaign_started": false,
+  "groups_without_selected_models": [
+    {
+      "cases": 4,
+      "phase": "calibration",
+      "population": "monthly",
+      "searches": 36,
+      "selected_models": 0,
+      "strategies": [
+        "A",
+        "B",
+        "C"
+      ],
+      "track": "adjusted"
+    },
+    {
+      "cases": 14,
+      "phase": "final",
+      "population": "monthly",
+      "searches": 126,
+      "selected_models": 0,
+      "strategies": [
+        "A",
+        "B",
+        "C"
+      ],
+      "track": "adjusted"
+    },
+    {
+      "cases": 14,
+      "phase": "real",
+      "population": "monthly",
+      "searches": 126,
+      "selected_models": 0,
+      "strategies": [
+        "A",
+        "B",
+        "C"
+      ],
+      "track": "adjusted"
+    }
+  ],
+  "interpretation": "In this completed run the adjusted-monthly path has no selected models. Its checked nuisance matrices have rank 18 of 19, including a zero genre-share control in the synthetic template. The frozen strict rank gate rejects these candidates even when predictions can be computed. These cases cannot establish search-policy recall; control-basis handling needs separate engineering evaluation before production. Other fit failures remain in estimator_fit_status.csv.",
+  "protocol_changed": false,
+  "status": "DIAGNOSED_LIMITATION"
+}

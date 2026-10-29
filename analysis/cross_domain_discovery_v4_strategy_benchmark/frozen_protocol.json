@@ -1,0 +1,119 @@
+{
+  "code": {
+    "src/cross_domain_v4_audit.py": "d37ea30c69846a333606b5688ca38e77b26906ced30bededf86966660064dfb7",
+    "src/cross_domain_v4_common.py": "b1ad2aa101914863857db518462551da4cea868f4b1d38fa528231754fe7d780",
+    "src/cross_domain_v4_data.py": "3c1de3ad8d4f6be888c92d7cfbb6e11432241d74b5c903e662a43aaa55739f41",
+    "src/cross_domain_v4_pilot.py": "eb7362300f30dbb4a0db05819f2bb71a5b2e98199e4021301d94b9bd116ec569",
+    "src/hierarchical_v4_common.py": "cf85c1e77e8da216a69d439a377ed5203fc7e98648469318206835695b9f5303",
+    "src/hierarchical_v4_engine.py": "575e2d6ed07dfc2a08fe499aea1c4d1ba1b15054ed07d9ce1234f850ff256b9a",
+    "src/hierarchical_v4_screen.py": "54a9b37f7270ce0312bf71cef92f02e7a96856ac2ba673a1f639609f0035cb8a",
+    "src/regression_core.py": "449a0b443a7452dcbef2eddbf3aeb5de66abc1db91bfe58556ae605fef64ad69",
+    "src/strategy_v4_common.py": "76f1690e082bbdacbb3d2b8737ceed536ad1a7d7239b9c48ee4e27232dd0c10b",
+    "src/strategy_v4_data.py": "cc8d01ba1c0afc8416681af1ae0ecd7b0f7caedc520babdc97226066ab1f41b1",
+    "src/strategy_v4_engine.py": "16216f99c89d0971bcc525f3190f695ee92a0e64d0601f51c9df1b490a05aa21",
+    "src/strategy_v4_run.py": "233b1173041064da72714483988729db341273a821420932717fa112e315b85b",
+    "src/strategy_v4_search.py": "0bffd6420476d35f219fc2d9e0161d8af24caffaabdd16b50c365bbd5590dd5f"
+  },
+  "config": {
+    "a_global_seeds": 16,
+    "a_per_domain_seeds": 2,
+    "a_random_fraction": 0.25,
+    "assessment_folds": [
+      2,
+      3
+    ],
+    "block_months": 24,
+    "bootstrap_replicates": 128,
+    "c_elite": 8,
+    "c_fixed_exploration_fraction": 0.5,
+    "c_initial_random": 32,
+    "calibration_seed": 4917000,
+    "calibration_worlds_per_population_track": 4,
+    "combinations_per_cell": 4096,
+    "confirm_per_model_family": 3,
+    "development_seed": 4916000,
+    "diversity_signature_cap": 4,
+    "embargo_months": 84,
+    "final_seed": 4918000,
+    "final_worlds_per_signal_population_track": 2,
+    "free_reserve_bytes": 2147483648,
+    "full_campaign_authorized": false,
+    "inference": "Exploratory transfer and simulation recovery; no causal or post-selection p-value/FDR claims",
+    "minimum_native_test_periods": 3,
+    "minimum_native_train_periods": 12,
+    "minimum_residual_df": 8,
+    "minimum_skill": 0.01,
+    "minimum_test_months": 6,
+    "minimum_train_months": 24,
+    "minimum_uncertainty_blocks": 6,
+    "minimum_worst_skill": 0.0,
+    "model_families": [
+      "additive",
+      "polynomial"
+    ],
+    "multiplicity": "Independent development-null calibration of the maximum reported score from the complete search-and-selection procedure; no selected-only adjusted p-values",
+    "nominal_error": 0.05,
+    "parent_commit": "9cee34f2077da8e93a9c4f67c654ff5bf3809951",
+    "polynomial_max_columns": 64,
+    "polynomial_terms": "Additive original-variable encodings plus numeric squares, all numeric pair products and the numeric triple product",
+    "production_maximum_null_world_acceptance": 0.1,
+    "production_minimum_family_recall": 0.5,
+    "rank": "Mean early validation skill plus 0.5 times worst early skill; exact IDs break ties",
+    "search_folds": [
+      0,
+      1
+    ],
+    "search_seconds_per_cell": 3.0,
+    "search_seeds": [
+      4915101,
+      4915102,
+      4915103
+    ],
+    "signal_types": [
+      "linear",
+      "nonlinear",
+      "interaction",
+      "conditional",
+      "temporal",
+      "spurious_trend",
+      "null"
+    ],
+    "strategy_seconds": 3600,
+    "synthetic_ar_levels": [
+      0.65,
+      0.85
+    ],
+    "synthetic_family_loading": 0.8,
+    "synthetic_noise_levels": [
+      0.65,
+      1.0
+    ],
+    "temporary_bytes": 15000000000,
+    "total_seconds": 14400,
+    "version": "strategy-benchmark-v4-2"
+  },
+  "inputs": {
+    "analysis/regression_cross_domain_v3/target_predictability.csv": "4da0c154c905a2f2af3bd35eb2f488084188810c60261805bdbf3e3e67202ac2",
+    "data/experiments/cross_domain_discovery_v4/external_adjusted.pkl": "33be3f8edca20ce624011a148e09394498db0d634ec89fdcc683dcbb05b1ea02",
+    "data/experiments/cross_domain_discovery_v4/external_period_end.pkl": "168c9f6d008bebe2ad3ce03f8613bc62bf06463e7d14ea7506d3c214b3ae4d21",
+    "data/experiments/cross_domain_discovery_v4/external_raw.pkl": "139f64513d79777b7caf2f857c1d429763ec39cc3f6e91ce9005ec3a56c4fde7",
+    "data/experiments/cross_domain_discovery_v4/genre_month.pkl": "4dc6d49ca2de5e9ed8beca074be2efcae1317d23bcc6c587a6e84c18d4ec30de",
+    "data/experiments/cross_domain_discovery_v4/genre_month_registry.json": "18e7d82af5494c8931c49fa4d27be5a2c338f1409e3e91604b02c1dc97a48bf6",
+    "data/experiments/cross_domain_discovery_v4/monthly.pkl": "0a590c84bdbc2f5bcd5bdf6e25f5f82048bdaa0d1ad38d1dfd735845221971f9",
+    "data/experiments/cross_domain_discovery_v4/monthly_registry.json": "880bb15dd3608aa53d516840230531d1b96948d7412eba4944bb0debc75b7461",
+    "data/experiments/cross_domain_discovery_v4/song.pkl": "7a641316312844ee4d592f13dd012a949b50a8c236e3f4b789ef01a65d964696",
+    "data/experiments/cross_domain_discovery_v4/song_registry.json": "0d928a7cab0fd7f23cc5e8d027418389b5bce0c39ba1d8998a93651a140b7e24",
+    "data/experiments/cross_domain_discovery_v4/tasks.pkl": "cf93180074ba019607a242dc5514037d1767f32bbd64b460bc9e7f3facd50086"
+  },
+  "runtime": {
+    "packages": {
+      "matplotlib": "3.9.0",
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "scipy": "1.13.1",
+      "threadpoolctl": "3.5.0"
+    },
+    "platform": "macOS-13.6.6-arm64-arm-64bit",
+    "python": "3.9.6"
+  }
+}

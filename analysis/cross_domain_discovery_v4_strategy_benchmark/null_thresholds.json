@@ -1,0 +1,10 @@
+{
+  "interpretation": "Empirical simulation calibration, not a guaranteed real-data FWER or FDR level",
+  "nominal_error": 0.05,
+  "thresholds": {
+    "A": 0.01,
+    "B": 0.022359823794672606,
+    "C": 0.01
+  },
+  "unit": "maximum across all three seeds and both model families in a complete development-null world/track variant"
+}

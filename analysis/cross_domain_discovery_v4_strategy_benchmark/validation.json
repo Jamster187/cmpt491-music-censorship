@@ -1,0 +1,96 @@
+{
+  "assessments": 1773,
+  "candidate_combinations_checked": 1627673,
+  "cases": 197,
+  "checkpoint_records_checked": 1636145,
+  "distinct_calibration_final_worlds": true,
+  "early_only_ranking_independently_recomputed": true,
+  "full_campaign_started": false,
+  "numerical_replay_exclusions": [
+    {
+      "population": "monthly",
+      "reason": "No selected real-data model was available under the frozen estimator gates; see estimator_limitations.json",
+      "track": "adjusted"
+    }
+  ],
+  "numerical_replays": [
+    {
+      "case_key": "03cd2ea6e48305314f3d",
+      "fold_fits": 2,
+      "interval_reproduced": true,
+      "phase": "real",
+      "population": "song",
+      "synthetic_truth_reproduced": false,
+      "track": "raw"
+    },
+    {
+      "case_key": "28b4a087c64c1bc9c394",
+      "fold_fits": 2,
+      "interval_reproduced": true,
+      "phase": "real",
+      "population": "song",
+      "synthetic_truth_reproduced": false,
+      "track": "adjusted"
+    },
+    {
+      "case_key": "75324114be55268b52c5",
+      "fold_fits": 2,
+      "interval_reproduced": true,
+      "phase": "final",
+      "population": "song",
+      "synthetic_truth_reproduced": true,
+      "track": "raw"
+    },
+    {
+      "case_key": "140940145d3be4d81879",
+      "fold_fits": 2,
+      "interval_reproduced": true,
+      "phase": "real",
+      "population": "monthly",
+      "synthetic_truth_reproduced": false,
+      "track": "raw"
+    },
+    {
+      "case_key": "37d5032f841701494384",
+      "fold_fits": 2,
+      "interval_reproduced": true,
+      "phase": "final",
+      "population": "monthly",
+      "synthetic_truth_reproduced": true,
+      "track": "raw"
+    },
+    {
+      "case_key": "04b3416f10e1149b850c",
+      "fold_fits": 2,
+      "interval_reproduced": true,
+      "phase": "real",
+      "population": "genre_month",
+      "synthetic_truth_reproduced": false,
+      "track": "raw"
+    },
+    {
+      "case_key": "04354a4410af6b59d136",
+      "fold_fits": 2,
+      "interval_reproduced": true,
+      "phase": "real",
+      "population": "genre_month",
+      "synthetic_truth_reproduced": false,
+      "track": "adjusted"
+    },
+    {
+      "case_key": "3223da26477a0e68684c",
+      "fold_fits": 2,
+      "interval_reproduced": true,
+      "phase": "final",
+      "population": "genre_month",
+      "synthetic_truth_reproduced": true,
+      "track": "raw"
+    }
+  ],
+  "original_task_rules_unchanged": true,
+  "publication_files": 55,
+  "published_final_recovery_independently_recomputed": true,
+  "searches": 1773,
+  "selection_order_verified": true,
+  "status": "PASS"
+}

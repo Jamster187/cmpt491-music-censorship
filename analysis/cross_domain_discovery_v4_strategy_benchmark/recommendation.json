@@ -1,0 +1,190 @@
+{
+  "criteria": {
+    "maximum_observed_null_world_acceptance": 0.1,
+    "minimum_recall_per_oracle_supported_family": 0.5,
+    "runtime_seconds": 14400,
+    "storage_bytes": 15000000000
+  },
+  "production_launch_authorized": false,
+  "proposed_configuration": {
+    "assessment_models_per_family": 3,
+    "domains": 15,
+    "hard_runtime_seconds": 14400,
+    "hard_storage_bytes": 15000000000,
+    "model_families": [
+      "additive",
+      "polynomial"
+    ],
+    "safety_combination_cap": 4096,
+    "search_seconds_per_target": 3,
+    "seeds_per_target": 1,
+    "status": "Evaluated configuration only; no qualified production proposal exists unless every measured gate passes. A hard stop can leave target coverage incomplete.",
+    "target_universe": 10097
+  },
+  "reason": "No measured policy jointly meets the prespecified per-family recall, null-behavior and full-universe resource criteria. A hybrid has not been benchmarked and is not presented as a proven solution.",
+  "recommendation": "E: None",
+  "strategies": [
+    {
+      "benchmark_allocation_complete": true,
+      "domains": 15,
+      "expected_search_cells": 591,
+      "families": {
+        "conditional": {
+          "all_signal_recall": 0.25,
+          "exact_support_recall": 0.25,
+          "oracle_supported_runs": 21,
+          "recall_when_oracle_supported": 0.42857142857142855,
+          "seeded_runs": 36,
+          "worlds": 12
+        },
+        "interaction": {
+          "all_signal_recall": 0.0,
+          "exact_support_recall": 0.0,
+          "oracle_supported_runs": 30,
+          "recall_when_oracle_supported": 0.0,
+          "seeded_runs": 36,
+          "worlds": 12
+        },
+        "linear": {
+          "all_signal_recall": 0.6666666666666666,
+          "exact_support_recall": 0.5833333333333334,
+          "oracle_supported_runs": 27,
+          "recall_when_oracle_supported": 0.7777777777777778,
+          "seeded_runs": 36,
+          "worlds": 12
+        },
+        "nonlinear": {
+          "all_signal_recall": 0.4722222222222222,
+          "exact_support_recall": 0.4722222222222222,
+          "oracle_supported_runs": 15,
+          "recall_when_oracle_supported": 1.0,
+          "seeded_runs": 36,
+          "worlds": 12
+        },
+        "temporal": {
+          "all_signal_recall": 0.8333333333333334,
+          "exact_support_recall": 0.8333333333333334,
+          "oracle_supported_runs": 15,
+          "recall_when_oracle_supported": 1.0,
+          "seeded_runs": 18,
+          "worlds": 6
+        }
+      },
+      "maximum_null_world_acceptance_by_track": 0.16666666666666666,
+      "null_criterion_passes": false,
+      "observed_search_cells": 591,
+      "qualifies": false,
+      "recall_criterion_passes": false,
+      "resource_criterion_passes": false,
+      "strategy": "A"
+    },
+    {
+      "benchmark_allocation_complete": true,
+      "domains": 15,
+      "expected_search_cells": 591,
+      "families": {
+        "conditional": {
+          "all_signal_recall": 0.0,
+          "exact_support_recall": 0.0,
+          "oracle_supported_runs": 21,
+          "recall_when_oracle_supported": 0.0,
+          "seeded_runs": 36,
+          "worlds": 12
+        },
+        "interaction": {
+          "all_signal_recall": 0.0,
+          "exact_support_recall": 0.0,
+          "oracle_supported_runs": 30,
+          "recall_when_oracle_supported": 0.0,
+          "seeded_runs": 36,
+          "worlds": 12
+        },
+        "linear": {
+          "all_signal_recall": 0.08333333333333333,
+          "exact_support_recall": 0.08333333333333333,
+          "oracle_supported_runs": 27,
+          "recall_when_oracle_supported": 0.1111111111111111,
+          "seeded_runs": 36,
+          "worlds": 12
+        },
+        "nonlinear": {
+          "all_signal_recall": 0.19444444444444445,
+          "exact_support_recall": 0.1388888888888889,
+          "oracle_supported_runs": 15,
+          "recall_when_oracle_supported": 0.4666666666666667,
+          "seeded_runs": 36,
+          "worlds": 12
+        },
+        "temporal": {
+          "all_signal_recall": 0.0,
+          "exact_support_recall": 0.0,
+          "oracle_supported_runs": 15,
+          "recall_when_oracle_supported": 0.0,
+          "seeded_runs": 18,
+          "worlds": 6
+        }
+      },
+      "maximum_null_world_acceptance_by_track": 0.0,
+      "null_criterion_passes": true,
+      "observed_search_cells": 591,
+      "qualifies": false,
+      "recall_criterion_passes": false,
+      "resource_criterion_passes": false,
+      "strategy": "B"
+    },
+    {
+      "benchmark_allocation_complete": true,
+      "domains": 15,
+      "expected_search_cells": 591,
+      "families": {
+        "conditional": {
+          "all_signal_recall": 0.0,
+          "exact_support_recall": 0.0,
+          "oracle_supported_runs": 21,
+          "recall_when_oracle_supported": 0.0,
+          "seeded_runs": 36,
+          "worlds": 12
+        },
+        "interaction": {
+          "all_signal_recall": 0.0,
+          "exact_support_recall": 0.0,
+          "oracle_supported_runs": 30,
+          "recall_when_oracle_supported": 0.0,
+          "seeded_runs": 36,
+          "worlds": 12
+        },
+        "linear": {
+          "all_signal_recall": 0.027777777777777776,
+          "exact_support_recall": 0.027777777777777776,
+          "oracle_supported_runs": 27,
+          "recall_when_oracle_supported": 0.037037037037037035,
+          "seeded_runs": 36,
+          "worlds": 12
+        },
+        "nonlinear": {
+          "all_signal_recall": 0.2222222222222222,
+          "exact_support_recall": 0.1388888888888889,
+          "oracle_supported_runs": 15,
+          "recall_when_oracle_supported": 0.5333333333333333,
+          "seeded_runs": 36,
+          "worlds": 12
+        },
+        "temporal": {
+          "all_signal_recall": 0.0,
+          "exact_support_recall": 0.0,
+          "oracle_supported_runs": 15,
+          "recall_when_oracle_supported": 0.0,
+          "seeded_runs": 18,
+          "worlds": 6
+        }
+      },
+      "maximum_null_world_acceptance_by_track": 0.16666666666666666,
+      "null_criterion_passes": false,
+      "observed_search_cells": 591,
+      "qualifies": false,
+      "recall_criterion_passes": false,
+      "resource_criterion_passes": false,
+      "strategy": "C"
+    }
+  ]
+}

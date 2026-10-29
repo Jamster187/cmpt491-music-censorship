@@ -1,0 +1,6 @@
+task_id,target,predictors,family,prior_candidate_id,prior_evaluation_r2,source
+369,lyric_second_person_share,"('debut_rank', 'primary_genre', 'prior_year_unique_chart_song_count')",lyric_structure,210359,0.13595238942143301,analysis/regression_cross_domain_v3/target_predictability.csv
+145,emotion_surprise,"('credit_recent_chart_presence', 'observed_return_after_26weeks', 'primary_genre')",lyrical_affect,164784,0.0014856156148812,analysis/regression_cross_domain_v3/target_predictability.csv
+111,detox_insult,"('debut_chart_same_genre_share', 'primary_genre', 'secondary_genres')",lyrical_content,200952,0.332466475142982,analysis/regression_cross_domain_v3/target_predictability.csv
+87,credit_chart_career_days,"('credited_artist_entity_count', 'mb_distinct_duration_count', 'mb_duration_median_seconds')",artist_chart_history,185755,0.0188358083500876,analysis/regression_cross_domain_v3/target_predictability.csv
+78,best_rank_26,"('lyric_vocabulary_size', 'lyric_word_count', 'mb_release_count')",commercial_performance,352934,0.046236217814047097,analysis/regression_cross_domain_v3/target_predictability.csv
