@@ -1,0 +1,12 @@
+{
+  "effective_exposure_blocks": 1.469003518876291,
+  "method": "Reaggregate original public song rows and original historical BLS observations; direct NumPy least squares, independent of both V5/V5.1 alignment and fit helpers",
+  "n": 756,
+  "peak_exposure_fraction": 0.7849282709806711,
+  "peak_external_month": "2020-04",
+  "peak_music_month": "2020-10",
+  "r": -0.1543030383937362,
+  "seconds": 1.302068375,
+  "slope": -0.00683531053922682,
+  "status": "PASS"
+}

@@ -1,0 +1,7 @@
+{
+  "candidate": "C01",
+  "checkpoint_sha256": "d4f6cf9572b474af96c5194ee62dd7de122d00b5ca9666998cfe54531eb58b19",
+  "compute_revision": "includes_lag_support_recession_fragment",
+  "deliberate_stop_after_candidates": 1,
+  "payload_sha256": "3a9e15a75567776bdd6e619579d2746b872334703f4b5910146d603af8141d38"
+}

@@ -1,0 +1,8 @@
+{
+  "all_outcome_rules_reproduced_from_public_tables": true,
+  "candidates": 30,
+  "diagnostic_family_slots": 9482,
+  "independent_BY_maximum_error": 2.867497905789662e-15,
+  "publication_files": 55,
+  "status": "PASS"
+}

@@ -1,0 +1,4 @@
+{
+  "new_robustness_fits_before_correction": 0,
+  "reason": "Cultural failed-control selection initially read the political/social index, which excludes cultural rows. Corrected to the complete adjusted ranking before executing any new diagnostics. Initial selection retained locally; no outcome-driven reselection."
+}

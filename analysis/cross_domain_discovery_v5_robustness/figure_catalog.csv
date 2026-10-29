@@ -1,0 +1,8 @@
+file,description,sha256
+figures/original_and_resampling.svg,All 30 original effects with HAC and moving-block intervals; selection uncertainty is not removed,0a8c0619f2acdcc4e02806822f49575ee420c0efe87d357ca0209660e0e76df0
+figures/raw_vs_adjusted.svg,Raw versus adjusted counterpart effects; no new pair or best-specification selection,726f89b60102e34f91ee7cdef296406ae69c90e7ab7c230973f41bcb68412060
+figures/leave_year_out.svg,Every response-year deletion; full unclipped estimates are in influence_diagnostics.csv,97b1fdb4f2e6eea1597515e6bf8045e32af1b433460fa2ac05824e12c032e6ee
+figures/lag_sensitivity.svg,All prespecified lag comparisons without selecting an improved lag,cab282c93c565fbc43e721bfa0c41209ec28e8a30ae0f2bf73973814b15c1655
+figures/influence_concentration.svg,"Effective exposure and score block counts for every candidate, not inferred independent sample sizes",0f7b4b62a8e8bdb521edb293b5731bcb5cb04ab74e1da1aadb2c1851ea7191fb
+figures/negative_controls.svg,Observed effects against diagnostic block-permutation distributions; exchangeability is not guaranteed,aac04ad91657c80ffb6824db610a461c464276ae2927482c3659af3791da0451
+figures/caring_exposure.svg,"Full and leading-month exposure shares for the mandatory diagnostic, using the public BLS unemployment series",ea14174696549a9d83a0c6e0d962aeb25462c9797bf55f371fc8b518e5699264

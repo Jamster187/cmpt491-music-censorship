@@ -1,0 +1,24 @@
+{
+  "block_permutation_fits": 14970,
+  "block_permutation_repetitions": 499,
+  "bootstrap_fits": 59940,
+  "bootstrap_repetitions_per_method": 999,
+  "both_bootstrap_intervals_exclude_zero": 14,
+  "broadly_supported_exposure_and_score": 4,
+  "candidates": 30,
+  "candidates_not_meeting_robust_rule": 30,
+  "diagnostic_BY_below_point05": 3379,
+  "diagnostic_family_slots": 9482,
+  "independent_replications": 0,
+  "new_discovery_search": false,
+  "original_global_correction_preserved": true,
+  "outcomes": {
+    "Insufficient evidence": 4,
+    "Likely artifact": 7,
+    "Sensitive or unstable candidate": 19
+  },
+  "primary_reproductions": 30,
+  "robust_candidates": 0,
+  "selected_sensitivity_q_values_are_not_confirmatory": true,
+  "total_candidate_seconds": 48.11524983299999
+}

@@ -1,0 +1,13 @@
+external_variable,source_records,status,independent,common_native_observations,maximum_absolute_difference,interpretation
+US_CONTINUED_CLAIMS,finance:US_CONTINUED_CLAIMS,no_second_measurement,False,,,
+US_EQUITY_DAILY_OBSERVED_TRADING_DAYS,platform:US_EQUITY_DAILY_OBSERVED_TRADING_DAYS;finance:US_MARKET_DAILY_COUNT,no_common_native_observations,False,0,,The aliases describe a derived measure absent from one native table. Empty overlap is not numerical reproduction; no independent source evidence.
+US_FEDERAL_ELECTION_MONTH,platform:US_FEDERAL_ELECTION_MONTH,no_second_measurement,False,,,
+US_GINI,platform:US_GINI,no_second_measurement,False,,,
+US_INITIAL_CLAIMS,finance:US_INITIAL_CLAIMS,no_second_measurement,False,,,
+US_IP_UTILITIES,platform:US_IP_UTILITIES;finance:US_IP_UTILITIES,same_provider_overlap_reproduced,False,1053,1.4210854715202004e-14,"Two project releases share upstream observations; agreement is source reproduction, not independent economic replication"
+US_NONFARM_EMPLOYMENT,platform:US_NONFARM_EMPLOYMENT;finance:US_NONFARM_EMPLOYMENT,same_provider_overlap_reproduced,False,825,0,"Two project releases share upstream observations; agreement is source reproduction, not independent economic replication"
+US_REAL_GDP,platform:US_REAL_GDP;finance:US_REAL_GDP,same_provider_overlap_reproduced,False,318,0,"Two project releases share upstream observations; agreement is source reproduction, not independent economic replication"
+US_RECREATION_SERVICES_NOMINAL,platform:US_RECREATION_SERVICES_NOMINAL,no_second_measurement,False,,,
+US_TREASURY_3M,platform:US_TREASURY_3M;finance:US_TREASURY_3M,same_provider_overlap_reproduced,False,541,1.1102230246251565e-16,"Two project releases share upstream observations; agreement is source reproduction, not independent economic replication"
+US_UNEMPLOYMENT,platform:US_UNEMPLOYMENT;finance:US_UNEMPLOYMENT,same_provider_overlap_reproduced,False,824,0,"Two project releases share upstream observations; agreement is source reproduction, not independent economic replication"
+US_UNEMPLOYMENT_BENEFITS,platform:US_UNEMPLOYMENT_BENEFITS;finance:US_UNEMPLOYMENT_BENEFITS,same_provider_overlap_reproduced,False,812,0,"Two project releases share upstream observations; agreement is source reproduction, not independent economic replication"

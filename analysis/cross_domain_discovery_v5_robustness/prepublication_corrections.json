@@ -1,0 +1,24 @@
+{
+  "candidate_list_changed": false,
+  "candidate_selection_sha256": "db708dbc591a5f235771cd57472cf25459b410632b8478bdaa9bb2aeabc2e523",
+  "corrections": [
+    {
+      "fix": "Enumerate every available frozen recession membership period up to the music endpoint; explicitly mark the left-censored initial fragment.",
+      "issue": "Recession deletion catalog began at the first music month, omitting observed January-April 1958 recession membership used by lagged exposures."
+    },
+    {
+      "fix": "No-common-observations is an explicit unsupported source-replay status.",
+      "issue": "An empty native-series overlap compared equal and was provisionally labeled reproduced."
+    },
+    {
+      "fix": "Fix compute thread pools to one and compare independent numerical replays at rtol=1e-10/atol=1e-12, requiring identical structure and statuses. Saved checkpoint hashes still verify exactly.",
+      "issue": "Bit-exact replay differed only in last-place bootstrap floats with a different BLAS thread count."
+    },
+    {
+      "fix": "Keep their nominal effects and HAC diagnostics, mark formal support false, and include unit-p slots in diagnostic multiplicity accounting.",
+      "issue": "Fixed-break contrasts had native sample support but no comparable residual-stationarity screen."
+    }
+  ],
+  "original_attempt_preserved_local": "data/experiments/cross_domain_discovery_v5_robustness/prepublication_attempt_1",
+  "scientific_estimators_lags_candidates_and_random_seeds_unchanged": true
+}

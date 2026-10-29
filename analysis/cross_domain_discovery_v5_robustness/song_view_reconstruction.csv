@@ -1,0 +1,25 @@
+music_variable,view,matched,common_months,maximum_absolute_error,mask_agreement
+christmas_proximity_days,overall,True,818,0,True
+emotion_confusion,overall,True,818,0,True
+title_version_marker,overall,True,818,0,True
+lyric_semantic_prior_hit_reference_n,overall,True,818,0,True
+artist_credit_feature_marker,overall,True,818,0,True
+christmas_proximity_days,Country,True,578,0,True
+lyric_pos_other_share,Country,True,521,0,True
+lyric_verb_present_share,Country,True,521,0,True
+detox_sexual_explicit,Pop,True,818,0,True
+lyric_pos_other_share,Pop,True,818,0,True
+christmas_proximity_days,Pop,True,818,0,True
+emotion_nervousness,Pop,True,818,0,True
+emotion_anger,Pop,True,818,0,True
+emotion_amusement,Pop,True,818,0,True
+artist_credit_feature_marker,R&B / Soul,True,798,0,True
+detox_insult,R&B / Soul,True,776,0,True
+detox_obscene,R&B / Soul,True,776,0,True
+lyric_mtld,R&B / Soul,True,776,0,True
+emotion_amusement,R&B / Soul,True,776,0,True
+lyric_word_count,R&B / Soul,True,776,0,True
+emotion_caring,R&B / Soul,True,776,0,True
+lyric_pos_adp_share,R&B / Soul,True,776,0,True
+detox_toxicity,R&B / Soul,True,776,0,True
+lyric_pos_adj_share,R&B / Soul,True,776,0,True

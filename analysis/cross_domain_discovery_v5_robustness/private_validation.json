@@ -1,0 +1,45 @@
+{
+  "all_outcome_rules_reproduced_from_public_tables": true,
+  "candidate_replay_numerics": {
+    "atol": 1e-12,
+    "canonical_bytes_equal": true,
+    "float_values_compared": 30780,
+    "maximum_absolute_error": 0.0,
+    "maximum_scaled_error": 0.0,
+    "rtol": 1e-10
+  },
+  "candidates": 30,
+  "complete_checkpoint_tables_reproduced": 11,
+  "deliberately_resumed_candidate_unchanged": true,
+  "deterministic_candidate_replay": "C29",
+  "diagnostic_family_slots": 9482,
+  "independent_BY_maximum_error": 2.867497905789662e-15,
+  "original_assets": {
+    "all_original_data_and_analyses": {
+      "baseline_commit": "51eb89878f072bc713cb43b7d1a5b69be4a4d95c",
+      "bytes": 41051283297,
+      "files": 279382,
+      "status": "PASS"
+    },
+    "baseline_commit": "5f6ab14739d63ad9d026c74a3827e587b2060a08",
+    "bytes": 4856537576,
+    "files": 2467,
+    "pre_v5_files": {
+      "baseline_commit": "bf1e299f9842ee9297082d020bb24041936af44b",
+      "files": 2424,
+      "status": "PASS"
+    },
+    "status": "PASS"
+  },
+  "peak_process_bytes": 968720384,
+  "publication_files": 52,
+  "selection_reproduced": true,
+  "status": "PASS",
+  "v5_publication": {
+    "method_hypotheses": 18046656,
+    "pair_track_rows": 9116352,
+    "publication_files": 69,
+    "status": "PASS"
+  },
+  "verification_seconds": 101.988995584
+}

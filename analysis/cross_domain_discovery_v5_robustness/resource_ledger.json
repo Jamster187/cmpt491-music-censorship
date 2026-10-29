@@ -1,0 +1,119 @@
+{
+  "local_bytes": 141779673,
+  "peak_process_bytes": 589545472,
+  "segments": [
+    {
+      "action": "selection_and_preservation",
+      "id": 1,
+      "seconds": 8.575027666999999,
+      "start": 1793299882.4344919,
+      "stop": 1793299891.0097868
+    },
+    {
+      "action": "selection_and_preservation",
+      "id": 2,
+      "seconds": 1.4048932499999998,
+      "start": 1793299920.471861,
+      "stop": 1793299921.877185
+    },
+    {
+      "action": "candidate_execution",
+      "id": 3,
+      "seconds": 7.442766083,
+      "start": 1793300390.7238772,
+      "stop": 1793300398.1672761
+    },
+    {
+      "action": "candidate_execution",
+      "id": 4,
+      "seconds": 100.12047000000001,
+      "start": 1793300465.431547,
+      "stop": 1793300565.5526679
+    },
+    {
+      "action": "publication",
+      "id": 5,
+      "seconds": 14.605876792,
+      "start": 1793300812.056903,
+      "stop": 1793300826.66324
+    },
+    {
+      "action": "publication",
+      "id": 6,
+      "seconds": 16.220356167000002,
+      "start": 1793300927.256709,
+      "stop": 1793300943.477453
+    },
+    {
+      "action": "verification",
+      "id": 7,
+      "seconds": 0.5402404999999999,
+      "start": 1793300969.994126,
+      "stop": 1793300970.534925
+    },
+    {
+      "action": "engineering_validation",
+      "id": 8,
+      "seconds": 96.830441041,
+      "start": 1793301044.28124,
+      "stop": 1793301141.112353
+    },
+    {
+      "action": "publication",
+      "id": 9,
+      "seconds": 15.867756667,
+      "start": 1793301157.630742,
+      "stop": 1793301173.499077
+    },
+    {
+      "action": "full_private_validation_and_replay",
+      "id": 10,
+      "seconds": 119.030529292,
+      "start": 1793301203.747827,
+      "stop": 1793301322.779027
+    },
+    {
+      "action": "candidate_execution",
+      "id": 11,
+      "seconds": 6.559641500000001,
+      "start": 1793301499.455551,
+      "stop": 1793301506.015931
+    },
+    {
+      "action": "candidate_execution",
+      "id": 12,
+      "seconds": 61.007681042,
+      "start": 1793301540.552702,
+      "stop": 1793301601.560896
+    },
+    {
+      "action": "revision_consistency_validation",
+      "id": 13,
+      "seconds": 13.945722792,
+      "start": 1793301683.767637,
+      "stop": 1793301697.713899
+    },
+    {
+      "action": "publication",
+      "id": 14,
+      "seconds": 15.358573625,
+      "start": 1793301698.520344,
+      "stop": 1793301713.879353
+    },
+    {
+      "action": "final_engineering_and_private_validation",
+      "id": 15,
+      "seconds": 193.465200083,
+      "start": 1793301760.314697,
+      "stop": 1793301953.80246
+    },
+    {
+      "action": "deterministic_render_validation",
+      "id": 16,
+      "seconds": 5.944830209,
+      "start": 1793302034.294432,
+      "stop": 1793302040.239742
+    }
+  ],
+  "total_seconds": 676.92000671
+}

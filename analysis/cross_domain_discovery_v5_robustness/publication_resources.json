@@ -1,0 +1,12 @@
+{
+  "accepted_candidate_fit_seconds": 48.11524983299999,
+  "cumulative_metered_active_seconds": 676.92000671,
+  "includes_preserved_first_attempt_and_validation": true,
+  "local_artifact_bytes_including_preserved_attempt": 141779673,
+  "maximum_seconds": 14400,
+  "maximum_temporary_bytes": 15000000000,
+  "peak_measured_process_bytes": 1186955264,
+  "public_artifact_bytes_before_resource_summary": 12874593,
+  "runtime_note": "Cumulative metered pipeline, resampling, test subprocesses, preservation, replay and rendering commands; excludes coding and short read-only inspections.",
+  "status": "WITHIN_LIMITS"
+}

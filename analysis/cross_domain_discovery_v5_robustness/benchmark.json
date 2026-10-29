@@ -1,0 +1,13 @@
+{
+  "candidate_count": 30,
+  "conservative_total_seconds_allowance": 1800,
+  "estimated_local_bytes_upper_bound": 1000000000,
+  "gate": "PASS",
+  "maximum_bytes": 15000000000,
+  "maximum_seconds": 14400,
+  "measured_candidate": "C01",
+  "measured_seconds": 2.389688542,
+  "naive_candidate_seconds": 71.69065626,
+  "observed_peak_process_bytes": 913063936,
+  "scope_reduced": false
+}

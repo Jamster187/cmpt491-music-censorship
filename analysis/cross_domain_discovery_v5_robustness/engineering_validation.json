@@ -1,0 +1,44 @@
+{
+  "full_unit_tests": {
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 79.063025334,
+    "skipped": 16,
+    "test_seconds": 77.717,
+    "tests_run": 696
+  },
+  "original_figure_catalog": {
+    "command": [
+      "python3",
+      "src/figure_audit.py",
+      "--validate"
+    ],
+    "returncode": 0,
+    "seconds": 1.0552624159999908
+  },
+  "phase1_foundation": {
+    "command": [
+      "python3",
+      "src/phase1.py",
+      "validate"
+    ],
+    "returncode": 0,
+    "seconds": 8.403575540999995
+  },
+  "repository_layout": {
+    "command": [
+      "python3",
+      "src/repository_layout.py"
+    ],
+    "returncode": 0,
+    "seconds": 2.9033415829999996
+  }
+}
